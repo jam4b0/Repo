@@ -205,6 +205,18 @@ ns.Data:RegisterRetailModule({
             },
         },
         subZones = {
+            ["85:orgrimmar"] = {
+                name = "Orgrimmar",
+                parentMapID = 85,
+                source = "observed",
+                confidence = "high",
+                notes = "Direct Orgrimmar city anchor",
+                mapIDs = { 85, 113, 424, 1978 },
+                tags = { "city", "hub", "primary", "local", "observed" },
+                factions = {
+                    { factionID = 76, weight = 262 },
+                },
+            },
             ["85:das tal der stärke"] = {
                 name = "Das Tal der Stärke",
                 parentMapID = 85,
@@ -323,6 +335,42 @@ ns.Data:RegisterRetailModule({
                 tags = { "primary", "local", "kalimdor" },
                 factions = {
                     { factionID = 81, weight = 260 },
+                },
+            },
+            ["86:donnerfels"] = {
+                name = "Donnerfels",
+                parentMapID = 86,
+                source = "seed",
+                confidence = "high",
+                notes = "Direct Thunder Bluff city anchor",
+                mapIDs = { 86, 88 },
+                tags = { "primary", "hub", "local", "kalimdor" },
+                factions = {
+                    { factionID = 81, weight = 262 },
+                },
+            },
+            ["103:die exodar"] = {
+                name = "Die Exodar",
+                parentMapID = 103,
+                source = "seed",
+                confidence = "high",
+                notes = "Direct Exodar city anchor",
+                mapIDs = { 103, 775 },
+                tags = { "primary", "hub", "local", "kalimdor" },
+                factions = {
+                    { factionID = 930, weight = 262 },
+                },
+            },
+            ["97:azurmythosinsel"] = {
+                name = "Azurmythosinsel",
+                parentMapID = 97,
+                source = "seed",
+                confidence = "high",
+                notes = "Direct Azuremyst homeland anchor",
+                mapIDs = { 97, 776 },
+                tags = { "primary", "local", "kalimdor" },
+                factions = {
+                    { factionID = 930, weight = 252 },
                 },
             },
             ["1:die blockade von dranosh'ar"] = {

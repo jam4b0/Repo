@@ -269,6 +269,18 @@ ns.Data:RegisterRetailModule({
             },
         },
         subZones = {
+            ["84:sturmwind"] = {
+                name = "Sturmwind",
+                parentMapID = 84,
+                source = "observed",
+                confidence = "high",
+                notes = "Direct Stormwind city anchor",
+                mapIDs = { 84 },
+                tags = { "primary", "hub", "local", "eastern-kingdoms", "observed" },
+                factions = {
+                    { factionID = 72, weight = 262 },
+                },
+            },
             ["84:handelsdistrikt"] = {
                 name = "Handelsdistrikt",
                 parentMapID = 84,
@@ -558,6 +570,18 @@ ns.Data:RegisterRetailModule({
                     { factionID = 47, weight = 260 },
                 },
             },
+            ["87:eisenschmiede"] = {
+                name = "Eisenschmiede",
+                parentMapID = 87,
+                source = "seed",
+                confidence = "high",
+                notes = "Direct Ironforge city anchor",
+                mapIDs = { 87 },
+                tags = { "primary", "hub", "local", "eastern-kingdoms" },
+                factions = {
+                    { factionID = 47, weight = 262 },
+                },
+            },
             ["90:apothekerdistrikt"] = {
                 name = "Apothekerdistrikt",
                 parentMapID = 90,
@@ -568,6 +592,34 @@ ns.Data:RegisterRetailModule({
                 tags = { "primary", "local", "eastern-kingdoms" },
                 factions = {
                     { factionID = 68, weight = 260 },
+                },
+            },
+            ["90:unterstadt"] = {
+                name = "Unterstadt",
+                parentMapID = 90,
+                source = "seed",
+                confidence = "high",
+                notes = "Direct Undercity city anchor",
+                mapIDs = { 90 },
+                tags = { "primary", "hub", "local", "eastern-kingdoms" },
+                factions = {
+                    { factionID = 68, weight = 262 },
+                },
+            },
+            ["2393:silbermond"] = {
+                name = "Silbermond",
+                parentMapID = 2393,
+                source = "observed",
+                confidence = "high",
+                notes = "Direct Silvermoon city anchor",
+                mapIDs = { 2393 },
+                tags = { "primary", "hub", "local", "observed" },
+                factions = {
+                    { factionID = 2710, name = "Hof in Silbermond", weight = 262 },
+                    { name = "Magister", weight = 250 },
+                    { name = "Blutritter", weight = 248 },
+                    { name = "Schemen der Gasse", weight = 246 },
+                    { name = "Weltenwanderer", weight = 246 },
                 },
             },
             ["2393:der basar"] = {
