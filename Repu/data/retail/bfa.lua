@@ -108,7 +108,7 @@ ns.Data:RegisterRetailModule({
                 source = "seed",
                 confidence = "high",
                 notes = "BFA patch zone cluster",
-                mapIDs = { 1462, 1355 },
+                mapIDs = { 1462 },
                 tags = { "zone", "local", "bfa" },
                 factionIDs = { 2391 },
                 weight = 248,
