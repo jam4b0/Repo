@@ -58,7 +58,7 @@ ns.Data:RegisterRetailModule({
                 confidence = "medium",
                 notes = "Retail client world-state submap for Dustwallow Marsh; left intentionally unmapped until a reliable phase-specific local faction is defined.",
                 mapIDs = { 416 },
-                tags = { "subzone", "coverage-only", "variant-catalog", "world-phasing-variant", "kalimdor" },
+                tags = { "subzone", "coverage-only", "variant-catalog", "world-phasing-variant", "kalimdor", "no-local-reputation" },
             },
             ["483:Düstermarschen"] = {
                 name = "Düstermarschen",
@@ -66,7 +66,7 @@ ns.Data:RegisterRetailModule({
                 confidence = "medium",
                 notes = "Additional retail client world-state submap for Dustwallow Marsh; left intentionally unmapped until a reliable phase-specific local faction is defined.",
                 mapIDs = { 483 },
-                tags = { "subzone", "coverage-only", "variant-catalog", "world-phasing-variant", "kalimdor" },
+                tags = { "subzone", "coverage-only", "variant-catalog", "world-phasing-variant", "kalimdor", "no-local-reputation" },
             },
             ["520:Tal der Ewigen Blüten"] = {
                 name = "Tal der Ewigen Blüten",
