@@ -62,11 +62,18 @@ local function normalizeRetailFactionData(index, data)
         minValue = majorFactionData.renownLevelReputationThreshold
             or majorFactionData.currentLevelThreshold
             or majorFactionData.currentReactionThreshold
-            or minValue
+            or 0
         maxValue = majorFactionData.nextLevelThreshold
             or majorFactionData.renownLevelThreshold
             or majorFactionData.nextReactionThreshold
             or maxValue
+
+        if renownLevel then
+            minValue = 0
+            if not maxValue or maxValue < currentValue then
+                maxValue = currentValue
+            end
+        end
     end
 
     return {
