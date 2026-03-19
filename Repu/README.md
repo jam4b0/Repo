@@ -60,6 +60,7 @@ Der aktuelle Stand:
 - `tools/generate_map_manifest.py` erzeugt aus `RepuDB.debug.mapScan` ein pruefbares Zonen-Manifest mit Buckets fuer Kontinente, Zonen und Hubs
 - `tools/generate_map_seed.py` erzeugt aus dem Manifest ein reines Zonen-Skelett fuer spaetere `Repu`-Seeds, ohne schon Fraktionswissen zu erfinden
 - `tools/compare_map_seed.py` vergleicht den generierten Client-Seed mit der bestehenden Retail-Basis und zeigt Ueberlappung sowie Luecken
+- `tools/list_curation_candidates.py` listet `client_seed`-Eintraege, die noch keine kuratierte Retail-Abdeckung haben
 
 ## Map-Scan-Pipeline
 
@@ -67,12 +68,14 @@ Die Weltbasis fuer `Repu` soll nicht manuell abgeflogen oder aus veralteten Webs
 
 1. `Repu` scannt die `UiMap`-Hierarchie direkt aus dem Client in `RepuDB.debug.mapScan`
 2. `tools/generate_map_manifest.py` erzeugt daraus ein auditierbares Manifest
-3. Erst aus diesem Manifest werden spaeter kontrollierte Seed-Dateien fuer `Repu` abgeleitet
+3. `tools/generate_map_seed.py` erzeugt daraus ein kontrolliertes `client_seed`-Skelett
+4. Kuratierte Retail-Module legen fachliche Zuordnungen als Overrides darauf
 
 Wichtig:
 
 - `mapScan` ist die Rohquelle
 - das Manifest ist die pruefbare Klassifikation
+- `client_seed` ist die vollstaendige Standortunterlage aus dem Client
 - gefilterte Seeds sind nur abgeleitete Sichten und duerfen die Rohvollstaendigkeit nicht ersetzen
 
 ## Datenqualitaet

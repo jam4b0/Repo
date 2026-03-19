@@ -321,6 +321,11 @@ function ns.Debug:CreateWindow()
     end)
     placeButton(frame.apiButton, frame.buttonRow, 196, -96)
 
+    frame.coverageButton = createButton(frame.buttonRow, "Coverage", 90, function()
+        ns.Debug:DumpCoverage()
+    end)
+    placeButton(frame.coverageButton, frame.buttonRow, 276, -96)
+
     self.window = frame
     self:RefreshWindow()
 end
@@ -396,6 +401,24 @@ function ns.Debug:DumpLocation()
     printLine("WatchedFactionID: " .. tostring(context.watchedFactionID))
     printLine("Coverage: " .. Utils:Stringify(coverage))
     printLine("MapChain: " .. Utils:Stringify(context.mapChain))
+end
+
+function ns.Debug:DumpCoverage()
+    local context = ns.State.runtime.context or ns.Location:BuildContext()
+    local coverage = ns.State.runtime.coverage or ns.Data:GetCoverage(context)
+    self:SetLastDiagnostic("coverage", {
+        context = context,
+        coverage = coverage,
+    })
+
+    local zoneSource = coverage.zoneHasRecord and (coverage.zoneFromClientSeed and "client_seed" or "curated") or "missing"
+    local subZoneSource = coverage.subZoneHasRecord and (coverage.subZoneFromClientSeed and "client_seed" or "curated") or "missing"
+
+    printLine("Coverage summary")
+    printLine("ZoneSource=" .. tostring(zoneSource) .. " ZoneMapping=" .. tostring(coverage.zoneHasMapping))
+    printLine("SubZoneSource=" .. tostring(subZoneSource) .. " SubZoneMapping=" .. tostring(coverage.subZoneHasMapping))
+    printLine("ZoneRecord=" .. Utils:Stringify(coverage.zoneRecord))
+    printLine("SubZoneRecord=" .. Utils:Stringify(coverage.subZoneRecord))
 end
 
 function ns.Debug:DumpUnmapped()
@@ -482,6 +505,7 @@ function ns.Debug:HandleSlash(message)
         printLine("/repu faction <id>")
         printLine("/repu factions [limit]")
         printLine("/repu location")
+        printLine("/repu coverage")
         printLine("/repu mapscan run|status|clear")
         printLine("/repu unmapped")
         printLine("/repu refresh")
@@ -505,6 +529,11 @@ function ns.Debug:HandleSlash(message)
 
     if verb == "api" then
         self:DumpAPI()
+        return
+    end
+
+    if verb == "coverage" then
+        self:DumpCoverage()
         return
     end
 
