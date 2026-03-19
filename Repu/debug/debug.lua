@@ -61,6 +61,14 @@ end
 
 function ns.Debug:DumpState()
     local snapshot = ns.State:GetSnapshot()
+    self:SetLastDiagnostic("dump", {
+        context = snapshot.context,
+        coverage = snapshot.coverage,
+        rawFactionCount = snapshot.rawFactions and #snapshot.rawFactions.list or 0,
+        matches = snapshot.matches or {},
+        prioritized = snapshot.prioritized or {},
+        visible = snapshot.visible or {},
+    })
     printLine("Context: " .. Utils:Stringify(snapshot.context))
     printLine("Coverage: " .. Utils:Stringify(snapshot.coverage))
     printLine("RawFactions: " .. tostring(snapshot.rawFactions and #snapshot.rawFactions.list or 0))
@@ -195,7 +203,7 @@ function ns.Debug:CreateWindow()
     end
 
     local frame = CreateFrame("Frame", "RepuDebugWindow", UIParent, BackdropTemplateMixin and "BackdropTemplate")
-    frame:SetSize(640, 282)
+    frame:SetSize(640, 336)
     frame:SetPoint("TOP", UIParent, "TOP", 0, -120)
     frame:SetMovable(true)
     frame:EnableMouse(true)
@@ -227,13 +235,13 @@ function ns.Debug:CreateWindow()
     frame.text = frame:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
     frame.text:SetPoint("TOPLEFT", frame, "TOPLEFT", 10, -28)
     frame.text:SetPoint("RIGHT", frame, "RIGHT", -10, 0)
-    frame.text:SetHeight(110)
+    frame.text:SetHeight(142)
     frame.text:SetJustifyH("LEFT")
     frame.text:SetJustifyV("TOP")
 
     frame.buttonRow = CreateFrame("Frame", nil, frame)
     frame.buttonRow:SetPoint("BOTTOMLEFT", frame, "BOTTOMLEFT", 10, 12)
-    frame.buttonRow:SetSize(620, 142)
+    frame.buttonRow:SetSize(620, 184)
 
     frame.enableButton = createButton(frame.buttonRow, "Capture On", 90, function()
         local debugDB = ns.State:GetDebugDB()
@@ -280,6 +288,12 @@ function ns.Debug:CreateWindow()
 
     frame.statusButton = createButton(frame.buttonRow, "Status", 80, function()
         local debugDB = ns.State:GetDebugDB()
+        ns.Debug:SetLastDiagnostic("status", {
+            enabled = debugDB.enabled,
+            sweepMode = debugDB.sweepMode,
+            stored = #(debugDB.captures or {}),
+            maxCaptures = debugDB.maxCaptures or 200,
+        })
         printLine("Capture enabled=" .. tostring(debugDB.enabled) .. " stored=" .. tostring(#(debugDB.captures or {})))
     end)
     placeButton(frame.statusButton, frame.buttonRow, 176, -32)
@@ -326,6 +340,33 @@ function ns.Debug:CreateWindow()
     end)
     placeButton(frame.coverageButton, frame.buttonRow, 276, -96)
 
+    frame.factionsButton = createButton(frame.buttonRow, "Factions", 90, function()
+        ns.Debug:DumpFactions(12)
+    end)
+    placeButton(frame.factionsButton, frame.buttonRow, 374, -96)
+
+    frame.refreshButton = createButton(frame.buttonRow, "Refresh", 90, function()
+        ns.State:Refresh("BUTTON_REFRESH")
+        ns.Debug:SetLastDiagnostic("refresh", {
+            reason = "BUTTON_REFRESH",
+            context = ns.State.runtime.context,
+            coverage = ns.State.runtime.coverage,
+        })
+        printLine("Refresh triggered")
+    end)
+    placeButton(frame.refreshButton, frame.buttonRow, 472, -96)
+
+    frame.testButton = createButton(frame.buttonRow, "Test", 90, function()
+        ns.State:Refresh("BUTTON_TEST", { forceTest = true })
+        ns.Debug:SetLastDiagnostic("test", {
+            reason = "BUTTON_TEST",
+            context = ns.State.runtime.context,
+            coverage = ns.State.runtime.coverage,
+        })
+        printLine("Test rendering triggered")
+    end)
+    placeButton(frame.testButton, frame.buttonRow, 0, -128)
+
     self.window = frame
     self:RefreshWindow()
 end
@@ -351,7 +392,12 @@ function ns.Debug:RefreshWindow()
         "Diag Location: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.location and debugDB.lastDiagnostics.location.timestamp or "none"),
         "Diag Unmapped: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.unmapped and debugDB.lastDiagnostics.unmapped.timestamp or "none"),
         "Diag API: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.api and debugDB.lastDiagnostics.api.timestamp or "none"),
-        "UI: capture + mapscan buttons below",
+        "Diag Coverage: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.coverage and debugDB.lastDiagnostics.coverage.timestamp or "none"),
+        "Diag Dump: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.dump and debugDB.lastDiagnostics.dump.timestamp or "none"),
+        "Diag Status: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.status and debugDB.lastDiagnostics.status.timestamp or "none"),
+        "Diag Factions: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.factions and debugDB.lastDiagnostics.factions.timestamp or "none"),
+        "Diag MapScan: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.mapscan and debugDB.lastDiagnostics.mapscan.timestamp or "none"),
+        "UI: capture + diagnostics + mapscan buttons below",
     }
     self.window.text:SetText(table.concat(text, "\n"))
     self.window:SetShown(debugDB.enabled or count > 0 or debugDB.forceWindowVisible)
@@ -365,6 +411,27 @@ function ns.Debug:DumpFactions(limit)
     local snapshot = ns.State:GetSnapshot()
     local list = snapshot.rawFactions and snapshot.rawFactions.list or {}
     local maxCount = tonumber(limit) or 12
+    local rows = {}
+
+    for index = 1, math.min(#list, maxCount) do
+        local faction = list[index]
+        rows[#rows + 1] = {
+            index = index,
+            factionID = faction.factionID,
+            name = faction.name,
+            standingLabel = faction.standingLabel,
+            progressValue = faction.progressValue or 0,
+            progressMax = faction.progressMax or 0,
+            watched = faction.isWatched,
+            exalted = faction.isExalted,
+        }
+    end
+
+    self:SetLastDiagnostic("factions", {
+        count = #list,
+        limit = maxCount,
+        rows = rows,
+    })
 
     printLine("Faction dump count=" .. tostring(#list))
     for index = 1, math.min(#list, maxCount) do
@@ -452,6 +519,10 @@ function ns.Debug:RunMapScan()
     local result = ns.Compat:ScanUiMaps()
     local debugDB = ns.State:GetDebugDB()
     debugDB.mapScan = result
+    self:SetLastDiagnostic("mapscan", {
+        action = "run",
+        result = result,
+    })
 
     printLine("Map scan finished")
     printLine("Roots=" .. Utils:Stringify(result.roots))
@@ -464,6 +535,10 @@ end
 
 function ns.Debug:DumpMapScanStatus()
     local mapScan = ns.State:GetDebugDB().mapScan or {}
+    self:SetLastDiagnostic("mapscan", {
+        action = "status",
+        result = mapScan,
+    })
     printLine("MapScan Roots=" .. Utils:Stringify(mapScan.roots))
     printLine("MapScan Nodes=" .. tostring(mapScan.nodeCount or 0))
     printLine("MapScan ScannedAt=" .. tostring(mapScan.scannedAt))
@@ -478,6 +553,10 @@ function ns.Debug:ClearMapScan()
         nodesByID = {},
         orderedMapIDs = {},
     }
+    self:SetLastDiagnostic("mapscan", {
+        action = "clear",
+        result = debugDB.mapScan,
+    })
     printLine("Map scan cleared")
 end
 
@@ -632,12 +711,22 @@ function ns.Debug:HandleSlash(message)
 
     if verb == "refresh" then
         ns.State:Refresh("SLASH_REFRESH")
+        self:SetLastDiagnostic("refresh", {
+            reason = "SLASH_REFRESH",
+            context = ns.State.runtime.context,
+            coverage = ns.State.runtime.coverage,
+        })
         printLine("Refresh triggered")
         return
     end
 
     if verb == "test" then
         ns.State:Refresh("SLASH_TEST", { forceTest = true })
+        self:SetLastDiagnostic("test", {
+            reason = "SLASH_TEST",
+            context = ns.State.runtime.context,
+            coverage = ns.State.runtime.coverage,
+        })
         printLine("Test rendering triggered")
         return
     end
