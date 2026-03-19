@@ -51,7 +51,7 @@ function ns.UI:CreateRow(parent, index)
     row.toggleText:SetTextColor(unpack(Styles.accentText))
     row.toggleText:SetShadowOffset(1, -1)
     row.toggleText:SetShadowColor(0, 0, 0, 0.85)
-    row.toggleText:SetWidth(14)
+    row.toggleText:SetWidth(10)
 
     row.nameText = row.overlay:CreateFontString(nil, "OVERLAY", "GameFontNormal")
     row.nameText:SetPoint("LEFT", row.toggleText, "RIGHT", 2, 0)
@@ -87,7 +87,11 @@ function ns.UI:CreateRow(parent, index)
 
     row:SetScript("OnClick", function(self)
         if self.candidate then
-            ns.UI:HandleRowClick(self.candidate)
+            local cursorX = GetCursorPosition()
+            local scale = self:GetEffectiveScale()
+            local left = self:GetLeft() or 0
+            local localX = (cursorX / scale) - left
+            ns.UI:HandleRowClick(self.candidate, localX)
         end
     end)
 
@@ -115,16 +119,14 @@ function ns.UI:UpdateRow(row, candidate, isActive, isSelected)
     local hasChildren = candidate.hasKnownChildren and true or false
     local isExpanded = candidate.isExpanded and true or false
     if hasChildren then
-        row.toggleText:SetText(isExpanded and "▼" or "▶")
-    elseif candidate.isChildOfVisibleParent then
-        row.toggleText:SetText("•")
+        row.toggleText:SetText(isExpanded and "-" or "+")
     else
         row.toggleText:SetText("")
     end
 
     if candidate.isChildOfVisibleParent then
         row.nameText:ClearAllPoints()
-        row.nameText:SetPoint("LEFT", row.toggleText, "RIGHT", 14, 0)
+        row.nameText:SetPoint("LEFT", row.overlay, "LEFT", 18, 0)
     else
         row.nameText:ClearAllPoints()
         row.nameText:SetPoint("LEFT", row.toggleText, "RIGHT", 2, 0)

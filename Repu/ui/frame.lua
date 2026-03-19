@@ -331,13 +331,15 @@ function ns.UI:Refresh(candidates, context)
     self.frame:SetShown(shouldShow)
 end
 
-function ns.UI:HandleRowClick(candidate)
+function ns.UI:HandleRowClick(candidate, localX)
     if not candidate or not candidate.factionID then
         return
     end
 
-    if candidate.hasKnownChildren then
+    if candidate.hasKnownChildren and localX and localX <= 18 then
         self.expandedParents[candidate.factionID] = not self:IsParentExpanded(candidate.factionID)
+        self:Refresh(ns.State.runtime.visible or {}, ns.State.runtime.context)
+        return
     end
 
     self:ToggleDetails(candidate)
