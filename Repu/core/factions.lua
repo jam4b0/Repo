@@ -530,13 +530,18 @@ function ns.Factions:BuildMatches(rawFactions, context)
     local results = {}
     local seen = {}
     local hasSubZoneMatch = false
+    local profile = ns.State:GetProfile()
 
     local function appendMatch(match, faction, sourceType, sourceKey)
         if not faction or not matchApplies(match, context) then
             return
         end
 
-        if context and context.activeFlavor == "retail" and isRetailCompanionFaction(faction) then
+        if context
+            and context.activeFlavor == "retail"
+            and isRetailCompanionFaction(faction)
+            and not profile.showRetailCompanions
+        then
             return
         end
 
@@ -652,6 +657,19 @@ function ns.Factions:BuildMatches(rawFactions, context)
     local inferred = ns.Inference:BuildMatches(rawFactions, context, results)
     for _, match in ipairs(inferred) do
         results[#results + 1] = match
+    end
+
+    if context and context.activeFlavor == "retail" and profile.showRetailCompanions then
+        for factionID in pairs(RETAIL_COMPANION_FACTION_IDS) do
+            local faction = rawFactions.byID and rawFactions.byID[factionID] or nil
+            if faction then
+                appendMatch({
+                    weight = 35,
+                    tags = { "companion", "retail" },
+                    note = "Retail companion reputation",
+                }, faction, "companion", faction.name or factionID)
+            end
+        end
     end
 
     return results

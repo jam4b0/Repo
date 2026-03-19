@@ -186,6 +186,52 @@ return {
         forbidVisibleFactionIDs = { 749 },
     },
     {
+        name = "retail_companion_visible_when_option_enabled",
+        profile = {
+            maxBars = 5,
+            showRetailCompanions = true,
+        },
+        context = {
+            activeFlavor = "retail",
+            mapID = 70,
+            mapName = "Düstermarschen",
+            zoneName = "Düstermarschen",
+            zoneKey = "düstermarschen",
+            subZoneName = "Bucht der Düstermarschen",
+            subZoneKey = "bucht der düstermarschen",
+            playerFactionGroup = "Alliance",
+            instanceType = "none",
+            isInInstance = false,
+        },
+        rawFactions = {
+            { factionID = 2640, name = "Brann Bronzebart", standingID = 4, progressValue = 250, progressMax = 2500, progressPct = 10, hasRepEntry = true },
+        },
+        expectTopFactionID = 2640,
+    },
+    {
+        name = "retail_companion_hidden_when_option_disabled",
+        profile = {
+            maxBars = 5,
+            showRetailCompanions = false,
+        },
+        context = {
+            activeFlavor = "retail",
+            mapID = 70,
+            mapName = "Düstermarschen",
+            zoneName = "Düstermarschen",
+            zoneKey = "düstermarschen",
+            subZoneName = "Bucht der Düstermarschen",
+            subZoneKey = "bucht der düstermarschen",
+            playerFactionGroup = "Alliance",
+            instanceType = "none",
+            isInInstance = false,
+        },
+        rawFactions = {
+            { factionID = 2640, name = "Brann Bronzebart", standingID = 4, progressValue = 250, progressMax = 2500, progressPct = 10, hasRepEntry = true },
+        },
+        expectVisibleCount = 0,
+    },
+    {
         name = "retail_outland_shattrath_family_cluster",
         profile = {
             maxBars = 6,

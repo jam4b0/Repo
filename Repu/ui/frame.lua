@@ -106,15 +106,21 @@ function ns.UI:Init()
     frame:SetPoint(profile.point, UIParent, profile.relativePoint, profile.x, profile.y)
     setFrameBackdrop(frame)
 
+    frame.titleIcon = frame:CreateTexture(nil, "OVERLAY")
+    frame.titleIcon:SetSize(16, 16)
+    frame.titleIcon:SetPoint("TOPLEFT", frame, "TOPLEFT", 10, -8)
+    frame.titleIcon:SetTexture("Interface\\Icons\\Achievement_Reputation_01")
+
     frame.title = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-    frame.title:SetPoint("TOPLEFT", frame, "TOPLEFT", 10, -8)
+    frame.title:SetPoint("LEFT", frame.titleIcon, "RIGHT", 6, 0)
     frame.title:SetText("Repu")
     frame.title:SetTextColor(unpack(Styles.text))
 
-    frame.dragText = frame:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    frame.dragText:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -10, -10)
-    frame.dragText:SetText(Locale:Get("UI_DRAG"))
-    frame.dragText:SetTextColor(unpack(Styles.subtleText))
+    frame.dragIcon = frame:CreateTexture(nil, "OVERLAY")
+    frame.dragIcon:SetSize(14, 14)
+    frame.dragIcon:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -10, -9)
+    frame.dragIcon:SetTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Up")
+    frame.dragIcon:SetVertexColor(unpack(Styles.subtleText))
 
     frame.detail = CreateFrame("Frame", nil, frame, BackdropTemplateMixin and "BackdropTemplate")
     frame.detail:SetPoint("TOPLEFT", frame, "TOPLEFT", 8, -8)
@@ -308,7 +314,7 @@ function ns.UI:Refresh(candidates, context)
     self.frame:SetAlpha(profile.opacity or 1)
     self.frame:SetWidth(profile.width)
     self.frame:SetHeight(height)
-    self.frame.dragText:SetShown(not profile.locked)
+    self.frame.dragIcon:SetShown(not profile.locked)
 
     local title = "Repu"
     if context and context.instanceName and context.instanceType and context.instanceType ~= "none" then
