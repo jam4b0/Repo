@@ -99,6 +99,21 @@ local function addMatch(results, faction, match)
     }
 end
 
+local function isRetailCompanionFaction(faction)
+    if not faction then
+        return false
+    end
+
+    local nameKey = Utils:NormalizeKey(faction.name or "")
+    local descriptionKey = Utils:NormalizeKey(faction.description or "")
+
+    if nameKey == "valeera sanguinar" or nameKey == "brann bronzebart" then
+        return true
+    end
+
+    return descriptionKey and string.find(descriptionKey, "tiefengefahrtin", 1, true) ~= nil
+end
+
 function ns.Factions:CollectAll()
     local rows = ns.Compat:CollectFactionRows()
     local collection = {
@@ -227,6 +242,10 @@ function ns.Factions:SelectVisible(prioritized, context)
         local include = true
 
         if profile.hideExalted and candidate.faction.isExalted and not candidate.isDirect then
+            include = false
+        end
+
+        if include and not profile.showRetailCompanions and context and context.activeFlavor == "retail" and isRetailCompanionFaction(candidate.faction) then
             include = false
         end
 

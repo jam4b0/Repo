@@ -28,6 +28,39 @@ local function saveFramePosition(frame)
     profile.y = y
 end
 
+local function getMinimapCenter()
+    local x = Minimap:GetCenter()
+    if not x then
+        return 0, 0
+    end
+    local y = select(2, Minimap:GetCenter())
+    return x, y
+end
+
+local function updateMinimapButtonPosition(button)
+    local profile = ns.State:GetProfile()
+    local angle = math.rad(profile.minimapAngle or 220)
+    local radius = 80
+    button:ClearAllPoints()
+    button:SetPoint("CENTER", Minimap, "CENTER", math.cos(angle) * radius, math.sin(angle) * radius)
+end
+
+local function getCursorAngleDegrees(cx, cy, mx, my)
+    if math.atan2 then
+        return math.deg(math.atan2(my - cy, mx - cx))
+    end
+    local dx = mx - cx
+    local dy = my - cy
+    if dx == 0 then
+        return dy >= 0 and 90 or -90
+    end
+    local angle = math.deg(math.atan(dy / dx))
+    if dx < 0 then
+        angle = angle + 180
+    end
+    return angle
+end
+
 local function createDetailButton(parent, index)
     local button = CreateFrame("Button", nil, parent, BackdropTemplateMixin and "BackdropTemplate")
     button:SetHeight(18)
@@ -133,8 +166,76 @@ function ns.UI:Init()
 
     self.frame = frame
     self.selectedFactionID = nil
+    self:EnsureMinimapButton()
     self:RegisterOptions()
     self:Refresh({}, nil)
+end
+
+function ns.UI:EnsureMinimapButton()
+    if self.minimapButton then
+        updateMinimapButtonPosition(self.minimapButton)
+        self.minimapButton:SetShown(ns.State:GetProfile().showMinimapButton)
+        return
+    end
+
+    local button = CreateFrame("Button", "RepuMinimapButton", Minimap)
+    button:SetSize(31, 31)
+    button:SetFrameStrata("MEDIUM")
+    button:SetMovable(true)
+    button:RegisterForDrag("LeftButton")
+    button:RegisterForClicks("LeftButtonUp", "RightButtonUp")
+
+    button.icon = button:CreateTexture(nil, "BACKGROUND")
+    button.icon:SetTexture("Interface\\Icons\\Achievement_Reputation_01")
+    button.icon:SetSize(20, 20)
+    button.icon:SetPoint("CENTER")
+
+    button.border = button:CreateTexture(nil, "OVERLAY")
+    button.border:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder")
+    button.border:SetSize(54, 54)
+    button.border:SetPoint("TOPLEFT")
+
+    button:SetHighlightTexture("Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight")
+
+    button:SetScript("OnClick", function(_, mouseButton)
+        if mouseButton == "RightButton" then
+            if Settings and Settings.OpenToCategory and ns.UI.optionsCategory then
+                Settings.OpenToCategory(ns.UI.optionsCategory:GetID())
+            elseif InterfaceOptionsFrame_OpenToCategory and ns.UI.optionsPanel then
+                InterfaceOptionsFrame_OpenToCategory(ns.UI.optionsPanel)
+                InterfaceOptionsFrame_OpenToCategory(ns.UI.optionsPanel)
+            end
+            return
+        end
+
+        local frame = ns.UI.frame
+        if frame then
+            frame:SetShown(not frame:IsShown())
+        end
+    end)
+
+    button:SetScript("OnDragStart", function(self)
+        self.dragging = true
+        self:SetScript("OnUpdate", function(btn)
+            local mx, my = GetCursorPosition()
+            local scale = Minimap:GetEffectiveScale()
+            mx = mx / scale
+            my = my / scale
+            local cx, cy = getMinimapCenter()
+            local angle = getCursorAngleDegrees(cx, cy, mx, my)
+            ns.State:GetProfile().minimapAngle = angle
+            updateMinimapButtonPosition(btn)
+        end)
+    end)
+
+    button:SetScript("OnDragStop", function(self)
+        self.dragging = nil
+        self:SetScript("OnUpdate", nil)
+    end)
+
+    self.minimapButton = button
+    updateMinimapButtonPosition(button)
+    button:SetShown(ns.State:GetProfile().showMinimapButton)
 end
 
 function ns.UI:EnsureRows(count)
@@ -149,6 +250,7 @@ function ns.UI:Refresh(candidates, context)
     end
 
     local profile = ns.State:GetProfile()
+    self:EnsureMinimapButton()
     local count = math.max(1, #candidates)
     self:EnsureRows(count)
 
@@ -165,6 +267,7 @@ function ns.UI:Refresh(candidates, context)
     local detailHeight = details and 212 or 0
     local height = 22 + (count * (profile.rowHeight + 3)) + detailHeight + 12
     self.frame:SetScale(profile.scale)
+    self.frame:SetAlpha(profile.opacity or 1)
     self.frame:SetWidth(profile.width)
     self.frame:SetHeight(height)
     self.frame.dragText:SetShown(not profile.locked)
@@ -189,7 +292,11 @@ function ns.UI:Refresh(candidates, context)
         self.frame.detail:Hide()
     end
 
-    self.frame:SetShown(#candidates > 0 or not profile.locked)
+    local shouldShow = (#candidates > 0 or not profile.locked)
+    if profile.hideInCombat and InCombatLockdown and InCombatLockdown() then
+        shouldShow = false
+    end
+    self.frame:SetShown(shouldShow)
 end
 
 function ns.UI:ToggleDetails(candidate)
@@ -262,33 +369,42 @@ function ns.UI:UpdateDetails(details, count, profile)
     detail.source:SetText(sourceText or "")
     detail.contentMeta:SetText(contentMetaText or "")
 
+    local showQuartermasters = profile.showQuartermasters ~= false
+    local showActivities = profile.showActivities ~= false
+    local quartermasters = showQuartermasters and (details.quartermasters or {}) or {}
+    local activities = showActivities and (details.activities or {}) or {}
+
     local bodyLines = {
         details.summary or details.description or "Keine Beschreibung verfügbar.",
-        " ",
-        "Rüstmeister",
     }
 
-    if #(details.quartermasters or {}) == 0 then
-        bodyLines[#bodyLines + 1] = "Noch kein Datensatz."
+    if showQuartermasters then
+        bodyLines[#bodyLines + 1] = " "
+        bodyLines[#bodyLines + 1] = "Rüstmeister"
+        if #quartermasters == 0 then
+            bodyLines[#bodyLines + 1] = "Noch kein Datensatz."
+        end
     end
 
-    bodyLines[#bodyLines + 1] = " "
-    bodyLines[#bodyLines + 1] = "Daily/Weekly"
-    if #(details.activities or {}) == 0 then
-        bodyLines[#bodyLines + 1] = "Noch kein Datensatz."
+    if showActivities then
+        bodyLines[#bodyLines + 1] = " "
+        bodyLines[#bodyLines + 1] = "Daily/Weekly"
+        if #activities == 0 then
+            bodyLines[#bodyLines + 1] = "Noch kein Datensatz."
+        end
     end
 
     detail.body:SetText(table.concat(bodyLines, "\n"))
 
     local entries = {}
-    for _, quartermaster in ipairs(details.quartermasters or {}) do
+    for _, quartermaster in ipairs(quartermasters) do
         entries[#entries + 1] = {
             label = quartermaster.name or "Rüstmeister",
             meta = quartermaster.label or "Rüstmeister",
             location = quartermaster.location,
         }
     end
-    for _, activity in ipairs(details.activities or {}) do
+    for _, activity in ipairs(activities) do
         entries[#entries + 1] = {
             label = activity.title or activity.name or "Aktivität",
             meta = activity.kind or "Aktivität",

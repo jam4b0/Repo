@@ -7,6 +7,8 @@ local runtimeEvents = {
     "ZONE_CHANGED_NEW_AREA",
     "UPDATE_FACTION",
     "CHAT_MSG_COMBAT_FACTION_CHANGE",
+    "PLAYER_REGEN_DISABLED",
+    "PLAYER_REGEN_ENABLED",
 }
 
 function ns.Events:Init()
