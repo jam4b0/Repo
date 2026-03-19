@@ -58,6 +58,7 @@ end
 function ns.Debug:DumpState()
     local snapshot = ns.State:GetSnapshot()
     printLine("Context: " .. Utils:Stringify(snapshot.context))
+    printLine("Coverage: " .. Utils:Stringify(snapshot.coverage))
     printLine("RawFactions: " .. tostring(snapshot.rawFactions and #snapshot.rawFactions.list or 0))
     printLine("Matches: " .. self:SummarizeCandidates(snapshot.matches))
     printLine("Prioritized: " .. self:SummarizeCandidates(snapshot.prioritized))
@@ -121,6 +122,7 @@ function ns.Debug:BuildCaptureSnapshot()
             instanceDifficultyID = context.instanceDifficultyID,
             isInInstance = context.isInInstance,
         },
+        coverage = snapshot.coverage,
         api = ns.Compat:GetAPISummary(),
         factions = rawFactions,
         matches = snapshot.matches or {},
@@ -179,7 +181,7 @@ function ns.Debug:CreateWindow()
     end
 
     local frame = CreateFrame("Frame", "RepuDebugWindow", UIParent, BackdropTemplateMixin and "BackdropTemplate")
-    frame:SetSize(640, 250)
+    frame:SetSize(640, 282)
     frame:SetPoint("TOP", UIParent, "TOP", 0, -120)
     frame:SetMovable(true)
     frame:EnableMouse(true)
@@ -211,13 +213,13 @@ function ns.Debug:CreateWindow()
     frame.text = frame:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
     frame.text:SetPoint("TOPLEFT", frame, "TOPLEFT", 10, -28)
     frame.text:SetPoint("RIGHT", frame, "RIGHT", -10, 0)
-    frame.text:SetHeight(96)
+    frame.text:SetHeight(110)
     frame.text:SetJustifyH("LEFT")
     frame.text:SetJustifyV("TOP")
 
     frame.buttonRow = CreateFrame("Frame", nil, frame)
     frame.buttonRow:SetPoint("BOTTOMLEFT", frame, "BOTTOMLEFT", 10, 12)
-    frame.buttonRow:SetSize(620, 110)
+    frame.buttonRow:SetSize(620, 142)
 
     frame.enableButton = createButton(frame.buttonRow, "Capture On", 90, function()
         local debugDB = ns.State:GetDebugDB()
@@ -290,6 +292,21 @@ function ns.Debug:CreateWindow()
     end)
     placeButton(frame.mapScanClearButton, frame.buttonRow, 274, -64)
 
+    frame.locationButton = createButton(frame.buttonRow, "Location", 90, function()
+        ns.Debug:DumpLocation()
+    end)
+    placeButton(frame.locationButton, frame.buttonRow, 0, -96)
+
+    frame.unmappedButton = createButton(frame.buttonRow, "Unmapped", 90, function()
+        ns.Debug:DumpUnmapped()
+    end)
+    placeButton(frame.unmappedButton, frame.buttonRow, 98, -96)
+
+    frame.apiButton = createButton(frame.buttonRow, "API", 72, function()
+        ns.Debug:DumpAPI()
+    end)
+    placeButton(frame.apiButton, frame.buttonRow, 196, -96)
+
     self.window = frame
     self:RefreshWindow()
 end
@@ -346,6 +363,7 @@ end
 
 function ns.Debug:DumpLocation()
     local context = ns.State.runtime.context or ns.Location:BuildContext()
+    local coverage = ns.State.runtime.coverage or ns.Data:GetCoverage(context)
     printLine("Flavor: " .. tostring(context.activeFlavor))
     printLine("Zone: " .. tostring(context.zoneName))
     printLine("SubZone: " .. tostring(context.subZoneName))
@@ -355,20 +373,24 @@ function ns.Debug:DumpLocation()
     printLine("InstanceMapID: " .. tostring(context.instanceMapID))
     printLine("Difficulty: " .. tostring(context.instanceDifficultyID))
     printLine("WatchedFactionID: " .. tostring(context.watchedFactionID))
+    printLine("Coverage: " .. Utils:Stringify(coverage))
     printLine("MapChain: " .. Utils:Stringify(context.mapChain))
 end
 
 function ns.Debug:DumpUnmapped()
     local context = ns.State.runtime.context or ns.Location:BuildContext()
-    local zoneMatches = ns.Data:FindMatchesByMapID("zone", context.mapID)
-    local subZoneMatches = ns.Data:FindMatchesByMapID("subZone", context.mapID)
+    local coverage = ns.State.runtime.coverage or ns.Data:GetCoverage(context)
     printLine("Unmapped zone probe")
     printLine("ZoneKey=" .. tostring(context.zoneKey))
     printLine("SubZoneKey=" .. tostring(context.subZoneKey))
     printLine("MapID=" .. tostring(context.mapID))
     printLine("InstanceMapID=" .. tostring(context.instanceMapID))
-    printLine("ZoneMapMatches=" .. tostring(#zoneMatches))
-    printLine("SubZoneMapMatches=" .. tostring(#subZoneMatches))
+    printLine("ZoneHasRecord=" .. tostring(coverage.zoneHasRecord))
+    printLine("ZoneHasMapping=" .. tostring(coverage.zoneHasMapping))
+    printLine("ZoneFromClientSeed=" .. tostring(coverage.zoneFromClientSeed))
+    printLine("SubZoneHasRecord=" .. tostring(coverage.subZoneHasRecord))
+    printLine("SubZoneHasMapping=" .. tostring(coverage.subZoneHasMapping))
+    printLine("SubZoneFromClientSeed=" .. tostring(coverage.subZoneFromClientSeed))
     printLine("MapChain=" .. Utils:Stringify(context.mapChain))
 end
 
