@@ -837,9 +837,10 @@ function ns.Factions:SelectVisible(prioritized, context)
 
     local allowFallback = true
     if context and context.mapID then
-        local hasZoneMapping = #ns.Data:FindMatchesByMapID("zone", context.mapID) > 0
-        local hasSubZoneMapping = #ns.Data:FindSubZoneMatches(context.mapID, context.subZoneName) > 0
-        allowFallback = not (hasZoneMapping or hasSubZoneMapping)
+        local coverage = ns.Data:GetCoverage(context)
+        local hasZoneMapping = coverage.zoneHasMapping
+        local hasSubZoneMapping = coverage.subZoneHasMapping
+        allowFallback = not (hasZoneMapping or hasSubZoneMapping or coverage.zoneNoLocalReputation or coverage.subZoneNoLocalReputation)
     end
 
     if #visible == 0 and allowFallback then

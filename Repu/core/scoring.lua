@@ -127,8 +127,17 @@ function ns.Scoring:Prioritize(matches, rawFactions, context, options)
     end
 
     if #prioritized == 0 then
-        local fallbackFaction = watchedFactionID and rawFactions.byID[watchedFactionID] or nil
-        if not fallbackFaction and context and context.isInInstance and lastRelevantFactionID then
+        local coverage = context and ns.Data:GetCoverage(context) or nil
+        local allowFallback = true
+        if coverage and (coverage.zoneNoLocalReputation or coverage.subZoneNoLocalReputation) then
+            allowFallback = false
+        end
+
+        local fallbackFaction = nil
+        if allowFallback then
+            fallbackFaction = watchedFactionID and rawFactions.byID[watchedFactionID] or nil
+        end
+        if allowFallback and not fallbackFaction and context and context.isInInstance and lastRelevantFactionID then
             fallbackFaction = rawFactions.byID[lastRelevantFactionID]
         end
 

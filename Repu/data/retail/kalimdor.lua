@@ -221,6 +221,14 @@ ns.Data:RegisterRetailModule({
                 factionIDs = { 609 },
                 weight = 234,
             },
+            [70] = {
+                name = "Düstermarschen",
+                source = "seed",
+                confidence = "medium",
+                notes = "Retail location is intentionally kept without a local reputation mapping; do not fall back to unrelated factions here.",
+                mapIDs = { 70 },
+                tags = { "zone", "coverage-only", "kalimdor", "no-local-reputation" },
+            },
             [76] = {
                 name = "Azshara",
                 source = "seed",

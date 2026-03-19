@@ -429,6 +429,8 @@ function ns.Data:GetCoverage(context)
         subZoneHasMapping = #filteredSubZoneMatches > 0,
         zoneFromClientSeed = hasTag(zoneRecord, "generated") or (zoneRecord and zoneRecord.source == "client_seed") or false,
         subZoneFromClientSeed = hasTag(subZoneRecord, "generated") or (subZoneRecord and subZoneRecord.source == "client_seed") or false,
+        zoneNoLocalReputation = hasTag(zoneRecord, "no-local-reputation"),
+        subZoneNoLocalReputation = hasTag(subZoneRecord, "no-local-reputation"),
     }
 end
 
