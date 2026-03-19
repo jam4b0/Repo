@@ -13,7 +13,8 @@
   },
   "gapClassCounts": {
     "candidate_legacy_or_side_rep": 89,
-    "candidate_modern_side_system": 7,
+    "excluded_global_system": 2,
+    "excluded_micro_side_rep": 5,
     "ignore_header": 19,
     "ignore_placeholder": 2,
     "optional_pvp_brawler": 16,
@@ -918,57 +919,7 @@
       "isRenown": false,
       "sourceFiles": [],
       "exampleLocations": [],
-      "gapClass": "candidate_modern_side_system"
-    },
-    {
-      "factionID": 2669,
-      "name": "Darkfuse Solutions",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_modern_side_system"
-    },
-    {
-      "factionID": 2664,
-      "name": "Flynn Fairwind",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_modern_side_system"
-    },
-    {
-      "factionID": 2665,
-      "name": "Lillistrasza",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_modern_side_system"
-    },
-    {
-      "factionID": 2663,
-      "name": "Meerah",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_modern_side_system"
-    },
-    {
-      "factionID": 2666,
-      "name": "Roasts and Boasts",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_modern_side_system"
+      "gapClass": "excluded_global_system"
     },
     {
       "factionID": 2163,
@@ -978,7 +929,57 @@
       "isRenown": false,
       "sourceFiles": [],
       "exampleLocations": [],
-      "gapClass": "candidate_modern_side_system"
+      "gapClass": "excluded_global_system"
+    },
+    {
+      "factionID": 2669,
+      "name": "Darkfuse Solutions",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "excluded_micro_side_rep"
+    },
+    {
+      "factionID": 2664,
+      "name": "Flynn Fairwind",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "excluded_micro_side_rep"
+    },
+    {
+      "factionID": 2665,
+      "name": "Lillistrasza",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "excluded_micro_side_rep"
+    },
+    {
+      "factionID": 2663,
+      "name": "Meerah",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "excluded_micro_side_rep"
+    },
+    {
+      "factionID": 2666,
+      "name": "Roasts and Boasts",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "excluded_micro_side_rep"
     },
     {
       "factionID": 469,

@@ -11,7 +11,7 @@
     "blizzardMissingInCoreCount": 154,
     "contentOnlyCount": 11
   },
-  "gapClass": "candidate_micro_side_rep",
+  "gapClass": "excluded_micro_side_rep",
   "count": 5,
   "rows": [
     {
@@ -22,7 +22,7 @@
       "isRenown": false,
       "sourceFiles": [],
       "exampleLocations": [],
-      "gapClass": "candidate_micro_side_rep"
+      "gapClass": "excluded_micro_side_rep"
     },
     {
       "factionID": 2664,
@@ -32,7 +32,7 @@
       "isRenown": false,
       "sourceFiles": [],
       "exampleLocations": [],
-      "gapClass": "candidate_micro_side_rep"
+      "gapClass": "excluded_micro_side_rep"
     },
     {
       "factionID": 2665,
@@ -42,7 +42,7 @@
       "isRenown": false,
       "sourceFiles": [],
       "exampleLocations": [],
-      "gapClass": "candidate_micro_side_rep"
+      "gapClass": "excluded_micro_side_rep"
     },
     {
       "factionID": 2663,
@@ -52,7 +52,7 @@
       "isRenown": false,
       "sourceFiles": [],
       "exampleLocations": [],
-      "gapClass": "candidate_micro_side_rep"
+      "gapClass": "excluded_micro_side_rep"
     },
     {
       "factionID": 2666,
@@ -62,7 +62,7 @@
       "isRenown": false,
       "sourceFiles": [],
       "exampleLocations": [],
-      "gapClass": "candidate_micro_side_rep"
+      "gapClass": "excluded_micro_side_rep"
     }
   ]
 }

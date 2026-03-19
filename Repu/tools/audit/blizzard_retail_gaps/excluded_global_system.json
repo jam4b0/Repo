@@ -11,7 +11,7 @@
     "blizzardMissingInCoreCount": 154,
     "contentOnlyCount": 11
   },
-  "gapClass": "candidate_global_system",
+  "gapClass": "excluded_global_system",
   "count": 2,
   "rows": [
     {
@@ -22,7 +22,7 @@
       "isRenown": false,
       "sourceFiles": [],
       "exampleLocations": [],
-      "gapClass": "candidate_global_system"
+      "gapClass": "excluded_global_system"
     },
     {
       "factionID": 2163,
@@ -32,7 +32,7 @@
       "isRenown": false,
       "sourceFiles": [],
       "exampleLocations": [],
-      "gapClass": "candidate_global_system"
+      "gapClass": "excluded_global_system"
     }
   ]
 }

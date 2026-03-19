@@ -116,6 +116,17 @@ Das bedeutet:
 - offene Retail-Restfaelle sind nicht mehr als ungeklaerte Backlog-Kandidaten vorhanden
 - verbleibende Arbeit liegt jetzt eher in zusaetzlichen Inhaltsdaten fuer `Repu_Data` oder in spaeteren bewussten Mapping-Erweiterungen, nicht mehr im Grundunterbau
 
+Der Blizzard-Retail-Audit trennt den Restbestand bewusst in Klassen:
+
+- `excluded_global_system`: globale Systeme wie `Champions of Azeroth` oder `Tortollan Seekers`, die nicht als lokale Ortsfraktionen ins Zonenmodell gedrueckt werden
+- `excluded_micro_side_rep`: kleine NPC-/Micro-Rufe wie `Darkfuse Solutions` oder `Roasts and Boasts`, die ebenfalls nicht als normale Ortsfraktionen gelten
+- `candidate_legacy_or_side_rep`: der verbleibende langsame Legacy-/Sonderblock
+
+Wichtig:
+
+- `Repu` betrachtet globale Systeme und Micro-Reps nicht als fehlende normale Ortsfraktionen.
+- Sie bleiben bewusst ausserhalb des lokalen Zonenmodells, bis es einen wirklich belastbaren Spezialpfad dafuer gibt.
+
 ## Naechster Ausbau
 
 1. Datenmodule fraktions- und instanzvollstaendig fuellen
