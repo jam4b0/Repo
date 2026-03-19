@@ -437,37 +437,47 @@ end
 
 function ns.Compat:CollectFactionRows()
     if self:HasRetailReputationAPI() then
-        local collapsedHeaders = {}
-        local rows = {}
-        local numFactions = self:GetFactionCount()
+        self.collectingFactionRows = true
+        local ok, rows = xpcall(function()
+            local collapsedHeaders = {}
+            local collectedRows = {}
+            local numFactions = self:GetFactionCount()
 
-        for index = numFactions, 1, -1 do
-            local data = C_Reputation.GetFactionDataByIndex(index)
-            if data and data.isHeader and data.isCollapsed then
-                local key = data.factionID or data.name or index
-                collapsedHeaders[key] = true
-                self:ExpandHeader(index)
-            end
-        end
-
-        numFactions = self:GetFactionCount()
-
-        for index = 1, numFactions do
-            local data = C_Reputation.GetFactionDataByIndex(index)
-            local row = normalizeRetailFactionData(index, data)
-            if row then
-                rows[#rows + 1] = row
-            end
-        end
-
-        for index = self:GetFactionCount(), 1, -1 do
-            local data = C_Reputation.GetFactionDataByIndex(index)
-            if data and data.isHeader and not data.isCollapsed then
-                local key = data.factionID or data.name or index
-                if collapsedHeaders[key] then
-                    self:CollapseHeader(index)
+            for index = numFactions, 1, -1 do
+                local data = C_Reputation.GetFactionDataByIndex(index)
+                if data and data.isHeader and data.isCollapsed then
+                    local key = data.factionID or data.name or index
+                    collapsedHeaders[key] = true
+                    self:ExpandHeader(index)
                 end
             end
+
+            numFactions = self:GetFactionCount()
+
+            for index = 1, numFactions do
+                local data = C_Reputation.GetFactionDataByIndex(index)
+                local row = normalizeRetailFactionData(index, data)
+                if row then
+                    collectedRows[#collectedRows + 1] = row
+                end
+            end
+
+            for index = self:GetFactionCount(), 1, -1 do
+                local data = C_Reputation.GetFactionDataByIndex(index)
+                if data and data.isHeader and not data.isCollapsed then
+                    local key = data.factionID or data.name or index
+                    if collapsedHeaders[key] then
+                        self:CollapseHeader(index)
+                    end
+                end
+            end
+
+            return collectedRows
+        end, geterrorhandler())
+
+        self.collectingFactionRows = false
+        if ok then
+            return rows
         end
 
         return rows
@@ -522,6 +532,10 @@ function ns.Compat:CollectFactionRows()
     end
 
     return rows
+end
+
+function ns.Compat:IsCollectingFactionRows()
+    return self.collectingFactionRows and true or false
 end
 
 function ns.Compat:GetStandingLabel(standingID)
