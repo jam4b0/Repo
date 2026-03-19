@@ -113,7 +113,7 @@ function ns.UI:Init()
 
     frame.title = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
     frame.title:SetPoint("LEFT", frame.titleIcon, "RIGHT", 6, 0)
-    frame.title:SetText("Repu")
+    frame.title:SetText("")
     frame.title:SetTextColor(unpack(Styles.text))
 
     frame.dragIcon = frame:CreateTexture(nil, "OVERLAY")
@@ -316,11 +316,11 @@ function ns.UI:Refresh(candidates, context)
     self.frame:SetHeight(height)
     self.frame.dragIcon:SetShown(not profile.locked)
 
-    local title = "Repu"
+    local title = ""
     if context and context.instanceName and context.instanceType and context.instanceType ~= "none" then
-        title = string.format("Repu  %s", context.instanceName)
+        title = context.instanceName
     elseif context and context.zoneName then
-        title = string.format("Repu  %s", context.zoneName)
+        title = context.zoneName
     end
     self.frame.title:SetText(title)
 
