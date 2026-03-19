@@ -112,6 +112,15 @@ ns.Data:RegisterRetailModule({
                 zoneKeys = { "dunkelküste" },
                 tags = { "zone", "coverage-only", "kalimdor", "variant-separated" },
             },
+            ["die dunkelküste"] = {
+                name = "Die Dunkelküste",
+                source = "seed",
+                confidence = "medium",
+                notes = "Darkshore warfront/world-state variant on the base zone map; kept separate until a correct phase-specific faction mapping is defined.",
+                mapIDs = { 62 },
+                zoneKeys = { "die dunkelküste" },
+                tags = { "zone", "coverage-only", "kalimdor", "variant-separated", "world-phasing-variant" },
+            },
             [81] = {
                 name = "Silithus",
                 source = "seed",
