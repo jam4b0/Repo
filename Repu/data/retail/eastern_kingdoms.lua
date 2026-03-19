@@ -64,13 +64,33 @@ ns.Data:RegisterRetailModule({
                 name = "Leerensturm",
                 source = "observed",
                 confidence = "medium",
-                notes = "Observed faction cluster for the Quel'Thalas void zone.",
+                notes = "Observed localized Midnight zone for the void campaign branch.",
                 mapIDs = { 2405 },
                 tags = { "zone", "local" },
                 factions = {
-                    { name = "Amanistamm", weight = 240 },
-                    { name = "Die Singularität", weight = 235 },
-                    { name = "Hara'ti", weight = 235 },
+                    { factionID = 2699, name = "Die Singularität", weight = 245 },
+                },
+            },
+            [2413] = {
+                name = "Harandar",
+                source = "seed",
+                confidence = "medium",
+                notes = "Localized Midnight zone for the Hara'ti branch.",
+                mapIDs = { 2413 },
+                tags = { "zone", "local" },
+                factions = {
+                    { factionID = 2704, name = "Hara'ti", weight = 245 },
+                },
+            },
+            [2437] = {
+                name = "Zul'Aman",
+                source = "seed",
+                confidence = "medium",
+                notes = "Localized Midnight zone for the Amani branch.",
+                mapIDs = { 2437 },
+                tags = { "zone", "local" },
+                factions = {
+                    { factionID = 2696, name = "Amanistamm", weight = 248 },
                 },
             },
             [56] = {
@@ -897,7 +917,31 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 2405 },
                 tags = { "primary", "local" },
                 factions = {
-                    { name = "Amanistamm", weight = 245 },
+                    { factionID = 2699, name = "Die Singularität", weight = 250 },
+                },
+            },
+            ["2413:harandar"] = {
+                name = "Harandar",
+                parentMapID = 2413,
+                source = "seed",
+                confidence = "medium",
+                notes = "Localized Midnight subzone anchor for the Hara'ti branch.",
+                mapIDs = { 2413 },
+                tags = { "primary", "local" },
+                factions = {
+                    { factionID = 2704, name = "Hara'ti", weight = 250 },
+                },
+            },
+            ["2437:zul'aman"] = {
+                name = "Zul'Aman",
+                parentMapID = 2437,
+                source = "seed",
+                confidence = "medium",
+                notes = "Localized Midnight subzone anchor for the Amani branch.",
+                mapIDs = { 2437 },
+                tags = { "primary", "local" },
+                factions = {
+                    { factionID = 2696, name = "Amanistamm", weight = 252 },
                 },
             },
             ["2393:wanderers ruh'"] = {
