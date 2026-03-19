@@ -7,4 +7,8 @@
 
 content\shared.lua
 content\retail\quelthalas.lua
+content\retail\current.lua
+content\retail\homelands.lua
+content\retail\outland.lua
+content\retail\summary_seed_generated.lua
 content\retail.lua
