@@ -74,6 +74,7 @@ Der aktuelle Stand:
 - `tools/generate_instance_variant_coverage.py` uebernimmt Instanz-/Raid-Dublettenfamilien als Coverage-Schicht
 - `tools/generate_mixed_world_subzone_variants.py` uebernimmt explizit freigegebene weltbezogene Subzonen aus gemischten Dublettenfamilien
 - `tools/generate_special_subzone_keepcases.py` schliesst die letzten bewusst behaltenen Retail-Spezialsubzonen explizit
+- `tools/generate_excluded_retail_candidates.py` markiert bewusst ausgeschlossene Event-/Technikreste, damit sie nicht weiter als offene Arbeitskandidaten auftauchen
 - `tools/generate_remaining_zone_wave.py` erzeugt aus `normal_zones` des Restreports eine zweite autonome Coverage-Welle
 - `tools/generate_final_zone_cleanup.py` erzeugt aus den letzten verbleibenden Zonen nur explizite Keep-Cases fuer die Abschlusswelle
 - `tools/generate_variant_zone_coverage.py` behandelt die verbleibenden Dubletten-/Variantenzonen als explizite Keep-/Exclude-Liste

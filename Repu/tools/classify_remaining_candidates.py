@@ -22,6 +22,11 @@ def parse_args() -> argparse.Namespace:
         default="/tmp/repu_remaining_candidates.json",
         help="Where to write the classification report.",
     )
+    parser.add_argument(
+        "--exclude-manifest",
+        default="/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/tools/excluded_retail_candidates.json",
+        help="Optional exclusion manifest for already-reviewed non-actionable candidates.",
+    )
     return parser.parse_args()
 
 
@@ -117,6 +122,12 @@ def load_priority(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def load_excluded(path: Path) -> dict:
+    if not path.exists():
+        return {"zones": [], "subZones": []}
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
 def curated_zone_ids() -> set[int]:
     from compare_map_seed import load_curated_retail  # type: ignore
 
@@ -171,10 +182,12 @@ def classify(row: dict) -> str:
     return "other"
 
 
-def build_report(priority: dict) -> dict:
+def build_report(priority: dict, excluded: dict) -> dict:
     buckets: dict[str, list[dict]] = defaultdict(list)
     zone_ids_curated = curated_zone_ids()
     subzone_ids_curated = curated_subzone_ids()
+    zone_ids_excluded = {int(value) for value in excluded.get("zones", [])}
+    subzone_ids_excluded = {int(value) for value in excluded.get("subZones", [])}
 
     for group in priority["groups"]:
         for kind in ("zones", "subZones"):
@@ -182,6 +195,10 @@ def build_report(priority: dict) -> dict:
                 if kind == "zones" and int(row["mapID"]) in zone_ids_curated:
                     continue
                 if kind == "subZones" and int(row["mapID"]) in subzone_ids_curated:
+                    continue
+                if kind == "zones" and int(row["mapID"]) in zone_ids_excluded:
+                    continue
+                if kind == "subZones" and int(row["mapID"]) in subzone_ids_excluded:
                     continue
                 bucket = classify(row)
                 buckets[bucket].append(
@@ -224,7 +241,8 @@ def build_report(priority: dict) -> dict:
 def main() -> int:
     args = parse_args()
     priority = load_priority(Path(args.priority))
-    report = build_report(priority)
+    excluded = load_excluded(Path(args.exclude_manifest))
+    report = build_report(priority, excluded)
     Path(args.out).write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     print("Remaining candidate classes:")

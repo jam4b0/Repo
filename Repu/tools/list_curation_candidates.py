@@ -21,10 +21,21 @@ def parse_args() -> argparse.Namespace:
         default="",
         help="Optional path to persist a JSON report.",
     )
+    parser.add_argument(
+        "--exclude-manifest",
+        default="/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/tools/excluded_retail_candidates.json",
+        help="Optional exclusion manifest for already-reviewed non-actionable candidates.",
+    )
     return parser.parse_args()
 
 
 def load_seed(path: Path) -> dict:
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def load_excluded(path: Path) -> dict:
+    if not path.exists():
+        return {"zones": [], "subZones": []}
     return json.loads(path.read_text(encoding="utf-8"))
 
 
@@ -54,13 +65,18 @@ def curated_subzone_ids() -> set[int]:
 def main() -> int:
     args = parse_args()
     seed = load_seed(Path(args.seed))
+    excluded = load_excluded(Path(args.exclude_manifest))
     zone_ids_curated = curated_zone_ids()
     subzone_ids_curated = curated_subzone_ids()
+    zone_ids_excluded = {int(value) for value in excluded.get("zones", [])}
+    subzone_ids_excluded = {int(value) for value in excluded.get("subZones", [])}
 
     zone_candidates = []
     for raw_map_id, entry in seed["locations"]["zones"].items():
         map_id = int(raw_map_id)
         if map_id in zone_ids_curated:
+            continue
+        if map_id in zone_ids_excluded:
             continue
         zone_candidates.append(
             {
@@ -74,6 +90,8 @@ def main() -> int:
     for raw_key, entry in seed["locations"]["subZones"].items():
         map_id = int(raw_key.split(":", 1)[0])
         if map_id in subzone_ids_curated:
+            continue
+        if map_id in subzone_ids_excluded:
             continue
         subzone_candidates.append(
             {
