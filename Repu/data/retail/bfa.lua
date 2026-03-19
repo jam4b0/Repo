@@ -217,7 +217,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 1355 },
                 tags = { "primary", "hub", "local", "bfa" },
                 factions = {
-                    { factionID = 2373, weight = 262 },
+                    { factionID = 2373, factionGroups = { "Alliance" }, weight = 262 },
                 },
             },
             ["1355:mezzamere"] = {
@@ -229,7 +229,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 1355 },
                 tags = { "hub", "local", "bfa" },
                 factions = {
-                    { factionID = 2373, weight = 260 },
+                    { factionID = 2373, factionGroups = { "Alliance" }, weight = 260 },
                 },
             },
             ["1355:neueheim"] = {
@@ -241,7 +241,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 1355 },
                 tags = { "primary", "hub", "local", "bfa" },
                 factions = {
-                    { factionID = 2370, weight = 262 },
+                    { factionID = 2370, factionGroups = { "Horde" }, weight = 262 },
                 },
             },
             ["1462:rostbolzen"] = {
