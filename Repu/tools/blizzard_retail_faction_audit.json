@@ -4,12 +4,12 @@
     "locale": "en_US",
     "blizzardFactionCount": 281,
     "blizzardRootCount": 14,
-    "addonCoreFactionCount": 104,
-    "addonContentFactionCount": 117,
-    "coreCoveredByContentCount": 104,
+    "addonCoreFactionCount": 110,
+    "addonContentFactionCount": 122,
+    "coreCoveredByContentCount": 110,
     "coreMissingContentCount": 0,
-    "blizzardMissingInCoreCount": 178,
-    "contentOnlyCount": 13
+    "blizzardMissingInCoreCount": 172,
+    "contentOnlyCount": 12
   },
   "classificationCounts": {
     "faction_header": 72,
@@ -1326,15 +1326,6 @@
       "exampleLocations": []
     },
     {
-      "factionID": 2564,
-      "name": "Loamm Niffen",
-      "classification": "renown",
-      "isHeader": false,
-      "isRenown": true,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
       "factionID": 2568,
       "name": "Glimmerogg Racer",
       "classification": "leaf",
@@ -1349,15 +1340,6 @@
       "classification": "generic_header",
       "isHeader": true,
       "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2574,
-      "name": "Dream Wardens",
-      "classification": "renown",
-      "isHeader": false,
-      "isRenown": true,
       "sourceFiles": [],
       "exampleLocations": []
     },
@@ -1412,15 +1394,6 @@
       "classification": "leaf",
       "isHeader": false,
       "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2658,
-      "name": "The K'aresh Trust",
-      "classification": "renown",
-      "isHeader": false,
-      "isRenown": true,
       "sourceFiles": [],
       "exampleLocations": []
     },
@@ -1515,24 +1488,6 @@
       "exampleLocations": []
     },
     {
-      "factionID": 2685,
-      "name": "Gallagio Loyalty Rewards Club",
-      "classification": "renown",
-      "isHeader": false,
-      "isRenown": true,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2688,
-      "name": "Flame's Radiance",
-      "classification": "renown",
-      "isHeader": false,
-      "isRenown": true,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
       "factionID": 2698,
       "name": "Midnight",
       "classification": "generic_header",
@@ -1574,15 +1529,6 @@
       "classification": "leaf",
       "isHeader": false,
       "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2736,
-      "name": "Manaforge Vandals",
-      "classification": "renown",
-      "isHeader": false,
-      "isRenown": true,
       "sourceFiles": [],
       "exampleLocations": []
     },
@@ -1685,15 +1631,6 @@
       "classification": "leaf",
       "isHeader": false,
       "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2685,
-      "name": "Gallagio Loyalty Rewards Club",
-      "classification": "renown",
-      "isHeader": false,
-      "isRenown": true,
       "sourceFiles": [],
       "exampleLocations": []
     },

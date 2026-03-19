@@ -27,7 +27,7 @@ ns.Data:RegisterRetailModule({
                 confidence = "high",
                 mapIDs = { 2215 },
                 tags = { "war-within", "zone", "primary", "local" },
-                factionIDs = { 2570 },
+                factionIDs = { 2570, 2688 },
                 weight = 250,
             },
             [2255] = {
@@ -64,8 +64,17 @@ ns.Data:RegisterRetailModule({
                 confidence = "high",
                 mapIDs = { 2346 },
                 tags = { "war-within", "zone", "primary", "local" },
-                factionIDs = { 2653 },
+                factionIDs = { 2653, 2685 },
                 weight = 250,
+            },
+            [2371] = {
+                name = "K'aresh",
+                source = "seed",
+                confidence = "high",
+                mapIDs = { 2371 },
+                tags = { "war-within", "zone", "primary", "local" },
+                factionIDs = { 2658, 2736 },
+                weight = 248,
             },
         },
         subZones = {
@@ -87,6 +96,7 @@ ns.Data:RegisterRetailModule({
                 tags = { "war-within", "local" },
                 factions = {
                     { factionID = 2570, weight = 230 },
+                    { factionID = 2688, weight = 208 },
                 },
             },
             ["2248:dornogal"] = {
@@ -127,6 +137,7 @@ ns.Data:RegisterRetailModule({
                 tags = { "war-within", "hub", "local" },
                 factions = {
                     { factionID = 2653, weight = 235 },
+                    { factionID = 2685, weight = 212 },
                 },
             },
         },

@@ -70,7 +70,7 @@ ns.Data:RegisterRetailModule({
                 notes = "Dragonflight patch zone cluster",
                 mapIDs = { 2133 },
                 tags = { "zone", "local", "dragonflight" },
-                factionIDs = { 2510 },
+                factionIDs = { 2564 },
                 weight = 245,
             },
             [2151] = {
@@ -80,7 +80,7 @@ ns.Data:RegisterRetailModule({
                 notes = "Dragonflight patch zone cluster",
                 mapIDs = { 2151 },
                 tags = { "zone", "local", "dragonflight" },
-                factionIDs = { 2507 },
+                factionIDs = { 2574 },
                 weight = 245,
             },
             [2200] = {
@@ -174,7 +174,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 2133 },
                 tags = { "primary", "hub", "local", "dragonflight" },
                 factions = {
-                    { factionID = 2510, weight = 260 },
+                    { factionID = 2564, weight = 260 },
                 },
             },
             ["2024:ismara schimmergrimm"] = {
@@ -198,7 +198,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 2151 },
                 tags = { "hub", "local", "dragonflight" },
                 factions = {
-                    { factionID = 2507, weight = 252 },
+                    { factionID = 2574, weight = 252 },
                 },
             },
             ["2025:valdrakken"] = {

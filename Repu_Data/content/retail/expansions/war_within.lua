@@ -257,5 +257,58 @@ api.RegisterRetailContentModule({
                 },
             },
         },
+        [2688] = {
+            summary = "Flame's Radiance ist die einsatzbezogene Ruhmfraktion für die Verteidigung Heilsturzs. Sie ergänzt den normalen Zonenruf und bündelt die militärisch geprägten Hallowfall-Aktivitäten.",
+            source = "curated",
+            confidence = "medium",
+            quartermasters = {
+                {
+                    name = "Raen Dawncavalyr",
+                    label = "Quartermaster",
+                    location = MERELDAR_VENDOR,
+                },
+            },
+            activities = {
+                {
+                    title = "Hallowfall defense activities",
+                    kind = "Zone/Event",
+                    location = { mapID = 2215, title = "Hallowfall" },
+                },
+                {
+                    title = "Mereldar call to arms",
+                    kind = "Recurring",
+                    location = MERELDAR_VENDOR,
+                },
+            },
+        },
+        [2658] = {
+            summary = "The K'aresh Trust ist die große Ruhmfraktion von K'aresh. Der Fortschritt bündelt die Hauptaktivitäten rund um die Rettung und Stabilisierung des zerstörten Sterns.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                {
+                    title = "K'aresh campaign",
+                    kind = "Story",
+                    location = { mapID = 2371, title = "K'aresh" },
+                },
+                {
+                    title = "K'aresh world content",
+                    kind = "Zone",
+                    location = { mapID = 2371, title = "K'aresh" },
+                },
+            },
+        },
+        [2736] = {
+            summary = "Manaforge Vandals ist der verdeckte Operationszweig innerhalb des K'aresh-Blocks. Wenn dieser Ruf aktiv ist, bündelt er die offensiveren, sabotageorientierten Aufgaben gegen Salhadaar.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                {
+                    title = "Manaforge sabotage operations",
+                    kind = "Recurring",
+                    location = { mapID = 2371, title = "K'aresh" },
+                },
+            },
+        },
     },
 })

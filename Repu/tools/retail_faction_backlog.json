@@ -1,8 +1,8 @@
 {
   "meta": {
-    "recordCount": 1010,
+    "recordCount": 1011,
     "statusCounts": {
-      "mapped": 771,
+      "mapped": 772,
       "generated_secondary": 187,
       "variant_only": 46,
       "no_local_reputation": 6
@@ -16,7 +16,7 @@
       "subZones:no_local_reputation": 2,
       "subZones:variant_only": 30,
       "zones:generated_secondary": 74,
-      "zones:mapped": 318,
+      "zones:mapped": 319,
       "zones:no_local_reputation": 4,
       "zones:variant_only": 16
     }

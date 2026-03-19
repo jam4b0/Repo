@@ -31,6 +31,11 @@ local KNOWN_RETAIL_PARENT_FACTIONS = {
             [2685] = { name = "Garbagio Treueclub" },
         },
     },
+    [2658] = {
+        children = {
+            [2736] = { name = "Manaforge Vandals" },
+        },
+    },
 }
 local KNOWN_VIRTUAL_PARENT_FACTIONS = {
     [9000111] = {
@@ -58,6 +63,7 @@ local KNOWN_RETAIL_CHILD_TO_PARENT = {
     [2673] = 2653,
     [2671] = 2653,
     [2685] = 2653,
+    [2736] = 2658,
 }
 local GENERIC_HEADER_KEYS = {
     ["classic"] = true,

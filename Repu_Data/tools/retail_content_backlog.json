@@ -1,8 +1,8 @@
 {
   "meta": {
-    "coreFactionCount": 104,
-    "contentFactionCount": 117,
-    "coveredCount": 104,
+    "coreFactionCount": 110,
+    "contentFactionCount": 122,
+    "coveredCount": 110,
     "missingCount": 0
   },
   "covered": [
@@ -2064,12 +2064,12 @@
           "file": "dragonflight.lua"
         },
         {
-          "name": "Smaragdgrüner Traum",
+          "name": "Der Verbotene Rand",
           "section": "zones",
           "file": "dragonflight.lua"
         },
         {
-          "name": "Der Verbotene Rand",
+          "name": "Der Vergessene Küstenstrich",
           "section": "zones",
           "file": "dragonflight.lua"
         }
@@ -2092,17 +2092,17 @@
           "file": "dragonflight.lua"
         },
         {
-          "name": "Zaralekhöhle",
-          "section": "zones",
-          "file": "dragonflight.lua"
-        },
-        {
           "name": "Sitz der Aspekte",
           "section": "subZones",
           "file": "dragonflight.lua"
         },
         {
           "name": "Tyrhold",
+          "section": "subZones",
+          "file": "dragonflight.lua"
+        },
+        {
+          "name": "Valdrakken",
           "section": "subZones",
           "file": "dragonflight.lua"
         }
@@ -2145,6 +2145,24 @@
       ]
     },
     {
+      "factionID": 2564,
+      "exampleLocations": [
+        {
+          "name": "Zaralekhöhle",
+          "section": "zones",
+          "file": "dragonflight.lua"
+        },
+        {
+          "name": "Loamm",
+          "section": "subZones",
+          "file": "dragonflight.lua"
+        }
+      ],
+      "sourceFiles": [
+        "dragonflight.lua"
+      ]
+    },
+    {
       "factionID": 2570,
       "exampleLocations": [
         {
@@ -2170,6 +2188,24 @@
       ],
       "sourceFiles": [
         "war_within.lua"
+      ]
+    },
+    {
+      "factionID": 2574,
+      "exampleLocations": [
+        {
+          "name": "Smaragdgrüner Traum",
+          "section": "zones",
+          "file": "dragonflight.lua"
+        },
+        {
+          "name": "Central Encampment",
+          "section": "subZones",
+          "file": "dragonflight.lua"
+        }
+      ],
+      "sourceFiles": [
+        "dragonflight.lua"
       ]
     },
     {
@@ -2292,6 +2328,45 @@
         {
           "name": "Liberation of Undermine",
           "section": "raids",
+          "file": "war_within.lua"
+        }
+      ],
+      "sourceFiles": [
+        "war_within.lua"
+      ]
+    },
+    {
+      "factionID": 2658,
+      "exampleLocations": [
+        {
+          "name": "K'aresh",
+          "section": "zones",
+          "file": "war_within.lua"
+        }
+      ],
+      "sourceFiles": [
+        "war_within.lua"
+      ]
+    },
+    {
+      "factionID": 2685,
+      "exampleLocations": [
+        {
+          "name": "Undermine",
+          "section": "zones",
+          "file": "war_within.lua"
+        }
+      ],
+      "sourceFiles": [
+        "war_within.lua"
+      ]
+    },
+    {
+      "factionID": 2688,
+      "exampleLocations": [
+        {
+          "name": "Hallowfall",
+          "section": "zones",
           "file": "war_within.lua"
         }
       ],
@@ -2428,6 +2503,19 @@
       "sourceFiles": [
         "eastern_kingdoms.lua",
         "midnight.lua"
+      ]
+    },
+    {
+      "factionID": 2736,
+      "exampleLocations": [
+        {
+          "name": "K'aresh",
+          "section": "zones",
+          "file": "war_within.lua"
+        }
+      ],
+      "sourceFiles": [
+        "war_within.lua"
       ]
     }
   ],
