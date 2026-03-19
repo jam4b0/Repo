@@ -507,6 +507,8 @@ function ns.Factions:SelectVisible(prioritized, context)
         visible[#visible + 1] = candidate
     end
 
+    local appendKnownChildren
+
     local function appendVirtualGroup(parentFactionID, score)
         local definition = KNOWN_VIRTUAL_PARENT_FACTIONS[parentFactionID]
         if not definition or seenFactionIDs[parentFactionID] then
@@ -569,7 +571,7 @@ function ns.Factions:SelectVisible(prioritized, context)
         return false
     end
 
-    local function appendKnownChildren(parentCandidate)
+    appendKnownChildren = function(parentCandidate)
         if not parentCandidate or not parentCandidate.factionID then
             return
         end
