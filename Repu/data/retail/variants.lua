@@ -45,9 +45,12 @@ ns.Data:RegisterRetailModule({
                 name = "Azshara",
                 source = "seed",
                 confidence = "medium",
-                notes = "Retail client world-state submap for Cataclysm-revamped Azshara; kept separate from the canonical zone anchor.",
+                notes = "Retail client world-state submap for Cataclysm-revamped Azshara; uses the same local Bilgewater Cartel zone anchor as the canonical zone.",
                 mapIDs = { 697 },
-                tags = { "subzone", "coverage-only", "variant-catalog", "world-phasing-variant", "cataclysm-revamp", "kalimdor" },
+                tags = { "subzone", "variant-catalog", "world-phasing-variant", "cataclysm-revamp", "kalimdor" },
+                factions = {
+                    { factionID = 1133, weight = 242 },
+                },
             },
             ["416:Düstermarschen"] = {
                 name = "Düstermarschen",
@@ -69,9 +72,12 @@ ns.Data:RegisterRetailModule({
                 name = "Tal der Ewigen Blüten",
                 source = "seed",
                 confidence = "medium",
-                notes = "Black Empire assault submap for the Vale of Eternal Blossoms used in patch 8.3; kept separate from the canonical Vale zone.",
+                notes = "Black Empire assault submap for the Vale of Eternal Blossoms used in patch 8.3; uses the same local Golden Lotus zone anchor as the canonical Vale zone.",
                 mapIDs = { 520 },
-                tags = { "subzone", "coverage-only", "variant-catalog", "assault-variant", "pandaria" },
+                tags = { "subzone", "variant-catalog", "assault-variant", "pandaria" },
+                factions = {
+                    { factionID = 1269, weight = 246 },
+                },
             },
             ["906:Arathihochland"] = {
                 name = "Arathihochland",
