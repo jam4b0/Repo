@@ -232,6 +232,30 @@ return {
         expectVisibleCount = 0,
     },
     {
+        name = "retail_companion_appends_beyond_maxbars",
+        profile = {
+            maxBars = 1,
+            showRetailCompanions = true,
+        },
+        context = {
+            activeFlavor = "retail",
+            mapID = 76,
+            mapName = "Azshara",
+            zoneName = "Azshara",
+            zoneKey = "azshara",
+            subZoneName = "Mennarsee",
+            subZoneKey = "mennarsee",
+            playerFactionGroup = "Horde",
+            instanceType = "none",
+            isInInstance = false,
+        },
+        rawFactions = {
+            { factionID = 1133, name = "Bilgewasserkartell", standingID = 5, progressValue = 1200, progressMax = 6000, progressPct = 20, hasRepEntry = true },
+            { factionID = 2640, name = "Brann Bronzebart", standingID = 4, progressValue = 250, progressMax = 2500, progressPct = 10, hasRepEntry = true },
+        },
+        requireVisibleFactionIDs = { 2640 },
+    },
+    {
         name = "retail_outland_shattrath_family_cluster",
         profile = {
             maxBars = 6,

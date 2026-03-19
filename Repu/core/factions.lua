@@ -662,7 +662,7 @@ function ns.Factions:BuildMatches(rawFactions, context)
     if context and context.activeFlavor == "retail" and profile.showRetailCompanions then
         for factionID in pairs(RETAIL_COMPANION_FACTION_IDS) do
             local faction = rawFactions.byID and rawFactions.byID[factionID] or nil
-            if faction then
+            if faction and #results == 0 then
                 appendMatch({
                     weight = 35,
                     tags = { "companion", "retail" },
@@ -860,6 +860,39 @@ function ns.Factions:SelectVisible(prioritized, context)
 
         if #visible >= profile.maxBars then
             break
+        end
+    end
+
+    if profile.showRetailCompanions and context and context.activeFlavor == "retail" then
+        local companionCandidates = {}
+        for factionID in pairs(RETAIL_COMPANION_FACTION_IDS) do
+            local faction = byID[factionID]
+            if faction and not seenFactionIDs[factionID] then
+                companionCandidates[#companionCandidates + 1] = {
+                    factionID = factionID,
+                    faction = faction,
+                    name = faction.name,
+                    sourceType = "companion",
+                    sourceKey = tostring(factionID),
+                    score = -1000 + (faction.progressPct or 0) / 10,
+                    isDirect = false,
+                    isFallback = false,
+                    note = "Retail companion reputation",
+                    tags = { "companion", "retail" },
+                    factionClass = "companion",
+                }
+            end
+        end
+
+        table.sort(companionCandidates, function(left, right)
+            if (left.faction.progressPct or 0) ~= (right.faction.progressPct or 0) then
+                return (left.faction.progressPct or 0) > (right.faction.progressPct or 0)
+            end
+            return (left.name or "") < (right.name or "")
+        end)
+
+        for _, candidate in ipairs(companionCandidates) do
+            appendVisible(candidate, #visible + 1)
         end
     end
 
