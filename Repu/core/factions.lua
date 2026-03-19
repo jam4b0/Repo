@@ -5,6 +5,34 @@ local RETAIL_COMPANION_FACTION_IDS = {
     [2640] = true, -- Brann Bronzebart
     [2744] = true, -- Valeera Sanguinar
 }
+local RETAIL_PARENT_FACTIONS = {
+    [2600] = {
+        children = {
+            [2709] = true, -- Der General
+            [2710] = true, -- Der Wesir
+            [2708] = true, -- Die Weberin
+        },
+    },
+    [2653] = {
+        children = {
+            [2677] = true, -- Dampfdruckkartell
+            [2675] = true, -- Schwarzmeer AG
+            [2673] = true, -- Bilgewasserkartell
+            [2671] = true, -- Venture Company
+            [2685] = true, -- Garbagio Treueclub
+        },
+    },
+}
+local RETAIL_CHILD_TO_PARENT = {
+    [2709] = 2600,
+    [2710] = 2600,
+    [2708] = 2600,
+    [2677] = 2653,
+    [2675] = 2653,
+    [2673] = 2653,
+    [2671] = 2653,
+    [2685] = 2653,
+}
 
 local function matchApplies(match, context)
     if match.factionGroups and context.playerFactionGroup then
@@ -154,6 +182,7 @@ local function addMatch(results, faction, match)
         tags = match.tags,
         isMapChain = match.isMapChain and true or false,
         chainDepth = match.chainDepth or 0,
+        parentFactionID = faction.factionID and RETAIL_CHILD_TO_PARENT[faction.factionID] or nil,
     }
 end
 

@@ -1,5 +1,10 @@
 local _, ns = ...
 
+local RETAIL_PARENT_ORDER = {
+    [2600] = 1, -- Die Durchtrennten Fäden
+    [2653] = 2, -- Die Kartelle von Lorenhall
+}
+
 local sourceBonuses = {
     raid = 120,
     instance = 100,
@@ -124,6 +129,40 @@ function ns.Scoring:Prioritize(matches, rawFactions, context, options)
     end
 
     table.sort(prioritized, function(left, right)
+        local leftParent = left.parentFactionID or left.factionID or 0
+        local rightParent = right.parentFactionID or right.factionID or 0
+        local leftParentOrder = RETAIL_PARENT_ORDER[leftParent]
+        local rightParentOrder = RETAIL_PARENT_ORDER[rightParent]
+
+        if leftParentOrder and rightParentOrder and leftParentOrder ~= rightParentOrder then
+            return leftParentOrder < rightParentOrder
+        end
+        if leftParentOrder and not rightParentOrder then
+            return true
+        end
+        if rightParentOrder and not leftParentOrder then
+            return false
+        end
+
+        if leftParent ~= rightParent then
+            if left.score ~= right.score then
+                return left.score > right.score
+            end
+            if (left.faction.progressPct or 0) ~= (right.faction.progressPct or 0) then
+                return (left.faction.progressPct or 0) > (right.faction.progressPct or 0)
+            end
+            return (left.name or "") < (right.name or "")
+        end
+
+        if left.parentFactionID ~= right.parentFactionID then
+            if left.parentFactionID and not right.parentFactionID then
+                return false
+            end
+            if right.parentFactionID and not left.parentFactionID then
+                return true
+            end
+        end
+
         if left.score ~= right.score then
             return left.score > right.score
         end
