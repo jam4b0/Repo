@@ -247,11 +247,11 @@ end
 
 function ns.UI:IsParentExpanded(factionID)
     if not factionID then
-        return true
+        return false
     end
 
     if self.expandedParents[factionID] == nil then
-        return true
+        return false
     end
 
     return self.expandedParents[factionID]
