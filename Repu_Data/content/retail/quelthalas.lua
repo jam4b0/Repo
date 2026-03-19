@@ -24,7 +24,7 @@ local SALTHERILS_SOIREE = {
 
 api.RegisterRetailContentModule({
     factions = {
-        [911] = {
+        [2710] = {
             summary = "Die große Ruhmfraktion von Quel'Thalas. Fortschritt entsteht parallel zu den vier lokalen Unterfraktionen des Hofs in Silbermond. Je nach aktueller Auswahl sind unterschiedliche Rüstmeister relevant.",
             source = "seed",
             confidence = "medium",

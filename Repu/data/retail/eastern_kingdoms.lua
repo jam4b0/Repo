@@ -41,7 +41,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 2393 },
                 tags = { "city", "hub", "local" },
                 factions = {
-                    { factionID = 911, weight = 246 },
+                    { factionID = 2710, name = "Hof in Silbermond", weight = 246 },
                     { name = "Magister", weight = 240 },
                     { name = "Blutritter", weight = 240 },
                     { name = "Schemen der Gasse", weight = 235 },
@@ -52,10 +52,11 @@ ns.Data:RegisterRetailModule({
                 name = "Immersangwald",
                 source = "observed",
                 confidence = "high",
-                notes = "Observed repeatedly across multiple Eversong Woods sweep captures",
+                notes = "Observed repeatedly across multiple Eversong Woods sweep captures; court event area uses the Silvermoon Court parent faction",
                 mapIDs = { 2395 },
                 tags = { "zone", "local", "eastern-kingdoms", "observed" },
                 factions = {
+                    { factionID = 2710, name = "Hof in Silbermond", weight = 248 },
                     { name = "Weltenwanderer", weight = 245 },
                 },
             },
@@ -398,6 +399,19 @@ ns.Data:RegisterRetailModule({
                 tags = { "local", "eastern-kingdoms", "observed" },
                 factions = {
                     { name = "Weltenwanderer", weight = 250 },
+                },
+            },
+            ["2395:saltherils hafen"] = {
+                name = "Saltherils Hafen",
+                parentMapID = 2395,
+                source = "seed",
+                confidence = "high",
+                notes = "Court in Silvermoon weekly hub in Eversong Woods",
+                mapIDs = { 2395 },
+                tags = { "local", "eastern-kingdoms", "event", "court-in-silvermoon" },
+                factions = {
+                    { factionID = 2710, name = "Hof in Silbermond", weight = 255 },
+                    { name = "Weltenwanderer", weight = 240 },
                 },
             },
             ["37:tor von sturmwind"] = {

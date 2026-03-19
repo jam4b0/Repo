@@ -6,7 +6,7 @@ local RETAIL_COMPANION_FACTION_IDS = {
     [2744] = true, -- Valeera Sanguinar
 }
 local KNOWN_RETAIL_PARENT_FACTIONS = {
-    [911] = {
+    [2710] = {
         children = {
             [2711] = true, -- Magister
             [2712] = true, -- Blutritter
@@ -32,10 +32,10 @@ local KNOWN_RETAIL_PARENT_FACTIONS = {
     },
 }
 local KNOWN_RETAIL_CHILD_TO_PARENT = {
-    [2711] = 911,
-    [2712] = 911,
-    [2714] = 911,
-    [2713] = 911,
+    [2711] = 2710,
+    [2712] = 2710,
+    [2714] = 2710,
+    [2713] = 2710,
     [2605] = 2600,
     [2607] = 2600,
     [2601] = 2600,
