@@ -65,7 +65,7 @@ local function normalizeFaction(row)
         nameKey = Utils:NormalizeKey(row.name),
         description = row.description,
         standingID = standingID,
-        standingLabel = ns.Compat:GetStandingLabel(standingID),
+        standingLabel = row.isMajorFaction and "Ruhmstufe" or ns.Compat:GetStandingLabel(standingID),
         min = minValue,
         max = maxValue,
         value = value,
@@ -81,6 +81,7 @@ local function normalizeFaction(row)
         renownLevel = row.renownLevel,
         friendshipRepID = row.friendshipRepID,
         hasBonusRepGain = row.hasBonusRepGain or false,
+        majorFactionData = row.majorFactionData,
         raw = row.raw,
     }
 end

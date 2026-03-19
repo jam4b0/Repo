@@ -115,13 +115,17 @@ function ns.UI:UpdateRow(row, candidate, isActive, isSelected)
         valueText = "Kein Rufeintrag"
     end
     if faction.renownLevel and faction.renownLevel > 0 then
-        valueText = string.format(
-            "Renown %d  %d/%d  %.1f%%",
-            faction.renownLevel,
-            faction.progressValue or 0,
-            faction.progressMax or 0,
-            faction.progressPct or 0
-        )
+        if (faction.progressMax or 0) > 0 then
+            valueText = string.format(
+                "Ruhmstufe %d  %d/%d  %.1f%%",
+                faction.renownLevel,
+                faction.progressValue or 0,
+                faction.progressMax or 0,
+                faction.progressPct or 0
+            )
+        else
+            valueText = string.format("Ruhmstufe %d", faction.renownLevel)
+        end
     end
     row.valueText:SetText(valueText)
 

@@ -332,13 +332,17 @@ function ns.UI:UpdateDetails(details, count, profile)
         progressText = "Kein Rufeintrag"
     end
     if details.renownLevel and details.renownLevel > 0 then
-        progressText = string.format(
-            "Renown %d  %d/%d  %.1f%%",
-            tonumber(details.renownLevel),
-            tonumber(details.progressValue or 0),
-            tonumber(details.progressMax or 0),
-            tonumber(details.progressPct or 0)
-        )
+        if tonumber(details.progressMax or 0) > 0 then
+            progressText = string.format(
+                "Ruhmstufe %d  %d/%d  %.1f%%",
+                tonumber(details.renownLevel),
+                tonumber(details.progressValue or 0),
+                tonumber(details.progressMax or 0),
+                tonumber(details.progressPct or 0)
+            )
+        else
+            progressText = string.format("Ruhmstufe %d", tonumber(details.renownLevel))
+        end
     end
 
     local sourceText = nil

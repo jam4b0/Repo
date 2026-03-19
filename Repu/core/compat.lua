@@ -9,14 +9,43 @@ local FLAVOR_WRATH = "wrath"
 local FLAVOR_CATA = "cata"
 local FLAVOR_MOP = "mop"
 
+local function getMajorFactionData(factionID)
+    if not factionID or not _G.C_MajorFactions then
+        return nil
+    end
+
+    if type(C_MajorFactions.GetMajorFactionData) == "function" then
+        return C_MajorFactions.GetMajorFactionData(factionID)
+    end
+
+    return nil
+end
+
 local function normalizeRetailFactionData(index, data)
     if not data then
         return nil
     end
 
+    local majorFactionData = data.isMajorFaction and getMajorFactionData(data.factionID) or nil
+    local renownLevel = data.renownLevel or (majorFactionData and majorFactionData.renownLevel) or nil
     local currentValue = data.currentStanding or data.currentStandingValue or 0
     local minValue = data.currentReactionThreshold or 0
     local maxValue = data.nextReactionThreshold or data.reactionThreshold or currentValue
+
+    if majorFactionData then
+        currentValue = majorFactionData.renownReputationEarned
+            or majorFactionData.earnedReputation
+            or majorFactionData.currentStanding
+            or currentValue
+        minValue = majorFactionData.renownLevelReputationThreshold
+            or majorFactionData.currentLevelThreshold
+            or majorFactionData.currentReactionThreshold
+            or minValue
+        maxValue = majorFactionData.nextLevelThreshold
+            or majorFactionData.renownLevelThreshold
+            or majorFactionData.nextReactionThreshold
+            or maxValue
+    end
 
     return {
         index = index,
@@ -38,9 +67,10 @@ local function normalizeRetailFactionData(index, data)
         canSetInactive = data.canSetInactive,
         isAccountWide = data.isAccountWide,
         isMajorFaction = data.isMajorFaction,
-        renownLevel = data.renownLevel,
+        renownLevel = renownLevel,
         friendshipRepID = data.friendshipRepID,
         raw = data,
+        majorFactionData = majorFactionData,
     }
 end
 
