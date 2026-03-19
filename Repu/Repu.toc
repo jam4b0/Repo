@@ -45,6 +45,7 @@ data\retail\bfa.lua
 data\retail\shadowlands.lua
 data\retail\dragonflight.lua
 data\retail\current.lua
+data\retail\variants.lua
 data\retail.lua
 core\location.lua
 core\inference.lua
