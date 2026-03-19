@@ -45,6 +45,8 @@ SUPSERSEDED_BY_CURRENT_MODEL = {
     2601,  # The Weaver -> modeled as child under Severed Threads
     2605,  # The General -> modeled as child under Severed Threads
     2607,  # The Vizier -> modeled as child under Severed Threads
+    2640,  # Brann Bronzebeard -> handled through companion display path
+    2744,  # Valeera Sanguinar -> handled through companion display path
 }
 
 MODERN_RENOWN_CANDIDATES = {2564, 2574, 2658, 2688, 2736}
@@ -57,7 +59,14 @@ EXCLUDED_GLOBAL_SYSTEMS = {2163, 2164}
 
 ZONE_SIDE_SYSTEM_CANDIDATES = {2472}
 
-EXCLUDED_MICRO_SIDE_REPS = {2663, 2664, 2665, 2666, 2669}
+EXCLUDED_MICRO_SIDE_REPS = {
+    1216, 1228, 1273, 1275, 1276, 1277, 1278, 1279, 1280, 1281, 1282, 1283, 1341, 1345, 1358,
+    1733, 1735, 1736, 1737, 1738, 1739, 1740, 1741,
+    1975, 2097, 2098, 2099, 2100, 2101, 2102,
+    2445, 2446, 2447, 2448, 2449, 2450, 2451, 2452, 2453, 2454, 2455, 2456, 2457, 2458, 2459, 2460, 2461, 2462, 2469,
+    2568,
+    2663, 2664, 2665, 2666, 2669,
+}
 
 LEGACY_CANDIDATES = {
     54, 70, 87, 92, 93, 270, 349, 369, 470, 577, 749, 809, 909, 910, 922, 970, 990, 1015, 1067,

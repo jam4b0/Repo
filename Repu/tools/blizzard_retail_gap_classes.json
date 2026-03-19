@@ -4,21 +4,21 @@
     "locale": "en_US",
     "blizzardFactionCount": 281,
     "blizzardRootCount": 14,
-    "addonCoreFactionCount": 135,
+    "addonCoreFactionCount": 145,
     "addonContentFactionCount": 146,
-    "coreCoveredByContentCount": 135,
+    "coreCoveredByContentCount": 145,
     "coreMissingContentCount": 0,
-    "blizzardMissingInCoreCount": 147,
-    "contentOnlyCount": 11
+    "blizzardMissingInCoreCount": 137,
+    "contentOnlyCount": 1
   },
   "gapClassCounts": {
-    "candidate_legacy_or_side_rep": 83,
+    "candidate_legacy_or_side_rep": 76,
     "excluded_global_system": 2,
     "excluded_micro_side_rep": 5,
     "ignore_header": 19,
     "ignore_placeholder": 2,
     "optional_pvp_brawler": 16,
-    "superseded_by_current_model": 20
+    "superseded_by_current_model": 17
   },
   "rows": [
     {
@@ -84,36 +84,6 @@
     {
       "factionID": 1735,
       "name": "Barracks Bodyguards",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_legacy_or_side_rep"
-    },
-    {
-      "factionID": 2673,
-      "name": "Bilgewater Cartel",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_legacy_or_side_rep"
-    },
-    {
-      "factionID": 2675,
-      "name": "Blackwater Cartel",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_legacy_or_side_rep"
-    },
-    {
-      "factionID": 2712,
-      "name": "Blood Knights",
       "classification": "leaf",
       "isHeader": false,
       "isRenown": false,
@@ -254,16 +224,6 @@
     {
       "factionID": 1283,
       "name": "Farmer Fung",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_legacy_or_side_rep"
-    },
-    {
-      "factionID": 2713,
-      "name": "Farstriders",
       "classification": "leaf",
       "isHeader": false,
       "isRenown": false,
@@ -542,16 +502,6 @@
       "gapClass": "candidate_legacy_or_side_rep"
     },
     {
-      "factionID": 2714,
-      "name": "Shades of the Row",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_legacy_or_side_rep"
-    },
-    {
       "factionID": 1216,
       "name": "Shang Xi's Academy",
       "classification": "leaf",
@@ -594,16 +544,6 @@
     {
       "factionID": 2770,
       "name": "Slayer's Duellum",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_legacy_or_side_rep"
-    },
-    {
-      "factionID": 2677,
-      "name": "Steamwheedle Cartel",
       "classification": "leaf",
       "isHeader": false,
       "isRenown": false,
@@ -804,16 +744,6 @@
     {
       "factionID": 2744,
       "name": "Valeera Sanguinar",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_legacy_or_side_rep"
-    },
-    {
-      "factionID": 2671,
-      "name": "Venture Company",
       "classification": "leaf",
       "isHeader": false,
       "isRenown": false,
@@ -1372,16 +1302,6 @@
       "gapClass": "superseded_by_current_model"
     },
     {
-      "factionID": 2605,
-      "name": "The General",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "superseded_by_current_model"
-    },
-    {
       "factionID": 1094,
       "name": "The Silver Covenant",
       "classification": "faction_header",
@@ -1395,26 +1315,6 @@
       "factionID": 1064,
       "name": "The Taunka",
       "classification": "faction_header",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "superseded_by_current_model"
-    },
-    {
-      "factionID": 2607,
-      "name": "The Vizier",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "superseded_by_current_model"
-    },
-    {
-      "factionID": 2601,
-      "name": "The Weaver",
-      "classification": "leaf",
       "isHeader": false,
       "isRenown": false,
       "sourceFiles": [],
