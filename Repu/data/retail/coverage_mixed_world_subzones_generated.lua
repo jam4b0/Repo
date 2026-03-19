@@ -154,9 +154,9 @@ ns.Data:RegisterRetailModule({
                 name = "Tal der Ewigen Blüten",
                 source = "seed",
                 confidence = "medium",
-                notes = "Generated coverage for an approved mixed/manual world subzone variant; faction mapping pending.",
+                notes = "Retail subzone variant used by the 8.3 Black Empire assault in the Vale; kept separate until a phase-specific faction mapping is defined.",
                 mapIDs = { 520 },
-                tags = { "subzone", "coverage-only", "generated-variant", "mixed-world-variant", "Tal der Ewigen Blüten" },
+                tags = { "subzone", "coverage-only", "generated-variant", "mixed-world-variant", "Tal der Ewigen Blüten", "assault-variant" },
             },
             ["1181:Zuldazar"] = {
                 name = "Zuldazar",

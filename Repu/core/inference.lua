@@ -127,9 +127,24 @@ function ns.Inference:BuildMatches(rawFactions, context, directMatches)
         return inferred
     end
 
+    -- Description-based inference is only allowed as a supplement to an
+    -- already grounded local result. It must not fabricate the only visible
+    -- faction for an otherwise unmapped zone.
+    if not directMatches or #directMatches == 0 then
+        return inferred
+    end
+
     local matchedFactions = {}
+    local hasGroundedLocalMatch = false
     for _, match in ipairs(directMatches or {}) do
         matchedFactions[match.factionID or match.name] = true
+        if match.sourceType ~= "inferred" and match.sourceType ~= "fallback" then
+            hasGroundedLocalMatch = true
+        end
+    end
+
+    if not hasGroundedLocalMatch then
+        return inferred
     end
 
     for _, faction in ipairs(rawFactions.list or {}) do
