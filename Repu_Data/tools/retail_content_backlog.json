@@ -1904,7 +1904,7 @@
         {
           "name": "Halls of Atonement Reprise",
           "section": "instances",
-          "file": "current.lua"
+          "file": "midnight.lua"
         },
         {
           "name": "Oribos",
@@ -1928,7 +1928,7 @@
         }
       ],
       "sourceFiles": [
-        "current.lua",
+        "midnight.lua",
         "shadowlands.lua"
       ]
     },
@@ -2150,26 +2150,26 @@
         {
           "name": "Hallowfall",
           "section": "zones",
-          "file": "current.lua"
+          "file": "war_within.lua"
         },
         {
           "name": "Mereldar",
           "section": "subZones",
-          "file": "current.lua"
+          "file": "war_within.lua"
         },
         {
           "name": "Priory of the Sacred Flame",
           "section": "instances",
-          "file": "current.lua"
+          "file": "war_within.lua"
         },
         {
           "name": "The Dawnbreaker",
           "section": "instances",
-          "file": "current.lua"
+          "file": "war_within.lua"
         }
       ],
       "sourceFiles": [
-        "current.lua"
+        "war_within.lua"
       ]
     },
     {
@@ -2178,31 +2178,31 @@
         {
           "name": "Dorninsel",
           "section": "zones",
-          "file": "current.lua"
+          "file": "war_within.lua"
         },
         {
           "name": "Isle of Dorn",
           "section": "zones",
-          "file": "current.lua"
+          "file": "war_within.lua"
         },
         {
           "name": "Dornogal",
           "section": "zones",
-          "file": "current.lua"
+          "file": "war_within.lua"
         },
         {
           "name": "Dornogal",
           "section": "subZones",
-          "file": "current.lua"
+          "file": "war_within.lua"
         },
         {
           "name": "Dornogal",
           "section": "subZones",
-          "file": "current.lua"
+          "file": "war_within.lua"
         }
       ],
       "sourceFiles": [
-        "current.lua"
+        "war_within.lua"
       ]
     },
     {
@@ -2211,31 +2211,31 @@
         {
           "name": "The Ringing Deeps",
           "section": "zones",
-          "file": "current.lua"
+          "file": "war_within.lua"
         },
         {
           "name": "Taelloch",
           "section": "subZones",
-          "file": "current.lua"
+          "file": "war_within.lua"
         },
         {
           "name": "The Rookery",
           "section": "instances",
-          "file": "current.lua"
+          "file": "war_within.lua"
         },
         {
           "name": "Darkflame Cleft",
           "section": "instances",
-          "file": "current.lua"
+          "file": "war_within.lua"
         },
         {
           "name": "The Stonevault",
           "section": "instances",
-          "file": "current.lua"
+          "file": "war_within.lua"
         }
       ],
       "sourceFiles": [
-        "current.lua"
+        "war_within.lua"
       ]
     },
     {
@@ -2244,31 +2244,31 @@
         {
           "name": "Azj-Kahet",
           "section": "zones",
-          "file": "current.lua"
+          "file": "war_within.lua"
         },
         {
           "name": "The Severed Threads",
           "section": "subZones",
-          "file": "current.lua"
+          "file": "war_within.lua"
         },
         {
           "name": "City of Threads",
           "section": "instances",
-          "file": "current.lua"
+          "file": "war_within.lua"
         },
         {
           "name": "Ara-Kara, City of Echoes",
           "section": "instances",
-          "file": "current.lua"
+          "file": "war_within.lua"
         },
         {
           "name": "Nerub-ar Palace",
           "section": "raids",
-          "file": "current.lua"
+          "file": "war_within.lua"
         }
       ],
       "sourceFiles": [
-        "current.lua"
+        "war_within.lua"
       ]
     },
     {
@@ -2277,26 +2277,26 @@
         {
           "name": "Undermine",
           "section": "zones",
-          "file": "current.lua"
+          "file": "war_within.lua"
         },
         {
           "name": "Undermine City",
           "section": "subZones",
-          "file": "current.lua"
+          "file": "war_within.lua"
         },
         {
           "name": "Operation: Floodgate",
           "section": "instances",
-          "file": "current.lua"
+          "file": "war_within.lua"
         },
         {
           "name": "Liberation of Undermine",
           "section": "raids",
-          "file": "current.lua"
+          "file": "war_within.lua"
         }
       ],
       "sourceFiles": [
-        "current.lua"
+        "war_within.lua"
       ]
     },
     {
@@ -2305,32 +2305,32 @@
         {
           "name": "Zul'Aman",
           "section": "zones",
-          "file": "current.lua"
+          "file": "eastern_kingdoms.lua"
         },
         {
           "name": "Zul'Aman",
           "section": "subZones",
-          "file": "current.lua"
-        },
-        {
-          "name": "March on Quel'Danas",
-          "section": "raids",
-          "file": "current.lua"
+          "file": "eastern_kingdoms.lua"
         },
         {
           "name": "Zul'Aman",
           "section": "zones",
-          "file": "eastern_kingdoms.lua"
+          "file": "midnight.lua"
         },
         {
           "name": "Zul'Aman",
           "section": "subZones",
-          "file": "eastern_kingdoms.lua"
+          "file": "midnight.lua"
+        },
+        {
+          "name": "March on Quel'Danas",
+          "section": "raids",
+          "file": "midnight.lua"
         }
       ],
       "sourceFiles": [
-        "current.lua",
-        "eastern_kingdoms.lua"
+        "eastern_kingdoms.lua",
+        "midnight.lua"
       ]
     },
     {
@@ -2339,32 +2339,32 @@
         {
           "name": "Leerensturm",
           "section": "zones",
-          "file": "current.lua"
+          "file": "eastern_kingdoms.lua"
         },
         {
           "name": "Obskurionzitadelle",
           "section": "subZones",
-          "file": "current.lua"
-        },
-        {
-          "name": "Eco-Dome Al'dani",
-          "section": "instances",
-          "file": "current.lua"
-        },
-        {
-          "name": "Voidspire",
-          "section": "raids",
-          "file": "current.lua"
+          "file": "eastern_kingdoms.lua"
         },
         {
           "name": "Leerensturm",
           "section": "zones",
-          "file": "eastern_kingdoms.lua"
+          "file": "midnight.lua"
+        },
+        {
+          "name": "Obskurionzitadelle",
+          "section": "subZones",
+          "file": "midnight.lua"
+        },
+        {
+          "name": "Eco-Dome Al'dani",
+          "section": "instances",
+          "file": "midnight.lua"
         }
       ],
       "sourceFiles": [
-        "current.lua",
-        "eastern_kingdoms.lua"
+        "eastern_kingdoms.lua",
+        "midnight.lua"
       ]
     },
     {
@@ -2373,37 +2373,32 @@
         {
           "name": "Harandar",
           "section": "zones",
-          "file": "current.lua"
+          "file": "eastern_kingdoms.lua"
         },
         {
           "name": "Harandar",
           "section": "subZones",
-          "file": "current.lua"
+          "file": "eastern_kingdoms.lua"
         },
         {
           "name": "Harandar",
           "section": "zones",
-          "file": "eastern_kingdoms.lua"
+          "file": "midnight.lua"
         },
         {
           "name": "Harandar",
           "section": "subZones",
-          "file": "eastern_kingdoms.lua"
+          "file": "midnight.lua"
         }
       ],
       "sourceFiles": [
-        "current.lua",
-        "eastern_kingdoms.lua"
+        "eastern_kingdoms.lua",
+        "midnight.lua"
       ]
     },
     {
       "factionID": 2710,
       "exampleLocations": [
-        {
-          "name": "Silbermond",
-          "section": "zones",
-          "file": "current.lua"
-        },
         {
           "name": "Silbermond",
           "section": "zones",
@@ -2423,11 +2418,16 @@
           "name": "Silbermond",
           "section": "subZones",
           "file": "eastern_kingdoms.lua"
+        },
+        {
+          "name": "Silbermond",
+          "section": "zones",
+          "file": "midnight.lua"
         }
       ],
       "sourceFiles": [
-        "current.lua",
-        "eastern_kingdoms.lua"
+        "eastern_kingdoms.lua",
+        "midnight.lua"
       ]
     }
   ],
