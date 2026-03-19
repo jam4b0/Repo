@@ -153,6 +153,16 @@ ns.Data:RegisterRetailModule({
                 factionIDs = { 68 },
                 weight = 235,
             },
+            [1577] = {
+                name = "Gilneas",
+                source = "seed",
+                confidence = "medium",
+                notes = "Gilnean homeland cluster in retail.",
+                mapIDs = { 1577 },
+                tags = { "zone", "local", "eastern-kingdoms" },
+                factionIDs = { 1134 },
+                weight = 240,
+            },
             [14] = {
                 name = "Arathihochland",
                 source = "seed",
@@ -296,6 +306,18 @@ ns.Data:RegisterRetailModule({
             },
         },
         subZones = {
+            ["179:gilneas"] = {
+                name = "Gilneas",
+                parentMapID = 1577,
+                source = "seed",
+                confidence = "medium",
+                notes = "Gilneas city-state submap in retail.",
+                mapIDs = { 179 },
+                tags = { "primary", "hub", "local", "eastern-kingdoms" },
+                factions = {
+                    { factionID = 1134, weight = 252 },
+                },
+            },
             ["18:tirisfal"] = {
                 name = "Tirisfal",
                 parentMapID = 18,
