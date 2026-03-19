@@ -8,115 +8,162 @@ local function loadAddonFile(relPath, ns)
     return chunk(nil, ns)
 end
 
-local function startsWith(value, prefix)
-    return string.sub(value, 1, #prefix) == prefix
-end
+local suiteArg = arg[1] or "retail"
 
-local suite = arg[1] or "retail"
-
-if suite ~= "retail" then
-    error("Unknown test suite: " .. tostring(suite))
-end
-
-UNKNOWN = "UNKNOWN"
-
-local ns = {
-    Utils = {},
-    Locale = {},
-    Data = {},
-    Inference = {},
-    Scoring = {},
-    Factions = {},
-    State = {
-        runtime = {},
-        profile = {
-            maxBars = 5,
-            showRetailCompanions = true,
-            hideExalted = false,
+local suiteConfigs = {
+    classic = {
+        flavor = "classic",
+        casePath = "tests/cases/classic/mapping.lua",
+        files = {
+            "data/classic.lua",
         },
     },
-    Compat = {},
+    tbc = {
+        flavor = "tbc",
+        casePath = "tests/cases/tbc/mapping.lua",
+        files = {
+            "data/tbc.lua",
+        },
+    },
+    wrath = {
+        flavor = "wrath",
+        casePath = "tests/cases/wrath/mapping.lua",
+        files = {
+            "data/wrath.lua",
+        },
+    },
+    cata = {
+        flavor = "cata",
+        casePath = "tests/cases/cata/mapping.lua",
+        files = {
+            "data/cata.lua",
+        },
+    },
+    mop = {
+        flavor = "mop",
+        casePath = "tests/cases/mop/mapping.lua",
+        files = {
+            "data/mop.lua",
+        },
+    },
+    retail = {
+        flavor = "retail",
+        casePath = "tests/cases/retail/mapping.lua",
+        files = {
+            "data/retail/coverage/client_seed.lua",
+            "data/retail/coverage/generated/coverage_generated.lua",
+            "data/retail/coverage/generated/coverage_wave2_generated.lua",
+            "data/retail/coverage/generated/coverage_cleanup_generated.lua",
+            "data/retail/coverage/generated/coverage_variants_generated.lua",
+            "data/retail/coverage/generated/coverage_world_variants_generated.lua",
+            "data/retail/coverage/generated/coverage_event_variants_generated.lua",
+            "data/retail/coverage/generated/coverage_instance_adjacent_generated.lua",
+            "data/retail/coverage/generated/coverage_instance_variants_generated.lua",
+            "data/retail/coverage/generated/coverage_mixed_world_subzones_generated.lua",
+            "data/retail/coverage/generated/coverage_special_zones_generated.lua",
+            "data/retail/coverage/generated/coverage_special_subzones_generated.lua",
+            "data/retail/coverage/generated/coverage_hubs_generated.lua",
+            "data/retail/coverage/generated/coverage_hubs_wave2_generated.lua",
+            "data/retail/coverage/generated/coverage_final_subzones_generated.lua",
+            "data/retail/variants/catalog.lua",
+            "data/retail/mappings/regions/kalimdor.lua",
+            "data/retail/mappings/regions/eastern_kingdoms.lua",
+            "data/retail/mappings/regions/outland.lua",
+            "data/retail/mappings/regions/northrend.lua",
+            "data/retail/mappings/regions/pandaria.lua",
+            "data/retail/mappings/regions/cataclysm.lua",
+            "data/retail/mappings/regions/broken_isles.lua",
+            "data/retail/mappings/regions/bfa.lua",
+            "data/retail/mappings/regions/shadowlands.lua",
+            "data/retail/mappings/regions/dragonflight.lua",
+            "data/retail/mappings/regions/draenor.lua",
+            "data/retail/mappings/regions/war_within.lua",
+            "data/retail/mappings/regions/midnight.lua",
+            "data/retail.lua",
+        },
+    },
 }
 
-function ns.State:GetProfile()
-    return self.profile
-end
+local orderedSuites = { "classic", "tbc", "wrath", "cata", "mop", "retail" }
 
-function ns.State:GetRuntimeValue(key)
-    return self.runtime and self.runtime[key] or nil
-end
+local function makeNamespace(flavor)
+    UNKNOWN = "UNKNOWN"
 
-function ns.Compat:GetFlavor()
-    return "retail"
-end
-
-function ns.Compat:GetStandingLabel(standingID)
-    local labels = {
-        [1] = "Hasserfüllt",
-        [2] = "Feindselig",
-        [3] = "Unfreundlich",
-        [4] = "Neutral",
-        [5] = "Freundlich",
-        [6] = "Wohlwollend",
-        [7] = "Respektvoll",
-        [8] = "Ehrfürchtig",
+    local ns = {
+        Utils = {},
+        Locale = {},
+        Data = {},
+        Inference = {},
+        Scoring = {},
+        Factions = {},
+        State = {
+            runtime = {},
+            profile = {
+                maxBars = 5,
+                showRetailCompanions = true,
+                hideExalted = false,
+            },
+        },
+        Compat = {},
     }
-    return labels[standingID] or "Unbekannt"
+
+    function ns.State:GetProfile()
+        return self.profile
+    end
+
+    function ns.State:GetRuntimeValue(key)
+        return self.runtime and self.runtime[key] or nil
+    end
+
+    function ns.Compat:GetFlavor()
+        return flavor
+    end
+
+    function ns.Compat:GetStandingLabel(standingID)
+        local labels = {
+            [1] = "Hated",
+            [2] = "Hostile",
+            [3] = "Unfriendly",
+            [4] = "Neutral",
+            [5] = "Friendly",
+            [6] = "Honored",
+            [7] = "Revered",
+            [8] = "Exalted",
+        }
+        return labels[standingID] or "Unknown"
+    end
+
+    function ns.Compat:GetFactionDataByID(factionID)
+        local raw = ns.State.runtime and ns.State.runtime.rawFactions or nil
+        return raw and raw.byID and raw.byID[factionID] or nil
+    end
+
+    return ns
 end
 
-function ns.Compat:GetFactionDataByID(factionID)
-    local raw = ns.State.runtime and ns.State.runtime.rawFactions or nil
-    return raw and raw.byID and raw.byID[factionID] or nil
+local function loadSuite(flavor, config)
+    local ns = makeNamespace(flavor)
+
+    loadAddonFile("core/utils.lua", ns)
+    loadAddonFile("core/localization.lua", ns)
+    loadAddonFile("locales/enUS.lua", ns)
+    loadAddonFile("locales/deDE.lua", ns)
+    ns.Locale:Apply("enUS")
+    loadAddonFile("data/shared.lua", ns)
+
+    for _, relPath in ipairs(config.files) do
+        loadAddonFile(relPath, ns)
+    end
+
+    loadAddonFile("core/inference.lua", ns)
+    loadAddonFile("core/scoring.lua", ns)
+    loadAddonFile("core/factions.lua", ns)
+
+    ns.Data:Init()
+    return ns
 end
 
-loadAddonFile("core/utils.lua", ns)
-loadAddonFile("core/localization.lua", ns)
-loadAddonFile("locales/enUS.lua", ns)
-loadAddonFile("locales/deDE.lua", ns)
-ns.Locale:Apply("enUS")
-loadAddonFile("data/shared.lua", ns)
-
-for _, relPath in ipairs({
-    "data/retail/coverage/client_seed.lua",
-    "data/retail/coverage/generated/coverage_generated.lua",
-    "data/retail/coverage/generated/coverage_wave2_generated.lua",
-    "data/retail/coverage/generated/coverage_cleanup_generated.lua",
-    "data/retail/coverage/generated/coverage_variants_generated.lua",
-    "data/retail/coverage/generated/coverage_world_variants_generated.lua",
-    "data/retail/coverage/generated/coverage_event_variants_generated.lua",
-    "data/retail/coverage/generated/coverage_instance_adjacent_generated.lua",
-    "data/retail/coverage/generated/coverage_instance_variants_generated.lua",
-    "data/retail/coverage/generated/coverage_mixed_world_subzones_generated.lua",
-    "data/retail/coverage/generated/coverage_special_zones_generated.lua",
-    "data/retail/coverage/generated/coverage_special_subzones_generated.lua",
-    "data/retail/coverage/generated/coverage_hubs_generated.lua",
-    "data/retail/coverage/generated/coverage_hubs_wave2_generated.lua",
-    "data/retail/coverage/generated/coverage_final_subzones_generated.lua",
-    "data/retail/variants/catalog.lua",
-    "data/retail/mappings/regions/kalimdor.lua",
-    "data/retail/mappings/regions/eastern_kingdoms.lua",
-    "data/retail/mappings/regions/outland.lua",
-    "data/retail/mappings/regions/northrend.lua",
-    "data/retail/mappings/regions/pandaria.lua",
-    "data/retail/mappings/regions/cataclysm.lua",
-    "data/retail/mappings/regions/broken_isles.lua",
-    "data/retail/mappings/regions/bfa.lua",
-    "data/retail/mappings/regions/shadowlands.lua",
-    "data/retail/mappings/regions/dragonflight.lua",
-    "data/retail/mappings/regions/draenor.lua",
-    "data/retail/mappings/regions/war_within.lua",
-    "data/retail/mappings/regions/midnight.lua",
-    "data/retail.lua",
-    "core/inference.lua",
-    "core/scoring.lua",
-    "core/factions.lua",
-}) do
-    loadAddonFile(relPath, ns)
-end
-
-ns.Data:Init()
-
-local function normalizeFaction(row)
+local function normalizeFaction(ns, row)
     row = ns.Utils:ShallowCopy(row)
     row.nameKey = ns.Utils:NormalizeKey(row.name)
     row.description = row.description or nil
@@ -139,7 +186,7 @@ local function normalizeFaction(row)
     return row
 end
 
-local function buildRawFactions(rows)
+local function buildRawFactions(ns, rows)
     local collection = {
         list = {},
         byID = {},
@@ -150,7 +197,7 @@ local function buildRawFactions(rows)
     }
 
     for index, row in ipairs(rows or {}) do
-        local faction = normalizeFaction(row)
+        local faction = normalizeFaction(ns, row)
         faction.index = index
         collection.list[#collection.list + 1] = faction
         if faction.factionID then
@@ -185,14 +232,14 @@ local function hasFactionID(rows, factionID)
     return false
 end
 
-local function runCase(case)
+local function runCase(ns, case)
     ns.State.profile = ns.Utils:DeepMerge({
         maxBars = 5,
         showRetailCompanions = true,
         hideExalted = false,
     }, case.profile or {})
 
-    local rawFactions = buildRawFactions(case.rawFactions or {})
+    local rawFactions = buildRawFactions(ns, case.rawFactions or {})
     ns.State.runtime = {
         rawFactions = rawFactions,
         lastRelevantFactionID = case.lastRelevantFactionID,
@@ -232,25 +279,45 @@ local function runCase(case)
     }
 end
 
-local cases = dofile(root .. "tests/cases/retail/mapping.lua")
-local passed = 0
-
-for _, case in ipairs(cases) do
-    local ok, result = pcall(runCase, case)
-    if not ok then
-        io.stderr:write("FAIL ", case.name, ": ", result, "\n")
-        os.exit(1)
+local function runSuite(suiteName)
+    local config = suiteConfigs[suiteName]
+    if not config then
+        error("Unknown test suite: " .. tostring(suiteName))
     end
 
-    passed = passed + 1
-    io.write("PASS ", case.name, " -> ")
-    for index, factionID in ipairs(result.visible) do
-        io.write(tostring(factionID))
-        if index < #result.visible then
-            io.write(",")
+    local ns = loadSuite(config.flavor, config)
+    local cases = dofile(root .. config.casePath)
+    local passed = 0
+
+    for _, case in ipairs(cases) do
+        local ok, result = pcall(runCase, ns, case)
+        if not ok then
+            io.stderr:write("FAIL ", suiteName, "/", case.name, ": ", result, "\n")
+            os.exit(1)
         end
+
+        passed = passed + 1
+        io.write("PASS ", suiteName, "/", case.name, " -> ")
+        for index, factionID in ipairs(result.visible) do
+            io.write(tostring(factionID))
+            if index < #result.visible then
+                io.write(",")
+            end
+        end
+        io.write("\n")
     end
-    io.write("\n")
+
+    io.write(string.format("Suite %s passed: %d cases\n", suiteName, passed))
+    return passed
 end
 
-io.write(string.format("Suite %s passed: %d cases\n", suite, passed))
+if suiteArg == "all" then
+    local total = 0
+    for _, suiteName in ipairs(orderedSuites) do
+        total = total + runSuite(suiteName)
+    end
+    io.write(string.format("All suites passed: %d cases across %d suites\n", total, #orderedSuites))
+    return
+end
+
+runSuite(suiteArg)

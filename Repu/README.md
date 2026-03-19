@@ -26,6 +26,7 @@ Retail wird intern jetzt fest nach Verantwortung getrennt:
 - `data/retail/mappings/regions/`: kuratierte regionale Orts-/Fraktionsmappings
 - `data/retail/variants/`: bewusst getrennte Weltzustands- und Phasenfaelle
 - `tests/cases/retail/`: datengetriebene Retail-Regressionstests
+- `tests/cases/classic/`, `tbc/`, `wrath/`, `cata/`, `mop/`: Flavor-Regressionstests fuer die nicht-Retail-Daten
 
 ## Addon-Aufteilung
 
@@ -119,6 +120,14 @@ Das bedeutet:
 - `tools/generate_variant_zone_coverage.py` behandelt die verbleibenden Dubletten-/Variantenzonen als explizite Keep-/Exclude-Liste
 - `tools/build_retail_faction_backlog.py` erzeugt aus allen Retail-Modulen einen bereinigten Fraktionsstatus-Report und unterdrueckt dabei Coverage-Schatten, wenn bereits kuratierte Overrides existieren
 - `tools/retail_faction_backlog.json` haelt den aktuellen Retail-Backlog-/Statusreport fuer den Core-Unterbau
+- `tools/run_tests.lua` fuehrt datengetriebene Mapping-Regressionstests aus:
+  - `lua tools/run_tests.lua retail`
+  - `lua tools/run_tests.lua classic`
+  - `lua tools/run_tests.lua tbc`
+  - `lua tools/run_tests.lua wrath`
+  - `lua tools/run_tests.lua cata`
+  - `lua tools/run_tests.lua mop`
+  - `lua tools/run_tests.lua all`
 
 ## Map-Scan-Pipeline
 
