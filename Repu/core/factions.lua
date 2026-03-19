@@ -474,6 +474,10 @@ function ns.Factions:SelectVisible(prioritized, context)
         local childCandidates = {}
         for _, childFactionID in ipairs(childIDs) do
             local childFaction = byID[childFactionID]
+            if not childFaction then
+                childFaction = ns.Compat:GetFactionDataByID(childFactionID)
+            end
+
             if childFaction and not seenFactionIDs[childFactionID] then
                 childCandidates[#childCandidates + 1] = {
                     factionID = childFactionID,
