@@ -120,8 +120,10 @@ function ns.UI:UpdateRow(row, candidate, isActive, isSelected)
     local isExpanded = candidate.isExpanded and true or false
     if hasChildren then
         row.toggleText:SetText(isExpanded and "-" or "+")
+        row.nameText:SetFontObject(GameFontNormal)
     else
         row.toggleText:SetText("")
+        row.nameText:SetFontObject(GameFontHighlightSmall)
     end
 
     if candidate.isChildOfVisibleParent then

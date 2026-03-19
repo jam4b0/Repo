@@ -77,9 +77,16 @@ local function createDetailButton(parent, index)
     button.meta:SetTextColor(unpack(Styles.accentText))
 
     button:SetScript("OnEnter", function(self)
+        if self.isHeader or not self.location then
+            return
+        end
         self.label:SetTextColor(unpack(Styles.accentText))
     end)
     button:SetScript("OnLeave", function(self)
+        if self.isHeader then
+            self.label:SetTextColor(unpack(Styles.accentText))
+            return
+        end
         self.label:SetTextColor(unpack(Styles.text))
     end)
     button:Hide()
@@ -463,9 +470,11 @@ function ns.UI:UpdateDetails(details, count, profile)
         button:SetPoint("TOPLEFT", detail, "TOPLEFT", 12, currentTopOffset)
         button:SetPoint("TOPRIGHT", detail, "TOPRIGHT", -12, currentTopOffset)
         button.label:SetText(text)
+        button.label:SetFontObject(GameFontNormal)
         button.label:SetTextColor(unpack(Styles.accentText))
         button.meta:SetText("")
         button.location = nil
+        button.isHeader = true
         button:SetScript("OnClick", nil)
         button:Show()
         currentTopOffset = currentTopOffset - 24
@@ -482,9 +491,11 @@ function ns.UI:UpdateDetails(details, count, profile)
         button:SetPoint("TOPLEFT", detail, "TOPLEFT", 12, currentTopOffset)
         button:SetPoint("TOPRIGHT", detail, "TOPRIGHT", -12, currentTopOffset)
         button.label:SetText(label)
+        button.label:SetFontObject(GameFontHighlightSmall)
         button.label:SetTextColor(unpack(Styles.text))
         button.meta:SetText(meta or "")
         button.location = location
+        button.isHeader = false
         if location then
             button:SetScript("OnClick", function(self)
                 ns.Waypoints:SetLocationWaypoint(self.location)
