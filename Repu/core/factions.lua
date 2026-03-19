@@ -8,9 +8,9 @@ local RETAIL_COMPANION_FACTION_IDS = {
 local RETAIL_PARENT_FACTIONS = {
     [2600] = {
         children = {
-            [2709] = true, -- Der General
-            [2710] = true, -- Der Wesir
-            [2708] = true, -- Die Weberin
+            [2605] = true, -- Der General
+            [2607] = true, -- Der Wesir
+            [2601] = true, -- Die Weberin
         },
     },
     [2653] = {
@@ -24,9 +24,9 @@ local RETAIL_PARENT_FACTIONS = {
     },
 }
 local RETAIL_CHILD_TO_PARENT = {
-    [2709] = 2600,
-    [2710] = 2600,
-    [2708] = 2600,
+    [2605] = 2600,
+    [2607] = 2600,
+    [2601] = 2600,
     [2677] = 2653,
     [2675] = 2653,
     [2673] = 2653,
