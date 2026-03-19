@@ -128,6 +128,7 @@ Das bedeutet:
   - `lua tools/run_tests.lua cata`
   - `lua tools/run_tests.lua mop`
   - `lua tools/run_tests.lua all`
+  - aktueller Stand: `36` grüne Regressionstests ueber `6` Suiten
 
 ## Map-Scan-Pipeline
 

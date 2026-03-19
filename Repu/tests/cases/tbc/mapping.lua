@@ -36,4 +36,35 @@ return {
         },
         expectTopFactionID = 946,
     },
+    {
+        name = "lower_city_prefers_lower_city",
+        context = {
+            activeFlavor = "tbc",
+            zoneName = "Shattrath City",
+            zoneKey = "shattrath city",
+            subZoneName = "Lower City",
+            subZoneKey = "lower city",
+            instanceType = "none",
+            isInInstance = false,
+        },
+        rawFactions = {
+            { factionID = 1011, name = "Lower City", standingID = 7, progressValue = 12000, progressMax = 21000, progressPct = 57.1, hasRepEntry = true },
+            { factionID = 935, name = "The Sha'tar", standingID = 6, progressValue = 6000, progressMax = 12000, progressPct = 50, hasRepEntry = true },
+        },
+        expectTopFactionID = 1011,
+    },
+    {
+        name = "sunwell_plateau_prefers_shattered_sun",
+        context = {
+            activeFlavor = "tbc",
+            instanceName = "Sunwell Plateau",
+            instanceType = "raid",
+            isInInstance = true,
+        },
+        rawFactions = {
+            { factionID = 1077, name = "Shattered Sun Offensive", standingID = 7, progressValue = 16000, progressMax = 21000, progressPct = 76.1, hasRepEntry = true },
+            { factionID = 935, name = "The Sha'tar", standingID = 6, progressValue = 5000, progressMax = 12000, progressPct = 41.6, hasRepEntry = true },
+        },
+        expectTopFactionID = 1077,
+    },
 }
