@@ -65,6 +65,7 @@ Der aktuelle Stand:
 - `tools/generate_reviewed_coverage.py` erzeugt daraus ein generiertes Retail-Coverage-Modul fuer alle normalen offenen Zonen ohne Fraktionswissen
 - `tools/generate_reviewed_hubs.py` erzeugt daraus ein separates, bewusst konservatives Hub-/Subzonen-Coverage-Modul
 - `tools/classify_remaining_candidates.py` trennt den schwierigen Rest in Varianten, PvP/Event, instanznahe Hubs und technische Sonderkarten
+- `tools/generate_remaining_zone_wave.py` erzeugt aus `normal_zones` des Restreports eine zweite autonome Coverage-Welle
 
 ## Map-Scan-Pipeline
 
