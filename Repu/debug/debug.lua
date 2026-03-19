@@ -6,6 +6,10 @@ local function printLine(message)
     DEFAULT_CHAT_FRAME:AddMessage("|cffd4af37Repu|r " .. tostring(message))
 end
 
+local function timestampUTC()
+    return date("!%Y-%m-%dT%H:%M:%SZ")
+end
+
 local function makeCaptureKey(context)
     return table.concat({
         tostring(context.mapID or 0),
@@ -105,7 +109,7 @@ function ns.Debug:BuildCaptureSnapshot()
     end
 
     return {
-        timestamp = date("!%Y-%m-%dT%H:%M:%SZ"),
+        timestamp = timestampUTC(),
         flavor = context.activeFlavor,
         context = {
             zoneName = context.zoneName,
@@ -129,6 +133,16 @@ function ns.Debug:BuildCaptureSnapshot()
         prioritized = snapshot.prioritized or {},
         visible = snapshot.visible or {},
     }
+end
+
+function ns.Debug:SetLastDiagnostic(kind, payload)
+    local debugDB = ns.State:GetDebugDB()
+    debugDB.lastDiagnostics = debugDB.lastDiagnostics or {}
+    debugDB.lastDiagnostics[kind] = {
+        timestamp = timestampUTC(),
+        payload = payload,
+    }
+    self:RefreshWindow()
 end
 
 function ns.Debug:CaptureSnapshot(reason, force)
@@ -329,6 +343,9 @@ function ns.Debug:RefreshWindow()
         "Last: " .. tostring(last and last.key or "none"),
         "MapScan: " .. tostring(mapScan.nodeCount or 0) .. " nodes",
         "MapScanAt: " .. tostring(mapScan.scannedAt or "none"),
+        "Diag Location: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.location and debugDB.lastDiagnostics.location.timestamp or "none"),
+        "Diag Unmapped: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.unmapped and debugDB.lastDiagnostics.unmapped.timestamp or "none"),
+        "Diag API: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.api and debugDB.lastDiagnostics.api.timestamp or "none"),
         "UI: capture + mapscan buttons below",
     }
     self.window.text:SetText(table.concat(text, "\n"))
@@ -364,6 +381,10 @@ end
 function ns.Debug:DumpLocation()
     local context = ns.State.runtime.context or ns.Location:BuildContext()
     local coverage = ns.State.runtime.coverage or ns.Data:GetCoverage(context)
+    self:SetLastDiagnostic("location", {
+        context = context,
+        coverage = coverage,
+    })
     printLine("Flavor: " .. tostring(context.activeFlavor))
     printLine("Zone: " .. tostring(context.zoneName))
     printLine("SubZone: " .. tostring(context.subZoneName))
@@ -380,6 +401,10 @@ end
 function ns.Debug:DumpUnmapped()
     local context = ns.State.runtime.context or ns.Location:BuildContext()
     local coverage = ns.State.runtime.coverage or ns.Data:GetCoverage(context)
+    self:SetLastDiagnostic("unmapped", {
+        context = context,
+        coverage = coverage,
+    })
     printLine("Unmapped zone probe")
     printLine("ZoneKey=" .. tostring(context.zoneKey))
     printLine("SubZoneKey=" .. tostring(context.subZoneKey))
@@ -395,7 +420,9 @@ function ns.Debug:DumpUnmapped()
 end
 
 function ns.Debug:DumpAPI()
-    printLine("API: " .. Utils:Stringify(ns.Compat:GetAPISummary()))
+    local api = ns.Compat:GetAPISummary()
+    self:SetLastDiagnostic("api", api)
+    printLine("API: " .. Utils:Stringify(api))
 end
 
 function ns.Debug:RunMapScan()

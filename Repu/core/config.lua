@@ -24,6 +24,11 @@ local defaults = {
         sweepMaxCaptures = 2000,
         captures = {},
         lastCaptureKey = nil,
+        lastDiagnostics = {
+            location = nil,
+            unmapped = nil,
+            api = nil,
+        },
         mapScan = {
             scannedAt = nil,
             roots = {},
