@@ -171,6 +171,18 @@ local function createSyntheticFaction(match)
     local description = match.description or (factionData and factionData.description) or nil
     local hasRepEntry = factionData and (factionData.hasRep == true or factionData.hasRepEntry == true or (factionData.renownLevel and factionData.renownLevel > 0)) or false
     local standingLabel = "Kein Rufeintrag"
+    local minValue = factionData and (factionData.min or factionData.barMin) or 0
+    local maxValue = factionData and (factionData.max or factionData.barMax) or 0
+    local value = factionData and (factionData.value or factionData.barValue) or 0
+    local progressValue = factionData and factionData.progressValue
+    local progressMax = factionData and factionData.progressMax
+    local progressPct = factionData and factionData.progressPct
+
+    if progressValue == nil or progressMax == nil then
+        progressValue = math.max(0, value - minValue)
+        progressMax = math.max(0, maxValue - minValue)
+        progressPct = progressMax > 0 and (progressValue / progressMax) * 100 or 0
+    end
 
     if hasRepEntry then
         if factionData.isMajorFaction and factionData.renownLevel and factionData.renownLevel > 0 then
@@ -188,12 +200,12 @@ local function createSyntheticFaction(match)
         description = description,
         standingID = factionData and factionData.standingID or 0,
         standingLabel = standingLabel,
-        min = factionData and factionData.min or 0,
-        max = factionData and factionData.max or 0,
-        value = factionData and factionData.value or 0,
-        progressValue = factionData and factionData.progressValue or 0,
-        progressMax = factionData and factionData.progressMax or 0,
-        progressPct = factionData and factionData.progressPct or 0,
+        min = minValue,
+        max = maxValue,
+        value = value,
+        progressValue = progressValue or 0,
+        progressMax = progressMax or 0,
+        progressPct = progressPct or 0,
         isWatched = false,
         isChild = factionData and factionData.isChild or false,
         isExalted = factionData and factionData.isExalted or false,
