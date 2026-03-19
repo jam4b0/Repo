@@ -122,6 +122,9 @@ end
 
 function ns.Inference:BuildMatches(rawFactions, context, directMatches)
     local inferred = {}
+    if context and context.activeFlavor == "retail" then
+        return inferred
+    end
     local phrases = collectLocationPhrases(context or {})
     if #phrases == 0 then
         return inferred

@@ -1,0 +1,250 @@
+local root = "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/"
+
+local function loadAddonFile(relPath, ns)
+    local chunk, err = loadfile(root .. relPath)
+    if not chunk then
+        error(err)
+    end
+    return chunk(nil, ns)
+end
+
+local function startsWith(value, prefix)
+    return string.sub(value, 1, #prefix) == prefix
+end
+
+local suite = arg[1] or "retail"
+
+if suite ~= "retail" then
+    error("Unknown test suite: " .. tostring(suite))
+end
+
+UNKNOWN = "UNKNOWN"
+
+local ns = {
+    Utils = {},
+    Data = {},
+    Inference = {},
+    Scoring = {},
+    Factions = {},
+    State = {
+        runtime = {},
+        profile = {
+            maxBars = 5,
+            showRetailCompanions = true,
+            hideExalted = false,
+        },
+    },
+    Compat = {},
+}
+
+function ns.State:GetProfile()
+    return self.profile
+end
+
+function ns.State:GetRuntimeValue(key)
+    return self.runtime and self.runtime[key] or nil
+end
+
+function ns.Compat:GetFlavor()
+    return "retail"
+end
+
+function ns.Compat:GetStandingLabel(standingID)
+    local labels = {
+        [1] = "Hasserfüllt",
+        [2] = "Feindselig",
+        [3] = "Unfreundlich",
+        [4] = "Neutral",
+        [5] = "Freundlich",
+        [6] = "Wohlwollend",
+        [7] = "Respektvoll",
+        [8] = "Ehrfürchtig",
+    }
+    return labels[standingID] or "Unbekannt"
+end
+
+function ns.Compat:GetFactionDataByID(factionID)
+    local raw = ns.State.runtime and ns.State.runtime.rawFactions or nil
+    return raw and raw.byID and raw.byID[factionID] or nil
+end
+
+loadAddonFile("core/utils.lua", ns)
+loadAddonFile("data/shared.lua", ns)
+
+for _, relPath in ipairs({
+    "data/retail/client_seed.lua",
+    "data/retail/coverage_generated.lua",
+    "data/retail/coverage_wave2_generated.lua",
+    "data/retail/coverage_cleanup_generated.lua",
+    "data/retail/coverage_variants_generated.lua",
+    "data/retail/coverage_world_variants_generated.lua",
+    "data/retail/coverage_event_variants_generated.lua",
+    "data/retail/coverage_instance_adjacent_generated.lua",
+    "data/retail/coverage_instance_variants_generated.lua",
+    "data/retail/coverage_mixed_world_subzones_generated.lua",
+    "data/retail/coverage_special_zones_generated.lua",
+    "data/retail/coverage_special_subzones_generated.lua",
+    "data/retail/coverage_hubs_generated.lua",
+    "data/retail/coverage_hubs_wave2_generated.lua",
+    "data/retail/coverage_final_subzones_generated.lua",
+    "data/retail/variants.lua",
+    "data/retail/kalimdor.lua",
+    "data/retail/eastern_kingdoms.lua",
+    "data/retail/outland.lua",
+    "data/retail/northrend.lua",
+    "data/retail/pandaria.lua",
+    "data/retail/cataclysm.lua",
+    "data/retail/broken_isles.lua",
+    "data/retail/bfa.lua",
+    "data/retail/shadowlands.lua",
+    "data/retail/dragonflight.lua",
+    "data/retail/draenor.lua",
+    "data/retail/current.lua",
+    "data/retail.lua",
+    "core/inference.lua",
+    "core/scoring.lua",
+    "core/factions.lua",
+}) do
+    loadAddonFile(relPath, ns)
+end
+
+ns.Data:Init()
+
+local function normalizeFaction(row)
+    row = ns.Utils:ShallowCopy(row)
+    row.nameKey = ns.Utils:NormalizeKey(row.name)
+    row.description = row.description or nil
+    row.index = row.index or 0
+    row.standingID = row.standingID or 0
+    row.min = row.min or 0
+    row.max = row.max or (row.progressMax or 0)
+    row.value = row.value or (row.progressValue or 0)
+    row.progressValue = row.progressValue or 0
+    row.progressMax = row.progressMax or 0
+    row.progressPct = row.progressPct or 0
+    row.isWatched = row.isWatched or false
+    row.isChild = row.isChild or false
+    row.isExalted = row.isExalted or false
+    row.isAccountWide = row.isAccountWide or false
+    row.isMajorFaction = row.isMajorFaction or false
+    row.hasRepEntry = row.hasRepEntry ~= false
+    row.parentFactionID = row.parentFactionID
+    row.standingLabel = row.standingLabel or (row.isMajorFaction and "Ruhmstufe" or ns.Compat:GetStandingLabel(row.standingID))
+    return row
+end
+
+local function buildRawFactions(rows)
+    local collection = {
+        list = {},
+        byID = {},
+        byName = {},
+        childIDsByParent = {},
+        virtualParentsByID = {},
+        virtualParentByChildID = {},
+    }
+
+    for index, row in ipairs(rows or {}) do
+        local faction = normalizeFaction(row)
+        faction.index = index
+        collection.list[#collection.list + 1] = faction
+        if faction.factionID then
+            collection.byID[faction.factionID] = faction
+        end
+        if faction.nameKey then
+            collection.byName[faction.nameKey] = faction
+        end
+        if faction.parentFactionID and faction.factionID then
+            collection.childIDsByParent[faction.parentFactionID] = collection.childIDsByParent[faction.parentFactionID] or {}
+            table.insert(collection.childIDsByParent[faction.parentFactionID], faction.factionID)
+        end
+    end
+
+    return collection
+end
+
+local function factionIDs(visible)
+    local ids = {}
+    for _, row in ipairs(visible or {}) do
+        ids[#ids + 1] = row.factionID
+    end
+    return ids
+end
+
+local function hasFactionID(rows, factionID)
+    for _, row in ipairs(rows or {}) do
+        if row.factionID == factionID then
+            return true
+        end
+    end
+    return false
+end
+
+local function runCase(case)
+    ns.State.profile = ns.Utils:DeepMerge({
+        maxBars = 5,
+        showRetailCompanions = true,
+        hideExalted = false,
+    }, case.profile or {})
+
+    local rawFactions = buildRawFactions(case.rawFactions or {})
+    ns.State.runtime = {
+        rawFactions = rawFactions,
+        lastRelevantFactionID = case.lastRelevantFactionID,
+    }
+
+    local coverage = ns.Data:GetCoverage(case.context)
+    local matches = ns.Factions:BuildMatches(rawFactions, case.context)
+    local prioritized = ns.Scoring:Prioritize(matches, rawFactions, case.context)
+    local visible = ns.Factions:SelectVisible(prioritized, case.context)
+
+    if case.expectCoverage then
+        for key, value in pairs(case.expectCoverage) do
+            assert(coverage[key] == value, string.format("%s: expected coverage.%s=%s, got %s", case.name, key, tostring(value), tostring(coverage[key])))
+        end
+    end
+
+    if case.expectVisibleCount ~= nil then
+        assert(#visible == case.expectVisibleCount, string.format("%s: expected %d visible, got %d", case.name, case.expectVisibleCount, #visible))
+    end
+
+    if case.expectTopFactionID then
+        assert(visible[1] and visible[1].factionID == case.expectTopFactionID,
+            string.format("%s: expected top faction %s, got %s", case.name, tostring(case.expectTopFactionID), visible[1] and tostring(visible[1].factionID) or "nil"))
+    end
+
+    for _, factionID in ipairs(case.requireVisibleFactionIDs or {}) do
+        assert(hasFactionID(visible, factionID), string.format("%s: expected visible faction %s", case.name, tostring(factionID)))
+    end
+
+    for _, factionID in ipairs(case.forbidVisibleFactionIDs or {}) do
+        assert(not hasFactionID(visible, factionID), string.format("%s: forbidden visible faction %s", case.name, tostring(factionID)))
+    end
+
+    return {
+        name = case.name,
+        visible = factionIDs(visible),
+    }
+end
+
+local cases = dofile(root .. "tests/cases/retail_mapping_cases.lua")
+local passed = 0
+
+for _, case in ipairs(cases) do
+    local ok, result = pcall(runCase, case)
+    if not ok then
+        io.stderr:write("FAIL ", case.name, ": ", result, "\n")
+        os.exit(1)
+    end
+
+    passed = passed + 1
+    io.write("PASS ", case.name, " -> ")
+    for index, factionID in ipairs(result.visible) do
+        io.write(tostring(factionID))
+        if index < #result.visible then
+            io.write(",")
+        end
+    end
+    io.write("\n")
+end
+
+io.write(string.format("Suite %s passed: %d cases\n", suite, passed))
