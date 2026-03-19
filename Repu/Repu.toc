@@ -30,6 +30,7 @@ data\retail\coverage_event_variants_generated.lua
 data\retail\coverage_special_zones_generated.lua
 data\retail\coverage_instance_adjacent_generated.lua
 data\retail\coverage_instance_variants_generated.lua
+data\retail\coverage_mixed_world_subzones_generated.lua
 data\retail\kalimdor.lua
 data\retail\eastern_kingdoms.lua
 data\retail\outland.lua
