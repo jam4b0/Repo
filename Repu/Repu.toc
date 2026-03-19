@@ -21,6 +21,7 @@ data\retail\core.lua
 data\retail\client_seed.lua
 data\retail\coverage_generated.lua
 data\retail\coverage_hubs_generated.lua
+data\retail\coverage_hubs_wave2_generated.lua
 data\retail\coverage_wave2_generated.lua
 data\retail\coverage_cleanup_generated.lua
 data\retail\coverage_variants_generated.lua

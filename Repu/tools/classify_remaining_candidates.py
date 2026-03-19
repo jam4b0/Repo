@@ -69,6 +69,29 @@ def load_priority(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def curated_zone_ids() -> set[int]:
+    from compare_map_seed import load_curated_retail  # type: ignore
+
+    curated = load_curated_retail()
+    ids: set[int] = set()
+    for key, entry in curated["zones"].items():
+        ids.add(int(key))
+        for map_id in entry["mapIDs"]:
+            ids.add(int(map_id))
+    return ids
+
+
+def curated_subzone_ids() -> set[int]:
+    from compare_map_seed import load_curated_retail  # type: ignore
+
+    curated = load_curated_retail()
+    ids: set[int] = set()
+    for entry in curated["subZones"].values():
+        for map_id in entry["mapIDs"]:
+            ids.add(int(map_id))
+    return ids
+
+
 def classify(row: dict) -> str:
     candidate_class = row.get("candidateClass")
     reasons = set(row.get("reviewReasons", []))
@@ -102,10 +125,16 @@ def classify(row: dict) -> str:
 
 def build_report(priority: dict) -> dict:
     buckets: dict[str, list[dict]] = defaultdict(list)
+    zone_ids_curated = curated_zone_ids()
+    subzone_ids_curated = curated_subzone_ids()
 
     for group in priority["groups"]:
         for kind in ("zones", "subZones"):
             for row in group[kind]:
+                if kind == "zones" and int(row["mapID"]) in zone_ids_curated:
+                    continue
+                if kind == "subZones" and int(row["mapID"]) in subzone_ids_curated:
+                    continue
                 bucket = classify(row)
                 buckets[bucket].append(
                     {

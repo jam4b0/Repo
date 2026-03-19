@@ -64,6 +64,7 @@ Der aktuelle Stand:
 - `tools/prioritize_curation_candidates.py` gruppiert diese Kandidaten nach Weltblock und liefert eine blockweise Prioritaetsmatrix
 - `tools/generate_reviewed_coverage.py` erzeugt daraus ein generiertes Retail-Coverage-Modul fuer alle normalen offenen Zonen ohne Fraktionswissen
 - `tools/generate_reviewed_hubs.py` erzeugt daraus ein separates, bewusst konservatives Hub-/Subzonen-Coverage-Modul
+- `tools/generate_hub_wave2.py` erzeugt eine zweite, explizite Keep-Case-Welle fuer nur manuell freigegebene Outdoor-/Hub-Subzonen
 - `tools/classify_remaining_candidates.py` trennt den schwierigen Rest in Varianten, PvP/Event, instanznahe Hubs und technische Sonderkarten
 - `tools/generate_remaining_zone_wave.py` erzeugt aus `normal_zones` des Restreports eine zweite autonome Coverage-Welle
 - `tools/generate_final_zone_cleanup.py` erzeugt aus den letzten verbleibenden Zonen nur explizite Keep-Cases fuer die Abschlusswelle
