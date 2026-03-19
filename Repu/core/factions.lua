@@ -154,6 +154,32 @@ local function getKnownChildDefinition(parentFactionID, childFactionID)
 end
 
 local function matchApplies(match, context)
+    if match.zoneKeys and context.zoneKey then
+        local allowed = false
+        for _, zoneKey in ipairs(match.zoneKeys) do
+            if Utils:NormalizeKey(zoneKey) == context.zoneKey then
+                allowed = true
+                break
+            end
+        end
+        if not allowed then
+            return false
+        end
+    end
+
+    if match.subZoneKeys and context.subZoneKey then
+        local allowed = false
+        for _, subZoneKey in ipairs(match.subZoneKeys) do
+            if Utils:NormalizeKey(subZoneKey) == context.subZoneKey then
+                allowed = true
+                break
+            end
+        end
+        if not allowed then
+            return false
+        end
+    end
+
     if match.factionGroups and context.playerFactionGroup then
         local allowed = false
         for _, factionGroup in ipairs(match.factionGroups) do

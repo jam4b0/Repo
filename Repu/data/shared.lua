@@ -42,6 +42,8 @@ local function normalizeEntry(entry, sourceType)
     copy.weight = copy.weight or defaultWeights[sourceType] or 100
     copy.sourceType = sourceType
     copy.aliases = copy.aliases or nil
+    copy.zoneKeys = copy.zoneKeys or nil
+    copy.subZoneKeys = copy.subZoneKeys or nil
     copy.mapIDs = copy.mapIDs or nil
     copy.instanceMapIDs = copy.instanceMapIDs or nil
     copy.difficulties = copy.difficulties or nil
@@ -73,6 +75,8 @@ local function normalizeLocationRecord(locationType, key, record)
             mapIDs = record.mapIDs,
             instanceMapIDs = record.instanceMapIDs,
             aliases = record.aliases,
+            zoneKeys = record.zoneKeys,
+            subZoneKeys = record.subZoneKeys,
             difficulties = record.difficulties,
             instanceTypes = record.instanceTypes,
             factionGroups = record.factionGroups,
@@ -94,6 +98,8 @@ local function normalizeLocationRecord(locationType, key, record)
             entry.mapIDs = entry.mapIDs or record.mapIDs
             entry.instanceMapIDs = entry.instanceMapIDs or record.instanceMapIDs
             entry.aliases = entry.aliases or record.aliases
+            entry.zoneKeys = entry.zoneKeys or record.zoneKeys
+            entry.subZoneKeys = entry.subZoneKeys or record.subZoneKeys
             entry.difficulties = entry.difficulties or record.difficulties
             entry.instanceTypes = entry.instanceTypes or record.instanceTypes
             entry.factionGroups = entry.factionGroups or record.factionGroups
@@ -336,10 +342,73 @@ end
 function ns.Data:GetCoverage(context)
     context = context or {}
 
-    local zoneRecord = self:GetLocationRecordByMapID("zone", context.mapID)
+    local zoneRecord = nil
+    if context.zoneName then
+        zoneRecord = self:GetLocationRecord("zone", context.zoneName)
+    end
+    if not zoneRecord then
+        zoneRecord = self:GetLocationRecordByMapID("zone", context.mapID)
+    end
     local subZoneRecord, subZoneKey = self:GetSubZoneRecord(context.mapID, context.subZoneName)
     local zoneMatches = self:FindMatchesByMapID("zone", context.mapID)
     local subZoneMatches = self:FindSubZoneMatches(context.mapID, context.subZoneName)
+
+    local function matchesContext(entry)
+        if entry.zoneKeys and context.zoneKey then
+            local allowed = false
+            for _, zoneKey in ipairs(entry.zoneKeys) do
+                if Utils:NormalizeKey(zoneKey) == context.zoneKey then
+                    allowed = true
+                    break
+                end
+            end
+            if not allowed then
+                return false
+            end
+        end
+
+        if entry.subZoneKeys and context.subZoneKey then
+            local allowed = false
+            for _, subZoneKeyEntry in ipairs(entry.subZoneKeys) do
+                if Utils:NormalizeKey(subZoneKeyEntry) == context.subZoneKey then
+                    allowed = true
+                    break
+                end
+            end
+            if not allowed then
+                return false
+            end
+        end
+
+        if entry.factionGroups and context.playerFactionGroup then
+            local allowed = false
+            for _, factionGroup in ipairs(entry.factionGroups) do
+                if factionGroup == context.playerFactionGroup then
+                    allowed = true
+                    break
+                end
+            end
+            if not allowed then
+                return false
+            end
+        end
+
+        return true
+    end
+
+    local filteredZoneMatches = {}
+    for _, match in ipairs(zoneMatches) do
+        if matchesContext(match) then
+            filteredZoneMatches[#filteredZoneMatches + 1] = match
+        end
+    end
+
+    local filteredSubZoneMatches = {}
+    for _, match in ipairs(subZoneMatches) do
+        if matchesContext(match) then
+            filteredSubZoneMatches[#filteredSubZoneMatches + 1] = match
+        end
+    end
 
     local function hasTag(record, needle)
         for _, tag in ipairs(record and record.tags or {}) do
@@ -356,8 +425,8 @@ function ns.Data:GetCoverage(context)
         subZoneKey = subZoneKey,
         zoneHasRecord = zoneRecord ~= nil,
         subZoneHasRecord = subZoneRecord ~= nil,
-        zoneHasMapping = #zoneMatches > 0,
-        subZoneHasMapping = #subZoneMatches > 0,
+        zoneHasMapping = #filteredZoneMatches > 0,
+        subZoneHasMapping = #filteredSubZoneMatches > 0,
         zoneFromClientSeed = hasTag(zoneRecord, "generated") or (zoneRecord and zoneRecord.source == "client_seed") or false,
         subZoneFromClientSeed = hasTag(subZoneRecord, "generated") or (subZoneRecord and subZoneRecord.source == "client_seed") or false,
     }
