@@ -245,6 +245,26 @@ ns.Data:RegisterRetailModule({
                 factionIDs = { 21 },
                 weight = 238,
             },
+            [50] = {
+                name = "Nördliches Schlingendorntal",
+                source = "seed",
+                confidence = "medium",
+                notes = "Steamwheedle trade corridor in retail",
+                mapIDs = { 50 },
+                tags = { "zone", "local", "eastern-kingdoms" },
+                factionIDs = { 21 },
+                weight = 236,
+            },
+            [210] = {
+                name = "Das Schlingendornkap",
+                source = "seed",
+                confidence = "medium",
+                notes = "Steamwheedle trade corridor in retail",
+                mapIDs = { 210 },
+                tags = { "zone", "local", "eastern-kingdoms" },
+                factionIDs = { 21 },
+                weight = 236,
+            },
         },
         subZones = {
             ["84:handelsdistrikt"] = {
