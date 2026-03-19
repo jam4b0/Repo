@@ -7,6 +7,8 @@ import json
 import os
 import re
 import sys
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -24,7 +26,6 @@ SECTION_RE = re.compile(r"^\s*(zones|subZones|instances|raids)\s*=\s*\{\s*$")
 RECORD_START_RE = re.compile(r"^\s*(\[[^\]]+\])\s*=\s*\{\s*$")
 NAME_RE = re.compile(r'name\s*=\s*"([^"]+)"')
 FACTION_IDS_RE = re.compile(r"factionIDs\s*=\s*\{([^}]*)\}")
-FACTIONS_INLINE_RE = re.compile(r"factions\s*=\s*\{([^}]*)\}")
 CONTENT_FACTION_RE = re.compile(r"\[(\d+)\]\s*=\s*\{")
 
 SKIP_REPU_FILES = {"core.lua", "retail.lua"}
@@ -68,9 +69,21 @@ def read_env_file(path: Path) -> dict[str, str]:
 
 
 def http_json(url: str, *, headers: dict[str, str] | None = None, data: bytes | None = None) -> dict:
-    req = urllib.request.Request(url, headers=headers or {}, data=data)
-    with urllib.request.urlopen(req, timeout=30) as response:
-        return json.loads(response.read().decode("utf-8"))
+    last_error = None
+    for attempt in range(4):
+        try:
+            req = urllib.request.Request(url, headers=headers or {}, data=data)
+            with urllib.request.urlopen(req, timeout=30) as response:
+                return json.loads(response.read().decode("utf-8"))
+        except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as exc:
+            last_error = exc
+            status = getattr(exc, "code", None)
+            if status is not None and status < 500 and status != 429:
+                raise
+            if attempt >= 3:
+                raise
+            time.sleep(1 + attempt)
+    raise last_error
 
 
 def get_access_token(client_id: str, client_secret: str) -> str:
@@ -139,9 +152,7 @@ def collect_core_faction_ids() -> dict[int, dict]:
                 ids_match = FACTION_IDS_RE.search(block)
                 if ids_match:
                     faction_ids.update(int(value) for value in re.findall(r"\d+", ids_match.group(1)))
-                inline_match = FACTIONS_INLINE_RE.search(block)
-                if inline_match:
-                    faction_ids.update(int(value) for value in re.findall(r"factionID\s*=\s*(\d+)", inline_match.group(1)))
+                faction_ids.update(int(value) for value in re.findall(r"factionID\s*=\s*(\d+)", block))
 
                 for faction_id in faction_ids:
                     entry = faction_data.setdefault(

@@ -15,7 +15,6 @@ SECTION_RE = re.compile(r"^\s*(zones|subZones|instances|raids)\s*=\s*\{\s*$")
 RECORD_START_RE = re.compile(r"^\s*(\[[^\]]+\])\s*=\s*\{\s*$")
 NAME_RE = re.compile(r'name\s*=\s*"([^"]+)"')
 FACTION_IDS_RE = re.compile(r"factionIDs\s*=\s*\{([^}]*)\}")
-FACTIONS_INLINE_RE = re.compile(r"factions\s*=\s*\{([^}]*)\}")
 CONTENT_FACTION_RE = re.compile(r"\[(\d+)\]\s*=\s*\{")
 
 SKIP_REPU_FILES = {"core.lua", "retail.lua"}
@@ -56,9 +55,7 @@ def collect_core_faction_ids() -> dict[int, dict]:
                 ids_match = FACTION_IDS_RE.search(block)
                 if ids_match:
                     faction_ids.update(int(value) for value in re.findall(r"\d+", ids_match.group(1)))
-                inline_match = FACTIONS_INLINE_RE.search(block)
-                if inline_match:
-                    faction_ids.update(int(value) for value in re.findall(r"factionID\s*=\s*(\d+)", inline_match.group(1)))
+                faction_ids.update(int(value) for value in re.findall(r"factionID\s*=\s*(\d+)", block))
 
                 for faction_id in faction_ids:
                     entry = faction_data.setdefault(

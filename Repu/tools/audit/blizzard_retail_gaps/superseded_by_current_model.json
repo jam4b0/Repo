@@ -4,15 +4,15 @@
     "locale": "en_US",
     "blizzardFactionCount": 281,
     "blizzardRootCount": 14,
-    "addonCoreFactionCount": 111,
-    "addonContentFactionCount": 130,
-    "coreCoveredByContentCount": 111,
+    "addonCoreFactionCount": 125,
+    "addonContentFactionCount": 136,
+    "coreCoveredByContentCount": 125,
     "coreMissingContentCount": 0,
-    "blizzardMissingInCoreCount": 171,
-    "contentOnlyCount": 19
+    "blizzardMissingInCoreCount": 157,
+    "contentOnlyCount": 11
   },
   "gapClass": "superseded_by_current_model",
-  "count": 23,
+  "count": 21,
   "rows": [
     {
       "factionID": 2159,
@@ -29,16 +29,6 @@
       "name": "Alliance Vanguard",
       "classification": "header",
       "isHeader": true,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "superseded_by_current_model"
-    },
-    {
-      "factionID": 1178,
-      "name": "Hellscream's Reach",
-      "classification": "faction_header",
-      "isHeader": false,
       "isRenown": false,
       "sourceFiles": [],
       "exampleLocations": [],
@@ -97,16 +87,6 @@
     {
       "factionID": 911,
       "name": "Silvermoon City",
-      "classification": "faction_header",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "superseded_by_current_model"
-    },
-    {
-      "factionID": 1388,
-      "name": "Sunreaver Onslaught",
       "classification": "faction_header",
       "isHeader": false,
       "isRenown": false,

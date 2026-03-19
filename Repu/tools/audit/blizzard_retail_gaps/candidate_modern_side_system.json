@@ -4,26 +4,16 @@
     "locale": "en_US",
     "blizzardFactionCount": 281,
     "blizzardRootCount": 14,
-    "addonCoreFactionCount": 111,
-    "addonContentFactionCount": 130,
-    "coreCoveredByContentCount": 111,
+    "addonCoreFactionCount": 125,
+    "addonContentFactionCount": 136,
+    "coreCoveredByContentCount": 125,
     "coreMissingContentCount": 0,
-    "blizzardMissingInCoreCount": 171,
-    "contentOnlyCount": 19
+    "blizzardMissingInCoreCount": 157,
+    "contentOnlyCount": 11
   },
   "gapClass": "candidate_modern_side_system",
-  "count": 21,
+  "count": 10,
   "rows": [
-    {
-      "factionID": 2544,
-      "name": "Artisan's Consortium - Dragon Isles Branch",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_modern_side_system"
-    },
     {
       "factionID": 2615,
       "name": "Azerothian Archives",
@@ -55,26 +45,6 @@
       "gapClass": "candidate_modern_side_system"
     },
     {
-      "factionID": 2550,
-      "name": "Cobalt Assembly",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_modern_side_system"
-    },
-    {
-      "factionID": 2523,
-      "name": "Dark Talons",
-      "classification": "faction_header",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_modern_side_system"
-    },
-    {
       "factionID": 2669,
       "name": "Darkfuse Solutions",
       "classification": "leaf",
@@ -88,16 +58,6 @@
       "factionID": 2664,
       "name": "Flynn Fairwind",
       "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_modern_side_system"
-    },
-    {
-      "factionID": 2395,
-      "name": "Honeyback Hive",
-      "classification": "faction_header",
       "isHeader": false,
       "isRenown": false,
       "sourceFiles": [],
@@ -125,38 +85,8 @@
       "gapClass": "candidate_modern_side_system"
     },
     {
-      "factionID": 2524,
-      "name": "Obsidian Warders",
-      "classification": "faction_header",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_modern_side_system"
-    },
-    {
       "factionID": 2666,
       "name": "Roasts and Boasts",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_modern_side_system"
-    },
-    {
-      "factionID": 2518,
-      "name": "Sabellian",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_modern_side_system"
-    },
-    {
-      "factionID": 2553,
-      "name": "Soridormi",
       "classification": "leaf",
       "isHeader": false,
       "isRenown": false,
@@ -175,48 +105,8 @@
       "gapClass": "candidate_modern_side_system"
     },
     {
-      "factionID": 2439,
-      "name": "The Avowed",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_modern_side_system"
-    },
-    {
       "factionID": 2163,
       "name": "Tortollan Seekers",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_modern_side_system"
-    },
-    {
-      "factionID": 2417,
-      "name": "Uldum Accord",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_modern_side_system"
-    },
-    {
-      "factionID": 2526,
-      "name": "Winterpelt Furbolg",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_modern_side_system"
-    },
-    {
-      "factionID": 2517,
-      "name": "Wrathion",
       "classification": "leaf",
       "isHeader": false,
       "isRenown": false,

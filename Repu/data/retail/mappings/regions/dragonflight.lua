@@ -26,7 +26,13 @@ ns.Data:RegisterRetailModule({
                 notes = "Dragonflight zone cluster",
                 mapIDs = { 2022 },
                 tags = { "zone", "local", "dragonflight" },
-                factionIDs = { 2507 },
+                factions = {
+                    { factionID = 2507, weight = 250 },
+                    { factionID = 2517, weight = 216 },
+                    { factionID = 2518, weight = 216 },
+                    { factionID = 2523, weight = 210 },
+                    { factionID = 2524, weight = 210 },
+                },
                 weight = 250,
             },
             [2023] = {

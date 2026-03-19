@@ -42,6 +42,38 @@ api.RegisterRetailContentModule({
                 { title = "Iskaara", kind = "Hub", location = { title = "Iskaara" } },
             },
         },
+        [2517] = {
+            summary = "Wrathion ist ein lokaler Nebenruf der Waking Shores rund um die schwarze Drachenflug-Geschichte. Der Fortschritt sitzt an den obsidianbezogenen Aufgaben dieses Gebiets.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                { title = "Waking Shores black dragonflight content", kind = "Zone", location = { title = "Küste des Erwachens" } },
+            },
+        },
+        [2518] = {
+            summary = "Sabellian ist der zweite lokale schwarze Drachenflug-Nebenruf der Waking Shores. Der Fortschritt bündelt seine obsidianbezogenen Story- und Hilfsaufgaben.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                { title = "Waking Shores black dragonflight content", kind = "Zone", location = { title = "Küste des Erwachens" } },
+            },
+        },
+        [2523] = {
+            summary = "Dark Talons ist ein lokaler Dracthyr-Nebenruf im Obsidian-Umfeld der Waking Shores. Er ergänzt die schwarze Drachenflug-Linie um einen einsatzorientierten Zweig.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                { title = "Obsidian side content", kind = "Recurring", location = { title = "Küste des Erwachens" } },
+            },
+        },
+        [2524] = {
+            summary = "Obsidian Warders ist ein lokaler Dracthyr-Nebenruf im Obsidian-Umfeld der Waking Shores. Er ergänzt die dortigen Verteidigungs- und Schutzaktivitäten.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                { title = "Obsidian side content", kind = "Recurring", location = { title = "Küste des Erwachens" } },
+            },
+        },
         [2526] = {
             summary = "Winterpelt Furbolg ist ein lokaler Nebenruf im Azurblauen Gebirge. Der Fortschritt sitzt an der Winterpelt-Hilfe und den zugehörigen Aufgaben rund um die Furbolg.",
             source = "curated",

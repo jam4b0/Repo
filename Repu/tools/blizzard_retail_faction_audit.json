@@ -4,12 +4,12 @@
     "locale": "en_US",
     "blizzardFactionCount": 281,
     "blizzardRootCount": 14,
-    "addonCoreFactionCount": 111,
-    "addonContentFactionCount": 130,
-    "coreCoveredByContentCount": 111,
+    "addonCoreFactionCount": 125,
+    "addonContentFactionCount": 136,
+    "coreCoveredByContentCount": 125,
     "coreMissingContentCount": 0,
-    "blizzardMissingInCoreCount": 171,
-    "contentOnlyCount": 19
+    "blizzardMissingInCoreCount": 157,
+    "contentOnlyCount": 11
   },
   "classificationCounts": {
     "faction_header": 72,
@@ -444,15 +444,6 @@
       "exampleLocations": []
     },
     {
-      "factionID": 1178,
-      "name": "Hellscream's Reach",
-      "classification": "faction_header",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
       "factionID": 1216,
       "name": "Shang Xi's Academy",
       "classification": "leaf",
@@ -644,15 +635,6 @@
     {
       "factionID": 1374,
       "name": "Brawl'gar Arena (Season 1)",
-      "classification": "faction_header",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 1388,
-      "name": "Sunreaver Onslaught",
       "classification": "faction_header",
       "isHeader": false,
       "isRenown": false,
@@ -1011,15 +993,6 @@
       "exampleLocations": []
     },
     {
-      "factionID": 2395,
-      "name": "Honeyback Hive",
-      "classification": "faction_header",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
       "factionID": 2400,
       "name": "Waveblade Ankoan",
       "classification": "faction_header",
@@ -1033,24 +1006,6 @@
       "name": "Shadowlands",
       "classification": "generic_header",
       "isHeader": true,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2417,
-      "name": "Uldum Accord",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2439,
-      "name": "The Avowed",
-      "classification": "leaf",
-      "isHeader": false,
       "isRenown": false,
       "sourceFiles": [],
       "exampleLocations": []
@@ -1245,78 +1200,6 @@
       "exampleLocations": []
     },
     {
-      "factionID": 2517,
-      "name": "Wrathion",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2518,
-      "name": "Sabellian",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2523,
-      "name": "Dark Talons",
-      "classification": "faction_header",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2524,
-      "name": "Obsidian Warders",
-      "classification": "faction_header",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2526,
-      "name": "Winterpelt Furbolg",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2544,
-      "name": "Artisan's Consortium - Dragon Isles Branch",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2550,
-      "name": "Cobalt Assembly",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2553,
-      "name": "Soridormi",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
       "factionID": 2568,
       "name": "Glimmerogg Racer",
       "classification": "leaf",
@@ -1488,15 +1371,6 @@
       "exampleLocations": []
     },
     {
-      "factionID": 2711,
-      "name": "Magisters",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
       "factionID": 2712,
       "name": "Blood Knights",
       "classification": "leaf",
@@ -1563,69 +1437,6 @@
   "coreMissingInContent": [],
   "contentOnly": [
     {
-      "factionID": 2395,
-      "name": "Honeyback Hive",
-      "classification": "faction_header",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2417,
-      "name": "Uldum Accord",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2439,
-      "name": "The Avowed",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2526,
-      "name": "Winterpelt Furbolg",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2544,
-      "name": "Artisan's Consortium - Dragon Isles Branch",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2550,
-      "name": "Cobalt Assembly",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2553,
-      "name": "Soridormi",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
       "factionID": 2601,
       "name": "The Weaver",
       "classification": "leaf",
@@ -1689,15 +1500,6 @@
       "exampleLocations": []
     },
     {
-      "factionID": 2711,
-      "name": "Magisters",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
       "factionID": 2712,
       "name": "Blood Knights",
       "classification": "leaf",
@@ -1746,8 +1548,18 @@
       ],
       "exampleLocations": [
         {
+          "name": "Nazjatar",
+          "section": "zones",
+          "file": "bfa.lua"
+        },
+        {
           "name": "Neueheim",
           "section": "subZones",
+          "file": "bfa.lua"
+        },
+        {
+          "name": "The Eternal Palace",
+          "section": "raids",
           "file": "bfa.lua"
         }
       ]

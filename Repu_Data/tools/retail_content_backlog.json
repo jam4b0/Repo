@@ -1,8 +1,8 @@
 {
   "meta": {
-    "coreFactionCount": 111,
-    "contentFactionCount": 130,
-    "coveredCount": 111,
+    "coreFactionCount": 125,
+    "contentFactionCount": 136,
+    "coveredCount": 125,
     "missingCount": 0
   },
   "covered": [
@@ -307,7 +307,12 @@
           "file": "kalimdor.lua"
         },
         {
-          "name": "Eschental",
+          "name": "Durotar",
+          "section": "subZones",
+          "file": "kalimdor.lua"
+        },
+        {
+          "name": "Nördliches Brachland",
           "section": "subZones",
           "file": "kalimdor.lua"
         }
@@ -430,6 +435,21 @@
           "name": "Schattenmondtal",
           "section": "zones",
           "file": "outland.lua"
+        },
+        {
+          "name": "Terrasse des Lichts",
+          "section": "subZones",
+          "file": "outland.lua"
+        },
+        {
+          "name": "Shattrath",
+          "section": "subZones",
+          "file": "outland.lua"
+        },
+        {
+          "name": "Shattrath",
+          "section": "subZones",
+          "file": "outland.lua"
         }
       ],
       "sourceFiles": [
@@ -470,6 +490,21 @@
         {
           "name": "Schattenmondtal",
           "section": "zones",
+          "file": "outland.lua"
+        },
+        {
+          "name": "Terrasse des Lichts",
+          "section": "subZones",
+          "file": "outland.lua"
+        },
+        {
+          "name": "Shattrath",
+          "section": "subZones",
+          "file": "outland.lua"
+        },
+        {
+          "name": "Shattrath",
+          "section": "subZones",
           "file": "outland.lua"
         }
       ],
@@ -514,6 +549,11 @@
       "factionID": 941,
       "exampleLocations": [
         {
+          "name": "Karazhan",
+          "section": "raids",
+          "file": "eastern_kingdoms.lua"
+        },
+        {
           "name": "Nagrand",
           "section": "zones",
           "file": "outland.lua"
@@ -525,6 +565,7 @@
         }
       ],
       "sourceFiles": [
+        "eastern_kingdoms.lua",
         "outland.lua"
       ]
     },
@@ -653,18 +694,18 @@
           "file": "outland.lua"
         },
         {
-          "name": "Unteres Viertel",
+          "name": "Shattrath",
+          "section": "subZones",
+          "file": "outland.lua"
+        },
+        {
+          "name": "Shattrath",
           "section": "subZones",
           "file": "outland.lua"
         },
         {
           "name": "Unteres Viertel",
           "section": "subZones",
-          "file": "outland.lua"
-        },
-        {
-          "name": "Sethekk Halls",
-          "section": "instances",
           "file": "outland.lua"
         }
       ],
@@ -696,6 +737,16 @@
         {
           "name": "Schergrat",
           "section": "zones",
+          "file": "outland.lua"
+        },
+        {
+          "name": "Shattrath",
+          "section": "subZones",
+          "file": "outland.lua"
+        },
+        {
+          "name": "Shattrath",
+          "section": "subZones",
           "file": "outland.lua"
         }
       ],
@@ -750,6 +801,16 @@
     {
       "factionID": 1077,
       "exampleLocations": [
+        {
+          "name": "Shattrath",
+          "section": "subZones",
+          "file": "outland.lua"
+        },
+        {
+          "name": "Shattrath",
+          "section": "subZones",
+          "file": "outland.lua"
+        },
         {
           "name": "Sunwell Plateau",
           "section": "raids",
@@ -1124,6 +1185,29 @@
       ]
     },
     {
+      "factionID": 1178,
+      "exampleLocations": [
+        {
+          "name": "Tol Barad",
+          "section": "zones",
+          "file": "cataclysm.lua"
+        },
+        {
+          "name": "Halbinsel von Tol Barad",
+          "section": "zones",
+          "file": "cataclysm.lua"
+        },
+        {
+          "name": "Tol Barad",
+          "section": "subZones",
+          "file": "cataclysm.lua"
+        }
+      ],
+      "sourceFiles": [
+        "cataclysm.lua"
+      ]
+    },
+    {
       "factionID": 1204,
       "exampleLocations": [
         {
@@ -1285,6 +1369,19 @@
     },
     {
       "factionID": 1387,
+      "exampleLocations": [
+        {
+          "name": "Insel des Donners",
+          "section": "zones",
+          "file": "pandaria.lua"
+        }
+      ],
+      "sourceFiles": [
+        "pandaria.lua"
+      ]
+    },
+    {
+      "factionID": 1388,
       "exampleLocations": [
         {
           "name": "Insel des Donners",
@@ -1764,6 +1861,11 @@
           "name": "Krokuun",
           "section": "subZones",
           "file": "broken_isles.lua"
+        },
+        {
+          "name": "Antorus, the Burning Throne",
+          "section": "raids",
+          "file": "broken_isles.lua"
         }
       ],
       "sourceFiles": [
@@ -1776,6 +1878,11 @@
         {
           "name": "Argus",
           "section": "zones",
+          "file": "broken_isles.lua"
+        },
+        {
+          "name": "Krokuun",
+          "section": "subZones",
           "file": "broken_isles.lua"
         },
         {
@@ -1792,8 +1899,18 @@
       "factionID": 2370,
       "exampleLocations": [
         {
+          "name": "Nazjatar",
+          "section": "zones",
+          "file": "bfa.lua"
+        },
+        {
           "name": "Neueheim",
           "section": "subZones",
+          "file": "bfa.lua"
+        },
+        {
+          "name": "The Eternal Palace",
+          "section": "raids",
           "file": "bfa.lua"
         }
       ],
@@ -1850,6 +1967,19 @@
         {
           "name": "Operation: Mechagon",
           "section": "instances",
+          "file": "bfa.lua"
+        }
+      ],
+      "sourceFiles": [
+        "bfa.lua"
+      ]
+    },
+    {
+      "factionID": 2395,
+      "exampleLocations": [
+        {
+          "name": "Sturmsangtal",
+          "section": "zones",
           "file": "bfa.lua"
         }
       ],
@@ -1946,6 +2076,24 @@
       ]
     },
     {
+      "factionID": 2417,
+      "exampleLocations": [
+        {
+          "name": "Uldum",
+          "section": "zones",
+          "file": "cataclysm.lua"
+        },
+        {
+          "name": "Ramkahen",
+          "section": "subZones",
+          "file": "cataclysm.lua"
+        }
+      ],
+      "sourceFiles": [
+        "cataclysm.lua"
+      ]
+    },
+    {
       "factionID": 2432,
       "exampleLocations": [
         {
@@ -1964,8 +2112,26 @@
       ]
     },
     {
+      "factionID": 2439,
+      "exampleLocations": [
+        {
+          "name": "Revendreth",
+          "section": "zones",
+          "file": "shadowlands.lua"
+        }
+      ],
+      "sourceFiles": [
+        "shadowlands.lua"
+      ]
+    },
+    {
       "factionID": 2464,
       "exampleLocations": [
+        {
+          "name": "Ardenwald",
+          "section": "zones",
+          "file": "shadowlands.lua"
+        },
         {
           "name": "Mists of Tirna Scithe",
           "section": "instances",
@@ -2029,6 +2195,11 @@
       "factionID": 2503,
       "exampleLocations": [
         {
+          "name": "Valdrakken",
+          "section": "zones",
+          "file": "dragonflight.lua"
+        },
+        {
           "name": "Ebenen von Ohn'ahra",
           "section": "zones",
           "file": "dragonflight.lua"
@@ -2052,6 +2223,11 @@
       "factionID": 2507,
       "exampleLocations": [
         {
+          "name": "Valdrakken",
+          "section": "zones",
+          "file": "dragonflight.lua"
+        },
+        {
           "name": "Küste des Erwachens",
           "section": "zones",
           "file": "dragonflight.lua"
@@ -2069,11 +2245,6 @@
         {
           "name": "Der Vergessene Küstenstrich",
           "section": "zones",
-          "file": "dragonflight.lua"
-        },
-        {
-          "name": "Rubinlebensbecken",
-          "section": "subZones",
           "file": "dragonflight.lua"
         }
       ],
@@ -2118,6 +2289,11 @@
       "factionID": 2511,
       "exampleLocations": [
         {
+          "name": "Valdrakken",
+          "section": "zones",
+          "file": "dragonflight.lua"
+        },
+        {
           "name": "Azurblaues Gebirge",
           "section": "zones",
           "file": "dragonflight.lua"
@@ -2136,10 +2312,124 @@
           "name": "The Azure Vault",
           "section": "instances",
           "file": "dragonflight.lua"
+        }
+      ],
+      "sourceFiles": [
+        "dragonflight.lua"
+      ]
+    },
+    {
+      "factionID": 2517,
+      "exampleLocations": [
+        {
+          "name": "Küste des Erwachens",
+          "section": "zones",
+          "file": "dragonflight.lua"
+        }
+      ],
+      "sourceFiles": [
+        "dragonflight.lua"
+      ]
+    },
+    {
+      "factionID": 2518,
+      "exampleLocations": [
+        {
+          "name": "Küste des Erwachens",
+          "section": "zones",
+          "file": "dragonflight.lua"
+        }
+      ],
+      "sourceFiles": [
+        "dragonflight.lua"
+      ]
+    },
+    {
+      "factionID": 2523,
+      "exampleLocations": [
+        {
+          "name": "Küste des Erwachens",
+          "section": "zones",
+          "file": "dragonflight.lua"
+        }
+      ],
+      "sourceFiles": [
+        "dragonflight.lua"
+      ]
+    },
+    {
+      "factionID": 2524,
+      "exampleLocations": [
+        {
+          "name": "Küste des Erwachens",
+          "section": "zones",
+          "file": "dragonflight.lua"
+        }
+      ],
+      "sourceFiles": [
+        "dragonflight.lua"
+      ]
+    },
+    {
+      "factionID": 2526,
+      "exampleLocations": [
+        {
+          "name": "Azurblaues Gebirge",
+          "section": "zones",
+          "file": "dragonflight.lua"
         },
         {
-          "name": "Brackenhide Hollow",
-          "section": "instances",
+          "name": "Ismara",
+          "section": "subZones",
+          "file": "dragonflight.lua"
+        }
+      ],
+      "sourceFiles": [
+        "dragonflight.lua"
+      ]
+    },
+    {
+      "factionID": 2544,
+      "exampleLocations": [
+        {
+          "name": "Valdrakken",
+          "section": "zones",
+          "file": "dragonflight.lua"
+        },
+        {
+          "name": "Sitz der Aspekte",
+          "section": "subZones",
+          "file": "dragonflight.lua"
+        }
+      ],
+      "sourceFiles": [
+        "dragonflight.lua"
+      ]
+    },
+    {
+      "factionID": 2550,
+      "exampleLocations": [
+        {
+          "name": "Azurblaues Gebirge",
+          "section": "zones",
+          "file": "dragonflight.lua"
+        }
+      ],
+      "sourceFiles": [
+        "dragonflight.lua"
+      ]
+    },
+    {
+      "factionID": 2553,
+      "exampleLocations": [
+        {
+          "name": "Thaldraszus",
+          "section": "zones",
+          "file": "dragonflight.lua"
+        },
+        {
+          "name": "Tyrhold",
+          "section": "subZones",
           "file": "dragonflight.lua"
         }
       ],
@@ -2358,6 +2648,11 @@
           "name": "Undermine",
           "section": "zones",
           "file": "war_within.lua"
+        },
+        {
+          "name": "Undermine City",
+          "section": "subZones",
+          "file": "war_within.lua"
         }
       ],
       "sourceFiles": [
@@ -2370,6 +2665,11 @@
         {
           "name": "Hallowfall",
           "section": "zones",
+          "file": "war_within.lua"
+        },
+        {
+          "name": "Mereldar",
+          "section": "subZones",
           "file": "war_within.lua"
         }
       ],
@@ -2505,6 +2805,19 @@
       ],
       "sourceFiles": [
         "eastern_kingdoms.lua",
+        "midnight.lua"
+      ]
+    },
+    {
+      "factionID": 2711,
+      "exampleLocations": [
+        {
+          "name": "March on Quel'Danas",
+          "section": "raids",
+          "file": "midnight.lua"
+        }
+      ],
+      "sourceFiles": [
         "midnight.lua"
       ]
     },

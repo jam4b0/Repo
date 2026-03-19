@@ -74,6 +74,14 @@ api.RegisterRetailContentModule({
                 { title = "Insel des Donners", kind = "Zone", location = { mapID = 507, title = "Insel des Donners" } },
             },
         },
+        [1388] = {
+            summary = "Die Sunreaver Onslaught ist der Horde-seitige Offensivruf der Insel des Donners und bildet dort das Gegenstück zur Kirin Tor Offensive.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                { title = "Insel des Donners", kind = "Zone", location = { mapID = 507, title = "Insel des Donners" } },
+            },
+        },
         [1435] = {
             summary = "Der Kernbezug dieses Rufblocks liegt auf der Insel des Donnerkoenigs und im Raid Throne of Thunder.",
             source = "curated",

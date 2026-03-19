@@ -614,6 +614,33 @@ return {
         requireVisibleFactionIDs = { 2550, 2526 },
     },
     {
+        name = "retail_dragonflight_waking_shores_shows_obsidian_side_factions",
+        context = {
+            activeFlavor = "retail",
+            mapID = 2022,
+            mapName = "Küste des Erwachens",
+            zoneName = "Küste des Erwachens",
+            zoneKey = "küste des erwachens",
+            subZoneName = "Küste des Erwachens",
+            subZoneKey = "küste des erwachens",
+            mapChain = {
+                { mapID = 2022, name = "The Waking Shores" },
+            },
+            playerFactionGroup = "Alliance",
+            instanceType = "none",
+            isInInstance = false,
+        },
+        rawFactions = {
+            { factionID = 2507, name = "Dragonscale Expedition", isMajorFaction = true, renownLevel = 18, progressValue = 900, progressMax = 2500, progressPct = 36, standingID = 5, hasRepEntry = true },
+            { factionID = 2517, name = "Wrathion", standingID = 5, progressValue = 1700, progressMax = 6000, progressPct = 28.3, hasRepEntry = true },
+            { factionID = 2518, name = "Sabellian", standingID = 5, progressValue = 1650, progressMax = 6000, progressPct = 27.5, hasRepEntry = true },
+            { factionID = 2523, name = "Dark Talons", standingID = 4, progressValue = 800, progressMax = 3000, progressPct = 26.6, hasRepEntry = true },
+            { factionID = 2524, name = "Obsidian Warders", standingID = 4, progressValue = 900, progressMax = 3000, progressPct = 30, hasRepEntry = true },
+        },
+        expectTopFactionID = 2507,
+        requireVisibleFactionIDs = { 2517, 2518, 2523, 2524 },
+    },
+    {
         name = "retail_dragonflight_thaldraszus_shows_soridormi",
         context = {
             activeFlavor = "retail",

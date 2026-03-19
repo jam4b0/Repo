@@ -10,6 +10,7 @@ content\retail\summary\generated.lua
 content\retail\families\quelthalas.lua
 content\retail\families\midnight.lua
 content\retail\expansions\war_within.lua
+content\retail\expansions\cataclysm.lua
 content\retail\legacy\homelands.lua
 content\retail\families\outland.lua
 content\retail\expansions\northrend.lua

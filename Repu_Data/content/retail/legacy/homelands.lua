@@ -136,37 +136,5 @@ api.RegisterRetailContentModule({
                 worldQuest(1577, "Gilneas"),
             },
         },
-        [1158] = {
-            summary = "Die Wächter des Hyjal decken im Retail-Core den Hyjal-Block als lokale Cataclysm-Fraktion ab.",
-            source = "seed",
-            confidence = "medium",
-            activities = {
-                worldQuest(198, "Hyjal"),
-            },
-        },
-        [1171] = {
-            summary = "Therazane ist die lokale Fraktion von Tiefenheim und dem Tempel der Erde. Sie ist einer der klarsten Cataclysm-Zonenfälle im Retail-Core.",
-            source = "seed",
-            confidence = "medium",
-            activities = {
-                worldQuest(207, "Tiefenheim"),
-            },
-        },
-        [1173] = {
-            summary = "Ramkahen ist die lokale Fraktion von Uldum im Retail-Core. Die Zone hat mehrere Weltzustände, die aber auf denselben lokalen Ruf verweisen.",
-            source = "seed",
-            confidence = "medium",
-            activities = {
-                worldQuest(249, "Uldum"),
-            },
-        },
-        [2417] = {
-            summary = "Uldum Accord ist der moderne Nebenruf der spaeteren Uldum-Inhalte. Er ergänzt den lokalen Uldum-Block um die spaeteren Angriffs- und Weltaktivitaeten.",
-            source = "curated",
-            confidence = "medium",
-            activities = {
-                worldQuest(249, "Uldum"),
-            },
-        },
     },
 })
