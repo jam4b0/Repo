@@ -64,7 +64,7 @@ ns.Data:RegisterRetailModule({
                 name = "Leerensturm",
                 source = "observed",
                 confidence = "medium",
-                notes = "Midnight placeholder from observed faction list",
+                notes = "Observed faction cluster for the Quel'Thalas void zone.",
                 mapIDs = { 2405 },
                 tags = { "zone", "local" },
                 factions = {
