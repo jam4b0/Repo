@@ -42,7 +42,7 @@ Der aktuelle Stand:
 
 `Repu_Data` ist fuer Retail jetzt ebenfalls fest gegliedert:
 
-- `content/retail/current/`: aktuelle Expansion und Hauptfraktionen
+- `content/retail/expansions/`: expansionsspezifische Inhalte wie `war_within.lua`, `dragonflight.lua` oder `shadowlands.lua`
 - `content/retail/families/`: gruppierte Fraktionsfamilien wie Quel'Thalas oder Shattrath
 - `content/retail/legacy/`: stabile Heimat- und Legacy-Fraktionen
 - `content/retail/summary/`: generierte Startdatensaetze fuer noch nicht vertiefte Fraktionen
