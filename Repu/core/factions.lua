@@ -59,14 +59,31 @@ local KNOWN_RETAIL_CHILD_TO_PARENT = {
     [2685] = 2653,
 }
 
+local function makeVirtualParentFactionID(name)
+    local key = Utils:NormalizeKey(name or "")
+    local hash = 0
+    for index = 1, #key do
+        hash = (hash * 33 + string.byte(key, index)) % 1000000
+    end
+    return 8000000 + hash
+end
+
 function ns.Factions:GetKnownChildFactionIDs(parentFactionID)
     local childIDs = {}
     local seen = {}
     local runtime = ns.State and ns.State.runtime or nil
     local rawFactions = runtime and runtime.rawFactions or nil
     local dynamicChildren = rawFactions and rawFactions.childIDsByParent and rawFactions.childIDsByParent[parentFactionID] or nil
+    local dynamicVirtualParent = rawFactions and rawFactions.virtualParentsByID and rawFactions.virtualParentsByID[parentFactionID] or nil
 
     for _, factionID in ipairs(dynamicChildren or {}) do
+        if not seen[factionID] then
+            seen[factionID] = true
+            childIDs[#childIDs + 1] = factionID
+        end
+    end
+
+    for factionID in pairs(dynamicVirtualParent and dynamicVirtualParent.children or {}) do
         if not seen[factionID] then
             seen[factionID] = true
             childIDs[#childIDs + 1] = factionID
@@ -98,6 +115,13 @@ function ns.Factions:GetKnownChildFactionIDs(parentFactionID)
 end
 
 local function getKnownChildDefinition(parentFactionID, childFactionID)
+    local runtime = ns.State and ns.State.runtime or nil
+    local rawFactions = runtime and runtime.rawFactions or nil
+    local dynamicVirtualParent = rawFactions and rawFactions.virtualParentsByID and rawFactions.virtualParentsByID[parentFactionID] or nil
+    if dynamicVirtualParent and dynamicVirtualParent.children and dynamicVirtualParent.children[childFactionID] then
+        return dynamicVirtualParent.children[childFactionID]
+    end
+
     local parent = KNOWN_RETAIL_PARENT_FACTIONS[parentFactionID]
     if parent and parent.children and parent.children[childFactionID] then
         return parent.children[childFactionID]
@@ -369,6 +393,8 @@ function ns.Factions:CollectAll()
         byID = {},
         byName = {},
         childIDsByParent = {},
+        virtualParentsByID = {},
+        virtualParentByChildID = {},
     }
 
     for _, row in ipairs(rows) do
@@ -378,6 +404,18 @@ function ns.Factions:CollectAll()
             if faction.parentFactionID and faction.factionID then
                 collection.childIDsByParent[faction.parentFactionID] = collection.childIDsByParent[faction.parentFactionID] or {}
                 collection.childIDsByParent[faction.parentFactionID][#collection.childIDsByParent[faction.parentFactionID] + 1] = faction.factionID
+            end
+            if row.parentHeaderName and faction.factionID then
+                local virtualParentID = row.parentHeaderFactionID or makeVirtualParentFactionID(row.parentHeaderName)
+                collection.virtualParentsByID[virtualParentID] = collection.virtualParentsByID[virtualParentID] or {
+                    factionID = virtualParentID,
+                    name = row.parentHeaderName,
+                    children = {},
+                }
+                collection.virtualParentsByID[virtualParentID].children[faction.factionID] = {
+                    name = faction.name,
+                }
+                collection.virtualParentByChildID[faction.factionID] = virtualParentID
             end
         end
     end
@@ -518,6 +556,8 @@ function ns.Factions:SelectVisible(prioritized, context)
     local runtime = ns.State.runtime or {}
     local rawFactions = runtime.rawFactions or {}
     local byID = rawFactions.byID or {}
+    local virtualParentsByID = rawFactions.virtualParentsByID or {}
+    local virtualParentByChildID = rawFactions.virtualParentByChildID or {}
     local seenFactionIDs = {}
 
     local function canInclude(candidate, index)
@@ -554,7 +594,7 @@ function ns.Factions:SelectVisible(prioritized, context)
     local appendKnownChildren
 
     local function appendVirtualGroup(parentFactionID, score)
-        local definition = KNOWN_VIRTUAL_PARENT_FACTIONS[parentFactionID]
+        local definition = virtualParentsByID[parentFactionID] or KNOWN_VIRTUAL_PARENT_FACTIONS[parentFactionID]
         if not definition or seenFactionIDs[parentFactionID] then
             return false
         end
@@ -600,6 +640,14 @@ function ns.Factions:SelectVisible(prioritized, context)
     local function maybeAppendLegacyVirtualGroup(candidate)
         if not candidate or not candidate.factionID then
             return false
+        end
+
+        local dynamicParentID = virtualParentByChildID[candidate.factionID]
+        if dynamicParentID then
+            if seenFactionIDs[dynamicParentID] then
+                return true
+            end
+            return appendVirtualGroup(dynamicParentID, candidate.score or 0)
         end
 
         if context and context.mapID == 111 then
