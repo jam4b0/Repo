@@ -497,8 +497,8 @@ function ns.Debug:DumpCoverage()
     local subZoneSource = coverage.subZoneHasRecord and (coverage.subZoneFromClientSeed and "client_seed" or "curated") or "missing"
 
     printLine("Coverage summary")
-    printLine("ZoneSource=" .. tostring(zoneSource) .. " ZoneMapping=" .. tostring(coverage.zoneHasMapping))
-    printLine("SubZoneSource=" .. tostring(subZoneSource) .. " SubZoneMapping=" .. tostring(coverage.subZoneHasMapping))
+    printLine("ZoneSource=" .. tostring(zoneSource) .. " ZoneMapping=" .. tostring(coverage.zoneHasMapping) .. " ZoneNoLocalRep=" .. tostring(coverage.zoneNoLocalReputation))
+    printLine("SubZoneSource=" .. tostring(subZoneSource) .. " SubZoneMapping=" .. tostring(coverage.subZoneHasMapping) .. " SubZoneNoLocalRep=" .. tostring(coverage.subZoneNoLocalReputation))
     printLine("ZoneRecord=" .. Utils:Stringify(coverage.zoneRecord))
     printLine("SubZoneRecord=" .. Utils:Stringify(coverage.subZoneRecord))
 end
