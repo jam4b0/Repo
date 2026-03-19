@@ -17,6 +17,7 @@ from pathlib import Path
 REPO_ROOT = Path("/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns")
 REPU_RETAIL_ROOT = REPO_ROOT / "Repu" / "data" / "retail"
 REPU_DATA_RETAIL_ROOT = REPO_ROOT / "Repu_Data" / "content" / "retail"
+REPU_CORE_FACTIONS = REPO_ROOT / "Repu" / "core" / "factions.lua"
 OUT = REPO_ROOT / "Repu" / "tools" / "blizzard_retail_faction_audit.json"
 
 REGION = os.environ.get("BLIZZARD_REGION", "eu")
@@ -29,6 +30,7 @@ FACTION_IDS_RE = re.compile(r"factionIDs\s*=\s*\{([^}]*)\}")
 CONTENT_FACTION_RE = re.compile(r"\[(\d+)\]\s*=\s*\{")
 
 SKIP_REPU_FILES = {"core.lua", "retail.lua"}
+KNOWN_CHILD_TABLE_RE = re.compile(r"local\s+KNOWN_RETAIL_CHILD_TO_PARENT\s*=\s*\{(.*?)\n\}", re.S)
 GENERIC_HEADER_NAMES = {
     "alliance",
     "alliance forces",
@@ -175,6 +177,32 @@ def collect_core_faction_ids() -> dict[int, dict]:
                 continue
 
             i += 1
+
+    if REPU_CORE_FACTIONS.exists():
+        text = REPU_CORE_FACTIONS.read_text(encoding="utf-8")
+        match = KNOWN_CHILD_TABLE_RE.search(text)
+        if match:
+            for value in re.findall(r"\[(\d+)\]\s*=", match.group(1)):
+                faction_id = int(value)
+                if faction_id >= 8000000:
+                    continue
+                entry = faction_data.setdefault(
+                    faction_id,
+                    {
+                        "factionID": faction_id,
+                        "exampleLocations": [],
+                        "sourceFiles": set(),
+                    },
+                )
+                if len(entry["exampleLocations"]) < 5:
+                    entry["exampleLocations"].append(
+                        {
+                            "name": "Known retail child faction",
+                            "section": "core-family",
+                            "file": "factions.lua",
+                        }
+                    )
+                entry["sourceFiles"].add("factions.lua")
 
     for entry in faction_data.values():
         entry["sourceFiles"] = sorted(entry["sourceFiles"])
