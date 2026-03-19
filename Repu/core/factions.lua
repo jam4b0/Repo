@@ -433,6 +433,10 @@ function ns.Factions:BuildMatches(rawFactions, context)
             return
         end
 
+        if context and context.activeFlavor == "retail" and isRetailCompanionFaction(faction) then
+            return
+        end
+
         local dedupeKey = table.concat({
             tostring(sourceType),
             tostring(sourceKey),
