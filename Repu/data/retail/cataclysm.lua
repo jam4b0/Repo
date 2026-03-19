@@ -50,7 +50,10 @@ ns.Data:RegisterRetailModule({
                 notes = "Cataclysm zone cluster",
                 mapIDs = { 245 },
                 tags = { "zone", "local", "cataclysm" },
-                factionIDs = { 1177 },
+                factions = {
+                    { factionID = 1177, factionGroups = { "Alliance" }, weight = 248 },
+                    { factionID = 1178, factionGroups = { "Horde" }, weight = 248 },
+                },
                 weight = 248,
             },
             [249] = {

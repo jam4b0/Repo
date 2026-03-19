@@ -95,6 +95,15 @@ function ns.Compat:GetCurrentInterfaceVersion()
     return select(4, GetBuildInfo())
 end
 
+function ns.Compat:GetPlayerFactionGroup()
+    if type(UnitFactionGroup) ~= "function" then
+        return nil
+    end
+
+    local factionGroup = select(1, UnitFactionGroup("player"))
+    return factionGroup
+end
+
 function ns.Compat:HasLegacyReputationAPI()
     return type(GetNumFactions) == "function" and type(GetFactionInfo) == "function"
 end

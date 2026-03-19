@@ -3,6 +3,19 @@ local _, ns = ...
 local Utils = ns.Utils
 
 local function matchApplies(match, context)
+    if match.factionGroups and context.playerFactionGroup then
+        local allowed = false
+        for _, factionGroup in ipairs(match.factionGroups) do
+            if factionGroup == context.playerFactionGroup then
+                allowed = true
+                break
+            end
+        end
+        if not allowed then
+            return false
+        end
+    end
+
     if match.instanceTypes and context.instanceType then
         local allowed = false
         for _, instanceType in ipairs(match.instanceTypes) do

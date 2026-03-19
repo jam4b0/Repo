@@ -25,6 +25,7 @@ function ns.Location:BuildContext()
         instanceMapID = instance.instanceMapID,
         isInInstance = instance.isInInstance or false,
         watchedFactionID = ns.Compat:GetWatchedFactionID(),
+        playerFactionGroup = ns.Compat:GetPlayerFactionGroup(),
         activeFlavor = ns.Data:GetActiveFlavor(),
     }
 end

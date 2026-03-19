@@ -46,6 +46,7 @@ local function normalizeEntry(entry, sourceType)
     copy.instanceMapIDs = copy.instanceMapIDs or nil
     copy.difficulties = copy.difficulties or nil
     copy.instanceTypes = copy.instanceTypes or nil
+    copy.factionGroups = copy.factionGroups or nil
     copy.tags = copy.tags or nil
     return copy
 end
@@ -74,6 +75,7 @@ local function normalizeLocationRecord(locationType, key, record)
             aliases = record.aliases,
             difficulties = record.difficulties,
             instanceTypes = record.instanceTypes,
+            factionGroups = record.factionGroups,
             tags = record.tags,
             note = record.notes,
             source = record.source,
@@ -94,6 +96,7 @@ local function normalizeLocationRecord(locationType, key, record)
             entry.aliases = entry.aliases or record.aliases
             entry.difficulties = entry.difficulties or record.difficulties
             entry.instanceTypes = entry.instanceTypes or record.instanceTypes
+            entry.factionGroups = entry.factionGroups or record.factionGroups
             entries[#entries + 1] = entry
         end
     end
