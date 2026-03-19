@@ -378,6 +378,9 @@ function ns.UI:UpdateDetails(details, count, profile)
         tonumber(details.progressMax or 0),
         tonumber(details.progressPct or 0)
     )
+    if tonumber(details.progressMax or 0) <= 0 then
+        progressText = tostring(details.standingLabel or UNKNOWN)
+    end
     if details.isVirtualGroup then
         progressText = ""
     end
