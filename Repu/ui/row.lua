@@ -45,8 +45,16 @@ function ns.UI:CreateRow(parent, index)
     row.overlay:SetFrameLevel(row.bar:GetFrameLevel() + 5)
     row.overlay:EnableMouse(false)
 
+    row.toggleText = row.overlay:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    row.toggleText:SetPoint("LEFT", row.overlay, "LEFT", 8, 0)
+    row.toggleText:SetJustifyH("LEFT")
+    row.toggleText:SetTextColor(unpack(Styles.accentText))
+    row.toggleText:SetShadowOffset(1, -1)
+    row.toggleText:SetShadowColor(0, 0, 0, 0.85)
+    row.toggleText:SetWidth(14)
+
     row.nameText = row.overlay:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-    row.nameText:SetPoint("LEFT", row.overlay, "LEFT", 8, 0)
+    row.nameText:SetPoint("LEFT", row.toggleText, "RIGHT", 2, 0)
     row.nameText:SetJustifyH("LEFT")
     row.nameText:SetTextColor(unpack(Styles.text))
     row.nameText:SetShadowOffset(1, -1)
@@ -79,7 +87,7 @@ function ns.UI:CreateRow(parent, index)
 
     row:SetScript("OnClick", function(self)
         if self.candidate then
-            ns.UI:ToggleDetails(self.candidate)
+            ns.UI:HandleRowClick(self.candidate)
         end
     end)
 
@@ -103,6 +111,25 @@ function ns.UI:UpdateRow(row, candidate, isActive, isSelected)
     row.nameText:SetText(faction.name or UNKNOWN)
     row.candidate = candidate
     row.isSelected = isSelected and true or false
+
+    local hasChildren = candidate.hasKnownChildren and true or false
+    local isExpanded = candidate.isExpanded and true or false
+    if hasChildren then
+        row.toggleText:SetText(isExpanded and "▼" or "▶")
+    elseif candidate.isChildOfVisibleParent then
+        row.toggleText:SetText("•")
+    else
+        row.toggleText:SetText("")
+    end
+
+    if candidate.isChildOfVisibleParent then
+        row.nameText:ClearAllPoints()
+        row.nameText:SetPoint("LEFT", row.toggleText, "RIGHT", 14, 0)
+    else
+        row.nameText:ClearAllPoints()
+        row.nameText:SetPoint("LEFT", row.toggleText, "RIGHT", 2, 0)
+    end
+    row.nameText:SetPoint("RIGHT", row.valueText, "LEFT", -10, 0)
 
     local valueText = string.format(
         "%s  %d/%d  %.1f%%",

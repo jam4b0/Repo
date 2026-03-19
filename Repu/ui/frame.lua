@@ -166,6 +166,7 @@ function ns.UI:Init()
 
     self.frame = frame
     self.selectedFactionID = nil
+    self.expandedParents = self.expandedParents or {}
     self:EnsureMinimapButton()
     self:RegisterOptions()
     self:Refresh({}, nil)
@@ -244,6 +245,36 @@ function ns.UI:EnsureRows(count)
     end
 end
 
+function ns.UI:IsParentExpanded(factionID)
+    if not factionID then
+        return true
+    end
+
+    if self.expandedParents[factionID] == nil then
+        return true
+    end
+
+    return self.expandedParents[factionID]
+end
+
+function ns.UI:BuildDisplayCandidates(candidates)
+    local display = {}
+
+    for _, candidate in ipairs(candidates or {}) do
+        if candidate.parentFactionID then
+            if self:IsParentExpanded(candidate.parentFactionID) then
+                display[#display + 1] = candidate
+            end
+        else
+            candidate.hasKnownChildren = ns.Factions:GetKnownChildFactionIDs(candidate.factionID) ~= nil
+            candidate.isExpanded = candidate.hasKnownChildren and self:IsParentExpanded(candidate.factionID) or false
+            display[#display + 1] = candidate
+        end
+    end
+
+    return display
+end
+
 function ns.UI:Refresh(candidates, context)
     if not self.frame then
         return
@@ -251,12 +282,13 @@ function ns.UI:Refresh(candidates, context)
 
     local profile = ns.State:GetProfile()
     self:EnsureMinimapButton()
-    local count = math.max(1, #candidates)
+    local displayCandidates = self:BuildDisplayCandidates(candidates)
+    local count = math.max(1, #displayCandidates)
     self:EnsureRows(count)
 
     local details = nil
     if self.selectedFactionID then
-        for _, candidate in ipairs(candidates) do
+        for _, candidate in ipairs(displayCandidates) do
             if candidate and candidate.factionID == self.selectedFactionID then
                 details = ns.Content:GetFactionDetails(candidate, context)
                 break
@@ -281,7 +313,7 @@ function ns.UI:Refresh(candidates, context)
     self.frame.title:SetText(title)
 
     for index, row in ipairs(self.frame.rows) do
-        local candidate = candidates[index]
+        local candidate = displayCandidates[index]
         local isSelected = candidate and candidate.factionID == self.selectedFactionID
         self:UpdateRow(row, candidate, index == 1, isSelected)
     end
@@ -299,6 +331,18 @@ function ns.UI:Refresh(candidates, context)
     self.frame:SetShown(shouldShow)
 end
 
+function ns.UI:HandleRowClick(candidate)
+    if not candidate or not candidate.factionID then
+        return
+    end
+
+    if candidate.hasKnownChildren then
+        self.expandedParents[candidate.factionID] = not self:IsParentExpanded(candidate.factionID)
+    end
+
+    self:ToggleDetails(candidate)
+end
+
 function ns.UI:ToggleDetails(candidate)
     if not candidate or not candidate.factionID then
         return
@@ -310,7 +354,7 @@ function ns.UI:ToggleDetails(candidate)
         self.selectedFactionID = candidate.factionID
     end
 
-    ns.State:Refresh("UI_TOGGLE_DETAILS")
+    self:Refresh(ns.State.runtime.visible or {}, ns.State.runtime.context)
 end
 
 function ns.UI:UpdateDetails(details, count, profile)
