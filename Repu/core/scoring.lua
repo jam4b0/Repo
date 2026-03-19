@@ -15,6 +15,21 @@ local sourceBonuses = {
     test = 5,
 }
 
+local classBonuses = {
+    city = 28,
+    major_faction = 24,
+    group = 18,
+    hub = 16,
+    child = 10,
+    subzone = 12,
+    zone = 0,
+    instance = 8,
+    raid = 8,
+    event = -10,
+    companion = -200,
+    unknown = 0,
+}
+
 function ns.Scoring:Prioritize(matches, rawFactions, context, options)
     local profile = ns.State:GetProfile()
     local watchedFactionID = context.watchedFactionID
@@ -70,6 +85,8 @@ function ns.Scoring:Prioritize(matches, rawFactions, context, options)
             score = score - 12
         end
 
+        score = score + (classBonuses[match.factionClass or "unknown"] or 0)
+
         if match.tags then
             for _, tag in ipairs(match.tags) do
                 if tag == "primary" then
@@ -96,6 +113,7 @@ function ns.Scoring:Prioritize(matches, rawFactions, context, options)
             isInherited = match.isInherited and true or false,
             note = match.note,
             tags = match.tags,
+            factionClass = match.factionClass,
         }
 
         local key = faction.factionID or faction.name
@@ -124,6 +142,7 @@ function ns.Scoring:Prioritize(matches, rawFactions, context, options)
                 score = sourceBonuses.fallback,
                 isDirect = false,
                 isFallback = true,
+                factionClass = "unknown",
             }
         end
     end

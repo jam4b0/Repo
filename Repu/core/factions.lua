@@ -346,8 +346,42 @@ local function indexFaction(collection, faction)
     collection.list[#collection.list + 1] = faction
 end
 
+local isRetailCompanionFaction
+
 local function addMatch(results, faction, match)
     local scoreSeed = match.weight or 0
+    local function hasTag(tag)
+        for _, value in ipairs(match.tags or {}) do
+            if value == tag then
+                return true
+            end
+        end
+        return false
+    end
+
+    local factionClass = "unknown"
+    if isRetailCompanionFaction(faction) then
+        factionClass = "companion"
+    elseif faction.isMajorFaction then
+        factionClass = "major_faction"
+    elseif match.sourceType == "raid" or hasTag("raid") then
+        factionClass = "raid"
+    elseif match.sourceType == "instance" or hasTag("dungeon") then
+        factionClass = "instance"
+    elseif hasTag("event") then
+        factionClass = "event"
+    elseif hasTag("city") and hasTag("hub") then
+        factionClass = "city"
+    elseif hasTag("city") then
+        factionClass = "city"
+    elseif match.sourceType == "subZone" and hasTag("hub") then
+        factionClass = "hub"
+    elseif match.sourceType == "subZone" then
+        factionClass = "subzone"
+    elseif match.sourceType == "zone" then
+        factionClass = "zone"
+    end
+
     results[#results + 1] = {
         factionID = faction.factionID,
         faction = faction,
@@ -364,10 +398,11 @@ local function addMatch(results, faction, match)
         isMapChain = match.isMapChain and true or false,
         chainDepth = match.chainDepth or 0,
         parentFactionID = faction.parentFactionID or (faction.factionID and KNOWN_RETAIL_CHILD_TO_PARENT[faction.factionID]) or nil,
+        factionClass = factionClass,
     }
 end
 
-local function isRetailCompanionFaction(faction)
+isRetailCompanionFaction = function(faction)
     if not faction then
         return false
     end
@@ -630,6 +665,7 @@ function ns.Factions:SelectVisible(prioritized, context)
             isDirect = false,
             isFallback = false,
             hasKnownChildren = true,
+            factionClass = "group",
         }
 
         appendVisible(parentCandidate, #visible + 1)
@@ -704,6 +740,7 @@ function ns.Factions:SelectVisible(prioritized, context)
                     parentFactionID = parentCandidate.factionID,
                     note = "Known child faction of visible parent",
                     tags = { "child", "local" },
+                    factionClass = childFaction.isMajorFaction and "major_faction" or "child",
                 }
             end
         end
@@ -769,6 +806,7 @@ function ns.Factions:SelectVisible(prioritized, context)
                 isDirect = false,
                 isFallback = true,
                 isActive = true,
+                factionClass = "unknown",
             }
         end
     end
