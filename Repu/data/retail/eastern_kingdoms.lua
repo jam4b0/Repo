@@ -108,7 +108,7 @@ ns.Data:RegisterRetailModule({
                 source = "seed",
                 confidence = "high",
                 notes = "Forsaken homeland cluster with sweep-confirmed location coverage",
-                mapIDs = { 18 },
+                mapIDs = { 18, 2070 },
                 tags = { "zone", "local", "eastern-kingdoms" },
                 factionIDs = { 68 },
                 weight = 240,
@@ -277,6 +277,18 @@ ns.Data:RegisterRetailModule({
                 notes = "Direct Tirisfal zone anchor",
                 mapIDs = { 18 },
                 tags = { "primary", "local", "eastern-kingdoms" },
+                factions = {
+                    { factionID = 68, weight = 248 },
+                },
+            },
+            ["2070:tirisfal"] = {
+                name = "Tirisfal",
+                parentMapID = 2070,
+                source = "seed",
+                confidence = "high",
+                notes = "Direct Tirisfal variant zone anchor",
+                mapIDs = { 2070 },
+                tags = { "primary", "local", "eastern-kingdoms", "variant" },
                 factions = {
                     { factionID = 68, weight = 248 },
                 },
