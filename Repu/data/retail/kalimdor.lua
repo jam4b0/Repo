@@ -8,7 +8,7 @@ ns.Data:RegisterRetailModule({
                 source = "observed",
                 confidence = "high",
                 notes = "Observed repeatedly across Orgrimmar city and internal map variants",
-                mapIDs = { 85, 113, 424, 1978 },
+                mapIDs = { 85 },
                 tags = { "city", "hub", "local" },
                 factionIDs = { 76 },
                 weight = 250,
@@ -385,7 +385,7 @@ ns.Data:RegisterRetailModule({
                 source = "observed",
                 confidence = "high",
                 notes = "Direct Orgrimmar city anchor",
-                mapIDs = { 85, 113, 424, 1978 },
+                mapIDs = { 85 },
                 tags = { "city", "hub", "primary", "local", "observed" },
                 factions = {
                     { factionID = 76, weight = 262 },
@@ -409,7 +409,7 @@ ns.Data:RegisterRetailModule({
                 source = "observed",
                 confidence = "high",
                 notes = "Observed across multiple Orgrimmar internal map variants",
-                mapIDs = { 85, 113, 424, 1978 },
+                mapIDs = { 85 },
                 tags = { "city", "hub", "local", "observed" },
                 factions = {
                     { factionID = 76, weight = 250 },
