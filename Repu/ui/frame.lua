@@ -395,36 +395,10 @@ function ns.UI:UpdateDetails(details, count, profile)
         end
     end
 
-    local sourceText = nil
-    if details.isInherited and details.context and details.context.subZoneName and details.context.zoneName then
-        sourceText = string.format(
-            "Herkunft: Zonentreffer aus %s für %s",
-            tostring(details.context.zoneName),
-            tostring(details.context.subZoneName)
-        )
-    elseif details.sourceType == "subZone" and details.context and details.context.subZoneName then
-        sourceText = string.format("Herkunft: Unterzone %s", tostring(details.context.subZoneName))
-    elseif details.sourceType == "zone" and details.context and details.context.zoneName then
-        sourceText = string.format("Herkunft: Zone %s", tostring(details.context.zoneName))
-    elseif details.sourceType == "instance" and details.sourceKey then
-        sourceText = string.format("Herkunft: Instanz %s", tostring(details.sourceKey))
-    elseif details.sourceType == "raid" and details.sourceKey then
-        sourceText = string.format("Herkunft: Raid %s", tostring(details.sourceKey))
-    end
-
-    local contentMetaText = nil
-    if details.contentSource or details.contentConfidence then
-        contentMetaText = string.format(
-            "Content-Daten: %s / %s",
-            tostring(details.contentSource or "unbekannt"),
-            tostring(details.contentConfidence or "unbekannt")
-        )
-    end
-
     detail.title:SetText(details.name or UNKNOWN)
     detail.meta:SetText(progressText)
-    detail.source:SetText(sourceText or "")
-    detail.contentMeta:SetText(contentMetaText or "")
+    detail.source:SetText("")
+    detail.contentMeta:SetText("")
 
     local showQuartermasters = profile.showQuartermasters ~= false
     local showActivities = profile.showActivities ~= false
@@ -455,7 +429,7 @@ function ns.UI:UpdateDetails(details, count, profile)
     end
 
     local bodyHeight = math.ceil(math.max(52, detail.body:GetStringHeight() or 0))
-    local contentTopOffset = -92 - bodyHeight - 18
+    local contentTopOffset = -92 - bodyHeight - 8
     local currentTopOffset = contentTopOffset
     local entryIndex = 0
 
