@@ -8,7 +8,7 @@ ns.Data:RegisterRetailModule({
                 source = "observed",
                 confidence = "high",
                 notes = "Observed repeatedly across Orgrimmar city and internal map variants",
-                mapIDs = { 85, 101, 113, 424, 1978 },
+                mapIDs = { 85, 113, 424, 1978 },
                 tags = { "city", "hub", "local" },
                 factions = {
                     { name = "Schlächterduellum", weight = 245 },
@@ -193,7 +193,7 @@ ns.Data:RegisterRetailModule({
                 source = "observed",
                 confidence = "high",
                 notes = "Observed across multiple Orgrimmar internal map variants",
-                mapIDs = { 85, 101, 113, 424, 1978 },
+                mapIDs = { 85, 113, 424, 1978 },
                 tags = { "city", "hub", "local", "observed" },
                 factions = {
                     { name = "Schlächterduellum", weight = 250 },
