@@ -37,6 +37,7 @@ data\retail\kalimdor.lua
 data\retail\eastern_kingdoms.lua
 data\retail\outland.lua
 data\retail\northrend.lua
+data\retail\cataclysm.lua
 data\retail\pandaria.lua
 data\retail\draenor.lua
 data\retail\broken_isles.lua

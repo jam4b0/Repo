@@ -8,7 +8,7 @@ ns.Data:RegisterRetailModule({
                 source = "seed",
                 confidence = "high",
                 notes = "Shadowlands hub cluster",
-                mapIDs = { 1525 },
+                mapIDs = { 1525, 1670 },
                 tags = { "city", "hub", "local", "shadowlands" },
                 factionIDs = { 2413 },
                 weight = 255,
@@ -81,7 +81,7 @@ ns.Data:RegisterRetailModule({
                 source = "seed",
                 confidence = "high",
                 notes = "Oribos primary hub cluster",
-                mapIDs = { 1525 },
+                mapIDs = { 1525, 1670 },
                 tags = { "primary", "hub", "local", "shadowlands" },
                 factions = {
                     { factionID = 2413, weight = 260 },
@@ -93,7 +93,7 @@ ns.Data:RegisterRetailModule({
                 source = "seed",
                 confidence = "high",
                 notes = "Oribos covenant cluster",
-                mapIDs = { 1525 },
+                mapIDs = { 1525, 1670 },
                 tags = { "hub", "local", "shadowlands" },
                 factions = {
                     { factionID = 2413, weight = 255 },

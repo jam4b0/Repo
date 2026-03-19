@@ -203,7 +203,7 @@ function ns.Debug:CreateWindow()
     end
 
     local frame = CreateFrame("Frame", "RepuDebugWindow", UIParent, BackdropTemplateMixin and "BackdropTemplate")
-    frame:SetSize(640, 336)
+    frame:SetSize(640, 368)
     frame:SetPoint("TOP", UIParent, "TOP", 0, -120)
     frame:SetMovable(true)
     frame:EnableMouse(true)
@@ -241,7 +241,7 @@ function ns.Debug:CreateWindow()
 
     frame.buttonRow = CreateFrame("Frame", nil, frame)
     frame.buttonRow:SetPoint("BOTTOMLEFT", frame, "BOTTOMLEFT", 10, 12)
-    frame.buttonRow:SetSize(620, 184)
+    frame.buttonRow:SetSize(620, 216)
 
     frame.enableButton = createButton(frame.buttonRow, "Capture On", 90, function()
         local debugDB = ns.State:GetDebugDB()
@@ -340,10 +340,15 @@ function ns.Debug:CreateWindow()
     end)
     placeButton(frame.coverageButton, frame.buttonRow, 276, -96)
 
+    frame.candidatesButton = createButton(frame.buttonRow, "Candidates", 90, function()
+        ns.Debug:DumpCandidates(8)
+    end)
+    placeButton(frame.candidatesButton, frame.buttonRow, 374, -96)
+
     frame.factionsButton = createButton(frame.buttonRow, "Factions", 90, function()
         ns.Debug:DumpFactions(12)
     end)
-    placeButton(frame.factionsButton, frame.buttonRow, 374, -96)
+    placeButton(frame.factionsButton, frame.buttonRow, 472, -96)
 
     frame.refreshButton = createButton(frame.buttonRow, "Refresh", 90, function()
         ns.State:Refresh("BUTTON_REFRESH")
@@ -393,6 +398,7 @@ function ns.Debug:RefreshWindow()
         "Diag Unmapped: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.unmapped and debugDB.lastDiagnostics.unmapped.timestamp or "none"),
         "Diag API: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.api and debugDB.lastDiagnostics.api.timestamp or "none"),
         "Diag Coverage: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.coverage and debugDB.lastDiagnostics.coverage.timestamp or "none"),
+        "Diag Candidates: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.candidates and debugDB.lastDiagnostics.candidates.timestamp or "none"),
         "Diag Dump: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.dump and debugDB.lastDiagnostics.dump.timestamp or "none"),
         "Diag Status: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.status and debugDB.lastDiagnostics.status.timestamp or "none"),
         "Diag Factions: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.factions and debugDB.lastDiagnostics.factions.timestamp or "none"),
@@ -486,6 +492,89 @@ function ns.Debug:DumpCoverage()
     printLine("SubZoneSource=" .. tostring(subZoneSource) .. " SubZoneMapping=" .. tostring(coverage.subZoneHasMapping))
     printLine("ZoneRecord=" .. Utils:Stringify(coverage.zoneRecord))
     printLine("SubZoneRecord=" .. Utils:Stringify(coverage.subZoneRecord))
+end
+
+function ns.Debug:DumpCandidates(limit)
+    local snapshot = ns.State:GetSnapshot()
+    local context = snapshot.context or ns.Location:BuildContext()
+    local coverage = snapshot.coverage or ns.Data:GetCoverage(context)
+    local rawList = snapshot.rawFactions and snapshot.rawFactions.list or {}
+    local maxCount = tonumber(limit) or 8
+    local rows = {}
+    local seenFactionIDs = {}
+
+    local function addRow(kind, faction, extra)
+        if not faction or #rows >= maxCount then
+            return
+        end
+
+        if faction.factionID and seenFactionIDs[faction.factionID] then
+            return
+        end
+
+        rows[#rows + 1] = {
+            kind = kind,
+            factionID = faction.factionID,
+            name = faction.name,
+            standingLabel = faction.standingLabel,
+            progressValue = faction.progressValue or 0,
+            progressMax = faction.progressMax or 0,
+            watched = faction.isWatched,
+            exalted = faction.isExalted,
+            sourceType = extra and extra.sourceType or nil,
+            sourceKey = extra and extra.sourceKey or nil,
+            note = extra and extra.note or nil,
+        }
+
+        if faction.factionID then
+            seenFactionIDs[faction.factionID] = true
+        end
+    end
+
+    for _, candidate in ipairs(snapshot.visible or {}) do
+        if not candidate.isFallback and candidate.sourceType ~= "inferred" then
+            addRow("mapped", candidate.faction, candidate)
+        end
+    end
+
+    for _, faction in ipairs(rawList) do
+        if faction.isWatched then
+            addRow("watched", faction)
+        end
+    end
+
+    for _, faction in ipairs(rawList) do
+        if #rows >= maxCount then
+            break
+        end
+        addRow("raw", faction)
+    end
+
+    self:SetLastDiagnostic("candidates", {
+        context = context,
+        coverage = coverage,
+        rows = rows,
+    })
+
+    printLine("Candidate summary")
+    printLine("Zone=" .. tostring(context.zoneName) .. " SubZone=" .. tostring(context.subZoneName))
+    printLine("ZoneMapping=" .. tostring(coverage.zoneHasMapping) .. " SubZoneMapping=" .. tostring(coverage.subZoneHasMapping))
+    for index, row in ipairs(rows) do
+        printLine(string.format(
+            "#%d kind=%s id=%s name=%s standing=%s progress=%d/%d watched=%s source=%s key=%s note=%s",
+            index,
+            tostring(row.kind),
+            tostring(row.factionID),
+            tostring(row.name),
+            tostring(row.standingLabel),
+            tonumber(row.progressValue or 0),
+            tonumber(row.progressMax or 0),
+            tostring(row.watched),
+            tostring(row.sourceType),
+            tostring(row.sourceKey),
+            tostring(row.note)
+        ))
+    end
 end
 
 function ns.Debug:DumpUnmapped()
@@ -585,6 +674,7 @@ function ns.Debug:HandleSlash(message)
         printLine("/repu factions [limit]")
         printLine("/repu location")
         printLine("/repu coverage")
+        printLine("/repu candidates [limit]")
         printLine("/repu mapscan run|status|clear")
         printLine("/repu unmapped")
         printLine("/repu refresh")
@@ -613,6 +703,11 @@ function ns.Debug:HandleSlash(message)
 
     if verb == "coverage" then
         self:DumpCoverage()
+        return
+    end
+
+    if verb == "candidates" then
+        self:DumpCandidates(tail)
         return
     end
 

@@ -26,6 +26,7 @@ local defaults = {
         lastCaptureKey = nil,
         lastDiagnostics = {
             api = nil,
+            candidates = nil,
             coverage = nil,
             dump = nil,
             factions = nil,
