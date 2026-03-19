@@ -150,6 +150,12 @@ end
 function ns.Data:BuildActiveData(flavor)
     local merged = {
         flavor = flavor,
+        locations = {
+            zone = {},
+            subZone = {},
+            instance = {},
+            raid = {},
+        },
         map = {
             zone = {},
             subZone = {},
@@ -166,6 +172,17 @@ function ns.Data:BuildActiveData(flavor)
 
     local sharedPayload = self.registry.shared or {}
     local flavorPayload = self.registry[flavor] or {}
+
+    local function mergeLocationSection(sectionName, payload)
+        local locationType = sectionName == "zone" and "zones"
+            or sectionName == "subZone" and "subZones"
+            or sectionName == "instance" and "instances"
+            or sectionName == "raid" and "raids"
+
+        for rawKey, record in pairs((payload.locations or {})[locationType] or {}) do
+            merged.locations[sectionName][rawKey] = record
+        end
+    end
 
     local function mergeMapSection(sectionName, payload)
         for rawKey, entries in pairs((payload.map or emptyMap)[sectionName] or {}) do
@@ -194,6 +211,15 @@ function ns.Data:BuildActiveData(flavor)
             end
         end
     end
+
+    mergeLocationSection("zone", sharedPayload)
+    mergeLocationSection("subZone", sharedPayload)
+    mergeLocationSection("instance", sharedPayload)
+    mergeLocationSection("raid", sharedPayload)
+    mergeLocationSection("zone", flavorPayload)
+    mergeLocationSection("subZone", flavorPayload)
+    mergeLocationSection("instance", flavorPayload)
+    mergeLocationSection("raid", flavorPayload)
 
     mergeMapSection("zone", sharedPayload)
     mergeMapSection("subZone", sharedPayload)
@@ -262,6 +288,76 @@ function ns.Data:FindSubZoneMatches(mapID, rawKey)
     end
 
     return results
+end
+
+function ns.Data:GetLocationRecord(sourceType, rawKey)
+    if not rawKey then
+        return nil
+    end
+
+    local section = self.activeData.locations[sourceType] or {}
+    return section[rawKey]
+end
+
+function ns.Data:GetLocationRecordByMapID(sourceType, mapID)
+    if not mapID then
+        return nil
+    end
+
+    local section = self.activeData.locations[sourceType] or {}
+    return section[mapID]
+end
+
+function ns.Data:GetSubZoneRecord(mapID, rawKey)
+    if mapID and rawKey then
+        local composite = string.format("%s:%s", tostring(mapID), tostring(rawKey))
+        local compositeKey = Utils:NormalizeKey(composite)
+        if compositeKey then
+            local compositeRecord = self:GetLocationRecord("subZone", compositeKey)
+            if compositeRecord then
+                return compositeRecord, compositeKey
+            end
+        end
+    end
+
+    if rawKey then
+        local simpleKey = Utils:NormalizeKey(rawKey)
+        if simpleKey then
+            return self:GetLocationRecord("subZone", simpleKey), simpleKey
+        end
+    end
+
+    return nil, nil
+end
+
+function ns.Data:GetCoverage(context)
+    context = context or {}
+
+    local zoneRecord = self:GetLocationRecordByMapID("zone", context.mapID)
+    local subZoneRecord, subZoneKey = self:GetSubZoneRecord(context.mapID, context.subZoneName)
+    local zoneMatches = self:FindMatchesByMapID("zone", context.mapID)
+    local subZoneMatches = self:FindSubZoneMatches(context.mapID, context.subZoneName)
+
+    local function hasTag(record, needle)
+        for _, tag in ipairs(record and record.tags or {}) do
+            if tag == needle then
+                return true
+            end
+        end
+        return false
+    end
+
+    return {
+        zoneRecord = zoneRecord,
+        subZoneRecord = subZoneRecord,
+        subZoneKey = subZoneKey,
+        zoneHasRecord = zoneRecord ~= nil,
+        subZoneHasRecord = subZoneRecord ~= nil,
+        zoneHasMapping = #zoneMatches > 0,
+        subZoneHasMapping = #subZoneMatches > 0,
+        zoneFromClientSeed = hasTag(zoneRecord, "generated") or (zoneRecord and zoneRecord.source == "client_seed") or false,
+        subZoneFromClientSeed = hasTag(subZoneRecord, "generated") or (subZoneRecord and subZoneRecord.source == "client_seed") or false,
+    }
 end
 
 ns.Data:RegisterFlavorData("shared", {

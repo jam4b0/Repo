@@ -13,6 +13,7 @@ RETAIL_MODULES = [
     "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/coverage_hubs_generated.lua",
     "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/coverage_wave2_generated.lua",
     "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/coverage_cleanup_generated.lua",
+    "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/coverage_variants_generated.lua",
     "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/eastern_kingdoms.lua",
     "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/kalimdor.lua",
     "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/outland.lua",

@@ -22,6 +22,7 @@ function ns.State:Init()
         lastRefreshReason = nil,
         lastRefreshAt = 0,
         context = nil,
+        coverage = nil,
         rawFactions = {},
         matches = {},
         prioritized = {},
@@ -52,6 +53,7 @@ end
 function ns.State:GetSnapshot()
     return {
         context = self.runtime.context,
+        coverage = self.runtime.coverage,
         rawFactions = self.runtime.rawFactions,
         matches = self.runtime.matches,
         prioritized = self.runtime.prioritized,
@@ -91,12 +93,14 @@ function ns.State:Refresh(reason, options)
     self.runtime.lastRefreshAt = GetTime()
 
     local context = ns.Location:BuildContext()
+    local coverage = ns.Data:GetCoverage(context)
     local rawFactions = ns.Factions:CollectAll()
     local matches = ns.Factions:BuildMatches(rawFactions, context)
     local prioritized = ns.Scoring:Prioritize(matches, rawFactions, context, options)
     local visible = ns.Factions:SelectVisible(prioritized, context)
 
     self.runtime.context = context
+    self.runtime.coverage = coverage
     self.runtime.rawFactions = rawFactions
     self.runtime.matches = matches
     self.runtime.prioritized = prioritized
