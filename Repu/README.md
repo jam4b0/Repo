@@ -93,7 +93,7 @@ Das bedeutet:
 
 ## Tools
 
-- `tools/generate_content_module.py` erzeugt aus JSON ein Retail-Content-Modul fuer `data/content/retail/*.lua`
+- `tools/generate_content_module.py` erzeugt aus JSON ein Retail-Content-Modul fuer `Repu_Data/content/retail/**/*.lua`
 - `tools/content_example.json` zeigt das erwartete Inputformat fuer Fraktionsinhalte
 - `tools/generate_map_manifest.py` erzeugt aus `RepuDB.debug.mapScan` ein pruefbares Zonen-Manifest mit Buckets fuer Kontinente, Zonen und Hubs
 - `tools/generate_map_seed.py` erzeugt aus dem Manifest ein reines Zonen-Skelett fuer spaetere `Repu`-Seeds, ohne schon Fraktionswissen zu erfinden
