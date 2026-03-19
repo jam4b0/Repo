@@ -31,6 +31,17 @@ local KNOWN_RETAIL_PARENT_FACTIONS = {
         },
     },
 }
+local KNOWN_VIRTUAL_PARENT_FACTIONS = {
+    [9000111] = {
+        name = "Shattrath",
+        children = {
+            [935] = true,  -- Die Sha'tar
+            [932] = true,  -- Die Aldor
+            [934] = true,  -- Die Seher
+            [1011] = true, -- Unteres Viertel
+        },
+    },
+}
 local KNOWN_RETAIL_CHILD_TO_PARENT = {
     [2711] = 2710,
     [2712] = 2710,
@@ -62,6 +73,14 @@ function ns.Factions:GetKnownChildFactionIDs(parentFactionID)
 
     local parent = KNOWN_RETAIL_PARENT_FACTIONS[parentFactionID]
     for factionID in pairs(parent and parent.children or {}) do
+        if not seen[factionID] then
+            seen[factionID] = true
+            childIDs[#childIDs + 1] = factionID
+        end
+    end
+
+    local virtualParent = KNOWN_VIRTUAL_PARENT_FACTIONS[parentFactionID]
+    for factionID in pairs(virtualParent and virtualParent.children or {}) do
         if not seen[factionID] then
             seen[factionID] = true
             childIDs[#childIDs + 1] = factionID
@@ -219,6 +238,33 @@ local function createSyntheticFaction(match)
         hasBonusRepGain = false,
         majorFactionData = factionData and factionData.majorFactionData or nil,
         raw = factionData,
+    }
+end
+
+local function createVirtualGroupFaction(factionID, name)
+    return {
+        index = 0,
+        factionID = factionID,
+        name = name or "Fraktionsgruppe",
+        nameKey = Utils:NormalizeKey(name or "Fraktionsgruppe"),
+        description = "Gruppierte Ortsfraktionen dieses Gebiets.",
+        standingID = 0,
+        standingLabel = "",
+        min = 0,
+        max = 1,
+        value = 0,
+        progressValue = 0,
+        progressMax = 0,
+        progressPct = 0,
+        isWatched = false,
+        isChild = false,
+        isExalted = false,
+        isAccountWide = false,
+        isMajorFaction = false,
+        hasRepEntry = false,
+        isKnownMissing = false,
+        isVirtualGroup = true,
+        hasBonusRepGain = false,
     }
 end
 
@@ -461,6 +507,68 @@ function ns.Factions:SelectVisible(prioritized, context)
         visible[#visible + 1] = candidate
     end
 
+    local function appendVirtualGroup(parentFactionID, score)
+        local definition = KNOWN_VIRTUAL_PARENT_FACTIONS[parentFactionID]
+        if not definition or seenFactionIDs[parentFactionID] then
+            return false
+        end
+
+        local hasVisibleChild = false
+        for childFactionID in pairs(definition.children or {}) do
+            if byID[childFactionID] then
+                hasVisibleChild = true
+                break
+            end
+            local childData = ns.Compat:GetFactionDataByID(childFactionID)
+            if childData then
+                hasVisibleChild = true
+                break
+            end
+        end
+
+        if not hasVisibleChild then
+            return false
+        end
+
+        local parentCandidate = {
+            factionID = parentFactionID,
+            faction = createVirtualGroupFaction(parentFactionID, definition.name),
+            name = definition.name,
+            sourceType = "group",
+            sourceKey = definition.name,
+            score = score or 0,
+            isDirect = false,
+            isFallback = false,
+            hasKnownChildren = true,
+        }
+
+        appendVisible(parentCandidate, #visible + 1)
+        if visible[#visible] == parentCandidate then
+            appendKnownChildren(parentCandidate)
+            return true
+        end
+
+        return false
+    end
+
+    local function maybeAppendLegacyVirtualGroup(candidate)
+        if not candidate or not candidate.factionID then
+            return false
+        end
+
+        if context and context.mapID == 111 then
+            local shattrathChildren = KNOWN_VIRTUAL_PARENT_FACTIONS[9000111].children
+            if shattrathChildren[candidate.factionID] then
+                if seenFactionIDs[9000111] then
+                    return true
+                end
+                return appendVirtualGroup(9000111, candidate.score or 0)
+            end
+        end
+
+        return false
+    end
+
     local function appendKnownChildren(parentCandidate)
         if not parentCandidate or not parentCandidate.factionID then
             return
@@ -515,9 +623,12 @@ function ns.Factions:SelectVisible(prioritized, context)
     end
 
     for index, candidate in ipairs(prioritized) do
-        appendVisible(candidate, index)
-        if visible[#visible] == candidate then
-            appendKnownChildren(candidate)
+        local handledByVirtualGroup = maybeAppendLegacyVirtualGroup(candidate)
+        if not handledByVirtualGroup then
+            appendVisible(candidate, index)
+            if visible[#visible] == candidate then
+                appendKnownChildren(candidate)
+            end
         end
 
         if #visible >= profile.maxBars then

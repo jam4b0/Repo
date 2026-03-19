@@ -64,6 +64,7 @@ function ns.Content:GetFactionDetails(candidate, context)
         progressPct = faction.progressPct,
         renownLevel = faction.renownLevel,
         isMajorFaction = faction.isMajorFaction,
+        isVirtualGroup = faction.isVirtualGroup and true or false,
         hasRepEntry = faction.hasRepEntry,
         isKnownMissing = faction.isKnownMissing and true or false,
         description = faction.description,

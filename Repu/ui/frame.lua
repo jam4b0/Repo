@@ -378,8 +378,14 @@ function ns.UI:UpdateDetails(details, count, profile)
         tonumber(details.progressMax or 0),
         tonumber(details.progressPct or 0)
     )
+    if details.isVirtualGroup then
+        progressText = ""
+    end
     if details.isKnownMissing or details.hasRepEntry == false then
         progressText = "Kein Rufeintrag"
+    end
+    if details.isVirtualGroup then
+        progressText = ""
     end
     if details.renownLevel and details.renownLevel > 0 then
         if tonumber(details.progressMax or 0) > 0 then

@@ -142,8 +142,14 @@ function ns.UI:UpdateRow(row, candidate, isActive, isSelected)
         faction.progressMax or 0,
         faction.progressPct or 0
     )
+    if faction.isVirtualGroup then
+        valueText = ""
+    end
     if faction.isKnownMissing or faction.hasRepEntry == false then
         valueText = "Kein Rufeintrag"
+    end
+    if faction.isVirtualGroup then
+        valueText = ""
     end
     if faction.renownLevel and faction.renownLevel > 0 then
         if (faction.progressMax or 0) > 0 then
