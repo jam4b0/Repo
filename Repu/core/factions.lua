@@ -1,6 +1,10 @@
 local _, ns = ...
 
 local Utils = ns.Utils
+local RETAIL_COMPANION_FACTION_IDS = {
+    [2640] = true, -- Brann Bronzebart
+    [2744] = true, -- Valeera Sanguinar
+}
 
 local function matchApplies(match, context)
     if match.factionGroups and context.playerFactionGroup then
@@ -154,6 +158,10 @@ end
 local function isRetailCompanionFaction(faction)
     if not faction then
         return false
+    end
+
+    if faction.factionID and RETAIL_COMPANION_FACTION_IDS[faction.factionID] then
+        return true
     end
 
     local nameKey = Utils:NormalizeKey(faction.name or "")
