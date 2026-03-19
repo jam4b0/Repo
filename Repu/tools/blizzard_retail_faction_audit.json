@@ -4,12 +4,12 @@
     "locale": "en_US",
     "blizzardFactionCount": 281,
     "blizzardRootCount": 14,
-    "addonCoreFactionCount": 110,
-    "addonContentFactionCount": 122,
-    "coreCoveredByContentCount": 110,
+    "addonCoreFactionCount": 111,
+    "addonContentFactionCount": 130,
+    "coreCoveredByContentCount": 111,
     "coreMissingContentCount": 0,
-    "blizzardMissingInCoreCount": 172,
-    "contentOnlyCount": 12
+    "blizzardMissingInCoreCount": 171,
+    "contentOnlyCount": 19
   },
   "classificationCounts": {
     "faction_header": 72,
@@ -1218,15 +1218,6 @@
       "exampleLocations": []
     },
     {
-      "factionID": 2465,
-      "name": "The Wild Hunt",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
       "factionID": 2469,
       "name": "Fractal Lore",
       "classification": "leaf",
@@ -1571,6 +1562,69 @@
   ],
   "coreMissingInContent": [],
   "contentOnly": [
+    {
+      "factionID": 2395,
+      "name": "Honeyback Hive",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": []
+    },
+    {
+      "factionID": 2417,
+      "name": "Uldum Accord",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": []
+    },
+    {
+      "factionID": 2439,
+      "name": "The Avowed",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": []
+    },
+    {
+      "factionID": 2526,
+      "name": "Winterpelt Furbolg",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": []
+    },
+    {
+      "factionID": 2544,
+      "name": "Artisan's Consortium - Dragon Isles Branch",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": []
+    },
+    {
+      "factionID": 2550,
+      "name": "Cobalt Assembly",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": []
+    },
+    {
+      "factionID": 2553,
+      "name": "Soridormi",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": []
+    },
     {
       "factionID": 2601,
       "name": "The Weaver",

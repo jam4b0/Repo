@@ -77,6 +77,14 @@ api.RegisterRetailContentModule({
                 { title = "Rostbolzen", kind = "Hub", location = { title = "Rostbolzen" } },
             },
         },
+        [2395] = {
+            summary = "Honeyback Hive ist ein lokaler Nebenruf von Kul Tiras, vor allem im Sturmsangtal. Der Fortschritt hängt an den bienenbezogenen Nebeninhalten dieses Gebiets.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                { title = "Sturmsangtal side content", kind = "Zone", location = { title = "Sturmsangtal" } },
+            },
+        },
         [2415] = {
             summary = "Dieser spaete BfA-Rufblock ist an Ny'alotha und die letzten Schwarzimperium-Inhalte gekoppelt.",
             source = "curated",

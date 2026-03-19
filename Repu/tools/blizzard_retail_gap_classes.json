@@ -4,16 +4,16 @@
     "locale": "en_US",
     "blizzardFactionCount": 281,
     "blizzardRootCount": 14,
-    "addonCoreFactionCount": 110,
-    "addonContentFactionCount": 122,
-    "coreCoveredByContentCount": 110,
+    "addonCoreFactionCount": 111,
+    "addonContentFactionCount": 130,
+    "coreCoveredByContentCount": 111,
     "coreMissingContentCount": 0,
-    "blizzardMissingInCoreCount": 172,
-    "contentOnlyCount": 12
+    "blizzardMissingInCoreCount": 171,
+    "contentOnlyCount": 19
   },
   "gapClassCounts": {
     "candidate_legacy_or_side_rep": 90,
-    "candidate_modern_side_system": 22,
+    "candidate_modern_side_system": 21,
     "ignore_header": 19,
     "ignore_placeholder": 2,
     "optional_pvp_brawler": 16,
@@ -1083,16 +1083,6 @@
     {
       "factionID": 2439,
       "name": "The Avowed",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_modern_side_system"
-    },
-    {
-      "factionID": 2465,
-      "name": "The Wild Hunt",
       "classification": "leaf",
       "isHeader": false,
       "isRenown": false,

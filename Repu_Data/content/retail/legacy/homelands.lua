@@ -160,5 +160,13 @@ api.RegisterRetailContentModule({
                 worldQuest(249, "Uldum"),
             },
         },
+        [2417] = {
+            summary = "Uldum Accord ist der moderne Nebenruf der spaeteren Uldum-Inhalte. Er ergänzt den lokalen Uldum-Block um die spaeteren Angriffs- und Weltaktivitaeten.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                worldQuest(249, "Uldum"),
+            },
+        },
     },
 })

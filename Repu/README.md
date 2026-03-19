@@ -47,6 +47,36 @@ Der aktuelle Stand:
 - `content/retail/legacy/`: stabile Heimat- und Legacy-Fraktionen
 - `content/retail/summary/`: generierte Startdatensaetze fuer noch nicht vertiefte Fraktionen
 
+## Datenquellen-Matrix
+
+Feste Projektregel: jeder Datentyp hat genau eine Primaerquelle.
+
+- `UiMap`, `mapID`, `mapChain`, aktueller Standort:
+  - Primaerquelle: WoW-Client / Ingame-API
+  - Verantwortung: `Repu`
+- globale Ruffraktions-Kataloge:
+  - Primaerquelle: Blizzard Game Data API
+  - Verantwortung: Audit, Gap-Klassen, Vollstaendigkeitsreports in `Repu/tools`
+- Charakter-Rufstand, Ruhm, aktive Reputationen:
+  - Primaerquelle: WoW-Client / Ingame-API
+  - Sekundaer: Blizzard Profile API fuer externe Audits
+  - Verantwortung: `Repu/core/compat.lua`
+- `Zone -> Fraktion`, Familien, Weltzustands- und Phasenlogik:
+  - Primaerquelle: kuratiertes Addon-Datenmodell
+  - Verantwortung: `Repu/data/retail/mappings/regions/` und `Repu/data/retail/variants/`
+- Quartermaster, Activities, Daily/Weekly, Zusatzinhalte:
+  - Primaerquelle: kuratierte Wissensbasis
+  - Verantwortung: `Repu_Data`
+- Wegpunkte und Koordinaten:
+  - Primaerquelle: kuratierte Wissensbasis
+  - Verantwortung: `Repu_Data`
+
+Wichtig:
+
+- Die Blizzard-Web-API beweist, dass eine Fraktion oder Quest existiert.
+- Sie beweist nicht, dass diese Fraktion an Ort `X` die richtige Ortsfraktion fuer `Repu` ist.
+- Diese Ortslogik bleibt immer kuratiert im Addon-Modell.
+
 ## Aktueller Stand
 
 - Vollstaendiges Addon-Grundgeruest vorhanden

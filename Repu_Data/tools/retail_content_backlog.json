@@ -1,8 +1,8 @@
 {
   "meta": {
-    "coreFactionCount": 110,
-    "contentFactionCount": 122,
-    "coveredCount": 110,
+    "coreFactionCount": 111,
+    "contentFactionCount": 130,
+    "coveredCount": 111,
     "missingCount": 0
   },
   "covered": [
@@ -1967,13 +1967,21 @@
       "factionID": 2464,
       "exampleLocations": [
         {
-          "name": "Ardenwald",
-          "section": "zones",
-          "file": "shadowlands.lua"
-        },
-        {
           "name": "Mists of Tirna Scithe",
           "section": "instances",
+          "file": "shadowlands.lua"
+        }
+      ],
+      "sourceFiles": [
+        "shadowlands.lua"
+      ]
+    },
+    {
+      "factionID": 2465,
+      "exampleLocations": [
+        {
+          "name": "Ardenwald",
+          "section": "zones",
           "file": "shadowlands.lua"
         }
       ],
@@ -2021,11 +2029,6 @@
       "factionID": 2503,
       "exampleLocations": [
         {
-          "name": "Valdrakken",
-          "section": "zones",
-          "file": "dragonflight.lua"
-        },
-        {
           "name": "Ebenen von Ohn'ahra",
           "section": "zones",
           "file": "dragonflight.lua"
@@ -2049,11 +2052,6 @@
       "factionID": 2507,
       "exampleLocations": [
         {
-          "name": "Valdrakken",
-          "section": "zones",
-          "file": "dragonflight.lua"
-        },
-        {
           "name": "Küste des Erwachens",
           "section": "zones",
           "file": "dragonflight.lua"
@@ -2071,6 +2069,11 @@
         {
           "name": "Der Vergessene Küstenstrich",
           "section": "zones",
+          "file": "dragonflight.lua"
+        },
+        {
+          "name": "Rubinlebensbecken",
+          "section": "subZones",
           "file": "dragonflight.lua"
         }
       ],
@@ -2115,11 +2118,6 @@
       "factionID": 2511,
       "exampleLocations": [
         {
-          "name": "Valdrakken",
-          "section": "zones",
-          "file": "dragonflight.lua"
-        },
-        {
           "name": "Azurblaues Gebirge",
           "section": "zones",
           "file": "dragonflight.lua"
@@ -2136,6 +2134,11 @@
         },
         {
           "name": "The Azure Vault",
+          "section": "instances",
+          "file": "dragonflight.lua"
+        },
+        {
+          "name": "Brackenhide Hollow",
           "section": "instances",
           "file": "dragonflight.lua"
         }

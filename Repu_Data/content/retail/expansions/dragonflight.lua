@@ -42,6 +42,38 @@ api.RegisterRetailContentModule({
                 { title = "Iskaara", kind = "Hub", location = { title = "Iskaara" } },
             },
         },
+        [2526] = {
+            summary = "Winterpelt Furbolg ist ein lokaler Nebenruf im Azurblauen Gebirge. Der Fortschritt sitzt an der Winterpelt-Hilfe und den zugehörigen Aufgaben rund um die Furbolg.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                { title = "Azure Span side quests", kind = "Zone", location = { title = "Azurblaue Gebirge" } },
+            },
+        },
+        [2544] = {
+            summary = "Artisan's Consortium - Dragon Isles Branch ist die professionsnahe Stadtfraktion von Valdrakken. Der Fortschritt ist an Handwerk, Aufträge und die Hauptprofessionen des Hubs gebunden.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                { title = "Valdrakken professions hub", kind = "Hub", location = { title = "Valdrakken" } },
+            },
+        },
+        [2550] = {
+            summary = "Cobalt Assembly ist ein lokaler Nebenruf des Azurblauen Gebirges. Der Fortschritt sitzt an den Cobalt-Aktivitäten und den zugehörigen Sammel- und Kampfschleifen der Zone.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                { title = "Azure Span side content", kind = "Zone", location = { title = "Azurblaue Gebirge" } },
+            },
+        },
+        [2553] = {
+            summary = "Soridormi ist der Nebenruf der Zeitriss-Inhalte von Thaldraszus. Der Fortschritt bündelt die wiederkehrenden Aktivitäten rund um die zeitgestörten Ereignisse.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                { title = "Time Rifts", kind = "Recurring", location = { title = "Thaldraszus" } },
+            },
+        },
         [2564] = {
             summary = "Loamm Niffen ist die große Patch-Ruhmfraktion der Zaralekhöhle. Fortschritt kommt vor allem über Loamm, die Schnüffel-Suche, Weltinhalte in Zaralek und den dortigen Storyblock.",
             source = "curated",

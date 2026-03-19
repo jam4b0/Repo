@@ -100,7 +100,10 @@ ns.Data:RegisterRetailModule({
                 notes = "BFA zone cluster",
                 mapIDs = { 942 },
                 tags = { "zone", "local", "bfa" },
-                factionIDs = { 2162 },
+                factions = {
+                    { factionID = 2162, weight = 240 },
+                    { factionID = 2395, weight = 210 },
+                },
                 weight = 240,
             },
             [8640] = {

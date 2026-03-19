@@ -76,7 +76,10 @@ ns.Data:RegisterRetailModule({
                 notes = "Cataclysm zone cluster; retail also uses the Black Empire assault world-state on mapID 1527.",
                 mapIDs = { 249, 1527 },
                 tags = { "zone", "local", "cataclysm", "assault-sensitive" },
-                factionIDs = { 1173 },
+                factions = {
+                    { factionID = 1173, weight = 248 },
+                    { factionID = 2417, weight = 214 },
+                },
                 weight = 248,
             },
         },
@@ -115,6 +118,7 @@ ns.Data:RegisterRetailModule({
                 tags = { "primary", "hub", "local", "cataclysm", "assault-sensitive" },
                 factions = {
                     { factionID = 1173, weight = 258 },
+                    { factionID = 2417, weight = 220 },
                 },
             },
             ["773:tol barad"] = {

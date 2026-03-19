@@ -4,12 +4,12 @@
     "locale": "en_US",
     "blizzardFactionCount": 281,
     "blizzardRootCount": 14,
-    "addonCoreFactionCount": 110,
-    "addonContentFactionCount": 122,
-    "coreCoveredByContentCount": 110,
+    "addonCoreFactionCount": 111,
+    "addonContentFactionCount": 130,
+    "coreCoveredByContentCount": 111,
     "coreMissingContentCount": 0,
-    "blizzardMissingInCoreCount": 172,
-    "contentOnlyCount": 12
+    "blizzardMissingInCoreCount": 171,
+    "contentOnlyCount": 19
   },
   "gapClass": "ignore_header",
   "count": 19,

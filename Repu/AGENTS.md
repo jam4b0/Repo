@@ -33,6 +33,15 @@
 - Content-Einträge sollen nach Möglichkeit `source` und `confidence` tragen.
 - Quellen wie Wowhead dienen als Offline-Referenz; das Addon macht keine Live-Abfragen.
 
+## Quellenregeln
+
+- `UiMap`, Standort, `mapID`, `mapChain` kommen primaer aus dem WoW-Client.
+- globale Ruffraktions-Kataloge kommen primaer aus der Blizzard Game Data API.
+- Charakter-Rufstand und Ruhm kommen primaer aus der Ingame-API, optional gespiegelt ueber die Blizzard Profile API.
+- `Zone -> Fraktion` wird niemals direkt aus der Web-API uebernommen, sondern immer kuratiert im Addon-Modell gepflegt.
+- Quartermaster, Activities, Daily/Weekly und Wegpunkte bleiben kuratierte `Repu_Data`-Inhalte.
+- Eine Web-API-Existenz ist kein automatischer Beweis fuer eine Ortszuordnung.
+
 ## Map-Manifest-Regeln
 
 - `mapScan` ist die Rohwahrheit fuer die vom Client gemeldete Weltstruktur.

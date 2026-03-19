@@ -33,6 +33,14 @@ api.RegisterRetailContentModule({
                 { title = "Halls of Atonement", kind = "Dungeon", location = { title = "Halls of Atonement" } },
             },
         },
+        [2439] = {
+            summary = "The Avowed ist ein lokaler Nebenruf von Revendreth. Der Fortschritt sitzt an den rituellen und sammelorientierten Aktivitäten im Revendreth-Nebenpfad.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                { title = "Revendreth side content", kind = "Zone", location = { title = "Revendreth" } },
+            },
+        },
         [2432] = {
             summary = "Der Kernbezug dieses Shadowlands-Rufblocks liegt im Schlund und den dortigen Endgame-Aktivitaeten.",
             source = "curated",
@@ -49,6 +57,14 @@ api.RegisterRetailContentModule({
             activities = {
                 { title = "Ardenwald", kind = "Zone", location = { title = "Ardenwald" } },
                 { title = "Mists of Tirna Scithe", kind = "Dungeon", location = { title = "Mists of Tirna Scithe" } },
+            },
+        },
+        [2465] = {
+            summary = "The Wild Hunt ist der zentrale lokale Ardenweald-Ruf. Fortschritt kommt über die Zonenstory, wiederkehrende Aufgaben und die wichtigsten Aktivitäten des Waldpfads.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                { title = "Ardenweald", kind = "Zone", location = { title = "Ardenwald" } },
             },
         },
         [2470] = {

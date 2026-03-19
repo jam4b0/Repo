@@ -10,7 +10,13 @@ ns.Data:RegisterRetailModule({
                 notes = "Dragonflight hub cluster",
                 mapIDs = { 2112 },
                 tags = { "city", "hub", "local", "dragonflight" },
-                factionIDs = { 2510, 2507, 2511, 2503 },
+                factions = {
+                    { factionID = 2510, weight = 255 },
+                    { factionID = 2544, weight = 212 },
+                    { factionID = 2507, weight = 205 },
+                    { factionID = 2511, weight = 205 },
+                    { factionID = 2503, weight = 205 },
+                },
                 weight = 255,
             },
             [2022] = {
@@ -40,7 +46,11 @@ ns.Data:RegisterRetailModule({
                 notes = "Dragonflight zone cluster",
                 mapIDs = { 2024 },
                 tags = { "zone", "local", "dragonflight" },
-                factionIDs = { 2511 },
+                factions = {
+                    { factionID = 2511, weight = 250 },
+                    { factionID = 2550, weight = 214 },
+                    { factionID = 2526, weight = 212 },
+                },
                 weight = 250,
             },
             [2025] = {
@@ -50,7 +60,10 @@ ns.Data:RegisterRetailModule({
                 notes = "Dragonflight zone cluster",
                 mapIDs = { 2025 },
                 tags = { "zone", "local", "dragonflight" },
-                factionIDs = { 2510 },
+                factions = {
+                    { factionID = 2510, weight = 250 },
+                    { factionID = 2553, weight = 214 },
+                },
                 weight = 250,
             },
             [2026] = {
@@ -115,6 +128,7 @@ ns.Data:RegisterRetailModule({
                 tags = { "primary", "hub", "local", "dragonflight" },
                 factions = {
                     { factionID = 2510, weight = 265 },
+                    { factionID = 2544, weight = 220 },
                 },
             },
             ["2022:rubinlebensbecken"] = {
@@ -151,6 +165,7 @@ ns.Data:RegisterRetailModule({
                 tags = { "local", "dragonflight" },
                 factions = {
                     { factionID = 2511, weight = 245 },
+                    { factionID = 2526, weight = 214 },
                 },
             },
             ["2025:tyrhold"] = {
@@ -163,6 +178,7 @@ ns.Data:RegisterRetailModule({
                 tags = { "local", "dragonflight" },
                 factions = {
                     { factionID = 2510, weight = 245 },
+                    { factionID = 2553, weight = 216 },
                 },
             },
             ["2133:loamm"] = {

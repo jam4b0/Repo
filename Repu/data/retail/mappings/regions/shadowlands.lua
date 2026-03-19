@@ -40,7 +40,10 @@ ns.Data:RegisterRetailModule({
                 notes = "Shadowlands zone cluster",
                 mapIDs = { 1565 },
                 tags = { "zone", "local", "shadowlands" },
-                factionIDs = { 2464 },
+                factions = {
+                    { factionID = 2465, weight = 247 },
+                    { factionID = 2464, weight = 214 },
+                },
                 weight = 245,
             },
             [1529] = {
@@ -50,7 +53,10 @@ ns.Data:RegisterRetailModule({
                 notes = "Shadowlands zone cluster",
                 mapIDs = { 1529 },
                 tags = { "zone", "local", "shadowlands" },
-                factionIDs = { 2413 },
+                factions = {
+                    { factionID = 2413, weight = 245 },
+                    { factionID = 2439, weight = 214 },
+                },
                 weight = 245,
             },
             [1543] = {
