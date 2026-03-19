@@ -142,9 +142,6 @@ function ns.UI:UpdateRow(row, candidate, isActive, isSelected)
         faction.progressMax or 0,
         faction.progressPct or 0
     )
-    if (faction.progressMax or 0) <= 0 then
-        valueText = tostring(faction.standingLabel or UNKNOWN)
-    end
     if faction.isVirtualGroup then
         valueText = ""
     end
