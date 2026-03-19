@@ -203,7 +203,7 @@ function ns.Debug:CreateWindow()
     end
 
     local frame = CreateFrame("Frame", "RepuDebugWindow", UIParent, BackdropTemplateMixin and "BackdropTemplate")
-    frame:SetSize(640, 368)
+    frame:SetSize(640, 400)
     frame:SetPoint("TOP", UIParent, "TOP", 0, -120)
     frame:SetMovable(true)
     frame:EnableMouse(true)
@@ -235,13 +235,13 @@ function ns.Debug:CreateWindow()
     frame.text = frame:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
     frame.text:SetPoint("TOPLEFT", frame, "TOPLEFT", 10, -28)
     frame.text:SetPoint("RIGHT", frame, "RIGHT", -10, 0)
-    frame.text:SetHeight(142)
+    frame.text:SetHeight(164)
     frame.text:SetJustifyH("LEFT")
     frame.text:SetJustifyV("TOP")
 
     frame.buttonRow = CreateFrame("Frame", nil, frame)
     frame.buttonRow:SetPoint("BOTTOMLEFT", frame, "BOTTOMLEFT", 10, 12)
-    frame.buttonRow:SetSize(620, 216)
+    frame.buttonRow:SetSize(620, 228)
 
     frame.enableButton = createButton(frame.buttonRow, "Capture On", 90, function()
         local debugDB = ns.State:GetDebugDB()
@@ -371,6 +371,9 @@ function ns.Debug:CreateWindow()
         printLine("Test rendering triggered")
     end)
     placeButton(frame.testButton, frame.buttonRow, 0, -128)
+
+    frame.refreshButton:ClearAllPoints()
+    placeButton(frame.refreshButton, frame.buttonRow, 98, -128)
 
     self.window = frame
     self:RefreshWindow()
