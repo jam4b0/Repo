@@ -58,6 +58,19 @@ local KNOWN_RETAIL_CHILD_TO_PARENT = {
     [2671] = 2653,
     [2685] = 2653,
 }
+local GENERIC_HEADER_KEYS = {
+    ["classic"] = true,
+    ["klassisch"] = true,
+    ["horde"] = true,
+    ["allianz"] = true,
+    ["alliance"] = true,
+    ["gilde"] = true,
+    ["guild"] = true,
+    ["kriegsschlachtraids"] = true,
+    ["warband"] = true,
+    ["streitkrafte der horde"] = true,
+    ["forces of the horde"] = true,
+}
 
 local function makeVirtualParentFactionID(name)
     local key = Utils:NormalizeKey(name or "")
@@ -66,6 +79,11 @@ local function makeVirtualParentFactionID(name)
         hash = (hash * 33 + string.byte(key, index)) % 1000000
     end
     return 8000000 + hash
+end
+
+local function isGenericHeaderName(name)
+    local key = Utils:NormalizeKey(name or "")
+    return key ~= nil and GENERIC_HEADER_KEYS[key] == true
 end
 
 function ns.Factions:GetKnownChildFactionIDs(parentFactionID)
@@ -441,16 +459,18 @@ function ns.Factions:CollectAll()
                 collection.childIDsByParent[faction.parentFactionID][#collection.childIDsByParent[faction.parentFactionID] + 1] = faction.factionID
             end
             if row.parentHeaderName and faction.factionID then
-                local virtualParentID = row.parentHeaderFactionID or makeVirtualParentFactionID(row.parentHeaderName)
-                collection.virtualParentsByID[virtualParentID] = collection.virtualParentsByID[virtualParentID] or {
-                    factionID = virtualParentID,
-                    name = row.parentHeaderName,
-                    children = {},
-                }
-                collection.virtualParentsByID[virtualParentID].children[faction.factionID] = {
-                    name = faction.name,
-                }
-                collection.virtualParentByChildID[faction.factionID] = virtualParentID
+                if not isGenericHeaderName(row.parentHeaderName) then
+                    local virtualParentID = row.parentHeaderFactionID or makeVirtualParentFactionID(row.parentHeaderName)
+                    collection.virtualParentsByID[virtualParentID] = collection.virtualParentsByID[virtualParentID] or {
+                        factionID = virtualParentID,
+                        name = row.parentHeaderName,
+                        children = {},
+                    }
+                    collection.virtualParentsByID[virtualParentID].children[faction.factionID] = {
+                        name = faction.name,
+                    }
+                    collection.virtualParentByChildID[faction.factionID] = virtualParentID
+                end
             end
         end
     end
