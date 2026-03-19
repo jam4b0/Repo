@@ -69,6 +69,7 @@ Der aktuelle Stand:
 - `tools/generate_variant_family_manifest.py` gruppiert die verbleibenden Dubletten in reviewbare Variantenfamilien statt nur Einzel-IDs
 - `tools/generate_world_variant_coverage.py` uebernimmt die echten Welt-/Phasing-Varianten als Coverage-Schicht und laesst Event-/Instanz-/Technikvarianten weiter offen
 - `tools/generate_event_variant_coverage.py` uebernimmt nur explizit freigegebene Event-/PvP-Varianten mit Weltbezug
+- `tools/generate_special_zone_keepcases.py` schliesst die letzten offenen Spezialzonen des Retail-Zonenskeletts explizit
 - `tools/generate_remaining_zone_wave.py` erzeugt aus `normal_zones` des Restreports eine zweite autonome Coverage-Welle
 - `tools/generate_final_zone_cleanup.py` erzeugt aus den letzten verbleibenden Zonen nur explizite Keep-Cases fuer die Abschlusswelle
 - `tools/generate_variant_zone_coverage.py` behandelt die verbleibenden Dubletten-/Variantenzonen als explizite Keep-/Exclude-Liste
