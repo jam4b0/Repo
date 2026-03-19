@@ -43,6 +43,19 @@ ns.Data:RegisterRetailModule({
                 factionIDs = { 1172 },
                 weight = 248,
             },
+            [244] = {
+                name = "Tol Barad",
+                source = "seed",
+                confidence = "high",
+                notes = "Faction-specific Cataclysm pvp zone cluster",
+                mapIDs = { 244 },
+                tags = { "zone", "local", "cataclysm", "pvp" },
+                factions = {
+                    { factionID = 1177, factionGroups = { "Alliance" }, weight = 248 },
+                    { factionID = 1178, factionGroups = { "Horde" }, weight = 248 },
+                },
+                weight = 248,
+            },
             [245] = {
                 name = "Halbinsel von Tol Barad",
                 source = "seed",
@@ -102,6 +115,19 @@ ns.Data:RegisterRetailModule({
                 tags = { "primary", "hub", "local", "cataclysm" },
                 factions = {
                     { factionID = 1173, weight = 258 },
+                },
+            },
+            ["773:tol barad"] = {
+                name = "Tol Barad",
+                parentMapID = 244,
+                source = "seed",
+                confidence = "high",
+                notes = "Faction-specific Cataclysm pvp zone hub",
+                mapIDs = { 773 },
+                tags = { "hub", "local", "cataclysm", "pvp" },
+                factions = {
+                    { factionID = 1177, factionGroups = { "Alliance" }, weight = 255 },
+                    { factionID = 1178, factionGroups = { "Horde" }, weight = 255 },
                 },
             },
         },
