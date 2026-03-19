@@ -80,7 +80,10 @@ ns.Data:RegisterRetailModule({
                 notes = "Pandaria patch zone cluster",
                 mapIDs = { 507 },
                 tags = { "zone", "local", "pandaria" },
-                factionIDs = { 1387, 1388 },
+                factions = {
+                    { factionID = 1387, factionGroups = { "Alliance" }, weight = 248 },
+                    { factionID = 1388, factionGroups = { "Horde" }, weight = 248 },
+                },
                 weight = 248,
             },
         },
