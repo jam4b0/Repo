@@ -325,6 +325,18 @@ ns.Data:RegisterRetailModule({
                     { factionID = 530, weight = 242 },
                 },
             },
+            ["10:ratchet"] = {
+                name = "Ratchet",
+                parentMapID = 10,
+                source = "curated",
+                confidence = "medium",
+                notes = "Neutral goblin harbor hub in the Northern Barrens.",
+                mapIDs = { 10 },
+                tags = { "primary", "hub", "local", "kalimdor" },
+                factions = {
+                    { factionID = 470, weight = 260 },
+                },
+            },
             ["15:ödland"] = {
                 name = "Ödland",
                 parentMapID = 15,
@@ -383,6 +395,30 @@ ns.Data:RegisterRetailModule({
                 tags = { "primary", "local", "kalimdor" },
                 factions = {
                     { factionID = 609, weight = 248 },
+                },
+            },
+            ["83:everlook"] = {
+                name = "Everlook",
+                parentMapID = 83,
+                source = "curated",
+                confidence = "medium",
+                notes = "Neutral goblin town hub in Winterspring.",
+                mapIDs = { 83 },
+                tags = { "primary", "hub", "local", "kalimdor" },
+                factions = {
+                    { factionID = 577, weight = 260 },
+                },
+            },
+            ["71:gadgetzan"] = {
+                name = "Gadgetzan",
+                parentMapID = 71,
+                source = "curated",
+                confidence = "medium",
+                notes = "Neutral goblin town hub in Tanaris.",
+                mapIDs = { 71 },
+                tags = { "primary", "hub", "local", "kalimdor" },
+                factions = {
+                    { factionID = 369, weight = 260 },
                 },
             },
             ["106:die blutmythosinsel"] = {

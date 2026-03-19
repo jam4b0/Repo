@@ -33,6 +33,15 @@ api.RegisterRetailContentModule({
                 { title = "Cenarionszuflucht", kind = "Hub", location = { mapID = 102, title = "Cenarionszuflucht" } },
             },
         },
+        [946] = {
+            summary = "Honor Hold ist der Allianz-Rufblock der Höllenfeuerhalbinsel. Im Retail-Core ist er der lokale Allianz-Anker für die Zone und ihre allianzgeprägten Instanzpfade.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                { title = "Höllenfeuerhalbinsel", kind = "Zone", location = { mapID = 100, title = "Höllenfeuerhalbinsel" } },
+                { title = "Honor Hold", kind = "Hub", location = { mapID = 100, title = "Honor Hold" } },
+            },
+        },
         [947] = {
             summary = "Thrallmar ist der Horde-Rufblock der Höllenfeuerhalbinsel. Im Retail-Core ist er der lokale Anker für die Zone und ihre hordegeprägten Instanzpfade.",
             source = "curated",

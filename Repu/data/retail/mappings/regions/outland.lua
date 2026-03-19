@@ -20,7 +20,10 @@ ns.Data:RegisterRetailModule({
                 notes = "Retail legacy zone cluster",
                 mapIDs = { 100 },
                 tags = { "zone", "local" },
-                factionIDs = { 947 },
+                factions = {
+                    { factionID = 946, factionGroups = { "Alliance" }, weight = 248 },
+                    { factionID = 947, factionGroups = { "Horde" }, weight = 248 },
+                },
                 weight = 250,
             },
             [108] = {
@@ -180,6 +183,30 @@ ns.Data:RegisterRetailModule({
                 tags = { "primary", "hub", "local", "outland" },
                 factions = {
                     { factionID = 942, weight = 260 },
+                },
+            },
+            ["100:honor hold"] = {
+                name = "Honor Hold",
+                parentMapID = 100,
+                source = "curated",
+                confidence = "medium",
+                notes = "Alliance hub cluster for Hellfire Peninsula.",
+                mapIDs = { 100 },
+                tags = { "primary", "hub", "local", "outland" },
+                factions = {
+                    { factionID = 946, factionGroups = { "Alliance" }, weight = 260 },
+                },
+            },
+            ["100:thrallmar"] = {
+                name = "Thrallmar",
+                parentMapID = 100,
+                source = "curated",
+                confidence = "medium",
+                notes = "Horde hub cluster for Hellfire Peninsula.",
+                mapIDs = { 100 },
+                tags = { "primary", "hub", "local", "outland" },
+                factions = {
+                    { factionID = 947, factionGroups = { "Horde" }, weight = 260 },
                 },
             },
             ["104:area 52"] = {

@@ -136,5 +136,32 @@ api.RegisterRetailContentModule({
                 worldQuest(1577, "Gilneas"),
             },
         },
+        [369] = {
+            summary = "Gadgetzan ist die neutrale Goblin-Stadtfraktion von Tanaris. Im Retail-Core ist sie als lokaler Hubanker für die Stadt selbst modelliert, nicht als ganze Zonenfraktion für Tanaris.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                worldQuest(71, "Tanaris"),
+                worldQuest(71, "Gadgetzan"),
+            },
+        },
+        [470] = {
+            summary = "Ratchet ist die neutrale Goblin-Hafenfraktion im Nördlichen Brachland. Im Retail-Core ist sie als lokaler Stadtanker für den Hafen modelliert.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                worldQuest(10, "Nördliches Brachland"),
+                worldQuest(10, "Ratchet"),
+            },
+        },
+        [577] = {
+            summary = "Everlook ist die neutrale Goblin-Stadtfraktion in Winterquell. Im Retail-Core ist sie als lokaler Hubanker für die Stadt selbst modelliert.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                worldQuest(83, "Winterquell"),
+                worldQuest(83, "Everlook"),
+            },
+        },
     },
 })

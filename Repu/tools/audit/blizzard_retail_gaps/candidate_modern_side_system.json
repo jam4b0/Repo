@@ -4,15 +4,15 @@
     "locale": "en_US",
     "blizzardFactionCount": 281,
     "blizzardRootCount": 14,
-    "addonCoreFactionCount": 127,
-    "addonContentFactionCount": 138,
-    "coreCoveredByContentCount": 127,
+    "addonCoreFactionCount": 128,
+    "addonContentFactionCount": 139,
+    "coreCoveredByContentCount": 128,
     "coreMissingContentCount": 0,
-    "blizzardMissingInCoreCount": 155,
+    "blizzardMissingInCoreCount": 154,
     "contentOnlyCount": 11
   },
   "gapClass": "candidate_modern_side_system",
-  "count": 8,
+  "count": 7,
   "rows": [
     {
       "factionID": 2164,
@@ -67,16 +67,6 @@
     {
       "factionID": 2666,
       "name": "Roasts and Boasts",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_modern_side_system"
-    },
-    {
-      "factionID": 2472,
-      "name": "The Archivists' Codex",
       "classification": "leaf",
       "isHeader": false,
       "isRenown": false,

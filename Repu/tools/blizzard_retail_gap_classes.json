@@ -4,21 +4,21 @@
     "locale": "en_US",
     "blizzardFactionCount": 281,
     "blizzardRootCount": 14,
-    "addonCoreFactionCount": 128,
-    "addonContentFactionCount": 139,
-    "coreCoveredByContentCount": 128,
+    "addonCoreFactionCount": 132,
+    "addonContentFactionCount": 143,
+    "coreCoveredByContentCount": 132,
     "coreMissingContentCount": 0,
-    "blizzardMissingInCoreCount": 154,
+    "blizzardMissingInCoreCount": 150,
     "contentOnlyCount": 11
   },
   "gapClassCounts": {
-    "candidate_legacy_or_side_rep": 89,
+    "candidate_legacy_or_side_rep": 86,
     "excluded_global_system": 2,
     "excluded_micro_side_rep": 5,
     "ignore_header": 19,
     "ignore_placeholder": 2,
     "optional_pvp_brawler": 16,
-    "superseded_by_current_model": 21
+    "superseded_by_current_model": 20
   },
   "rows": [
     {
@@ -262,16 +262,6 @@
       "gapClass": "candidate_legacy_or_side_rep"
     },
     {
-      "factionID": 577,
-      "name": "Everlook",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_legacy_or_side_rep"
-    },
-    {
       "factionID": 1283,
       "name": "Farmer Fung",
       "classification": "leaf",
@@ -314,16 +304,6 @@
     {
       "factionID": 2469,
       "name": "Fractal Lore",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_legacy_or_side_rep"
-    },
-    {
-      "factionID": 369,
-      "name": "Gadgetzan",
       "classification": "leaf",
       "isHeader": false,
       "isRenown": false,
@@ -544,16 +524,6 @@
     {
       "factionID": 2452,
       "name": "Polemarch Adrestes",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_legacy_or_side_rep"
-    },
-    {
-      "factionID": 470,
-      "name": "Ratchet",
       "classification": "leaf",
       "isHeader": false,
       "isRenown": false,
@@ -1366,16 +1336,6 @@
       "name": "Alliance Vanguard",
       "classification": "header",
       "isHeader": true,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "superseded_by_current_model"
-    },
-    {
-      "factionID": 946,
-      "name": "Honor Hold",
-      "classification": "leaf",
-      "isHeader": false,
       "isRenown": false,
       "sourceFiles": [],
       "exampleLocations": [],

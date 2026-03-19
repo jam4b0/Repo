@@ -1,8 +1,8 @@
 {
   "meta": {
-    "coreFactionCount": 128,
-    "contentFactionCount": 139,
-    "coveredCount": 128,
+    "coreFactionCount": 132,
+    "contentFactionCount": 143,
+    "coveredCount": 132,
     "missingCount": 0
   },
   "covered": [
@@ -256,6 +256,32 @@
       ]
     },
     {
+      "factionID": 369,
+      "exampleLocations": [
+        {
+          "name": "Gadgetzan",
+          "section": "subZones",
+          "file": "kalimdor.lua"
+        }
+      ],
+      "sourceFiles": [
+        "kalimdor.lua"
+      ]
+    },
+    {
+      "factionID": 470,
+      "exampleLocations": [
+        {
+          "name": "Ratchet",
+          "section": "subZones",
+          "file": "kalimdor.lua"
+        }
+      ],
+      "sourceFiles": [
+        "kalimdor.lua"
+      ]
+    },
+    {
       "factionID": 529,
       "exampleLocations": [
         {
@@ -337,6 +363,19 @@
         {
           "name": "Dire Maul",
           "section": "instances",
+          "file": "kalimdor.lua"
+        }
+      ],
+      "sourceFiles": [
+        "kalimdor.lua"
+      ]
+    },
+    {
+      "factionID": 577,
+      "exampleLocations": [
+        {
+          "name": "Everlook",
+          "section": "subZones",
           "file": "kalimdor.lua"
         }
       ],
@@ -593,11 +632,34 @@
       ]
     },
     {
+      "factionID": 946,
+      "exampleLocations": [
+        {
+          "name": "Höllenfeuerhalbinsel",
+          "section": "zones",
+          "file": "outland.lua"
+        },
+        {
+          "name": "Honor Hold",
+          "section": "subZones",
+          "file": "outland.lua"
+        }
+      ],
+      "sourceFiles": [
+        "outland.lua"
+      ]
+    },
+    {
       "factionID": 947,
       "exampleLocations": [
         {
           "name": "Höllenfeuerhalbinsel",
           "section": "zones",
+          "file": "outland.lua"
+        },
+        {
+          "name": "Thrallmar",
+          "section": "subZones",
           "file": "outland.lua"
         },
         {

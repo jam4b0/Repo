@@ -4,11 +4,11 @@
     "locale": "en_US",
     "blizzardFactionCount": 281,
     "blizzardRootCount": 14,
-    "addonCoreFactionCount": 128,
-    "addonContentFactionCount": 139,
-    "coreCoveredByContentCount": 128,
+    "addonCoreFactionCount": 132,
+    "addonContentFactionCount": 143,
+    "coreCoveredByContentCount": 132,
     "coreMissingContentCount": 0,
-    "blizzardMissingInCoreCount": 154,
+    "blizzardMissingInCoreCount": 150,
     "contentOnlyCount": 11
   },
   "classificationCounts": {
@@ -93,28 +93,10 @@
       "exampleLocations": []
     },
     {
-      "factionID": 369,
-      "name": "Gadgetzan",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
       "factionID": 469,
       "name": "Alliance",
       "classification": "generic_header",
       "isHeader": true,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 470,
-      "name": "Ratchet",
-      "classification": "leaf",
-      "isHeader": false,
       "isRenown": false,
       "sourceFiles": [],
       "exampleLocations": []
@@ -132,15 +114,6 @@
       "factionID": 510,
       "name": "The Defilers",
       "classification": "faction_header",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 577,
-      "name": "Everlook",
-      "classification": "leaf",
       "isHeader": false,
       "isRenown": false,
       "sourceFiles": [],
@@ -249,15 +222,6 @@
       "factionID": 922,
       "name": "Tranquillien",
       "classification": "faction_header",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 946,
-      "name": "Honor Hold",
-      "classification": "leaf",
       "isHeader": false,
       "isRenown": false,
       "sourceFiles": [],
