@@ -1,8 +1,8 @@
 {
   "meta": {
-    "coreFactionCount": 135,
-    "contentFactionCount": 146,
-    "coveredCount": 135,
+    "coreFactionCount": 147,
+    "contentFactionCount": 148,
+    "coveredCount": 147,
     "missingCount": 0
   },
   "covered": [
@@ -1448,6 +1448,47 @@
       ]
     },
     {
+      "factionID": 1337,
+      "exampleLocations": [
+        {
+          "name": "Schreckensöde",
+          "section": "zones",
+          "file": "pandaria.lua"
+        },
+        {
+          "name": "Klaxxi'vess",
+          "section": "subZones",
+          "file": "pandaria.lua"
+        }
+      ],
+      "sourceFiles": [
+        "pandaria.lua"
+      ]
+    },
+    {
+      "factionID": 1359,
+      "exampleLocations": [
+        {
+          "name": "Tal der Ewigen Blüten",
+          "section": "zones",
+          "file": "pandaria.lua"
+        },
+        {
+          "name": "Schrein der Zwei Monde",
+          "section": "subZones",
+          "file": "pandaria.lua"
+        },
+        {
+          "name": "Schrein der Sieben Sterne",
+          "section": "subZones",
+          "file": "pandaria.lua"
+        }
+      ],
+      "sourceFiles": [
+        "pandaria.lua"
+      ]
+    },
+    {
       "factionID": 1375,
       "exampleLocations": [
         {
@@ -2753,6 +2794,45 @@
       ]
     },
     {
+      "factionID": 2601,
+      "exampleLocations": [
+        {
+          "name": "Known retail child faction",
+          "section": "core-family",
+          "file": "factions.lua"
+        }
+      ],
+      "sourceFiles": [
+        "factions.lua"
+      ]
+    },
+    {
+      "factionID": 2605,
+      "exampleLocations": [
+        {
+          "name": "Known retail child faction",
+          "section": "core-family",
+          "file": "factions.lua"
+        }
+      ],
+      "sourceFiles": [
+        "factions.lua"
+      ]
+    },
+    {
+      "factionID": 2607,
+      "exampleLocations": [
+        {
+          "name": "Known retail child faction",
+          "section": "core-family",
+          "file": "factions.lua"
+        }
+      ],
+      "sourceFiles": [
+        "factions.lua"
+      ]
+    },
+    {
       "factionID": 2615,
       "exampleLocations": [
         {
@@ -2812,6 +2892,58 @@
       ]
     },
     {
+      "factionID": 2671,
+      "exampleLocations": [
+        {
+          "name": "Known retail child faction",
+          "section": "core-family",
+          "file": "factions.lua"
+        }
+      ],
+      "sourceFiles": [
+        "factions.lua"
+      ]
+    },
+    {
+      "factionID": 2673,
+      "exampleLocations": [
+        {
+          "name": "Known retail child faction",
+          "section": "core-family",
+          "file": "factions.lua"
+        }
+      ],
+      "sourceFiles": [
+        "factions.lua"
+      ]
+    },
+    {
+      "factionID": 2675,
+      "exampleLocations": [
+        {
+          "name": "Known retail child faction",
+          "section": "core-family",
+          "file": "factions.lua"
+        }
+      ],
+      "sourceFiles": [
+        "factions.lua"
+      ]
+    },
+    {
+      "factionID": 2677,
+      "exampleLocations": [
+        {
+          "name": "Known retail child faction",
+          "section": "core-family",
+          "file": "factions.lua"
+        }
+      ],
+      "sourceFiles": [
+        "factions.lua"
+      ]
+    },
+    {
       "factionID": 2685,
       "exampleLocations": [
         {
@@ -2823,9 +2955,15 @@
           "name": "Undermine City",
           "section": "subZones",
           "file": "war_within.lua"
+        },
+        {
+          "name": "Known retail child faction",
+          "section": "core-family",
+          "file": "factions.lua"
         }
       ],
       "sourceFiles": [
+        "factions.lua",
         "war_within.lua"
       ]
     },
@@ -2985,10 +3123,55 @@
           "name": "March on Quel'Danas",
           "section": "raids",
           "file": "midnight.lua"
+        },
+        {
+          "name": "Known retail child faction",
+          "section": "core-family",
+          "file": "factions.lua"
         }
       ],
       "sourceFiles": [
+        "factions.lua",
         "midnight.lua"
+      ]
+    },
+    {
+      "factionID": 2712,
+      "exampleLocations": [
+        {
+          "name": "Known retail child faction",
+          "section": "core-family",
+          "file": "factions.lua"
+        }
+      ],
+      "sourceFiles": [
+        "factions.lua"
+      ]
+    },
+    {
+      "factionID": 2713,
+      "exampleLocations": [
+        {
+          "name": "Known retail child faction",
+          "section": "core-family",
+          "file": "factions.lua"
+        }
+      ],
+      "sourceFiles": [
+        "factions.lua"
+      ]
+    },
+    {
+      "factionID": 2714,
+      "exampleLocations": [
+        {
+          "name": "Known retail child faction",
+          "section": "core-family",
+          "file": "factions.lua"
+        }
+      ],
+      "sourceFiles": [
+        "factions.lua"
       ]
     },
     {
@@ -2998,9 +3181,15 @@
           "name": "K'aresh",
           "section": "zones",
           "file": "war_within.lua"
+        },
+        {
+          "name": "Known retail child faction",
+          "section": "core-family",
+          "file": "factions.lua"
         }
       ],
       "sourceFiles": [
+        "factions.lua",
         "war_within.lua"
       ]
     }

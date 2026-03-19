@@ -30,7 +30,10 @@ ns.Data:RegisterRetailModule({
                 notes = "Pandaria reputation cluster; retail also uses separate 8.3 Black Empire assault world-states for the Vale.",
                 mapIDs = { 390 },
                 tags = { "zone", "local", "pandaria", "assault-sensitive" },
-                factionIDs = { 1269 },
+                factions = {
+                    { factionID = 1269, weight = 250 },
+                    { factionID = 1359, weight = 214 },
+                },
                 weight = 250,
             },
             [554] = {
@@ -70,7 +73,10 @@ ns.Data:RegisterRetailModule({
                 notes = "Pandaria reputation cluster",
                 mapIDs = { 418 },
                 tags = { "zone", "local", "pandaria" },
-                factionIDs = { 1271 },
+                factions = {
+                    { factionID = 1271, weight = 240 },
+                    { factionID = 1337, weight = 214 },
+                },
                 weight = 240,
             },
             [507] = {
@@ -98,6 +104,7 @@ ns.Data:RegisterRetailModule({
                 tags = { "primary", "hub", "local", "pandaria" },
                 factions = {
                     { factionID = 1375, weight = 260 },
+                    { factionID = 1359, weight = 220 },
                 },
             },
             ["390:schrein der sieben sterne"] = {
@@ -110,6 +117,19 @@ ns.Data:RegisterRetailModule({
                 tags = { "primary", "hub", "local", "pandaria" },
                 factions = {
                     { factionID = 1376, weight = 260 },
+                    { factionID = 1359, weight = 220 },
+                },
+            },
+            ["418:klaxxi'vess"] = {
+                name = "Klaxxi'vess",
+                parentMapID = 418,
+                source = "curated",
+                confidence = "medium",
+                notes = "Klaxxi local hub in the Dread Wastes.",
+                mapIDs = { 418 },
+                tags = { "hub", "local", "pandaria" },
+                factions = {
+                    { factionID = 1337, weight = 260 },
                 },
             },
             ["376:halbhügel"] = {

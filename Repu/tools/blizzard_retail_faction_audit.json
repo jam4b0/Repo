@@ -4,12 +4,12 @@
     "locale": "en_US",
     "blizzardFactionCount": 281,
     "blizzardRootCount": 14,
-    "addonCoreFactionCount": 135,
-    "addonContentFactionCount": 146,
-    "coreCoveredByContentCount": 135,
+    "addonCoreFactionCount": 147,
+    "addonContentFactionCount": 148,
+    "coreCoveredByContentCount": 147,
     "coreMissingContentCount": 0,
-    "blizzardMissingInCoreCount": 147,
-    "contentOnlyCount": 11
+    "blizzardMissingInCoreCount": 135,
+    "contentOnlyCount": 1
   },
   "classificationCounts": {
     "faction_header": 72,
@@ -507,15 +507,6 @@
       "exampleLocations": []
     },
     {
-      "factionID": 1337,
-      "name": "The Klaxxi",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
       "factionID": 1341,
       "name": "The August Celestials",
       "classification": "leaf",
@@ -554,15 +545,6 @@
     {
       "factionID": 1358,
       "name": "Nat Pagle",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 1359,
-      "name": "The Black Prince",
       "classification": "leaf",
       "isHeader": false,
       "isRenown": false,
@@ -1146,33 +1128,6 @@
       "exampleLocations": []
     },
     {
-      "factionID": 2601,
-      "name": "The Weaver",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2605,
-      "name": "The General",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2607,
-      "name": "The Vizier",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
       "factionID": 2640,
       "name": "Brann Bronzebeard",
       "classification": "leaf",
@@ -1236,73 +1191,10 @@
       "exampleLocations": []
     },
     {
-      "factionID": 2671,
-      "name": "Venture Company",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2673,
-      "name": "Bilgewater Cartel",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2675,
-      "name": "Blackwater Cartel",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2677,
-      "name": "Steamwheedle Cartel",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
       "factionID": 2698,
       "name": "Midnight",
       "classification": "generic_header",
       "isHeader": true,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2712,
-      "name": "Blood Knights",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2713,
-      "name": "Farstriders",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2714,
-      "name": "Shades of the Row",
-      "classification": "leaf",
-      "isHeader": false,
       "isRenown": false,
       "sourceFiles": [],
       "exampleLocations": []
@@ -1346,96 +1238,6 @@
   ],
   "coreMissingInContent": [],
   "contentOnly": [
-    {
-      "factionID": 2601,
-      "name": "The Weaver",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2605,
-      "name": "The General",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2607,
-      "name": "The Vizier",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2671,
-      "name": "Venture Company",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2673,
-      "name": "Bilgewater Cartel",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2675,
-      "name": "Blackwater Cartel",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2677,
-      "name": "Steamwheedle Cartel",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2712,
-      "name": "Blood Knights",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2713,
-      "name": "Farstriders",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2714,
-      "name": "Shades of the Row",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
     {
       "factionID": 9000111,
       "name": null,

@@ -50,6 +50,25 @@ api.RegisterRetailContentModule({
                 { title = "Questlinien in der Krasarangwildnis", kind = "Story/Zone", location = { mapID = 388, title = "Krasarangwildnis" } },
             },
         },
+        [1337] = {
+            summary = "Die Klaxxi sind der eigentliche Mantiden-Rufblock der Schreckensoede. Im Retail-Core laufen sie als lokale Nebenfraktion der Zone und ihres Hubbereichs Klaxxi'vess.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                { title = "Schreckensoede", kind = "Zone", location = { mapID = 418, title = "Schreckensoede" } },
+                { title = "Klaxxi'vess", kind = "Hub", location = { mapID = 418, title = "Klaxxi'vess" } },
+                { title = "Heart of Fear", kind = "Raid", location = { title = "Heart of Fear" } },
+            },
+        },
+        [1359] = {
+            summary = "Der Schwarze Prinz ist ein spaeter MoP-Rufblock mit starkem Bezug zum Tal der Ewigen Blueten und dem Wrathion-Endgamepfad.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                { title = "Tal der Ewigen Blueten", kind = "Zone", location = { mapID = 390, title = "Tal der Ewigen Blueten" } },
+                { title = "Wrathion-Endgame", kind = "Story", location = { mapID = 390, title = "Tal der Ewigen Blueten" } },
+            },
+        },
         [1375] = {
             summary = "Horde-Hubruf des Schreins der Zwei Monde im Tal der Ewigen Blueten. Heute ist der Schrein selbst der zentrale Bezugspunkt.",
             source = "curated",

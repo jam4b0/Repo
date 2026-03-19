@@ -533,6 +533,48 @@ return {
         expectTopFactionID = 1435,
     },
     {
+        name = "retail_pandaria_dread_wastes_shows_klaxxi",
+        context = {
+            activeFlavor = "retail",
+            mapID = 418,
+            mapName = "Schreckensöde",
+            zoneName = "Schreckensöde",
+            zoneKey = "schreckensöde",
+            subZoneName = "Klaxxi'vess",
+            subZoneKey = "klaxxi vess",
+            playerFactionGroup = "Horde",
+            instanceType = "none",
+            isInInstance = false,
+        },
+        rawFactions = {
+            { factionID = 1271, name = "Pandaria Zone Core", standingID = 5, progressValue = 900, progressMax = 6000, progressPct = 15, hasRepEntry = true },
+            { factionID = 1337, name = "Die Klaxxi", standingID = 6, progressValue = 4700, progressMax = 12000, progressPct = 39.1, hasRepEntry = true },
+        },
+        expectTopFactionID = 1337,
+        forbidVisibleFactionIDs = { 1271 },
+    },
+    {
+        name = "retail_pandaria_vale_shows_black_prince",
+        context = {
+            activeFlavor = "retail",
+            mapID = 390,
+            mapName = "Tal der Ewigen Blüten",
+            zoneName = "Tal der Ewigen Blüten",
+            zoneKey = "tal der ewigen blüten",
+            subZoneName = "Schrein der Zwei Monde",
+            subZoneKey = "schrein der zwei monde",
+            playerFactionGroup = "Horde",
+            instanceType = "none",
+            isInInstance = false,
+        },
+        rawFactions = {
+            { factionID = 1375, name = "Schrein der Zwei Monde", standingID = 6, progressValue = 6200, progressMax = 12000, progressPct = 51.6, hasRepEntry = true },
+            { factionID = 1359, name = "Der Schwarze Prinz", standingID = 5, progressValue = 1800, progressMax = 6000, progressPct = 30, hasRepEntry = true },
+        },
+        expectTopFactionID = 1375,
+        requireVisibleFactionIDs = { 1359 },
+    },
+    {
         name = "retail_cataclysm_deepholm_prefers_therazane",
         context = {
             activeFlavor = "retail",
