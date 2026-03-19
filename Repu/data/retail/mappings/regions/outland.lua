@@ -185,6 +185,18 @@ ns.Data:RegisterRetailModule({
                     { factionID = 942, weight = 260 },
                 },
             },
+            ["102:sporeggar"] = {
+                name = "Sporeggar",
+                parentMapID = 102,
+                source = "curated",
+                confidence = "medium",
+                notes = "Local Sporeggar hub in Zangarmarsh.",
+                mapIDs = { 102 },
+                tags = { "primary", "hub", "local", "outland" },
+                factions = {
+                    { factionID = 970, weight = 260 },
+                },
+            },
             ["100:honor hold"] = {
                 name = "Honor Hold",
                 parentMapID = 100,
@@ -219,6 +231,18 @@ ns.Data:RegisterRetailModule({
                 tags = { "primary", "hub", "local", "outland" },
                 factions = {
                     { factionID = 933, weight = 260 },
+                },
+            },
+            ["105:netherwing ledge"] = {
+                name = "Netherwing Ledge",
+                parentMapID = 105,
+                source = "curated",
+                confidence = "medium",
+                notes = "Local Netherwing quest hub in Shadowmoon Valley.",
+                mapIDs = { 105 },
+                tags = { "primary", "hub", "local", "outland" },
+                factions = {
+                    { factionID = 1015, weight = 260 },
                 },
             },
             ["107:garadar"] = {

@@ -4,11 +4,11 @@
     "locale": "en_US",
     "blizzardFactionCount": 281,
     "blizzardRootCount": 14,
-    "addonCoreFactionCount": 132,
-    "addonContentFactionCount": 143,
-    "coreCoveredByContentCount": 132,
+    "addonCoreFactionCount": 134,
+    "addonContentFactionCount": 145,
+    "coreCoveredByContentCount": 134,
     "coreMissingContentCount": 0,
-    "blizzardMissingInCoreCount": 150,
+    "blizzardMissingInCoreCount": 148,
     "contentOnlyCount": 11
   },
   "classificationCounts": {
@@ -228,15 +228,6 @@
       "exampleLocations": []
     },
     {
-      "factionID": 970,
-      "name": "Sporeggar",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
       "factionID": 980,
       "name": "The Burning Crusade",
       "classification": "generic_header",
@@ -248,15 +239,6 @@
     {
       "factionID": 990,
       "name": "The Scale of the Sands",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 1015,
-      "name": "Netherwing",
       "classification": "leaf",
       "isHeader": false,
       "isRenown": false,

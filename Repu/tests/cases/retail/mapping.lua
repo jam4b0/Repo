@@ -429,6 +429,48 @@ return {
         forbidVisibleFactionIDs = { 946 },
     },
     {
+        name = "retail_outland_zangarmarsh_sporeggar_prefers_sporeggar",
+        context = {
+            activeFlavor = "retail",
+            mapID = 102,
+            mapName = "Zangarmarschen",
+            zoneName = "Zangarmarschen",
+            zoneKey = "zangarmarschen",
+            subZoneName = "Sporeggar",
+            subZoneKey = "sporeggar",
+            playerFactionGroup = "Alliance",
+            instanceType = "none",
+            isInInstance = false,
+        },
+        rawFactions = {
+            { factionID = 970, name = "Sporeggar", standingID = 5, progressValue = 2800, progressMax = 6000, progressPct = 46.6, hasRepEntry = true },
+            { factionID = 942, name = "Expedition des Cenarius", standingID = 6, progressValue = 4500, progressMax = 12000, progressPct = 37.5, hasRepEntry = true },
+        },
+        expectTopFactionID = 970,
+        forbidVisibleFactionIDs = { 942 },
+    },
+    {
+        name = "retail_outland_shadowmoon_netherwing_prefers_netherwing",
+        context = {
+            activeFlavor = "retail",
+            mapID = 105,
+            mapName = "Schattenmondtal",
+            zoneName = "Schattenmondtal",
+            zoneKey = "schattenmondtal",
+            subZoneName = "Netherwing Ledge",
+            subZoneKey = "netherwing ledge",
+            playerFactionGroup = "Horde",
+            instanceType = "none",
+            isInInstance = false,
+        },
+        rawFactions = {
+            { factionID = 1015, name = "Netherwing", standingID = 6, progressValue = 6200, progressMax = 12000, progressPct = 51.6, hasRepEntry = true },
+            { factionID = 1012, name = "Die Aschenzungen-Todesschwur", standingID = 5, progressValue = 1200, progressMax = 6000, progressPct = 20, hasRepEntry = true },
+        },
+        expectTopFactionID = 1015,
+        forbidVisibleFactionIDs = { 1012 },
+    },
+    {
         name = "retail_northrend_dalaran_prefers_kirin_tor",
         context = {
             activeFlavor = "retail",

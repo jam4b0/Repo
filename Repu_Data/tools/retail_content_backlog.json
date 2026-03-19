@@ -1,8 +1,8 @@
 {
   "meta": {
-    "coreFactionCount": 132,
-    "contentFactionCount": 143,
-    "coveredCount": 132,
+    "coreFactionCount": 134,
+    "contentFactionCount": 145,
+    "coveredCount": 134,
     "missingCount": 0
   },
   "covered": [
@@ -702,6 +702,19 @@
       ]
     },
     {
+      "factionID": 970,
+      "exampleLocations": [
+        {
+          "name": "Sporeggar",
+          "section": "subZones",
+          "file": "outland.lua"
+        }
+      ],
+      "sourceFiles": [
+        "outland.lua"
+      ]
+    },
+    {
       "factionID": 978,
       "exampleLocations": [
         {
@@ -786,6 +799,19 @@
         {
           "name": "The Black Temple",
           "section": "raids",
+          "file": "outland.lua"
+        }
+      ],
+      "sourceFiles": [
+        "outland.lua"
+      ]
+    },
+    {
+      "factionID": 1015,
+      "exampleLocations": [
+        {
+          "name": "Netherwing Ledge",
+          "section": "subZones",
           "file": "outland.lua"
         }
       ],

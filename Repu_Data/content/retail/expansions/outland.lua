@@ -60,6 +60,15 @@ api.RegisterRetailContentModule({
                 { title = "Telaar", kind = "Hub", location = { mapID = 107, title = "Telaar" } },
             },
         },
+        [970] = {
+            summary = "Sporeggar ist der lokale Siedlungsruf der Sporenlinge in Zangarmarschen. Im Retail-Core ist er als klarer Hubanker für die Stadt selbst modelliert.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                { title = "Zangarmarschen", kind = "Zone", location = { mapID = 102, title = "Zangarmarschen" } },
+                { title = "Sporeggar", kind = "Hub", location = { mapID = 102, title = "Sporeggar" } },
+            },
+        },
         [989] = {
             summary = "Die Hüter der Zeit sind der Caverns-of-Time-Rufblock und im Retail-Core über die Scherbenwelt-Zeitreiseinstanzen verankert.",
             source = "curated",
@@ -67,6 +76,15 @@ api.RegisterRetailContentModule({
             activities = {
                 { title = "Old Hillsbrad Foothills", kind = "Dungeon", location = { title = "Old Hillsbrad Foothills" } },
                 { title = "The Black Morass", kind = "Dungeon", location = { title = "The Black Morass" } },
+            },
+        },
+        [1015] = {
+            summary = "Netherwing ist der lokale Rufblock des Netherwing-Ledge-Komplexes im Schattenmondtal. Im Retail-Core ist er als Hubanker für diese Teilregion modelliert.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                { title = "Schattenmondtal", kind = "Zone", location = { mapID = 105, title = "Schattenmondtal" } },
+                { title = "Netherwing Ledge", kind = "Hub", location = { mapID = 105, title = "Netherwing Ledge" } },
             },
         },
         [1012] = {

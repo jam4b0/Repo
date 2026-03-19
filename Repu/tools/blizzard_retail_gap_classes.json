@@ -4,15 +4,15 @@
     "locale": "en_US",
     "blizzardFactionCount": 281,
     "blizzardRootCount": 14,
-    "addonCoreFactionCount": 132,
-    "addonContentFactionCount": 143,
-    "coreCoveredByContentCount": 132,
+    "addonCoreFactionCount": 134,
+    "addonContentFactionCount": 145,
+    "coreCoveredByContentCount": 134,
     "coreMissingContentCount": 0,
-    "blizzardMissingInCoreCount": 150,
+    "blizzardMissingInCoreCount": 148,
     "contentOnlyCount": 11
   },
   "gapClassCounts": {
-    "candidate_legacy_or_side_rep": 86,
+    "candidate_legacy_or_side_rep": 84,
     "excluded_global_system": 2,
     "excluded_micro_side_rep": 5,
     "ignore_header": 19,
@@ -492,16 +492,6 @@
       "gapClass": "candidate_legacy_or_side_rep"
     },
     {
-      "factionID": 1015,
-      "name": "Netherwing",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_legacy_or_side_rep"
-    },
-    {
       "factionID": 1276,
       "name": "Old Hillpaw",
       "classification": "leaf",
@@ -614,16 +604,6 @@
     {
       "factionID": 2770,
       "name": "Slayer's Duellum",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_legacy_or_side_rep"
-    },
-    {
-      "factionID": 970,
-      "name": "Sporeggar",
       "classification": "leaf",
       "isHeader": false,
       "isRenown": false,
