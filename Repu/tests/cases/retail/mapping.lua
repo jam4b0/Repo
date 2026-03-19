@@ -537,6 +537,27 @@ return {
         requireVisibleFactionIDs = { 2464 },
     },
     {
+        name = "retail_shadowlands_korthia_shows_archivists_codex",
+        context = {
+            activeFlavor = "retail",
+            mapID = 1961,
+            mapName = "Korthia",
+            zoneName = "Korthia",
+            zoneKey = "korthia",
+            subZoneName = "Keeper's Respite",
+            subZoneKey = "keeper's respite",
+            playerFactionGroup = "Alliance",
+            instanceType = "none",
+            isInInstance = false,
+        },
+        rawFactions = {
+            { factionID = 2432, name = "Ve'nari", standingID = 6, progressValue = 6000, progressMax = 12000, progressPct = 50, hasRepEntry = true },
+            { factionID = 2472, name = "The Archivists' Codex", standingID = 5, progressValue = 2800, progressMax = 6000, progressPct = 46.6, hasRepEntry = true },
+        },
+        expectTopFactionID = 2472,
+        requireVisibleFactionIDs = { 2432 },
+    },
+    {
         name = "retail_dragonflight_valdrakken_prefers_valdrakken_accord",
         profile = {
             maxBars = 6,

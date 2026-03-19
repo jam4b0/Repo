@@ -50,8 +50,14 @@ SUPSERSEDED_BY_CURRENT_MODEL = {
 MODERN_RENOWN_CANDIDATES = {2564, 2574, 2658, 2688, 2736}
 
 MODERN_SIDE_SYSTEMS = {
-    2135, 2163, 2164, 2395, 2417, 2439, 2465, 2472, 2517, 2518, 2523, 2524, 2526, 2544, 2550, 2553, 2615, 2663, 2664, 2665, 2666, 2669,
+    2135, 2395, 2417, 2439, 2465, 2517, 2518, 2523, 2524, 2526, 2544, 2550, 2553, 2615,
 }
+
+GLOBAL_SYSTEM_CANDIDATES = {2163, 2164}
+
+ZONE_SIDE_SYSTEM_CANDIDATES = {2472}
+
+MICRO_SIDE_REP_CANDIDATES = {2663, 2664, 2665, 2666, 2669}
 
 LEGACY_CANDIDATES = {
     54, 70, 87, 92, 93, 270, 349, 369, 470, 577, 749, 809, 909, 910, 922, 970, 990, 1015, 1067,
@@ -79,6 +85,12 @@ def classify(row: dict) -> str:
         return "candidate_modern_renown"
     if faction_id in MODERN_SIDE_SYSTEMS:
         return "candidate_modern_side_system"
+    if faction_id in GLOBAL_SYSTEM_CANDIDATES:
+        return "candidate_global_system"
+    if faction_id in ZONE_SIDE_SYSTEM_CANDIDATES:
+        return "candidate_zone_side_system"
+    if faction_id in MICRO_SIDE_REP_CANDIDATES:
+        return "candidate_micro_side_rep"
     if faction_id in LEGACY_CANDIDATES:
         return "candidate_legacy_or_side_rep"
     if classification == "faction_header":

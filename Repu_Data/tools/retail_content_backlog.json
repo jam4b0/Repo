@@ -1,8 +1,8 @@
 {
   "meta": {
-    "coreFactionCount": 127,
-    "contentFactionCount": 138,
-    "coveredCount": 127,
+    "coreFactionCount": 128,
+    "contentFactionCount": 139,
+    "coveredCount": 128,
     "missingCount": 0
   },
   "covered": [
@@ -2120,7 +2120,17 @@
           "file": "shadowlands.lua"
         },
         {
+          "name": "Korthia",
+          "section": "zones",
+          "file": "shadowlands.lua"
+        },
+        {
           "name": "Ve'naris Zuflucht",
+          "section": "subZones",
+          "file": "shadowlands.lua"
+        },
+        {
+          "name": "Keeper's Respite",
           "section": "subZones",
           "file": "shadowlands.lua"
         }
@@ -2179,6 +2189,24 @@
         {
           "name": "Sanctum of Domination",
           "section": "raids",
+          "file": "shadowlands.lua"
+        }
+      ],
+      "sourceFiles": [
+        "shadowlands.lua"
+      ]
+    },
+    {
+      "factionID": 2472,
+      "exampleLocations": [
+        {
+          "name": "Korthia",
+          "section": "zones",
+          "file": "shadowlands.lua"
+        },
+        {
+          "name": "Keeper's Respite",
+          "section": "subZones",
           "file": "shadowlands.lua"
         }
       ],

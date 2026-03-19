@@ -4,44 +4,22 @@
     "locale": "en_US",
     "blizzardFactionCount": 281,
     "blizzardRootCount": 14,
-    "addonCoreFactionCount": 127,
-    "addonContentFactionCount": 138,
-    "coreCoveredByContentCount": 127,
+    "addonCoreFactionCount": 128,
+    "addonContentFactionCount": 139,
+    "coreCoveredByContentCount": 128,
     "coreMissingContentCount": 0,
-    "blizzardMissingInCoreCount": 155,
+    "blizzardMissingInCoreCount": 154,
     "contentOnlyCount": 11
   },
   "gapClassCounts": {
-    "candidate_global_system": 2,
     "candidate_legacy_or_side_rep": 89,
-    "candidate_micro_side_rep": 5,
-    "candidate_zone_side_system": 1,
+    "candidate_modern_side_system": 7,
     "ignore_header": 19,
     "ignore_placeholder": 2,
     "optional_pvp_brawler": 16,
     "superseded_by_current_model": 21
   },
   "rows": [
-    {
-      "factionID": 2164,
-      "name": "Champions of Azeroth",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_global_system"
-    },
-    {
-      "factionID": 2163,
-      "name": "Tortollan Seekers",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_global_system"
-    },
     {
       "factionID": 1740,
       "name": "Aeda Brightdawn",
@@ -933,6 +911,16 @@
       "gapClass": "candidate_legacy_or_side_rep"
     },
     {
+      "factionID": 2164,
+      "name": "Champions of Azeroth",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_modern_side_system"
+    },
+    {
       "factionID": 2669,
       "name": "Darkfuse Solutions",
       "classification": "leaf",
@@ -940,7 +928,7 @@
       "isRenown": false,
       "sourceFiles": [],
       "exampleLocations": [],
-      "gapClass": "candidate_micro_side_rep"
+      "gapClass": "candidate_modern_side_system"
     },
     {
       "factionID": 2664,
@@ -950,7 +938,7 @@
       "isRenown": false,
       "sourceFiles": [],
       "exampleLocations": [],
-      "gapClass": "candidate_micro_side_rep"
+      "gapClass": "candidate_modern_side_system"
     },
     {
       "factionID": 2665,
@@ -960,7 +948,7 @@
       "isRenown": false,
       "sourceFiles": [],
       "exampleLocations": [],
-      "gapClass": "candidate_micro_side_rep"
+      "gapClass": "candidate_modern_side_system"
     },
     {
       "factionID": 2663,
@@ -970,7 +958,7 @@
       "isRenown": false,
       "sourceFiles": [],
       "exampleLocations": [],
-      "gapClass": "candidate_micro_side_rep"
+      "gapClass": "candidate_modern_side_system"
     },
     {
       "factionID": 2666,
@@ -980,17 +968,17 @@
       "isRenown": false,
       "sourceFiles": [],
       "exampleLocations": [],
-      "gapClass": "candidate_micro_side_rep"
+      "gapClass": "candidate_modern_side_system"
     },
     {
-      "factionID": 2472,
-      "name": "The Archivists' Codex",
+      "factionID": 2163,
+      "name": "Tortollan Seekers",
       "classification": "leaf",
       "isHeader": false,
       "isRenown": false,
       "sourceFiles": [],
       "exampleLocations": [],
-      "gapClass": "candidate_zone_side_system"
+      "gapClass": "candidate_modern_side_system"
     },
     {
       "factionID": 469,

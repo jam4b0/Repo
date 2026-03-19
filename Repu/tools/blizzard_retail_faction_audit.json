@@ -4,11 +4,11 @@
     "locale": "en_US",
     "blizzardFactionCount": 281,
     "blizzardRootCount": 14,
-    "addonCoreFactionCount": 125,
-    "addonContentFactionCount": 136,
-    "coreCoveredByContentCount": 125,
+    "addonCoreFactionCount": 128,
+    "addonContentFactionCount": 139,
+    "coreCoveredByContentCount": 128,
     "coreMissingContentCount": 0,
-    "blizzardMissingInCoreCount": 157,
+    "blizzardMissingInCoreCount": 154,
     "contentOnlyCount": 11
   },
   "classificationCounts": {
@@ -930,15 +930,6 @@
       "exampleLocations": []
     },
     {
-      "factionID": 2135,
-      "name": "Chromie",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
       "factionID": 2156,
       "name": "Talanji's Expedition",
       "classification": "faction_header",
@@ -1182,15 +1173,6 @@
       "exampleLocations": []
     },
     {
-      "factionID": 2472,
-      "name": "The Archivists' Codex",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
       "factionID": 2506,
       "name": "Dragonflight",
       "classification": "generic_header",
@@ -1247,15 +1229,6 @@
     {
       "factionID": 2607,
       "name": "The Vizier",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2615,
-      "name": "Azerothian Archives",
       "classification": "leaf",
       "isHeader": false,
       "isRenown": false,

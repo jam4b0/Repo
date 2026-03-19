@@ -75,6 +75,16 @@ api.RegisterRetailContentModule({
                 { title = "Sanctum of Domination", kind = "Raid", location = { title = "Sanctum of Domination" } },
             },
         },
+        [2472] = {
+            summary = "The Archivists' Codex ist der lokale Nebenruf von Korthia. Der Fortschritt sitzt an Reliktforschung, Korthia-Aktivitäten und dem Hub rund um Keeper's Respite.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                { title = "Korthia", kind = "Zone", location = { mapID = 1961, title = "Korthia" } },
+                { title = "Keeper's Respite", kind = "Hub", location = { mapID = 1961, title = "Keeper's Respite" } },
+                { title = "Relic research", kind = "Recurring", location = { mapID = 1961, title = "Korthia" } },
+            },
+        },
         [2478] = {
             summary = "Der spaete Shadowlands-Rufblock von Zereth Mortis. Relevanter Fortschritt kommt ueber die Zone, Haven und den Abschlusszyklus von Shadowlands.",
             source = "curated",

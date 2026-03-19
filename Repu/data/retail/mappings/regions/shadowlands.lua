@@ -79,6 +79,19 @@ ns.Data:RegisterRetailModule({
                 factionIDs = { 2478 },
                 weight = 250,
             },
+            [1961] = {
+                name = "Korthia",
+                source = "curated",
+                confidence = "medium",
+                notes = "Shadowlands patch zone side-system anchored to the Archivists' Codex.",
+                mapIDs = { 1961 },
+                tags = { "zone", "local", "shadowlands" },
+                factions = {
+                    { factionID = 2432, weight = 246 },
+                    { factionID = 2472, weight = 214 },
+                },
+                weight = 245,
+            },
         },
         subZones = {
             ["1525:oribos"] = {
@@ -139,6 +152,19 @@ ns.Data:RegisterRetailModule({
                 tags = { "primary", "hub", "local", "shadowlands" },
                 factions = {
                     { factionID = 2478, weight = 262 },
+                },
+            },
+            ["1961:keeper's respite"] = {
+                name = "Keeper's Respite",
+                parentMapID = 1961,
+                source = "curated",
+                confidence = "medium",
+                notes = "Korthia hub cluster for the Archivists' Codex.",
+                mapIDs = { 1961 },
+                tags = { "hub", "local", "shadowlands" },
+                factions = {
+                    { factionID = 2472, weight = 258 },
+                    { factionID = 2432, weight = 236 },
                 },
             },
         },
