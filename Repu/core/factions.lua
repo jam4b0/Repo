@@ -64,10 +64,48 @@ local function normalizeFaction(row)
         isExalted = standingID >= 8,
         isAccountWide = row.isAccountWide or false,
         isMajorFaction = row.isMajorFaction or false,
+        hasRepEntry = true,
         renownLevel = row.renownLevel,
         friendshipRepID = row.friendshipRepID,
         hasBonusRepGain = row.hasBonusRepGain or false,
         raw = row.raw,
+    }
+end
+
+local function createSyntheticFaction(match)
+    if not match then
+        return nil
+    end
+
+    local factionData = match.factionID and ns.Compat:GetFactionDataByID(match.factionID) or nil
+    local name = match.name or (factionData and factionData.name) or UNKNOWN
+    local description = match.description or (factionData and factionData.description) or nil
+
+    return {
+        index = 0,
+        factionID = match.factionID,
+        name = name,
+        nameKey = Utils:NormalizeKey(name),
+        description = description,
+        standingID = 0,
+        standingLabel = "Kein Rufeintrag",
+        min = 0,
+        max = 0,
+        value = 0,
+        progressValue = 0,
+        progressMax = 0,
+        progressPct = 0,
+        isWatched = false,
+        isChild = false,
+        isExalted = false,
+        isAccountWide = factionData and factionData.isAccountWide or false,
+        isMajorFaction = factionData and factionData.isMajorFaction or false,
+        hasRepEntry = false,
+        isKnownMissing = true,
+        renownLevel = factionData and factionData.renownLevel or nil,
+        friendshipRepID = factionData and factionData.friendshipRepID or nil,
+        hasBonusRepGain = false,
+        raw = factionData,
     }
 end
 
@@ -167,6 +205,9 @@ function ns.Factions:BuildMatches(rawFactions, context)
             if not faction and match.name then
                 faction = rawFactions.byName[Utils:NormalizeKey(match.name)]
             end
+            if not faction then
+                faction = createSyntheticFaction(match)
+            end
             appendMatch(match, faction, sourceType, rawKey)
         end
     end
@@ -178,6 +219,9 @@ function ns.Factions:BuildMatches(rawFactions, context)
             if not faction and match.name then
                 faction = rawFactions.byName[Utils:NormalizeKey(match.name)]
             end
+            if not faction then
+                faction = createSyntheticFaction(match)
+            end
             appendMatch(match, faction, sourceType, sourceKey or mapID)
         end
     end
@@ -188,6 +232,9 @@ function ns.Factions:BuildMatches(rawFactions, context)
             local faction = match.factionID and rawFactions.byID[match.factionID] or nil
             if not faction and match.name then
                 faction = rawFactions.byName[Utils:NormalizeKey(match.name)]
+            end
+            if not faction then
+                faction = createSyntheticFaction(match)
             end
             appendMatch(match, faction, "subZone", rawKey or mapID)
             hasSubZoneMatch = true

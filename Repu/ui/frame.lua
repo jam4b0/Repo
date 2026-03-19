@@ -328,6 +328,9 @@ function ns.UI:UpdateDetails(details, count, profile)
         tonumber(details.progressMax or 0),
         tonumber(details.progressPct or 0)
     )
+    if details.isKnownMissing or details.hasRepEntry == false then
+        progressText = "Kein Rufeintrag"
+    end
     if details.renownLevel and details.renownLevel > 0 then
         progressText = string.format(
             "Renown %d  %d/%d  %.1f%%",
