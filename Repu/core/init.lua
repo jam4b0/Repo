@@ -2,6 +2,7 @@ local ADDON_NAME, ns = ...
 
 ns.name = ADDON_NAME
 _G.RepuAPI = _G.RepuAPI or {}
+ns.Locale = ns.Locale or {}
 ns.Core = ns.Core or {}
 ns.Utils = ns.Utils or {}
 ns.Config = ns.Config or {}
@@ -27,6 +28,7 @@ function ns.Core:OnAddonLoaded()
 
     self.isLoaded = true
 
+    ns.Locale:Init()
     ns.Config:Init()
     ns.State:Init()
     ns.Data:Init()

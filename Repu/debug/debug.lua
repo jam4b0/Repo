@@ -1,6 +1,7 @@
 local _, ns = ...
 
 local Utils = ns.Utils
+local Locale = ns.Locale
 
 local function printLine(message)
     DEFAULT_CHAT_FRAME:AddMessage("|cffd4af37Repu|r " .. tostring(message))
@@ -230,7 +231,7 @@ function ns.Debug:CreateWindow()
 
     frame.title = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
     frame.title:SetPoint("TOPLEFT", frame, "TOPLEFT", 10, -8)
-    frame.title:SetText("Repu Debug Capture")
+    frame.title:SetText(Locale:Get("DEBUG_WINDOW_TITLE"))
 
     frame.text = frame:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
     frame.text:SetPoint("TOPLEFT", frame, "TOPLEFT", 10, -28)
@@ -243,50 +244,50 @@ function ns.Debug:CreateWindow()
     frame.buttonRow:SetPoint("BOTTOMLEFT", frame, "BOTTOMLEFT", 10, 12)
     frame.buttonRow:SetSize(620, 228)
 
-    frame.enableButton = createButton(frame.buttonRow, "Capture On", 90, function()
+    frame.enableButton = createButton(frame.buttonRow, Locale:Get("DEBUG_CAPTURE_ON"), 90, function()
         local debugDB = ns.State:GetDebugDB()
         debugDB.enabled = true
         ns.Debug:RefreshWindow()
-        printLine("Capture enabled")
+        printLine(Locale:Get("DEBUG_CAPTURE_ENABLED"))
     end)
     placeButton(frame.enableButton, frame.buttonRow, 0, 0)
 
-    frame.disableButton = createButton(frame.buttonRow, "Capture Off", 90, function()
+    frame.disableButton = createButton(frame.buttonRow, Locale:Get("DEBUG_CAPTURE_OFF"), 90, function()
         local debugDB = ns.State:GetDebugDB()
         debugDB.enabled = false
         ns.Debug:RefreshWindow()
-        printLine("Capture disabled")
+        printLine(Locale:Get("DEBUG_CAPTURE_DISABLED"))
     end)
     placeButton(frame.disableButton, frame.buttonRow, 98, 0)
 
-    frame.captureNowButton = createButton(frame.buttonRow, "Capture Now", 110, function()
+    frame.captureNowButton = createButton(frame.buttonRow, Locale:Get("DEBUG_CAPTURE_NOW"), 110, function()
         local didCapture = ns.Debug:CaptureSnapshot("BUTTON_CAPTURE", true)
-        printLine(didCapture and "Snapshot captured" or "Snapshot skipped")
+        printLine(didCapture and Locale:Get("DEBUG_SNAPSHOT_CAPTURED") or Locale:Get("DEBUG_SNAPSHOT_SKIPPED"))
     end)
     placeButton(frame.captureNowButton, frame.buttonRow, 196, 0)
 
-    frame.sweepOnButton = createButton(frame.buttonRow, "Sweep On", 84, function()
+    frame.sweepOnButton = createButton(frame.buttonRow, Locale:Get("DEBUG_SWEEP_ON"), 84, function()
         ns.Debug:SetSweepMode(true)
     end)
     placeButton(frame.sweepOnButton, frame.buttonRow, 314, 0)
 
-    frame.sweepOffButton = createButton(frame.buttonRow, "Sweep Off", 84, function()
+    frame.sweepOffButton = createButton(frame.buttonRow, Locale:Get("DEBUG_SWEEP_OFF"), 84, function()
         ns.Debug:SetSweepMode(false)
     end)
     placeButton(frame.sweepOffButton, frame.buttonRow, 406, 0)
 
-    frame.clearButton = createButton(frame.buttonRow, "Clear", 80, function()
+    frame.clearButton = createButton(frame.buttonRow, Locale:Get("DEBUG_CLEAR"), 80, function()
         ns.Debug:ClearCaptures()
-        printLine("Captures cleared")
+        printLine(Locale:Get("DEBUG_CAPTURES_CLEARED"))
     end)
     placeButton(frame.clearButton, frame.buttonRow, 0, -32)
 
-    frame.dumpButton = createButton(frame.buttonRow, "Dump", 80, function()
+    frame.dumpButton = createButton(frame.buttonRow, Locale:Get("DEBUG_DUMP"), 80, function()
         ns.Debug:DumpState()
     end)
     placeButton(frame.dumpButton, frame.buttonRow, 88, -32)
 
-    frame.statusButton = createButton(frame.buttonRow, "Status", 80, function()
+    frame.statusButton = createButton(frame.buttonRow, Locale:Get("DEBUG_STATUS"), 80, function()
         local debugDB = ns.State:GetDebugDB()
         ns.Debug:SetLastDiagnostic("status", {
             enabled = debugDB.enabled,
@@ -294,81 +295,81 @@ function ns.Debug:CreateWindow()
             stored = #(debugDB.captures or {}),
             maxCaptures = debugDB.maxCaptures or 200,
         })
-        printLine("Capture enabled=" .. tostring(debugDB.enabled) .. " stored=" .. tostring(#(debugDB.captures or {})))
+        printLine(Locale:Format("DEBUG_CAPTURE_STATUS_SHORT", tostring(debugDB.enabled), tostring(#(debugDB.captures or {}))))
     end)
     placeButton(frame.statusButton, frame.buttonRow, 176, -32)
 
-    frame.reloadButton = createButton(frame.buttonRow, "Reload", 90, function()
+    frame.reloadButton = createButton(frame.buttonRow, Locale:Get("DEBUG_RELOAD"), 90, function()
         ReloadUI()
     end)
     placeButton(frame.reloadButton, frame.buttonRow, 264, -32)
 
-    frame.mapScanRunButton = createButton(frame.buttonRow, "MapScan Run", 120, function()
+    frame.mapScanRunButton = createButton(frame.buttonRow, Locale:Get("DEBUG_MAPSCAN_RUN"), 120, function()
         ns.Debug:RunMapScan()
         ns.Debug:RefreshWindow()
     end)
     placeButton(frame.mapScanRunButton, frame.buttonRow, 0, -64)
 
-    frame.mapScanStatusButton = createButton(frame.buttonRow, "MapScan Status", 138, function()
+    frame.mapScanStatusButton = createButton(frame.buttonRow, Locale:Get("DEBUG_MAPSCAN_STATUS"), 138, function()
         ns.Debug:DumpMapScanStatus()
     end)
     placeButton(frame.mapScanStatusButton, frame.buttonRow, 128, -64)
 
-    frame.mapScanClearButton = createButton(frame.buttonRow, "MapScan Clear", 124, function()
+    frame.mapScanClearButton = createButton(frame.buttonRow, Locale:Get("DEBUG_MAPSCAN_CLEAR"), 124, function()
         ns.Debug:ClearMapScan()
         ns.Debug:RefreshWindow()
     end)
     placeButton(frame.mapScanClearButton, frame.buttonRow, 274, -64)
 
-    frame.locationButton = createButton(frame.buttonRow, "Location", 90, function()
+    frame.locationButton = createButton(frame.buttonRow, Locale:Get("DEBUG_LOCATION"), 90, function()
         ns.Debug:DumpLocation()
     end)
     placeButton(frame.locationButton, frame.buttonRow, 0, -96)
 
-    frame.unmappedButton = createButton(frame.buttonRow, "Unmapped", 90, function()
+    frame.unmappedButton = createButton(frame.buttonRow, Locale:Get("DEBUG_UNMAPPED"), 90, function()
         ns.Debug:DumpUnmapped()
     end)
     placeButton(frame.unmappedButton, frame.buttonRow, 98, -96)
 
-    frame.apiButton = createButton(frame.buttonRow, "API", 72, function()
+    frame.apiButton = createButton(frame.buttonRow, Locale:Get("DEBUG_API"), 72, function()
         ns.Debug:DumpAPI()
     end)
     placeButton(frame.apiButton, frame.buttonRow, 196, -96)
 
-    frame.coverageButton = createButton(frame.buttonRow, "Coverage", 90, function()
+    frame.coverageButton = createButton(frame.buttonRow, Locale:Get("DEBUG_COVERAGE"), 90, function()
         ns.Debug:DumpCoverage()
     end)
     placeButton(frame.coverageButton, frame.buttonRow, 276, -96)
 
-    frame.candidatesButton = createButton(frame.buttonRow, "Candidates", 90, function()
+    frame.candidatesButton = createButton(frame.buttonRow, Locale:Get("DEBUG_CANDIDATES"), 90, function()
         ns.Debug:DumpCandidates(8)
     end)
     placeButton(frame.candidatesButton, frame.buttonRow, 374, -96)
 
-    frame.factionsButton = createButton(frame.buttonRow, "Factions", 90, function()
+    frame.factionsButton = createButton(frame.buttonRow, Locale:Get("DEBUG_FACTIONS"), 90, function()
         ns.Debug:DumpFactions(12)
     end)
     placeButton(frame.factionsButton, frame.buttonRow, 472, -96)
 
-    frame.refreshButton = createButton(frame.buttonRow, "Refresh", 90, function()
+    frame.refreshButton = createButton(frame.buttonRow, Locale:Get("DEBUG_REFRESH"), 90, function()
         ns.State:Refresh("BUTTON_REFRESH")
         ns.Debug:SetLastDiagnostic("refresh", {
             reason = "BUTTON_REFRESH",
             context = ns.State.runtime.context,
             coverage = ns.State.runtime.coverage,
         })
-        printLine("Refresh triggered")
+        printLine(Locale:Get("DEBUG_REFRESH_TRIGGERED"))
     end)
     placeButton(frame.refreshButton, frame.buttonRow, 472, -96)
 
-    frame.testButton = createButton(frame.buttonRow, "Test", 90, function()
+    frame.testButton = createButton(frame.buttonRow, Locale:Get("DEBUG_TEST"), 90, function()
         ns.State:Refresh("BUTTON_TEST", { forceTest = true })
         ns.Debug:SetLastDiagnostic("test", {
             reason = "BUTTON_TEST",
             context = ns.State.runtime.context,
             coverage = ns.State.runtime.coverage,
         })
-        printLine("Test rendering triggered")
+        printLine(Locale:Get("DEBUG_TEST_TRIGGERED"))
     end)
     placeButton(frame.testButton, frame.buttonRow, 0, -128)
 
@@ -389,24 +390,24 @@ function ns.Debug:RefreshWindow()
     local last = count > 0 and debugDB.captures[count] or nil
     local mapScan = debugDB.mapScan or {}
     local text = {
-        "Capture: " .. tostring(debugDB.enabled),
+        Locale:Format("DEBUG_CAPTURE_STATUS_SHORT", tostring(debugDB.enabled), tostring(count)),
         "Auto: " .. tostring(debugDB.autoCapture),
         "Sweep: " .. tostring(debugDB.sweepMode),
         "Stored: " .. tostring(count),
         "Max: " .. tostring(debugDB.maxCaptures or 200),
-        "Last: " .. tostring(last and last.key or "none"),
+        "Last: " .. tostring(last and last.key or Locale:Get("DEBUG_LAST_NONE")),
         "MapScan: " .. tostring(mapScan.nodeCount or 0) .. " nodes",
-        "MapScanAt: " .. tostring(mapScan.scannedAt or "none"),
-        "Diag Location: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.location and debugDB.lastDiagnostics.location.timestamp or "none"),
-        "Diag Unmapped: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.unmapped and debugDB.lastDiagnostics.unmapped.timestamp or "none"),
-        "Diag API: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.api and debugDB.lastDiagnostics.api.timestamp or "none"),
-        "Diag Coverage: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.coverage and debugDB.lastDiagnostics.coverage.timestamp or "none"),
-        "Diag Candidates: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.candidates and debugDB.lastDiagnostics.candidates.timestamp or "none"),
-        "Diag Dump: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.dump and debugDB.lastDiagnostics.dump.timestamp or "none"),
-        "Diag Status: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.status and debugDB.lastDiagnostics.status.timestamp or "none"),
-        "Diag Factions: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.factions and debugDB.lastDiagnostics.factions.timestamp or "none"),
-        "Diag MapScan: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.mapscan and debugDB.lastDiagnostics.mapscan.timestamp or "none"),
-        "UI: capture + diagnostics + mapscan buttons below",
+        "MapScanAt: " .. tostring(mapScan.scannedAt or Locale:Get("DEBUG_LAST_NONE")),
+        "Diag Location: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.location and debugDB.lastDiagnostics.location.timestamp or Locale:Get("DEBUG_LAST_NONE")),
+        "Diag Unmapped: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.unmapped and debugDB.lastDiagnostics.unmapped.timestamp or Locale:Get("DEBUG_LAST_NONE")),
+        "Diag API: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.api and debugDB.lastDiagnostics.api.timestamp or Locale:Get("DEBUG_LAST_NONE")),
+        "Diag Coverage: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.coverage and debugDB.lastDiagnostics.coverage.timestamp or Locale:Get("DEBUG_LAST_NONE")),
+        "Diag Candidates: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.candidates and debugDB.lastDiagnostics.candidates.timestamp or Locale:Get("DEBUG_LAST_NONE")),
+        "Diag Dump: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.dump and debugDB.lastDiagnostics.dump.timestamp or Locale:Get("DEBUG_LAST_NONE")),
+        "Diag Status: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.status and debugDB.lastDiagnostics.status.timestamp or Locale:Get("DEBUG_LAST_NONE")),
+        "Diag Factions: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.factions and debugDB.lastDiagnostics.factions.timestamp or Locale:Get("DEBUG_LAST_NONE")),
+        "Diag MapScan: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.mapscan and debugDB.lastDiagnostics.mapscan.timestamp or Locale:Get("DEBUG_LAST_NONE")),
+        Locale:Get("DEBUG_UI_HINT"),
     }
     self.window.text:SetText(table.concat(text, "\n"))
     self.window:SetShown(debugDB.enabled or count > 0 or debugDB.forceWindowVisible)
@@ -446,7 +447,7 @@ function ns.Debug:DumpFactions(limit)
         rows = rows,
     })
 
-    printLine("Faction dump count=" .. tostring(#list))
+    printLine(Locale:Format("DEBUG_FACTION_DUMP_COUNT", tostring(#list)))
     for index = 1, math.min(#list, maxCount) do
         local faction = list[index]
         printLine(string.format(
@@ -472,17 +473,17 @@ function ns.Debug:DumpLocation()
         context = context,
         coverage = coverage,
     })
-    printLine("Flavor: " .. tostring(context.activeFlavor))
-    printLine("Zone: " .. tostring(context.zoneName))
-    printLine("SubZone: " .. tostring(context.subZoneName))
-    printLine("MapID: " .. tostring(context.mapID))
-    printLine("Instance: " .. tostring(context.instanceName))
-    printLine("InstanceType: " .. tostring(context.instanceType))
-    printLine("InstanceMapID: " .. tostring(context.instanceMapID))
-    printLine("Difficulty: " .. tostring(context.instanceDifficultyID))
-    printLine("WatchedFactionID: " .. tostring(context.watchedFactionID))
-    printLine("Coverage: " .. Utils:Stringify(coverage))
-    printLine("MapChain: " .. Utils:Stringify(context.mapChain))
+    printLine(Locale:Format("DEBUG_FLAVOR", tostring(context.activeFlavor)))
+    printLine(Locale:Format("DEBUG_ZONE", tostring(context.zoneName)))
+    printLine(Locale:Format("DEBUG_SUBZONE", tostring(context.subZoneName)))
+    printLine(Locale:Format("DEBUG_MAP_ID", tostring(context.mapID)))
+    printLine(Locale:Format("DEBUG_INSTANCE", tostring(context.instanceName)))
+    printLine(Locale:Format("DEBUG_INSTANCE_TYPE", tostring(context.instanceType)))
+    printLine(Locale:Format("DEBUG_INSTANCE_MAP_ID", tostring(context.instanceMapID)))
+    printLine(Locale:Format("DEBUG_DIFFICULTY", tostring(context.instanceDifficultyID)))
+    printLine(Locale:Format("DEBUG_WATCHED_FACTION_ID", tostring(context.watchedFactionID)))
+    printLine(Locale:Format("DEBUG_COVERAGE_DATA", Utils:Stringify(coverage)))
+    printLine(Locale:Format("DEBUG_MAP_CHAIN", Utils:Stringify(context.mapChain)))
 end
 
 function ns.Debug:DumpCoverage()
@@ -496,11 +497,11 @@ function ns.Debug:DumpCoverage()
     local zoneSource = coverage.zoneHasRecord and (coverage.zoneFromClientSeed and "client_seed" or "curated") or "missing"
     local subZoneSource = coverage.subZoneHasRecord and (coverage.subZoneFromClientSeed and "client_seed" or "curated") or "missing"
 
-    printLine("Coverage summary")
-    printLine("ZoneSource=" .. tostring(zoneSource) .. " ZoneMapping=" .. tostring(coverage.zoneHasMapping) .. " ZoneNoLocalRep=" .. tostring(coverage.zoneNoLocalReputation))
-    printLine("SubZoneSource=" .. tostring(subZoneSource) .. " SubZoneMapping=" .. tostring(coverage.subZoneHasMapping) .. " SubZoneNoLocalRep=" .. tostring(coverage.subZoneNoLocalReputation))
-    printLine("ZoneRecord=" .. Utils:Stringify(coverage.zoneRecord))
-    printLine("SubZoneRecord=" .. Utils:Stringify(coverage.subZoneRecord))
+    printLine(Locale:Get("DEBUG_COVERAGE_SUMMARY"))
+    printLine(Locale:Format("DEBUG_ZONE_SOURCE", tostring(zoneSource), tostring(coverage.zoneHasMapping), tostring(coverage.zoneNoLocalReputation)))
+    printLine(Locale:Format("DEBUG_SUBZONE_SOURCE", tostring(subZoneSource), tostring(coverage.subZoneHasMapping), tostring(coverage.subZoneNoLocalReputation)))
+    printLine(Locale:Format("DEBUG_ZONE_RECORD", Utils:Stringify(coverage.zoneRecord)))
+    printLine(Locale:Format("DEBUG_SUBZONE_RECORD", Utils:Stringify(coverage.subZoneRecord)))
 end
 
 function ns.Debug:DumpCandidates(limit)
@@ -565,9 +566,9 @@ function ns.Debug:DumpCandidates(limit)
         rows = rows,
     })
 
-    printLine("Candidate summary")
-    printLine("Zone=" .. tostring(context.zoneName) .. " SubZone=" .. tostring(context.subZoneName))
-    printLine("ZoneMapping=" .. tostring(coverage.zoneHasMapping) .. " SubZoneMapping=" .. tostring(coverage.subZoneHasMapping))
+    printLine(Locale:Get("DEBUG_CANDIDATE_SUMMARY"))
+    printLine(Locale:Format("DEBUG_CANDIDATE_ZONE", tostring(context.zoneName), tostring(context.subZoneName)))
+    printLine(Locale:Format("DEBUG_CANDIDATE_MAPPING", tostring(coverage.zoneHasMapping), tostring(coverage.subZoneHasMapping)))
     for index, row in ipairs(rows) do
         printLine(string.format(
             "#%d kind=%s id=%s name=%s standing=%s progress=%d/%d watched=%s source=%s key=%s note=%s",
@@ -593,7 +594,7 @@ function ns.Debug:DumpUnmapped()
         context = context,
         coverage = coverage,
     })
-    printLine("Unmapped zone probe")
+    printLine(Locale:Get("DEBUG_UNMAPPED_PROBE"))
     printLine("ZoneKey=" .. tostring(context.zoneKey))
     printLine("SubZoneKey=" .. tostring(context.subZoneKey))
     printLine("MapID=" .. tostring(context.mapID))
@@ -622,12 +623,12 @@ function ns.Debug:RunMapScan()
         result = result,
     })
 
-    printLine("Map scan finished")
-    printLine("Roots=" .. Utils:Stringify(result.roots))
-    printLine("Nodes=" .. tostring(result.nodeCount or 0))
-    printLine("ScannedAt=" .. tostring(result.scannedAt))
+    printLine(Locale:Get("DEBUG_MAPSCAN_FINISHED"))
+    printLine(Locale:Format("DEBUG_MAPSCAN_ROOTS", Utils:Stringify(result.roots)))
+    printLine(Locale:Format("DEBUG_MAPSCAN_NODES", tostring(result.nodeCount or 0)))
+    printLine(Locale:Format("DEBUG_MAPSCAN_SCANNED_AT", tostring(result.scannedAt)))
     if result.unsupported then
-        printLine("Map scan unsupported on this client/API")
+        printLine(Locale:Get("DEBUG_MAPSCAN_UNSUPPORTED"))
     end
 end
 
@@ -637,9 +638,9 @@ function ns.Debug:DumpMapScanStatus()
         action = "status",
         result = mapScan,
     })
-    printLine("MapScan Roots=" .. Utils:Stringify(mapScan.roots))
-    printLine("MapScan Nodes=" .. tostring(mapScan.nodeCount or 0))
-    printLine("MapScan ScannedAt=" .. tostring(mapScan.scannedAt))
+    printLine(Locale:Format("DEBUG_MAPSCAN_STATUS_ROOTS", Utils:Stringify(mapScan.roots)))
+    printLine(Locale:Format("DEBUG_MAPSCAN_STATUS_NODES", tostring(mapScan.nodeCount or 0)))
+    printLine(Locale:Format("DEBUG_MAPSCAN_STATUS_SCANNED_AT", tostring(mapScan.scannedAt)))
 end
 
 function ns.Debug:ClearMapScan()
@@ -655,13 +656,13 @@ function ns.Debug:ClearMapScan()
         action = "clear",
         result = debugDB.mapScan,
     })
-    printLine("Map scan cleared")
+    printLine(Locale:Get("DEBUG_MAPSCAN_CLEARED"))
 end
 
 function ns.Debug:DumpFactionByID(input)
     local factionID = tonumber(input or "")
     if not factionID then
-        printLine("Usage: /repu faction <id>")
+        printLine(Locale:Get("DEBUG_USAGE_FACTION"))
         return
     end
 
@@ -675,28 +676,28 @@ function ns.Debug:HandleSlash(message)
     verb = verb or command
 
     if command == "" or command == "help" then
-        printLine("/repu debug")
-        printLine("/repu dump")
-        printLine("/repu api")
-        printLine("/repu capture on|off|now|clear|status|sweep on|off")
-        printLine("/repu faction <id>")
-        printLine("/repu factions [limit]")
-        printLine("/repu location")
-        printLine("/repu coverage")
-        printLine("/repu candidates [limit]")
-        printLine("/repu mapscan run|status|clear")
-        printLine("/repu unmapped")
-        printLine("/repu refresh")
-        printLine("/repu test")
-        printLine("/repu lock")
-        printLine("/repu exalted")
+        printLine(Locale:Get("DEBUG_HELP_DEBUG"))
+        printLine(Locale:Get("DEBUG_HELP_DUMP"))
+        printLine(Locale:Get("DEBUG_HELP_API"))
+        printLine(Locale:Get("DEBUG_HELP_CAPTURE"))
+        printLine(Locale:Get("DEBUG_HELP_FACTION"))
+        printLine(Locale:Get("DEBUG_HELP_FACTIONS"))
+        printLine(Locale:Get("DEBUG_HELP_LOCATION"))
+        printLine(Locale:Get("DEBUG_HELP_COVERAGE"))
+        printLine(Locale:Get("DEBUG_HELP_CANDIDATES"))
+        printLine(Locale:Get("DEBUG_HELP_MAPSCAN"))
+        printLine(Locale:Get("DEBUG_HELP_UNMAPPED"))
+        printLine(Locale:Get("DEBUG_HELP_REFRESH"))
+        printLine(Locale:Get("DEBUG_HELP_TEST"))
+        printLine(Locale:Get("DEBUG_HELP_LOCK"))
+        printLine(Locale:Get("DEBUG_HELP_EXALTED"))
         return
     end
 
     if verb == "debug" then
         local profile = ns.State:GetProfile()
         profile.debug = not profile.debug
-        printLine("Debug " .. (profile.debug and "enabled" or "disabled"))
+        printLine(profile.debug and Locale:Get("DEBUG_ENABLED") or Locale:Get("DEBUG_DISABLED"))
         return
     end
 
@@ -729,14 +730,14 @@ function ns.Debug:HandleSlash(message)
             debugDB.forceWindowVisible = true
             self:CreateWindow()
             self:RefreshWindow()
-            printLine("Capture enabled")
+            printLine(Locale:Get("DEBUG_CAPTURE_ENABLED"))
             return
         end
         if tail == "off" then
             debugDB.enabled = false
             debugDB.sweepMode = false
             self:RefreshWindow()
-            printLine("Capture disabled")
+            printLine(Locale:Get("DEBUG_CAPTURE_DISABLED"))
             return
         end
         if tail == "sweep on" or tail == "sweep" then
@@ -751,29 +752,29 @@ function ns.Debug:HandleSlash(message)
             debugDB.forceWindowVisible = true
             self:CreateWindow()
             self:RefreshWindow()
-            printLine("Capture window shown")
+            printLine(Locale:Get("DEBUG_CAPTURE_WINDOW_SHOWN"))
             return
         end
         if tail == "hide" then
             debugDB.forceWindowVisible = false
             self:RefreshWindow()
-            printLine("Capture window hidden")
+            printLine(Locale:Get("DEBUG_CAPTURE_WINDOW_HIDDEN"))
             return
         end
         if tail == "now" then
             local didCapture = self:CaptureSnapshot("SLASH_CAPTURE", true)
-            printLine(didCapture and "Snapshot captured" or "Snapshot skipped")
+            printLine(didCapture and Locale:Get("DEBUG_SNAPSHOT_CAPTURED") or Locale:Get("DEBUG_SNAPSHOT_SKIPPED"))
             return
         end
         if tail == "clear" then
             self:ClearCaptures()
-            printLine("Captures cleared")
+            printLine(Locale:Get("DEBUG_CAPTURES_CLEARED"))
             return
         end
         if tail == "status" or tail == "" then
             self:CreateWindow()
             self:RefreshWindow()
-            printLine("Capture enabled=" .. tostring(debugDB.enabled) .. " sweep=" .. tostring(debugDB.sweepMode) .. " stored=" .. tostring(#(debugDB.captures or {})) .. " max=" .. tostring(debugDB.maxCaptures or 200))
+            printLine(Locale:Format("DEBUG_CAPTURE_STATUS", tostring(debugDB.enabled), tostring(debugDB.sweepMode), tostring(#(debugDB.captures or {})), tostring(debugDB.maxCaptures or 200)))
             return
         end
     end
@@ -820,7 +821,7 @@ function ns.Debug:HandleSlash(message)
             context = ns.State.runtime.context,
             coverage = ns.State.runtime.coverage,
         })
-        printLine("Refresh triggered")
+        printLine(Locale:Get("DEBUG_REFRESH_TRIGGERED"))
         return
     end
 
@@ -831,7 +832,7 @@ function ns.Debug:HandleSlash(message)
             context = ns.State.runtime.context,
             coverage = ns.State.runtime.coverage,
         })
-        printLine("Test rendering triggered")
+        printLine(Locale:Get("DEBUG_TEST_TRIGGERED"))
         return
     end
 
@@ -839,7 +840,7 @@ function ns.Debug:HandleSlash(message)
         local profile = ns.State:GetProfile()
         profile.locked = not profile.locked
         ns.UI:Refresh(ns.State.runtime.visible, ns.State.runtime.context)
-        printLine("Locked " .. tostring(profile.locked))
+        printLine(Locale:Format("DEBUG_LOCKED", tostring(profile.locked)))
         return
     end
 
@@ -847,11 +848,11 @@ function ns.Debug:HandleSlash(message)
         local profile = ns.State:GetProfile()
         profile.hideExalted = not profile.hideExalted
         ns.State:Refresh("SLASH_EXALTED")
-        printLine("hideExalted " .. tostring(profile.hideExalted))
+        printLine(Locale:Format("DEBUG_HIDE_EXALTED", tostring(profile.hideExalted)))
         return
     end
 
-    printLine("Unknown command: " .. command)
+    printLine(Locale:Format("DEBUG_UNKNOWN_COMMAND", command))
 end
 
 function ns.Debug:OnRefresh(reason)

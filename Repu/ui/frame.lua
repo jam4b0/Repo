@@ -1,6 +1,7 @@
 local _, ns = ...
 
 local Styles = ns.UI.Styles
+local Locale = ns.Locale
 
 local function setFrameBackdrop(frame)
     if not frame.SetBackdrop then
@@ -112,7 +113,7 @@ function ns.UI:Init()
 
     frame.dragText = frame:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
     frame.dragText:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -10, -10)
-    frame.dragText:SetText("drag")
+    frame.dragText:SetText(Locale:Get("UI_DRAG"))
     frame.dragText:SetTextColor(unpack(Styles.subtleText))
 
     frame.detail = CreateFrame("Frame", nil, frame, BackdropTemplateMixin and "BackdropTemplate")
@@ -382,7 +383,7 @@ function ns.UI:UpdateDetails(details, count, profile)
         progressText = ""
     end
     if details.isKnownMissing or details.hasRepEntry == false then
-        progressText = "Kein Rufeintrag"
+        progressText = Locale:Get("UI_NO_REP_ENTRY")
     end
     if details.isVirtualGroup then
         progressText = ""
@@ -390,14 +391,14 @@ function ns.UI:UpdateDetails(details, count, profile)
     if details.renownLevel and details.renownLevel > 0 then
         if tonumber(details.progressMax or 0) > 0 then
             progressText = string.format(
-                "Ruhmstufe %d  %d/%d  %.1f%%",
+                Locale:Get("UI_RENOWN_PROGRESS_FORMAT"),
                 tonumber(details.renownLevel),
                 tonumber(details.progressValue or 0),
                 tonumber(details.progressMax or 0),
                 tonumber(details.progressPct or 0)
             )
         else
-            progressText = string.format("Ruhmstufe %d", tonumber(details.renownLevel))
+            progressText = Locale:Format("UI_RENOWN_LEVEL_FORMAT", tonumber(details.renownLevel))
         end
     end
 
@@ -412,7 +413,7 @@ function ns.UI:UpdateDetails(details, count, profile)
     local activities = showActivities and (details.activities or {}) or {}
 
     local bodyLines = {
-        details.summary or details.description or "Keine Beschreibung verfügbar.",
+        details.summary or details.description or Locale:Get("DETAIL_NO_DESCRIPTION"),
     }
 
     detail.body:SetText(table.concat(bodyLines, "\n"))
@@ -421,15 +422,15 @@ function ns.UI:UpdateDetails(details, count, profile)
     local entries = {}
     for _, quartermaster in ipairs(quartermasters) do
         entries[#entries + 1] = {
-            label = quartermaster.name or "Rüstmeister",
-            meta = quartermaster.label or "Rüstmeister",
+            label = quartermaster.name or Locale:Get("DETAIL_LABEL_QUARTERMASTER"),
+            meta = quartermaster.label or Locale:Get("DETAIL_LABEL_QUARTERMASTER"),
             location = quartermaster.location,
         }
     end
     for _, activity in ipairs(activities) do
         entries[#entries + 1] = {
-            label = activity.title or activity.name or "Aktivität",
-            meta = activity.kind or "Aktivität",
+            label = activity.title or activity.name or Locale:Get("DETAIL_LABEL_ACTIVITY"),
+            meta = activity.kind or Locale:Get("DETAIL_LABEL_ACTIVITY"),
             location = activity.location,
         }
     end
@@ -493,24 +494,32 @@ function ns.UI:UpdateDetails(details, count, profile)
     end
 
     if showQuartermasters then
-        addSectionHeader("Rüstmeister")
+        addSectionHeader(Locale:Get("DETAIL_SECTION_QUARTERMASTERS"))
         if #quartermasters == 0 then
-            addEntry("Noch kein Datensatz.", "", nil)
+            addEntry(Locale:Get("DETAIL_NO_DATASET"), "", nil)
         else
             for _, quartermaster in ipairs(quartermasters) do
-                addEntry(quartermaster.name or "Rüstmeister", quartermaster.label or "Rüstmeister", quartermaster.location)
+                addEntry(
+                    quartermaster.name or Locale:Get("DETAIL_LABEL_QUARTERMASTER"),
+                    quartermaster.label or Locale:Get("DETAIL_LABEL_QUARTERMASTER"),
+                    quartermaster.location
+                )
             end
         end
         currentTopOffset = currentTopOffset - 6
     end
 
     if showActivities then
-        addSectionHeader("Daily/Weekly")
+        addSectionHeader(Locale:Get("DETAIL_SECTION_ACTIVITIES"))
         if #activities == 0 then
-            addEntry("Noch kein Datensatz.", "", nil)
+            addEntry(Locale:Get("DETAIL_NO_DATASET"), "", nil)
         else
             for _, activity in ipairs(activities) do
-                addEntry(activity.title or activity.name or "Aktivität", activity.kind or "Aktivität", activity.location)
+                addEntry(
+                    activity.title or activity.name or Locale:Get("DETAIL_LABEL_ACTIVITY"),
+                    activity.kind or Locale:Get("DETAIL_LABEL_ACTIVITY"),
+                    activity.location
+                )
             end
         end
     end

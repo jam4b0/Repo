@@ -22,6 +22,7 @@ UNKNOWN = "UNKNOWN"
 
 local ns = {
     Utils = {},
+    Locale = {},
     Data = {},
     Inference = {},
     Scoring = {},
@@ -69,6 +70,10 @@ function ns.Compat:GetFactionDataByID(factionID)
 end
 
 loadAddonFile("core/utils.lua", ns)
+loadAddonFile("core/localization.lua", ns)
+loadAddonFile("locales/enUS.lua", ns)
+loadAddonFile("locales/deDE.lua", ns)
+ns.Locale:Apply("enUS")
 loadAddonFile("data/shared.lua", ns)
 
 for _, relPath in ipairs({
@@ -130,7 +135,7 @@ local function normalizeFaction(row)
     row.isMajorFaction = row.isMajorFaction or false
     row.hasRepEntry = row.hasRepEntry ~= false
     row.parentFactionID = row.parentFactionID
-    row.standingLabel = row.standingLabel or (row.isMajorFaction and "Ruhmstufe" or ns.Compat:GetStandingLabel(row.standingID))
+    row.standingLabel = row.standingLabel or (row.isMajorFaction and ns.Locale:Get("UI_RENOWN_LABEL") or ns.Compat:GetStandingLabel(row.standingID))
     return row
 end
 

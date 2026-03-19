@@ -1,6 +1,7 @@
 local _, ns = ...
 
 local Styles = ns.UI.Styles
+local Locale = ns.Locale
 
 local function setBackdrop(frame, edgeColor, backgroundColor)
     if not frame.SetBackdrop then
@@ -146,7 +147,7 @@ function ns.UI:UpdateRow(row, candidate, isActive, isSelected)
         valueText = ""
     end
     if faction.isKnownMissing or faction.hasRepEntry == false then
-        valueText = "Kein Rufeintrag"
+        valueText = Locale:Get("UI_NO_REP_ENTRY")
     end
     if faction.isVirtualGroup then
         valueText = ""
@@ -154,14 +155,14 @@ function ns.UI:UpdateRow(row, candidate, isActive, isSelected)
     if faction.renownLevel and faction.renownLevel > 0 then
         if (faction.progressMax or 0) > 0 then
             valueText = string.format(
-                "Ruhmstufe %d  %d/%d  %.1f%%",
+                Locale:Get("UI_RENOWN_PROGRESS_FORMAT"),
                 faction.renownLevel,
                 faction.progressValue or 0,
                 faction.progressMax or 0,
                 faction.progressPct or 0
             )
         else
-            valueText = string.format("Ruhmstufe %d", faction.renownLevel)
+            valueText = Locale:Format("UI_RENOWN_LEVEL_FORMAT", faction.renownLevel)
         end
     end
     row.valueText:SetText(valueText)

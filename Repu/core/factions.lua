@@ -1,6 +1,7 @@
 local _, ns = ...
 
 local Utils = ns.Utils
+local Locale = ns.Locale
 local RETAIL_COMPANION_FACTION_IDS = {
     [2640] = true, -- Brann Bronzebart
     [2744] = true, -- Valeera Sanguinar
@@ -257,7 +258,7 @@ local function normalizeFaction(row)
         nameKey = Utils:NormalizeKey(row.name),
         description = row.description,
         standingID = standingID,
-        standingLabel = row.isMajorFaction and "Ruhmstufe" or ns.Compat:GetStandingLabel(standingID),
+        standingLabel = row.isMajorFaction and Locale:Get("UI_RENOWN_LABEL") or ns.Compat:GetStandingLabel(standingID),
         min = minValue,
         max = maxValue,
         value = value,
@@ -288,7 +289,7 @@ local function createSyntheticFaction(match)
     local name = match.name or (factionData and factionData.name) or UNKNOWN
     local description = match.description or (factionData and factionData.description) or nil
     local hasRepEntry = factionData and (factionData.hasRep == true or factionData.hasRepEntry == true or (factionData.renownLevel and factionData.renownLevel > 0)) or false
-    local standingLabel = "Kein Rufeintrag"
+    local standingLabel = Locale:Get("UI_NO_REP_ENTRY")
     local minValue = factionData and (factionData.min or factionData.barMin) or 0
     local maxValue = factionData and (factionData.max or factionData.barMax) or 0
     local value = factionData and (factionData.value or factionData.barValue) or 0
@@ -310,7 +311,7 @@ local function createSyntheticFaction(match)
 
     if hasRepEntry then
         if factionData.isMajorFaction and factionData.renownLevel and factionData.renownLevel > 0 then
-            standingLabel = "Ruhmstufe"
+            standingLabel = Locale:Get("UI_RENOWN_LABEL")
         else
             standingLabel = ns.Compat:GetStandingLabel(factionData.standingID or 0)
         end

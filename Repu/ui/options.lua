@@ -1,4 +1,5 @@
 local _, ns = ...
+local Locale = ns.Locale
 
 local function refreshUI(reason)
     ns.UI:EnsureMinimapButton()
@@ -43,47 +44,47 @@ function ns.UI:RegisterOptions()
 
     panel.subtitle = panel:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
     panel.subtitle:SetPoint("TOPLEFT", panel.title, "BOTTOMLEFT", 0, -8)
-    panel.subtitle:SetText("Location-aware reputation tracker")
+    panel.subtitle:SetText(Locale:Get("ADDON_SUBTITLE"))
 
     panel.locked = CreateFrame("CheckButton", nil, panel, "InterfaceOptionsCheckButtonTemplate")
     panel.locked:SetPoint("TOPLEFT", panel.subtitle, "BOTTOMLEFT", 0, -18)
-    panel.locked.Text:SetText("Fenster sperren")
+    panel.locked.Text:SetText(Locale:Get("OPTION_LOCK"))
     panel.locked:SetScript("OnClick", function(self)
         ns.State:GetProfile().locked = self:GetChecked() and true or false
         refreshUI("OPTIONS_LOCKED")
     end)
 
-    panel.hideExalted = createCheckbox(panel, panel.locked, "Ehrfürchtig ausblenden", function(value)
+    panel.hideExalted = createCheckbox(panel, panel.locked, Locale:Get("OPTION_HIDE_EXALTED"), function(value)
         ns.State:GetProfile().hideExalted = value
         refreshUI("OPTIONS_HIDE_EXALTED")
     end)
 
-    panel.hideInCombat = createCheckbox(panel, panel.hideExalted, "Im Kampf ausblenden", function(value)
+    panel.hideInCombat = createCheckbox(panel, panel.hideExalted, Locale:Get("OPTION_HIDE_IN_COMBAT"), function(value)
         ns.State:GetProfile().hideInCombat = value
         refreshUI("OPTIONS_HIDE_IN_COMBAT")
     end)
 
-    panel.showMinimapButton = createCheckbox(panel, panel.hideInCombat, "Minimap-Button anzeigen", function(value)
+    panel.showMinimapButton = createCheckbox(panel, panel.hideInCombat, Locale:Get("OPTION_SHOW_MINIMAP_BUTTON"), function(value)
         ns.State:GetProfile().showMinimapButton = value
         ns.UI:EnsureMinimapButton()
     end)
 
-    panel.showQuartermasters = createCheckbox(panel, panel.showMinimapButton, "Rüstmeister anzeigen", function(value)
+    panel.showQuartermasters = createCheckbox(panel, panel.showMinimapButton, Locale:Get("OPTION_SHOW_QUARTERMASTERS"), function(value)
         ns.State:GetProfile().showQuartermasters = value
         refreshUI("OPTIONS_SHOW_QUARTERMASTERS")
     end)
 
-    panel.showActivities = createCheckbox(panel, panel.showQuartermasters, "Daily/Weekly anzeigen", function(value)
+    panel.showActivities = createCheckbox(panel, panel.showQuartermasters, Locale:Get("OPTION_SHOW_ACTIVITIES"), function(value)
         ns.State:GetProfile().showActivities = value
         refreshUI("OPTIONS_SHOW_ACTIVITIES")
     end)
 
-    panel.showRetailCompanions = createCheckbox(panel, panel.showActivities, "Tiefenbegleiter-Reputation anzeigen", function(value)
+    panel.showRetailCompanions = createCheckbox(panel, panel.showActivities, Locale:Get("OPTION_SHOW_RETAIL_COMPANIONS"), function(value)
         ns.State:GetProfile().showRetailCompanions = value
         refreshUI("OPTIONS_SHOW_COMPANIONS")
     end)
 
-    panel.maxBarsLabel, panel.maxBarsSlider = createSlider(panel, "RepuOptionsMaxBarsSlider", "Angezeigte Fraktionen", 1, 10, 1, 220)
+    panel.maxBarsLabel, panel.maxBarsSlider = createSlider(panel, "RepuOptionsMaxBarsSlider", Locale:Get("OPTION_MAX_BARS"), 1, 10, 1, 220)
     panel.maxBarsLabel:SetPoint("TOPLEFT", panel.showRetailCompanions, "BOTTOMLEFT", 4, -22)
     panel.maxBarsSlider:SetPoint("TOPLEFT", panel.maxBarsLabel, "BOTTOMLEFT", 0, -14)
     panel.maxBarsSlider.Low:SetText("1")
@@ -93,7 +94,7 @@ function ns.UI:RegisterOptions()
         refreshUI("OPTIONS_MAX_BARS")
     end)
 
-    panel.opacityLabel, panel.opacitySlider = createSlider(panel, "RepuOptionsOpacitySlider", "Fenster-Transparenz", 0.3, 1.0, 0.05, 220)
+    panel.opacityLabel, panel.opacitySlider = createSlider(panel, "RepuOptionsOpacitySlider", Locale:Get("OPTION_OPACITY"), 0.3, 1.0, 0.05, 220)
     panel.opacityLabel:SetPoint("TOPLEFT", panel.maxBarsSlider, "BOTTOMLEFT", 0, -24)
     panel.opacitySlider:SetPoint("TOPLEFT", panel.opacityLabel, "BOTTOMLEFT", 0, -14)
     panel.opacitySlider.Low:SetText("0.3")
@@ -103,7 +104,7 @@ function ns.UI:RegisterOptions()
         refreshUI("OPTIONS_OPACITY")
     end)
 
-    panel.scaleLabel, panel.scaleSlider = createSlider(panel, "RepuOptionsScaleSlider", "UI-Skalierung", 0.8, 1.4, 0.05, 220)
+    panel.scaleLabel, panel.scaleSlider = createSlider(panel, "RepuOptionsScaleSlider", Locale:Get("OPTION_SCALE"), 0.8, 1.4, 0.05, 220)
     panel.scaleLabel:SetPoint("TOPLEFT", panel.opacitySlider, "BOTTOMLEFT", 0, -24)
     panel.scaleSlider:SetPoint("TOPLEFT", panel.scaleLabel, "BOTTOMLEFT", 0, -14)
     panel.scaleSlider.Low:SetText("0.8")

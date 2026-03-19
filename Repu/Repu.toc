@@ -8,6 +8,9 @@
 
 core\init.lua
 core\utils.lua
+core\localization.lua
+locales\enUS.lua
+locales\deDE.lua
 core\config.lua
 core\compat.lua
 core\state.lua
