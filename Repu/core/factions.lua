@@ -39,6 +39,8 @@ local KNOWN_VIRTUAL_PARENT_FACTIONS = {
             [932] = true,  -- Die Aldor
             [934] = true,  -- Die Seher
             [1011] = true, -- Unteres Viertel
+            [1031] = true, -- Himmelswache der Sha'tari
+            [1077] = true, -- Offensive der Zerschmetterten Sonne
         },
     },
 }
