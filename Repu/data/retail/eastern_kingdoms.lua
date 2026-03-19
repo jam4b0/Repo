@@ -41,6 +41,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 2393 },
                 tags = { "city", "hub", "local" },
                 factions = {
+                    { factionID = 911, weight = 246 },
                     { name = "Magister", weight = 240 },
                     { name = "Blutritter", weight = 240 },
                     { name = "Schemen der Gasse", weight = 235 },

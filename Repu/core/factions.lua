@@ -6,6 +6,14 @@ local RETAIL_COMPANION_FACTION_IDS = {
     [2744] = true, -- Valeera Sanguinar
 }
 local KNOWN_RETAIL_PARENT_FACTIONS = {
+    [911] = {
+        children = {
+            [2711] = true, -- Magister
+            [2712] = true, -- Blutritter
+            [2714] = true, -- Schemen der Gasse
+            [2713] = true, -- Weltenwanderer
+        },
+    },
     [2600] = {
         children = {
             [2605] = true, -- Der General
@@ -24,6 +32,10 @@ local KNOWN_RETAIL_PARENT_FACTIONS = {
     },
 }
 local KNOWN_RETAIL_CHILD_TO_PARENT = {
+    [2711] = 911,
+    [2712] = 911,
+    [2714] = 911,
+    [2713] = 911,
     [2605] = 2600,
     [2607] = 2600,
     [2601] = 2600,
