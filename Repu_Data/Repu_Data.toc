@@ -1,0 +1,10 @@
+## Interface: 120000, 120001, 120005, 50503, 40402, 30403, 20505, 11508
+## Title: Repu_Data
+## Notes: Optional content data pack for Repu.
+## Author: OpenAI Codex
+## Version: 0.1.0
+## Dependencies: Repu
+
+content\shared.lua
+content\retail\quelthalas.lua
+content\retail.lua

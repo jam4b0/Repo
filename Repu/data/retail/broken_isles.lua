@@ -1,0 +1,243 @@
+local _, ns = ...
+
+ns.Data:RegisterRetailModule({
+    locations = {
+        zones = {
+            [627] = {
+                name = "Dalaran",
+                source = "seed",
+                confidence = "high",
+                notes = "Legion hub cluster",
+                mapIDs = { 627 },
+                tags = { "city", "hub", "local", "legion" },
+                factionIDs = { 1883 },
+                weight = 250,
+            },
+            [630] = {
+                name = "Azsuna",
+                source = "seed",
+                confidence = "medium",
+                notes = "Legion faction cluster",
+                mapIDs = { 630 },
+                tags = { "zone", "local", "legion" },
+                factionIDs = { 1900 },
+                weight = 245,
+            },
+            [650] = {
+                name = "Hochberg",
+                source = "seed",
+                confidence = "medium",
+                notes = "Legion faction cluster",
+                mapIDs = { 650 },
+                tags = { "zone", "local", "legion" },
+                factionIDs = { 1828 },
+                weight = 245,
+            },
+            [641] = {
+                name = "Val'sharah",
+                source = "seed",
+                confidence = "medium",
+                notes = "Legion faction cluster",
+                mapIDs = { 641 },
+                tags = { "zone", "local", "legion" },
+                factionIDs = { 1883 },
+                weight = 240,
+            },
+            [680] = {
+                name = "Suramar",
+                source = "seed",
+                confidence = "high",
+                notes = "Legion faction cluster",
+                mapIDs = { 680 },
+                tags = { "zone", "local", "legion" },
+                factionIDs = { 1859 },
+                weight = 250,
+            },
+            [634] = {
+                name = "Sturmheim",
+                source = "seed",
+                confidence = "medium",
+                notes = "Legion faction cluster",
+                mapIDs = { 634 },
+                tags = { "zone", "local", "legion" },
+                factionIDs = { 1948 },
+                weight = 245,
+            },
+            [646] = {
+                name = "Scherbenküste",
+                source = "seed",
+                confidence = "medium",
+                notes = "Legion patch zone cluster",
+                mapIDs = { 646 },
+                tags = { "zone", "local", "legion" },
+                factionIDs = { 1894 },
+                weight = 245,
+            },
+            [830] = {
+                name = "Argus",
+                source = "seed",
+                confidence = "high",
+                notes = "Legion endgame cluster",
+                mapIDs = { 830 },
+                tags = { "zone", "local", "legion" },
+                factionIDs = { 2170 },
+                weight = 250,
+            },
+        },
+        subZones = {
+            ["627:krasus' landeplatz"] = {
+                name = "Krasus' Landeplatz",
+                parentMapID = 627,
+                source = "seed",
+                confidence = "high",
+                notes = "Legion Dalaran hub cluster",
+                mapIDs = { 627 },
+                tags = { "primary", "hub", "local", "legion" },
+                factions = {
+                    { factionID = 1883, weight = 260 },
+                },
+            },
+            ["680:shal'aran"] = {
+                name = "Shal'Aran",
+                parentMapID = 680,
+                source = "seed",
+                confidence = "high",
+                notes = "Nightfallen hub cluster",
+                mapIDs = { 680 },
+                tags = { "primary", "hub", "local", "legion" },
+                factions = {
+                    { factionID = 1859, weight = 260 },
+                },
+            },
+            ["634:haimont"] = {
+                name = "Haimont",
+                parentMapID = 634,
+                source = "seed",
+                confidence = "medium",
+                notes = "Valarjar hub cluster",
+                mapIDs = { 634 },
+                tags = { "hub", "local", "legion" },
+                factions = {
+                    { factionID = 1948, weight = 252 },
+                },
+            },
+            ["830:krokuun"] = {
+                name = "Krokuun",
+                parentMapID = 830,
+                source = "seed",
+                confidence = "medium",
+                notes = "Argus army of the light cluster",
+                mapIDs = { 830 },
+                tags = { "local", "legion" },
+                factions = {
+                    { factionID = 2165, weight = 252 },
+                    { factionID = 2170, weight = 250 },
+                },
+            },
+        },
+        instances = {
+            ["court of stars"] = {
+                name = "Court of Stars",
+                source = "seed",
+                confidence = "medium",
+                tags = { "dungeon", "legion", "local" },
+                factions = {
+                    { factionID = 1859, weight = 345 },
+                },
+            },
+            ["eye of azshara"] = {
+                name = "Eye of Azshara",
+                source = "seed",
+                confidence = "medium",
+                tags = { "dungeon", "legion", "local" },
+                factions = {
+                    { factionID = 1900, weight = 340 },
+                },
+            },
+            ["neltharion's lair"] = {
+                name = "Neltharion's Lair",
+                source = "seed",
+                confidence = "medium",
+                tags = { "dungeon", "legion", "local" },
+                factions = {
+                    { factionID = 1828, weight = 340 },
+                },
+            },
+            ["darkheart thicket"] = {
+                name = "Darkheart Thicket",
+                source = "seed",
+                confidence = "medium",
+                tags = { "dungeon", "legion", "local" },
+                factions = {
+                    { factionID = 1883, weight = 340 },
+                },
+            },
+            ["the arcway"] = {
+                name = "The Arcway",
+                source = "seed",
+                confidence = "medium",
+                tags = { "dungeon", "legion", "local" },
+                factions = {
+                    { factionID = 1859, weight = 342 },
+                },
+            },
+            ["vault of the wardens"] = {
+                name = "Vault of the Wardens",
+                source = "seed",
+                confidence = "medium",
+                tags = { "dungeon", "legion", "local" },
+                factions = {
+                    { factionID = 2045, weight = 342 },
+                },
+            },
+            ["maw of souls"] = {
+                name = "Maw of Souls",
+                source = "seed",
+                confidence = "medium",
+                tags = { "dungeon", "legion", "local" },
+                factions = {
+                    { factionID = 1948, weight = 340 },
+                },
+            },
+        },
+        raids = {
+            ["the nighthold"] = {
+                name = "The Nighthold",
+                source = "seed",
+                confidence = "high",
+                tags = { "raid", "legion", "local" },
+                factions = {
+                    { factionID = 1859, weight = 395 },
+                },
+            },
+            ["trial of valor"] = {
+                name = "Trial of Valor",
+                source = "seed",
+                confidence = "medium",
+                tags = { "raid", "legion", "local" },
+                factions = {
+                    { factionID = 1948, weight = 380 },
+                },
+            },
+            ["tomb of sargeras"] = {
+                name = "Tomb of Sargeras",
+                source = "seed",
+                confidence = "medium",
+                tags = { "raid", "legion", "local" },
+                factions = {
+                    { factionID = 1894, weight = 385 },
+                },
+            },
+            ["antorus the burning throne"] = {
+                name = "Antorus, the Burning Throne",
+                source = "seed",
+                confidence = "high",
+                tags = { "raid", "legion", "local" },
+                factions = {
+                    { factionID = 2170, weight = 392 },
+                    { factionID = 2165, weight = 388 },
+                },
+            },
+        },
+    },
+})

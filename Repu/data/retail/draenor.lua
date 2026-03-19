@@ -1,0 +1,186 @@
+local _, ns = ...
+
+ns.Data:RegisterRetailModule({
+    locations = {
+        zones = {
+            [582] = {
+                name = "Mondsturz",
+                source = "seed",
+                confidence = "medium",
+                notes = "Draenor faction cluster",
+                mapIDs = { 582 },
+                tags = { "zone", "local", "draenor" },
+                factionIDs = { 1710 },
+                weight = 245,
+            },
+            [550] = {
+                name = "Nagrand",
+                source = "seed",
+                confidence = "medium",
+                notes = "Draenor faction cluster",
+                mapIDs = { 550 },
+                tags = { "zone", "local", "draenor" },
+                factionIDs = { 1731 },
+                weight = 245,
+            },
+            [525] = {
+                name = "Frostfeuergrat",
+                source = "seed",
+                confidence = "medium",
+                notes = "Draenor faction cluster",
+                mapIDs = { 525 },
+                tags = { "zone", "local", "draenor" },
+                factionIDs = { 1445 },
+                weight = 240,
+            },
+            [539] = {
+                name = "Schattenmondtal",
+                source = "seed",
+                confidence = "medium",
+                notes = "Draenor faction cluster",
+                mapIDs = { 539 },
+                tags = { "zone", "local", "draenor" },
+                factionIDs = { 1731 },
+                weight = 240,
+            },
+            [542] = {
+                name = "Gorgrond",
+                source = "seed",
+                confidence = "medium",
+                notes = "Draenor faction cluster",
+                mapIDs = { 542 },
+                tags = { "zone", "local", "draenor" },
+                factionIDs = { 1711 },
+                weight = 240,
+            },
+            [534] = {
+                name = "Spires of Arak",
+                source = "seed",
+                confidence = "medium",
+                notes = "Draenor faction cluster",
+                mapIDs = { 534 },
+                tags = { "zone", "local", "draenor" },
+                factionIDs = { 1850 },
+                weight = 240,
+            },
+            [543] = {
+                name = "Tanaan-Dschungel",
+                source = "seed",
+                confidence = "medium",
+                notes = "Draenor patch zone cluster",
+                mapIDs = { 543 },
+                tags = { "zone", "local", "draenor" },
+                factionIDs = { 1848 },
+                weight = 240,
+            },
+        },
+        subZones = {
+            ["582:außenposten der erwachten"] = {
+                name = "Außenposten der Erwachten",
+                parentMapID = 582,
+                source = "seed",
+                confidence = "medium",
+                notes = "Lunarfall hub cluster",
+                mapIDs = { 582 },
+                tags = { "primary", "hub", "local", "draenor" },
+                factions = {
+                    { factionID = 1710, weight = 255 },
+                },
+            },
+            ["525:kriegsmühle"] = {
+                name = "Kriegsmühle",
+                parentMapID = 525,
+                source = "seed",
+                confidence = "medium",
+                notes = "Frostfire garrison cluster",
+                mapIDs = { 525 },
+                tags = { "primary", "hub", "local", "draenor" },
+                factions = {
+                    { factionID = 1445, weight = 255 },
+                },
+            },
+            ["550:warspear"] = {
+                name = "Kriegsspeer",
+                parentMapID = 550,
+                source = "seed",
+                confidence = "high",
+                notes = "Horde Ashran hub cluster",
+                mapIDs = { 550 },
+                tags = { "primary", "hub", "local", "draenor" },
+                factions = {
+                    { factionID = 1847, weight = 260 },
+                },
+            },
+            ["582:stormshield"] = {
+                name = "Sturmschild",
+                parentMapID = 582,
+                source = "seed",
+                confidence = "high",
+                notes = "Alliance Ashran hub cluster",
+                mapIDs = { 582 },
+                tags = { "primary", "hub", "local", "draenor" },
+                factions = {
+                    { factionID = 1849, weight = 260 },
+                },
+            },
+        },
+        instances = {
+            ["bloodmaul slag mines"] = {
+                name = "Bloodmaul Slag Mines",
+                source = "seed",
+                confidence = "medium",
+                tags = { "dungeon", "draenor", "local" },
+                factions = {
+                    { factionID = 1445, weight = 340 },
+                },
+            },
+            ["shadowmoon burial grounds"] = {
+                name = "Shadowmoon Burial Grounds",
+                source = "seed",
+                confidence = "medium",
+                tags = { "dungeon", "draenor", "local" },
+                factions = {
+                    { factionID = 1731, weight = 340 },
+                },
+            },
+            ["auchindoun"] = {
+                name = "Auchindoun",
+                source = "seed",
+                confidence = "medium",
+                tags = { "dungeon", "draenor", "local" },
+                factions = {
+                    { factionID = 1850, weight = 340 },
+                },
+            },
+            ["grimrail depot"] = {
+                name = "Grimrail Depot",
+                source = "seed",
+                confidence = "medium",
+                tags = { "dungeon", "draenor", "local" },
+                factions = {
+                    { factionID = 1711, weight = 340 },
+                },
+            },
+        },
+        raids = {
+            ["highmaul"] = {
+                name = "Highmaul",
+                source = "seed",
+                confidence = "medium",
+                tags = { "raid", "draenor", "local" },
+                factions = {
+                    { factionID = 1731, weight = 385 },
+                },
+            },
+            ["hellfire citadel"] = {
+                name = "Hellfire Citadel",
+                source = "seed",
+                confidence = "medium",
+                tags = { "raid", "draenor", "local" },
+                factions = {
+                    { factionID = 1848, weight = 390 },
+                },
+            },
+        },
+    },
+})

@@ -1,0 +1,31 @@
+{
+  "factions": {
+    "2713": {
+      "summary": "Gebietsfraktion des Immersangwalds mit Fokus auf Wald, Grenzen und Wildnis.",
+      "quartermasters": [
+        {
+          "name": "Waldläufer Allorn",
+          "label": "Rüstmeister",
+          "location": {
+            "mapID": 2395,
+            "x": 0.434,
+            "y": 0.476,
+            "title": "Waldläufer Allorn"
+          }
+        }
+      ],
+      "activities": [
+        {
+          "title": "Saltherils Soiree",
+          "kind": "Wöchentlich",
+          "location": {
+            "mapID": 2395,
+            "x": 0.426,
+            "y": 0.472,
+            "title": "Saltherils Soiree"
+          }
+        }
+      ]
+    }
+  }
+}

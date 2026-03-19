@@ -1,0 +1,241 @@
+local _, ns = ...
+
+ns.Data:RegisterRetailModule({
+    locations = {
+        zones = {
+            [114] = {
+                name = "Boreanische Tundra",
+                source = "seed",
+                confidence = "medium",
+                notes = "Northrend reputation cluster",
+                mapIDs = { 114 },
+                tags = { "zone", "local", "northrend" },
+                factionIDs = { 1073 },
+                weight = 240,
+            },
+            [118] = {
+                name = "Eiskrone",
+                source = "seed",
+                confidence = "high",
+                notes = "Northrend reputation cluster",
+                mapIDs = { 118 },
+                tags = { "zone", "local", "northrend" },
+                factionIDs = { 1119, 1106 },
+                weight = 245,
+            },
+            [120] = {
+                name = "Die Sturmgipfel",
+                source = "seed",
+                confidence = "high",
+                notes = "Northrend reputation cluster",
+                mapIDs = { 120 },
+                tags = { "zone", "local", "northrend" },
+                factionIDs = { 1119 },
+                weight = 250,
+            },
+            [115] = {
+                name = "Drachenöde",
+                source = "seed",
+                confidence = "medium",
+                notes = "Northrend reputation cluster",
+                mapIDs = { 115 },
+                tags = { "zone", "local", "northrend" },
+                factionIDs = { 1091 },
+                weight = 245,
+            },
+            [125] = {
+                name = "Dalaran",
+                source = "seed",
+                confidence = "high",
+                notes = "Northrend hub cluster",
+                mapIDs = { 125 },
+                tags = { "city", "hub", "local", "northrend" },
+                factionIDs = { 1090 },
+                weight = 250,
+            },
+            [117] = {
+                name = "Heulender Fjord",
+                source = "seed",
+                confidence = "medium",
+                notes = "Northrend reputation cluster",
+                mapIDs = { 117 },
+                tags = { "zone", "local", "northrend" },
+                factionIDs = { 1068 },
+                weight = 240,
+            },
+            [121] = {
+                name = "Zul'Drak",
+                source = "seed",
+                confidence = "medium",
+                notes = "Northrend reputation cluster",
+                mapIDs = { 121 },
+                tags = { "zone", "local", "northrend" },
+                factionIDs = { 1105 },
+                weight = 240,
+            },
+            [119] = {
+                name = "Sholazarbecken",
+                source = "seed",
+                confidence = "medium",
+                notes = "Northrend reputation cluster",
+                mapIDs = { 119 },
+                tags = { "zone", "local", "northrend" },
+                factionIDs = { 1104 },
+                weight = 235,
+            },
+        },
+        subZones = {
+            ["125:die violette festung"] = {
+                name = "Die Violette Festung",
+                parentMapID = 125,
+                source = "seed",
+                confidence = "high",
+                notes = "Dalaran Kirin Tor hub cluster",
+                mapIDs = { 125 },
+                tags = { "primary", "hub", "local", "northrend" },
+                factions = {
+                    { factionID = 1090, weight = 260 },
+                },
+            },
+            ["125:die tonroste"] = {
+                name = "Die Tonroste",
+                parentMapID = 125,
+                source = "seed",
+                confidence = "medium",
+                notes = "Dalaran city district cluster",
+                mapIDs = { 125 },
+                tags = { "hub", "local", "northrend" },
+                factions = {
+                    { factionID = 1090, weight = 250 },
+                },
+            },
+            ["118:argentumvorhut"] = {
+                name = "Argentumvorhut",
+                parentMapID = 118,
+                source = "seed",
+                confidence = "high",
+                notes = "Argent Crusade hub cluster",
+                mapIDs = { 118 },
+                tags = { "primary", "hub", "local", "northrend" },
+                factions = {
+                    { factionID = 1106, weight = 260 },
+                },
+            },
+            ["120:k3"] = {
+                name = "K3",
+                parentMapID = 120,
+                source = "seed",
+                confidence = "medium",
+                notes = "Sons of Hodir hub cluster",
+                mapIDs = { 120 },
+                tags = { "hub", "local", "northrend" },
+                factions = {
+                    { factionID = 1119, weight = 255 },
+                },
+            },
+        },
+        instances = {
+            ["utgarde pinnacle"] = {
+                name = "Utgarde Pinnacle",
+                source = "seed",
+                confidence = "medium",
+                tags = { "dungeon", "northrend", "local" },
+                factions = {
+                    { factionID = 1090, weight = 345 },
+                },
+            },
+            ["the nexus"] = {
+                name = "The Nexus",
+                source = "seed",
+                confidence = "medium",
+                tags = { "dungeon", "northrend", "local" },
+                factions = {
+                    { factionID = 1090, weight = 340 },
+                },
+            },
+            ["ahn'kahet the old kingdom"] = {
+                name = "Ahn'kahet: The Old Kingdom",
+                source = "seed",
+                confidence = "medium",
+                tags = { "dungeon", "northrend", "local" },
+                factions = {
+                    { factionID = 1106, weight = 340 },
+                },
+            },
+            ["trial of the champion"] = {
+                name = "Trial of the Champion",
+                source = "seed",
+                confidence = "medium",
+                tags = { "dungeon", "northrend", "local" },
+                factions = {
+                    { factionID = 1106, weight = 340 },
+                },
+            },
+            ["gundrak"] = {
+                name = "Gundrak",
+                source = "seed",
+                confidence = "medium",
+                tags = { "dungeon", "northrend", "local" },
+                factions = {
+                    { factionID = 1105, weight = 340 },
+                },
+            },
+            ["halls of lightning"] = {
+                name = "Halls of Lightning",
+                source = "seed",
+                confidence = "medium",
+                tags = { "dungeon", "northrend", "local" },
+                factions = {
+                    { factionID = 1098, weight = 340 },
+                },
+            },
+            ["the culling of stratholme"] = {
+                name = "The Culling of Stratholme",
+                source = "seed",
+                confidence = "medium",
+                tags = { "dungeon", "northrend", "local" },
+                factions = {
+                    { factionID = 1090, weight = 338 },
+                },
+            },
+        },
+        raids = {
+            ["icecrown citadel"] = {
+                name = "Icecrown Citadel",
+                source = "seed",
+                confidence = "high",
+                tags = { "raid", "northrend", "local" },
+                factions = {
+                    { factionID = 1156, weight = 400 },
+                },
+            },
+            ["ulduar"] = {
+                name = "Ulduar",
+                source = "seed",
+                confidence = "medium",
+                tags = { "raid", "northrend", "local" },
+                factions = {
+                    { factionID = 1098, weight = 380 },
+                },
+            },
+            ["trial of the crusader"] = {
+                name = "Trial of the Crusader",
+                source = "seed",
+                confidence = "medium",
+                tags = { "raid", "northrend", "local" },
+                factions = {
+                    { factionID = 1106, weight = 375 },
+                },
+            },
+            ["vault of archavon"] = {
+                name = "Vault of Archavon",
+                source = "seed",
+                confidence = "medium",
+                tags = { "raid", "northrend", "local" },
+                factions = {
+                    { factionID = 1124, weight = 372 },
+                },
+            },
+        },
+    },
+})

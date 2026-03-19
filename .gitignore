@@ -1,0 +1,16 @@
+.DS_Store
+Thumbs.db
+
+.env
+*.log
+*.tmp
+
+__pycache__/
+*.pyc
+
+/tmp/
+/dist/
+/build/
+
+/Repu/last.png
+/Repu/Screenshot *.png

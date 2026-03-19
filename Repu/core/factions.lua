@@ -1,0 +1,280 @@
+local _, ns = ...
+
+local Utils = ns.Utils
+
+local function matchApplies(match, context)
+    if match.instanceTypes and context.instanceType then
+        local allowed = false
+        for _, instanceType in ipairs(match.instanceTypes) do
+            if instanceType == context.instanceType then
+                allowed = true
+                break
+            end
+        end
+        if not allowed then
+            return false
+        end
+    end
+
+    if match.difficulties and context.instanceDifficultyID then
+        local allowed = false
+        for _, difficultyID in ipairs(match.difficulties) do
+            if difficultyID == context.instanceDifficultyID then
+                allowed = true
+                break
+            end
+        end
+        if not allowed then
+            return false
+        end
+    end
+
+    return true
+end
+
+local function normalizeFaction(row)
+    if row.isHeader or not row.hasRep or not row.name then
+        return nil
+    end
+
+    local minValue = row.barMin or 0
+    local maxValue = row.barMax or 0
+    local value = row.barValue or 0
+    local progressValue = math.max(0, value - minValue)
+    local progressMax = math.max(0, maxValue - minValue)
+    local progressPct = progressMax > 0 and (progressValue / progressMax) * 100 or 0
+    local standingID = row.standingID or 0
+
+    return {
+        index = row.index,
+        factionID = row.factionID,
+        name = row.name,
+        nameKey = Utils:NormalizeKey(row.name),
+        description = row.description,
+        standingID = standingID,
+        standingLabel = ns.Compat:GetStandingLabel(standingID),
+        min = minValue,
+        max = maxValue,
+        value = value,
+        progressValue = progressValue,
+        progressMax = progressMax,
+        progressPct = progressPct,
+        isWatched = row.isWatched or false,
+        isChild = row.isChild or false,
+        isExalted = standingID >= 8,
+        isAccountWide = row.isAccountWide or false,
+        isMajorFaction = row.isMajorFaction or false,
+        renownLevel = row.renownLevel,
+        friendshipRepID = row.friendshipRepID,
+        hasBonusRepGain = row.hasBonusRepGain or false,
+        raw = row.raw,
+    }
+end
+
+local function indexFaction(collection, faction)
+    if faction.factionID then
+        collection.byID[faction.factionID] = faction
+    end
+    if faction.nameKey then
+        collection.byName[faction.nameKey] = faction
+    end
+    collection.list[#collection.list + 1] = faction
+end
+
+local function addMatch(results, faction, match)
+    local scoreSeed = match.weight or 0
+    results[#results + 1] = {
+        factionID = faction.factionID,
+        faction = faction,
+        name = faction.name,
+        sourceType = match.sourceType,
+        sourceKey = match.sourceKey,
+        baseWeight = scoreSeed,
+        note = match.note,
+        isDirect = true,
+        isWatched = faction.isWatched,
+        isExalted = faction.isExalted,
+        progressPct = faction.progressPct,
+        tags = match.tags,
+    }
+end
+
+function ns.Factions:CollectAll()
+    local rows = ns.Compat:CollectFactionRows()
+    local collection = {
+        list = {},
+        byID = {},
+        byName = {},
+    }
+
+    for _, row in ipairs(rows) do
+        local faction = normalizeFaction(row)
+        if faction then
+            indexFaction(collection, faction)
+        end
+    end
+
+    return collection
+end
+
+function ns.Factions:BuildMatches(rawFactions, context)
+    local results = {}
+    local seen = {}
+    local hasSubZoneMatch = false
+
+    local function appendMatch(match, faction, sourceType, sourceKey)
+        if not faction or not matchApplies(match, context) then
+            return
+        end
+
+        local dedupeKey = table.concat({
+            tostring(sourceType),
+            tostring(sourceKey),
+            tostring(faction.factionID or faction.name),
+            tostring(match.note or ""),
+        }, "::")
+
+        if seen[dedupeKey] then
+            return
+        end
+        seen[dedupeKey] = true
+
+        local resolved = Utils:ShallowCopy(match)
+        resolved.sourceKey = sourceKey
+        resolved.sourceType = sourceType
+        addMatch(results, faction, resolved)
+    end
+
+    local function resolve(sourceType, rawKey)
+        local matches = ns.Data:FindMatches(sourceType, rawKey)
+        for _, match in ipairs(matches) do
+            local faction = match.factionID and rawFactions.byID[match.factionID] or nil
+            if not faction and match.name then
+                faction = rawFactions.byName[Utils:NormalizeKey(match.name)]
+            end
+            appendMatch(match, faction, sourceType, rawKey)
+        end
+    end
+
+    local function resolveByMapID(sourceType, mapID, sourceKey)
+        local matches = ns.Data:FindMatchesByMapID(sourceType, mapID)
+        for _, match in ipairs(matches) do
+            local faction = match.factionID and rawFactions.byID[match.factionID] or nil
+            if not faction and match.name then
+                faction = rawFactions.byName[Utils:NormalizeKey(match.name)]
+            end
+            appendMatch(match, faction, sourceType, sourceKey or mapID)
+        end
+    end
+
+    local function resolveSubZone(mapID, rawKey)
+        local matches = ns.Data:FindSubZoneMatches(mapID, rawKey)
+        for _, match in ipairs(matches) do
+            local faction = match.factionID and rawFactions.byID[match.factionID] or nil
+            if not faction and match.name then
+                faction = rawFactions.byName[Utils:NormalizeKey(match.name)]
+            end
+            appendMatch(match, faction, "subZone", rawKey or mapID)
+            hasSubZoneMatch = true
+        end
+    end
+
+    local function resolveMapChain(sourceType)
+        local chain = context.mapChain or {}
+        for _, node in ipairs(chain) do
+            resolveByMapID(sourceType, node.mapID, node.name or node.mapID)
+        end
+    end
+
+    if context.instanceType == "raid" then
+        resolveByMapID("raid", context.instanceMapID, context.instanceName or context.instanceMapID)
+        resolve("raid", context.instanceName)
+    elseif context.instanceType and context.instanceType ~= "none" then
+        resolveByMapID("instance", context.instanceMapID, context.instanceName or context.instanceMapID)
+        resolve("instance", context.instanceName)
+    end
+
+    resolveMapChain("zone")
+    resolve("zone", context.zoneName)
+    resolveSubZone(context.mapID, context.subZoneName)
+
+    if context.subZoneName and not hasSubZoneMatch then
+        for _, match in ipairs(results) do
+            if match.sourceType == "zone" then
+                match.isInherited = true
+                if match.note and match.note ~= "" then
+                    match.note = string.format("%s | Used as zone fallback for current subzone", match.note)
+                else
+                    match.note = "Used as zone fallback for current subzone"
+                end
+            end
+        end
+    end
+
+    local inferred = ns.Inference:BuildMatches(rawFactions, context, results)
+    for _, match in ipairs(inferred) do
+        results[#results + 1] = match
+    end
+
+    return results
+end
+
+function ns.Factions:SelectVisible(prioritized, context)
+    local profile = ns.State:GetProfile()
+    local visible = {}
+
+    for index, candidate in ipairs(prioritized) do
+        local include = true
+
+        if profile.hideExalted and candidate.faction.isExalted and not candidate.isDirect then
+            include = false
+        end
+
+        if include then
+            candidate.isActive = index == 1
+            visible[#visible + 1] = candidate
+        end
+
+        if #visible >= profile.maxBars then
+            break
+        end
+    end
+
+    local allowFallback = true
+    if context and context.mapID then
+        local hasZoneMapping = #ns.Data:FindMatchesByMapID("zone", context.mapID) > 0
+        local hasSubZoneMapping = #ns.Data:FindSubZoneMatches(context.mapID, context.subZoneName) > 0
+        allowFallback = not (hasZoneMapping or hasSubZoneMapping)
+    end
+
+    if #visible == 0 and allowFallback then
+        local watchedID = context.watchedFactionID
+        local runtime = ns.State.runtime or {}
+        local rawFactions = runtime.rawFactions or {}
+        local byID = rawFactions.byID or {}
+        local fallbackFaction = nil
+
+        if watchedID then
+            fallbackFaction = byID[watchedID]
+        elseif context and context.isInInstance then
+            local lastRelevantID = ns.State:GetRuntimeValue("lastRelevantFactionID")
+            fallbackFaction = byID[lastRelevantID or 0]
+        end
+
+        if fallbackFaction then
+            visible[1] = {
+                factionID = fallbackFaction.factionID,
+                faction = fallbackFaction,
+                name = fallbackFaction.name,
+                sourceType = "fallback",
+                sourceKey = watchedID and "watched" or "lastRelevantInstance",
+                score = 1,
+                isDirect = false,
+                isFallback = true,
+                isActive = true,
+            }
+        end
+    end
+
+    return visible
+end

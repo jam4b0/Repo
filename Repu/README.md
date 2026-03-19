@@ -1,0 +1,90 @@
+# Repu
+
+Modularer, ortsbezogener Ruf-Tracker fuer World of Warcraft.
+
+## Ziel
+
+`Repu` zeigt standardmaessig nur die Fraktionen an, die fuer den aktuellen Standort des eingeloggten Charakters relevant sind:
+
+- Zone
+- Unterzone
+- Dungeon
+- Raid
+
+Wenn kein Daten-Mapping greift, faellt das Addon kontrolliert auf sinnvolle Fallbacks zurueck, statt globale Ruflisten anzuzeigen.
+
+## Architektur
+
+- `core/`: generische Logik, Zustandsverwaltung, Compat, Priorisierung
+- `data/`: expansions- und branchspezifische Zuordnungen
+- `ui/`: Darstellung, Zeilen, Styles, spaetere Optionsintegration
+- `debug/`: Slash-Kommandos, Dumps, Test-Ansichten
+
+## Addon-Aufteilung
+
+- `Repu`: Logik, Standorterkennung, Priorisierung, Haupt-UI
+- `Repu_Data`: optionale Wissensbasis fuer Rüstmeister, Aktivitäten, Questziele und Wegpunktdaten
+- `Repu_Map`: optionale Kartenintegration fuer Pins und Kartenlayer
+
+Der aktuelle Stand:
+
+- `Repu` ist aktiv
+- `Repu_Data` ist als separates Datenaddon aktiv
+- `Repu_Map` ist als optionale Integrationsschicht vorbereitet
+
+## Aktueller Stand
+
+- Vollstaendiges Addon-Grundgeruest vorhanden
+- Gemeinsame Core-Logik fuer Retail und Classic angelegt
+- Datengetriebenes Mapping-System implementiert
+- Erste Beispiel-Mappings fuer Retail und Classic enthalten
+- Fallback- und Debug-Pfade implementiert
+- Retail-Compat auf aktuelle `C_Reputation`-API ausgerichtet, Classic auf Legacy-API
+- Debug-Kommandos fuer API-, Standort- und Fraktionsrohdatensicht erweitert
+- Retail-Datenbasis in Weltblock-Module aufgeteilt
+- Content-Schnittstelle fuer optionale Datenaddons angelegt
+- Coverage-Report fuer Retail-Daten vorhanden
+- Datenqualitaet wird ueber `source` und `confidence` klassifiziert
+- Content-Datensaetze koennen ebenfalls mit `source` und `confidence` markiert werden
+
+## Naechster Ausbau
+
+1. Datenmodule fraktions- und instanzvollstaendig fuellen
+2. Content-Module blockweise mit Rüstmeistern und Aktivitäten fuellen
+3. Optionsseite je Client-Flavor weiter ausbauen
+
+## Tools
+
+- `tools/generate_content_module.py` erzeugt aus JSON ein Retail-Content-Modul fuer `data/content/retail/*.lua`
+- `tools/content_example.json` zeigt das erwartete Inputformat fuer Fraktionsinhalte
+- `tools/generate_map_manifest.py` erzeugt aus `RepuDB.debug.mapScan` ein pruefbares Zonen-Manifest mit Buckets fuer Kontinente, Zonen und Hubs
+- `tools/generate_map_seed.py` erzeugt aus dem Manifest ein reines Zonen-Skelett fuer spaetere `Repu`-Seeds, ohne schon Fraktionswissen zu erfinden
+- `tools/compare_map_seed.py` vergleicht den generierten Client-Seed mit der bestehenden Retail-Basis und zeigt Ueberlappung sowie Luecken
+
+## Map-Scan-Pipeline
+
+Die Weltbasis fuer `Repu` soll nicht manuell abgeflogen oder aus veralteten Webseiten zusammengesucht werden. Stattdessen gilt:
+
+1. `Repu` scannt die `UiMap`-Hierarchie direkt aus dem Client in `RepuDB.debug.mapScan`
+2. `tools/generate_map_manifest.py` erzeugt daraus ein auditierbares Manifest
+3. Erst aus diesem Manifest werden spaeter kontrollierte Seed-Dateien fuer `Repu` abgeleitet
+
+Wichtig:
+
+- `mapScan` ist die Rohquelle
+- das Manifest ist die pruefbare Klassifikation
+- gefilterte Seeds sind nur abgeleitete Sichten und duerfen die Rohvollstaendigkeit nicht ersetzen
+
+## Datenqualitaet
+
+Jeder Location-Eintrag wird mit zwei Metadaten gepflegt:
+
+- `source`: `seed`, `observed`, `inferred`, `confirmed`
+- `confidence`: `low`, `medium`, `high`
+
+Dabei gilt:
+
+- `seed` sind kuratierte Startdaten
+- `observed` sind aus echten Ingame-Captures abgeleitete Eintraege
+- `inferred` sind automatisch oder heuristisch abgeleitete Eintraege
+- `confirmed` ist fuer verifizierte, belastbare Zuordnungen reserviert

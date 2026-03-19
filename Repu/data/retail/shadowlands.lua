@@ -1,0 +1,222 @@
+local _, ns = ...
+
+ns.Data:RegisterRetailModule({
+    locations = {
+        zones = {
+            [1525] = {
+                name = "Oribos",
+                source = "seed",
+                confidence = "high",
+                notes = "Shadowlands hub cluster",
+                mapIDs = { 1525 },
+                tags = { "city", "hub", "local", "shadowlands" },
+                factionIDs = { 2413 },
+                weight = 255,
+            },
+            [1533] = {
+                name = "Bastion",
+                source = "seed",
+                confidence = "medium",
+                notes = "Shadowlands zone cluster",
+                mapIDs = { 1533 },
+                tags = { "zone", "local", "shadowlands" },
+                factionIDs = { 2407 },
+                weight = 245,
+            },
+            [1536] = {
+                name = "Maldraxxus",
+                source = "seed",
+                confidence = "medium",
+                notes = "Shadowlands zone cluster",
+                mapIDs = { 1536 },
+                tags = { "zone", "local", "shadowlands" },
+                factionIDs = { 2410 },
+                weight = 245,
+            },
+            [1565] = {
+                name = "Ardenwald",
+                source = "seed",
+                confidence = "medium",
+                notes = "Shadowlands zone cluster",
+                mapIDs = { 1565 },
+                tags = { "zone", "local", "shadowlands" },
+                factionIDs = { 2464 },
+                weight = 245,
+            },
+            [1529] = {
+                name = "Revendreth",
+                source = "seed",
+                confidence = "medium",
+                notes = "Shadowlands zone cluster",
+                mapIDs = { 1529 },
+                tags = { "zone", "local", "shadowlands" },
+                factionIDs = { 2413 },
+                weight = 245,
+            },
+            [1543] = {
+                name = "Der Schlund",
+                source = "seed",
+                confidence = "high",
+                notes = "Shadowlands endgame zone cluster",
+                mapIDs = { 1543 },
+                tags = { "zone", "local", "shadowlands" },
+                factionIDs = { 2432 },
+                weight = 248,
+            },
+            [1970] = {
+                name = "Zereth Mortis",
+                source = "seed",
+                confidence = "high",
+                notes = "Shadowlands patch zone cluster",
+                mapIDs = { 1970 },
+                tags = { "zone", "local", "shadowlands" },
+                factionIDs = { 2478 },
+                weight = 250,
+            },
+        },
+        subZones = {
+            ["1525:ring der schicksale"] = {
+                name = "Ring der Schicksale",
+                parentMapID = 1525,
+                source = "seed",
+                confidence = "high",
+                notes = "Oribos primary hub cluster",
+                mapIDs = { 1525 },
+                tags = { "primary", "hub", "local", "shadowlands" },
+                factions = {
+                    { factionID = 2413, weight = 260 },
+                },
+            },
+            ["1525:ring der transzendenz"] = {
+                name = "Ring der Transzendenz",
+                parentMapID = 1525,
+                source = "seed",
+                confidence = "high",
+                notes = "Oribos covenant cluster",
+                mapIDs = { 1525 },
+                tags = { "hub", "local", "shadowlands" },
+                factions = {
+                    { factionID = 2413, weight = 255 },
+                },
+            },
+            ["1543:ven'aris zuflucht"] = {
+                name = "Ve'naris Zuflucht",
+                parentMapID = 1543,
+                source = "seed",
+                confidence = "high",
+                notes = "The Maw hub cluster",
+                mapIDs = { 1543 },
+                tags = { "primary", "hub", "local", "shadowlands" },
+                factions = {
+                    { factionID = 2432, weight = 260 },
+                },
+            },
+            ["1970:haven"] = {
+                name = "Haven",
+                parentMapID = 1970,
+                source = "seed",
+                confidence = "high",
+                notes = "Zereth Mortis hub cluster",
+                mapIDs = { 1970 },
+                tags = { "primary", "hub", "local", "shadowlands" },
+                factions = {
+                    { factionID = 2478, weight = 262 },
+                },
+            },
+        },
+        instances = {
+            ["halls of atonement"] = {
+                name = "Halls of Atonement",
+                source = "seed",
+                confidence = "medium",
+                tags = { "dungeon", "shadowlands", "local" },
+                factions = {
+                    { factionID = 2413, weight = 340 },
+                },
+            },
+            ["mist of tirna scithe"] = {
+                name = "Mists of Tirna Scithe",
+                source = "seed",
+                confidence = "medium",
+                tags = { "dungeon", "shadowlands", "local" },
+                factions = {
+                    { factionID = 2464, weight = 340 },
+                },
+            },
+            ["theater of pain"] = {
+                name = "Theater of Pain",
+                source = "seed",
+                confidence = "medium",
+                tags = { "dungeon", "shadowlands", "local" },
+                factions = {
+                    { factionID = 2410, weight = 340 },
+                },
+            },
+            ["spire of ascension"] = {
+                name = "Spires of Ascension",
+                source = "seed",
+                confidence = "medium",
+                tags = { "dungeon", "shadowlands", "local" },
+                factions = {
+                    { factionID = 2407, weight = 340 },
+                },
+            },
+            ["de other side"] = {
+                name = "De Other Side",
+                source = "seed",
+                confidence = "medium",
+                tags = { "dungeon", "shadowlands", "local" },
+                factions = {
+                    { factionID = 2413, weight = 338 },
+                },
+            },
+            ["plaguefall"] = {
+                name = "Plaguefall",
+                source = "seed",
+                confidence = "medium",
+                tags = { "dungeon", "shadowlands", "local" },
+                factions = {
+                    { factionID = 2410, weight = 340 },
+                },
+            },
+            ["sanguine depths"] = {
+                name = "Sanguine Depths",
+                source = "seed",
+                confidence = "medium",
+                tags = { "dungeon", "shadowlands", "local" },
+                factions = {
+                    { factionID = 2413, weight = 340 },
+                },
+            },
+        },
+        raids = {
+            ["castle nathria"] = {
+                name = "Castle Nathria",
+                source = "seed",
+                confidence = "high",
+                tags = { "raid", "shadowlands", "local" },
+                factions = {
+                    { factionID = 2413, weight = 392 },
+                },
+            },
+            ["sanctum of domination"] = {
+                name = "Sanctum of Domination",
+                source = "seed",
+                confidence = "medium",
+                tags = { "raid", "shadowlands", "local" },
+                factions = {
+                    { factionID = 2470, weight = 390 },
+                },
+            },
+            ["sepulcher of the first ones"] = {
+                name = "Sepulcher of the First Ones",
+                source = "seed",
+                confidence = "medium",
+                tags = { "raid", "shadowlands", "local" },
+                factions = {
+                    { factionID = 2478, weight = 390 },
+                },
+            },
+        },
+    },
+})

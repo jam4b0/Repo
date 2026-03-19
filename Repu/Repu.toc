@@ -1,0 +1,44 @@
+## Interface: 120000, 120001, 120005, 50503, 40402, 30403, 20505, 11508
+## Title: Repu
+## Notes: Location-aware reputation tracker with shared Retail/Classic architecture.
+## Author: OpenAI Codex
+## Version: 0.1.0
+## SavedVariables: RepuDB
+## IconTexture: Interface\Icons\Achievement_Reputation_01
+
+core\init.lua
+core\utils.lua
+core\config.lua
+core\compat.lua
+core\state.lua
+data\shared.lua
+data\classic.lua
+data\tbc.lua
+data\wrath.lua
+data\cata.lua
+data\mop.lua
+data\retail\core.lua
+data\retail\kalimdor.lua
+data\retail\eastern_kingdoms.lua
+data\retail\outland.lua
+data\retail\northrend.lua
+data\retail\pandaria.lua
+data\retail\draenor.lua
+data\retail\broken_isles.lua
+data\retail\bfa.lua
+data\retail\shadowlands.lua
+data\retail\dragonflight.lua
+data\retail\current.lua
+data\retail.lua
+core\location.lua
+core\inference.lua
+core\factions.lua
+core\scoring.lua
+core\content.lua
+core\waypoints.lua
+ui\styles.lua
+ui\row.lua
+ui\frame.lua
+ui\options.lua
+debug\debug.lua
+core\events.lua
