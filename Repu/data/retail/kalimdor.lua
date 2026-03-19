@@ -221,6 +221,16 @@ ns.Data:RegisterRetailModule({
                 factionIDs = { 609 },
                 weight = 234,
             },
+            [76] = {
+                name = "Azshara",
+                source = "seed",
+                confidence = "medium",
+                notes = "Cataclysm-revamped goblin zone cluster in retail; the normal zone maps to Bilgewater Cartel while variant submaps stay separated.",
+                mapIDs = { 76 },
+                tags = { "zone", "local", "kalimdor", "cataclysm-revamp" },
+                factionIDs = { 1133 },
+                weight = 238,
+            },
             [106] = {
                 name = "Die Blutmythosinsel",
                 source = "seed",
