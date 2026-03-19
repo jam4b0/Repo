@@ -143,7 +143,7 @@ function ns.UI:Init()
     frame.detail.contentMeta:SetTextColor(unpack(Styles.subtleText))
 
     frame.detail.body = frame.detail:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    frame.detail.body:SetPoint("TOPLEFT", frame.detail, "TOPLEFT", 12, -92)
+    frame.detail.body:SetPoint("TOPLEFT", frame.detail, "TOPLEFT", 12, -58)
     frame.detail.body:SetPoint("RIGHT", frame.detail, "RIGHT", -12, 0)
     frame.detail.body:SetJustifyH("LEFT")
     frame.detail.body:SetJustifyV("TOP")
@@ -429,7 +429,7 @@ function ns.UI:UpdateDetails(details, count, profile)
     end
 
     local bodyHeight = math.ceil(math.max(52, detail.body:GetStringHeight() or 0))
-    local contentTopOffset = -92 - bodyHeight - 8
+    local contentTopOffset = -58 - bodyHeight - 8
     local currentTopOffset = contentTopOffset
     local entryIndex = 0
 
