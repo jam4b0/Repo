@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "region": "eu",
+    "locale": "en_US",
+    "blizzardFactionCount": 281,
+    "blizzardRootCount": 14,
+    "addonCoreFactionCount": 104,
+    "addonContentFactionCount": 117,
+    "coreCoveredByContentCount": 104,
+    "coreMissingContentCount": 0,
+    "blizzardMissingInCoreCount": 178,
+    "contentOnlyCount": 13
+  },
+  "gapClass": "candidate_modern_renown",
+  "count": 6,
+  "rows": [
+    {
+      "factionID": 2574,
+      "name": "Dream Wardens",
+      "classification": "renown",
+      "isHeader": false,
+      "isRenown": true,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_modern_renown"
+    },
+    {
+      "factionID": 2688,
+      "name": "Flame's Radiance",
+      "classification": "renown",
+      "isHeader": false,
+      "isRenown": true,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_modern_renown"
+    },
+    {
+      "factionID": 2685,
+      "name": "Gallagio Loyalty Rewards Club",
+      "classification": "renown",
+      "isHeader": false,
+      "isRenown": true,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_modern_renown"
+    },
+    {
+      "factionID": 2564,
+      "name": "Loamm Niffen",
+      "classification": "renown",
+      "isHeader": false,
+      "isRenown": true,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_modern_renown"
+    },
+    {
+      "factionID": 2736,
+      "name": "Manaforge Vandals",
+      "classification": "renown",
+      "isHeader": false,
+      "isRenown": true,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_modern_renown"
+    },
+    {
+      "factionID": 2658,
+      "name": "The K'aresh Trust",
+      "classification": "renown",
+      "isHeader": false,
+      "isRenown": true,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_modern_renown"
+    }
+  ]
+}

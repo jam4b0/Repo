@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "region": "eu",
+    "locale": "en_US",
+    "blizzardFactionCount": 281,
+    "blizzardRootCount": 14,
+    "addonCoreFactionCount": 104,
+    "addonContentFactionCount": 117,
+    "coreCoveredByContentCount": 104,
+    "coreMissingContentCount": 0,
+    "blizzardMissingInCoreCount": 178,
+    "contentOnlyCount": 13
+  },
+  "gapClass": "ignore_placeholder",
+  "count": 2,
+  "rows": [
+    {
+      "factionID": 1072,
+      "name": "[DNT] AC Major Faction Child Renown Test",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "ignore_placeholder"
+    },
+    {
+      "factionID": 2662,
+      "name": "[PH] The Power of Friendship",
+      "classification": "header",
+      "isHeader": true,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "ignore_placeholder"
+    }
+  ]
+}

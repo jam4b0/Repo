@@ -1,0 +1,248 @@
+{
+  "meta": {
+    "region": "eu",
+    "locale": "en_US",
+    "blizzardFactionCount": 281,
+    "blizzardRootCount": 14,
+    "addonCoreFactionCount": 104,
+    "addonContentFactionCount": 117,
+    "coreCoveredByContentCount": 104,
+    "coreMissingContentCount": 0,
+    "blizzardMissingInCoreCount": 178,
+    "contentOnlyCount": 13
+  },
+  "gapClass": "superseded_by_current_model",
+  "count": 23,
+  "rows": [
+    {
+      "factionID": 2159,
+      "name": "7th Legion",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "superseded_by_current_model"
+    },
+    {
+      "factionID": 1037,
+      "name": "Alliance Vanguard",
+      "classification": "header",
+      "isHeader": true,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "superseded_by_current_model"
+    },
+    {
+      "factionID": 1178,
+      "name": "Hellscream's Reach",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "superseded_by_current_model"
+    },
+    {
+      "factionID": 946,
+      "name": "Honor Hold",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "superseded_by_current_model"
+    },
+    {
+      "factionID": 1052,
+      "name": "Horde Expedition",
+      "classification": "header",
+      "isHeader": true,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "superseded_by_current_model"
+    },
+    {
+      "factionID": 1352,
+      "name": "Huojin Pandaren",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "superseded_by_current_model"
+    },
+    {
+      "factionID": 1708,
+      "name": "Laughing Skull Orcs",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "superseded_by_current_model"
+    },
+    {
+      "factionID": 1242,
+      "name": "Pearlfin Jinyu",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "superseded_by_current_model"
+    },
+    {
+      "factionID": 911,
+      "name": "Silvermoon City",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "superseded_by_current_model"
+    },
+    {
+      "factionID": 1388,
+      "name": "Sunreaver Onslaught",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "superseded_by_current_model"
+    },
+    {
+      "factionID": 2156,
+      "name": "Talanji's Expedition",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "superseded_by_current_model"
+    },
+    {
+      "factionID": 2605,
+      "name": "The General",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "superseded_by_current_model"
+    },
+    {
+      "factionID": 1094,
+      "name": "The Silver Covenant",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "superseded_by_current_model"
+    },
+    {
+      "factionID": 1064,
+      "name": "The Taunka",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "superseded_by_current_model"
+    },
+    {
+      "factionID": 2607,
+      "name": "The Vizier",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "superseded_by_current_model"
+    },
+    {
+      "factionID": 2601,
+      "name": "The Weaver",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "superseded_by_current_model"
+    },
+    {
+      "factionID": 1353,
+      "name": "Tushui Pandaren",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "superseded_by_current_model"
+    },
+    {
+      "factionID": 1050,
+      "name": "Valiance Expedition",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "superseded_by_current_model"
+    },
+    {
+      "factionID": 1681,
+      "name": "Vol'jin's Spear",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "superseded_by_current_model"
+    },
+    {
+      "factionID": 1085,
+      "name": "Warsong Offensive",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "superseded_by_current_model"
+    },
+    {
+      "factionID": 2400,
+      "name": "Waveblade Ankoan",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "superseded_by_current_model"
+    },
+    {
+      "factionID": 1682,
+      "name": "Wrynn's Vanguard",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "superseded_by_current_model"
+    },
+    {
+      "factionID": 2103,
+      "name": "Zandalari Empire",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "superseded_by_current_model"
+    }
+  ]
+}

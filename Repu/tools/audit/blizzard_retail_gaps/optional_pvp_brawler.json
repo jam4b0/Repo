@@ -1,0 +1,178 @@
+{
+  "meta": {
+    "region": "eu",
+    "locale": "en_US",
+    "blizzardFactionCount": 281,
+    "blizzardRootCount": 14,
+    "addonCoreFactionCount": 104,
+    "addonContentFactionCount": 117,
+    "coreCoveredByContentCount": 104,
+    "coreMissingContentCount": 0,
+    "blizzardMissingInCoreCount": 178,
+    "contentOnlyCount": 13
+  },
+  "gapClass": "optional_pvp_brawler",
+  "count": 16,
+  "rows": [
+    {
+      "factionID": 2767,
+      "name": "Bizmo's Brawlpub",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "optional_pvp_brawler"
+    },
+    {
+      "factionID": 1419,
+      "name": "Bizmo's Brawlpub (Season 1)",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "optional_pvp_brawler"
+    },
+    {
+      "factionID": 1691,
+      "name": "Bizmo's Brawlpub (Season 2)",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "optional_pvp_brawler"
+    },
+    {
+      "factionID": 2011,
+      "name": "Bizmo's Brawlpub (Season 3)",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "optional_pvp_brawler"
+    },
+    {
+      "factionID": 2371,
+      "name": "Bizmo's Brawlpub (Season 4)",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "optional_pvp_brawler"
+    },
+    {
+      "factionID": 2766,
+      "name": "Brawl'gar Arena",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "optional_pvp_brawler"
+    },
+    {
+      "factionID": 1374,
+      "name": "Brawl'gar Arena (Season 1)",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "optional_pvp_brawler"
+    },
+    {
+      "factionID": 1690,
+      "name": "Brawl'gar Arena (Season 2)",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "optional_pvp_brawler"
+    },
+    {
+      "factionID": 2010,
+      "name": "Brawl'gar Arena (Season 3)",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "optional_pvp_brawler"
+    },
+    {
+      "factionID": 2372,
+      "name": "Brawl'gar Arena (Season 4)",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "optional_pvp_brawler"
+    },
+    {
+      "factionID": 729,
+      "name": "Frostwolf Clan",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "optional_pvp_brawler"
+    },
+    {
+      "factionID": 890,
+      "name": "Silverwing Sentinels",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "optional_pvp_brawler"
+    },
+    {
+      "factionID": 730,
+      "name": "Stormpike Guard",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "optional_pvp_brawler"
+    },
+    {
+      "factionID": 510,
+      "name": "The Defilers",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "optional_pvp_brawler"
+    },
+    {
+      "factionID": 509,
+      "name": "The League of Arathor",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "optional_pvp_brawler"
+    },
+    {
+      "factionID": 889,
+      "name": "Warsong Outriders",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "optional_pvp_brawler"
+    }
+  ]
+}

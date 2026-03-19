@@ -1,0 +1,238 @@
+{
+  "meta": {
+    "region": "eu",
+    "locale": "en_US",
+    "blizzardFactionCount": 281,
+    "blizzardRootCount": 14,
+    "addonCoreFactionCount": 104,
+    "addonContentFactionCount": 117,
+    "coreCoveredByContentCount": 104,
+    "coreMissingContentCount": 0,
+    "blizzardMissingInCoreCount": 178,
+    "contentOnlyCount": 13
+  },
+  "gapClass": "candidate_modern_side_system",
+  "count": 22,
+  "rows": [
+    {
+      "factionID": 2544,
+      "name": "Artisan's Consortium - Dragon Isles Branch",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_modern_side_system"
+    },
+    {
+      "factionID": 2615,
+      "name": "Azerothian Archives",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_modern_side_system"
+    },
+    {
+      "factionID": 2164,
+      "name": "Champions of Azeroth",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_modern_side_system"
+    },
+    {
+      "factionID": 2135,
+      "name": "Chromie",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_modern_side_system"
+    },
+    {
+      "factionID": 2550,
+      "name": "Cobalt Assembly",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_modern_side_system"
+    },
+    {
+      "factionID": 2523,
+      "name": "Dark Talons",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_modern_side_system"
+    },
+    {
+      "factionID": 2669,
+      "name": "Darkfuse Solutions",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_modern_side_system"
+    },
+    {
+      "factionID": 2664,
+      "name": "Flynn Fairwind",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_modern_side_system"
+    },
+    {
+      "factionID": 2395,
+      "name": "Honeyback Hive",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_modern_side_system"
+    },
+    {
+      "factionID": 2665,
+      "name": "Lillistrasza",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_modern_side_system"
+    },
+    {
+      "factionID": 2663,
+      "name": "Meerah",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_modern_side_system"
+    },
+    {
+      "factionID": 2524,
+      "name": "Obsidian Warders",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_modern_side_system"
+    },
+    {
+      "factionID": 2666,
+      "name": "Roasts and Boasts",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_modern_side_system"
+    },
+    {
+      "factionID": 2518,
+      "name": "Sabellian",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_modern_side_system"
+    },
+    {
+      "factionID": 2553,
+      "name": "Soridormi",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_modern_side_system"
+    },
+    {
+      "factionID": 2472,
+      "name": "The Archivists' Codex",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_modern_side_system"
+    },
+    {
+      "factionID": 2439,
+      "name": "The Avowed",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_modern_side_system"
+    },
+    {
+      "factionID": 2465,
+      "name": "The Wild Hunt",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_modern_side_system"
+    },
+    {
+      "factionID": 2163,
+      "name": "Tortollan Seekers",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_modern_side_system"
+    },
+    {
+      "factionID": 2417,
+      "name": "Uldum Accord",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_modern_side_system"
+    },
+    {
+      "factionID": 2526,
+      "name": "Winterpelt Furbolg",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_modern_side_system"
+    },
+    {
+      "factionID": 2517,
+      "name": "Wrathion",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_modern_side_system"
+    }
+  ]
+}

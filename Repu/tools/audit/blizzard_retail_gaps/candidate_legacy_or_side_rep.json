@@ -1,0 +1,918 @@
+{
+  "meta": {
+    "region": "eu",
+    "locale": "en_US",
+    "blizzardFactionCount": 281,
+    "blizzardRootCount": 14,
+    "addonCoreFactionCount": 104,
+    "addonContentFactionCount": 117,
+    "coreCoveredByContentCount": 104,
+    "coreMissingContentCount": 0,
+    "blizzardMissingInCoreCount": 178,
+    "contentOnlyCount": 13
+  },
+  "gapClass": "candidate_legacy_or_side_rep",
+  "count": 90,
+  "rows": [
+    {
+      "factionID": 1740,
+      "name": "Aeda Brightdawn",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1416,
+      "name": "Akama's Trust",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2099,
+      "name": "Akule Riverhorn",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2450,
+      "name": "Alexandros Mograine",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1515,
+      "name": "Arakkoa Outcasts",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2446,
+      "name": "Baroness Vashj",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1735,
+      "name": "Barracks Bodyguards",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2673,
+      "name": "Bilgewater Cartel",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2675,
+      "name": "Blackwater Cartel",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2712,
+      "name": "Blood Knights",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 87,
+      "name": "Bloodsail Buccaneers",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2640,
+      "name": "Brann Bronzebeard",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 910,
+      "name": "Brood of Nozdormu",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1277,
+      "name": "Chee Chee",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2454,
+      "name": "Choofa",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1975,
+      "name": "Conjurer Margoss",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2100,
+      "name": "Corbyn",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2455,
+      "name": "Cryptkeeper Kassir",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 909,
+      "name": "Darkmoon Faire",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1440,
+      "name": "Darkspear Rebellion",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1738,
+      "name": "Defender Illona",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1733,
+      "name": "Delvar Ironfist",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2456,
+      "name": "Droman Aliothe",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1275,
+      "name": "Ella",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 577,
+      "name": "Everlook",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1283,
+      "name": "Farmer Fung",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2713,
+      "name": "Farstriders",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1282,
+      "name": "Fish Fellreed",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1228,
+      "name": "Forest Hozen",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2469,
+      "name": "Fractal Lore",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 369,
+      "name": "Gadgetzan",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 92,
+      "name": "Gelkis Clan Centaur",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1281,
+      "name": "Gina Mudclaw",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2568,
+      "name": "Glimmerogg Racer",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 54,
+      "name": "Gnomeregan",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2457,
+      "name": "Grandmaster Vole",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1279,
+      "name": "Haohan Mudclaw",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2451,
+      "name": "Hunt-Captain Korayn",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 749,
+      "name": "Hydraxian Waterlords",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2097,
+      "name": "Ilyssia of the Waters",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2102,
+      "name": "Impus",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1273,
+      "name": "Jogu the Drunk",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2098,
+      "name": "Keeper Raynae",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2458,
+      "name": "Kleia and Pelagos",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2447,
+      "name": "Lady Moonberry",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1741,
+      "name": "Leorajh",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2711,
+      "name": "Magisters",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 93,
+      "name": "Magram Clan Centaur",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2448,
+      "name": "Mikanikos",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1358,
+      "name": "Nat Pagle",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1015,
+      "name": "Netherwing",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1276,
+      "name": "Old Hillpaw",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2461,
+      "name": "Plague Deviser Marileth",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2452,
+      "name": "Polemarch Adrestes",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 470,
+      "name": "Ratchet",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 349,
+      "name": "Ravenholdt",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2453,
+      "name": "Rendle and Cudgelface",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2101,
+      "name": "Sha'leth",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2714,
+      "name": "Shades of the Row",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1216,
+      "name": "Shang Xi's Academy",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 809,
+      "name": "Shen'dralar",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1278,
+      "name": "Sho",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2459,
+      "name": "Sika",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2770,
+      "name": "Slayer's Duellum",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 970,
+      "name": "Sporeggar",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2677,
+      "name": "Steamwheedle Cartel",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2462,
+      "name": "Stitchmasters",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2460,
+      "name": "Stonehead",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 70,
+      "name": "Syndicate",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2018,
+      "name": "Talon's Vengeance",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1737,
+      "name": "Talonpriest Ishaal",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1341,
+      "name": "The August Celestials",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1359,
+      "name": "The Black Prince",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2449,
+      "name": "The Countess",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1135,
+      "name": "The Earthen Ring",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2445,
+      "name": "The Ember Court",
+      "classification": "header",
+      "isHeader": true,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1984,
+      "name": "The First Responders",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1126,
+      "name": "The Frostborn",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1067,
+      "name": "The Hand of Vengeance",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1337,
+      "name": "The Klaxxi",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1345,
+      "name": "The Lorewalkers",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 990,
+      "name": "The Scale of the Sands",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1280,
+      "name": "Tina Mudclaw",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1736,
+      "name": "Tormmok",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 922,
+      "name": "Tranquillien",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2744,
+      "name": "Valeera Sanguinar",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 2671,
+      "name": "Venture Company",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1739,
+      "name": "Vivianne",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 1174,
+      "name": "Wildhammer Clan",
+      "classification": "faction_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    },
+    {
+      "factionID": 270,
+      "name": "Zandalar Tribe",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_legacy_or_side_rep"
+    }
+  ]
+}

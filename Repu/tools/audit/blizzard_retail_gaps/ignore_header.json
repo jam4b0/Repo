@@ -1,0 +1,208 @@
+{
+  "meta": {
+    "region": "eu",
+    "locale": "en_US",
+    "blizzardFactionCount": 281,
+    "blizzardRootCount": 14,
+    "addonCoreFactionCount": 104,
+    "addonContentFactionCount": 117,
+    "coreCoveredByContentCount": 104,
+    "coreMissingContentCount": 0,
+    "blizzardMissingInCoreCount": 178,
+    "contentOnlyCount": 13
+  },
+  "gapClass": "ignore_header",
+  "count": 19,
+  "rows": [
+    {
+      "factionID": 469,
+      "name": "Alliance",
+      "classification": "generic_header",
+      "isHeader": true,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "ignore_header"
+    },
+    {
+      "factionID": 891,
+      "name": "Alliance Forces",
+      "classification": "generic_header",
+      "isHeader": true,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "ignore_header"
+    },
+    {
+      "factionID": 2104,
+      "name": "Battle for Azeroth",
+      "classification": "generic_header",
+      "isHeader": true,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "ignore_header"
+    },
+    {
+      "factionID": 1162,
+      "name": "Cataclysm",
+      "classification": "generic_header",
+      "isHeader": true,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "ignore_header"
+    },
+    {
+      "factionID": 1118,
+      "name": "Classic",
+      "classification": "generic_header",
+      "isHeader": true,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "ignore_header"
+    },
+    {
+      "factionID": 2506,
+      "name": "Dragonflight",
+      "classification": "generic_header",
+      "isHeader": true,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "ignore_header"
+    },
+    {
+      "factionID": 1168,
+      "name": "Guild",
+      "classification": "generic_header",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "ignore_header"
+    },
+    {
+      "factionID": 1169,
+      "name": "Guild",
+      "classification": "generic_header",
+      "isHeader": true,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "ignore_header"
+    },
+    {
+      "factionID": 67,
+      "name": "Horde",
+      "classification": "generic_header",
+      "isHeader": true,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "ignore_header"
+    },
+    {
+      "factionID": 892,
+      "name": "Horde Forces",
+      "classification": "generic_header",
+      "isHeader": true,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "ignore_header"
+    },
+    {
+      "factionID": 2593,
+      "name": "Keg Leg's Crew",
+      "classification": "generic_header",
+      "isHeader": false,
+      "isRenown": true,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "ignore_header"
+    },
+    {
+      "factionID": 1834,
+      "name": "Legion",
+      "classification": "generic_header",
+      "isHeader": true,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "ignore_header"
+    },
+    {
+      "factionID": 2698,
+      "name": "Midnight",
+      "classification": "generic_header",
+      "isHeader": true,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "ignore_header"
+    },
+    {
+      "factionID": 1245,
+      "name": "Mists of Pandaria",
+      "classification": "generic_header",
+      "isHeader": true,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "ignore_header"
+    },
+    {
+      "factionID": 2414,
+      "name": "Shadowlands",
+      "classification": "generic_header",
+      "isHeader": true,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "ignore_header"
+    },
+    {
+      "factionID": 980,
+      "name": "The Burning Crusade",
+      "classification": "generic_header",
+      "isHeader": true,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "ignore_header"
+    },
+    {
+      "factionID": 2569,
+      "name": "The War Within",
+      "classification": "generic_header",
+      "isHeader": true,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "ignore_header"
+    },
+    {
+      "factionID": 1444,
+      "name": "Warlords of Draenor",
+      "classification": "generic_header",
+      "isHeader": true,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "ignore_header"
+    },
+    {
+      "factionID": 1097,
+      "name": "Wrath of the Lich King",
+      "classification": "generic_header",
+      "isHeader": true,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "ignore_header"
+    }
+  ]
+}

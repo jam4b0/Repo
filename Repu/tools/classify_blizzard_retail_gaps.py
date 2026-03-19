@@ -9,6 +9,7 @@ from pathlib import Path
 
 AUDIT = Path("/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/tools/blizzard_retail_faction_audit.json")
 OUT = Path("/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/tools/blizzard_retail_gap_classes.json")
+OUT_DIR = Path("/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/tools/audit/blizzard_retail_gaps")
 
 GENERIC_IGNORE = {
     67, 469, 891, 892, 980, 1097, 1118, 1162, 1168, 1169, 1245, 1444, 1834, 2104, 2414, 2506, 2569, 2593, 2698,
@@ -103,12 +104,28 @@ def main() -> int:
         "gapClassCounts": dict(sorted(counts.items())),
         "rows": rows,
     }
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (OUT_DIR / "index.json").write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    for gap_class in sorted(counts):
+        class_rows = [row for row in rows if row["gapClass"] == gap_class]
+        class_out = {
+            "meta": report["meta"],
+            "gapClass": gap_class,
+            "count": len(class_rows),
+            "rows": class_rows,
+        }
+        (OUT_DIR / f"{gap_class}.json").write_text(
+            json.dumps(class_out, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
 
     print("Gap classes:")
     for key, value in sorted(counts.items()):
         print(f"  {key}: {value}")
     print(f"Wrote report: {OUT}")
+    print(f"Wrote directory: {OUT_DIR}")
     return 0
 
 
