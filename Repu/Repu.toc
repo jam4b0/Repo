@@ -18,6 +18,8 @@ data\wrath.lua
 data\cata.lua
 data\mop.lua
 data\retail\core.lua
+data\retail\client_seed.lua
+data\retail\coverage_generated.lua
 data\retail\kalimdor.lua
 data\retail\eastern_kingdoms.lua
 data\retail\outland.lua

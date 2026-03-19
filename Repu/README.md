@@ -62,6 +62,7 @@ Der aktuelle Stand:
 - `tools/compare_map_seed.py` vergleicht den generierten Client-Seed mit der bestehenden Retail-Basis und zeigt Ueberlappung sowie Luecken
 - `tools/list_curation_candidates.py` listet `client_seed`-Eintraege, die noch keine kuratierte Retail-Abdeckung haben
 - `tools/prioritize_curation_candidates.py` gruppiert diese Kandidaten nach Weltblock und liefert eine blockweise Prioritaetsmatrix
+- `tools/generate_reviewed_coverage.py` erzeugt daraus ein generiertes Retail-Coverage-Modul fuer alle normalen offenen Zonen ohne Fraktionswissen
 
 ## Map-Scan-Pipeline
 
