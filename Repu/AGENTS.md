@@ -28,7 +28,7 @@
 ## Content-Regeln
 
 - `Repu` selbst enthaelt nur die Content-Schnittstelle, nicht die grosse Wissensbasis.
-- `Repu_Data` kann Retail-Content in Untermodulen wie `content/retail/families/quelthalas.lua` pflegen.
+- `Repu_Data` pflegt Expansionscontent unter `content/retail/expansions/`; `families/` ist nur fuer echte Parent/Child-Familien wie `quelthalas.lua` oder `shattrath.lua`.
 - Wegpunktdaten liegen als `mapID`, `x`, `y`, `title` direkt an der Aktivität oder dem NPC.
 - Content-Einträge sollen nach Möglichkeit `source` und `confidence` tragen.
 - Quellen wie Wowhead dienen als Offline-Referenz; das Addon macht keine Live-Abfragen.

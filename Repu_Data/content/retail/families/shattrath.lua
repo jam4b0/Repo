@@ -71,29 +71,5 @@ api.RegisterRetailContentModule({
                 },
             },
         },
-        [1031] = {
-            summary = "Die Himmelswache der Sha'tari ist eine spätere Scherbenwelt-Fraktion mit enger Bindung an Shattrath und den Schergrat.",
-            source = "seed",
-            confidence = "medium",
-            activities = {
-                {
-                    title = "Skyguard-Aufgaben",
-                    kind = "Täglich/Wiederholbar",
-                    location = SHATTRATH_CITY,
-                },
-            },
-        },
-        [1077] = {
-            summary = "Die Offensive der Zerschmetterten Sonne ist die Insel-von-Quel'Danas-Fraktion, wird im Shattrath-Cluster aber sinnvoll als spätere Scherbenwelt-Erweiterung mitgeführt.",
-            source = "seed",
-            confidence = "medium",
-            activities = {
-                {
-                    title = "Quel'Danas-Dailys",
-                    kind = "Täglich",
-                    location = { mapID = 122, title = "Isle of Quel'Danas" },
-                },
-            },
-        },
     },
 })
