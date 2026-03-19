@@ -61,6 +61,7 @@ Der aktuelle Stand:
 - `tools/generate_map_seed.py` erzeugt aus dem Manifest ein reines Zonen-Skelett fuer spaetere `Repu`-Seeds, ohne schon Fraktionswissen zu erfinden
 - `tools/compare_map_seed.py` vergleicht den generierten Client-Seed mit der bestehenden Retail-Basis und zeigt Ueberlappung sowie Luecken
 - `tools/list_curation_candidates.py` listet `client_seed`-Eintraege, die noch keine kuratierte Retail-Abdeckung haben
+- `tools/prioritize_curation_candidates.py` gruppiert diese Kandidaten nach Weltblock und liefert eine blockweise Prioritaetsmatrix
 
 ## Map-Scan-Pipeline
 
