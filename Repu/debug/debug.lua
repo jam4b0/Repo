@@ -433,6 +433,10 @@ function ns.Debug:DumpFactions(limit)
             progressMax = faction.progressMax or 0,
             watched = faction.isWatched,
             exalted = faction.isExalted,
+            isMajorFaction = faction.isMajorFaction,
+            renownLevel = faction.renownLevel,
+            majorFactionData = faction.majorFactionData,
+            raw = faction.raw,
         }
     end
 
@@ -446,7 +450,7 @@ function ns.Debug:DumpFactions(limit)
     for index = 1, math.min(#list, maxCount) do
         local faction = list[index]
         printLine(string.format(
-            "#%d id=%s name=%s standing=%s progress=%d/%d watched=%s exalted=%s",
+            "#%d id=%s name=%s standing=%s progress=%d/%d watched=%s exalted=%s major=%s renown=%s",
             index,
             tostring(faction.factionID),
             tostring(faction.name),
@@ -454,7 +458,9 @@ function ns.Debug:DumpFactions(limit)
             faction.progressValue or 0,
             faction.progressMax or 0,
             tostring(faction.isWatched),
-            tostring(faction.isExalted)
+            tostring(faction.isExalted),
+            tostring(faction.isMajorFaction),
+            tostring(faction.renownLevel)
         ))
     end
 end

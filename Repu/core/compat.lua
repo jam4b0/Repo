@@ -15,7 +15,25 @@ local function getMajorFactionData(factionID)
     end
 
     if type(C_MajorFactions.GetMajorFactionData) == "function" then
-        return C_MajorFactions.GetMajorFactionData(factionID)
+        local ok, result = pcall(C_MajorFactions.GetMajorFactionData, factionID)
+        if ok then
+            return result
+        end
+    end
+
+    return nil
+end
+
+local function getCurrentRenownLevel(factionID)
+    if not factionID or not _G.C_MajorFactions then
+        return nil
+    end
+
+    if type(C_MajorFactions.GetCurrentRenownLevel) == "function" then
+        local ok, result = pcall(C_MajorFactions.GetCurrentRenownLevel, factionID)
+        if ok and type(result) == "number" and result > 0 then
+            return result
+        end
     end
 
     return nil
@@ -26,8 +44,12 @@ local function normalizeRetailFactionData(index, data)
         return nil
     end
 
-    local majorFactionData = data.isMajorFaction and getMajorFactionData(data.factionID) or nil
-    local renownLevel = data.renownLevel or (majorFactionData and majorFactionData.renownLevel) or nil
+    local majorFactionData = getMajorFactionData(data.factionID)
+    local renownLevel = data.renownLevel
+        or getCurrentRenownLevel(data.factionID)
+        or (majorFactionData and majorFactionData.renownLevel)
+        or nil
+    local isMajorFaction = data.isMajorFaction or (type(renownLevel) == "number" and renownLevel > 0) or majorFactionData ~= nil
     local currentValue = data.currentStanding or data.currentStandingValue or 0
     local minValue = data.currentReactionThreshold or 0
     local maxValue = data.nextReactionThreshold or data.reactionThreshold or currentValue
@@ -66,7 +88,7 @@ local function normalizeRetailFactionData(index, data)
         hasBonusRepGain = data.hasBonusRepGain,
         canSetInactive = data.canSetInactive,
         isAccountWide = data.isAccountWide,
-        isMajorFaction = data.isMajorFaction,
+        isMajorFaction = isMajorFaction and true or false,
         renownLevel = renownLevel,
         friendshipRepID = data.friendshipRepID,
         raw = data,
@@ -181,7 +203,8 @@ function ns.Compat:GetFactionDataByID(factionID)
     end
 
     if self:HasRetailReputationAPI() and C_Reputation.GetFactionDataByID then
-        return C_Reputation.GetFactionDataByID(factionID)
+        local data = C_Reputation.GetFactionDataByID(factionID)
+        return normalizeRetailFactionData(0, data)
     end
 
     for _, row in ipairs(self:CollectFactionRows()) do
@@ -489,6 +512,9 @@ function ns.Compat:GetAPISummary()
         hasCReputationGetNumFactions = _G.C_Reputation and type(C_Reputation.GetNumFactions) == "function" or false,
         hasCReputationGetFactionDataByIndex = _G.C_Reputation and type(C_Reputation.GetFactionDataByIndex) == "function" or false,
         hasCReputationGetWatchedFactionData = _G.C_Reputation and type(C_Reputation.GetWatchedFactionData) == "function" or false,
+        hasCMajorFactions = _G.C_MajorFactions ~= nil,
+        hasCMajorFactionsGetMajorFactionData = _G.C_MajorFactions and type(C_MajorFactions.GetMajorFactionData) == "function" or false,
+        hasCMajorFactionsGetCurrentRenownLevel = _G.C_MajorFactions and type(C_MajorFactions.GetCurrentRenownLevel) == "function" or false,
         hasCMap = _G.C_Map ~= nil,
         locale = GetLocale and GetLocale() or nil,
         wowProjectID = _G.WOW_PROJECT_ID,
