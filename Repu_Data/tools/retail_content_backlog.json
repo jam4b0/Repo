@@ -1,8 +1,8 @@
 {
   "meta": {
-    "coreFactionCount": 134,
-    "contentFactionCount": 145,
-    "coveredCount": 134,
+    "coreFactionCount": 135,
+    "contentFactionCount": 146,
+    "coveredCount": 135,
     "missingCount": 0
   },
   "covered": [
@@ -427,6 +427,24 @@
       ],
       "sourceFiles": [
         "kalimdor.lua"
+      ]
+    },
+    {
+      "factionID": 909,
+      "exampleLocations": [
+        {
+          "name": "Dunkelmond-Insel",
+          "section": "zones",
+          "file": "neutral.lua"
+        },
+        {
+          "name": "Dunkelmond-Insel",
+          "section": "subZones",
+          "file": "neutral.lua"
+        }
+      ],
+      "sourceFiles": [
+        "neutral.lua"
       ]
     },
     {

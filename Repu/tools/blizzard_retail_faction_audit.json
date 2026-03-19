@@ -4,11 +4,11 @@
     "locale": "en_US",
     "blizzardFactionCount": 281,
     "blizzardRootCount": 14,
-    "addonCoreFactionCount": 134,
-    "addonContentFactionCount": 145,
-    "coreCoveredByContentCount": 134,
+    "addonCoreFactionCount": 135,
+    "addonContentFactionCount": 146,
+    "coreCoveredByContentCount": 135,
     "coreMissingContentCount": 0,
-    "blizzardMissingInCoreCount": 148,
+    "blizzardMissingInCoreCount": 147,
     "contentOnlyCount": 11
   },
   "classificationCounts": {
@@ -187,15 +187,6 @@
       "name": "Horde Forces",
       "classification": "generic_header",
       "isHeader": true,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 909,
-      "name": "Darkmoon Faire",
-      "classification": "leaf",
-      "isHeader": false,
       "isRenown": false,
       "sourceFiles": [],
       "exampleLocations": []

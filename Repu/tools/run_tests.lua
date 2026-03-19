@@ -79,6 +79,7 @@ local suiteConfigs = {
             "data/retail/mappings/regions/draenor.lua",
             "data/retail/mappings/regions/war_within.lua",
             "data/retail/mappings/regions/midnight.lua",
+            "data/retail/mappings/regions/neutral.lua",
             "data/retail.lua",
         },
     },

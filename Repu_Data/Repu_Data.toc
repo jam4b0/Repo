@@ -14,6 +14,7 @@ content\retail\expansions\outland.lua
 content\retail\expansions\war_within.lua
 content\retail\expansions\cataclysm.lua
 content\retail\legacy\homelands.lua
+content\retail\legacy\neutral_hubs.lua
 content\retail\expansions\northrend.lua
 content\retail\expansions\pandaria.lua
 content\retail\expansions\draenor.lua

@@ -249,6 +249,27 @@ return {
         forbidVisibleFactionIDs = { 576 },
     },
     {
+        name = "retail_neutral_darkmoon_island_prefers_darkmoon_faire",
+        context = {
+            activeFlavor = "retail",
+            mapID = 407,
+            mapName = "Dunkelmond-Insel",
+            zoneName = "Dunkelmond-Insel",
+            zoneKey = "dunkelmond-insel",
+            subZoneName = "Dunkelmond-Insel",
+            subZoneKey = "dunkelmond-insel",
+            playerFactionGroup = "Horde",
+            instanceType = "none",
+            isInInstance = false,
+        },
+        rawFactions = {
+            { factionID = 909, name = "Dunkelmond-Jahrmarkt", standingID = 6, progressValue = 3100, progressMax = 12000, progressPct = 25.8, hasRepEntry = true },
+            { factionID = 76, name = "Orgrimmar", standingID = 5, progressValue = 1000, progressMax = 6000, progressPct = 16.6, hasRepEntry = true },
+        },
+        expectTopFactionID = 909,
+        forbidVisibleFactionIDs = { 76 },
+    },
+    {
         name = "retail_companion_visible_when_option_enabled",
         profile = {
             maxBars = 5,

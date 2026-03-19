@@ -49,6 +49,7 @@ data\retail\mappings\regions\shadowlands.lua
 data\retail\mappings\regions\dragonflight.lua
 data\retail\mappings\regions\war_within.lua
 data\retail\mappings\regions\midnight.lua
+data\retail\mappings\regions\neutral.lua
 data\retail\variants\catalog.lua
 data\retail.lua
 core\location.lua
