@@ -445,6 +445,7 @@ function ns.UI:UpdateDetails(details, count, profile)
     end
 
     detail.body:SetText(table.concat(bodyLines, "\n"))
+    detail.body:SetWidth((profile.width or self.frame:GetWidth() or 320) - 40)
 
     local entries = {}
     for _, quartermaster in ipairs(quartermasters) do
@@ -462,8 +463,8 @@ function ns.UI:UpdateDetails(details, count, profile)
         }
     end
 
-    local bodyHeight = math.max(52, detail.body:GetStringHeight() or 0)
-    local buttonsTopOffset = -92 - bodyHeight - 10
+    local bodyHeight = math.ceil(math.max(52, detail.body:GetStringHeight() or 0))
+    local buttonsTopOffset = -92 - bodyHeight - 22
 
     for index, button in ipairs(detail.buttons) do
         local entry = entries[index]
@@ -484,7 +485,7 @@ function ns.UI:UpdateDetails(details, count, profile)
         end
     end
 
-    local detailHeight = 108 + bodyHeight + (#entries * 20) + 14
+    local detailHeight = 120 + bodyHeight + (#entries * 20) + 16
     detail:SetHeight(detailHeight)
 
     detail:Show()
