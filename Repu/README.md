@@ -66,6 +66,8 @@ Der aktuelle Stand:
 - `tools/generate_reviewed_hubs.py` erzeugt daraus ein separates, bewusst konservatives Hub-/Subzonen-Coverage-Modul
 - `tools/generate_hub_wave2.py` erzeugt eine zweite, explizite Keep-Case-Welle fuer nur manuell freigegebene Outdoor-/Hub-Subzonen
 - `tools/classify_remaining_candidates.py` trennt den schwierigen Rest in Varianten, PvP/Event, instanznahe Hubs und technische Sonderkarten
+- `tools/generate_variant_family_manifest.py` gruppiert die verbleibenden Dubletten in reviewbare Variantenfamilien statt nur Einzel-IDs
+- `tools/generate_world_variant_coverage.py` uebernimmt die echten Welt-/Phasing-Varianten als Coverage-Schicht und laesst Event-/Instanz-/Technikvarianten weiter offen
 - `tools/generate_remaining_zone_wave.py` erzeugt aus `normal_zones` des Restreports eine zweite autonome Coverage-Welle
 - `tools/generate_final_zone_cleanup.py` erzeugt aus den letzten verbleibenden Zonen nur explizite Keep-Cases fuer die Abschlusswelle
 - `tools/generate_variant_zone_coverage.py` behandelt die verbleibenden Dubletten-/Variantenzonen als explizite Keep-/Exclude-Liste
