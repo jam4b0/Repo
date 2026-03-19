@@ -11,19 +11,9 @@
     "blizzardMissingInCoreCount": 155,
     "contentOnlyCount": 11
   },
-  "gapClass": "candidate_modern_side_system",
-  "count": 8,
+  "gapClass": "candidate_micro_side_rep",
+  "count": 5,
   "rows": [
-    {
-      "factionID": 2164,
-      "name": "Champions of Azeroth",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_modern_side_system"
-    },
     {
       "factionID": 2669,
       "name": "Darkfuse Solutions",
@@ -32,7 +22,7 @@
       "isRenown": false,
       "sourceFiles": [],
       "exampleLocations": [],
-      "gapClass": "candidate_modern_side_system"
+      "gapClass": "candidate_micro_side_rep"
     },
     {
       "factionID": 2664,
@@ -42,7 +32,7 @@
       "isRenown": false,
       "sourceFiles": [],
       "exampleLocations": [],
-      "gapClass": "candidate_modern_side_system"
+      "gapClass": "candidate_micro_side_rep"
     },
     {
       "factionID": 2665,
@@ -52,7 +42,7 @@
       "isRenown": false,
       "sourceFiles": [],
       "exampleLocations": [],
-      "gapClass": "candidate_modern_side_system"
+      "gapClass": "candidate_micro_side_rep"
     },
     {
       "factionID": 2663,
@@ -62,7 +52,7 @@
       "isRenown": false,
       "sourceFiles": [],
       "exampleLocations": [],
-      "gapClass": "candidate_modern_side_system"
+      "gapClass": "candidate_micro_side_rep"
     },
     {
       "factionID": 2666,
@@ -72,27 +62,7 @@
       "isRenown": false,
       "sourceFiles": [],
       "exampleLocations": [],
-      "gapClass": "candidate_modern_side_system"
-    },
-    {
-      "factionID": 2472,
-      "name": "The Archivists' Codex",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_modern_side_system"
-    },
-    {
-      "factionID": 2163,
-      "name": "Tortollan Seekers",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": [],
-      "gapClass": "candidate_modern_side_system"
+      "gapClass": "candidate_micro_side_rep"
     }
   ]
 }

@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "region": "eu",
+    "locale": "en_US",
+    "blizzardFactionCount": 281,
+    "blizzardRootCount": 14,
+    "addonCoreFactionCount": 127,
+    "addonContentFactionCount": 138,
+    "coreCoveredByContentCount": 127,
+    "coreMissingContentCount": 0,
+    "blizzardMissingInCoreCount": 155,
+    "contentOnlyCount": 11
+  },
+  "gapClass": "candidate_global_system",
+  "count": 2,
+  "rows": [
+    {
+      "factionID": 2164,
+      "name": "Champions of Azeroth",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_global_system"
+    },
+    {
+      "factionID": 2163,
+      "name": "Tortollan Seekers",
+      "classification": "leaf",
+      "isHeader": false,
+      "isRenown": false,
+      "sourceFiles": [],
+      "exampleLocations": [],
+      "gapClass": "candidate_global_system"
+    }
+  ]
+}
