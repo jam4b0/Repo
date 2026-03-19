@@ -24,7 +24,7 @@ SKIP_REPU_FILES = {"core.lua", "retail.lua"}
 def collect_core_faction_ids() -> dict[int, dict]:
     faction_data: dict[int, dict] = {}
 
-    for path in sorted(REPU_RETAIL_ROOT.glob("*.lua")):
+    for path in sorted(REPU_RETAIL_ROOT.rglob("*.lua")):
         if path.name in SKIP_REPU_FILES:
             continue
 
@@ -90,7 +90,7 @@ def collect_core_faction_ids() -> dict[int, dict]:
 
 def collect_content_faction_ids() -> set[int]:
     faction_ids: set[int] = set()
-    for path in sorted(REPU_DATA_RETAIL_ROOT.glob("*.lua")):
+    for path in sorted(REPU_DATA_RETAIL_ROOT.rglob("*.lua")):
         text = path.read_text(encoding="utf-8")
         faction_ids.update(int(value) for value in CONTENT_FACTION_RE.findall(text))
     return faction_ids

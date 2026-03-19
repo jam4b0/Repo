@@ -8,33 +8,8 @@ import re
 from pathlib import Path
 
 
-RETAIL_MODULES = [
-    "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/coverage_generated.lua",
-    "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/coverage_hubs_generated.lua",
-    "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/coverage_hubs_wave2_generated.lua",
-    "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/coverage_wave2_generated.lua",
-    "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/coverage_cleanup_generated.lua",
-    "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/coverage_variants_generated.lua",
-    "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/coverage_world_variants_generated.lua",
-    "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/coverage_event_variants_generated.lua",
-    "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/coverage_special_zones_generated.lua",
-    "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/coverage_instance_adjacent_generated.lua",
-    "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/coverage_instance_variants_generated.lua",
-    "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/coverage_mixed_world_subzones_generated.lua",
-    "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/coverage_special_subzones_generated.lua",
-    "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/coverage_final_subzones_generated.lua",
-    "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/eastern_kingdoms.lua",
-    "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/kalimdor.lua",
-    "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/outland.lua",
-    "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/northrend.lua",
-    "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/pandaria.lua",
-    "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/draenor.lua",
-    "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/broken_isles.lua",
-    "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/bfa.lua",
-    "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/shadowlands.lua",
-    "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/dragonflight.lua",
-    "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail/current.lua",
-]
+RETAIL_ROOT = Path("/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/data/retail")
+SKIP_FILES = {"core.lua"}
 
 
 def parse_args() -> argparse.Namespace:
@@ -171,8 +146,10 @@ def load_curated_retail() -> dict:
         "zones": {},
         "subZones": {},
     }
-    for raw_path in RETAIL_MODULES:
-        parsed = parse_retail_locations(Path(raw_path))
+    for path in sorted(RETAIL_ROOT.rglob("*.lua")):
+        if path.name in SKIP_FILES:
+            continue
+        parsed = parse_retail_locations(path)
         merged["zones"].update(parsed["zones"])
         merged["subZones"].update(parsed["subZones"])
     return merged

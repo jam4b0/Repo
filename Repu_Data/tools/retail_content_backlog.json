@@ -1,8 +1,8 @@
 {
   "meta": {
-    "coreFactionCount": 103,
-    "contentFactionCount": 116,
-    "coveredCount": 103,
+    "coreFactionCount": 104,
+    "contentFactionCount": 117,
+    "coveredCount": 104,
     "missingCount": 0
   },
   "covered": [
@@ -940,13 +940,13 @@
         {
           "name": "Azshara",
           "section": "subZones",
-          "file": "variants.lua"
+          "file": "catalog.lua"
         }
       ],
       "sourceFiles": [
         "bfa.lua",
-        "kalimdor.lua",
-        "variants.lua"
+        "catalog.lua",
+        "kalimdor.lua"
       ]
     },
     {
@@ -1162,12 +1162,12 @@
         {
           "name": "Tal der Ewigen Blüten",
           "section": "subZones",
-          "file": "variants.lua"
+          "file": "catalog.lua"
         }
       ],
       "sourceFiles": [
-        "pandaria.lua",
-        "variants.lua"
+        "catalog.lua",
+        "pandaria.lua"
       ]
     },
     {
@@ -2303,18 +2303,49 @@
       "factionID": 2696,
       "exampleLocations": [
         {
+          "name": "Zul'Aman",
+          "section": "zones",
+          "file": "current.lua"
+        },
+        {
+          "name": "Zul'Aman",
+          "section": "subZones",
+          "file": "current.lua"
+        },
+        {
           "name": "March on Quel'Danas",
           "section": "raids",
           "file": "current.lua"
+        },
+        {
+          "name": "Zul'Aman",
+          "section": "zones",
+          "file": "eastern_kingdoms.lua"
+        },
+        {
+          "name": "Zul'Aman",
+          "section": "subZones",
+          "file": "eastern_kingdoms.lua"
         }
       ],
       "sourceFiles": [
-        "current.lua"
+        "current.lua",
+        "eastern_kingdoms.lua"
       ]
     },
     {
       "factionID": 2699,
       "exampleLocations": [
+        {
+          "name": "Leerensturm",
+          "section": "zones",
+          "file": "current.lua"
+        },
+        {
+          "name": "Obskurionzitadelle",
+          "section": "subZones",
+          "file": "current.lua"
+        },
         {
           "name": "Eco-Dome Al'dani",
           "section": "instances",
@@ -2324,10 +2355,45 @@
           "name": "Voidspire",
           "section": "raids",
           "file": "current.lua"
+        },
+        {
+          "name": "Leerensturm",
+          "section": "zones",
+          "file": "eastern_kingdoms.lua"
         }
       ],
       "sourceFiles": [
-        "current.lua"
+        "current.lua",
+        "eastern_kingdoms.lua"
+      ]
+    },
+    {
+      "factionID": 2704,
+      "exampleLocations": [
+        {
+          "name": "Harandar",
+          "section": "zones",
+          "file": "current.lua"
+        },
+        {
+          "name": "Harandar",
+          "section": "subZones",
+          "file": "current.lua"
+        },
+        {
+          "name": "Harandar",
+          "section": "zones",
+          "file": "eastern_kingdoms.lua"
+        },
+        {
+          "name": "Harandar",
+          "section": "subZones",
+          "file": "eastern_kingdoms.lua"
+        }
+      ],
+      "sourceFiles": [
+        "current.lua",
+        "eastern_kingdoms.lua"
       ]
     },
     {

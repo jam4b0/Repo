@@ -7,7 +7,7 @@ from pathlib import Path
 
 
 BACKLOG = Path("/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu_Data/tools/retail_content_backlog.json")
-OUT = Path("/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu_Data/content/retail/summary_seed_generated.lua")
+OUT = Path("/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu_Data/content/retail/summary/generated.lua")
 
 
 def unique_names(example_locations: list[dict]) -> list[str]:

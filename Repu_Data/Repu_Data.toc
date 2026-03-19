@@ -6,9 +6,9 @@
 ## Dependencies: Repu
 
 content\shared.lua
-content\retail\quelthalas.lua
-content\retail\current.lua
-content\retail\homelands.lua
-content\retail\outland.lua
-content\retail\summary_seed_generated.lua
+content\retail\families\quelthalas.lua
+content\retail\current\war_within.lua
+content\retail\legacy\homelands.lua
+content\retail\families\outland.lua
+content\retail\summary\generated.lua
 content\retail.lua

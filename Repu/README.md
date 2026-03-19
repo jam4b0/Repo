@@ -20,6 +20,13 @@ Wenn kein Daten-Mapping greift, faellt das Addon kontrolliert auf sinnvolle Fall
 - `ui/`: Darstellung, Zeilen, Styles, spaetere Optionsintegration
 - `debug/`: Slash-Kommandos, Dumps, Test-Ansichten
 
+Retail wird intern jetzt fest nach Verantwortung getrennt:
+
+- `data/retail/coverage/`: client_seed und generierte Coverage-Schichten
+- `data/retail/mappings/regions/`: kuratierte regionale Orts-/Fraktionsmappings
+- `data/retail/variants/`: bewusst getrennte Weltzustands- und Phasenfaelle
+- `tests/cases/retail/`: datengetriebene Retail-Regressionstests
+
 ## Addon-Aufteilung
 
 - `Repu`: Logik, Standorterkennung, Priorisierung, Haupt-UI
@@ -31,6 +38,13 @@ Der aktuelle Stand:
 - `Repu` ist aktiv
 - `Repu_Data` ist als separates Datenaddon aktiv
 - `Repu_Map` ist als optionale Integrationsschicht vorbereitet
+
+`Repu_Data` ist fuer Retail jetzt ebenfalls fest gegliedert:
+
+- `content/retail/current/`: aktuelle Expansion und Hauptfraktionen
+- `content/retail/families/`: gruppierte Fraktionsfamilien wie Quel'Thalas oder Shattrath
+- `content/retail/legacy/`: stabile Heimat- und Legacy-Fraktionen
+- `content/retail/summary/`: generierte Startdatensaetze fuer noch nicht vertiefte Fraktionen
 
 ## Aktueller Stand
 
@@ -59,7 +73,7 @@ Der Retail-Core ist aktuell in vier klare Buckets aufgeteilt:
 Aktueller Retail-Backlog-Stand aus `tools/retail_faction_backlog.json`:
 
 - `recordCount = 1002`
-- `mapped = 763`
+- `mapped = 771`
 - `generated_secondary = 187`
 - `variant_only = 46`
 - `no_local_reputation = 6`

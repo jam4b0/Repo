@@ -1,8 +1,8 @@
 {
   "meta": {
-    "recordCount": 1002,
+    "recordCount": 1010,
     "statusCounts": {
-      "mapped": 763,
+      "mapped": 771,
       "generated_secondary": 187,
       "variant_only": 46,
       "no_local_reputation": 6
@@ -12,11 +12,11 @@
       "instances:mapped": 83,
       "raids:mapped": 40,
       "subZones:generated_secondary": 113,
-      "subZones:mapped": 326,
+      "subZones:mapped": 330,
       "subZones:no_local_reputation": 2,
       "subZones:variant_only": 30,
       "zones:generated_secondary": 74,
-      "zones:mapped": 314,
+      "zones:mapped": 318,
       "zones:no_local_reputation": 4,
       "zones:variant_only": 16
     }

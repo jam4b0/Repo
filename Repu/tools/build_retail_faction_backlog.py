@@ -137,7 +137,7 @@ def parse_records(path: Path) -> list[dict]:
 
 def build_report() -> dict:
     records: list[dict] = []
-    for path in sorted(ROOT.glob("*.lua")):
+    for path in sorted(ROOT.rglob("*.lua")):
         if path.name in SKIP_FILES:
             continue
         records.extend(parse_records(path))
