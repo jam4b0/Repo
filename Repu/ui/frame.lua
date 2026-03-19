@@ -64,8 +64,6 @@ end
 local function createDetailButton(parent, index)
     local button = CreateFrame("Button", nil, parent, BackdropTemplateMixin and "BackdropTemplate")
     button:SetHeight(18)
-    button:SetPoint("TOPLEFT", parent.body, "TOPLEFT", 0, -92 - ((index - 1) * 20))
-    button:SetPoint("TOPRIGHT", parent.body, "TOPRIGHT", 0, -92 - ((index - 1) * 20))
     button:RegisterForClicks("LeftButtonUp")
 
     button.label = button:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
@@ -296,8 +294,8 @@ function ns.UI:Refresh(candidates, context)
         end
     end
 
-    local detailHeight = details and 212 or 0
-    local height = 22 + (count * (profile.rowHeight + 3)) + detailHeight + 12
+    local rowsHeight = 22 + (count * (profile.rowHeight + 3))
+    local height = rowsHeight + 12
     self.frame:SetScale(profile.scale)
     self.frame:SetAlpha(profile.opacity or 1)
     self.frame:SetWidth(profile.width)
@@ -319,7 +317,8 @@ function ns.UI:Refresh(candidates, context)
     end
 
     if details then
-        self:UpdateDetails(details, count, profile)
+        local detailHeight = self:UpdateDetails(details, count, profile) or 0
+        self.frame:SetHeight(rowsHeight + detailHeight + 12)
     else
         self.frame.detail:Hide()
     end
@@ -365,8 +364,6 @@ function ns.UI:UpdateDetails(details, count, profile)
     detail:ClearAllPoints()
     detail:SetPoint("TOPLEFT", self.frame, "TOPLEFT", 8, yOffset)
     detail:SetPoint("TOPRIGHT", self.frame, "TOPRIGHT", -8, yOffset)
-    detail:SetHeight(204)
-
     local progressText = string.format(
         "%s  %d/%d  %.1f%%",
         tostring(details.standingLabel or UNKNOWN),
@@ -465,9 +462,15 @@ function ns.UI:UpdateDetails(details, count, profile)
         }
     end
 
+    local bodyHeight = math.max(52, detail.body:GetStringHeight() or 0)
+    local buttonsTopOffset = -92 - bodyHeight - 10
+
     for index, button in ipairs(detail.buttons) do
         local entry = entries[index]
         if entry then
+            button:ClearAllPoints()
+            button:SetPoint("TOPLEFT", detail, "TOPLEFT", 12, buttonsTopOffset - ((index - 1) * 20))
+            button:SetPoint("TOPRIGHT", detail, "TOPRIGHT", -12, buttonsTopOffset - ((index - 1) * 20))
             button.label:SetText(entry.label)
             button.meta:SetText(entry.meta)
             button.location = entry.location
@@ -481,5 +484,9 @@ function ns.UI:UpdateDetails(details, count, profile)
         end
     end
 
+    local detailHeight = 108 + bodyHeight + (#entries * 20) + 14
+    detail:SetHeight(detailHeight)
+
     detail:Show()
+    return detailHeight
 end
