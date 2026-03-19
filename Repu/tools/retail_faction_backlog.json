@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "recordCount": 1002,
+    "statusCounts": {
+      "mapped": 763,
+      "generated_secondary": 187,
+      "variant_only": 46,
+      "no_local_reputation": 6
+    },
+    "manualReviewCount": 0,
+    "sectionStatusCounts": {
+      "instances:mapped": 83,
+      "raids:mapped": 40,
+      "subZones:generated_secondary": 113,
+      "subZones:mapped": 326,
+      "subZones:no_local_reputation": 2,
+      "subZones:variant_only": 30,
+      "zones:generated_secondary": 74,
+      "zones:mapped": 314,
+      "zones:no_local_reputation": 4,
+      "zones:variant_only": 16
+    }
+  },
+  "manualReview": [],
+  "priorityReview": []
+}

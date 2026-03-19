@@ -47,6 +47,30 @@ Der aktuelle Stand:
 - Datenqualitaet wird ueber `source` und `confidence` klassifiziert
 - Content-Datensaetze koennen ebenfalls mit `source` und `confidence` markiert werden
 
+## Retail-Status
+
+Der Retail-Core ist aktuell in vier klare Buckets aufgeteilt:
+
+- `mapped`: lokale Ruffraktion oder Fraktionsfamilie ist bewusst hinterlegt
+- `generated_secondary`: reine Coverage-/Seed-Schicht ohne eigene Ortsfraktion
+- `variant_only`: Weltzustand-/Phasenfall ist getrennt, aber nicht mit einer eigenen lokalen Ruffraktion belegt
+- `no_local_reputation`: Zone/Subzone hat bewusst keine lokale Ruffraktion und bleibt daher leer
+
+Aktueller Retail-Backlog-Stand aus `tools/retail_faction_backlog.json`:
+
+- `recordCount = 1002`
+- `mapped = 763`
+- `generated_secondary = 187`
+- `variant_only = 46`
+- `no_local_reputation = 6`
+- `manualReviewCount = 0`
+
+Das bedeutet:
+
+- die Retail-Standortbasis ist im Core-Datenmodell geschlossen
+- offene Retail-Restfaelle sind nicht mehr als ungeklaerte Backlog-Kandidaten vorhanden
+- verbleibende Arbeit liegt jetzt eher in zusaetzlichen Inhaltsdaten fuer `Repu_Data` oder in spaeteren bewussten Mapping-Erweiterungen, nicht mehr im Grundunterbau
+
 ## Naechster Ausbau
 
 1. Datenmodule fraktions- und instanzvollstaendig fuellen
@@ -79,6 +103,8 @@ Der aktuelle Stand:
 - `tools/generate_remaining_zone_wave.py` erzeugt aus `normal_zones` des Restreports eine zweite autonome Coverage-Welle
 - `tools/generate_final_zone_cleanup.py` erzeugt aus den letzten verbleibenden Zonen nur explizite Keep-Cases fuer die Abschlusswelle
 - `tools/generate_variant_zone_coverage.py` behandelt die verbleibenden Dubletten-/Variantenzonen als explizite Keep-/Exclude-Liste
+- `tools/build_retail_faction_backlog.py` erzeugt aus allen Retail-Modulen einen bereinigten Fraktionsstatus-Report und unterdrueckt dabei Coverage-Schatten, wenn bereits kuratierte Overrides existieren
+- `tools/retail_faction_backlog.json` haelt den aktuellen Retail-Backlog-/Statusreport fuer den Core-Unterbau
 
 ## Map-Scan-Pipeline
 
