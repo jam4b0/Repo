@@ -428,22 +428,6 @@ function ns.UI:UpdateDetails(details, count, profile)
         details.summary or details.description or "Keine Beschreibung verfügbar.",
     }
 
-    if showQuartermasters then
-        bodyLines[#bodyLines + 1] = " "
-        bodyLines[#bodyLines + 1] = "Rüstmeister"
-        if #quartermasters == 0 then
-            bodyLines[#bodyLines + 1] = "Noch kein Datensatz."
-        end
-    end
-
-    if showActivities then
-        bodyLines[#bodyLines + 1] = " "
-        bodyLines[#bodyLines + 1] = "Daily/Weekly"
-        if #activities == 0 then
-            bodyLines[#bodyLines + 1] = "Noch kein Datensatz."
-        end
-    end
-
     detail.body:SetText(table.concat(bodyLines, "\n"))
     detail.body:SetWidth((profile.width or self.frame:GetWidth() or 320) - 40)
 
@@ -464,28 +448,83 @@ function ns.UI:UpdateDetails(details, count, profile)
     end
 
     local bodyHeight = math.ceil(math.max(52, detail.body:GetStringHeight() or 0))
-    local buttonsTopOffset = -92 - bodyHeight - 22
+    local contentTopOffset = -92 - bodyHeight - 18
+    local currentTopOffset = contentTopOffset
+    local entryIndex = 0
 
-    for index, button in ipairs(detail.buttons) do
-        local entry = entries[index]
-        if entry then
-            button:ClearAllPoints()
-            button:SetPoint("TOPLEFT", detail, "TOPLEFT", 12, buttonsTopOffset - ((index - 1) * 20))
-            button:SetPoint("TOPRIGHT", detail, "TOPRIGHT", -12, buttonsTopOffset - ((index - 1) * 20))
-            button.label:SetText(entry.label)
-            button.meta:SetText(entry.meta)
-            button.location = entry.location
+    local function addSectionHeader(text)
+        entryIndex = entryIndex + 1
+        local button = detail.buttons[entryIndex]
+        if not button then
+            return
+        end
+
+        button:ClearAllPoints()
+        button:SetPoint("TOPLEFT", detail, "TOPLEFT", 12, currentTopOffset)
+        button:SetPoint("TOPRIGHT", detail, "TOPRIGHT", -12, currentTopOffset)
+        button.label:SetText(text)
+        button.label:SetTextColor(unpack(Styles.accentText))
+        button.meta:SetText("")
+        button.location = nil
+        button:SetScript("OnClick", nil)
+        button:Show()
+        currentTopOffset = currentTopOffset - 24
+    end
+
+    local function addEntry(label, meta, location)
+        entryIndex = entryIndex + 1
+        local button = detail.buttons[entryIndex]
+        if not button then
+            return
+        end
+
+        button:ClearAllPoints()
+        button:SetPoint("TOPLEFT", detail, "TOPLEFT", 12, currentTopOffset)
+        button:SetPoint("TOPRIGHT", detail, "TOPRIGHT", -12, currentTopOffset)
+        button.label:SetText(label)
+        button.label:SetTextColor(unpack(Styles.text))
+        button.meta:SetText(meta or "")
+        button.location = location
+        if location then
             button:SetScript("OnClick", function(self)
                 ns.Waypoints:SetLocationWaypoint(self.location)
             end)
-            button:Show()
         else
-            button.location = nil
-            button:Hide()
+            button:SetScript("OnClick", nil)
+        end
+        button:Show()
+        currentTopOffset = currentTopOffset - 20
+    end
+
+    for _, button in ipairs(detail.buttons) do
+        button.location = nil
+        button:Hide()
+    end
+
+    if showQuartermasters then
+        addSectionHeader("Rüstmeister")
+        if #quartermasters == 0 then
+            addEntry("Noch kein Datensatz.", "", nil)
+        else
+            for _, quartermaster in ipairs(quartermasters) do
+                addEntry(quartermaster.name or "Rüstmeister", quartermaster.label or "Rüstmeister", quartermaster.location)
+            end
+        end
+        currentTopOffset = currentTopOffset - 6
+    end
+
+    if showActivities then
+        addSectionHeader("Daily/Weekly")
+        if #activities == 0 then
+            addEntry("Noch kein Datensatz.", "", nil)
+        else
+            for _, activity in ipairs(activities) do
+                addEntry(activity.title or activity.name or "Aktivität", activity.kind or "Aktivität", activity.location)
+            end
         end
     end
 
-    local detailHeight = 120 + bodyHeight + (#entries * 20) + 16
+    local detailHeight = math.abs(currentTopOffset) + 28
     detail:SetHeight(detailHeight)
 
     detail:Show()
