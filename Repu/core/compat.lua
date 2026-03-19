@@ -442,6 +442,7 @@ function ns.Compat:CollectFactionRows()
             local collapsedHeaders = {}
             local collectedRows = {}
             local numFactions = self:GetFactionCount()
+            local currentRepHeaderFactionID = nil
 
             for index = numFactions, 1, -1 do
                 local data = C_Reputation.GetFactionDataByIndex(index)
@@ -456,8 +457,19 @@ function ns.Compat:CollectFactionRows()
 
             for index = 1, numFactions do
                 local data = C_Reputation.GetFactionDataByIndex(index)
+                if data and data.isHeader then
+                    if data.isHeaderWithRep and data.factionID then
+                        currentRepHeaderFactionID = data.factionID
+                    elseif not data.isChild then
+                        currentRepHeaderFactionID = nil
+                    end
+                end
+
                 local row = normalizeRetailFactionData(index, data)
                 if row then
+                    if data and not data.isHeader and data.isChild and currentRepHeaderFactionID then
+                        row.parentFactionID = currentRepHeaderFactionID
+                    end
                     collectedRows[#collectedRows + 1] = row
                 end
             end

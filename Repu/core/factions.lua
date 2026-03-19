@@ -5,7 +5,7 @@ local RETAIL_COMPANION_FACTION_IDS = {
     [2640] = true, -- Brann Bronzebart
     [2744] = true, -- Valeera Sanguinar
 }
-local RETAIL_PARENT_FACTIONS = {
+local KNOWN_RETAIL_PARENT_FACTIONS = {
     [2600] = {
         children = {
             [2605] = true, -- Der General
@@ -23,7 +23,7 @@ local RETAIL_PARENT_FACTIONS = {
         },
     },
 }
-local RETAIL_CHILD_TO_PARENT = {
+local KNOWN_RETAIL_CHILD_TO_PARENT = {
     [2605] = 2600,
     [2607] = 2600,
     [2601] = 2600,
@@ -35,15 +35,31 @@ local RETAIL_CHILD_TO_PARENT = {
 }
 
 function ns.Factions:GetKnownChildFactionIDs(parentFactionID)
-    local parent = RETAIL_PARENT_FACTIONS[parentFactionID]
-    if not parent or not parent.children then
+    local childIDs = {}
+    local seen = {}
+    local runtime = ns.State and ns.State.runtime or nil
+    local rawFactions = runtime and runtime.rawFactions or nil
+    local dynamicChildren = rawFactions and rawFactions.childIDsByParent and rawFactions.childIDsByParent[parentFactionID] or nil
+
+    for _, factionID in ipairs(dynamicChildren or {}) do
+        if not seen[factionID] then
+            seen[factionID] = true
+            childIDs[#childIDs + 1] = factionID
+        end
+    end
+
+    local parent = KNOWN_RETAIL_PARENT_FACTIONS[parentFactionID]
+    for factionID in pairs(parent and parent.children or {}) do
+        if not seen[factionID] then
+            seen[factionID] = true
+            childIDs[#childIDs + 1] = factionID
+        end
+    end
+
+    if #childIDs == 0 then
         return nil
     end
 
-    local childIDs = {}
-    for factionID in pairs(parent.children) do
-        childIDs[#childIDs + 1] = factionID
-    end
     table.sort(childIDs)
     return childIDs
 end
@@ -124,6 +140,7 @@ local function normalizeFaction(row)
         isAccountWide = row.isAccountWide or false,
         isMajorFaction = row.isMajorFaction or false,
         hasRepEntry = true,
+        parentFactionID = row.parentFactionID,
         renownLevel = row.renownLevel,
         friendshipRepID = row.friendshipRepID,
         hasBonusRepGain = row.hasBonusRepGain or false,
@@ -172,6 +189,7 @@ local function createSyntheticFaction(match)
         isMajorFaction = factionData and factionData.isMajorFaction or false,
         hasRepEntry = hasRepEntry,
         isKnownMissing = not hasRepEntry,
+        parentFactionID = factionData and factionData.parentFactionID or (match.factionID and KNOWN_RETAIL_CHILD_TO_PARENT[match.factionID]) or nil,
         renownLevel = factionData and factionData.renownLevel or nil,
         friendshipRepID = factionData and factionData.friendshipRepID or nil,
         hasBonusRepGain = false,
@@ -207,7 +225,7 @@ local function addMatch(results, faction, match)
         tags = match.tags,
         isMapChain = match.isMapChain and true or false,
         chainDepth = match.chainDepth or 0,
-        parentFactionID = faction.factionID and RETAIL_CHILD_TO_PARENT[faction.factionID] or nil,
+        parentFactionID = faction.parentFactionID or (faction.factionID and KNOWN_RETAIL_CHILD_TO_PARENT[faction.factionID]) or nil,
     }
 end
 
@@ -236,12 +254,17 @@ function ns.Factions:CollectAll()
         list = {},
         byID = {},
         byName = {},
+        childIDsByParent = {},
     }
 
     for _, row in ipairs(rows) do
         local faction = normalizeFaction(row)
         if faction then
             indexFaction(collection, faction)
+            if faction.parentFactionID and faction.factionID then
+                collection.childIDsByParent[faction.parentFactionID] = collection.childIDsByParent[faction.parentFactionID] or {}
+                collection.childIDsByParent[faction.parentFactionID][#collection.childIDsByParent[faction.parentFactionID] + 1] = faction.factionID
+            end
         end
     end
 
