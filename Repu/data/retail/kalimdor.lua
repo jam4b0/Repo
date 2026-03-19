@@ -10,10 +10,8 @@ ns.Data:RegisterRetailModule({
                 notes = "Observed repeatedly across Orgrimmar city and internal map variants",
                 mapIDs = { 85, 113, 424, 1978 },
                 tags = { "city", "hub", "local" },
-                factions = {
-                    { name = "Schlächterduellum", weight = 245 },
-                    { name = "Valeera Sanguinar", weight = 235 },
-                },
+                factionIDs = { 76 },
+                weight = 250,
             },
             [86] = {
                 name = "Donnerfels",
@@ -196,7 +194,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 85 },
                 tags = { "city", "hub", "primary", "local" },
                 factions = {
-                    { name = "Schlächterduellum", weight = 255 },
+                    { factionID = 76, weight = 255 },
                 },
             },
             ["85:die pfadfinderhöhle"] = {
@@ -208,7 +206,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 85, 113, 424, 1978 },
                 tags = { "city", "hub", "local", "observed" },
                 factions = {
-                    { name = "Schlächterduellum", weight = 250 },
+                    { factionID = 76, weight = 250 },
                 },
             },
             ["85:das tal der geister"] = {
@@ -220,7 +218,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 85 },
                 tags = { "city", "hub", "local", "observed" },
                 factions = {
-                    { name = "Schlächterduellum", weight = 248 },
+                    { factionID = 76, weight = 248 },
                 },
             },
             ["85:das tal der weisheit"] = {
@@ -232,7 +230,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 85 },
                 tags = { "city", "hub", "local", "observed" },
                 factions = {
-                    { name = "Schlächterduellum", weight = 248 },
+                    { factionID = 76, weight = 248 },
                 },
             },
             ["85:das tal der ehre"] = {
@@ -244,7 +242,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 85 },
                 tags = { "city", "hub", "local", "observed" },
                 factions = {
-                    { name = "Schlächterduellum", weight = 248 },
+                    { factionID = 76, weight = 248 },
                 },
             },
             ["85:die feste grommash"] = {
@@ -256,8 +254,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 85 },
                 tags = { "city", "hub", "local", "observed" },
                 factions = {
-                    { name = "Schlächterduellum", weight = 250 },
-                    { name = "Valeera Sanguinar", weight = 238 },
+                    { factionID = 76, weight = 250 },
                 },
             },
             ["85:die gasse"] = {
@@ -269,7 +266,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 85 },
                 tags = { "city", "hub", "local", "observed" },
                 factions = {
-                    { name = "Schlächterduellum", weight = 247 },
+                    { factionID = 76, weight = 247 },
                 },
             },
             ["85:der westliche erdschrein"] = {
@@ -281,7 +278,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 85 },
                 tags = { "city", "hub", "local", "observed" },
                 factions = {
-                    { name = "Schlächterduellum", weight = 247 },
+                    { factionID = 76, weight = 247 },
                 },
             },
             ["85:das tor von orgrimmar"] = {
@@ -293,7 +290,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 85 },
                 tags = { "city", "local", "observed" },
                 factions = {
-                    { name = "Schlächterduellum", weight = 246 },
+                    { factionID = 76, weight = 246 },
                 },
             },
             ["86:jägerhöhe"] = {
