@@ -209,6 +209,12 @@ local function normalizeFaction(row)
     local progressPct = progressMax > 0 and (progressValue / progressMax) * 100 or 0
     local standingID = row.standingID or 0
 
+    if progressMax <= 0 and value > 0 and standingID > 0 then
+        progressValue = value
+        progressMax = math.max(value, maxValue, minValue, 1)
+        progressPct = 100
+    end
+
     return {
         index = row.index,
         factionID = row.factionID,
@@ -259,6 +265,12 @@ local function createSyntheticFaction(match)
         progressValue = math.max(0, value - minValue)
         progressMax = math.max(0, maxValue - minValue)
         progressPct = progressMax > 0 and (progressValue / progressMax) * 100 or 0
+    end
+
+    if progressMax <= 0 and value > 0 and hasRepEntry then
+        progressValue = value
+        progressMax = math.max(value, maxValue, minValue, 1)
+        progressPct = 100
     end
 
     if hasRepEntry then
