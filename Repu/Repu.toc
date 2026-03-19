@@ -44,7 +44,8 @@ data\retail\mappings\regions\broken_isles.lua
 data\retail\mappings\regions\bfa.lua
 data\retail\mappings\regions\shadowlands.lua
 data\retail\mappings\regions\dragonflight.lua
-data\retail\mappings\regions\current.lua
+data\retail\mappings\regions\war_within.lua
+data\retail\mappings\regions\midnight.lua
 data\retail\variants\catalog.lua
 data\retail.lua
 core\location.lua
