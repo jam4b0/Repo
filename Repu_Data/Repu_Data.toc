@@ -6,9 +6,17 @@
 ## Dependencies: Repu
 
 content\shared.lua
+content\retail\summary\generated.lua
 content\retail\families\quelthalas.lua
+content\retail\families\midnight.lua
 content\retail\current\war_within.lua
 content\retail\legacy\homelands.lua
 content\retail\families\outland.lua
-content\retail\summary\generated.lua
+content\retail\expansions\northrend.lua
+content\retail\expansions\pandaria.lua
+content\retail\expansions\draenor.lua
+content\retail\expansions\legion.lua
+content\retail\expansions\bfa.lua
+content\retail\expansions\shadowlands.lua
+content\retail\expansions\dragonflight.lua
 content\retail.lua

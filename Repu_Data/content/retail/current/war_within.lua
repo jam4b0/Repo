@@ -257,41 +257,5 @@ api.RegisterRetailContentModule({
                 },
             },
         },
-        [2696] = {
-            summary = "Der Amanistamm ist die Midnight-Fraktion rund um Zul'Aman. Fortschritt bündelt sich über die Amani-Kampagne und die lokalen Aufgaben in und um Zul'Aman.",
-            source = "seed",
-            confidence = "medium",
-            activities = {
-                {
-                    title = "Kampagne von Zul'Aman",
-                    kind = "Story/Zone",
-                    location = { mapID = 2437, title = "Zul'Aman" },
-                },
-            },
-        },
-        [2699] = {
-            summary = "Die Singularität ist die Midnight-Fraktion des Leerensturms. Fortschritt bündelt sich über den Leerenelfen-/Sturmzweig und die lokalen Aufgaben in dieser Zone.",
-            source = "seed",
-            confidence = "medium",
-            activities = {
-                {
-                    title = "Leerensturm-Kampagne",
-                    kind = "Story/Zone",
-                    location = { mapID = 2405, title = "Leerensturm" },
-                },
-            },
-        },
-        [2704] = {
-            summary = "Die Hara'ti sind die Midnight-Fraktion von Harandar. Fortschritt bündelt sich über die lokalen Story- und Zonenaktivitäten dieses Zweigs.",
-            source = "seed",
-            confidence = "medium",
-            activities = {
-                {
-                    title = "Harandar-Kampagne",
-                    kind = "Story/Zone",
-                    location = { mapID = 2413, title = "Harandar" },
-                },
-            },
-        },
     },
 })
