@@ -8,26 +8,26 @@ local RETAIL_COMPANION_FACTION_IDS = {
 local KNOWN_RETAIL_PARENT_FACTIONS = {
     [2710] = {
         children = {
-            [2711] = true, -- Magister
-            [2712] = true, -- Blutritter
-            [2714] = true, -- Schemen der Gasse
-            [2713] = true, -- Weltenwanderer
+            [2711] = { name = "Magister" },
+            [2712] = { name = "Blutritter" },
+            [2714] = { name = "Schemen der Gasse" },
+            [2713] = { name = "Weltenwanderer" },
         },
     },
     [2600] = {
         children = {
-            [2605] = true, -- Der General
-            [2607] = true, -- Der Wesir
-            [2601] = true, -- Die Weberin
+            [2605] = { name = "Der General" },
+            [2607] = { name = "Der Wesir" },
+            [2601] = { name = "Die Weberin" },
         },
     },
     [2653] = {
         children = {
-            [2677] = true, -- Dampfdruckkartell
-            [2675] = true, -- Schwarzmeer AG
-            [2673] = true, -- Bilgewasserkartell
-            [2671] = true, -- Venture Company
-            [2685] = true, -- Garbagio Treueclub
+            [2677] = { name = "Dampfdruckkartell" },
+            [2675] = { name = "Schwarzmeer AG" },
+            [2673] = { name = "Bilgewasserkartell" },
+            [2671] = { name = "Venture Company" },
+            [2685] = { name = "Garbagio Treueclub" },
         },
     },
 }
@@ -35,12 +35,12 @@ local KNOWN_VIRTUAL_PARENT_FACTIONS = {
     [9000111] = {
         name = "Shattrath",
         children = {
-            [935] = true,  -- Die Sha'tar
-            [932] = true,  -- Die Aldor
-            [934] = true,  -- Die Seher
-            [1011] = true, -- Unteres Viertel
-            [1031] = true, -- Himmelswache der Sha'tari
-            [1077] = true, -- Offensive der Zerschmetterten Sonne
+            [935] = { name = "Die Sha'tar" },
+            [932] = { name = "Die Aldor" },
+            [934] = { name = "Die Seher" },
+            [1011] = { name = "Unteres Viertel" },
+            [1031] = { name = "Himmelswache der Sha'tari" },
+            [1077] = { name = "Offensive der Zerschmetterten Sonne" },
         },
     },
 }
@@ -95,6 +95,20 @@ function ns.Factions:GetKnownChildFactionIDs(parentFactionID)
 
     table.sort(childIDs)
     return childIDs
+end
+
+local function getKnownChildDefinition(parentFactionID, childFactionID)
+    local parent = KNOWN_RETAIL_PARENT_FACTIONS[parentFactionID]
+    if parent and parent.children and parent.children[childFactionID] then
+        return parent.children[childFactionID]
+    end
+
+    local virtualParent = KNOWN_VIRTUAL_PARENT_FACTIONS[parentFactionID]
+    if virtualParent and virtualParent.children and virtualParent.children[childFactionID] then
+        return virtualParent.children[childFactionID]
+    end
+
+    return nil
 end
 
 local function matchApplies(match, context)
@@ -266,6 +280,34 @@ local function createVirtualGroupFaction(factionID, name)
         hasRepEntry = false,
         isKnownMissing = false,
         isVirtualGroup = true,
+        hasBonusRepGain = false,
+    }
+end
+
+local function createSyntheticKnownChildFaction(factionID, name, parentFactionID)
+    local factionName = name or ("Fraktion " .. tostring(factionID))
+    return {
+        index = 0,
+        factionID = factionID,
+        name = factionName,
+        nameKey = Utils:NormalizeKey(factionName),
+        description = nil,
+        standingID = 0,
+        standingLabel = "",
+        min = 0,
+        max = 1,
+        value = 0,
+        progressValue = 0,
+        progressMax = 0,
+        progressPct = 0,
+        isWatched = false,
+        isChild = true,
+        isExalted = false,
+        isAccountWide = false,
+        isMajorFaction = false,
+        hasRepEntry = false,
+        isKnownMissing = true,
+        parentFactionID = parentFactionID,
         hasBonusRepGain = false,
     }
 end
@@ -588,6 +630,12 @@ function ns.Factions:SelectVisible(prioritized, context)
             local childFaction = byID[childFactionID]
             if not childFaction then
                 childFaction = ns.Compat:GetFactionDataByID(childFactionID)
+            end
+            if not childFaction then
+                local childDefinition = getKnownChildDefinition(parentCandidate.factionID, childFactionID)
+                if childDefinition then
+                    childFaction = createSyntheticKnownChildFaction(childFactionID, childDefinition.name, parentCandidate.factionID)
+                end
             end
 
             if childFaction and not seenFactionIDs[childFactionID] then
