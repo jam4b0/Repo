@@ -152,6 +152,8 @@ local function addMatch(results, faction, match)
         isExalted = faction.isExalted,
         progressPct = faction.progressPct,
         tags = match.tags,
+        isMapChain = match.isMapChain and true or false,
+        chainDepth = match.chainDepth or 0,
     }
 end
 
@@ -265,8 +267,24 @@ function ns.Factions:BuildMatches(rawFactions, context)
 
     local function resolveMapChain(sourceType)
         local chain = context.mapChain or {}
-        for _, node in ipairs(chain) do
-            resolveByMapID(sourceType, node.mapID, node.name or node.mapID)
+        for index, node in ipairs(chain) do
+            local matches = ns.Data:FindMatchesByMapID(sourceType, node.mapID)
+            for _, match in ipairs(matches) do
+                local faction = match.factionID and rawFactions.byID[match.factionID] or nil
+                if not faction and match.name then
+                    faction = rawFactions.byName[Utils:NormalizeKey(match.name)]
+                end
+                if not faction then
+                    faction = createSyntheticFaction(match)
+                end
+
+                local resolved = Utils:ShallowCopy(match)
+                resolved.sourceKey = node.name or node.mapID
+                resolved.sourceType = sourceType
+                resolved.isMapChain = true
+                resolved.chainDepth = index - 1
+                appendMatch(resolved, faction, sourceType, node.name or node.mapID)
+            end
         end
     end
 

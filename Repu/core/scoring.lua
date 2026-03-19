@@ -41,6 +41,14 @@ function ns.Scoring:Prioritize(matches, rawFactions, context, options)
         local faction = match.faction
         local score = (match.baseWeight or 0) + (sourceBonuses[match.sourceType] or 0)
 
+        if match.isMapChain then
+            if (match.chainDepth or 0) == 0 then
+                score = score + 18
+            else
+                score = score - ((match.chainDepth or 0) * 90)
+            end
+        end
+
         if faction.factionID and faction.factionID == watchedFactionID then
             score = score + 40
         end
@@ -49,6 +57,12 @@ function ns.Scoring:Prioritize(matches, rawFactions, context, options)
         end
         if not faction.isExalted then
             score = score + 25
+        end
+        if faction.isMajorFaction then
+            score = score + 10
+        end
+        if match.isInherited then
+            score = score - 12
         end
 
         if match.tags then
