@@ -34,6 +34,20 @@ local RETAIL_CHILD_TO_PARENT = {
     [2685] = 2653,
 }
 
+function ns.Factions:GetKnownChildFactionIDs(parentFactionID)
+    local parent = RETAIL_PARENT_FACTIONS[parentFactionID]
+    if not parent or not parent.children then
+        return nil
+    end
+
+    local childIDs = {}
+    for factionID in pairs(parent.children) do
+        childIDs[#childIDs + 1] = factionID
+    end
+    table.sort(childIDs)
+    return childIDs
+end
+
 local function matchApplies(match, context)
     if match.factionGroups and context.playerFactionGroup then
         local allowed = false
@@ -126,6 +140,16 @@ local function createSyntheticFaction(match)
     local factionData = match.factionID and ns.Compat:GetFactionDataByID(match.factionID) or nil
     local name = match.name or (factionData and factionData.name) or UNKNOWN
     local description = match.description or (factionData and factionData.description) or nil
+    local hasRepEntry = factionData and (factionData.hasRep == true or factionData.hasRepEntry == true or (factionData.renownLevel and factionData.renownLevel > 0)) or false
+    local standingLabel = "Kein Rufeintrag"
+
+    if hasRepEntry then
+        if factionData.isMajorFaction and factionData.renownLevel and factionData.renownLevel > 0 then
+            standingLabel = "Ruhmstufe"
+        else
+            standingLabel = ns.Compat:GetStandingLabel(factionData.standingID or 0)
+        end
+    end
 
     return {
         index = 0,
@@ -133,24 +157,25 @@ local function createSyntheticFaction(match)
         name = name,
         nameKey = Utils:NormalizeKey(name),
         description = description,
-        standingID = 0,
-        standingLabel = "Kein Rufeintrag",
-        min = 0,
-        max = 0,
-        value = 0,
-        progressValue = 0,
-        progressMax = 0,
-        progressPct = 0,
+        standingID = factionData and factionData.standingID or 0,
+        standingLabel = standingLabel,
+        min = factionData and factionData.min or 0,
+        max = factionData and factionData.max or 0,
+        value = factionData and factionData.value or 0,
+        progressValue = factionData and factionData.progressValue or 0,
+        progressMax = factionData and factionData.progressMax or 0,
+        progressPct = factionData and factionData.progressPct or 0,
         isWatched = false,
-        isChild = false,
-        isExalted = false,
+        isChild = factionData and factionData.isChild or false,
+        isExalted = factionData and factionData.isExalted or false,
         isAccountWide = factionData and factionData.isAccountWide or false,
         isMajorFaction = factionData and factionData.isMajorFaction or false,
-        hasRepEntry = false,
-        isKnownMissing = true,
+        hasRepEntry = hasRepEntry,
+        isKnownMissing = not hasRepEntry,
         renownLevel = factionData and factionData.renownLevel or nil,
         friendshipRepID = factionData and factionData.friendshipRepID or nil,
         hasBonusRepGain = false,
+        majorFactionData = factionData and factionData.majorFactionData or nil,
         raw = factionData,
     }
 end
@@ -353,8 +378,12 @@ end
 function ns.Factions:SelectVisible(prioritized, context)
     local profile = ns.State:GetProfile()
     local visible = {}
+    local runtime = ns.State.runtime or {}
+    local rawFactions = runtime.rawFactions or {}
+    local byID = rawFactions.byID or {}
+    local seenFactionIDs = {}
 
-    for index, candidate in ipairs(prioritized) do
+    local function canInclude(candidate, index)
         local include = true
 
         if profile.hideExalted and candidate.faction.isExalted and not candidate.isDirect then
@@ -366,8 +395,78 @@ function ns.Factions:SelectVisible(prioritized, context)
         end
 
         if include then
-            candidate.isActive = index == 1
-            visible[#visible + 1] = candidate
+            candidate.isActive = index == 1 and #visible == 0
+        end
+
+        return include
+    end
+
+    local function appendVisible(candidate, index)
+        if not candidate or not candidate.factionID or seenFactionIDs[candidate.factionID] then
+            return
+        end
+
+        if not canInclude(candidate, index) then
+            return
+        end
+
+        seenFactionIDs[candidate.factionID] = true
+        visible[#visible + 1] = candidate
+    end
+
+    local function appendKnownChildren(parentCandidate)
+        if not parentCandidate or not parentCandidate.factionID then
+            return
+        end
+
+        local childIDs = self:GetKnownChildFactionIDs(parentCandidate.factionID)
+        if not childIDs or #childIDs == 0 then
+            return
+        end
+
+        local childCandidates = {}
+        for _, childFactionID in ipairs(childIDs) do
+            local childFaction = byID[childFactionID]
+            if childFaction and not seenFactionIDs[childFactionID] then
+                childCandidates[#childCandidates + 1] = {
+                    factionID = childFactionID,
+                    faction = childFaction,
+                    name = childFaction.name,
+                    sourceType = "child",
+                    sourceKey = tostring(parentCandidate.factionID),
+                    score = (parentCandidate.score or 0) - 1 - (#childCandidates / 100),
+                    isDirect = false,
+                    isFallback = false,
+                    isChildOfVisibleParent = true,
+                    parentFactionID = parentCandidate.factionID,
+                    note = "Known child faction of visible parent",
+                    tags = { "child", "local" },
+                }
+            end
+        end
+
+        table.sort(childCandidates, function(left, right)
+            if left.faction.isExalted ~= right.faction.isExalted then
+                return not left.faction.isExalted
+            end
+            if (left.faction.progressPct or 0) ~= (right.faction.progressPct or 0) then
+                return (left.faction.progressPct or 0) > (right.faction.progressPct or 0)
+            end
+            return (left.name or "") < (right.name or "")
+        end)
+
+        for _, childCandidate in ipairs(childCandidates) do
+            appendVisible(childCandidate, #visible + 1)
+            if #visible >= profile.maxBars then
+                break
+            end
+        end
+    end
+
+    for index, candidate in ipairs(prioritized) do
+        appendVisible(candidate, index)
+        if visible[#visible] == candidate then
+            appendKnownChildren(candidate)
         end
 
         if #visible >= profile.maxBars then
@@ -384,9 +483,6 @@ function ns.Factions:SelectVisible(prioritized, context)
 
     if #visible == 0 and allowFallback then
         local watchedID = context.watchedFactionID
-        local runtime = ns.State.runtime or {}
-        local rawFactions = runtime.rawFactions or {}
-        local byID = rawFactions.byID or {}
         local fallbackFaction = nil
 
         if watchedID then

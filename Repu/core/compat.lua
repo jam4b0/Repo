@@ -476,6 +476,7 @@ function ns.Compat:CollectFactionRows()
         end, geterrorhandler())
 
         self.collectingFactionRows = false
+        self.suppressUpdateFactionUntil = (GetTime and GetTime() or 0) + 0.35
         if ok then
             return rows
         end
@@ -536,6 +537,15 @@ end
 
 function ns.Compat:IsCollectingFactionRows()
     return self.collectingFactionRows and true or false
+end
+
+function ns.Compat:ShouldSuppressUpdateFaction()
+    if self.collectingFactionRows then
+        return true
+    end
+
+    local now = GetTime and GetTime() or 0
+    return (self.suppressUpdateFactionUntil or 0) > now
 end
 
 function ns.Compat:GetStandingLabel(standingID)

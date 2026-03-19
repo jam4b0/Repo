@@ -14,7 +14,7 @@ local runtimeEvents = {
 function ns.Events:Init()
     self.frame = CreateFrame("Frame")
     self.frame:SetScript("OnEvent", function(_, event)
-        if event == "UPDATE_FACTION" and ns.Compat:IsCollectingFactionRows() then
+        if event == "UPDATE_FACTION" and ns.Compat:ShouldSuppressUpdateFaction() then
             return
         end
         ns.State:QueueRefresh(event)
