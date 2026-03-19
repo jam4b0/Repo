@@ -85,6 +85,18 @@ ns.Data:RegisterRetailModule({
             },
         },
         subZones = {
+            ["627:dalaran"] = {
+                name = "Dalaran",
+                parentMapID = 627,
+                source = "seed",
+                confidence = "high",
+                notes = "Direct Legion Dalaran city anchor",
+                mapIDs = { 627 },
+                tags = { "primary", "hub", "local", "legion" },
+                factions = {
+                    { factionID = 1883, weight = 262 },
+                },
+            },
             ["627:krasus' landeplatz"] = {
                 name = "Krasus' Landeplatz",
                 parentMapID = 627,

@@ -75,6 +75,18 @@ ns.Data:RegisterRetailModule({
             },
         },
         subZones = {
+            ["1525:oribos"] = {
+                name = "Oribos",
+                parentMapID = 1525,
+                source = "seed",
+                confidence = "high",
+                notes = "Direct Oribos city anchor",
+                mapIDs = { 1525, 1670 },
+                tags = { "primary", "hub", "local", "shadowlands" },
+                factions = {
+                    { factionID = 2413, weight = 262 },
+                },
+            },
             ["1525:ring der schicksale"] = {
                 name = "Ring der Schicksale",
                 parentMapID = 1525,

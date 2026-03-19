@@ -85,6 +85,18 @@ ns.Data:RegisterRetailModule({
             },
         },
         subZones = {
+            ["125:dalaran"] = {
+                name = "Dalaran",
+                parentMapID = 125,
+                source = "seed",
+                confidence = "high",
+                notes = "Direct Dalaran city anchor for Kirin Tor",
+                mapIDs = { 125 },
+                tags = { "primary", "hub", "local", "northrend" },
+                factions = {
+                    { factionID = 1090, weight = 262 },
+                },
+            },
             ["125:die violette festung"] = {
                 name = "Die Violette Festung",
                 parentMapID = 125,

@@ -49,6 +49,15 @@ ns.Data:RegisterRetailModule({
                 factionIDs = { 2590 },
                 weight = 250,
             },
+            [2339] = {
+                name = "Dornogal",
+                source = "seed",
+                confidence = "high",
+                mapIDs = { 2339 },
+                tags = { "current", "city", "hub", "primary", "local" },
+                factionIDs = { 2590 },
+                weight = 255,
+            },
             [2346] = {
                 name = "Undermine",
                 source = "seed",
@@ -114,6 +123,16 @@ ns.Data:RegisterRetailModule({
                 tags = { "current", "hub", "local" },
                 factions = {
                     { factionID = 2590, weight = 230 },
+                },
+            },
+            ["2339:dornogal"] = {
+                name = "Dornogal",
+                parentMapID = 2339,
+                source = "seed",
+                confidence = "high",
+                tags = { "current", "primary", "hub", "local" },
+                factions = {
+                    { factionID = 2590, weight = 260 },
                 },
             },
             ["2214:taelloch"] = {
