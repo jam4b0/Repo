@@ -106,6 +106,24 @@ api.RegisterRetailContentModule({
                 { title = "Time Rifts", kind = "Recurring", location = { title = "Thaldraszus" } },
             },
         },
+        [2135] = {
+            summary = "Chromie bündelt die zeitbezogenen Nebenaktivitäten in Thaldraszus. Der Fortschritt hängt vor allem an Zeitrissen und den dazugehörigen wiederkehrenden Aufgaben.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                { title = "Time Rifts", kind = "Recurring", location = { title = "Thaldraszus" } },
+                { title = "Temporal side activities", kind = "Zone", location = { title = "Tyrhold" } },
+            },
+        },
+        [2615] = {
+            summary = "Azerothian Archives ist der archivbezogene Nebenruf in Thaldraszus. Der Fortschritt sitzt an den wiederkehrenden Archiv- und Forschungsaktivitäten rund um Tyrhold.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                { title = "Azerothian Archives", kind = "Recurring", location = { title = "Thaldraszus" } },
+                { title = "Tyrhold archive activities", kind = "Zone", location = { title = "Tyrhold" } },
+            },
+        },
         [2564] = {
             summary = "Loamm Niffen ist die große Patch-Ruhmfraktion der Zaralekhöhle. Fortschritt kommt vor allem über Loamm, die Schnüffel-Suche, Weltinhalte in Zaralek und den dortigen Storyblock.",
             source = "curated",

@@ -665,6 +665,35 @@ return {
         requireVisibleFactionIDs = { 2553 },
     },
     {
+        name = "retail_dragonflight_thaldraszus_shows_temporal_side_systems",
+        profile = {
+            maxBars = 6,
+        },
+        context = {
+            activeFlavor = "retail",
+            mapID = 2025,
+            mapName = "Thaldraszus",
+            zoneName = "Thaldraszus",
+            zoneKey = "thaldraszus",
+            subZoneName = "Tyrhold",
+            subZoneKey = "tyrhold",
+            mapChain = {
+                { mapID = 2025, name = "Thaldraszus" },
+            },
+            playerFactionGroup = "Alliance",
+            instanceType = "none",
+            isInInstance = false,
+        },
+        rawFactions = {
+            { factionID = 2510, name = "Valdrakken Accord", isMajorFaction = true, renownLevel = 20, progressValue = 1800, progressMax = 2500, progressPct = 72, standingID = 5, hasRepEntry = true },
+            { factionID = 2553, name = "Soridormi", standingID = 5, progressValue = 2400, progressMax = 6000, progressPct = 40, hasRepEntry = true },
+            { factionID = 2135, name = "Chromie", standingID = 5, progressValue = 2200, progressMax = 6000, progressPct = 36.6, hasRepEntry = true },
+            { factionID = 2615, name = "Azerothian Archives", standingID = 4, progressValue = 750, progressMax = 3000, progressPct = 25, hasRepEntry = true },
+        },
+        expectTopFactionID = 2510,
+        requireVisibleFactionIDs = { 2553, 2135, 2615 },
+    },
+    {
         name = "retail_war_within_dornogal_prefers_council",
         context = {
             activeFlavor = "retail",

@@ -69,6 +69,8 @@ ns.Data:RegisterRetailModule({
                 factions = {
                     { factionID = 2510, weight = 250 },
                     { factionID = 2553, weight = 214 },
+                    { factionID = 2135, weight = 208 },
+                    { factionID = 2615, weight = 206 },
                 },
                 weight = 250,
             },
@@ -185,6 +187,8 @@ ns.Data:RegisterRetailModule({
                 factions = {
                     { factionID = 2510, weight = 245 },
                     { factionID = 2553, weight = 216 },
+                    { factionID = 2135, weight = 210 },
+                    { factionID = 2615, weight = 208 },
                 },
             },
             ["2133:loamm"] = {
