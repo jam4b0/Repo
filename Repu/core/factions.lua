@@ -633,11 +633,11 @@ function ns.Factions:BuildMatches(rawFactions, context)
                 end
 
                 local resolved = Utils:ShallowCopy(match)
-                resolved.sourceKey = node.name or node.mapID
+                resolved.sourceKey = node.mapID
                 resolved.sourceType = sourceType
                 resolved.isMapChain = true
                 resolved.chainDepth = index - 1
-                appendMatch(resolved, faction, sourceType, node.name or node.mapID)
+                appendMatch(resolved, faction, sourceType, node.mapID)
             end
         end
     end
@@ -650,6 +650,7 @@ function ns.Factions:BuildMatches(rawFactions, context)
         resolve("instance", context.instanceName)
     end
 
+    resolveByMapID("zone", context.mapID, context.mapID)
     resolveMapChain("zone")
     resolve("zone", context.zoneName)
     resolveSubZone(context.mapID, context.subZoneName)

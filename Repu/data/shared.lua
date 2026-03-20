@@ -342,12 +342,9 @@ end
 function ns.Data:GetCoverage(context)
     context = context or {}
 
-    local zoneRecord = nil
-    if context.zoneName then
+    local zoneRecord = self:GetLocationRecordByMapID("zone", context.mapID)
+    if not zoneRecord and context.zoneName then
         zoneRecord = self:GetLocationRecord("zone", context.zoneName)
-    end
-    if not zoneRecord then
-        zoneRecord = self:GetLocationRecordByMapID("zone", context.mapID)
     end
     local subZoneRecord, subZoneKey = self:GetSubZoneRecord(context.mapID, context.subZoneName)
     local zoneMatches = self:FindMatchesByMapID("zone", context.mapID)
