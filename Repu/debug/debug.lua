@@ -252,6 +252,39 @@ local function collectAddonResourceUsage()
     }
 end
 
+local function collectAddonRegistryDiagnostics()
+    local rows = {}
+
+    updateAddonMemoryUsage()
+    updateAddonCPUUsage()
+
+    if not GetNumAddOns then
+        return rows
+    end
+
+    for index = 1, GetNumAddOns() do
+        local name, title = getAddonInfo(index)
+        local haystack = string.lower(table.concat({
+            tostring(name or ""),
+            tostring(title or ""),
+        }, " "))
+
+        if string.find(haystack, "repu", 1, true) then
+            rows[#rows + 1] = {
+                index = index,
+                name = name,
+                title = title,
+                canonical = canonicalAddonLabel(name, title),
+                loaded = isAddonLoaded(name or title or ""),
+                memoryKB = getAddonMemoryUsage(index, name or title),
+                cpuMS = getAddonCPUUsage(index, name or title),
+            }
+        end
+    end
+
+    return rows
+end
+
 function ns.Debug:Init()
     SLASH_REPU1 = "/repu"
     SlashCmdList.REPU = function(message)
@@ -655,6 +688,26 @@ function ns.Debug:BuildWindowReport()
         end
 
         sections[#sections + 1] = table.concat(resourceLines, "\n")
+    end
+
+    do
+        local registryRows = collectAddonRegistryDiagnostics()
+        local lines = { "Addon registry" }
+
+        for _, row in ipairs(registryRows) do
+            lines[#lines + 1] = string.format(
+                "  #%s name=%s title=%s canonical=%s loaded=%s memory=%s cpu=%s",
+                tostring(row.index),
+                tostring(row.name),
+                tostring(row.title),
+                tostring(row.canonical),
+                tostring(row.loaded),
+                tostring(formatMemoryKB(row.memoryKB)),
+                row.cpuMS ~= nil and string.format("%.1f ms", row.cpuMS) or Locale:Get("DEBUG_CPU_UNAVAILABLE")
+            )
+        end
+
+        sections[#sections + 1] = table.concat(lines, "\n")
     end
 
     for _, key in ipairs({ "location", "coverage", "candidates", "dump", "factions", "api", "refresh", "status", "test", "unmapped", "mapscan" }) do
