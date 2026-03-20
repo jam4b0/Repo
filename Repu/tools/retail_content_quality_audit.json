@@ -1,0 +1,1514 @@
+{
+  "rows": [
+    {
+      "file": "bfa.lua",
+      "factionID": 2157,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "bfa.lua",
+      "factionID": 2158,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "bfa.lua",
+      "factionID": 2160,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "bfa.lua",
+      "factionID": 2161,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "bfa.lua",
+      "factionID": 2162,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "bfa.lua",
+      "factionID": 2400,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "bfa.lua",
+      "factionID": 2373,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "bfa.lua",
+      "factionID": 2391,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "bfa.lua",
+      "factionID": 2395,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "bfa.lua",
+      "factionID": 2415,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "cataclysm.lua",
+      "factionID": 1158,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "cataclysm.lua",
+      "factionID": 1171,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "cataclysm.lua",
+      "factionID": 1173,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "cataclysm.lua",
+      "factionID": 1174,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "cataclysm.lua",
+      "factionID": 1177,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "cataclysm.lua",
+      "factionID": 1178,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "cataclysm.lua",
+      "factionID": 2417,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "draenor.lua",
+      "factionID": 1445,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "draenor.lua",
+      "factionID": 1515,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "draenor.lua",
+      "factionID": 1710,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "draenor.lua",
+      "factionID": 1711,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "draenor.lua",
+      "factionID": 1731,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "draenor.lua",
+      "factionID": 1847,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "draenor.lua",
+      "factionID": 1848,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "draenor.lua",
+      "factionID": 1849,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "draenor.lua",
+      "factionID": 1850,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "dragonflight.lua",
+      "factionID": 2135,
+      "hasQuartermaster": false,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "dragonflight.lua",
+      "factionID": 2503,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "dragonflight.lua",
+      "factionID": 2507,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "dragonflight.lua",
+      "factionID": 2510,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "dragonflight.lua",
+      "factionID": 2511,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "dragonflight.lua",
+      "factionID": 2517,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "dragonflight.lua",
+      "factionID": 2518,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "dragonflight.lua",
+      "factionID": 2523,
+      "hasQuartermaster": false,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "dragonflight.lua",
+      "factionID": 2524,
+      "hasQuartermaster": false,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "dragonflight.lua",
+      "factionID": 2526,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "dragonflight.lua",
+      "factionID": 2544,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "dragonflight.lua",
+      "factionID": 2550,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "dragonflight.lua",
+      "factionID": 2553,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "dragonflight.lua",
+      "factionID": 2564,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "dragonflight.lua",
+      "factionID": 2574,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "dragonflight.lua",
+      "factionID": 2615,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "legion.lua",
+      "factionID": 1828,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "legion.lua",
+      "factionID": 1859,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "legion.lua",
+      "factionID": 1883,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "legion.lua",
+      "factionID": 1894,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "legion.lua",
+      "factionID": 1900,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "legion.lua",
+      "factionID": 1948,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "legion.lua",
+      "factionID": 2045,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "legion.lua",
+      "factionID": 2165,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "legion.lua",
+      "factionID": 2170,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "midnight.lua",
+      "factionID": 2696,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "midnight.lua",
+      "factionID": 2699,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "midnight.lua",
+      "factionID": 2704,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "midnight.lua",
+      "factionID": 2710,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "midnight.lua",
+      "factionID": 2711,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "midnight.lua",
+      "factionID": 2712,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "midnight.lua",
+      "factionID": 2713,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "midnight.lua",
+      "factionID": 2714,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "midnight.lua",
+      "factionID": 2770,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1067,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1068,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1073,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1090,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1091,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1098,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1104,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1105,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1106,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1119,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1124,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1126,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1156,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 932,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 933,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 934,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 935,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 941,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 942,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 946,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 947,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 970,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 978,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 989,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 990,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 1011,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 1012,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 1015,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 1031,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 1038,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 1077,
+      "hasQuartermaster": false,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 1416,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1269,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1270,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1271,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1272,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1302,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1337,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1359,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1375,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1376,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1387,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1388,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1435,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1492,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "shadowlands.lua",
+      "factionID": 2407,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "shadowlands.lua",
+      "factionID": 2410,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "shadowlands.lua",
+      "factionID": 2413,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "shadowlands.lua",
+      "factionID": 2432,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "shadowlands.lua",
+      "factionID": 2439,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "shadowlands.lua",
+      "factionID": 2464,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "shadowlands.lua",
+      "factionID": 2465,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "shadowlands.lua",
+      "factionID": 2470,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "shadowlands.lua",
+      "factionID": 2472,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "shadowlands.lua",
+      "factionID": 2478,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "war_within.lua",
+      "factionID": 2570,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "war_within.lua",
+      "factionID": 2590,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": true,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "war_within.lua",
+      "factionID": 2594,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": true,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "war_within.lua",
+      "factionID": 2600,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "war_within.lua",
+      "factionID": 2601,
+      "hasQuartermaster": false,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "war_within.lua",
+      "factionID": 2605,
+      "hasQuartermaster": false,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "war_within.lua",
+      "factionID": 2607,
+      "hasQuartermaster": false,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "war_within.lua",
+      "factionID": 2653,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "war_within.lua",
+      "factionID": 2658,
+      "hasQuartermaster": false,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "war_within.lua",
+      "factionID": 2671,
+      "hasQuartermaster": false,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "war_within.lua",
+      "factionID": 2673,
+      "hasQuartermaster": false,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "war_within.lua",
+      "factionID": 2675,
+      "hasQuartermaster": false,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "war_within.lua",
+      "factionID": 2677,
+      "hasQuartermaster": false,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "war_within.lua",
+      "factionID": 2685,
+      "hasQuartermaster": false,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": true,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "war_within.lua",
+      "factionID": 2688,
+      "hasQuartermaster": true,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "war_within.lua",
+      "factionID": 2736,
+      "hasQuartermaster": false,
+      "hasRecurring": true,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 47,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 59,
+      "hasQuartermaster": true,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 68,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 69,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 72,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 76,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 81,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 369,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 470,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 529,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 530,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 576,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 577,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 609,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 749,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 910,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": true
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 930,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 1133,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 1134,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    },
+    {
+      "file": "neutral_hubs.lua",
+      "factionID": 909,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasCoords": true,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
+    }
+  ]
+}
