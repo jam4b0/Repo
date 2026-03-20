@@ -8,6 +8,8 @@
 content\shared.lua
 locales\enUS.lua
 locales\deDE.lua
+locales\content_text_enUS.lua
+locales\content_text_deDE.lua
 content\retail\summary\generated.lua
 content\retail\families\quelthalas.lua
 content\retail\families\shattrath.lua

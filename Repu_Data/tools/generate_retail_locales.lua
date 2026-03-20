@@ -41,6 +41,10 @@ _G.RepuAPI = {
 
 local root = "/root/Repo/Repu_Data/"
 local descriptionCachePath = root .. "tools/retail_faction_descriptions_enUS.lua"
+local contentTextLocales = {
+    enUS = root .. "locales/content_text_enUS.lua",
+    deDE = root .. "locales/content_text_deDE.lua",
+}
 
 local files = {
     "content/retail/summary/generated.lua",
@@ -295,7 +299,10 @@ local function buildPayload(sourceFactions, summaryTranslator, stringTranslator)
     for factionID, entry in pairs(collected.factions) do
         local sourceEntry = sourceFactions and sourceFactions[factionID] or entry
         local localized = {}
-        localized.summary = summaryTranslator(factionID, sourceEntry or entry)
+        local summary = summaryTranslator(factionID, sourceEntry or entry)
+        if summary and summary ~= "" then
+            localized.summary = summary
+        end
 
         if sourceEntry and sourceEntry.quartermasters and #sourceEntry.quartermasters > 0 then
             localized.quartermasters = buildQuartermasters(sourceEntry.quartermasters, stringTranslator)
@@ -308,6 +315,21 @@ local function buildPayload(sourceFactions, summaryTranslator, stringTranslator)
         payload.factions[factionID] = localized
     end
 
+    return payload
+end
+
+local function buildTextPayload(sourcePayload, fallbackPayload)
+    local payload = {}
+    for factionID, entry in pairs(collected.factions) do
+        if entry.summaryKey then
+            local key = entry.summaryKey
+            local sourceEntry = sourcePayload and sourcePayload.factions and sourcePayload.factions[factionID] or nil
+            local summary = (sourceEntry and sourceEntry.summary) or (fallbackPayload and fallbackPayload[key]) or entry.summary
+            if summary and summary ~= "" then
+                payload[key] = summary
+            end
+        end
+    end
     return payload
 end
 
@@ -369,8 +391,19 @@ local function writeLocale(locale, payload)
     handle:close()
 end
 
-local function loadExistingLocale(locale)
-    local outPath = root .. "locales/" .. locale .. ".lua"
+local function writeTextLocale(locale, payload)
+    local outPath = contentTextLocales[locale]
+    local handle = assert(io.open(outPath, "w"))
+    handle:write("local api = _G.RepuAPI\n\n")
+    handle:write("if not api or not api.RegisterLocaleDomain then\n")
+    handle:write("    return\n")
+    handle:write("end\n\n")
+    handle:write(string.format("api.RegisterLocaleDomain(%q, %q, %s)\n", "retail_content_text", locale, serialize(payload, 0)))
+    handle:close()
+end
+
+local function loadExistingLocale(locale, domain, outPath)
+    outPath = outPath or (root .. "locales/" .. locale .. ".lua")
     local handle = io.open(outPath, "r")
     if not handle then
         return nil
@@ -380,8 +413,8 @@ local function loadExistingLocale(locale)
     local captured
     local previousAPI = _G.RepuAPI
     _G.RepuAPI = {
-        RegisterLocaleDomain = function(domain, loadedLocale, payload)
-            if domain == "retail_content" and loadedLocale == locale then
+        RegisterLocaleDomain = function(loadedDomain, loadedLocale, payload)
+            if loadedDomain == domain and loadedLocale == locale then
                 captured = shallowCopy(payload)
             end
         end,
@@ -397,6 +430,9 @@ end
 local germanPayload = buildPayload(
     nil,
     function(_, entry)
+        if entry.summaryKey or entry.summarySource == "blizzard" then
+            return nil
+        end
         return entry.summary
     end,
     function(value)
@@ -404,9 +440,15 @@ local germanPayload = buildPayload(
     end
 )
 
-local existingGerman = loadExistingLocale("deDE")
+local existingGerman = loadExistingLocale("deDE", "retail_content")
+local existingEnglish = loadExistingLocale("enUS", "retail_content")
 if existingGerman and countKeys(existingGerman.factions) > 0 then
-    germanPayload = existingGerman
+    for factionID, entry in pairs(germanPayload.factions or {}) do
+        local existingEntry = existingGerman.factions and existingGerman.factions[factionID] or nil
+        if existingEntry and existingEntry.summary and not entry.summary then
+            entry.summary = existingEntry.summary
+        end
+    end
 end
 
 local englishDescriptions = loadEnglishDescriptionCache()
@@ -414,9 +456,15 @@ local englishDescriptions = loadEnglishDescriptionCache()
 local englishPayload = buildPayload(
     nil,
     function(factionID, entry)
+        if entry.summaryKey then
+            return nil
+        end
+        if entry.summarySource == "curated" then
+            return entry.summary
+        end
         local descriptionEntry = englishDescriptions[tostring(factionID)] or nil
         if descriptionEntry and descriptionEntry.description and descriptionEntry.description ~= "" then
-            return descriptionEntry.description
+            return nil
         end
         if entry.summary and entry.summary ~= "" then
             return entry.summary
@@ -426,5 +474,12 @@ local englishPayload = buildPayload(
     translateTitle
 )
 
+local existingEnglishText = loadExistingLocale("enUS", "retail_content_text", contentTextLocales.enUS)
+local existingGermanText = loadExistingLocale("deDE", "retail_content_text", contentTextLocales.deDE)
+local englishTextPayload = buildTextPayload(existingEnglish, existingEnglishText)
+local germanTextPayload = buildTextPayload(existingGerman, existingGermanText)
+
 writeLocale("enUS", englishPayload)
 writeLocale("deDE", germanPayload)
+writeTextLocale("enUS", englishTextPayload)
+writeTextLocale("deDE", germanTextPayload)

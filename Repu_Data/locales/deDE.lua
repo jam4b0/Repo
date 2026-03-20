@@ -7,38 +7,38 @@ end
 api.RegisterLocaleDomain("retail_content", "deDE", {
     factions = {
         [21] = {
-            summary = "Startdatensatz für diese im Retail-Core lokal verankerte Fraktion. Der Kernbezug liegt aktuell vor allem bei Schlingendorntal, Nördliches Schlingendorntal, Das Schlingendornkap. Spezifische Rüstmeister- und Aktivitätsdaten können später präzisiert werden.",
+            summary = "This booming coastal city is run by Baron Revilgaz of the Blackwater Raiders.  Mortal enemies of the Bloodsail Buccaneers and part of the Steamwheedle Cartel.",
         },
         [47] = {
             activities = {
                 {
                     kind = "Zone/City",
-                    title = "Eisenschmiede",
+                    title = "Ironforge",
                 },
             },
-            summary = "Klassische Zwergenfraktion von Eisenschmiede. In Retail taucht sie vor allem in Eisenschmiede, Dun Morogh, Loch Modan und angrenzenden Allianz-Gebieten als lokale Heimatfraktion auf.",
+            summary = "This Alliance capital is the pride of the Dun Morogh dwarves.  Home to King Magni.",
         },
         [59] = {
             activities = {
                 {
                     kind = "Zone/City",
-                    title = "Sengende Schlucht",
+                    title = "Searing Gorge",
                 },
                 {
                     kind = "Zone/City",
-                    title = "Brennende Steppe",
+                    title = "Burning Steppes",
                 },
             },
-            summary = "Die Thoriumbruderschaft deckt im Retail-Core vor allem die Blackrock-Gebiete rund um Sengende Schlucht und Brennende Steppe ab.",
+            summary = "The dwarves of the Thorium Brotherhood epitomize excellence in craftsmanship and are bent on unlocking the secrets of Blackrock Mountain.",
         },
         [68] = {
             activities = {
                 {
                     kind = "Zone/City",
-                    title = "Unterstadt",
+                    title = "Undercity",
                 },
             },
-            summary = "Klassische Untotenfraktion von Unterstadt. In Retail taucht sie vor allem in Tirisfal, Silberwald, Unterstadt und angrenzenden Gebieten als lokale Heimatfraktion auf.",
+            summary = "Led by Sylvanas Windrunner, the Forsaken have joined a tenuous alliance with the Horde and established this capital in the vast depths under the Ruins of Lordaeron.",
         },
         [69] = {
             activities = {
@@ -47,16 +47,16 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Darnassus",
                 },
             },
-            summary = "Legacy-Hauptstadtfraktion von Darnassus. Im Retail-Core bleibt sie als klassische Allianz-Stadtfraktion erhalten, auch wenn die Stadt selbst heute nur noch in Legacy-Zusammenhängen relevant ist.",
+            summary = "This Alliance capital is populated by Night Elves and is located in the Island of Teldrassil.  Ruled by the Priestess of the Moon, Tyrande Whisperwind.",
         },
         [72] = {
             activities = {
                 {
                     kind = "Zone/City",
-                    title = "Sturmwind",
+                    title = "Stormwind",
                 },
             },
-            summary = "Klassische Menschenfraktion von Sturmwind. In Retail taucht sie in Sturmwind, Elwynn, Westfall, Rotkamm und angrenzenden Allianz-Gebieten als lokale Heimatfraktion auf.",
+            summary = "One of the last bastions of human power, this Alliance capital is ruled by the young but wise king, Anduin Wrynn.",
         },
         [76] = {
             activities = {
@@ -65,16 +65,16 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Orgrimmar",
                 },
             },
-            summary = "Klassische Orc-Hauptstadtfraktion von Orgrimmar. In Retail taucht sie in Orgrimmar, Durotar und Teilen des nördlichen Brachlands als lokale Heimatfraktion auf.",
+            summary = "Founded by Thrall, this Horde capital city is home to many of the proud orc clans of Durotar.",
         },
         [81] = {
             activities = {
                 {
                     kind = "Zone/City",
-                    title = "Donnerfels",
+                    title = "Thunder Bluff",
                 },
             },
-            summary = "Klassische Tauren-Hauptstadtfraktion von Donnerfels. In Retail taucht sie in Donnerfels, Mulgore und den zugehörigen Tauren-Gebieten als lokale Heimatfraktion auf.",
+            summary = "Baine Bloodhoof leads his people, the proud Tauren, from this mighty Horde capital.",
         },
         [369] = {
             activities = {
@@ -87,67 +87,67 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Gadgetzan",
                 },
             },
-            summary = "Gadgetzan ist die neutrale Goblin-Stadtfraktion von Tanaris. Im Retail-Core ist sie als lokaler Hubanker für die Stadt selbst modelliert, nicht als ganze Zonenfraktion für Tanaris.",
+            summary = "Capital of the Steamwheedle Cartel and home to goblinhood's finest engineers, alchemists and merchants.",
         },
         [470] = {
             activities = {
                 {
                     kind = "Zone/City",
-                    title = "Nördliches Brachland",
+                    title = "Northern Barrens",
                 },
                 {
                     kind = "Zone/City",
                     title = "Ratchet",
                 },
             },
-            summary = "Ratchet ist die neutrale Goblin-Hafenfraktion im Nördlichen Brachland. Im Retail-Core ist sie als lokaler Stadtanker für den Hafen modelliert.",
+            summary = "Part of the Steamwheedle Cartel, this goblin city provides a neutral haven for those that wish to trade goods and services in the Barrens.",
         },
         [529] = {
             activities = {
                 {
                     kind = "Zone/City",
-                    title = "Westliche Pestländer",
+                    title = "Western Plaguelands",
                 },
                 {
                     kind = "Zone/City",
-                    title = "Östliche Pestländer",
+                    title = "Eastern Plaguelands",
                 },
             },
-            summary = "Die Argentumdämmerung ist im Retail-Core die lokale Pestländer-Fraktion. Sie deckt vor allem Westliche und Östliche Pestländer sowie deren klassische Scharlach-/Geißel-Kontexte ab.",
+            summary = "An organization focused on protecting Azeroth from the threat of the Scourge.  Strongholds of the Argent Dawn can be found in the Eastern and Western Plaguelands.",
         },
         [530] = {
             activities = {
                 {
                     kind = "Zone/City",
-                    title = "Eschental",
+                    title = "Ashenvale",
                 },
             },
-            summary = "Die Dunkelspeertrolle werden im Retail-Core als lokale Horde-Fraktion in Teilen von Durotar, Eschental und den nördlichen Brachlanden genutzt.",
+            summary = "This tribe of exiled trolls has joined forces with Thrall and the Horde.  They now call Durotar their home, which they share with their orc allies.",
         },
         [576] = {
             activities = {
                 {
                     kind = "Zone/City",
-                    title = "Teufelswald",
+                    title = "Felwood",
                 },
             },
-            summary = "Holzschlundfeste deckt im Retail-Core die klassischen Grenzgebiete rund um Teufelswald und Winterquell ab.",
+            summary = "As the last uncorrupted furbolg tribe, the Timbermaw seek to preserve their spiritual ways and end the suffering of their brethren.",
         },
         [577] = {
             activities = {
                 {
                     kind = "Zone/City",
-                    title = "Winterquell",
+                    title = "Winterspring",
                 },
                 {
                     kind = "Zone/City",
                     title = "Everlook",
                 },
             },
-            summary = "Everlook ist die neutrale Goblin-Stadtfraktion in Winterquell. Im Retail-Core ist sie als lokaler Hubanker für die Stadt selbst modelliert.",
+            summary = "This trading post is run by the goblins of the Steamwheedle Cartel and it sits in the crossroads of Winterspring's main trade routes.",
         },
         [589] = {
-            summary = "Startdatensatz für diese im Retail-Core lokal verankerte Fraktion. Der Kernbezug liegt aktuell vor allem bei Winterquell. Spezifische Rüstmeister- und Aktivitätsdaten können später präzisiert werden.",
+            summary = "This small group of reclusive night elves raises and trains wintersabers in the Winterspring area.",
         },
         [609] = {
             activities = {
@@ -161,14 +161,14 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                 },
                 {
                     kind = "Zone/City",
-                    title = "Mondlichtung",
+                    title = "Moonglade",
                 },
                 {
                     kind = "Zone/City",
                     title = "Silithus",
                 },
             },
-            summary = "Der Cenarionzirkel ist im Retail-Core die lokale Fraktion für mehrere klassische Natur- und Wüstengebiete wie Desolace, Feralas, Mondlichtung und Silithus.",
+            summary = "The druids of Cenarion Circle are guardians of nature and make their home in tranquil Moonglade.",
         },
         [749] = {
             activities = {
@@ -177,16 +177,16 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Molten Core",
                 },
             },
-            summary = "Hydraxian Waterlords ist im Retail-Core ein klassischer Raid-Nebenruf von Molten Core. Er bleibt bewusst raidlokal und wird nicht mehr als normale Zonenfraktion von Azshara verwendet.",
+            summary = "These elementals have made their home on the islands east of Azshara.  Sworn enemies of the armies of Ragnaros.",
         },
         [909] = {
             activities = {
                 {
                     kind = "Zone/City",
-                    title = "Dunkelmond-Insel",
+                    title = "Darkmoon Island",
                 },
             },
-            summary = "Der Dunkelmond-Jahrmarkt ist der lokale Rufblock der Dunkelmond-Insel. Im Retail-Core ist er als neutraler Hubanker für die Insel selbst modelliert.",
+            summary = "A carnival that showcases the weird and the extraordinary, located on a mysterious island only accessible for the first week of every month.",
         },
         [910] = {
             activities = {
@@ -199,64 +199,64 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Ruins of Ahn'Qiraj",
                 },
             },
-            summary = "Brood of Nozdormu ist im Retail-Core ein klassischer Ahn'Qiraj-Nebenruf. Er bleibt an die beiden Ahn'Qiraj-Raids gebunden und ersetzt dort nicht den generellen Silithus-Bezug.",
+            summary = "The descendants of the Bronze Dragonflight are the guardians of time and care little for the mortal races.",
         },
         [930] = {
             activities = {
                 {
                     kind = "Zone/City",
-                    title = "Die Exodar",
+                    title = "The Exodar",
                 },
                 {
                     kind = "Zone/City",
-                    title = "Azurmythosinsel",
+                    title = "Azuremyst Isle",
                 },
                 {
                     kind = "Zone/City",
-                    title = "Die Blutmythosinsel",
+                    title = "Bloodmyst Isle",
                 },
             },
-            summary = "Die Exodar ist die Draenei-Hauptstadtfraktion. Im Retail-Core deckt sie die Stadt selbst sowie Azurmythos- und Blutmythosinsel als Heimatcluster ab.",
+            summary = "The naaru vessel that brought the draenei to Azeroth.  Though stranded in the Azuremyst Isles, it acts as a home city for this noble race.",
         },
         [932] = {
             activities = {
                 {
                     kind = "City faction",
-                    title = "Aldor-Aufgaben in Shattrath",
+                    title = "Aldor-tasks in Shattrath",
                 },
             },
-            summary = "Die Aldor sind eine der beiden großen politischen Fraktionen Shattraths. Ihr Fortschritt ist vor allem an die Stadt und an die entsprechende Scryer/Aldor-Entscheidung gebunden.",
+            summary = "An ancient order of draenei priests once run by Velen, the Aldor are currently led by High Priestess Ishanah.  They are servants of the naaru in Shattrath City known as the Sha'tar.  Rivals of the Scryers.",
         },
         [933] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Nethersturm",
+                    title = "Netherstorm",
                 },
                 {
                     kind = "Hub",
                     title = "Area 52",
                 },
             },
-            summary = "Das Konsortium ist der Nethersturm- und Area-52-Rufblock der Scherbenwelt. Der Fortschritt sitzt an den arkanen, etherealen und ökonomischen Nebenpfaden dieser Region.",
+            summary = "Led by Nexus-Prince Haramad, the Consortium is a loosely affiliated cartel of ethereal smugglers, traders and thieves that has come to Outland to benefit from its riches.",
         },
         [934] = {
             activities = {
                 {
                     kind = "City faction",
-                    title = "Seher-Aufgaben in Shattrath",
+                    title = "Scryer tasks in Shattrath",
                 },
             },
-            summary = "Die Seher sind die Gegenfraktion zu den Aldor in Shattrath. Ihr Fortschritt ist vor allem an die Stadt und an die entsprechende Aldor/Seher-Entscheidung gebunden.",
+            summary = "Voren'thal the Seer leads the dissident blood elves who've rejected Kael'thas' path to power.  They've joined forces with the naaru of Shattrath City, much to the dismay of the Aldor.",
         },
         [935] = {
             activities = {
                 {
                     kind = "City/Instances",
-                    title = "Shattrath- und Tempelaufgaben",
+                    title = "Shattrath and temple tasks",
                 },
             },
-            summary = "Die Sha'tar bilden die zentrale Stadt- und Astralfraktion Shattraths. Sie begleiten einen großen Teil des Scherbenwelt-Fortschritts rund um die Stadt und ihre Instanzen.",
+            summary = "The Sha'tar are a group of powerful naaru who rule over a rebuilt Shattrath City.  With the help of the Aldor and the Scryers, they lead the battle against Illidan and the Burning Legion.",
         },
         [941] = {
             activities = {
@@ -269,62 +269,62 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Garadar",
                 },
             },
-            summary = "Die Mag'har sind der Horde-bezogene Nagrand-Rufblock der Scherbenwelt. Der Fortschritt konzentriert sich auf Garadar und die Nagrand-Story.",
+            summary = "This reclusive group of brown-skinned orcs has escaped any form of demonic corruption.  They have retained their traditional way of life in the face of great changes in Outland.",
         },
         [942] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Zangarmarschen",
+                    title = "Zangarmarsh",
                 },
                 {
                     kind = "Hub",
-                    title = "Cenarionszuflucht",
+                    title = "Cenarion Refuge",
                 },
             },
-            summary = "Die Expedition des Cenarius ist der lokale Rufblock von Zangarmarschen. Der Fortschritt sitzt an Cenarionszuflucht, den Dungeons des Gebiets und den dortigen Storypfaden.",
+            summary = "An exploratory force sent to Outland by the Cenarion Circle to study surviving life forms.  The Cenarion Expedition has quickly gained in size and autonomy since the opening of the Dark Portal.",
         },
         [946] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Höllenfeuerhalbinsel",
+                    title = "Hellfire Peninsula",
                 },
                 {
                     kind = "Hub",
                     title = "Honor Hold",
                 },
             },
-            summary = "Honor Hold ist der Allianz-Rufblock der Höllenfeuerhalbinsel. Im Retail-Core ist er der lokale Allianz-Anker für die Zone und ihre allianzgeprägten Instanzpfade.",
+            summary = "Vestiges of the Sons of Lothar, veterans of the Alliance that first came into Draenor, have steadfastly held on to this Hellfire outpost.  They are now joined by the armies from Stormwind and Ironforge.",
         },
         [947] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Höllenfeuerhalbinsel",
+                    title = "Hellfire Peninsula",
                 },
                 {
                     kind = "Dungeon",
                     title = "The Shattered Halls",
                 },
             },
-            summary = "Thrallmar ist der Horde-Rufblock der Höllenfeuerhalbinsel. Im Retail-Core ist er der lokale Anker für die Zone und ihre hordegeprägten Instanzpfade.",
+            summary = "The expedition sent through the Dark Portal by Thrall has built a stronghold in Hellfire Peninsula.  Thrallmar serves as a base of operations for much of the Horde's activities in Outland.",
         },
         [967] = {
-            summary = "Startdatensatz für diese im Retail-Core lokal verankerte Fraktion. Der Kernbezug liegt aktuell vor allem bei Karazhan. Spezifische Rüstmeister- und Aktivitätsdaten können später präzisiert werden.",
+            summary = "A secret sect of the Kirin Tor founded to spy on Medivh and his activities.",
         },
         [970] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Zangarmarschen",
+                    title = "Zangarmarsh",
                 },
                 {
                     kind = "Hub",
                     title = "Sporeggar",
                 },
             },
-            summary = "Sporeggar ist der lokale Siedlungsruf der Sporenlinge in Zangarmarschen. Im Retail-Core ist er als klarer Hubanker für die Stadt selbst modelliert.",
+            summary = "The sporelings are a mostly peaceful race of mushroom-men native to Outland. Their home is located in the southern bogs of Zangarmarsh.",
         },
         [978] = {
             activities = {
@@ -337,7 +337,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Telaar",
                 },
             },
-            summary = "Die Kurenai sind der Allianz-bezogene Nagrand-Rufblock der Scherbenwelt. Der Fortschritt konzentriert sich auf Telaar und die Nagrand-Story.",
+            summary = "Draenei for \"redeemed.\"  These Broken have escaped the grasp of their various slavers in Outland and have made their home in Nagrand.  It is there that they seek to rediscover their destiny.",
         },
         [989] = {
             activities = {
@@ -350,7 +350,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "The Black Morass",
                 },
             },
-            summary = "Die Hüter der Zeit sind der Caverns-of-Time-Rufblock und im Retail-Core über die Scherbenwelt-Zeitreiseinstanzen verankert.",
+            summary = "The Keepers of Time are bronze dragons hand-picked by Nozdormu to watch over the Caverns of Time.",
         },
         [990] = {
             activities = {
@@ -359,95 +359,95 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Hyjal Summit",
                 },
             },
-            summary = "The Scale of the Sands ist der lokale Raidruf von Hyjal Summit und ergänzt dort den groberen Hüter-der-Zeit-Bezug um den eigentlichen Bronze-Drachenblock des Raids.",
+            summary = "A secretive subgroup of the Bronze Dragonflight, led by Soridormi, prime mate of Nozdormu.",
         },
         [1011] = {
             activities = {
                 {
                     kind = "City faction",
-                    title = "Aufgaben im Unteren Viertel",
+                    title = "Lower City tasks",
                 },
             },
-            summary = "Unteres Viertel ist die Fraktion des unteren Stadtviertels von Shattrath und vieler umliegender Scherbenwelt-Aufgaben.",
+            summary = "The refugees of Shattrath come from diverse backgrounds and races.  Word of helpful deeds spreads quickly among the Denizens of Lower City.",
         },
         [1012] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Schattenmondtal",
+                    title = "Shadowmoon Valley",
                 },
                 {
                     kind = "Raid",
-                    title = "Der Schwarze Tempel",
+                    title = "Black Temple",
                 },
             },
-            summary = "Die Aschenzungen-Todesschwur ist der Schattenmondtal-/Schwarzer-Tempel-Rufblock der Scherbenwelt.",
+            summary = "The elite of the Broken tribe known as the Ashtongue, officially aligned with Illidan. The Deathsworn are Akama's most trusted lieutenants and are privy to their leader's mysterious motivations.",
         },
         [1015] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Schattenmondtal",
+                    title = "Shadowmoon Valley",
                 },
                 {
                     kind = "Hub",
                     title = "Netherwing Ledge",
                 },
             },
-            summary = "Netherwing ist der lokale Rufblock des Netherwing-Ledge-Komplexes im Schattenmondtal. Im Retail-Core ist er als Hubanker für diese Teilregion modelliert.",
+            summary = "This unusual brood of dragons was spawned from the eggs of Deathwing's black dragonflight, and infused with raw nether-energies.  Now, they seek to find their identity beyond the shadows of their father's destructive heritage.",
         },
         [1031] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Schergrat",
+                    title = "Blade's Edge Mountains",
                 },
                 {
                     kind = "Daily/Repeatable",
-                    title = "Skyguard-Aufgaben",
+                    title = "Skyguard-tasks",
                 },
             },
-            summary = "Die Himmelswache der Sha'tari ist eine spätere Scherbenwelt-Fraktion mit Schwerpunkt auf Schergrat, Luftpfaden und wiederholbaren Himmelswache-Aktivitäten.",
+            summary = "An airborne military force created by Shattrath City to deal with the threats that loom in the highest reaches of Outland.",
         },
         [1038] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Schergrat",
+                    title = "Blade's Edge Mountains",
                 },
                 {
                     kind = "Hub",
                     title = "Ogri'la",
                 },
             },
-            summary = "Ogri'la ist der Hub-Rufblock der Ogerhochburg im Schergrat und bündelt die dortigen wiederholbaren Aufgaben.",
+            summary = "The enlightened denizens of Ogri'la have made their dwelling in the western Blade's Edge Mountains, where proximity to apexis crystals has caused them to transcend their brutish ogre nature.",
         },
         [1067] = {
             activities = {
                 {
                     kind = "Story/Zone",
-                    title = "Heulender Fjord",
+                    title = "Howling Fjord",
                 },
             },
-            summary = "The Hand of Vengeance ist der Horde-seitige Nebenruf des Heulenden Fjords. Im Retail-Core bleibt er als lokaler Horde-Zweig der dortigen Forsaken-Kriegslinie modelliert.",
+            summary = "The Forsaken tasked by Sylvanas Windrunner with enacting Undercity's vengeance against Arthas by delivering the latest strain of their deadly Plague.",
         },
         [1068] = {
             activities = {
                 {
                     kind = "Story/Zone",
-                    title = "Questlinien im Heulenden Fjord",
+                    title = "Questlines in Howling Fjord",
                 },
             },
-            summary = "Dieser Northrend-Rufblock ist vor allem im Heulenden Fjord verankert. Relevanter Fortschritt kommt ueber die Zonengeschichten und die dortigen Northrend-Aktivitaeten.",
+            summary = "This organization seeks to find the origin of the dwarven race by collecting Titan artifacts.  Their most recent research has led them to various archeological sites in Northrend.",
         },
         [1073] = {
             activities = {
                 {
                     kind = "Story/Zone",
-                    title = "Questlinien in der Boreanischen Tundra",
+                    title = "Questlines in Borean Tundra",
                 },
             },
-            summary = "Der Kernbezug dieses Northrend-Rufblocks liegt in der Boreanischen Tundra. Fortschritt kommt vor allem aus den dortigen Story- und Hubaktivitaeten.",
+            summary = "The tuskarr are a tough but peaceful people who derive their livelihood from fishing and whaling.  Their settlements have recently come under fierce attack and welcome any allies who would come to their aid.",
         },
         [1077] = {
             activities = {
@@ -457,32 +457,32 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                 },
                 {
                     kind = "Daily",
-                    title = "Quel'Danas-Dailys",
+                    title = "Quel'Danas dailies",
                 },
             },
-            summary = "Die Offensive der Zerschmetterten Sonne ist der spaete Scherbenwelt-Endgame-Rufblock von Quel'Danas und dessen Daily-Zyklus.",
+            summary = "Shattrath City's final push against Prince Kael'thas' operations in the Sunwell.",
         },
         [1090] = {
             activities = {
                 {
                     kind = "Hub",
-                    title = "Dalaran-Stadtaktivitaeten",
+                    title = "Dalaran city activities",
                 },
                 {
                     kind = "Dungeon",
                     title = "Northrend-Dungeons mit Dalaran-Bezug",
                 },
             },
-            summary = "Dalarans zentraler Northrend-Rufblock. Im heutigen Spiel ist der Bezug vor allem an Dalaran, die Violette Festung und klassische Northrend-Dungeon- bzw. Stadtaktivitaeten gebunden.",
+            summary = "The mages and archmages running the city of Dalaran.  Faced with the rising threats of the Blue Dragonflight and the Scourge, they've transported their city to the heart of Northrend.",
         },
         [1091] = {
             activities = {
                 {
                     kind = "Story/Zone",
-                    title = "Questlinien in der Drachenoede",
+                    title = "Questlines in Dragonblight",
                 },
             },
-            summary = "Dieser Rufblock ist im Retail-Core an die Drachenoede gebunden. Im Vordergrund stehen die dortigen Storylinien und Northrend-Zonenaktivitaeten.",
+            summary = "With the Blue Dragonflight's violent upheaval against all mortal users of magic, the remaining dragonflights have banded under the leadership of the Red Dragonflight to combat their wayward kin.",
         },
         [1098] = {
             activities = {
@@ -495,51 +495,51 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Ulduar",
                 },
             },
-            summary = "Dieser Rufblock ist im Retail-Core besonders eng mit den Titanen- und Ulduar-Inhalten in den Sturmgipfeln verbunden.",
+            summary = "Freed from the grasp of the Lich King, his former Death Knights have regrouped against him under the banner of Highlord Darion Mograine.",
         },
         [1104] = {
             activities = {
                 {
                     kind = "Story/Zone",
-                    title = "Questlinien im Sholazarbecken",
+                    title = "Questlines in Sholazar Basin",
                 },
             },
-            summary = "Dieser Rufblock gehoert in den Retail-Daten zum Sholazarbecken. Der Schwerpunkt liegt auf den lokalen Story- und Zonenaktivitaeten.",
+            summary = "Driven from their lands by the Scourge, this fierce tribe of wolvar stumbled upon Sholazar Basin, where they intend to make their new home.  Their aggressive nature has put them at odds with the various gorloc tribes known collectively as the Oracles.",
         },
         [1105] = {
             activities = {
                 {
                     kind = "Story/Zone",
-                    title = "Questlinien in Zul'Drak",
+                    title = "Questlines in Zul'Drak",
                 },
                 {
                     kind = "Dungeon",
-                    title = "Gundrak",
+                    title = "Gandrak",
                 },
             },
-            summary = "Der Kernbezug dieses Rufblocks liegt bei Zul'Drak und den zugehoerigen Trollen-Instanzen.",
+            summary = "The gorlocs of Sholazar Basin are a race of reptilian creatures who see themselves as guardians of the titan technology that remains in the zone (though they understand little of it).  They find themselves in an escalating territorial war with the wolvar.",
         },
         [1106] = {
             activities = {
                 {
                     kind = "Hub",
-                    title = "Argentumvorhut",
+                    title = "Argent Crusade",
                 },
                 {
                     kind = "Story/Zone",
-                    title = "Questlinien in Eiskrone",
+                    title = "Questlines in Icecrown",
                 },
             },
-            summary = "Dieser Northrend-Rufblock ist eng mit Eiskrone und der Argentumvorhut verknuepft. Der Fortschritt dreht sich vor allem um die dortigen Story- und Dungeon/Raid-Inhalte.",
+            summary = "Led by Tirion Fordring, the Argent Crusade combines the reformed Order of the Silver Hand with the Argent Dawn in one final push against the forces of the Lich King.",
         },
         [1119] = {
             activities = {
                 {
                     kind = "Story/Zone",
-                    title = "K3 und Sturmgipfel-Questlinien",
+                    title = "K3 and Storm Peaks questlines",
                 },
             },
-            summary = "Der Kernbezug dieses Rufblocks liegt bei K3 und den Sturmgipfeln. Klassisch dreht sich der Fortschritt um die lokalen Storylinien und taeglichen Aufgaben in der Zone.",
+            summary = "The frost giants of the Storm Peaks are a war-like race that makes their home in Dun Niffelem.",
         },
         [1124] = {
             activities = {
@@ -548,16 +548,16 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Vault of Archavon",
                 },
             },
-            summary = "Dieser Rufblock ist im Retail-Core an Vault of Archavon verankert. Im aktuellen Addon-Kontext ist der Raid der relevante Bezugspunkt.",
+            summary = "Traditionally barred from Dalaran, the Horde has been accepted into the city through the efforts of Archmage Aethas Sunreaver.  His followers have taken up his name and watch over the ward known as Sunreaver's Sanctuary.",
         },
         [1126] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Die Sturmgipfel",
+                    title = "The Storm Peaks",
                 },
             },
-            summary = "The Frostborn ist der Allianz-seitige Nebenruf der Sturmgipfel. Im Retail-Core bleibt er als lokaler Alliance-Zweig der Zone erhalten, ohne den Hauptblock der Sons of Hodir zu verdrängen.",
+            summary = "This mysterious race of frost dwarves makes their home in the Storm Peaks.  They've recently befriended members of the Explorers' League and welcome Alliance members within their settlements.",
         },
         [1133] = {
             activities = {
@@ -566,7 +566,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Azshara",
                 },
             },
-            summary = "Das Bilgewasserkartell ist im Retail-Core die lokale Goblinfraktion für Azshara und verwandte Goblin-Kontexte.",
+            summary = "Run by the ruthless Trade Prince Gallywix, the Bilgewater Cartel is the most powerful trading company on the Isle of Kezan. From their headquarters at Bilgewater Port, the cartel dominates trade all over the South Seas.",
         },
         [1134] = {
             activities = {
@@ -575,7 +575,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Gilneas",
                 },
             },
-            summary = "Gilneas ist im Retail-Core die lokale Fraktion für die gilneische Heimatstadt und ihr Umland.",
+            summary = "The people of Gilneas are a nation of survivors.  Having walled themselves off from the rest of humanity, they must now face new threats from within.",
         },
         [1156] = {
             activities = {
@@ -584,7 +584,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Icecrown Citadel",
                 },
             },
-            summary = "Dieser Rufblock ist direkt an Icecrown Citadel gebunden. Der heutige Kernbezug liegt entsprechend beim Raid selbst.",
+            summary = "Under a pact by Tirion Fordring and Darion Mograine, the Argent Crusade and the Knights of the Ebon Blade have set aside their differences during the attack on Icecrown Citadel until the Lich King is slain.",
         },
         [1158] = {
             activities = {
@@ -593,7 +593,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Hyjal",
                 },
             },
-            summary = "Die Wächter des Hyjal sind der lokale Cataclysm-Rufblock für Hyjal und die dortigen Elementar- und Druidenkonflikte.",
+            summary = "Faced with the impending devastation of Mount Hyjal, the most powerful members of the Cenarion Circle have joined forces with their Emerald Dragonflight allies to fend off Ragnaros' elemental hordes and the Twilight's Hammer.",
         },
         [1171] = {
             activities = {
@@ -602,10 +602,10 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Tiefenheim",
                 },
             },
-            summary = "Therazane ist die lokale Fraktion von Tiefenheim und dem Tempel der Erde. Der Kernfortschritt kommt aus der Zone selbst.",
+            summary = "The elemental plane of earth, Deepholm, is ruled by Therazane and her children, the Stone Lords.  After witnessing the devastation Deathwing and his followers caused her realm, Therazane treats all outsiders with open hostility.",
         },
         [1172] = {
-            summary = "Startdatensatz für diese im Retail-Core lokal verankerte Fraktion. Der Kernbezug liegt aktuell vor allem bei Schattenhochland, Grim Batol, The Bastion of Twilight. Spezifische Rüstmeister- und Aktivitätsdaten können später präzisiert werden.",
+            summary = "This wayward orc clan was once empowered by Deathwing himself to enslave red dragons, including Alexstrasza.  Currently less numerous and powerful, the Dragonmaw make their home in the Twilight Highlands.",
         },
         [1173] = {
             activities = {
@@ -614,7 +614,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Uldum",
                 },
             },
-            summary = "Ramkahen ist die klassische lokale Fraktion von Uldum. Sie bleibt der stabile Heimatanker der Zone über mehrere Weltzustände hinweg.",
+            summary = "The cat-like people of Ramkahen are the descendants of the Tol'vir, guardians of Uldum.  Though they've lost their stone bodies, protecting the secrets of the titans is still a part of their rigid tradition.",
         },
         [1174] = {
             activities = {
@@ -623,7 +623,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Schattenhochland",
                 },
             },
-            summary = "Wildhammer Clan ist der Allianz-seitige Nebenruf der Schattenhochlande. Im Retail-Core bleibt er als klarer lokaler Alliance-Zweig der Zone modelliert.",
+            summary = "The Wildhammer dwarves are known for their near-reckless courage as well as their unsurpassed gryphon-riding skills.  After losing their home of Grim Batol to a Dark Iron Curse, they've spread their dwellings around the Twilight Highlands.",
         },
         [1177] = {
             activities = {
@@ -636,7 +636,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Halbinsel von Tol Barad",
                 },
             },
-            summary = "Baradin's Wardens ist die Allianz-Fraktion von Tol Barad und der Halbinsel von Tol Barad.",
+            summary = "Once led by Duke Reginald Baradin II, this fierce army has historic ties to the island stronghold of Tol Barad.  They have joined the forces of the Alliance in an effort to repeal the Horde invaders and gain control of this strategic island.",
         },
         [1178] = {
             activities = {
@@ -649,77 +649,77 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Halbinsel von Tol Barad",
                 },
             },
-            summary = "Hellscream's Reach ist die Horde-Fraktion von Tol Barad und der Halbinsel von Tol Barad.",
+            summary = "Hellscream's Reach is an elite Horde regiment comprised solely of veterans of multiple tours of duty.   Handpicked by Garrosh himself, he has commanded them to take complete control of Tol Barad.  Failure is not an option.",
         },
         [1204] = {
-            summary = "Startdatensatz für diese im Retail-Core lokal verankerte Fraktion. Der Kernbezug liegt aktuell vor allem bei Hyjal, The Vortex Pinnacle, Firelands. Spezifische Rüstmeister- und Aktivitätsdaten können später präzisiert werden.",
+            summary = "Infuriated by the destruction wrought by the Lord of Flame, the Cenarion Circle seize the initiative, fighting back against Ragnaros and driving deep into the very heart of the Firelands.",
         },
         [1269] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Tal der Ewigen Blueten",
+                    title = "Vale of Eternal Blossoms",
                 },
                 {
                     kind = "Dungeon",
                     title = "Mogu'shan Palace",
                 },
             },
-            summary = "Dieser Pandaria-Rufblock ist an das Tal der Ewigen Blueten gebunden. Relevanter Fortschritt haengt im heutigen Spiel an der Vale-Zone und den dortigen MoP-Inhalten.",
+            summary = "This mysterious society of Pandaren intend to solve the Mogu problem once and for all.",
         },
         [1270] = {
             activities = {
                 {
                     kind = "Story/Zone",
-                    title = "Questlinien im Jadewald",
+                    title = "Questlines in the Jade Forest",
                 },
                 {
                     kind = "Dungeon",
                     title = "Shado-Pan Monastery",
                 },
             },
-            summary = "Dieser Pandaria-Rufblock deckt vor allem Jadewald und Tonlongsteppe ab. Im Vordergrund stehen die Shado-Pan-nahen Story- und Dungeon-Inhalte.",
+            summary = "The shadowy protectors of Pandaria's temples, the Shado-Pan are wrought with mystery.",
         },
         [1271] = {
             activities = {
                 {
                     kind = "Story/Zone",
-                    title = "Questlinien in der Schreckensoede",
+                    title = "Questlines in Dread Wastes",
                 },
                 {
                     kind = "Raid",
                     title = "Heart of Fear",
                 },
             },
-            summary = "Der Kernbezug dieses Rufblocks liegt in der Schreckensoede und den mantidenbezogenen Pandaria-Inhalten.",
+            summary = "Guardians of the East Temple",
         },
         [1272] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Tal der Vier Winde",
+                    title = "Valley of the Four Winds",
                 },
                 {
                     kind = "Hub",
                     title = "Halbhuegel",
                 },
             },
-            summary = "Dieser Rufblock ist an Tal der Vier Winde und Halbhuegel gebunden. Im Retail-Kontext liegen die wichtigsten Bezuege bei den Farm- und Hubaktivitaeten dieser Gegend.",
+            summary = "The Tillers are peaceful and productive pandaren, working with the land to feed the massive appetites of their people.",
         },
         [1302] = {
             activities = {
                 {
                     kind = "Story/Zone",
-                    title = "Questlinien in der Krasarangwildnis",
+                    title = "Questlines in Krasarang Wilds",
                 },
             },
-            summary = "Der Kernbezug dieses Pandaria-Rufblocks liegt in der Krasarangwildnis und ihren Storylinien.",
+            summary = "The Anglers are a group of Pandaren fisherman that hope to feed their people and grow their knowledge of fishing.",
         },
         [1337] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Schreckensoede",
+                    title = "Dread Wastes",
                 },
                 {
                     kind = "Hub",
@@ -730,95 +730,95 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Heart of Fear",
                 },
             },
-            summary = "Die Klaxxi sind der eigentliche Mantiden-Rufblock der Schreckensoede. Im Retail-Core laufen sie als lokale Nebenfraktion der Zone und ihres Hubbereichs Klaxxi'vess.",
+            summary = "These Mantid Elders are untouched by the corruption and insanity that has overtaken the remainder of the Mantid Swarm. They seek to work with the races of Pandaria to restore their Queen to glory.",
         },
         [1359] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Tal der Ewigen Blueten",
+                    title = "Vale of Eternal Blossoms",
                 },
                 {
                     kind = "Story",
                     title = "Wrathion-Endgame",
                 },
             },
-            summary = "Der Schwarze Prinz ist ein spaeter MoP-Rufblock mit starkem Bezug zum Tal der Ewigen Blueten und dem Wrathion-Endgamepfad.",
+            summary = "Black Prince Wrathion is the last of the black dragons. He has been known to richly reward those who earn his trust and support his endeavors.",
         },
         [1375] = {
             activities = {
                 {
                     kind = "Hub",
-                    title = "Schrein der Zwei Monde",
+                    title = "Shrine of Two Moons",
                 },
             },
-            summary = "Horde-Hubruf des Schreins der Zwei Monde im Tal der Ewigen Blueten. Heute ist der Schrein selbst der zentrale Bezugspunkt.",
+            summary = "Horde forces in Pandaria, stationed at Domination Point in Krasarang Wilds.",
         },
         [1376] = {
             activities = {
                 {
                     kind = "Hub",
-                    title = "Schrein der Sieben Sterne",
+                    title = "Shrine of Seven Stars",
                 },
             },
-            summary = "Allianz-Hubruf des Schreins der Sieben Sterne im Tal der Ewigen Blueten. Heute ist der Schrein selbst der zentrale Bezugspunkt.",
+            summary = "Alliance forces in Pandaria, stationed at Lion's Landing in Krasarang Wilds.",
         },
         [1387] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Insel des Donners",
+                    title = "Isle of Thunder",
                 },
             },
-            summary = "Dieser Rufblock ist an die Insel des Donners gebunden und folgt der jeweils seitenabhaengigen Offensive in der Zone.",
+            summary = "Ignited by Jaina's fury, the Kirin Tor Offensive seek to seize Thunder Isle for the glory of the Alliance!",
         },
         [1388] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Insel des Donners",
+                    title = "Isle of Thunder",
                 },
             },
-            summary = "Die Sunreaver Onslaught ist der Horde-seitige Offensivruf der Insel des Donners und bildet dort das Gegenstück zur Kirin Tor Offensive.",
+            summary = "Outcast from Dalaran, the Sunreaver Onslaught fight to obtain powerful mogu artifacts from among the ruins of Thunder Isle, and to secure their future if the Horde falls to anarchy.",
         },
         [1416] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Schattenmondtal",
+                    title = "Shadowmoon Valley",
                 },
                 {
                     kind = "Raid",
-                    title = "Der Schwarze Tempel",
+                    title = "Black Temple",
                 },
             },
-            summary = "Akama's Trust ist der lokale Nebenruf rund um Schattenmondtal und den Schwarzen Tempel. Im Retail-Core wird er als klarer Outland-Seitenpfad neben dem Aschenzungen-Block behandelt.",
+            summary = "Akama is distrustful of Warlocks after witnessing Illidan's fall to his own corruption, followed by the invasion of the Black Temple by Warlocks after the Cataclysm.",
         },
         [1435] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Insel des Donnerkoenigs",
+                    title = "Isle of the Thunder King",
                 },
                 {
                     kind = "Raid",
-                    title = "Throne of Thunder",
+                    title = "Throne of Thander",
                 },
             },
-            summary = "Der Kernbezug dieses Rufblocks liegt auf der Insel des Donnerkoenigs und im Raid Throne of Thunder.",
+            summary = "These valorous Shado-Pan venture into the Throne of Thunder to vanquish the evil found within, and exact justice for the centuries of slavery they endured under the Thunder King's reign.",
         },
         [1445] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Frostfeuergrat",
+                    title = "Frostfire Ridge",
                 },
                 {
                     kind = "Hub",
-                    title = "Kriegsmuehle",
+                    title = "War Mill",
                 },
             },
-            summary = "Dieser Draenor-Rufblock ist an Frostfeuergrat und die dortige Garnisons- bzw. Hubstruktur gebunden.",
+            summary = "The Frostwolf orcs of Frostfire Ridge are a tight-knit family of brutal warriors, well equipped to deal with the savage realities of Draenor.",
         },
         [1492] = {
             activities = {
@@ -831,7 +831,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Siege of Orgrimmar",
                 },
             },
-            summary = "Dieser Pandaria-Endgame-Rufblock ist an die Zeitlose Insel und den spaeten MoP-Endgame-Zyklus gebunden.",
+            summary = "Shaohao, the long lost Emperor of the Pandaren people, is a personage worthy of deep respect.",
         },
         [1515] = {
             activities = {
@@ -840,20 +840,20 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Spires of Arak",
                 },
             },
-            summary = "Arakkoa Outcasts ist der lokale Seitenruf von Spires of Arak. Im Retail-Core ergänzt er den Zonenblock um den expliziten Ausgestoßenen-Pfad der Arakkoa.",
+            summary = "Working from the shadows, the Arakkoa Outcasts seek to bring a brighter tomorrow.",
         },
         [1710] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Mondsturz",
+                    title = "Moonfall",
                 },
                 {
                     kind = "Hub",
-                    title = "Aussenposten der Erwachten",
+                    title = "Outpost of the Awakened",
                 },
             },
-            summary = "Dieser Rufblock ist an Mondsturz und den Allianz-Zweig der Draenor-Hubs gebunden.",
+            summary = "The defenders of Shattrath struggle to regain control of their capital city, having been betrayed from within.",
         },
         [1711] = {
             activities = {
@@ -866,7 +866,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Grimrail Depot",
                 },
             },
-            summary = "Dieser Draenor-Rufblock ist im Retail-Core vor allem mit Gorgrond und Grimrail Depot verknuepft.",
+            summary = "The goblins of the Steamwheedle Preservation Society seek to liberate relics from the ogres of Nagrand with the noble intention of selling them to the highest bidder.",
         },
         [1731] = {
             activities = {
@@ -876,54 +876,54 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                 },
                 {
                     kind = "Dungeon",
-                    title = "Shadowmoon Burial Grounds",
+                    title = "Shadowmoon Burial Groands",
                 },
             },
-            summary = "Der Kernbezug dieses Draenor-Rufblocks liegt bei Nagrand und Schattenmondtal sowie den dortigen Story- und Dungeoninhalten.",
+            summary = "Under the leadership of five powerful exarchs, the draenei of Draenor have prospered in a savage world.",
         },
         [1828] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Hochberg",
+                    title = "Highmountain",
                 },
                 {
                     kind = "Dungeon",
                     title = "Neltharion's Lair",
                 },
             },
-            summary = "Dieser Legion-Rufblock ist an Hochberg und die dortigen lokalen Geschichten verankert.",
+            summary = "The Highmountain Tribe has dwindled in numbers over the years, and with the drogbar threat looming, seek new allies to save their homeland.",
         },
         [1847] = {
             activities = {
                 {
                     kind = "Hub",
-                    title = "Kriegsspeer",
+                    title = "Warspear",
                 },
             },
-            summary = "Horde-Hubruf von Kriegsspeer. Der heutige Bezugspunkt ist die Stadt als Draenor-Hub.",
+            summary = "Yrel has assembled the remaining Exarchs and is calling for a crusade in Velen's name. Together they are working to establish a foothold in Tanaan Jungle and to overthrow Gul'dan.",
         },
         [1848] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Tanaan-Dschungel",
+                    title = "Tanaan Jungle",
                 },
                 {
                     kind = "Raid",
                     title = "Hellfire Citadel",
                 },
             },
-            summary = "Dieser Rufblock ist vor allem an Tanaan-Dschungel und Hellfire Citadel gebunden.",
+            summary = "Seeking to protect Azeroth with a decisive victory on Draenor, Warchief Vol'jin is assembling an elite team of champions to establish a foothold in Tanaan Jungle and to overthrow Gul'dan.",
         },
         [1849] = {
             activities = {
                 {
                     kind = "Hub",
-                    title = "Sturmschild",
+                    title = "Stormshield",
                 },
             },
-            summary = "Allianz-Hubruf von Sturmschild. Im heutigen Spiel ist die Stadt der zentrale Bezugspunkt.",
+            summary = "Survivors of a grisly civil war, these beleaguered arakkoans hope the reclamation of apexis artifacts will hold the key to peacefully rebuilding their civilization.",
         },
         [1850] = {
             activities = {
@@ -936,7 +936,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Auchindoun",
                 },
             },
-            summary = "Dieser Rufblock ist im Retail-Core an Spires of Arak und Auchindoun verankert.",
+            summary = "The treacherous wilds of Tanaan Jungle have attracted the craftiest hunters from both Azeroth and Draenor. To defeat the beasts of Tanaan, one must become a beast.",
         },
         [1859] = {
             activities = {
@@ -949,7 +949,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Shal'Aran",
                 },
             },
-            summary = "Der zentrale Suramar-Rufblock von Legion. Der Schwerpunkt liegt auf Shal'Aran, Suramar und den dortigen Kampagnen- sowie Dungeoninhalten.",
+            summary = "These exiled Nightborne elves suffer withdrawals after being cut off from the Nightwell. They oppose their people's alliance with the Legion and fight for some kind of redemption.",
         },
         [1883] = {
             activities = {
@@ -959,23 +959,23 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                 },
                 {
                     kind = "Hub",
-                    title = "Krasus' Landeplatz",
+                    title = "Krasus' Landing",
                 },
             },
-            summary = "Dalaran-Hubruf von Legion mit Bezug auf die Verheerten Inseln, Val'sharah und die zentrale Magierstadt.",
+            summary = "The druids and their allies in Val'sharah have guarded the Emerald Dream since time immemorial.",
         },
         [1894] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Scherbenkueste",
+                    title = "Broken Shore",
                 },
                 {
                     kind = "Raid",
                     title = "Tomb of Sargeras",
                 },
             },
-            summary = "Dieser Legion-Rufblock ist an die Scherbenkueste und Tomb of Sargeras gebunden.",
+            summary = "After Legion forces broke the Vault of the Wardens with the aid of Gul'dan, what few Wardens remain are determined to rebuild their prison and hunt down the terrifying beasts that were let loose when it fell.",
         },
         [1900] = {
             activities = {
@@ -988,7 +988,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Eye of Azshara",
                 },
             },
-            summary = "Der Kernbezug dieses Legion-Rufblocks liegt in Azsuna und Eye of Azshara.",
+            summary = "The ghostly Court of Farondis and its allies continue the fight against an onslaught of invaders on the cursed island of Azsuna.",
         },
         [1948] = {
             activities = {
@@ -1001,7 +1001,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Haimont",
                 },
             },
-            summary = "Dieser Rufblock ist an Sturmheim, Haimont und die dortigen vrykulbezogenen Legion-Inhalte gekoppelt.",
+            summary = "These are the chosen warriors of Odyn, sworn to his service in life and death.",
         },
         [2045] = {
             activities = {
@@ -1010,7 +1010,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Vault of the Wardens",
                 },
             },
-            summary = "Dieser Legion-Rufblock ist im Retail-Core direkt an Vault of the Wardens gekoppelt.",
+            summary = "The coalition of orders dedicated to defeating the Legion at the Tomb of Sargeras and Broken Shore.",
         },
         [2135] = {
             activities = {
@@ -1020,10 +1020,10 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                 },
                 {
                     kind = "Zone",
-                    title = "Temporale Nebenaktivitäten",
+                    title = "Temporal side activities",
                 },
             },
-            summary = "Chromie bündelt die zeitbezogenen Nebenaktivitäten in Thaldraszus. Der Fortschritt hängt vor allem an Zeitrissen und den dazugehörigen wiederkehrenden Aufgaben.",
+            summary = "Chronormu (Chromie for short) has always been one of the more active, approachable bronze dragons. Strengthening your bond with her will increase her power in the Deaths of Chromie scenario.",
         },
         [2157] = {
             activities = {
@@ -1036,7 +1036,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Dazar'alor",
                 },
             },
-            summary = "Dieser BfA-Rufblock ist an Zandalar, Zuldazar und Dazar'alor gebunden. Im Vordergrund stehen die dortigen Story- und Hubaktivitaeten.",
+            summary = "A special delegation of the Horde army, focused on disrupting Alliance operations in Kul Tiras.",
         },
         [2158] = {
             activities = {
@@ -1045,20 +1045,20 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Vol'dun",
                 },
             },
-            summary = "Der Kernbezug dieses BfA-Rufblocks liegt in Vol'dun und den dortigen Storylinien.",
+            summary = "Comprised of exiles and scavengers, the Voldunai use their knowledge of the sands to thrive where others would wither and die.",
         },
         [2160] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Tiragardesund",
+                    title = "Tiragardesand",
                 },
                 {
                     kind = "Hub",
                     title = "Boralus",
                 },
             },
-            summary = "Dieser BfA-Rufblock ist an Kul Tiras, Tiragardesund und Boralus gebunden.",
+            summary = "Masters of the sea and commanders of Azeroth's finest navy, the distinguished Proudmoore family has led Kul Tiras for decades from their seat of power in Boralus.",
         },
         [2161] = {
             activities = {
@@ -1071,20 +1071,20 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Waycrest Manor",
                 },
             },
-            summary = "Der Kernbezug dieses BfA-Rufblocks liegt in Drustvar und Waycrest Manor.",
+            summary = "An ancient Kul Tiran order resurrected to battle the threat of witchcraft, the Order of Embers fights with knowledge guiding their blades.",
         },
         [2162] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Sturmsangtal",
+                    title = "Stormsong Valley",
                 },
                 {
                     kind = "Dungeon",
                     title = "Shrine of the Storm",
                 },
             },
-            summary = "Dieser BfA-Rufblock ist an Sturmsangtal und die dortigen Kul-Tiras-Inhalte gebunden.",
+            summary = "Home to farmers, craftsmen, soldiers, and the mysterious tidesages, the Storm's Wake seeks to reclaim Stormsong Valley and affirm their place in Kul Tiras.",
         },
         [2165] = {
             activities = {
@@ -1094,23 +1094,23 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                 },
                 {
                     kind = "Zone",
-                    title = "Argus-Aktivitaeten",
+                    title = "Argus activities",
                 },
             },
-            summary = "Argus-Rufblock mit Schwerpunkt auf Krokuun und dem Lichtarmeezweig der Endgame-Zone.",
+            summary = "After the fall of Argus, the draenei's finest warriors followed the prime naaru Xe'ra across the cosmos in an eternal war to bring about the Legion's end. Since then, other survivors of the Burning Crusade have joined the ranks of the Lightforged.",
         },
         [2170] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Argus-Aktivitaeten",
+                    title = "Argus activities",
                 },
                 {
                     kind = "Raid",
                     title = "Antorus, the Burning Throne",
                 },
             },
-            summary = "Argus-Endgame-Rufblock mit Schwerpunkt auf den spaeten Antorus- und Argus-Inhalten.",
+            summary = "Although many struggled to oppose the Burning Legion's conquest of Argus, not all were able to escape. Emboldened by the arrival of new allies, these refugees and outcasts stand united in their mission to reclaim their home.",
         },
         [2370] = {
             activities = {
@@ -1123,7 +1123,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Nazjatar",
                 },
             },
-            summary = "Der Horde-Zweig von Nazjatar. Der Kernbezug liegt bei Neueheim und den lokalen Nazjatar-Aktivitaeten.",
+            summary = "Retail content for this faction is centered on Neueheim and Nazjatar.",
         },
         [2373] = {
             activities = {
@@ -1136,7 +1136,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Nazjatar",
                 },
             },
-            summary = "Der Allianz-Zweig von Nazjatar. Der Kernbezug liegt bei Mezzamere und den lokalen Nazjatar-Aktivitaeten.",
+            summary = "Oppressed by the Naga, these refugees have banded together to rise up and seize their freedom.",
         },
         [2391] = {
             activities = {
@@ -1149,7 +1149,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Rostbolzen",
                 },
             },
-            summary = "Dieser BfA-Endgame-Rufblock ist an Mechagon, Rostbolzen und die Inselaktivitaeten gebunden.",
+            summary = "The Rustbolt Resistance holds the line against King Mechagon and his evil plans.",
         },
         [2395] = {
             activities = {
@@ -1158,7 +1158,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Sturmsangtal side content",
                 },
             },
-            summary = "Honeyback Hive ist ein lokaler Nebenruf von Kul Tiras, vor allem im Sturmsangtal. Der Fortschritt hängt an den bienenbezogenen Nebeninhalten dieses Gebiets.",
+            summary = "A species of bee known for their unusual size. While newcomers to Stormsong Valley, they quickly made their presence known to adventurers and insect enthusiasts alike.",
         },
         [2407] = {
             activities = {
@@ -1171,7 +1171,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Spires of Ascension",
                 },
             },
-            summary = "Dieser Shadowlands-Rufblock ist an Bastion und den kyrianischen Zonenzweig gebunden.",
+            summary = "Kyrian who complete the arduous process of purging their mortal encumbrances are deemed worthy of the rite of ascension, earning their wings and pledging eternal service to the Archon.",
         },
         [2410] = {
             activities = {
@@ -1184,7 +1184,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Theater of Pain",
                 },
             },
-            summary = "Der Kernbezug dieses Shadowlands-Rufblocks liegt in Maldraxxus und den dortigen Story- und Dungeoninhalten.",
+            summary = "Long ago, the Primus established the five houses of Maldraxxus to build the ultimate fighting force. Through might, cleverness, and guile, this unyielding armada is pledged to defend the Shadowlands against all threats.",
         },
         [2413] = {
             activities = {
@@ -1197,7 +1197,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Halls of Atonement",
                 },
             },
-            summary = "Dieser Shadowlands-Rufblock ist an Revendreth und den venthyrbezogenen Storypfad gekoppelt.",
+            summary = "After countless ages spent under the rule of Sire Denathrius, authority in Revendreth is now shared amongst the Court of Harvesters. These noble venthyr carry out the sacred duty of redeeming prideful souls.",
         },
         [2415] = {
             activities = {
@@ -1206,7 +1206,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Ny'alotha, the Waking City",
                 },
             },
-            summary = "Dieser spaete BfA-Rufblock ist an Ny'alotha und die letzten Schwarzimperium-Inhalte gekoppelt.",
+            summary = "A group of mogu loyal to the titan keeper Ra, they are charged with defending the Engine of Nalak'sha from N'Zoth's minions.",
         },
         [2417] = {
             activities = {
@@ -1215,30 +1215,20 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Uldum",
                 },
             },
-            summary = "Uldum Accord ergänzt den klassischen Uldum-Block um die spaeteren Angriffs- und Weltaktivitaeten der modernen Uldum-Zustände.",
+            summary = "A loose coalition of allies headed by the Tol'vir, the Uldum Accord was founded to protect the Forge of Origination from enemy forces.",
         },
         [2432] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Der Schlund",
+                    title = "The Maw",
                 },
                 {
                     kind = "Hub",
                     title = "Ve'naris Zuflucht",
                 },
-                {
-                    kind = "Recurring",
-                    title = "Schlund-Aktivitäten",
-                },
             },
-            quartermasters = {
-                {
-                    label = "Quartermaster",
-                    name = "Ve'nari",
-                },
-            },
-            summary = "Der Kernbezug dieses Shadowlands-Rufblocks liegt im Schlund und den dortigen Endgame-Aktivitaeten.",
+            summary = "Ve'nari knows more about the Maw than anyone, and she might share a fraction of that information with you if you earn her regard.",
         },
         [2439] = {
             activities = {
@@ -1246,35 +1236,21 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     kind = "Hub",
                     title = "Absolution Crypt",
                 },
-                {
-                    kind = "Recurring",
-                    title = "Sinstone turn-ins",
-                },
-                {
-                    kind = "Zone",
-                    title = "Revendreth side content",
-                },
             },
-            quartermasters = {
-                {
-                    label = "Quartermaster",
-                    name = "Archivist Janeera",
-                },
-            },
-            summary = "The Avowed ist ein lokaler Nebenruf von Revendreth. Der Fortschritt sitzt an den rituellen und sammelorientierten Aktivitäten im Revendreth-Nebenpfad.",
+            summary = "Fiercely devoted to the Accuser, these archivists seek to restore and catalog the sinstones fragmented by the Lord Chamberlain and his Inquisitor allies.",
         },
         [2464] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Ardenwald",
+                    title = "Ardenweald",
                 },
                 {
                     kind = "Dungeon",
                     title = "Mists of Tirna Scithe",
                 },
             },
-            summary = "Dieser Shadowlands-Rufblock ist an Ardenwald und den dazugehoerigen Storyzweig gebunden.",
+            summary = "The anima drought and Drust invasion consume the Winter Queen and Wild Hunt's attention, leaving the droman of the Court of Night to protect the wildseeds and defend their groves.",
         },
         [2465] = {
             activities = {
@@ -1282,22 +1258,8 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     kind = "Zone",
                     title = "Ardenweald",
                 },
-                {
-                    kind = "Recurring",
-                    title = "Callings and side objectives",
-                },
             },
-            quartermasters = {
-                {
-                    label = "Quartermaster",
-                    name = "Aithlyn",
-                },
-                {
-                    label = "Quartermaster",
-                    name = "Liawyn",
-                },
-            },
-            summary = "The Wild Hunt ist der zentrale lokale Ardenweald-Ruf. Fortschritt kommt über die Zonenstory, wiederkehrende Aufgaben und die wichtigsten Aktivitäten des Waldpfads.",
+            summary = "Called to serve the Winter Queen in times of dire need, the Wild Hunt assembles the finest huntresses and hunters in all of Ardenweald. In the face of drought and peril, the Wild Hunt stands ready to defend the forest.",
         },
         [2470] = {
             activities = {
@@ -1306,7 +1268,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Sanctum of Domination",
                 },
             },
-            summary = "Dieser Shadowlands-Raidrufblock ist an Sanctum of Domination gekoppelt.",
+            summary = "The combined might of the Shadowlands covenants, brought forth to breach the Sanctum of Domination.",
         },
         [2472] = {
             activities = {
@@ -1323,13 +1285,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Relic research",
                 },
             },
-            quartermasters = {
-                {
-                    label = "Quartermaster",
-                    name = "Archivist Roh-Suir",
-                },
-            },
-            summary = "The Archivists' Codex ist der lokale Nebenruf von Korthia. Der Fortschritt sitzt an Reliktforschung, Korthia-Aktivitäten und dem Hub rund um Keeper's Respite.",
+            summary = "Korthian attendants have committed their existence to researching relics from across the Shadowlands. Led by their Archivist, they are dedicated to recovering the relics scattered across Korthia in the wake of the mawsworn invasion.",
         },
         [2478] = {
             activities = {
@@ -1342,7 +1298,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Haven",
                 },
             },
-            summary = "Der spaete Shadowlands-Rufblock von Zereth Mortis. Relevanter Fortschritt kommt ueber die Zone, Haven und den Abschlusszyklus von Shadowlands.",
+            summary = "Once members of Cartel Al, the Enlightened have abandoned the pursuit of profit and glory out of devotion to the First Ones. By earning their favor, the brokers may be willing to share the knowledge they have gleaned.",
         },
         [2503] = {
             activities = {
@@ -1352,20 +1308,10 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                 },
                 {
                     kind = "Zone",
-                    title = "Ebenen von Ohn'ahra",
-                },
-                {
-                    kind = "Hub",
-                    title = "Maruukai",
+                    title = "Ohn'ahran Plains",
                 },
             },
-            quartermasters = {
-                {
-                    label = "Quartermaster",
-                    name = "Quartermaster Huseng",
-                },
-            },
-            summary = "Dieser Dragonflight-Rufblock ist an die Ebenen von Ohn'ahra und Maruukai gebunden.",
+            summary = "Centaur clans roam the Ohn'ahran Plains, where they follow the call of the wind and seek the thrill of the hunt.",
         },
         [2507] = {
             activities = {
@@ -1375,24 +1321,10 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                 },
                 {
                     kind = "Zone",
-                    title = "Küste des Erwachens",
-                },
-                {
-                    kind = "Zone",
-                    title = "Verbotene Insel",
-                },
-                {
-                    kind = "Hub",
-                    title = "Dragonscale Basecamp",
+                    title = "The Waking Shores",
                 },
             },
-            quartermasters = {
-                {
-                    label = "Quartermaster",
-                    name = "Cataloger Jakes",
-                },
-            },
-            summary = "Dieser Dragonflight-Rufblock ist an die Kuesten- und Expeditionsinhalte der Dracheninseln gebunden.",
+            summary = "A joint expedition of the Explorers' League and Reliquary, this fearless group of adventurers, scholars, and crafters seek to uncover the many mysteries of the Dragon Isles.",
         },
         [2510] = {
             activities = {
@@ -1404,18 +1336,8 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     kind = "Zone",
                     title = "Thaldraszus",
                 },
-                {
-                    kind = "Recurring",
-                    title = "Story- und Weltquests",
-                },
             },
-            quartermasters = {
-                {
-                    label = "Quartermaster",
-                    name = "Unatos",
-                },
-            },
-            summary = "Der zentrale Dragonflight-Hubruf von Valdrakken und Thaldraszus. Relevanter Fortschritt kommt vor allem aus Story, Weltquests und Hubaktivitaeten.",
+            summary = "Centered in their most ancient city, the Valdrakken Accord is the unified might of all dragonkind, seeking to protect not only their island home but all of Azeroth.",
         },
         [2511] = {
             activities = {
@@ -1425,20 +1347,10 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                 },
                 {
                     kind = "Zone",
-                    title = "Azurblaue Gebirge",
-                },
-                {
-                    kind = "Hub",
-                    title = "Iskaara",
+                    title = "The Azure Span",
                 },
             },
-            quartermasters = {
-                {
-                    label = "Quartermaster",
-                    name = "Murik",
-                },
-            },
-            summary = "Dieser Dragonflight-Rufblock ist an das Azurblaue Gebirge und die tuskarrnahen Hub- und Zoneninhalte gekoppelt.",
+            summary = "The Iskaara Tuskarr have been on the Dragon Isles for generations, living in harmony and telling tales of the world around them.",
         },
         [2517] = {
             activities = {
@@ -1447,7 +1359,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Waking Shores black dragonflight content",
                 },
             },
-            summary = "Wrathion ist ein lokaler Nebenruf der Waking Shores rund um die schwarze Drachenflug-Geschichte. Der Fortschritt sitzt an den obsidianbezogenen Aufgaben dieses Gebiets.",
+            summary = "Long focused on protecting Azeroth, Wrathion's gaze has now turned to the future of the black dragonflight... and his destiny.",
         },
         [2518] = {
             activities = {
@@ -1456,7 +1368,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Waking Shores black dragonflight content",
                 },
             },
-            summary = "Sabellian ist der zweite lokale schwarze Drachenflug-Nebenruf der Waking Shores. Der Fortschritt bündelt seine obsidianbezogenen Story- und Hilfsaufgaben.",
+            summary = "Sabellian has established a new generation of uncorrupt black dragons, and works to protect it at all costs.",
         },
         [2523] = {
             activities = {
@@ -1465,7 +1377,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Obsidian side content",
                 },
             },
-            summary = "Dark Talons ist ein lokaler Dracthyr-Nebenruf im Obsidian-Umfeld der Waking Shores. Er ergänzt die schwarze Drachenflug-Linie um einen einsatzorientierten Zweig.",
+            summary = "Led by the brave Scalecommander Cindrethresh, the Dark Talons were trained to be the secret weapon of the black dragonflight. Today, these dracthyr use their skills to turn the tide of any battle regardless of how outnumbered they are.",
         },
         [2524] = {
             activities = {
@@ -1474,7 +1386,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Obsidian side content",
                 },
             },
-            summary = "Obsidian Warders ist ein lokaler Dracthyr-Nebenruf im Obsidian-Umfeld der Waking Shores. Er ergänzt die dortigen Verteidigungs- und Schutzaktivitäten.",
+            summary = "Led by the stalwart Scalecommander Azurathel, the Obsidian Warders were trained to be the shield of the black dragonflight. Today these dracthyr use those skills to defend those most in need against overwhelming odds.",
         },
         [2526] = {
             activities = {
@@ -1483,7 +1395,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Azure Span side quests",
                 },
             },
-            summary = "Winterpelt Furbolg ist ein lokaler Nebenruf im Azurblauen Gebirge. Der Fortschritt sitzt an der Winterpelt-Hilfe und den zugehörigen Aufgaben rund um die Furbolg.",
+            summary = "The Winterpelt Furbolg speak a language no one seems to understand. Perhaps more will be revealed in the future.",
         },
         [2544] = {
             activities = {
@@ -1492,7 +1404,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Valdrakken professions hub",
                 },
             },
-            summary = "Artisan's Consortium - Dragon Isles Branch ist die professionsnahe Stadtfraktion von Valdrakken. Der Fortschritt ist an Handwerk, Aufträge und die Hauptprofessionen des Hubs gebunden.",
+            summary = "Retail content for this faction is centered on Valdrakken professions hub.",
         },
         [2550] = {
             activities = {
@@ -1501,7 +1413,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Azure Span side content",
                 },
             },
-            summary = "Cobalt Assembly ist ein lokaler Nebenruf des Azurblauen Gebirges. Der Fortschritt sitzt an den Cobalt-Aktivitäten und den zugehörigen Sammel- und Kampfschleifen der Zone.",
+            summary = "The Cobalt Assembly was once a place where blue dragons would conjure marvelous creations with arcane magic. Now it has fallen into the hands of the Sundered Flame who intend to use its magic for war.",
         },
         [2553] = {
             activities = {
@@ -1509,18 +1421,8 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     kind = "Weekly",
                     title = "When Time Needs Mending",
                 },
-                {
-                    kind = "Recurring",
-                    title = "Time Rifts",
-                },
             },
-            quartermasters = {
-                {
-                    label = "Rift Vendor",
-                    name = "Soridormi",
-                },
-            },
-            summary = "Soridormi ist der Nebenruf der Zeitriss-Inhalte von Thaldraszus. Der Fortschritt bündelt die wiederkehrenden Aktivitäten rund um die zeitgestörten Ereignisse.",
+            summary = "Soridormi's timewalkers travel the timeways and defend our world against limitless alternatives. When our timeline is under temporal assault or falling apart, Soridormi is the commander who holds everything together.",
         },
         [2564] = {
             activities = {
@@ -1543,7 +1445,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     name = "Mimuup",
                 },
             },
-            summary = "Loamm Niffen ist die große Patch-Ruhmfraktion der Zaralekhöhle. Fortschritt kommt vor allem über Loamm, die Schnüffel-Suche, Weltinhalte in Zaralek und den dortigen Storyblock.",
+            summary = "Underneath the Dragon Isles, deep in Zaralek Cavern, lies the niffen town of Loamm. The friendly traders there are renowned for their hospitality, sense of smell, and peculiar bartering trade system.",
         },
         [2570] = {
             activities = {
@@ -1553,7 +1455,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                 },
                 {
                     kind = "World quests",
-                    title = "Weltquests in Heilsturz",
+                    title = "World quests in Hallowfall",
                 },
             },
             quartermasters = {
@@ -1562,7 +1464,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     name = "Auralia Steelstrike",
                 },
             },
-            summary = "Große Ruhmfraktion von Heilsturz. Fortschritt kommt vor allem über Weltquests, seltene Gegner, Schätze und die wiederkehrende Aktivität 'Spreading the Light' in und um Mereldar.",
+            summary = "The Arathi of the Hallowfall Expedition safeguard the star Beledar from the many threats found under Khaz Algar. Cut off from their overseas empire, they have built a new home with the strength of their faith in the Sacred Flame.",
         },
         [2574] = {
             activities = {
@@ -1585,17 +1487,17 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     name = "Pipsee",
                 },
             },
-            summary = "Dream Wardens ist die große Patch-Ruhmfraktion des Smaragdgrünen Traums. Fortschritt kommt über den Storypfad, Weltinhalte im Traum und den zentralen Lagerbereich.",
+            summary = "A coalition of various races ready to defend the Emerald Dream against any and all threats.",
         },
         [2590] = {
             activities = {
                 {
                     kind = "World quests",
-                    title = "Weltquests auf der Dorninsel",
+                    title = "World quests on the Isle of Dorn",
                 },
                 {
                     kind = "One-time/Warband",
-                    title = "Story- und Nebenkapitel in Dornogal",
+                    title = "Story and side chapters in Dornogal",
                 },
             },
             quartermasters = {
@@ -1604,17 +1506,17 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     name = "Auditor Balwurz",
                 },
             },
-            summary = "Große Ruhmfraktion der Dorninsel und Dornogals. Fortschritt kommt vor allem über Weltquests, Story- und Nebenkapitel auf der Dorninsel sowie die üblichen Khaz-Algar-Aktivitäten.",
+            summary = "Ruling from the Foundation Hall under the leadership of Councilward Merrix, the Council of Dornogal makes decisions affecting all earthen in the Isle of Dorn.",
         },
         [2594] = {
             activities = {
                 {
                     kind = "World quests",
-                    title = "Weltquests in The Ringing Deeps",
+                    title = "World quests in The Ringing Deeps",
                 },
                 {
                     kind = "One-time/Warband",
-                    title = "Story- und Nebenkapitel in Gundargaz",
+                    title = "Story and side chapters in Gundargaz",
                 },
             },
             quartermasters = {
@@ -1623,17 +1525,17 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     name = "Waxmonger Squick",
                 },
             },
-            summary = "Große Ruhmfraktion der Ringing Deeps. Fortschritt kommt über Weltquests, Story- und Nebenkapitel rund um Gundargaz sowie wiederkehrende Aktivitäten in der Zone.",
+            summary = "Throughout the Ringing Deeps, neglected machinery awaits repair. While Machine Speakers lend their technological acumen, kobolds scavenge parts left behind. Anyone wanting to explore and rebuild is welcome to help.",
         },
         [2600] = {
             activities = {
                 {
                     kind = "Weekly",
-                    title = "Wöchentlicher Pakt",
+                    title = "Weekly pact",
                 },
                 {
                     kind = "World quests",
-                    title = "Weltquests in Azj-Kahet",
+                    title = "World quests in Azj-Kahet",
                 },
             },
             quartermasters = {
@@ -1642,34 +1544,34 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     name = "Y'tekhi",
                 },
             },
-            summary = "Große Ruhmfraktion von Azj-Kahet. Der Fortschritt dreht sich um den wöchentlichen Pakt mit einer der drei Unterfraktionen, Weltquests in Azj-Kahet und die Hauptaktivitäten rund um The Weaver's Lair.",
+            summary = "Queen Ansurek's tumultuous reign has not been without its detractors. The Severed Threads work cleverly and quietly behind the scenes to unravel the tapestry of Ansurek's iron rule from within.",
         },
         [2601] = {
             activities = {
                 {
                     kind = "Weekly",
-                    title = "Pakt der Weberin",
+                    title = "Pact of the Weaver",
                 },
             },
-            summary = "Die Weberin ist einer der drei wöchentlichen Paktpfade der Durchtrennten Fäden. Wenn ihr Pakt aktiv ist, bündelst du deinen Fortschritt über ihre Aufgaben und die Azj-Kahet-Aktivitäten auf diesen Zweig.",
+            summary = "Once the Royal Weaver, the Widow Arak'nai now carefully watches her former home with a critical eye. With a network of weave-rats and spies at her disposal, there is little that escapes her notice.",
         },
         [2605] = {
             activities = {
                 {
                     kind = "Weekly",
-                    title = "Pakt des Generals",
+                    title = "Pact of the General",
                 },
             },
-            summary = "Der General ist einer der drei wöchentlichen Paktpfade der Durchtrennten Fäden. Sein Zweig bündelt die auf Kampf und Sicherheit ausgerichteten Aufgaben in Azj-Kahet.",
+            summary = "Once the most renowned military leader in Azj-Kahet, Anub'azal has been passed over in favor of one of Ansurek's beloved Ascended. This simply will not stand.",
         },
         [2607] = {
             activities = {
                 {
                     kind = "Weekly",
-                    title = "Pakt des Wesirs",
+                    title = "Pact of the Vizier",
                 },
             },
-            summary = "Der Wesir ist einer der drei wöchentlichen Paktpfade der Durchtrennten Fäden. Sein Zweig bündelt die eher auf Intrigen und Versorgung ausgerichteten Aufgaben in Azj-Kahet.",
+            summary = "Perched in the most dangerous position of all, Executor Nizrek spends his days as Queen Ansurek's most loyal advisor. Fortunately, Ansurek has yet to discover that the rest of his time is spent trying to end her reign.",
         },
         [2615] = {
             activities = {
@@ -1679,16 +1581,16 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                 },
                 {
                     kind = "Zone",
-                    title = "Archivaktivitäten in Tyrhold",
+                    title = "Archive activities in Tyrhold",
                 },
             },
-            summary = "Azerothian Archives ist der archivbezogene Nebenruf in Thaldraszus. Der Fortschritt sitzt an den wiederkehrenden Archiv- und Forschungsaktivitäten rund um Tyrhold.",
+            summary = "A charter group of scholars from the Dragonscale Expedition dedicated to the preservation of the antiquities for future generations.",
         },
         [2653] = {
             activities = {
                 {
                     kind = "Weekly",
-                    title = "Wöchentliche Kartellwahl",
+                    title = "Weekly cartel contract",
                 },
                 {
                     kind = "Weekly",
@@ -1701,7 +1603,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     name = "Smaks Topskimmer",
                 },
             },
-            summary = "Große Ruhmfraktion von Lorenhall und Undermine. Der Fortschritt kommt über die wöchentliche Kartellwahl, Aktivitäten in Undermine und die wiederkehrende C.H.E.T.T.-Liste.",
+            summary = "Undermine isn't like other towns. There are no kings or chiefs, just cartels. Everyone wants to be part of the cartels. It's even better than being a king, because you can only have one king. But Undermine's got a lot of cartels, and they all need a pal.",
         },
         [2658] = {
             activities = {
@@ -1714,7 +1616,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "K'aresh world content",
                 },
             },
-            summary = "The K'aresh Trust ist die große Ruhmfraktion von K'aresh. Der Fortschritt bündelt die Hauptaktivitäten rund um die Rettung und Stabilisierung des zerstörten Sterns.",
+            summary = "A coalition of cartels from brokers and ethereals formed with an impossible goal. To save a facet of their destroyed world from the All-Devouring.",
         },
         [2671] = {
             activities = {
@@ -1723,7 +1625,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Kartellwahl: Venture Company",
                 },
             },
-            summary = "Die Venture Company ist einer der wöchentlich wählbaren Lorenhall-Kartelle. Wenn dieses Kartell aktiv ist, bündelst du deine Undermine-Aktivitäten auf diesen Zweig.",
+            summary = "Venture Company doesn't have the best rep in town, but no one harvests, mines, or drills faster. You want nice? Find a book club. You want raw material? Venture's got you covered.",
         },
         [2673] = {
             activities = {
@@ -1732,7 +1634,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Kartellwahl: Bilgewasserkartell",
                 },
             },
-            summary = "Das Bilgewasserkartell ist einer der wöchentlich wählbaren Lorenhall-Kartelle. Wenn dieses Kartell aktiv ist, bündelst du deine Undermine-Aktivitäten auf diesen Zweig.",
+            summary = "The Bilgewater Cartel has had more ups and downs than most, but no one can build and invent like they can. From cities to pool toys to [CLASSIFIED], Bilgewater builds it best.",
         },
         [2675] = {
             activities = {
@@ -1741,7 +1643,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Kartellwahl: Schwarzmeer AG",
                 },
             },
-            summary = "Schwarzmeer AG ist einer der wöchentlich wählbaren Lorenhall-Kartelle. Wenn dieses Kartell aktiv ist, bündelst du deine Undermine-Aktivitäten auf diesen Zweig.",
+            summary = "Blackwater Cartel is new to the cart, formerly plying the seas as pirates. But they are already making waves with shipping and luxury vacations. They can move any cargo, anywhere, any time, and now it's all nice and legal.",
         },
         [2677] = {
             activities = {
@@ -1750,7 +1652,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Kartellwahl: Dampfdruckkartell",
                 },
             },
-            summary = "Das Dampfdruckkartell ist einer der wöchentlich wählbaren Lorenhall-Kartelle. Wenn dieses Kartell aktiv ist, bündelst du deine Undermine-Aktivitäten auf diesen Zweig.",
+            summary = "Steamwheedle may be the oldest and largest cartel in Undermine. They have had their hands in almost every industry and their reach spans Azeroth and beyond. These days, with the rise of Noggenfogger, it's the alchemy that they are known for.",
         },
         [2685] = {
             activities = {
@@ -1759,7 +1661,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Kartellwahl: Garbagio Treueclub",
                 },
             },
-            summary = "Der Garbagio Treueclub ist einer der wöchentlich wählbaren Lorenhall-Kartelle. Wenn dieses Kartell aktiv ist, bündelst du deine Undermine-Aktivitäten auf diesen Zweig.",
+            summary = "The Gallagio is under new management, well it will be. And when it is, you want to be on their good side right? So, make the Gallagio a better place and make some new friends.",
         },
         [2688] = {
             activities = {
@@ -1778,7 +1680,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     name = "Raen Dawncavalyr",
                 },
             },
-            summary = "Flame's Radiance ist die einsatzbezogene Ruhmfraktion für die Verteidigung Heilsturzs. Sie ergänzt den normalen Zonenruf und bündelt die militärisch geprägten Hallowfall-Aktivitäten.",
+            summary = "When Hallowfall comes under threat and the army stretched thin, a call to arms is issued to those with the strength to wield a weapon and Flame's Radiance is formed. All allies are welcome to join in Hallowfall's defense.",
         },
         [2696] = {
             activities = {
@@ -1788,10 +1690,10 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                 },
                 {
                     kind = "Zone",
-                    title = "Lokale Aufgaben im Amani-Gebiet",
+                    title = "Local tasks in the Amani area",
                 },
             },
-            summary = "Der Amanistamm ist der lokale Midnight-Rufblock rund um Zul'Aman. Fortschritt sammelt sich vor allem ueber die Zonenkampagne, Aufgaben im Amani-Gebiet und die lokalen Aktivitaeten dieses Zweigs.",
+            summary = "The Amani conquered and claimed the majority of Eastern Kingdoms for thousands of years, but were forced back into current-day Zul'Aman once the elves and humans colonized the land themselves.",
         },
         [2699] = {
             activities = {
@@ -1801,10 +1703,10 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                 },
                 {
                     kind = "Zone",
-                    title = "Lokale Aufgaben im Leerensturm",
+                    title = "Local tasks in Voidstorm",
                 },
             },
-            summary = "Die Singularitaet ist der Midnight-Rufblock des Leerensturms. Der Schwerpunkt liegt auf der Zonenkampagne, lokalen Storyknoten und Aufgaben rund um die Leerenelfen- und Singularitaetslinie.",
+            summary = "In the vortex of terror and violence that is the Voidstorm, few have the mettle to survive. The Singularity, gathered by Magister Umbric and the ren'dorei, encompasses any who would brave this fearsome land to stand up to Xal'atath.",
         },
         [2704] = {
             activities = {
@@ -1814,10 +1716,10 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                 },
                 {
                     kind = "Zone",
-                    title = "Lokale Aufgaben in Harandar",
+                    title = "Local tasks in Harandar",
                 },
             },
-            summary = "Die Hara'ti sind der Midnight-Rufblock von Harandar. Der Fortschritt dreht sich um die Harandar-Story, lokale Aufgaben und den regionalen Endgame-Zweig dieser Zone.",
+            summary = "Called to Harandar by the echo of their Goddess' song, the Hara'ti watch over her cradle in hopes that she may one day return.",
         },
         [2710] = {
             activities = {
@@ -1833,7 +1735,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                 },
                 {
                     label = "Blood Knight",
-                    name = "Rüstungsschmied Goldwappen",
+                    name = "Armorsmith Goldcrest",
                 },
                 {
                     label = "Lane Warden",
@@ -1841,10 +1743,10 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                 },
                 {
                     label = "Wayfarer",
-                    name = "Waldläufer Allorn",
+                    name = "Ranger Allorn",
                 },
             },
-            summary = "Die große Ruhmfraktion von Quel'Thalas. Fortschritt entsteht parallel zu den vier lokalen Unterfraktionen des Hofs in Silbermond. Je nach aktueller Auswahl sind unterschiedliche Rüstmeister relevant.",
+            summary = "Through elegance, intellect, and political precision, the Court ensures that Silvermoon City's light shines eternally radiant, and distinctly its own.",
         },
         [2711] = {
             activities = {
@@ -1859,7 +1761,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     name = "Lehrling Diell",
                 },
             },
-            summary = "Städtische Fraktion rund um arkane Ordnung, Verwaltung und Magister-Infrastruktur. Ruf erhältst du über passende Questlinien und Silbermond-Aktivitäten.",
+            summary = "Scholars, arcanists, and politicians of Silvermoon City, with intellects sharpened by hundreds of years of study.",
         },
         [2712] = {
             activities = {
@@ -1871,10 +1773,10 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
             quartermasters = {
                 {
                     label = "Quartermaster",
-                    name = "Rüstungsschmied Goldwappen",
+                    name = "Armorsmith Goldcrest",
                 },
             },
-            summary = "Militärisch geprägte Stadtfraktion mit Fokus auf Blutritter und Sicherheitsstruktur. Ruf entsteht über den Immersangwald und das Silbermond-Eventsystem.",
+            summary = "Silvermoon City's elves-at-arms. Stalwart heroes and chosen champions of the sun, they follow Lady Liadrin into battle to smite the foes of the Sin'dorei.",
         },
         [2713] = {
             activities = {
@@ -1886,10 +1788,10 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
             quartermasters = {
                 {
                     label = "Quartermaster",
-                    name = "Waldläufer Allorn",
+                    name = "Ranger Allorn",
                 },
             },
-            summary = "Gebietsfraktion des Immersangwalds mit Fokus auf Wald, Grenzen und Wildnis. Ruf erhältst du vor allem über Quests und Fraktionsaktivitäten im Immersangwald.",
+            summary = "Elite rangers of the Sin'dorei, formally tasked with guarding the forests, borders, and wildlands of the Eversong Woods.",
         },
         [2714] = {
             activities = {
@@ -1904,7 +1806,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     name = "Neriv",
                 },
             },
-            summary = "Lokale Stadtfraktion für Gassen- und Untergrundbereiche in Silbermond. Ruf erhältst du über passende Quests und das wöchentliche Stadt-Event.",
+            summary = "12.0 Z1 Eversong - Court Friendship Faction",
         },
         [2736] = {
             activities = {
@@ -1913,26 +1815,26 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     title = "Manaforge sabotage operations",
                 },
             },
-            summary = "Manaforge Vandals ist der verdeckte Operationszweig innerhalb des K'aresh-Blocks. Wenn dieser Ruf aktiv ist, bündelt er die offensiveren, sabotageorientierten Aufgaben gegen Salhadaar.",
+            summary = "While the K'aresh Trust works to unite the people of their dying star, some members prefer a more direct approach. Using all method of covert and under-handed tactics, the Manaforge Vandals seek to dismantle Salhadaar's forces by any means necessary.",
         },
         [2770] = {
             activities = {
                 {
                     kind = "Story/Zone",
-                    title = "Leerensturm",
+                    title = "Voidstorm",
                 },
                 {
                     kind = "Hub",
                     title = "Obskurionzitadelle",
                 },
             },
-            summary = "Slayer's Duellum ist ein lokaler Midnight-Nebenruf aus dem Leerensturm-/Voidstorm-Zweig. Im Retail-Core bleibt er bewusst ein Seitenpfad unterhalb der Singularitaet und kein allgemeiner Ortsanker fuer andere Gebiete.",
+            summary = "Deep within the Voidstorm, the war between Vidious and Ziadan rages on.",
         },
         [9000111] = {
             activities = {
                 {
                     kind = "Cluster",
-                    title = "Shattrath-Stadtfraktionen",
+                    title = "Shattrath city factions",
                 },
             },
             summary = "Virtuelle Gruppenfraktion für Shattrath. Sie bündelt die großen Stadtfraktionen der Scherbenwelt, damit sie im UI als zusammengehöriger Cluster statt als ungeordnete Einzelfunde erscheinen.",

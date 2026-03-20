@@ -1,13 +1,13 @@
 {
   "summary": {
-    "scannedFileCount": 68,
-    "filesWithLocaleSensitiveMarkers": 13,
+    "scannedFileCount": 70,
+    "filesWithLocaleSensitiveMarkers": 14,
     "categories": {
       "core_runtime_strings": 19,
       "mapping_and_coverage_data": 23,
       "locale_ui_domain": 4,
       "content_data_strings": 18,
-      "locale_content_domain": 2,
+      "locale_content_domain": 4,
       "map_runtime_strings": 2
     }
   },
@@ -925,184 +925,28 @@
       ]
     },
     {
-      "path": "Repu_Data/locales/deDE.lua",
+      "path": "Repu_Data/locales/content_text_deDE.lua",
       "category": "locale_content_domain",
-      "matchCount": 114,
+      "matchCount": 1,
       "matches": [
         {
-          "line": 10,
-          "value": "Startdatensatz für diese im Retail-Core lokal verankerte Fraktion. Der Kernbezug liegt aktuell vor allem bei Schlingendorntal, Nördliches Schlingendorntal, Das Schlingendornkap. Spezifische Rüstmeister- und Aktivitätsdaten können später präzisiert werden.",
+          "line": 8,
+          "value": "Virtuelle Gruppenfraktion für Shattrath. Sie bündelt die großen Stadtfraktionen der Scherbenwelt, damit sie im UI als zusammengehöriger Cluster statt als ungeordnete Einzelfunde erscheinen.",
           "markers": [
             "non_ascii"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "path": "Repu_Data/locales/deDE.lua",
+      "category": "locale_content_domain",
+      "matchCount": 1,
+      "matches": [
         {
-          "line": 16,
-          "value": "Eisenschmiede",
+          "line": 1840,
+          "value": "Virtuelle Gruppenfraktion für Shattrath. Sie bündelt die großen Stadtfraktionen der Scherbenwelt, damit sie im UI als zusammengehöriger Cluster statt als ungeordnete Einzelfunde erscheinen.",
           "markers": [
-            "eisenschmiede"
-          ]
-        },
-        {
-          "line": 19,
-          "value": "Klassische Zwergenfraktion von Eisenschmiede. In Retail taucht sie vor allem in Eisenschmiede, Dun Morogh, Loch Modan und angrenzenden Allianz-Gebieten als lokale Heimatfraktion auf.",
-          "markers": [
-            "eisenschmiede"
-          ]
-        },
-        {
-          "line": 25,
-          "value": "Sengende Schlucht",
-          "markers": [
-            "sengende schlucht"
-          ]
-        },
-        {
-          "line": 32,
-          "value": "Die Thoriumbruderschaft deckt im Retail-Core vor allem die Blackrock-Gebiete rund um Sengende Schlucht und Brennende Steppe ab.",
-          "markers": [
-            "sengende schlucht"
-          ]
-        },
-        {
-          "line": 38,
-          "value": "Unterstadt",
-          "markers": [
-            "unterstadt"
-          ]
-        },
-        {
-          "line": 41,
-          "value": "Klassische Untotenfraktion von Unterstadt. In Retail taucht sie vor allem in Tirisfal, Silberwald, Unterstadt und angrenzenden Gebieten als lokale Heimatfraktion auf.",
-          "markers": [
-            "unterstadt"
-          ]
-        },
-        {
-          "line": 50,
-          "value": "Legacy-Hauptstadtfraktion von Darnassus. Im Retail-Core bleibt sie als klassische Allianz-Stadtfraktion erhalten, auch wenn die Stadt selbst heute nur noch in Legacy-Zusammenhängen relevant ist.",
-          "markers": [
-            "non_ascii"
-          ]
-        },
-        {
-          "line": 56,
-          "value": "Sturmwind",
-          "markers": [
-            "sturmwind"
-          ]
-        },
-        {
-          "line": 59,
-          "value": "Klassische Menschenfraktion von Sturmwind. In Retail taucht sie in Sturmwind, Elwynn, Westfall, Rotkamm und angrenzenden Allianz-Gebieten als lokale Heimatfraktion auf.",
-          "markers": [
-            "sturmwind"
-          ]
-        },
-        {
-          "line": 68,
-          "value": "Klassische Orc-Hauptstadtfraktion von Orgrimmar. In Retail taucht sie in Orgrimmar, Durotar und Teilen des nördlichen Brachlands als lokale Heimatfraktion auf.",
-          "markers": [
-            "non_ascii"
-          ]
-        },
-        {
-          "line": 74,
-          "value": "Donnerfels",
-          "markers": [
-            "donnerfels"
-          ]
-        },
-        {
-          "line": 77,
-          "value": "Klassische Tauren-Hauptstadtfraktion von Donnerfels. In Retail taucht sie in Donnerfels, Mulgore und den zugehörigen Tauren-Gebieten als lokale Heimatfraktion auf.",
-          "markers": [
-            "donnerfels",
-            "non_ascii"
-          ]
-        },
-        {
-          "line": 90,
-          "value": "Gadgetzan ist die neutrale Goblin-Stadtfraktion von Tanaris. Im Retail-Core ist sie als lokaler Hubanker für die Stadt selbst modelliert, nicht als ganze Zonenfraktion für Tanaris.",
-          "markers": [
-            "non_ascii"
-          ]
-        },
-        {
-          "line": 96,
-          "value": "Nördliches Brachland",
-          "markers": [
-            "non_ascii"
-          ]
-        },
-        {
-          "line": 103,
-          "value": "Ratchet ist die neutrale Goblin-Hafenfraktion im Nördlichen Brachland. Im Retail-Core ist sie als lokaler Stadtanker für den Hafen modelliert.",
-          "markers": [
-            "non_ascii"
-          ]
-        },
-        {
-          "line": 109,
-          "value": "Westliche Pestländer",
-          "markers": [
-            "non_ascii"
-          ]
-        },
-        {
-          "line": 113,
-          "value": "Östliche Pestländer",
-          "markers": [
-            "non_ascii"
-          ]
-        },
-        {
-          "line": 116,
-          "value": "Die Argentumdämmerung ist im Retail-Core die lokale Pestländer-Fraktion. Sie deckt vor allem Westliche und Östliche Pestländer sowie deren klassische Scharlach-/Geißel-Kontexte ab.",
-          "markers": [
-            "non_ascii"
-          ]
-        },
-        {
-          "line": 125,
-          "value": "Die Dunkelspeertrolle werden im Retail-Core als lokale Horde-Fraktion in Teilen von Durotar, Eschental und den nördlichen Brachlanden genutzt.",
-          "markers": [
-            "non_ascii"
-          ]
-        },
-        {
-          "line": 147,
-          "value": "Everlook ist die neutrale Goblin-Stadtfraktion in Winterquell. Im Retail-Core ist sie als lokaler Hubanker für die Stadt selbst modelliert.",
-          "markers": [
-            "non_ascii"
-          ]
-        },
-        {
-          "line": 150,
-          "value": "Startdatensatz für diese im Retail-Core lokal verankerte Fraktion. Der Kernbezug liegt aktuell vor allem bei Winterquell. Spezifische Rüstmeister- und Aktivitätsdaten können später präzisiert werden.",
-          "markers": [
-            "non_ascii"
-          ]
-        },
-        {
-          "line": 171,
-          "value": "Der Cenarionzirkel ist im Retail-Core die lokale Fraktion für mehrere klassische Natur- und Wüstengebiete wie Desolace, Feralas, Mondlichtung und Silithus.",
-          "markers": [
-            "non_ascii"
-          ]
-        },
-        {
-          "line": 189,
-          "value": "Der Dunkelmond-Jahrmarkt ist der lokale Rufblock der Dunkelmond-Insel. Im Retail-Core ist er als neutraler Hubanker für die Insel selbst modelliert.",
-          "markers": [
-            "non_ascii"
-          ]
-        },
-        {
-          "line": 228,
-          "value": "Die Aldor sind eine der beiden großen politischen Fraktionen Shattraths. Ihr Fortschritt ist vor allem an die Stadt und an die entsprechende Scryer/Aldor-Entscheidung gebunden.",
-          "markers": [
-            "die aldor",
             "non_ascii"
           ]
         }

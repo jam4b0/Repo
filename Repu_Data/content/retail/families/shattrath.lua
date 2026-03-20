@@ -79,7 +79,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "seed",
-            summary = "Shattrath is modeled as a legacy family cluster in the retail core. It groups Sha'tar, Aldor, Scryers, and Lower City so the city appears as a coherent reputation block instead of unrelated one-off entries.",
+            summaryKey = "faction.9000111.summary",
         },
     },
 })

@@ -1,5 +1,9 @@
 local _, ns = ...
 
+local function isRealFaction(faction)
+    return faction and faction.factionID and not faction.isVirtualGroup and faction.factionID < 8000000
+end
+
 local function mergeContent(base, overlay)
     if not overlay then
         return base
@@ -72,6 +76,20 @@ function ns.Content:GetFactionDetails(candidate, context)
     end
 
     local content = self:GetFactionContent(faction.factionID)
+    local summary = content.summary
+
+    if content.summaryKey then
+        summary = ns.I18n:GetText("retail_content_text", content.summaryKey)
+    elseif
+        context
+        and context.activeFlavor == "retail"
+        and isRealFaction(faction)
+        and faction.description
+        and faction.description ~= ""
+        and content.summarySource ~= "curated"
+    then
+        summary = faction.description
+    end
 
     return {
         factionID = faction.factionID,
@@ -90,7 +108,7 @@ function ns.Content:GetFactionDetails(candidate, context)
         sourceKey = candidate.sourceKey,
         isInherited = candidate.isInherited and true or false,
         note = candidate.note,
-        summary = content.summary,
+        summary = summary,
         contentSource = content.source,
         contentConfidence = content.confidence,
         quartermasters = content.quartermasters or {},

@@ -123,6 +123,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
+            summarySource = "curated",
             summary = "Retail content for this faction is centered on Neueheim and Nazjatar.",
         },
         [2373] = {

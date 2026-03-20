@@ -193,6 +193,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
+            summarySource = "curated",
             summary = "Retail content for this faction is centered on Valdrakken professions hub.",
         },
         [2550] = {
