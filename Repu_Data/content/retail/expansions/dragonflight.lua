@@ -53,7 +53,7 @@ api.RegisterRetailContentModule({
                 {
                     kind = "Recurring",
                     location = {
-                        title = "Kueste des Erwachens",
+                        title = "The Waking Shores",
                     },
                     title = "Siege on Dragonbane Keep",
                 },

@@ -46,7 +46,7 @@ api.RegisterRetailContentModule({
                 {
                     kind = "Zone",
                     location = {
-                        title = "Tiragardesund",
+                        title = "Tiragarde Sound",
                     },
                     title = "Tiragardesand",
                 },
@@ -109,9 +109,9 @@ api.RegisterRetailContentModule({
                 {
                     kind = "Hub",
                     location = {
-                        title = "Neueheim",
+                        title = "Newhome",
                     },
-                    title = "Neueheim",
+                    title = "Newhome",
                 },
                 {
                     kind = "Zone",
@@ -124,7 +124,7 @@ api.RegisterRetailContentModule({
             confidence = "medium",
             source = "curated",
             summarySource = "curated",
-            summary = "Retail content for this faction is centered on Neueheim and Nazjatar.",
+            summary = "Retail content for this faction is centered on Newhome and Nazjatar.",
         },
         [2373] = {
             activities = {

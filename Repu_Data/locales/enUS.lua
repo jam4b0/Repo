@@ -11,124 +11,178 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
         [47] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Ironforge",
+                    kindKey = "faction.47.activity.1.kind",
+                    location = {
+                        titleKey = "faction.47.activity.1.location.title",
+                    },
+                    titleKey = "faction.47.activity.1.title",
                 },
             },
         },
         [59] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Searing Gorge",
+                    kindKey = "faction.59.activity.1.kind",
+                    location = {
+                        titleKey = "faction.59.activity.1.location.title",
+                    },
+                    titleKey = "faction.59.activity.1.title",
                 },
                 {
-                    kind = "Zone/City",
-                    title = "Burning Steppes",
+                    kindKey = "faction.59.activity.2.kind",
+                    location = {
+                        titleKey = "faction.59.activity.2.location.title",
+                    },
+                    titleKey = "faction.59.activity.2.title",
                 },
             },
         },
         [68] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Undercity",
+                    kindKey = "faction.68.activity.1.kind",
+                    location = {
+                        titleKey = "faction.68.activity.1.location.title",
+                    },
+                    titleKey = "faction.68.activity.1.title",
                 },
             },
         },
         [69] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Darnassus",
+                    kindKey = "faction.69.activity.1.kind",
+                    location = {
+                        titleKey = "faction.69.activity.1.location.title",
+                    },
+                    titleKey = "faction.69.activity.1.title",
                 },
             },
         },
         [72] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Stormwind",
+                    kindKey = "faction.72.activity.1.kind",
+                    location = {
+                        titleKey = "faction.72.activity.1.location.title",
+                    },
+                    titleKey = "faction.72.activity.1.title",
                 },
             },
         },
         [76] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Orgrimmar",
+                    kindKey = "faction.76.activity.1.kind",
+                    location = {
+                        titleKey = "faction.76.activity.1.location.title",
+                    },
+                    titleKey = "faction.76.activity.1.title",
                 },
             },
         },
         [81] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Thunder Bluff",
+                    kindKey = "faction.81.activity.1.kind",
+                    location = {
+                        titleKey = "faction.81.activity.1.location.title",
+                    },
+                    titleKey = "faction.81.activity.1.title",
                 },
             },
         },
         [369] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Tanaris",
+                    kindKey = "faction.369.activity.1.kind",
+                    location = {
+                        titleKey = "faction.369.activity.1.location.title",
+                    },
+                    titleKey = "faction.369.activity.1.title",
                 },
                 {
-                    kind = "Zone/City",
-                    title = "Gadgetzan",
+                    kindKey = "faction.369.activity.2.kind",
+                    location = {
+                        titleKey = "faction.369.activity.2.location.title",
+                    },
+                    titleKey = "faction.369.activity.2.title",
                 },
             },
         },
         [470] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Northern Barrens",
+                    kindKey = "faction.470.activity.1.kind",
+                    location = {
+                        titleKey = "faction.470.activity.1.location.title",
+                    },
+                    titleKey = "faction.470.activity.1.title",
                 },
                 {
-                    kind = "Zone/City",
-                    title = "Ratchet",
+                    kindKey = "faction.470.activity.2.kind",
+                    location = {
+                        titleKey = "faction.470.activity.2.location.title",
+                    },
+                    titleKey = "faction.470.activity.2.title",
                 },
             },
         },
         [529] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Western Plaguelands",
+                    kindKey = "faction.529.activity.1.kind",
+                    location = {
+                        titleKey = "faction.529.activity.1.location.title",
+                    },
+                    titleKey = "faction.529.activity.1.title",
                 },
                 {
-                    kind = "Zone/City",
-                    title = "Eastern Plaguelands",
+                    kindKey = "faction.529.activity.2.kind",
+                    location = {
+                        titleKey = "faction.529.activity.2.location.title",
+                    },
+                    titleKey = "faction.529.activity.2.title",
                 },
             },
         },
         [530] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Ashenvale",
+                    kindKey = "faction.530.activity.1.kind",
+                    location = {
+                        titleKey = "faction.530.activity.1.location.title",
+                    },
+                    titleKey = "faction.530.activity.1.title",
                 },
             },
         },
         [576] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Felwood",
+                    kindKey = "faction.576.activity.1.kind",
+                    location = {
+                        titleKey = "faction.576.activity.1.location.title",
+                    },
+                    titleKey = "faction.576.activity.1.title",
                 },
             },
         },
         [577] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Winterspring",
+                    kindKey = "faction.577.activity.1.kind",
+                    location = {
+                        titleKey = "faction.577.activity.1.location.title",
+                    },
+                    titleKey = "faction.577.activity.1.title",
                 },
                 {
-                    kind = "Zone/City",
-                    title = "Everlook",
+                    kindKey = "faction.577.activity.2.kind",
+                    location = {
+                        titleKey = "faction.577.activity.2.location.title",
+                    },
+                    titleKey = "faction.577.activity.2.title",
                 },
             },
         },
@@ -137,148 +191,220 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
         [609] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Desolace",
+                    kindKey = "faction.609.activity.1.kind",
+                    location = {
+                        titleKey = "faction.609.activity.1.location.title",
+                    },
+                    titleKey = "faction.609.activity.1.title",
                 },
                 {
-                    kind = "Zone/City",
-                    title = "Feralas",
+                    kindKey = "faction.609.activity.2.kind",
+                    location = {
+                        titleKey = "faction.609.activity.2.location.title",
+                    },
+                    titleKey = "faction.609.activity.2.title",
                 },
                 {
-                    kind = "Zone/City",
-                    title = "Moonglade",
+                    kindKey = "faction.609.activity.3.kind",
+                    location = {
+                        titleKey = "faction.609.activity.3.location.title",
+                    },
+                    titleKey = "faction.609.activity.3.title",
                 },
                 {
-                    kind = "Zone/City",
-                    title = "Silithus",
+                    kindKey = "faction.609.activity.4.kind",
+                    location = {
+                        titleKey = "faction.609.activity.4.location.title",
+                    },
+                    titleKey = "faction.609.activity.4.title",
                 },
             },
         },
         [749] = {
             activities = {
                 {
-                    kind = "Raid",
-                    title = "Molten Core",
+                    kindKey = "faction.749.activity.1.kind",
+                    location = {
+                        titleKey = "faction.749.activity.1.location.title",
+                    },
+                    titleKey = "faction.749.activity.1.title",
                 },
             },
         },
         [909] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Darkmoon Island",
+                    kindKey = "faction.909.activity.1.kind",
+                    location = {
+                        titleKey = "faction.909.activity.1.location.title",
+                    },
+                    titleKey = "faction.909.activity.1.title",
                 },
             },
         },
         [910] = {
             activities = {
                 {
-                    kind = "Raid",
-                    title = "Temple of Ahn'Qiraj",
+                    kindKey = "faction.910.activity.1.kind",
+                    location = {
+                        titleKey = "faction.910.activity.1.location.title",
+                    },
+                    titleKey = "faction.910.activity.1.title",
                 },
                 {
-                    kind = "Raid",
-                    title = "Ruins of Ahn'Qiraj",
+                    kindKey = "faction.910.activity.2.kind",
+                    location = {
+                        titleKey = "faction.910.activity.2.location.title",
+                    },
+                    titleKey = "faction.910.activity.2.title",
                 },
             },
         },
         [930] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "The Exodar",
+                    kindKey = "faction.930.activity.1.kind",
+                    location = {
+                        titleKey = "faction.930.activity.1.location.title",
+                    },
+                    titleKey = "faction.930.activity.1.title",
                 },
                 {
-                    kind = "Zone/City",
-                    title = "Azuremyst Isle",
+                    kindKey = "faction.930.activity.2.kind",
+                    location = {
+                        titleKey = "faction.930.activity.2.location.title",
+                    },
+                    titleKey = "faction.930.activity.2.title",
                 },
                 {
-                    kind = "Zone/City",
-                    title = "Bloodmyst Isle",
+                    kindKey = "faction.930.activity.3.kind",
+                    location = {
+                        titleKey = "faction.930.activity.3.location.title",
+                    },
+                    titleKey = "faction.930.activity.3.title",
                 },
             },
         },
         [932] = {
             activities = {
                 {
-                    kind = "City faction",
-                    title = "Aldor-tasks in Shattrath",
+                    kindKey = "faction.932.activity.1.kind",
+                    location = {
+                        titleKey = "faction.932.activity.1.location.title",
+                    },
+                    titleKey = "activity.shattrath.aldor_tasks.title",
                 },
             },
         },
         [933] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Netherstorm",
+                    kindKey = "faction.933.activity.1.kind",
+                    location = {
+                        titleKey = "faction.933.activity.1.location.title",
+                    },
+                    titleKey = "faction.933.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Area 52",
+                    kindKey = "faction.933.activity.2.kind",
+                    location = {
+                        titleKey = "faction.933.activity.2.location.title",
+                    },
+                    titleKey = "faction.933.activity.2.title",
                 },
             },
         },
         [934] = {
             activities = {
                 {
-                    kind = "City faction",
-                    title = "Scryer tasks in Shattrath",
+                    kindKey = "faction.934.activity.1.kind",
+                    location = {
+                        titleKey = "faction.934.activity.1.location.title",
+                    },
+                    titleKey = "activity.shattrath.scryer_tasks.title",
                 },
             },
         },
         [935] = {
             activities = {
                 {
-                    kind = "City/Instances",
-                    title = "Shattrath and temple tasks",
+                    kindKey = "faction.935.activity.1.kind",
+                    location = {
+                        titleKey = "faction.935.activity.1.location.title",
+                    },
+                    titleKey = "activity.shattrath.temple_tasks.title",
                 },
             },
         },
         [941] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Nagrand",
+                    kindKey = "faction.941.activity.1.kind",
+                    location = {
+                        titleKey = "faction.941.activity.1.location.title",
+                    },
+                    titleKey = "faction.941.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Garadar",
+                    kindKey = "faction.941.activity.2.kind",
+                    location = {
+                        titleKey = "faction.941.activity.2.location.title",
+                    },
+                    titleKey = "faction.941.activity.2.title",
                 },
             },
         },
         [942] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Zangarmarsh",
+                    kindKey = "faction.942.activity.1.kind",
+                    location = {
+                        titleKey = "faction.942.activity.1.location.title",
+                    },
+                    titleKey = "faction.942.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Cenarion Refuge",
+                    kindKey = "faction.942.activity.2.kind",
+                    location = {
+                        titleKey = "faction.942.activity.2.location.title",
+                    },
+                    titleKey = "faction.942.activity.2.title",
                 },
             },
         },
         [946] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Hellfire Peninsula",
+                    kindKey = "faction.946.activity.1.kind",
+                    location = {
+                        titleKey = "faction.946.activity.1.location.title",
+                    },
+                    titleKey = "faction.946.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Honor Hold",
+                    kindKey = "faction.946.activity.2.kind",
+                    location = {
+                        titleKey = "faction.946.activity.2.location.title",
+                    },
+                    titleKey = "faction.946.activity.2.title",
                 },
             },
         },
         [947] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Hellfire Peninsula",
+                    kindKey = "faction.947.activity.1.kind",
+                    location = {
+                        titleKey = "faction.947.activity.1.location.title",
+                    },
+                    titleKey = "faction.947.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "The Shattered Halls",
+                    kindKey = "faction.947.activity.2.kind",
+                    location = {
+                        titleKey = "faction.947.activity.2.location.title",
+                    },
+                    titleKey = "faction.947.activity.2.title",
                 },
             },
         },
@@ -287,264 +413,381 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
         [970] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Zangarmarsh",
+                    kindKey = "faction.970.activity.1.kind",
+                    location = {
+                        titleKey = "faction.970.activity.1.location.title",
+                    },
+                    titleKey = "faction.970.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Sporeggar",
+                    kindKey = "faction.970.activity.2.kind",
+                    location = {
+                        titleKey = "faction.970.activity.2.location.title",
+                    },
+                    titleKey = "faction.970.activity.2.title",
                 },
             },
         },
         [978] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Nagrand",
+                    kindKey = "faction.978.activity.1.kind",
+                    location = {
+                        titleKey = "faction.978.activity.1.location.title",
+                    },
+                    titleKey = "faction.978.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Telaar",
+                    kindKey = "faction.978.activity.2.kind",
+                    location = {
+                        titleKey = "faction.978.activity.2.location.title",
+                    },
+                    titleKey = "faction.978.activity.2.title",
                 },
             },
         },
         [989] = {
             activities = {
                 {
-                    kind = "Dungeon",
-                    title = "Old Hillsbrad Foothills",
+                    kindKey = "faction.989.activity.1.kind",
+                    location = {
+                        titleKey = "faction.989.activity.1.location.title",
+                    },
+                    titleKey = "faction.989.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "The Black Morass",
+                    kindKey = "faction.989.activity.2.kind",
+                    location = {
+                        titleKey = "faction.989.activity.2.location.title",
+                    },
+                    titleKey = "faction.989.activity.2.title",
                 },
             },
         },
         [990] = {
             activities = {
                 {
-                    kind = "Raid",
-                    title = "Hyjal Summit",
+                    kindKey = "faction.990.activity.1.kind",
+                    location = {
+                        titleKey = "faction.990.activity.1.location.title",
+                    },
+                    titleKey = "faction.990.activity.1.title",
                 },
             },
         },
         [1011] = {
             activities = {
                 {
-                    kind = "City faction",
-                    title = "Lower City tasks",
+                    kindKey = "faction.1011.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1011.activity.1.location.title",
+                    },
+                    titleKey = "activity.shattrath.lower_city_tasks.title",
                 },
             },
         },
         [1012] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Shadowmoon Valley",
+                    kindKey = "faction.1012.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1012.activity.1.location.title",
+                    },
+                    titleKey = "faction.1012.activity.1.title",
                 },
                 {
-                    kind = "Raid",
-                    title = "Black Temple",
+                    kindKey = "faction.1012.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1012.activity.2.location.title",
+                    },
+                    titleKey = "faction.1012.activity.2.title",
                 },
             },
         },
         [1015] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Shadowmoon Valley",
+                    kindKey = "faction.1015.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1015.activity.1.location.title",
+                    },
+                    titleKey = "faction.1015.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Netherwing Ledge",
+                    kindKey = "faction.1015.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1015.activity.2.location.title",
+                    },
+                    titleKey = "faction.1015.activity.2.title",
                 },
             },
         },
         [1031] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Blade's Edge Mountains",
+                    kindKey = "faction.1031.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1031.activity.1.location.title",
+                    },
+                    titleKey = "faction.1031.activity.1.title",
                 },
                 {
-                    kind = "Daily/Repeatable",
-                    title = "Skyguard-tasks",
+                    kindKey = "faction.1031.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1031.activity.2.location.title",
+                    },
+                    titleKey = "faction.1031.activity.2.title",
                 },
             },
         },
         [1038] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Blade's Edge Mountains",
+                    kindKey = "faction.1038.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1038.activity.1.location.title",
+                    },
+                    titleKey = "faction.1038.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Ogri'la",
+                    kindKey = "faction.1038.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1038.activity.2.location.title",
+                    },
+                    titleKey = "faction.1038.activity.2.title",
                 },
             },
         },
         [1067] = {
             activities = {
                 {
-                    kind = "Story/Zone",
-                    title = "Howling Fjord",
+                    kindKey = "faction.1067.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1067.activity.1.location.title",
+                    },
+                    titleKey = "faction.1067.activity.1.title",
                 },
             },
         },
         [1068] = {
             activities = {
                 {
-                    kind = "Story/Zone",
-                    title = "Questlines in Howling Fjord",
+                    kindKey = "faction.1068.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1068.activity.1.location.title",
+                    },
+                    titleKey = "faction.1068.activity.1.title",
                 },
             },
         },
         [1073] = {
             activities = {
                 {
-                    kind = "Story/Zone",
-                    title = "Questlines in Borean Tundra",
+                    kindKey = "faction.1073.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1073.activity.1.location.title",
+                    },
+                    titleKey = "faction.1073.activity.1.title",
                 },
             },
         },
         [1077] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Isle of Quel'Danas",
+                    kindKey = "faction.1077.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1077.activity.1.location.title",
+                    },
+                    titleKey = "faction.1077.activity.1.title",
                 },
                 {
-                    kind = "Daily",
-                    title = "Quel'Danas dailies",
+                    kindKey = "faction.1077.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1077.activity.2.location.title",
+                    },
+                    titleKey = "faction.1077.activity.2.title",
                 },
             },
         },
         [1090] = {
             activities = {
                 {
-                    kind = "Hub",
-                    title = "Dalaran city activities",
+                    kindKey = "faction.1090.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1090.activity.1.location.title",
+                    },
+                    titleKey = "faction.1090.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "Northrend-Dungeons mit Dalaran-Bezug",
+                    kindKey = "faction.1090.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1090.activity.2.location.title",
+                    },
+                    titleKey = "faction.1090.activity.2.title",
                 },
             },
         },
         [1091] = {
             activities = {
                 {
-                    kind = "Story/Zone",
-                    title = "Questlines in Dragonblight",
+                    kindKey = "faction.1091.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1091.activity.1.location.title",
+                    },
+                    titleKey = "faction.1091.activity.1.title",
                 },
             },
         },
         [1098] = {
             activities = {
                 {
-                    kind = "Dungeon",
-                    title = "Halls of Lightning",
+                    kindKey = "faction.1098.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1098.activity.1.location.title",
+                    },
+                    titleKey = "faction.1098.activity.1.title",
                 },
                 {
-                    kind = "Raid",
-                    title = "Ulduar",
+                    kindKey = "faction.1098.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1098.activity.2.location.title",
+                    },
+                    titleKey = "faction.1098.activity.2.title",
                 },
             },
         },
         [1104] = {
             activities = {
                 {
-                    kind = "Story/Zone",
-                    title = "Questlines in Sholazar Basin",
+                    kindKey = "faction.1104.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1104.activity.1.location.title",
+                    },
+                    titleKey = "faction.1104.activity.1.title",
                 },
             },
         },
         [1105] = {
             activities = {
                 {
-                    kind = "Story/Zone",
-                    title = "Questlines in Zul'Drak",
+                    kindKey = "faction.1105.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1105.activity.1.location.title",
+                    },
+                    titleKey = "faction.1105.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "Gandrak",
+                    kindKey = "faction.1105.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1105.activity.2.location.title",
+                    },
+                    titleKey = "faction.1105.activity.2.title",
                 },
             },
         },
         [1106] = {
             activities = {
                 {
-                    kind = "Hub",
-                    title = "Argent Crusade",
+                    kindKey = "faction.1106.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1106.activity.1.location.title",
+                    },
+                    titleKey = "faction.1106.activity.1.title",
                 },
                 {
-                    kind = "Story/Zone",
-                    title = "Questlines in Icecrown",
+                    kindKey = "faction.1106.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1106.activity.2.location.title",
+                    },
+                    titleKey = "faction.1106.activity.2.title",
                 },
             },
         },
         [1119] = {
             activities = {
                 {
-                    kind = "Story/Zone",
-                    title = "K3 and Storm Peaks questlines",
+                    kindKey = "faction.1119.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1119.activity.1.location.title",
+                    },
+                    titleKey = "faction.1119.activity.1.title",
                 },
             },
         },
         [1124] = {
             activities = {
                 {
-                    kind = "Raid",
-                    title = "Vault of Archavon",
+                    kindKey = "faction.1124.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1124.activity.1.location.title",
+                    },
+                    titleKey = "faction.1124.activity.1.title",
                 },
             },
         },
         [1126] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "The Storm Peaks",
+                    kindKey = "faction.1126.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1126.activity.1.location.title",
+                    },
+                    titleKey = "faction.1126.activity.1.title",
                 },
             },
         },
         [1133] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Azshara",
+                    kindKey = "faction.1133.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1133.activity.1.location.title",
+                    },
+                    titleKey = "faction.1133.activity.1.title",
                 },
             },
         },
         [1134] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Gilneas",
+                    kindKey = "faction.1134.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1134.activity.1.location.title",
+                    },
+                    titleKey = "faction.1134.activity.1.title",
                 },
             },
         },
         [1156] = {
             activities = {
                 {
-                    kind = "Raid",
-                    title = "Icecrown Citadel",
+                    kindKey = "faction.1156.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1156.activity.1.location.title",
+                    },
+                    titleKey = "faction.1156.activity.1.title",
                 },
             },
         },
         [1158] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Hyjal",
+                    kindKey = "faction.1158.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1158.activity.1.location.title",
+                    },
+                    titleKey = "faction.1158.activity.1.title",
                 },
             },
         },
         [1171] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Tiefenheim",
+                    kindKey = "faction.1171.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1171.activity.1.location.title",
+                    },
+                    titleKey = "faction.1171.activity.1.title",
                 },
             },
         },
@@ -553,40 +796,58 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
         [1173] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Uldum",
+                    kindKey = "faction.1173.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1173.activity.1.location.title",
+                    },
+                    titleKey = "faction.1173.activity.1.title",
                 },
             },
         },
         [1174] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Schattenhochland",
+                    kindKey = "faction.1174.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1174.activity.1.location.title",
+                    },
+                    titleKey = "faction.1174.activity.1.title",
                 },
             },
         },
         [1177] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Tol Barad",
+                    kindKey = "faction.1177.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1177.activity.1.location.title",
+                    },
+                    titleKey = "faction.1177.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "Halbinsel von Tol Barad",
+                    kindKey = "faction.1177.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1177.activity.2.location.title",
+                    },
+                    titleKey = "faction.1177.activity.2.title",
                 },
             },
         },
         [1178] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Tol Barad",
+                    kindKey = "faction.1178.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1178.activity.1.location.title",
+                    },
+                    titleKey = "faction.1178.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "Halbinsel von Tol Barad",
+                    kindKey = "faction.1178.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1178.activity.2.location.title",
+                    },
+                    titleKey = "faction.1178.activity.2.title",
                 },
             },
         },
@@ -595,1094 +856,1608 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
         [1269] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Vale of Eternal Blossoms",
+                    kindKey = "faction.1269.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1269.activity.1.location.title",
+                    },
+                    titleKey = "faction.1269.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "Mogu'shan Palace",
+                    kindKey = "faction.1269.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1269.activity.2.location.title",
+                    },
+                    titleKey = "faction.1269.activity.2.title",
                 },
             },
         },
         [1270] = {
             activities = {
                 {
-                    kind = "Story/Zone",
-                    title = "Questlines in the Jade Forest",
+                    kindKey = "faction.1270.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1270.activity.1.location.title",
+                    },
+                    titleKey = "faction.1270.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "Shado-Pan Monastery",
+                    kindKey = "faction.1270.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1270.activity.2.location.title",
+                    },
+                    titleKey = "faction.1270.activity.2.title",
                 },
             },
         },
         [1271] = {
             activities = {
                 {
-                    kind = "Story/Zone",
-                    title = "Questlines in Dread Wastes",
+                    kindKey = "faction.1271.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1271.activity.1.location.title",
+                    },
+                    titleKey = "faction.1271.activity.1.title",
                 },
                 {
-                    kind = "Raid",
-                    title = "Heart of Fear",
+                    kindKey = "faction.1271.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1271.activity.2.location.title",
+                    },
+                    titleKey = "faction.1271.activity.2.title",
                 },
             },
         },
         [1272] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Valley of the Four Winds",
+                    kindKey = "faction.1272.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1272.activity.1.location.title",
+                    },
+                    titleKey = "faction.1272.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Halbhuegel",
+                    kindKey = "faction.1272.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1272.activity.2.location.title",
+                    },
+                    titleKey = "faction.1272.activity.2.title",
                 },
             },
         },
         [1302] = {
             activities = {
                 {
-                    kind = "Story/Zone",
-                    title = "Questlines in Krasarang Wilds",
+                    kindKey = "faction.1302.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1302.activity.1.location.title",
+                    },
+                    titleKey = "faction.1302.activity.1.title",
                 },
             },
         },
         [1337] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Dread Wastes",
+                    kindKey = "faction.1337.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1337.activity.1.location.title",
+                    },
+                    titleKey = "faction.1337.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Klaxxi'vess",
+                    kindKey = "faction.1337.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1337.activity.2.location.title",
+                    },
+                    titleKey = "faction.1337.activity.2.title",
                 },
                 {
-                    kind = "Raid",
-                    title = "Heart of Fear",
+                    kindKey = "faction.1337.activity.3.kind",
+                    location = {
+                        titleKey = "faction.1337.activity.3.location.title",
+                    },
+                    titleKey = "faction.1337.activity.3.title",
                 },
             },
         },
         [1359] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Vale of Eternal Blossoms",
+                    kindKey = "faction.1359.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1359.activity.1.location.title",
+                    },
+                    titleKey = "faction.1359.activity.1.title",
                 },
                 {
-                    kind = "Story",
-                    title = "Wrathion-Endgame",
+                    kindKey = "faction.1359.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1359.activity.2.location.title",
+                    },
+                    titleKey = "faction.1359.activity.2.title",
                 },
             },
         },
         [1375] = {
             activities = {
                 {
-                    kind = "Hub",
-                    title = "Shrine of Two Moons",
+                    kindKey = "faction.1375.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1375.activity.1.location.title",
+                    },
+                    titleKey = "faction.1375.activity.1.title",
                 },
             },
         },
         [1376] = {
             activities = {
                 {
-                    kind = "Hub",
-                    title = "Shrine of Seven Stars",
+                    kindKey = "faction.1376.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1376.activity.1.location.title",
+                    },
+                    titleKey = "faction.1376.activity.1.title",
                 },
             },
         },
         [1387] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Isle of Thunder",
+                    kindKey = "faction.1387.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1387.activity.1.location.title",
+                    },
+                    titleKey = "faction.1387.activity.1.title",
                 },
             },
         },
         [1388] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Isle of Thunder",
+                    kindKey = "faction.1388.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1388.activity.1.location.title",
+                    },
+                    titleKey = "faction.1388.activity.1.title",
                 },
             },
         },
         [1416] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Shadowmoon Valley",
+                    kindKey = "faction.1416.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1416.activity.1.location.title",
+                    },
+                    titleKey = "faction.1416.activity.1.title",
                 },
                 {
-                    kind = "Raid",
-                    title = "Black Temple",
+                    kindKey = "faction.1416.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1416.activity.2.location.title",
+                    },
+                    titleKey = "faction.1416.activity.2.title",
                 },
             },
         },
         [1435] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Isle of the Thunder King",
+                    kindKey = "faction.1435.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1435.activity.1.location.title",
+                    },
+                    titleKey = "faction.1435.activity.1.title",
                 },
                 {
-                    kind = "Raid",
-                    title = "Throne of Thander",
+                    kindKey = "faction.1435.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1435.activity.2.location.title",
+                    },
+                    titleKey = "faction.1435.activity.2.title",
                 },
             },
         },
         [1445] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Frostfire Ridge",
+                    kindKey = "faction.1445.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1445.activity.1.location.title",
+                    },
+                    titleKey = "faction.1445.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "War Mill",
+                    kindKey = "faction.1445.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1445.activity.2.location.title",
+                    },
+                    titleKey = "faction.1445.activity.2.title",
                 },
             },
         },
         [1492] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Zeitlose Insel",
+                    kindKey = "faction.1492.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1492.activity.1.location.title",
+                    },
+                    titleKey = "faction.1492.activity.1.title",
                 },
                 {
-                    kind = "Raid",
-                    title = "Siege of Orgrimmar",
+                    kindKey = "faction.1492.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1492.activity.2.location.title",
+                    },
+                    titleKey = "faction.1492.activity.2.title",
                 },
             },
         },
         [1515] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Spires of Arak",
+                    kindKey = "faction.1515.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1515.activity.1.location.title",
+                    },
+                    titleKey = "faction.1515.activity.1.title",
                 },
             },
         },
         [1710] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Moonfall",
+                    kindKey = "faction.1710.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1710.activity.1.location.title",
+                    },
+                    titleKey = "faction.1710.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Outpost of the Awakened",
+                    kindKey = "faction.1710.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1710.activity.2.location.title",
+                    },
+                    titleKey = "faction.1710.activity.2.title",
                 },
             },
         },
         [1711] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Gorgrond",
+                    kindKey = "faction.1711.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1711.activity.1.location.title",
+                    },
+                    titleKey = "faction.1711.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "Grimrail Depot",
+                    kindKey = "faction.1711.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1711.activity.2.location.title",
+                    },
+                    titleKey = "faction.1711.activity.2.title",
                 },
             },
         },
         [1731] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Nagrand",
+                    kindKey = "faction.1731.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1731.activity.1.location.title",
+                    },
+                    titleKey = "faction.1731.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "Shadowmoon Burial Groands",
+                    kindKey = "faction.1731.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1731.activity.2.location.title",
+                    },
+                    titleKey = "faction.1731.activity.2.title",
                 },
             },
         },
         [1828] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Highmountain",
+                    kindKey = "faction.1828.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1828.activity.1.location.title",
+                    },
+                    titleKey = "faction.1828.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "Neltharion's Lair",
+                    kindKey = "faction.1828.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1828.activity.2.location.title",
+                    },
+                    titleKey = "faction.1828.activity.2.title",
                 },
             },
         },
         [1847] = {
             activities = {
                 {
-                    kind = "Hub",
-                    title = "Warspear",
+                    kindKey = "faction.1847.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1847.activity.1.location.title",
+                    },
+                    titleKey = "faction.1847.activity.1.title",
                 },
             },
         },
         [1848] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Tanaan Jungle",
+                    kindKey = "faction.1848.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1848.activity.1.location.title",
+                    },
+                    titleKey = "faction.1848.activity.1.title",
                 },
                 {
-                    kind = "Raid",
-                    title = "Hellfire Citadel",
+                    kindKey = "faction.1848.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1848.activity.2.location.title",
+                    },
+                    titleKey = "faction.1848.activity.2.title",
                 },
             },
         },
         [1849] = {
             activities = {
                 {
-                    kind = "Hub",
-                    title = "Stormshield",
+                    kindKey = "faction.1849.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1849.activity.1.location.title",
+                    },
+                    titleKey = "faction.1849.activity.1.title",
                 },
             },
         },
         [1850] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Spires of Arak",
+                    kindKey = "faction.1850.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1850.activity.1.location.title",
+                    },
+                    titleKey = "faction.1850.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "Auchindoun",
+                    kindKey = "faction.1850.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1850.activity.2.location.title",
+                    },
+                    titleKey = "faction.1850.activity.2.title",
                 },
             },
         },
         [1859] = {
             activities = {
                 {
-                    kind = "Story/Zone",
-                    title = "Suramar-Kampagne",
+                    kindKey = "faction.1859.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1859.activity.1.location.title",
+                    },
+                    titleKey = "faction.1859.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Shal'Aran",
+                    kindKey = "faction.1859.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1859.activity.2.location.title",
+                    },
+                    titleKey = "faction.1859.activity.2.title",
                 },
             },
         },
         [1883] = {
             activities = {
                 {
-                    kind = "Hub",
-                    title = "Legion-Dalaran",
+                    kindKey = "faction.1883.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1883.activity.1.location.title",
+                    },
+                    titleKey = "faction.1883.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Krasus' Landing",
+                    kindKey = "faction.1883.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1883.activity.2.location.title",
+                    },
+                    titleKey = "faction.1883.activity.2.title",
                 },
             },
         },
         [1894] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Broken Shore",
+                    kindKey = "faction.1894.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1894.activity.1.location.title",
+                    },
+                    titleKey = "faction.1894.activity.1.title",
                 },
                 {
-                    kind = "Raid",
-                    title = "Tomb of Sargeras",
+                    kindKey = "faction.1894.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1894.activity.2.location.title",
+                    },
+                    titleKey = "faction.1894.activity.2.title",
                 },
             },
         },
         [1900] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Azsuna",
+                    kindKey = "faction.1900.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1900.activity.1.location.title",
+                    },
+                    titleKey = "faction.1900.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "Eye of Azshara",
+                    kindKey = "faction.1900.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1900.activity.2.location.title",
+                    },
+                    titleKey = "faction.1900.activity.2.title",
                 },
             },
         },
         [1948] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Sturmheim",
+                    kindKey = "faction.1948.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1948.activity.1.location.title",
+                    },
+                    titleKey = "faction.1948.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Haimont",
+                    kindKey = "faction.1948.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1948.activity.2.location.title",
+                    },
+                    titleKey = "faction.1948.activity.2.title",
                 },
             },
         },
         [2045] = {
             activities = {
                 {
-                    kind = "Dungeon",
-                    title = "Vault of the Wardens",
+                    kindKey = "faction.2045.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2045.activity.1.location.title",
+                    },
+                    titleKey = "faction.2045.activity.1.title",
                 },
             },
         },
         [2135] = {
             activities = {
                 {
-                    kind = "Recurring",
-                    title = "Time Rifts",
+                    kindKey = "faction.2135.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2135.activity.1.location.title",
+                    },
+                    titleKey = "faction.2135.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "Temporal side activities",
+                    kindKey = "faction.2135.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2135.activity.2.location.title",
+                    },
+                    titleKey = "faction.2135.activity.2.title",
                 },
             },
         },
         [2157] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Zuldazar",
+                    kindKey = "faction.2157.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2157.activity.1.location.title",
+                    },
+                    titleKey = "faction.2157.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Dazar'alor",
+                    kindKey = "faction.2157.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2157.activity.2.location.title",
+                    },
+                    titleKey = "faction.2157.activity.2.title",
                 },
             },
         },
         [2158] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Vol'dun",
+                    kindKey = "faction.2158.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2158.activity.1.location.title",
+                    },
+                    titleKey = "faction.2158.activity.1.title",
                 },
             },
         },
         [2160] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Tiragardesand",
+                    kindKey = "faction.2160.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2160.activity.1.location.title",
+                    },
+                    titleKey = "faction.2160.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Boralus",
+                    kindKey = "faction.2160.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2160.activity.2.location.title",
+                    },
+                    titleKey = "faction.2160.activity.2.title",
                 },
             },
         },
         [2161] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Drustvar",
+                    kindKey = "faction.2161.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2161.activity.1.location.title",
+                    },
+                    titleKey = "faction.2161.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "Waycrest Manor",
+                    kindKey = "faction.2161.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2161.activity.2.location.title",
+                    },
+                    titleKey = "faction.2161.activity.2.title",
                 },
             },
         },
         [2162] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Stormsong Valley",
+                    kindKey = "faction.2162.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2162.activity.1.location.title",
+                    },
+                    titleKey = "faction.2162.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "Shrine of the Storm",
+                    kindKey = "faction.2162.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2162.activity.2.location.title",
+                    },
+                    titleKey = "faction.2162.activity.2.title",
                 },
             },
         },
         [2165] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Krokuun",
+                    kindKey = "faction.2165.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2165.activity.1.location.title",
+                    },
+                    titleKey = "faction.2165.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "Argus activities",
+                    kindKey = "faction.2165.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2165.activity.2.location.title",
+                    },
+                    titleKey = "faction.2165.activity.2.title",
                 },
             },
         },
         [2170] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Argus activities",
+                    kindKey = "faction.2170.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2170.activity.1.location.title",
+                    },
+                    titleKey = "faction.2170.activity.1.title",
                 },
                 {
-                    kind = "Raid",
-                    title = "Antorus, the Burning Throne",
+                    kindKey = "faction.2170.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2170.activity.2.location.title",
+                    },
+                    titleKey = "faction.2170.activity.2.title",
                 },
             },
         },
         [2370] = {
             activities = {
                 {
-                    kind = "Hub",
-                    title = "Neueheim",
+                    kindKey = "faction.2370.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2370.activity.1.location.title",
+                    },
+                    titleKey = "faction.2370.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "Nazjatar",
+                    kindKey = "faction.2370.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2370.activity.2.location.title",
+                    },
+                    titleKey = "faction.2370.activity.2.title",
                 },
             },
-            summary = "Retail content for this faction is centered on Neueheim and Nazjatar.",
+            summaryKey = "faction.2370.summary",
         },
         [2373] = {
             activities = {
                 {
-                    kind = "Hub",
-                    title = "Mezzamere",
+                    kindKey = "faction.2373.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2373.activity.1.location.title",
+                    },
+                    titleKey = "faction.2373.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "Nazjatar",
+                    kindKey = "faction.2373.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2373.activity.2.location.title",
+                    },
+                    titleKey = "faction.2373.activity.2.title",
                 },
             },
         },
         [2391] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Mechagon",
+                    kindKey = "faction.2391.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2391.activity.1.location.title",
+                    },
+                    titleKey = "faction.2391.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Rostbolzen",
+                    kindKey = "faction.2391.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2391.activity.2.location.title",
+                    },
+                    titleKey = "faction.2391.activity.2.title",
                 },
             },
         },
         [2395] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Sturmsangtal side content",
+                    kindKey = "faction.2395.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2395.activity.1.location.title",
+                    },
+                    titleKey = "faction.2395.activity.1.title",
                 },
             },
         },
         [2407] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Bastion",
+                    kindKey = "faction.2407.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2407.activity.1.location.title",
+                    },
+                    titleKey = "faction.2407.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "Spires of Ascension",
+                    kindKey = "faction.2407.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2407.activity.2.location.title",
+                    },
+                    titleKey = "faction.2407.activity.2.title",
                 },
             },
         },
         [2410] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Maldraxxus",
+                    kindKey = "faction.2410.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2410.activity.1.location.title",
+                    },
+                    titleKey = "faction.2410.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "Theater of Pain",
+                    kindKey = "faction.2410.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2410.activity.2.location.title",
+                    },
+                    titleKey = "faction.2410.activity.2.title",
                 },
             },
         },
         [2413] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Revendreth",
+                    kindKey = "faction.2413.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2413.activity.1.location.title",
+                    },
+                    titleKey = "faction.2413.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "Halls of Atonement",
+                    kindKey = "faction.2413.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2413.activity.2.location.title",
+                    },
+                    titleKey = "faction.2413.activity.2.title",
                 },
             },
         },
         [2415] = {
             activities = {
                 {
-                    kind = "Raid",
-                    title = "Ny'alotha, the Waking City",
+                    kindKey = "faction.2415.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2415.activity.1.location.title",
+                    },
+                    titleKey = "faction.2415.activity.1.title",
                 },
             },
         },
         [2417] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Uldum",
+                    kindKey = "faction.2417.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2417.activity.1.location.title",
+                    },
+                    titleKey = "faction.2417.activity.1.title",
                 },
             },
         },
         [2432] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "The Maw",
+                    kindKey = "faction.2432.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2432.activity.1.location.title",
+                    },
+                    titleKey = "faction.2432.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Ve'naris Zuflucht",
+                    kindKey = "faction.2432.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2432.activity.2.location.title",
+                    },
+                    titleKey = "faction.2432.activity.2.title",
                 },
             },
         },
         [2439] = {
             activities = {
                 {
-                    kind = "Hub",
-                    title = "Absolution Crypt",
+                    kindKey = "faction.2439.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2439.activity.1.location.title",
+                    },
+                    titleKey = "faction.2439.activity.1.title",
                 },
             },
         },
         [2464] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Ardenweald",
+                    kindKey = "faction.2464.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2464.activity.1.location.title",
+                    },
+                    titleKey = "faction.2464.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "Mists of Tirna Scithe",
+                    kindKey = "faction.2464.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2464.activity.2.location.title",
+                    },
+                    titleKey = "faction.2464.activity.2.title",
                 },
             },
         },
         [2465] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Ardenweald",
+                    kindKey = "faction.2465.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2465.activity.1.location.title",
+                    },
+                    titleKey = "faction.2465.activity.1.title",
                 },
             },
         },
         [2470] = {
             activities = {
                 {
-                    kind = "Raid",
-                    title = "Sanctum of Domination",
+                    kindKey = "faction.2470.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2470.activity.1.location.title",
+                    },
+                    titleKey = "faction.2470.activity.1.title",
                 },
             },
         },
         [2472] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Korthia",
+                    kindKey = "faction.2472.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2472.activity.1.location.title",
+                    },
+                    titleKey = "faction.2472.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Keeper's Respite",
+                    kindKey = "faction.2472.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2472.activity.2.location.title",
+                    },
+                    titleKey = "faction.2472.activity.2.title",
                 },
                 {
-                    kind = "Recurring",
-                    title = "Relic research",
+                    kindKey = "faction.2472.activity.3.kind",
+                    location = {
+                        titleKey = "faction.2472.activity.3.location.title",
+                    },
+                    titleKey = "faction.2472.activity.3.title",
                 },
             },
         },
         [2478] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Zereth Mortis",
+                    kindKey = "faction.2478.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2478.activity.1.location.title",
+                    },
+                    titleKey = "faction.2478.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Haven",
+                    kindKey = "faction.2478.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2478.activity.2.location.title",
+                    },
+                    titleKey = "faction.2478.activity.2.title",
                 },
             },
         },
         [2503] = {
             activities = {
                 {
-                    kind = "Recurring",
-                    title = "Grand Hunt",
+                    kindKey = "faction.2503.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2503.activity.1.location.title",
+                    },
+                    titleKey = "faction.2503.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "Ohn'ahran Plains",
+                    kindKey = "faction.2503.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2503.activity.2.location.title",
+                    },
+                    titleKey = "faction.2503.activity.2.title",
                 },
             },
         },
         [2507] = {
             activities = {
                 {
-                    kind = "Recurring",
-                    title = "Siege on Dragonbane Keep",
+                    kindKey = "faction.2507.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2507.activity.1.location.title",
+                    },
+                    titleKey = "faction.2507.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "The Waking Shores",
+                    kindKey = "faction.2507.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2507.activity.2.location.title",
+                    },
+                    titleKey = "faction.2507.activity.2.title",
                 },
             },
         },
         [2510] = {
             activities = {
                 {
-                    kind = "Hub",
-                    title = "Valdrakken",
+                    kindKey = "faction.2510.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2510.activity.1.location.title",
+                    },
+                    titleKey = "faction.2510.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "Thaldraszus",
+                    kindKey = "faction.2510.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2510.activity.2.location.title",
+                    },
+                    titleKey = "faction.2510.activity.2.title",
                 },
             },
         },
         [2511] = {
             activities = {
                 {
-                    kind = "Weekly/Event",
-                    title = "Community Feast",
+                    kindKey = "faction.2511.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2511.activity.1.location.title",
+                    },
+                    titleKey = "faction.2511.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "The Azure Span",
+                    kindKey = "faction.2511.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2511.activity.2.location.title",
+                    },
+                    titleKey = "faction.2511.activity.2.title",
                 },
             },
         },
         [2517] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Waking Shores black dragonflight content",
+                    kindKey = "faction.2517.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2517.activity.1.location.title",
+                    },
+                    titleKey = "faction.2517.activity.1.title",
                 },
             },
         },
         [2518] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Waking Shores black dragonflight content",
+                    kindKey = "faction.2518.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2518.activity.1.location.title",
+                    },
+                    titleKey = "faction.2518.activity.1.title",
                 },
             },
         },
         [2523] = {
             activities = {
                 {
-                    kind = "Recurring",
-                    title = "Obsidian side content",
+                    kindKey = "faction.2523.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2523.activity.1.location.title",
+                    },
+                    titleKey = "faction.2523.activity.1.title",
                 },
             },
         },
         [2524] = {
             activities = {
                 {
-                    kind = "Recurring",
-                    title = "Obsidian side content",
+                    kindKey = "faction.2524.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2524.activity.1.location.title",
+                    },
+                    titleKey = "faction.2524.activity.1.title",
                 },
             },
         },
         [2526] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Azure Span side quests",
+                    kindKey = "faction.2526.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2526.activity.1.location.title",
+                    },
+                    titleKey = "faction.2526.activity.1.title",
                 },
             },
         },
         [2544] = {
             activities = {
                 {
-                    kind = "Hub",
-                    title = "Valdrakken professions hub",
+                    kindKey = "faction.2544.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2544.activity.1.location.title",
+                    },
+                    titleKey = "faction.2544.activity.1.title",
                 },
             },
-            summary = "Retail content for this faction is centered on Valdrakken professions hub.",
+            summaryKey = "faction.2544.summary",
         },
         [2550] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Azure Span side content",
+                    kindKey = "faction.2550.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2550.activity.1.location.title",
+                    },
+                    titleKey = "faction.2550.activity.1.title",
                 },
             },
         },
         [2553] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "When Time Needs Mending",
+                    kindKey = "faction.2553.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2553.activity.1.location.title",
+                    },
+                    titleKey = "faction.2553.activity.1.title",
                 },
             },
         },
         [2564] = {
             activities = {
                 {
-                    kind = "Hub",
-                    title = "Loamm",
+                    kindKey = "faction.2564.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2564.activity.1.location.title",
+                    },
+                    titleKey = "faction.2564.activity.1.title",
                 },
                 {
-                    kind = "Weekly",
-                    title = "Sniffenseeking",
+                    kindKey = "faction.2564.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2564.activity.2.location.title",
+                    },
+                    titleKey = "faction.2564.activity.2.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "Zaralek world content",
+                    kindKey = "faction.2564.activity.3.kind",
+                    location = {
+                        titleKey = "faction.2564.activity.3.location.title",
+                    },
+                    titleKey = "faction.2564.activity.3.title",
                 },
             },
             quartermasters = {
                 {
-                    label = "Quartermaster",
-                    name = "Mimuup",
+                    labelKey = "faction.2564.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2564.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2564.quartermaster.1.name",
                 },
             },
         },
         [2570] = {
             activities = {
                 {
-                    kind = "Weekly/Event",
-                    title = "Spreading the Light",
+                    kindKey = "faction.2570.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2570.activity.1.location.title",
+                    },
+                    titleKey = "faction.2570.activity.1.title",
                 },
                 {
-                    kind = "World quests",
-                    title = "World quests in Hallowfall",
+                    kindKey = "faction.2570.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2570.activity.2.location.title",
+                    },
+                    titleKey = "faction.2570.activity.2.title",
                 },
             },
             quartermasters = {
                 {
-                    label = "Quartermaster",
-                    name = "Auralia Steelstrike",
+                    labelKey = "faction.2570.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2570.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2570.quartermaster.1.name",
                 },
             },
         },
         [2574] = {
             activities = {
                 {
-                    kind = "Hub",
-                    title = "Central Encampment",
+                    kindKey = "faction.2574.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2574.activity.1.location.title",
+                    },
+                    titleKey = "faction.2574.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "Emerald Dream world content",
+                    kindKey = "faction.2574.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2574.activity.2.location.title",
+                    },
+                    titleKey = "faction.2574.activity.2.title",
                 },
                 {
-                    kind = "Story",
-                    title = "Story chapters in the Dream",
+                    kindKey = "faction.2574.activity.3.kind",
+                    location = {
+                        titleKey = "faction.2574.activity.3.location.title",
+                    },
+                    titleKey = "faction.2574.activity.3.title",
                 },
             },
             quartermasters = {
                 {
-                    label = "Quartermaster",
-                    name = "Pipsee",
+                    labelKey = "faction.2574.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2574.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2574.quartermaster.1.name",
                 },
             },
         },
         [2590] = {
             activities = {
                 {
-                    kind = "World quests",
-                    title = "World quests on the Isle of Dorn",
+                    kindKey = "faction.2590.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2590.activity.1.location.title",
+                    },
+                    titleKey = "faction.2590.activity.1.title",
                 },
                 {
-                    kind = "One-time/Warband",
-                    title = "Story and side chapters in Dornogal",
+                    kindKey = "faction.2590.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2590.activity.2.location.title",
+                    },
+                    titleKey = "faction.2590.activity.2.title",
                 },
             },
             quartermasters = {
                 {
-                    label = "Quartermaster",
-                    name = "Auditor Balwurz",
+                    labelKey = "faction.2590.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2590.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2590.quartermaster.1.name",
                 },
             },
         },
         [2594] = {
             activities = {
                 {
-                    kind = "World quests",
-                    title = "World quests in The Ringing Deeps",
+                    kindKey = "faction.2594.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2594.activity.1.location.title",
+                    },
+                    titleKey = "faction.2594.activity.1.title",
                 },
                 {
-                    kind = "One-time/Warband",
-                    title = "Story and side chapters in Gundargaz",
+                    kindKey = "faction.2594.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2594.activity.2.location.title",
+                    },
+                    titleKey = "faction.2594.activity.2.title",
                 },
             },
             quartermasters = {
                 {
-                    label = "Quartermaster",
-                    name = "Waxmonger Squick",
+                    labelKey = "faction.2594.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2594.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2594.quartermaster.1.name",
                 },
             },
         },
         [2600] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "Weekly pact",
+                    kindKey = "faction.2600.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2600.activity.1.location.title",
+                    },
+                    titleKey = "faction.2600.activity.1.title",
                 },
                 {
-                    kind = "World quests",
-                    title = "World quests in Azj-Kahet",
+                    kindKey = "faction.2600.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2600.activity.2.location.title",
+                    },
+                    titleKey = "faction.2600.activity.2.title",
                 },
             },
             quartermasters = {
                 {
-                    label = "Quartermaster",
-                    name = "Y'tekhi",
+                    labelKey = "faction.2600.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2600.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2600.quartermaster.1.name",
                 },
             },
         },
         [2601] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "Pact of the Weaver",
+                    kindKey = "faction.2601.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2601.activity.1.location.title",
+                    },
+                    titleKey = "faction.2601.activity.1.title",
                 },
             },
         },
         [2605] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "Pact of the General",
+                    kindKey = "faction.2605.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2605.activity.1.location.title",
+                    },
+                    titleKey = "faction.2605.activity.1.title",
                 },
             },
         },
         [2607] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "Pact of the Vizier",
+                    kindKey = "faction.2607.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2607.activity.1.location.title",
+                    },
+                    titleKey = "faction.2607.activity.1.title",
                 },
             },
         },
         [2615] = {
             activities = {
                 {
-                    kind = "Recurring",
-                    title = "Azerothian Archives",
+                    kindKey = "faction.2615.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2615.activity.1.location.title",
+                    },
+                    titleKey = "faction.2615.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "Archive activities in Tyrhold",
+                    kindKey = "faction.2615.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2615.activity.2.location.title",
+                    },
+                    titleKey = "faction.2615.activity.2.title",
                 },
             },
         },
         [2653] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "Weekly cartel contract",
+                    kindKey = "faction.2653.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2653.activity.1.location.title",
+                    },
+                    titleKey = "faction.2653.activity.1.title",
                 },
                 {
-                    kind = "Weekly",
-                    title = "C.H.E.T.T.-Liste",
+                    kindKey = "faction.2653.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2653.activity.2.location.title",
+                    },
+                    titleKey = "faction.2653.activity.2.title",
                 },
             },
             quartermasters = {
                 {
-                    label = "Quartermaster",
-                    name = "Smaks Topskimmer",
+                    labelKey = "faction.2653.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2653.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2653.quartermaster.1.name",
                 },
             },
         },
         [2658] = {
             activities = {
                 {
-                    kind = "Story",
-                    title = "K'aresh campaign",
+                    kindKey = "faction.2658.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2658.activity.1.location.title",
+                    },
+                    titleKey = "faction.2658.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "K'aresh world content",
+                    kindKey = "faction.2658.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2658.activity.2.location.title",
+                    },
+                    titleKey = "faction.2658.activity.2.title",
                 },
             },
         },
         [2671] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "Kartellwahl: Venture Company",
+                    kindKey = "faction.2671.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2671.activity.1.location.title",
+                    },
+                    titleKey = "faction.2671.activity.1.title",
                 },
             },
         },
         [2673] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "Kartellwahl: Bilgewasserkartell",
+                    kindKey = "faction.2673.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2673.activity.1.location.title",
+                    },
+                    titleKey = "faction.2673.activity.1.title",
                 },
             },
         },
         [2675] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "Kartellwahl: Schwarzmeer AG",
+                    kindKey = "faction.2675.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2675.activity.1.location.title",
+                    },
+                    titleKey = "faction.2675.activity.1.title",
                 },
             },
         },
         [2677] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "Kartellwahl: Dampfdruckkartell",
+                    kindKey = "faction.2677.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2677.activity.1.location.title",
+                    },
+                    titleKey = "faction.2677.activity.1.title",
                 },
             },
         },
         [2685] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "Kartellwahl: Garbagio Treueclub",
+                    kindKey = "faction.2685.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2685.activity.1.location.title",
+                    },
+                    titleKey = "faction.2685.activity.1.title",
                 },
             },
         },
         [2688] = {
             activities = {
                 {
-                    kind = "Zone/Event",
-                    title = "Hallowfall defense activities",
+                    kindKey = "faction.2688.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2688.activity.1.location.title",
+                    },
+                    titleKey = "faction.2688.activity.1.title",
                 },
                 {
-                    kind = "Recurring",
-                    title = "Mereldar call to arms",
+                    kindKey = "faction.2688.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2688.activity.2.location.title",
+                    },
+                    titleKey = "faction.2688.activity.2.title",
                 },
             },
             quartermasters = {
                 {
-                    label = "Quartermaster",
-                    name = "Raen Dawncavalyr",
+                    labelKey = "faction.2688.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2688.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2688.quartermaster.1.name",
                 },
             },
         },
         [2696] = {
             activities = {
                 {
-                    kind = "Story/Zone",
-                    title = "Zul'Aman-Kampagne",
+                    kindKey = "faction.2696.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2696.activity.1.location.title",
+                    },
+                    titleKey = "faction.2696.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "Local tasks in the Amani area",
+                    kindKey = "faction.2696.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2696.activity.2.location.title",
+                    },
+                    titleKey = "faction.2696.activity.2.title",
                 },
             },
         },
         [2699] = {
             activities = {
                 {
-                    kind = "Story/Zone",
-                    title = "Leerensturm-Kampagne",
+                    kindKey = "faction.2699.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2699.activity.1.location.title",
+                    },
+                    titleKey = "faction.2699.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "Local tasks in Voidstorm",
+                    kindKey = "faction.2699.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2699.activity.2.location.title",
+                    },
+                    titleKey = "faction.2699.activity.2.title",
                 },
             },
         },
         [2704] = {
             activities = {
                 {
-                    kind = "Story/Zone",
-                    title = "Harandar-Kampagne",
+                    kindKey = "faction.2704.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2704.activity.1.location.title",
+                    },
+                    titleKey = "faction.2704.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "Local tasks in Harandar",
+                    kindKey = "faction.2704.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2704.activity.2.location.title",
+                    },
+                    titleKey = "faction.2704.activity.2.title",
                 },
             },
         },
         [2710] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "Saltherils Soiree",
+                    kindKey = "faction.2710.activity.1.kind",
+                    location = {
+                        titleKey = "activity.saltherils_soiree.title",
+                    },
+                    titleKey = "activity.saltherils_soiree.title",
                 },
             },
             quartermasters = {
                 {
-                    label = "Magister",
-                    name = "Lehrling Diell",
+                    labelKey = "faction.2710.quartermaster.magisters.label",
+                    location = {
+                        titleKey = "npc.apprentice_diell.name",
+                    },
+                    nameKey = "npc.apprentice_diell.name",
                 },
                 {
-                    label = "Blood Knight",
-                    name = "Armorsmith Goldcrest",
+                    labelKey = "faction.2710.quartermaster.blood_knights.label",
+                    location = {
+                        titleKey = "npc.armorsmith_goldcrest.name",
+                    },
+                    nameKey = "npc.armorsmith_goldcrest.name",
                 },
                 {
-                    label = "Lane Warden",
-                    name = "Neriv",
+                    labelKey = "faction.2710.quartermaster.lane_warden.label",
+                    location = {
+                        titleKey = "npc.neriv.name",
+                    },
+                    nameKey = "npc.neriv.name",
                 },
                 {
-                    label = "Wayfarer",
-                    name = "Ranger Allorn",
+                    labelKey = "faction.2710.quartermaster.wayfarer.label",
+                    location = {
+                        titleKey = "npc.ranger_allorn.name",
+                    },
+                    nameKey = "npc.ranger_allorn.name",
                 },
             },
         },
         [2711] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "Saltherils Soiree",
+                    kindKey = "faction.2711.activity.1.kind",
+                    location = {
+                        titleKey = "activity.saltherils_soiree.title",
+                    },
+                    titleKey = "activity.saltherils_soiree.title",
                 },
             },
             quartermasters = {
                 {
-                    label = "Quartermaster",
-                    name = "Lehrling Diell",
+                    labelKey = "common.quartermaster",
+                    location = {
+                        titleKey = "npc.apprentice_diell.name",
+                    },
+                    nameKey = "npc.apprentice_diell.name",
                 },
             },
         },
         [2712] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "Saltherils Soiree",
+                    kindKey = "faction.2712.activity.1.kind",
+                    location = {
+                        titleKey = "activity.saltherils_soiree.title",
+                    },
+                    titleKey = "activity.saltherils_soiree.title",
                 },
             },
             quartermasters = {
                 {
-                    label = "Quartermaster",
-                    name = "Armorsmith Goldcrest",
+                    labelKey = "common.quartermaster",
+                    location = {
+                        titleKey = "npc.armorsmith_goldcrest.name",
+                    },
+                    nameKey = "npc.armorsmith_goldcrest.name",
                 },
             },
         },
         [2713] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "Saltherils Soiree",
+                    kindKey = "faction.2713.activity.1.kind",
+                    location = {
+                        titleKey = "activity.saltherils_soiree.title",
+                    },
+                    titleKey = "activity.saltherils_soiree.title",
                 },
             },
             quartermasters = {
                 {
-                    label = "Quartermaster",
-                    name = "Ranger Allorn",
+                    labelKey = "common.quartermaster",
+                    location = {
+                        titleKey = "npc.ranger_allorn.name",
+                    },
+                    nameKey = "npc.ranger_allorn.name",
                 },
             },
         },
         [2714] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "Saltherils Soiree",
+                    kindKey = "faction.2714.activity.1.kind",
+                    location = {
+                        titleKey = "activity.saltherils_soiree.title",
+                    },
+                    titleKey = "activity.saltherils_soiree.title",
                 },
             },
             quartermasters = {
                 {
-                    label = "Quartermaster",
-                    name = "Neriv",
+                    labelKey = "common.quartermaster",
+                    location = {
+                        titleKey = "npc.neriv.name",
+                    },
+                    nameKey = "npc.neriv.name",
                 },
             },
         },
         [2736] = {
             activities = {
                 {
-                    kind = "Recurring",
-                    title = "Manaforge sabotage operations",
+                    kindKey = "faction.2736.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2736.activity.1.location.title",
+                    },
+                    titleKey = "faction.2736.activity.1.title",
                 },
             },
         },
         [2770] = {
             activities = {
                 {
-                    kind = "Story/Zone",
-                    title = "Voidstorm",
+                    kindKey = "faction.2770.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2770.activity.1.location.title",
+                    },
+                    titleKey = "faction.2770.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Obskurionzitadelle",
+                    kindKey = "faction.2770.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2770.activity.2.location.title",
+                    },
+                    titleKey = "faction.2770.activity.2.title",
                 },
             },
         },
         [9000111] = {
             activities = {
                 {
-                    kind = "Cluster",
-                    title = "Shattrath city factions",
+                    kindKey = "faction.9000111.activity.1.kind",
+                    location = {
+                        titleKey = "faction.9000111.activity.1.location.title",
+                    },
+                    titleKey = "activity.shattrath.city_factions.title",
                 },
             },
+            summaryKey = "faction.9000111.summary",
         },
     },
 })

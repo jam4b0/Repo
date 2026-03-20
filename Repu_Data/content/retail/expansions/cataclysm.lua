@@ -27,9 +27,9 @@ api.RegisterRetailContentModule({
                     kind = "Zone",
                     location = {
                         mapID = 207,
-                        title = "Tiefenheim",
+                        title = "Deepholm",
                     },
-                    title = "Tiefenheim",
+                    title = "Deepholm",
                 },
             },
             confidence = "medium",
@@ -57,9 +57,9 @@ api.RegisterRetailContentModule({
                     kind = "Zone",
                     location = {
                         mapID = 241,
-                        title = "Schattenhochland",
+                        title = "Twilight Highlands",
                     },
-                    title = "Schattenhochland",
+                    title = "Twilight Highlands",
                 },
             },
             confidence = "medium",

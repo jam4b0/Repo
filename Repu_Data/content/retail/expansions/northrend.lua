@@ -67,7 +67,7 @@ api.RegisterRetailContentModule({
                         mapID = 125,
                         title = "Dalaran",
                     },
-                    title = "Northrend-Dungeons mit Dalaran-Bezug",
+                    title = "Northrend dungeons tied to Dalaran",
                 },
             },
             confidence = "medium",
@@ -140,7 +140,7 @@ api.RegisterRetailContentModule({
                     location = {
                         title = "Gundrak",
                     },
-                    title = "Gandrak",
+                    title = "Gundrak",
                 },
             },
             confidence = "medium",

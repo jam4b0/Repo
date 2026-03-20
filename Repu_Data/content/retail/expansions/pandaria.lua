@@ -238,7 +238,7 @@ api.RegisterRetailContentModule({
                     location = {
                         title = "Throne of Thunder",
                     },
-                    title = "Throne of Thander",
+                    title = "Throne of Thunder",
                 },
             },
             confidence = "medium",
@@ -251,9 +251,9 @@ api.RegisterRetailContentModule({
                     kind = "Zone",
                     location = {
                         mapID = 554,
-                        title = "Zeitlose Insel",
+                        title = "Timeless Isle",
                     },
-                    title = "Zeitlose Insel",
+                    title = "Timeless Isle",
                 },
                 {
                     kind = "Raid",

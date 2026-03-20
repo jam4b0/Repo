@@ -81,9 +81,9 @@ api.RegisterRetailContentModule({
                 {
                     kind = "Hub",
                     location = {
-                        title = "Ve'naris Zuflucht",
+                        title = "Ve'nari's Refuge",
                     },
-                    title = "Ve'naris Zuflucht",
+                    title = "Ve'nari's Refuge",
                 },
             },
             confidence = "medium",

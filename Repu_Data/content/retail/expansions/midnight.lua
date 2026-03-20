@@ -14,7 +14,7 @@ api.RegisterRetailContentModule({
                         mapID = 2437,
                         title = "Zul'Aman",
                     },
-                    title = "Zul'Aman-Kampagne",
+                    title = "Zul'Aman campaign",
                 },
                 {
                     kind = "Zone",
@@ -37,7 +37,7 @@ api.RegisterRetailContentModule({
                         mapID = 2405,
                         title = "Voidstorm",
                     },
-                    title = "Leerensturm-Kampagne",
+                    title = "Voidstorm campaign",
                 },
                 {
                     kind = "Zone",
@@ -60,7 +60,7 @@ api.RegisterRetailContentModule({
                         mapID = 2413,
                         title = "Harandar",
                     },
-                    title = "Harandar-Kampagne",
+                    title = "Harandar campaign",
                 },
                 {
                     kind = "Zone",

@@ -180,6 +180,25 @@ local TITLE_MAP = {
     ["Weltquests in Heilsturz"] = "World quests in Hallowfall",
     ["Weltquests in The Ringing Deeps"] = "World quests in The Ringing Deeps",
     ["Waldläufer Allorn"] = "Ranger Allorn",
+    ["Ve'naris Zuflucht"] = "Ve'nari's Refuge",
+    ["Tiefenheim"] = "Deepholm",
+    ["Schattenhochland"] = "Twilight Highlands",
+    ["Halbinsel von Tol Barad"] = "Tol Barad Peninsula",
+    ["Halbhuegel"] = "Halfhill",
+    ["Zeitlose Insel"] = "Timeless Isle",
+    ["Tiragardesund"] = "Tiragarde Sound",
+    ["Neueheim"] = "Newhome",
+    ["Kueste des Erwachens"] = "The Waking Shores",
+    ["Kartellwahl: Garbagio Treueclub"] = "Cartel contract: Gallagio Loyalty Rewards Club",
+    ["Zul'Aman-Kampagne"] = "Zul'Aman campaign",
+    ["Leerensturm-Kampagne"] = "Voidstorm campaign",
+    ["Harandar-Kampagne"] = "Harandar campaign",
+    ["Suramar-Kampagne"] = "Suramar campaign",
+    ["Northrend-Dungeons mit Dalaran-Bezug"] = "Northrend dungeons tied to Dalaran",
+    ["Throne of Thander"] = "Throne of Thunder",
+    ["Shadowmoon Burial Groands"] = "Shadowmoon Burial Grounds",
+    ["Gandrak"] = "Gundrak",
+    ["C.H.E.T.T.-Liste"] = "C.H.E.T.T. List",
 }
 
 local LABEL_MAP = {
@@ -234,6 +253,52 @@ local function translateTitle(value)
     translated = translated:gsub("Lokale Aufgaben", "Local tasks")
     translated = translated:gsub("Aufgaben", "tasks")
     return translated
+end
+
+local function normalizeEnglishText(value)
+    if not value or value == "" then
+        return value
+    end
+
+    if TITLE_MAP[value] then
+        return TITLE_MAP[value]
+    end
+
+    if LABEL_MAP[value] then
+        return LABEL_MAP[value]
+    end
+
+    if KIND_MAP[value] then
+        return KIND_MAP[value]
+    end
+
+    local replacements = {
+        { "Neueheim", "Newhome" },
+        { "Tiragardesund", "Tiragarde Sound" },
+        { "Ve'naris Zuflucht", "Ve'nari's Refuge" },
+        { "Kueste des Erwachens", "The Waking Shores" },
+        { "Tiefenheim", "Deepholm" },
+        { "Schattenhochland", "Twilight Highlands" },
+        { "Halbinsel von Tol Barad", "Tol Barad Peninsula" },
+        { "Halbhuegel", "Halfhill" },
+        { "Zeitlose Insel", "Timeless Isle" },
+        { "Suramar%-Kampagne", "Suramar campaign" },
+        { "Northrend%-Dungeons mit Dalaran%-Bezug", "Northrend dungeons tied to Dalaran" },
+        { "C%.H%.E%.T%.T%.%-Liste", "C.H.E.T.T. List" },
+        { "Kartellwahl: Garbagio Treueclub", "Cartel contract: Gallagio Loyalty Rewards Club" },
+        { "Zul'Aman%-Kampagne", "Zul'Aman campaign" },
+        { "Leerensturm%-Kampagne", "Voidstorm campaign" },
+        { "Harandar%-Kampagne", "Harandar campaign" },
+        { "Throne of Thander", "Throne of Thunder" },
+        { "Shadowmoon Burial Groands", "Shadowmoon Burial Grounds" },
+        { "Gandrak", "Gundrak" },
+    }
+
+    for _, replacement in ipairs(replacements) do
+        value = value:gsub(replacement[1], replacement[2])
+    end
+
+    return value
 end
 
 local function buildEnglishSummary(entry)
@@ -487,45 +552,138 @@ end
 
 local englishDescriptions = loadEnglishDescriptionCache()
 
-local englishPayload = buildPayload(
-    nil,
-    function(factionID, entry)
+local function summaryUsesBlizzard(factionID, entry)
+    if entry.summaryKey then
+        return false
+    end
+    if entry.summarySource == "curated" then
+        return false
+    end
+    local descriptionEntry = englishDescriptions[tostring(factionID)] or nil
+    return descriptionEntry and descriptionEntry.description and descriptionEntry.description ~= ""
+end
+
+local function generatedKey(prefix, factionID, ...)
+    local parts = { prefix, tostring(factionID) }
+    for index = 1, select("#", ...) do
+        parts[#parts + 1] = tostring(select(index, ...))
+    end
+    return table.concat(parts, ".")
+end
+
+local function buildNeutralPayload()
+    local payload = { factions = {} }
+
+    for factionID, entry in pairs(collected.factions) do
+        local localized = {}
+
         if entry.summaryKey then
-            return nil
+            localized.summaryKey = entry.summaryKey
+        elseif not summaryUsesBlizzard(factionID, entry) then
+            localized.summaryKey = generatedKey("faction", factionID, "summary")
         end
-        if entry.summarySource == "curated" then
-            return entry.summary
+
+        if entry.quartermasters and #entry.quartermasters > 0 then
+            localized.quartermasters = {}
+            for index, quartermaster in ipairs(entry.quartermasters) do
+                local localizedQuartermaster = {}
+                localizedQuartermaster.nameKey = quartermaster.nameKey or generatedKey("faction", factionID, "quartermaster", index, "name")
+                localizedQuartermaster.labelKey = quartermaster.labelKey or generatedKey("faction", factionID, "quartermaster", index, "label")
+                if quartermaster.location then
+                    localizedQuartermaster.location = {}
+                    localizedQuartermaster.location.titleKey = quartermaster.location.titleKey or generatedKey("faction", factionID, "quartermaster", index, "location", "title")
+                end
+                localized.quartermasters[index] = localizedQuartermaster
+            end
         end
-        local descriptionEntry = englishDescriptions[tostring(factionID)] or nil
-        if descriptionEntry and descriptionEntry.description and descriptionEntry.description ~= "" then
-            return nil
+
+        if entry.activities and #entry.activities > 0 then
+            localized.activities = {}
+            for index, activity in ipairs(entry.activities) do
+                local localizedActivity = {}
+                localizedActivity.titleKey = activity.titleKey or generatedKey("faction", factionID, "activity", index, "title")
+                localizedActivity.kindKey = activity.kindKey or generatedKey("faction", factionID, "activity", index, "kind")
+                if activity.location then
+                    localizedActivity.location = {}
+                    localizedActivity.location.titleKey = activity.location.titleKey or generatedKey("faction", factionID, "activity", index, "location", "title")
+                end
+                localized.activities[index] = localizedActivity
+            end
         end
-        if entry.summary and entry.summary ~= "" then
-            return entry.summary
+
+        payload.factions[factionID] = localized
+    end
+
+    return payload
+end
+
+local neutralPayload = buildNeutralPayload()
+
+local function buildTextPayload(locale, neutralSource, retailSource, existingRetailLocale, existingTextLocale)
+    local payload = {}
+
+    local function carry(key, value)
+        if locale == "enUS" then
+            value = normalizeEnglishText(value)
         end
-        return buildEnglishSummary(entry)
-    end,
-    translateTitle
-)
+        if value and value ~= "" then
+            payload[key] = value
+        end
+    end
+
+    for factionID, neutralEntry in pairs(neutralSource.factions or {}) do
+        local sourceEntry = retailSource.factions and retailSource.factions[factionID] or nil
+        local localeEntry = existingRetailLocale and existingRetailLocale.factions and existingRetailLocale.factions[factionID] or nil
+
+        if neutralEntry.summaryKey then
+            local summaryValue = (localeEntry and localeEntry.summary) or (sourceEntry and sourceEntry.summary)
+            if locale == "enUS" and (not summaryValue or summaryValue == "") then
+                summaryValue = buildEnglishSummary(sourceEntry or {})
+            end
+            carry(neutralEntry.summaryKey, summaryValue or (existingTextLocale and existingTextLocale[neutralEntry.summaryKey]))
+        end
+
+        for index, neutralQuartermaster in ipairs(neutralEntry.quartermasters or {}) do
+            local sourceQuartermaster = sourceEntry and sourceEntry.quartermasters and sourceEntry.quartermasters[index] or nil
+            local localeQuartermaster = localeEntry and localeEntry.quartermasters and localeEntry.quartermasters[index] or nil
+            carry(neutralQuartermaster.nameKey, (localeQuartermaster and localeQuartermaster.name) or (sourceQuartermaster and sourceQuartermaster.name) or (existingTextLocale and existingTextLocale[neutralQuartermaster.nameKey]))
+            carry(neutralQuartermaster.labelKey, (localeQuartermaster and localeQuartermaster.label) or (sourceQuartermaster and sourceQuartermaster.label) or (existingTextLocale and existingTextLocale[neutralQuartermaster.labelKey]))
+            if neutralQuartermaster.location and neutralQuartermaster.location.titleKey then
+                local sourceTitle = sourceQuartermaster and sourceQuartermaster.location and sourceQuartermaster.location.title or nil
+                local localeTitle = localeQuartermaster and localeQuartermaster.location and localeQuartermaster.location.title or nil
+                carry(neutralQuartermaster.location.titleKey, localeTitle or sourceTitle or (existingTextLocale and existingTextLocale[neutralQuartermaster.location.titleKey]))
+            end
+        end
+
+        for index, neutralActivity in ipairs(neutralEntry.activities or {}) do
+            local sourceActivity = sourceEntry and sourceEntry.activities and sourceEntry.activities[index] or nil
+            local localeActivity = localeEntry and localeEntry.activities and localeEntry.activities[index] or nil
+            carry(neutralActivity.titleKey, (localeActivity and localeActivity.title) or (sourceActivity and sourceActivity.title) or (existingTextLocale and existingTextLocale[neutralActivity.titleKey]))
+            carry(neutralActivity.kindKey, (localeActivity and localeActivity.kind) or (sourceActivity and sourceActivity.kind) or (existingTextLocale and existingTextLocale[neutralActivity.kindKey]))
+            if neutralActivity.location and neutralActivity.location.titleKey then
+                local sourceTitle = sourceActivity and sourceActivity.location and sourceActivity.location.title or nil
+                local localeTitle = localeActivity and localeActivity.location and localeActivity.location.title or nil
+                carry(neutralActivity.location.titleKey, localeTitle or sourceTitle or (existingTextLocale and existingTextLocale[neutralActivity.location.titleKey]))
+            end
+        end
+    end
+
+    for key, value in pairs(existingTextLocale or {}) do
+        if payload[key] == nil then
+            payload[key] = value
+        end
+    end
+
+    return payload
+end
 
 local existingEnglishText = loadExistingLocale("enUS", "retail_content_text", contentTextLocales.enUS)
 local existingGermanText = loadExistingLocale("deDE", "retail_content_text", contentTextLocales.deDE)
-local englishTextPayload = buildTextPayload(existingEnglish, existingEnglishText)
-local germanTextPayload = buildTextPayload(existingGerman, existingGermanText)
 
-for key, value in pairs(existingEnglishText or {}) do
-    if englishTextPayload[key] == nil then
-        englishTextPayload[key] = value
-    end
-end
+local englishTextPayload = buildTextPayload("enUS", neutralPayload, collected, existingEnglish, existingEnglishText)
+local germanTextPayload = buildTextPayload("deDE", neutralPayload, collected, existingGerman, existingGermanText)
 
-for key, value in pairs(existingGermanText or {}) do
-    if germanTextPayload[key] == nil then
-        germanTextPayload[key] = value
-    end
-end
-
-writeLocale("enUS", englishPayload)
-writeLocale("deDE", germanPayload)
+writeLocale("enUS", neutralPayload)
+writeLocale("deDE", neutralPayload)
 writeTextLocale("enUS", englishTextPayload)
 writeTextLocale("deDE", germanTextPayload)

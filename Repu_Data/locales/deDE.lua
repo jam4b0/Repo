@@ -7,1837 +7,2457 @@ end
 api.RegisterLocaleDomain("retail_content", "deDE", {
     factions = {
         [21] = {
-            summary = "This booming coastal city is run by Baron Revilgaz of the Blackwater Raiders.  Mortal enemies of the Bloodsail Buccaneers and part of the Steamwheedle Cartel.",
         },
         [47] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Ironforge",
+                    kindKey = "faction.47.activity.1.kind",
+                    location = {
+                        titleKey = "faction.47.activity.1.location.title",
+                    },
+                    titleKey = "faction.47.activity.1.title",
                 },
             },
-            summary = "This Alliance capital is the pride of the Dun Morogh dwarves.  Home to King Magni.",
         },
         [59] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Searing Gorge",
+                    kindKey = "faction.59.activity.1.kind",
+                    location = {
+                        titleKey = "faction.59.activity.1.location.title",
+                    },
+                    titleKey = "faction.59.activity.1.title",
                 },
                 {
-                    kind = "Zone/City",
-                    title = "Burning Steppes",
+                    kindKey = "faction.59.activity.2.kind",
+                    location = {
+                        titleKey = "faction.59.activity.2.location.title",
+                    },
+                    titleKey = "faction.59.activity.2.title",
                 },
             },
-            summary = "The dwarves of the Thorium Brotherhood epitomize excellence in craftsmanship and are bent on unlocking the secrets of Blackrock Mountain.",
         },
         [68] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Undercity",
+                    kindKey = "faction.68.activity.1.kind",
+                    location = {
+                        titleKey = "faction.68.activity.1.location.title",
+                    },
+                    titleKey = "faction.68.activity.1.title",
                 },
             },
-            summary = "Led by Sylvanas Windrunner, the Forsaken have joined a tenuous alliance with the Horde and established this capital in the vast depths under the Ruins of Lordaeron.",
         },
         [69] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Darnassus",
+                    kindKey = "faction.69.activity.1.kind",
+                    location = {
+                        titleKey = "faction.69.activity.1.location.title",
+                    },
+                    titleKey = "faction.69.activity.1.title",
                 },
             },
-            summary = "This Alliance capital is populated by Night Elves and is located in the Island of Teldrassil.  Ruled by the Priestess of the Moon, Tyrande Whisperwind.",
         },
         [72] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Stormwind",
+                    kindKey = "faction.72.activity.1.kind",
+                    location = {
+                        titleKey = "faction.72.activity.1.location.title",
+                    },
+                    titleKey = "faction.72.activity.1.title",
                 },
             },
-            summary = "One of the last bastions of human power, this Alliance capital is ruled by the young but wise king, Anduin Wrynn.",
         },
         [76] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Orgrimmar",
+                    kindKey = "faction.76.activity.1.kind",
+                    location = {
+                        titleKey = "faction.76.activity.1.location.title",
+                    },
+                    titleKey = "faction.76.activity.1.title",
                 },
             },
-            summary = "Founded by Thrall, this Horde capital city is home to many of the proud orc clans of Durotar.",
         },
         [81] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Thunder Bluff",
+                    kindKey = "faction.81.activity.1.kind",
+                    location = {
+                        titleKey = "faction.81.activity.1.location.title",
+                    },
+                    titleKey = "faction.81.activity.1.title",
                 },
             },
-            summary = "Baine Bloodhoof leads his people, the proud Tauren, from this mighty Horde capital.",
         },
         [369] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Tanaris",
+                    kindKey = "faction.369.activity.1.kind",
+                    location = {
+                        titleKey = "faction.369.activity.1.location.title",
+                    },
+                    titleKey = "faction.369.activity.1.title",
                 },
                 {
-                    kind = "Zone/City",
-                    title = "Gadgetzan",
+                    kindKey = "faction.369.activity.2.kind",
+                    location = {
+                        titleKey = "faction.369.activity.2.location.title",
+                    },
+                    titleKey = "faction.369.activity.2.title",
                 },
             },
-            summary = "Capital of the Steamwheedle Cartel and home to goblinhood's finest engineers, alchemists and merchants.",
         },
         [470] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Northern Barrens",
+                    kindKey = "faction.470.activity.1.kind",
+                    location = {
+                        titleKey = "faction.470.activity.1.location.title",
+                    },
+                    titleKey = "faction.470.activity.1.title",
                 },
                 {
-                    kind = "Zone/City",
-                    title = "Ratchet",
+                    kindKey = "faction.470.activity.2.kind",
+                    location = {
+                        titleKey = "faction.470.activity.2.location.title",
+                    },
+                    titleKey = "faction.470.activity.2.title",
                 },
             },
-            summary = "Part of the Steamwheedle Cartel, this goblin city provides a neutral haven for those that wish to trade goods and services in the Barrens.",
         },
         [529] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Western Plaguelands",
+                    kindKey = "faction.529.activity.1.kind",
+                    location = {
+                        titleKey = "faction.529.activity.1.location.title",
+                    },
+                    titleKey = "faction.529.activity.1.title",
                 },
                 {
-                    kind = "Zone/City",
-                    title = "Eastern Plaguelands",
+                    kindKey = "faction.529.activity.2.kind",
+                    location = {
+                        titleKey = "faction.529.activity.2.location.title",
+                    },
+                    titleKey = "faction.529.activity.2.title",
                 },
             },
-            summary = "An organization focused on protecting Azeroth from the threat of the Scourge.  Strongholds of the Argent Dawn can be found in the Eastern and Western Plaguelands.",
         },
         [530] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Ashenvale",
+                    kindKey = "faction.530.activity.1.kind",
+                    location = {
+                        titleKey = "faction.530.activity.1.location.title",
+                    },
+                    titleKey = "faction.530.activity.1.title",
                 },
             },
-            summary = "This tribe of exiled trolls has joined forces with Thrall and the Horde.  They now call Durotar their home, which they share with their orc allies.",
         },
         [576] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Felwood",
+                    kindKey = "faction.576.activity.1.kind",
+                    location = {
+                        titleKey = "faction.576.activity.1.location.title",
+                    },
+                    titleKey = "faction.576.activity.1.title",
                 },
             },
-            summary = "As the last uncorrupted furbolg tribe, the Timbermaw seek to preserve their spiritual ways and end the suffering of their brethren.",
         },
         [577] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Winterspring",
+                    kindKey = "faction.577.activity.1.kind",
+                    location = {
+                        titleKey = "faction.577.activity.1.location.title",
+                    },
+                    titleKey = "faction.577.activity.1.title",
                 },
                 {
-                    kind = "Zone/City",
-                    title = "Everlook",
+                    kindKey = "faction.577.activity.2.kind",
+                    location = {
+                        titleKey = "faction.577.activity.2.location.title",
+                    },
+                    titleKey = "faction.577.activity.2.title",
                 },
             },
-            summary = "This trading post is run by the goblins of the Steamwheedle Cartel and it sits in the crossroads of Winterspring's main trade routes.",
         },
         [589] = {
-            summary = "This small group of reclusive night elves raises and trains wintersabers in the Winterspring area.",
         },
         [609] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Desolace",
+                    kindKey = "faction.609.activity.1.kind",
+                    location = {
+                        titleKey = "faction.609.activity.1.location.title",
+                    },
+                    titleKey = "faction.609.activity.1.title",
                 },
                 {
-                    kind = "Zone/City",
-                    title = "Feralas",
+                    kindKey = "faction.609.activity.2.kind",
+                    location = {
+                        titleKey = "faction.609.activity.2.location.title",
+                    },
+                    titleKey = "faction.609.activity.2.title",
                 },
                 {
-                    kind = "Zone/City",
-                    title = "Moonglade",
+                    kindKey = "faction.609.activity.3.kind",
+                    location = {
+                        titleKey = "faction.609.activity.3.location.title",
+                    },
+                    titleKey = "faction.609.activity.3.title",
                 },
                 {
-                    kind = "Zone/City",
-                    title = "Silithus",
+                    kindKey = "faction.609.activity.4.kind",
+                    location = {
+                        titleKey = "faction.609.activity.4.location.title",
+                    },
+                    titleKey = "faction.609.activity.4.title",
                 },
             },
-            summary = "The druids of Cenarion Circle are guardians of nature and make their home in tranquil Moonglade.",
         },
         [749] = {
             activities = {
                 {
-                    kind = "Raid",
-                    title = "Molten Core",
+                    kindKey = "faction.749.activity.1.kind",
+                    location = {
+                        titleKey = "faction.749.activity.1.location.title",
+                    },
+                    titleKey = "faction.749.activity.1.title",
                 },
             },
-            summary = "These elementals have made their home on the islands east of Azshara.  Sworn enemies of the armies of Ragnaros.",
         },
         [909] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Darkmoon Island",
+                    kindKey = "faction.909.activity.1.kind",
+                    location = {
+                        titleKey = "faction.909.activity.1.location.title",
+                    },
+                    titleKey = "faction.909.activity.1.title",
                 },
             },
-            summary = "A carnival that showcases the weird and the extraordinary, located on a mysterious island only accessible for the first week of every month.",
         },
         [910] = {
             activities = {
                 {
-                    kind = "Raid",
-                    title = "Temple of Ahn'Qiraj",
+                    kindKey = "faction.910.activity.1.kind",
+                    location = {
+                        titleKey = "faction.910.activity.1.location.title",
+                    },
+                    titleKey = "faction.910.activity.1.title",
                 },
                 {
-                    kind = "Raid",
-                    title = "Ruins of Ahn'Qiraj",
+                    kindKey = "faction.910.activity.2.kind",
+                    location = {
+                        titleKey = "faction.910.activity.2.location.title",
+                    },
+                    titleKey = "faction.910.activity.2.title",
                 },
             },
-            summary = "The descendants of the Bronze Dragonflight are the guardians of time and care little for the mortal races.",
         },
         [930] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "The Exodar",
+                    kindKey = "faction.930.activity.1.kind",
+                    location = {
+                        titleKey = "faction.930.activity.1.location.title",
+                    },
+                    titleKey = "faction.930.activity.1.title",
                 },
                 {
-                    kind = "Zone/City",
-                    title = "Azuremyst Isle",
+                    kindKey = "faction.930.activity.2.kind",
+                    location = {
+                        titleKey = "faction.930.activity.2.location.title",
+                    },
+                    titleKey = "faction.930.activity.2.title",
                 },
                 {
-                    kind = "Zone/City",
-                    title = "Bloodmyst Isle",
+                    kindKey = "faction.930.activity.3.kind",
+                    location = {
+                        titleKey = "faction.930.activity.3.location.title",
+                    },
+                    titleKey = "faction.930.activity.3.title",
                 },
             },
-            summary = "The naaru vessel that brought the draenei to Azeroth.  Though stranded in the Azuremyst Isles, it acts as a home city for this noble race.",
         },
         [932] = {
             activities = {
                 {
-                    kind = "City faction",
-                    title = "Aldor-tasks in Shattrath",
+                    kindKey = "faction.932.activity.1.kind",
+                    location = {
+                        titleKey = "faction.932.activity.1.location.title",
+                    },
+                    titleKey = "activity.shattrath.aldor_tasks.title",
                 },
             },
-            summary = "An ancient order of draenei priests once run by Velen, the Aldor are currently led by High Priestess Ishanah.  They are servants of the naaru in Shattrath City known as the Sha'tar.  Rivals of the Scryers.",
         },
         [933] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Netherstorm",
+                    kindKey = "faction.933.activity.1.kind",
+                    location = {
+                        titleKey = "faction.933.activity.1.location.title",
+                    },
+                    titleKey = "faction.933.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Area 52",
+                    kindKey = "faction.933.activity.2.kind",
+                    location = {
+                        titleKey = "faction.933.activity.2.location.title",
+                    },
+                    titleKey = "faction.933.activity.2.title",
                 },
             },
-            summary = "Led by Nexus-Prince Haramad, the Consortium is a loosely affiliated cartel of ethereal smugglers, traders and thieves that has come to Outland to benefit from its riches.",
         },
         [934] = {
             activities = {
                 {
-                    kind = "City faction",
-                    title = "Scryer tasks in Shattrath",
+                    kindKey = "faction.934.activity.1.kind",
+                    location = {
+                        titleKey = "faction.934.activity.1.location.title",
+                    },
+                    titleKey = "activity.shattrath.scryer_tasks.title",
                 },
             },
-            summary = "Voren'thal the Seer leads the dissident blood elves who've rejected Kael'thas' path to power.  They've joined forces with the naaru of Shattrath City, much to the dismay of the Aldor.",
         },
         [935] = {
             activities = {
                 {
-                    kind = "City/Instances",
-                    title = "Shattrath and temple tasks",
+                    kindKey = "faction.935.activity.1.kind",
+                    location = {
+                        titleKey = "faction.935.activity.1.location.title",
+                    },
+                    titleKey = "activity.shattrath.temple_tasks.title",
                 },
             },
-            summary = "The Sha'tar are a group of powerful naaru who rule over a rebuilt Shattrath City.  With the help of the Aldor and the Scryers, they lead the battle against Illidan and the Burning Legion.",
         },
         [941] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Nagrand",
+                    kindKey = "faction.941.activity.1.kind",
+                    location = {
+                        titleKey = "faction.941.activity.1.location.title",
+                    },
+                    titleKey = "faction.941.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Garadar",
+                    kindKey = "faction.941.activity.2.kind",
+                    location = {
+                        titleKey = "faction.941.activity.2.location.title",
+                    },
+                    titleKey = "faction.941.activity.2.title",
                 },
             },
-            summary = "This reclusive group of brown-skinned orcs has escaped any form of demonic corruption.  They have retained their traditional way of life in the face of great changes in Outland.",
         },
         [942] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Zangarmarsh",
+                    kindKey = "faction.942.activity.1.kind",
+                    location = {
+                        titleKey = "faction.942.activity.1.location.title",
+                    },
+                    titleKey = "faction.942.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Cenarion Refuge",
+                    kindKey = "faction.942.activity.2.kind",
+                    location = {
+                        titleKey = "faction.942.activity.2.location.title",
+                    },
+                    titleKey = "faction.942.activity.2.title",
                 },
             },
-            summary = "An exploratory force sent to Outland by the Cenarion Circle to study surviving life forms.  The Cenarion Expedition has quickly gained in size and autonomy since the opening of the Dark Portal.",
         },
         [946] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Hellfire Peninsula",
+                    kindKey = "faction.946.activity.1.kind",
+                    location = {
+                        titleKey = "faction.946.activity.1.location.title",
+                    },
+                    titleKey = "faction.946.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Honor Hold",
+                    kindKey = "faction.946.activity.2.kind",
+                    location = {
+                        titleKey = "faction.946.activity.2.location.title",
+                    },
+                    titleKey = "faction.946.activity.2.title",
                 },
             },
-            summary = "Vestiges of the Sons of Lothar, veterans of the Alliance that first came into Draenor, have steadfastly held on to this Hellfire outpost.  They are now joined by the armies from Stormwind and Ironforge.",
         },
         [947] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Hellfire Peninsula",
+                    kindKey = "faction.947.activity.1.kind",
+                    location = {
+                        titleKey = "faction.947.activity.1.location.title",
+                    },
+                    titleKey = "faction.947.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "The Shattered Halls",
+                    kindKey = "faction.947.activity.2.kind",
+                    location = {
+                        titleKey = "faction.947.activity.2.location.title",
+                    },
+                    titleKey = "faction.947.activity.2.title",
                 },
             },
-            summary = "The expedition sent through the Dark Portal by Thrall has built a stronghold in Hellfire Peninsula.  Thrallmar serves as a base of operations for much of the Horde's activities in Outland.",
         },
         [967] = {
-            summary = "A secret sect of the Kirin Tor founded to spy on Medivh and his activities.",
         },
         [970] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Zangarmarsh",
+                    kindKey = "faction.970.activity.1.kind",
+                    location = {
+                        titleKey = "faction.970.activity.1.location.title",
+                    },
+                    titleKey = "faction.970.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Sporeggar",
+                    kindKey = "faction.970.activity.2.kind",
+                    location = {
+                        titleKey = "faction.970.activity.2.location.title",
+                    },
+                    titleKey = "faction.970.activity.2.title",
                 },
             },
-            summary = "The sporelings are a mostly peaceful race of mushroom-men native to Outland. Their home is located in the southern bogs of Zangarmarsh.",
         },
         [978] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Nagrand",
+                    kindKey = "faction.978.activity.1.kind",
+                    location = {
+                        titleKey = "faction.978.activity.1.location.title",
+                    },
+                    titleKey = "faction.978.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Telaar",
+                    kindKey = "faction.978.activity.2.kind",
+                    location = {
+                        titleKey = "faction.978.activity.2.location.title",
+                    },
+                    titleKey = "faction.978.activity.2.title",
                 },
             },
-            summary = "Draenei for \"redeemed.\"  These Broken have escaped the grasp of their various slavers in Outland and have made their home in Nagrand.  It is there that they seek to rediscover their destiny.",
         },
         [989] = {
             activities = {
                 {
-                    kind = "Dungeon",
-                    title = "Old Hillsbrad Foothills",
+                    kindKey = "faction.989.activity.1.kind",
+                    location = {
+                        titleKey = "faction.989.activity.1.location.title",
+                    },
+                    titleKey = "faction.989.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "The Black Morass",
+                    kindKey = "faction.989.activity.2.kind",
+                    location = {
+                        titleKey = "faction.989.activity.2.location.title",
+                    },
+                    titleKey = "faction.989.activity.2.title",
                 },
             },
-            summary = "The Keepers of Time are bronze dragons hand-picked by Nozdormu to watch over the Caverns of Time.",
         },
         [990] = {
             activities = {
                 {
-                    kind = "Raid",
-                    title = "Hyjal Summit",
+                    kindKey = "faction.990.activity.1.kind",
+                    location = {
+                        titleKey = "faction.990.activity.1.location.title",
+                    },
+                    titleKey = "faction.990.activity.1.title",
                 },
             },
-            summary = "A secretive subgroup of the Bronze Dragonflight, led by Soridormi, prime mate of Nozdormu.",
         },
         [1011] = {
             activities = {
                 {
-                    kind = "City faction",
-                    title = "Lower City tasks",
+                    kindKey = "faction.1011.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1011.activity.1.location.title",
+                    },
+                    titleKey = "activity.shattrath.lower_city_tasks.title",
                 },
             },
-            summary = "The refugees of Shattrath come from diverse backgrounds and races.  Word of helpful deeds spreads quickly among the Denizens of Lower City.",
         },
         [1012] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Shadowmoon Valley",
+                    kindKey = "faction.1012.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1012.activity.1.location.title",
+                    },
+                    titleKey = "faction.1012.activity.1.title",
                 },
                 {
-                    kind = "Raid",
-                    title = "Black Temple",
+                    kindKey = "faction.1012.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1012.activity.2.location.title",
+                    },
+                    titleKey = "faction.1012.activity.2.title",
                 },
             },
-            summary = "The elite of the Broken tribe known as the Ashtongue, officially aligned with Illidan. The Deathsworn are Akama's most trusted lieutenants and are privy to their leader's mysterious motivations.",
         },
         [1015] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Shadowmoon Valley",
+                    kindKey = "faction.1015.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1015.activity.1.location.title",
+                    },
+                    titleKey = "faction.1015.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Netherwing Ledge",
+                    kindKey = "faction.1015.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1015.activity.2.location.title",
+                    },
+                    titleKey = "faction.1015.activity.2.title",
                 },
             },
-            summary = "This unusual brood of dragons was spawned from the eggs of Deathwing's black dragonflight, and infused with raw nether-energies.  Now, they seek to find their identity beyond the shadows of their father's destructive heritage.",
         },
         [1031] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Blade's Edge Mountains",
+                    kindKey = "faction.1031.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1031.activity.1.location.title",
+                    },
+                    titleKey = "faction.1031.activity.1.title",
                 },
                 {
-                    kind = "Daily/Repeatable",
-                    title = "Skyguard-tasks",
+                    kindKey = "faction.1031.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1031.activity.2.location.title",
+                    },
+                    titleKey = "faction.1031.activity.2.title",
                 },
             },
-            summary = "An airborne military force created by Shattrath City to deal with the threats that loom in the highest reaches of Outland.",
         },
         [1038] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Blade's Edge Mountains",
+                    kindKey = "faction.1038.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1038.activity.1.location.title",
+                    },
+                    titleKey = "faction.1038.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Ogri'la",
+                    kindKey = "faction.1038.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1038.activity.2.location.title",
+                    },
+                    titleKey = "faction.1038.activity.2.title",
                 },
             },
-            summary = "The enlightened denizens of Ogri'la have made their dwelling in the western Blade's Edge Mountains, where proximity to apexis crystals has caused them to transcend their brutish ogre nature.",
         },
         [1067] = {
             activities = {
                 {
-                    kind = "Story/Zone",
-                    title = "Howling Fjord",
+                    kindKey = "faction.1067.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1067.activity.1.location.title",
+                    },
+                    titleKey = "faction.1067.activity.1.title",
                 },
             },
-            summary = "The Forsaken tasked by Sylvanas Windrunner with enacting Undercity's vengeance against Arthas by delivering the latest strain of their deadly Plague.",
         },
         [1068] = {
             activities = {
                 {
-                    kind = "Story/Zone",
-                    title = "Questlines in Howling Fjord",
+                    kindKey = "faction.1068.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1068.activity.1.location.title",
+                    },
+                    titleKey = "faction.1068.activity.1.title",
                 },
             },
-            summary = "This organization seeks to find the origin of the dwarven race by collecting Titan artifacts.  Their most recent research has led them to various archeological sites in Northrend.",
         },
         [1073] = {
             activities = {
                 {
-                    kind = "Story/Zone",
-                    title = "Questlines in Borean Tundra",
+                    kindKey = "faction.1073.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1073.activity.1.location.title",
+                    },
+                    titleKey = "faction.1073.activity.1.title",
                 },
             },
-            summary = "The tuskarr are a tough but peaceful people who derive their livelihood from fishing and whaling.  Their settlements have recently come under fierce attack and welcome any allies who would come to their aid.",
         },
         [1077] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Isle of Quel'Danas",
+                    kindKey = "faction.1077.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1077.activity.1.location.title",
+                    },
+                    titleKey = "faction.1077.activity.1.title",
                 },
                 {
-                    kind = "Daily",
-                    title = "Quel'Danas dailies",
+                    kindKey = "faction.1077.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1077.activity.2.location.title",
+                    },
+                    titleKey = "faction.1077.activity.2.title",
                 },
             },
-            summary = "Shattrath City's final push against Prince Kael'thas' operations in the Sunwell.",
         },
         [1090] = {
             activities = {
                 {
-                    kind = "Hub",
-                    title = "Dalaran city activities",
+                    kindKey = "faction.1090.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1090.activity.1.location.title",
+                    },
+                    titleKey = "faction.1090.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "Northrend-Dungeons mit Dalaran-Bezug",
+                    kindKey = "faction.1090.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1090.activity.2.location.title",
+                    },
+                    titleKey = "faction.1090.activity.2.title",
                 },
             },
-            summary = "The mages and archmages running the city of Dalaran.  Faced with the rising threats of the Blue Dragonflight and the Scourge, they've transported their city to the heart of Northrend.",
         },
         [1091] = {
             activities = {
                 {
-                    kind = "Story/Zone",
-                    title = "Questlines in Dragonblight",
+                    kindKey = "faction.1091.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1091.activity.1.location.title",
+                    },
+                    titleKey = "faction.1091.activity.1.title",
                 },
             },
-            summary = "With the Blue Dragonflight's violent upheaval against all mortal users of magic, the remaining dragonflights have banded under the leadership of the Red Dragonflight to combat their wayward kin.",
         },
         [1098] = {
             activities = {
                 {
-                    kind = "Dungeon",
-                    title = "Halls of Lightning",
+                    kindKey = "faction.1098.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1098.activity.1.location.title",
+                    },
+                    titleKey = "faction.1098.activity.1.title",
                 },
                 {
-                    kind = "Raid",
-                    title = "Ulduar",
+                    kindKey = "faction.1098.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1098.activity.2.location.title",
+                    },
+                    titleKey = "faction.1098.activity.2.title",
                 },
             },
-            summary = "Freed from the grasp of the Lich King, his former Death Knights have regrouped against him under the banner of Highlord Darion Mograine.",
         },
         [1104] = {
             activities = {
                 {
-                    kind = "Story/Zone",
-                    title = "Questlines in Sholazar Basin",
+                    kindKey = "faction.1104.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1104.activity.1.location.title",
+                    },
+                    titleKey = "faction.1104.activity.1.title",
                 },
             },
-            summary = "Driven from their lands by the Scourge, this fierce tribe of wolvar stumbled upon Sholazar Basin, where they intend to make their new home.  Their aggressive nature has put them at odds with the various gorloc tribes known collectively as the Oracles.",
         },
         [1105] = {
             activities = {
                 {
-                    kind = "Story/Zone",
-                    title = "Questlines in Zul'Drak",
+                    kindKey = "faction.1105.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1105.activity.1.location.title",
+                    },
+                    titleKey = "faction.1105.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "Gandrak",
+                    kindKey = "faction.1105.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1105.activity.2.location.title",
+                    },
+                    titleKey = "faction.1105.activity.2.title",
                 },
             },
-            summary = "The gorlocs of Sholazar Basin are a race of reptilian creatures who see themselves as guardians of the titan technology that remains in the zone (though they understand little of it).  They find themselves in an escalating territorial war with the wolvar.",
         },
         [1106] = {
             activities = {
                 {
-                    kind = "Hub",
-                    title = "Argent Crusade",
+                    kindKey = "faction.1106.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1106.activity.1.location.title",
+                    },
+                    titleKey = "faction.1106.activity.1.title",
                 },
                 {
-                    kind = "Story/Zone",
-                    title = "Questlines in Icecrown",
+                    kindKey = "faction.1106.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1106.activity.2.location.title",
+                    },
+                    titleKey = "faction.1106.activity.2.title",
                 },
             },
-            summary = "Led by Tirion Fordring, the Argent Crusade combines the reformed Order of the Silver Hand with the Argent Dawn in one final push against the forces of the Lich King.",
         },
         [1119] = {
             activities = {
                 {
-                    kind = "Story/Zone",
-                    title = "K3 and Storm Peaks questlines",
+                    kindKey = "faction.1119.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1119.activity.1.location.title",
+                    },
+                    titleKey = "faction.1119.activity.1.title",
                 },
             },
-            summary = "The frost giants of the Storm Peaks are a war-like race that makes their home in Dun Niffelem.",
         },
         [1124] = {
             activities = {
                 {
-                    kind = "Raid",
-                    title = "Vault of Archavon",
+                    kindKey = "faction.1124.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1124.activity.1.location.title",
+                    },
+                    titleKey = "faction.1124.activity.1.title",
                 },
             },
-            summary = "Traditionally barred from Dalaran, the Horde has been accepted into the city through the efforts of Archmage Aethas Sunreaver.  His followers have taken up his name and watch over the ward known as Sunreaver's Sanctuary.",
         },
         [1126] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "The Storm Peaks",
+                    kindKey = "faction.1126.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1126.activity.1.location.title",
+                    },
+                    titleKey = "faction.1126.activity.1.title",
                 },
             },
-            summary = "This mysterious race of frost dwarves makes their home in the Storm Peaks.  They've recently befriended members of the Explorers' League and welcome Alliance members within their settlements.",
         },
         [1133] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Azshara",
+                    kindKey = "faction.1133.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1133.activity.1.location.title",
+                    },
+                    titleKey = "faction.1133.activity.1.title",
                 },
             },
-            summary = "Run by the ruthless Trade Prince Gallywix, the Bilgewater Cartel is the most powerful trading company on the Isle of Kezan. From their headquarters at Bilgewater Port, the cartel dominates trade all over the South Seas.",
         },
         [1134] = {
             activities = {
                 {
-                    kind = "Zone/City",
-                    title = "Gilneas",
+                    kindKey = "faction.1134.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1134.activity.1.location.title",
+                    },
+                    titleKey = "faction.1134.activity.1.title",
                 },
             },
-            summary = "The people of Gilneas are a nation of survivors.  Having walled themselves off from the rest of humanity, they must now face new threats from within.",
         },
         [1156] = {
             activities = {
                 {
-                    kind = "Raid",
-                    title = "Icecrown Citadel",
+                    kindKey = "faction.1156.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1156.activity.1.location.title",
+                    },
+                    titleKey = "faction.1156.activity.1.title",
                 },
             },
-            summary = "Under a pact by Tirion Fordring and Darion Mograine, the Argent Crusade and the Knights of the Ebon Blade have set aside their differences during the attack on Icecrown Citadel until the Lich King is slain.",
         },
         [1158] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Hyjal",
+                    kindKey = "faction.1158.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1158.activity.1.location.title",
+                    },
+                    titleKey = "faction.1158.activity.1.title",
                 },
             },
-            summary = "Faced with the impending devastation of Mount Hyjal, the most powerful members of the Cenarion Circle have joined forces with their Emerald Dragonflight allies to fend off Ragnaros' elemental hordes and the Twilight's Hammer.",
         },
         [1171] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Tiefenheim",
+                    kindKey = "faction.1171.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1171.activity.1.location.title",
+                    },
+                    titleKey = "faction.1171.activity.1.title",
                 },
             },
-            summary = "The elemental plane of earth, Deepholm, is ruled by Therazane and her children, the Stone Lords.  After witnessing the devastation Deathwing and his followers caused her realm, Therazane treats all outsiders with open hostility.",
         },
         [1172] = {
-            summary = "This wayward orc clan was once empowered by Deathwing himself to enslave red dragons, including Alexstrasza.  Currently less numerous and powerful, the Dragonmaw make their home in the Twilight Highlands.",
         },
         [1173] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Uldum",
+                    kindKey = "faction.1173.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1173.activity.1.location.title",
+                    },
+                    titleKey = "faction.1173.activity.1.title",
                 },
             },
-            summary = "The cat-like people of Ramkahen are the descendants of the Tol'vir, guardians of Uldum.  Though they've lost their stone bodies, protecting the secrets of the titans is still a part of their rigid tradition.",
         },
         [1174] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Schattenhochland",
+                    kindKey = "faction.1174.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1174.activity.1.location.title",
+                    },
+                    titleKey = "faction.1174.activity.1.title",
                 },
             },
-            summary = "The Wildhammer dwarves are known for their near-reckless courage as well as their unsurpassed gryphon-riding skills.  After losing their home of Grim Batol to a Dark Iron Curse, they've spread their dwellings around the Twilight Highlands.",
         },
         [1177] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Tol Barad",
+                    kindKey = "faction.1177.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1177.activity.1.location.title",
+                    },
+                    titleKey = "faction.1177.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "Halbinsel von Tol Barad",
+                    kindKey = "faction.1177.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1177.activity.2.location.title",
+                    },
+                    titleKey = "faction.1177.activity.2.title",
                 },
             },
-            summary = "Once led by Duke Reginald Baradin II, this fierce army has historic ties to the island stronghold of Tol Barad.  They have joined the forces of the Alliance in an effort to repeal the Horde invaders and gain control of this strategic island.",
         },
         [1178] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Tol Barad",
+                    kindKey = "faction.1178.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1178.activity.1.location.title",
+                    },
+                    titleKey = "faction.1178.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "Halbinsel von Tol Barad",
+                    kindKey = "faction.1178.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1178.activity.2.location.title",
+                    },
+                    titleKey = "faction.1178.activity.2.title",
                 },
             },
-            summary = "Hellscream's Reach is an elite Horde regiment comprised solely of veterans of multiple tours of duty.   Handpicked by Garrosh himself, he has commanded them to take complete control of Tol Barad.  Failure is not an option.",
         },
         [1204] = {
-            summary = "Infuriated by the destruction wrought by the Lord of Flame, the Cenarion Circle seize the initiative, fighting back against Ragnaros and driving deep into the very heart of the Firelands.",
         },
         [1269] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Vale of Eternal Blossoms",
+                    kindKey = "faction.1269.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1269.activity.1.location.title",
+                    },
+                    titleKey = "faction.1269.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "Mogu'shan Palace",
+                    kindKey = "faction.1269.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1269.activity.2.location.title",
+                    },
+                    titleKey = "faction.1269.activity.2.title",
                 },
             },
-            summary = "This mysterious society of Pandaren intend to solve the Mogu problem once and for all.",
         },
         [1270] = {
             activities = {
                 {
-                    kind = "Story/Zone",
-                    title = "Questlines in the Jade Forest",
+                    kindKey = "faction.1270.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1270.activity.1.location.title",
+                    },
+                    titleKey = "faction.1270.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "Shado-Pan Monastery",
+                    kindKey = "faction.1270.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1270.activity.2.location.title",
+                    },
+                    titleKey = "faction.1270.activity.2.title",
                 },
             },
-            summary = "The shadowy protectors of Pandaria's temples, the Shado-Pan are wrought with mystery.",
         },
         [1271] = {
             activities = {
                 {
-                    kind = "Story/Zone",
-                    title = "Questlines in Dread Wastes",
+                    kindKey = "faction.1271.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1271.activity.1.location.title",
+                    },
+                    titleKey = "faction.1271.activity.1.title",
                 },
                 {
-                    kind = "Raid",
-                    title = "Heart of Fear",
+                    kindKey = "faction.1271.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1271.activity.2.location.title",
+                    },
+                    titleKey = "faction.1271.activity.2.title",
                 },
             },
-            summary = "Guardians of the East Temple",
         },
         [1272] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Valley of the Four Winds",
+                    kindKey = "faction.1272.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1272.activity.1.location.title",
+                    },
+                    titleKey = "faction.1272.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Halbhuegel",
+                    kindKey = "faction.1272.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1272.activity.2.location.title",
+                    },
+                    titleKey = "faction.1272.activity.2.title",
                 },
             },
-            summary = "The Tillers are peaceful and productive pandaren, working with the land to feed the massive appetites of their people.",
         },
         [1302] = {
             activities = {
                 {
-                    kind = "Story/Zone",
-                    title = "Questlines in Krasarang Wilds",
+                    kindKey = "faction.1302.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1302.activity.1.location.title",
+                    },
+                    titleKey = "faction.1302.activity.1.title",
                 },
             },
-            summary = "The Anglers are a group of Pandaren fisherman that hope to feed their people and grow their knowledge of fishing.",
         },
         [1337] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Dread Wastes",
+                    kindKey = "faction.1337.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1337.activity.1.location.title",
+                    },
+                    titleKey = "faction.1337.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Klaxxi'vess",
+                    kindKey = "faction.1337.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1337.activity.2.location.title",
+                    },
+                    titleKey = "faction.1337.activity.2.title",
                 },
                 {
-                    kind = "Raid",
-                    title = "Heart of Fear",
+                    kindKey = "faction.1337.activity.3.kind",
+                    location = {
+                        titleKey = "faction.1337.activity.3.location.title",
+                    },
+                    titleKey = "faction.1337.activity.3.title",
                 },
             },
-            summary = "These Mantid Elders are untouched by the corruption and insanity that has overtaken the remainder of the Mantid Swarm. They seek to work with the races of Pandaria to restore their Queen to glory.",
         },
         [1359] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Vale of Eternal Blossoms",
+                    kindKey = "faction.1359.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1359.activity.1.location.title",
+                    },
+                    titleKey = "faction.1359.activity.1.title",
                 },
                 {
-                    kind = "Story",
-                    title = "Wrathion-Endgame",
+                    kindKey = "faction.1359.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1359.activity.2.location.title",
+                    },
+                    titleKey = "faction.1359.activity.2.title",
                 },
             },
-            summary = "Black Prince Wrathion is the last of the black dragons. He has been known to richly reward those who earn his trust and support his endeavors.",
         },
         [1375] = {
             activities = {
                 {
-                    kind = "Hub",
-                    title = "Shrine of Two Moons",
+                    kindKey = "faction.1375.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1375.activity.1.location.title",
+                    },
+                    titleKey = "faction.1375.activity.1.title",
                 },
             },
-            summary = "Horde forces in Pandaria, stationed at Domination Point in Krasarang Wilds.",
         },
         [1376] = {
             activities = {
                 {
-                    kind = "Hub",
-                    title = "Shrine of Seven Stars",
+                    kindKey = "faction.1376.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1376.activity.1.location.title",
+                    },
+                    titleKey = "faction.1376.activity.1.title",
                 },
             },
-            summary = "Alliance forces in Pandaria, stationed at Lion's Landing in Krasarang Wilds.",
         },
         [1387] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Isle of Thunder",
+                    kindKey = "faction.1387.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1387.activity.1.location.title",
+                    },
+                    titleKey = "faction.1387.activity.1.title",
                 },
             },
-            summary = "Ignited by Jaina's fury, the Kirin Tor Offensive seek to seize Thunder Isle for the glory of the Alliance!",
         },
         [1388] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Isle of Thunder",
+                    kindKey = "faction.1388.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1388.activity.1.location.title",
+                    },
+                    titleKey = "faction.1388.activity.1.title",
                 },
             },
-            summary = "Outcast from Dalaran, the Sunreaver Onslaught fight to obtain powerful mogu artifacts from among the ruins of Thunder Isle, and to secure their future if the Horde falls to anarchy.",
         },
         [1416] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Shadowmoon Valley",
+                    kindKey = "faction.1416.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1416.activity.1.location.title",
+                    },
+                    titleKey = "faction.1416.activity.1.title",
                 },
                 {
-                    kind = "Raid",
-                    title = "Black Temple",
+                    kindKey = "faction.1416.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1416.activity.2.location.title",
+                    },
+                    titleKey = "faction.1416.activity.2.title",
                 },
             },
-            summary = "Akama is distrustful of Warlocks after witnessing Illidan's fall to his own corruption, followed by the invasion of the Black Temple by Warlocks after the Cataclysm.",
         },
         [1435] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Isle of the Thunder King",
+                    kindKey = "faction.1435.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1435.activity.1.location.title",
+                    },
+                    titleKey = "faction.1435.activity.1.title",
                 },
                 {
-                    kind = "Raid",
-                    title = "Throne of Thander",
+                    kindKey = "faction.1435.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1435.activity.2.location.title",
+                    },
+                    titleKey = "faction.1435.activity.2.title",
                 },
             },
-            summary = "These valorous Shado-Pan venture into the Throne of Thunder to vanquish the evil found within, and exact justice for the centuries of slavery they endured under the Thunder King's reign.",
         },
         [1445] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Frostfire Ridge",
+                    kindKey = "faction.1445.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1445.activity.1.location.title",
+                    },
+                    titleKey = "faction.1445.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "War Mill",
+                    kindKey = "faction.1445.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1445.activity.2.location.title",
+                    },
+                    titleKey = "faction.1445.activity.2.title",
                 },
             },
-            summary = "The Frostwolf orcs of Frostfire Ridge are a tight-knit family of brutal warriors, well equipped to deal with the savage realities of Draenor.",
         },
         [1492] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Zeitlose Insel",
+                    kindKey = "faction.1492.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1492.activity.1.location.title",
+                    },
+                    titleKey = "faction.1492.activity.1.title",
                 },
                 {
-                    kind = "Raid",
-                    title = "Siege of Orgrimmar",
+                    kindKey = "faction.1492.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1492.activity.2.location.title",
+                    },
+                    titleKey = "faction.1492.activity.2.title",
                 },
             },
-            summary = "Shaohao, the long lost Emperor of the Pandaren people, is a personage worthy of deep respect.",
         },
         [1515] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Spires of Arak",
+                    kindKey = "faction.1515.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1515.activity.1.location.title",
+                    },
+                    titleKey = "faction.1515.activity.1.title",
                 },
             },
-            summary = "Working from the shadows, the Arakkoa Outcasts seek to bring a brighter tomorrow.",
         },
         [1710] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Moonfall",
+                    kindKey = "faction.1710.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1710.activity.1.location.title",
+                    },
+                    titleKey = "faction.1710.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Outpost of the Awakened",
+                    kindKey = "faction.1710.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1710.activity.2.location.title",
+                    },
+                    titleKey = "faction.1710.activity.2.title",
                 },
             },
-            summary = "The defenders of Shattrath struggle to regain control of their capital city, having been betrayed from within.",
         },
         [1711] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Gorgrond",
+                    kindKey = "faction.1711.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1711.activity.1.location.title",
+                    },
+                    titleKey = "faction.1711.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "Grimrail Depot",
+                    kindKey = "faction.1711.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1711.activity.2.location.title",
+                    },
+                    titleKey = "faction.1711.activity.2.title",
                 },
             },
-            summary = "The goblins of the Steamwheedle Preservation Society seek to liberate relics from the ogres of Nagrand with the noble intention of selling them to the highest bidder.",
         },
         [1731] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Nagrand",
+                    kindKey = "faction.1731.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1731.activity.1.location.title",
+                    },
+                    titleKey = "faction.1731.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "Shadowmoon Burial Groands",
+                    kindKey = "faction.1731.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1731.activity.2.location.title",
+                    },
+                    titleKey = "faction.1731.activity.2.title",
                 },
             },
-            summary = "Under the leadership of five powerful exarchs, the draenei of Draenor have prospered in a savage world.",
         },
         [1828] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Highmountain",
+                    kindKey = "faction.1828.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1828.activity.1.location.title",
+                    },
+                    titleKey = "faction.1828.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "Neltharion's Lair",
+                    kindKey = "faction.1828.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1828.activity.2.location.title",
+                    },
+                    titleKey = "faction.1828.activity.2.title",
                 },
             },
-            summary = "The Highmountain Tribe has dwindled in numbers over the years, and with the drogbar threat looming, seek new allies to save their homeland.",
         },
         [1847] = {
             activities = {
                 {
-                    kind = "Hub",
-                    title = "Warspear",
+                    kindKey = "faction.1847.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1847.activity.1.location.title",
+                    },
+                    titleKey = "faction.1847.activity.1.title",
                 },
             },
-            summary = "Yrel has assembled the remaining Exarchs and is calling for a crusade in Velen's name. Together they are working to establish a foothold in Tanaan Jungle and to overthrow Gul'dan.",
         },
         [1848] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Tanaan Jungle",
+                    kindKey = "faction.1848.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1848.activity.1.location.title",
+                    },
+                    titleKey = "faction.1848.activity.1.title",
                 },
                 {
-                    kind = "Raid",
-                    title = "Hellfire Citadel",
+                    kindKey = "faction.1848.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1848.activity.2.location.title",
+                    },
+                    titleKey = "faction.1848.activity.2.title",
                 },
             },
-            summary = "Seeking to protect Azeroth with a decisive victory on Draenor, Warchief Vol'jin is assembling an elite team of champions to establish a foothold in Tanaan Jungle and to overthrow Gul'dan.",
         },
         [1849] = {
             activities = {
                 {
-                    kind = "Hub",
-                    title = "Stormshield",
+                    kindKey = "faction.1849.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1849.activity.1.location.title",
+                    },
+                    titleKey = "faction.1849.activity.1.title",
                 },
             },
-            summary = "Survivors of a grisly civil war, these beleaguered arakkoans hope the reclamation of apexis artifacts will hold the key to peacefully rebuilding their civilization.",
         },
         [1850] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Spires of Arak",
+                    kindKey = "faction.1850.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1850.activity.1.location.title",
+                    },
+                    titleKey = "faction.1850.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "Auchindoun",
+                    kindKey = "faction.1850.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1850.activity.2.location.title",
+                    },
+                    titleKey = "faction.1850.activity.2.title",
                 },
             },
-            summary = "The treacherous wilds of Tanaan Jungle have attracted the craftiest hunters from both Azeroth and Draenor. To defeat the beasts of Tanaan, one must become a beast.",
         },
         [1859] = {
             activities = {
                 {
-                    kind = "Story/Zone",
-                    title = "Suramar-Kampagne",
+                    kindKey = "faction.1859.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1859.activity.1.location.title",
+                    },
+                    titleKey = "faction.1859.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Shal'Aran",
+                    kindKey = "faction.1859.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1859.activity.2.location.title",
+                    },
+                    titleKey = "faction.1859.activity.2.title",
                 },
             },
-            summary = "These exiled Nightborne elves suffer withdrawals after being cut off from the Nightwell. They oppose their people's alliance with the Legion and fight for some kind of redemption.",
         },
         [1883] = {
             activities = {
                 {
-                    kind = "Hub",
-                    title = "Legion-Dalaran",
+                    kindKey = "faction.1883.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1883.activity.1.location.title",
+                    },
+                    titleKey = "faction.1883.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Krasus' Landing",
+                    kindKey = "faction.1883.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1883.activity.2.location.title",
+                    },
+                    titleKey = "faction.1883.activity.2.title",
                 },
             },
-            summary = "The druids and their allies in Val'sharah have guarded the Emerald Dream since time immemorial.",
         },
         [1894] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Broken Shore",
+                    kindKey = "faction.1894.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1894.activity.1.location.title",
+                    },
+                    titleKey = "faction.1894.activity.1.title",
                 },
                 {
-                    kind = "Raid",
-                    title = "Tomb of Sargeras",
+                    kindKey = "faction.1894.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1894.activity.2.location.title",
+                    },
+                    titleKey = "faction.1894.activity.2.title",
                 },
             },
-            summary = "After Legion forces broke the Vault of the Wardens with the aid of Gul'dan, what few Wardens remain are determined to rebuild their prison and hunt down the terrifying beasts that were let loose when it fell.",
         },
         [1900] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Azsuna",
+                    kindKey = "faction.1900.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1900.activity.1.location.title",
+                    },
+                    titleKey = "faction.1900.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "Eye of Azshara",
+                    kindKey = "faction.1900.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1900.activity.2.location.title",
+                    },
+                    titleKey = "faction.1900.activity.2.title",
                 },
             },
-            summary = "The ghostly Court of Farondis and its allies continue the fight against an onslaught of invaders on the cursed island of Azsuna.",
         },
         [1948] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Sturmheim",
+                    kindKey = "faction.1948.activity.1.kind",
+                    location = {
+                        titleKey = "faction.1948.activity.1.location.title",
+                    },
+                    titleKey = "faction.1948.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Haimont",
+                    kindKey = "faction.1948.activity.2.kind",
+                    location = {
+                        titleKey = "faction.1948.activity.2.location.title",
+                    },
+                    titleKey = "faction.1948.activity.2.title",
                 },
             },
-            summary = "These are the chosen warriors of Odyn, sworn to his service in life and death.",
         },
         [2045] = {
             activities = {
                 {
-                    kind = "Dungeon",
-                    title = "Vault of the Wardens",
+                    kindKey = "faction.2045.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2045.activity.1.location.title",
+                    },
+                    titleKey = "faction.2045.activity.1.title",
                 },
             },
-            summary = "The coalition of orders dedicated to defeating the Legion at the Tomb of Sargeras and Broken Shore.",
         },
         [2135] = {
             activities = {
                 {
-                    kind = "Recurring",
-                    title = "Time Rifts",
+                    kindKey = "faction.2135.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2135.activity.1.location.title",
+                    },
+                    titleKey = "faction.2135.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "Temporal side activities",
+                    kindKey = "faction.2135.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2135.activity.2.location.title",
+                    },
+                    titleKey = "faction.2135.activity.2.title",
                 },
             },
-            summary = "Chronormu (Chromie for short) has always been one of the more active, approachable bronze dragons. Strengthening your bond with her will increase her power in the Deaths of Chromie scenario.",
         },
         [2157] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Zuldazar",
+                    kindKey = "faction.2157.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2157.activity.1.location.title",
+                    },
+                    titleKey = "faction.2157.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Dazar'alor",
+                    kindKey = "faction.2157.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2157.activity.2.location.title",
+                    },
+                    titleKey = "faction.2157.activity.2.title",
                 },
             },
-            summary = "A special delegation of the Horde army, focused on disrupting Alliance operations in Kul Tiras.",
         },
         [2158] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Vol'dun",
+                    kindKey = "faction.2158.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2158.activity.1.location.title",
+                    },
+                    titleKey = "faction.2158.activity.1.title",
                 },
             },
-            summary = "Comprised of exiles and scavengers, the Voldunai use their knowledge of the sands to thrive where others would wither and die.",
         },
         [2160] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Tiragardesand",
+                    kindKey = "faction.2160.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2160.activity.1.location.title",
+                    },
+                    titleKey = "faction.2160.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Boralus",
+                    kindKey = "faction.2160.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2160.activity.2.location.title",
+                    },
+                    titleKey = "faction.2160.activity.2.title",
                 },
             },
-            summary = "Masters of the sea and commanders of Azeroth's finest navy, the distinguished Proudmoore family has led Kul Tiras for decades from their seat of power in Boralus.",
         },
         [2161] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Drustvar",
+                    kindKey = "faction.2161.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2161.activity.1.location.title",
+                    },
+                    titleKey = "faction.2161.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "Waycrest Manor",
+                    kindKey = "faction.2161.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2161.activity.2.location.title",
+                    },
+                    titleKey = "faction.2161.activity.2.title",
                 },
             },
-            summary = "An ancient Kul Tiran order resurrected to battle the threat of witchcraft, the Order of Embers fights with knowledge guiding their blades.",
         },
         [2162] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Stormsong Valley",
+                    kindKey = "faction.2162.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2162.activity.1.location.title",
+                    },
+                    titleKey = "faction.2162.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "Shrine of the Storm",
+                    kindKey = "faction.2162.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2162.activity.2.location.title",
+                    },
+                    titleKey = "faction.2162.activity.2.title",
                 },
             },
-            summary = "Home to farmers, craftsmen, soldiers, and the mysterious tidesages, the Storm's Wake seeks to reclaim Stormsong Valley and affirm their place in Kul Tiras.",
         },
         [2165] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Krokuun",
+                    kindKey = "faction.2165.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2165.activity.1.location.title",
+                    },
+                    titleKey = "faction.2165.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "Argus activities",
+                    kindKey = "faction.2165.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2165.activity.2.location.title",
+                    },
+                    titleKey = "faction.2165.activity.2.title",
                 },
             },
-            summary = "After the fall of Argus, the draenei's finest warriors followed the prime naaru Xe'ra across the cosmos in an eternal war to bring about the Legion's end. Since then, other survivors of the Burning Crusade have joined the ranks of the Lightforged.",
         },
         [2170] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Argus activities",
+                    kindKey = "faction.2170.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2170.activity.1.location.title",
+                    },
+                    titleKey = "faction.2170.activity.1.title",
                 },
                 {
-                    kind = "Raid",
-                    title = "Antorus, the Burning Throne",
+                    kindKey = "faction.2170.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2170.activity.2.location.title",
+                    },
+                    titleKey = "faction.2170.activity.2.title",
                 },
             },
-            summary = "Although many struggled to oppose the Burning Legion's conquest of Argus, not all were able to escape. Emboldened by the arrival of new allies, these refugees and outcasts stand united in their mission to reclaim their home.",
         },
         [2370] = {
             activities = {
                 {
-                    kind = "Hub",
-                    title = "Neueheim",
+                    kindKey = "faction.2370.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2370.activity.1.location.title",
+                    },
+                    titleKey = "faction.2370.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "Nazjatar",
+                    kindKey = "faction.2370.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2370.activity.2.location.title",
+                    },
+                    titleKey = "faction.2370.activity.2.title",
                 },
             },
-            summary = "Retail content for this faction is centered on Neueheim and Nazjatar.",
+            summaryKey = "faction.2370.summary",
         },
         [2373] = {
             activities = {
                 {
-                    kind = "Hub",
-                    title = "Mezzamere",
+                    kindKey = "faction.2373.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2373.activity.1.location.title",
+                    },
+                    titleKey = "faction.2373.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "Nazjatar",
+                    kindKey = "faction.2373.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2373.activity.2.location.title",
+                    },
+                    titleKey = "faction.2373.activity.2.title",
                 },
             },
-            summary = "Oppressed by the Naga, these refugees have banded together to rise up and seize their freedom.",
         },
         [2391] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Mechagon",
+                    kindKey = "faction.2391.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2391.activity.1.location.title",
+                    },
+                    titleKey = "faction.2391.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Rostbolzen",
+                    kindKey = "faction.2391.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2391.activity.2.location.title",
+                    },
+                    titleKey = "faction.2391.activity.2.title",
                 },
             },
-            summary = "The Rustbolt Resistance holds the line against King Mechagon and his evil plans.",
         },
         [2395] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Sturmsangtal side content",
+                    kindKey = "faction.2395.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2395.activity.1.location.title",
+                    },
+                    titleKey = "faction.2395.activity.1.title",
                 },
             },
-            summary = "A species of bee known for their unusual size. While newcomers to Stormsong Valley, they quickly made their presence known to adventurers and insect enthusiasts alike.",
         },
         [2407] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Bastion",
+                    kindKey = "faction.2407.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2407.activity.1.location.title",
+                    },
+                    titleKey = "faction.2407.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "Spires of Ascension",
+                    kindKey = "faction.2407.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2407.activity.2.location.title",
+                    },
+                    titleKey = "faction.2407.activity.2.title",
                 },
             },
-            summary = "Kyrian who complete the arduous process of purging their mortal encumbrances are deemed worthy of the rite of ascension, earning their wings and pledging eternal service to the Archon.",
         },
         [2410] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Maldraxxus",
+                    kindKey = "faction.2410.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2410.activity.1.location.title",
+                    },
+                    titleKey = "faction.2410.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "Theater of Pain",
+                    kindKey = "faction.2410.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2410.activity.2.location.title",
+                    },
+                    titleKey = "faction.2410.activity.2.title",
                 },
             },
-            summary = "Long ago, the Primus established the five houses of Maldraxxus to build the ultimate fighting force. Through might, cleverness, and guile, this unyielding armada is pledged to defend the Shadowlands against all threats.",
         },
         [2413] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Revendreth",
+                    kindKey = "faction.2413.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2413.activity.1.location.title",
+                    },
+                    titleKey = "faction.2413.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "Halls of Atonement",
+                    kindKey = "faction.2413.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2413.activity.2.location.title",
+                    },
+                    titleKey = "faction.2413.activity.2.title",
                 },
             },
-            summary = "After countless ages spent under the rule of Sire Denathrius, authority in Revendreth is now shared amongst the Court of Harvesters. These noble venthyr carry out the sacred duty of redeeming prideful souls.",
         },
         [2415] = {
             activities = {
                 {
-                    kind = "Raid",
-                    title = "Ny'alotha, the Waking City",
+                    kindKey = "faction.2415.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2415.activity.1.location.title",
+                    },
+                    titleKey = "faction.2415.activity.1.title",
                 },
             },
-            summary = "A group of mogu loyal to the titan keeper Ra, they are charged with defending the Engine of Nalak'sha from N'Zoth's minions.",
         },
         [2417] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Uldum",
+                    kindKey = "faction.2417.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2417.activity.1.location.title",
+                    },
+                    titleKey = "faction.2417.activity.1.title",
                 },
             },
-            summary = "A loose coalition of allies headed by the Tol'vir, the Uldum Accord was founded to protect the Forge of Origination from enemy forces.",
         },
         [2432] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "The Maw",
+                    kindKey = "faction.2432.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2432.activity.1.location.title",
+                    },
+                    titleKey = "faction.2432.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Ve'naris Zuflucht",
+                    kindKey = "faction.2432.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2432.activity.2.location.title",
+                    },
+                    titleKey = "faction.2432.activity.2.title",
                 },
             },
-            summary = "Ve'nari knows more about the Maw than anyone, and she might share a fraction of that information with you if you earn her regard.",
         },
         [2439] = {
             activities = {
                 {
-                    kind = "Hub",
-                    title = "Absolution Crypt",
+                    kindKey = "faction.2439.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2439.activity.1.location.title",
+                    },
+                    titleKey = "faction.2439.activity.1.title",
                 },
             },
-            summary = "Fiercely devoted to the Accuser, these archivists seek to restore and catalog the sinstones fragmented by the Lord Chamberlain and his Inquisitor allies.",
         },
         [2464] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Ardenweald",
+                    kindKey = "faction.2464.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2464.activity.1.location.title",
+                    },
+                    titleKey = "faction.2464.activity.1.title",
                 },
                 {
-                    kind = "Dungeon",
-                    title = "Mists of Tirna Scithe",
+                    kindKey = "faction.2464.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2464.activity.2.location.title",
+                    },
+                    titleKey = "faction.2464.activity.2.title",
                 },
             },
-            summary = "The anima drought and Drust invasion consume the Winter Queen and Wild Hunt's attention, leaving the droman of the Court of Night to protect the wildseeds and defend their groves.",
         },
         [2465] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Ardenweald",
+                    kindKey = "faction.2465.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2465.activity.1.location.title",
+                    },
+                    titleKey = "faction.2465.activity.1.title",
                 },
             },
-            summary = "Called to serve the Winter Queen in times of dire need, the Wild Hunt assembles the finest huntresses and hunters in all of Ardenweald. In the face of drought and peril, the Wild Hunt stands ready to defend the forest.",
         },
         [2470] = {
             activities = {
                 {
-                    kind = "Raid",
-                    title = "Sanctum of Domination",
+                    kindKey = "faction.2470.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2470.activity.1.location.title",
+                    },
+                    titleKey = "faction.2470.activity.1.title",
                 },
             },
-            summary = "The combined might of the Shadowlands covenants, brought forth to breach the Sanctum of Domination.",
         },
         [2472] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Korthia",
+                    kindKey = "faction.2472.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2472.activity.1.location.title",
+                    },
+                    titleKey = "faction.2472.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Keeper's Respite",
+                    kindKey = "faction.2472.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2472.activity.2.location.title",
+                    },
+                    titleKey = "faction.2472.activity.2.title",
                 },
                 {
-                    kind = "Recurring",
-                    title = "Relic research",
+                    kindKey = "faction.2472.activity.3.kind",
+                    location = {
+                        titleKey = "faction.2472.activity.3.location.title",
+                    },
+                    titleKey = "faction.2472.activity.3.title",
                 },
             },
-            summary = "Korthian attendants have committed their existence to researching relics from across the Shadowlands. Led by their Archivist, they are dedicated to recovering the relics scattered across Korthia in the wake of the mawsworn invasion.",
         },
         [2478] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Zereth Mortis",
+                    kindKey = "faction.2478.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2478.activity.1.location.title",
+                    },
+                    titleKey = "faction.2478.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Haven",
+                    kindKey = "faction.2478.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2478.activity.2.location.title",
+                    },
+                    titleKey = "faction.2478.activity.2.title",
                 },
             },
-            summary = "Once members of Cartel Al, the Enlightened have abandoned the pursuit of profit and glory out of devotion to the First Ones. By earning their favor, the brokers may be willing to share the knowledge they have gleaned.",
         },
         [2503] = {
             activities = {
                 {
-                    kind = "Recurring",
-                    title = "Grand Hunt",
+                    kindKey = "faction.2503.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2503.activity.1.location.title",
+                    },
+                    titleKey = "faction.2503.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "Ohn'ahran Plains",
+                    kindKey = "faction.2503.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2503.activity.2.location.title",
+                    },
+                    titleKey = "faction.2503.activity.2.title",
                 },
             },
-            summary = "Centaur clans roam the Ohn'ahran Plains, where they follow the call of the wind and seek the thrill of the hunt.",
         },
         [2507] = {
             activities = {
                 {
-                    kind = "Recurring",
-                    title = "Siege on Dragonbane Keep",
+                    kindKey = "faction.2507.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2507.activity.1.location.title",
+                    },
+                    titleKey = "faction.2507.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "The Waking Shores",
+                    kindKey = "faction.2507.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2507.activity.2.location.title",
+                    },
+                    titleKey = "faction.2507.activity.2.title",
                 },
             },
-            summary = "A joint expedition of the Explorers' League and Reliquary, this fearless group of adventurers, scholars, and crafters seek to uncover the many mysteries of the Dragon Isles.",
         },
         [2510] = {
             activities = {
                 {
-                    kind = "Hub",
-                    title = "Valdrakken",
+                    kindKey = "faction.2510.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2510.activity.1.location.title",
+                    },
+                    titleKey = "faction.2510.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "Thaldraszus",
+                    kindKey = "faction.2510.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2510.activity.2.location.title",
+                    },
+                    titleKey = "faction.2510.activity.2.title",
                 },
             },
-            summary = "Centered in their most ancient city, the Valdrakken Accord is the unified might of all dragonkind, seeking to protect not only their island home but all of Azeroth.",
         },
         [2511] = {
             activities = {
                 {
-                    kind = "Weekly/Event",
-                    title = "Community Feast",
+                    kindKey = "faction.2511.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2511.activity.1.location.title",
+                    },
+                    titleKey = "faction.2511.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "The Azure Span",
+                    kindKey = "faction.2511.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2511.activity.2.location.title",
+                    },
+                    titleKey = "faction.2511.activity.2.title",
                 },
             },
-            summary = "The Iskaara Tuskarr have been on the Dragon Isles for generations, living in harmony and telling tales of the world around them.",
         },
         [2517] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Waking Shores black dragonflight content",
+                    kindKey = "faction.2517.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2517.activity.1.location.title",
+                    },
+                    titleKey = "faction.2517.activity.1.title",
                 },
             },
-            summary = "Long focused on protecting Azeroth, Wrathion's gaze has now turned to the future of the black dragonflight... and his destiny.",
         },
         [2518] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Waking Shores black dragonflight content",
+                    kindKey = "faction.2518.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2518.activity.1.location.title",
+                    },
+                    titleKey = "faction.2518.activity.1.title",
                 },
             },
-            summary = "Sabellian has established a new generation of uncorrupt black dragons, and works to protect it at all costs.",
         },
         [2523] = {
             activities = {
                 {
-                    kind = "Recurring",
-                    title = "Obsidian side content",
+                    kindKey = "faction.2523.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2523.activity.1.location.title",
+                    },
+                    titleKey = "faction.2523.activity.1.title",
                 },
             },
-            summary = "Led by the brave Scalecommander Cindrethresh, the Dark Talons were trained to be the secret weapon of the black dragonflight. Today, these dracthyr use their skills to turn the tide of any battle regardless of how outnumbered they are.",
         },
         [2524] = {
             activities = {
                 {
-                    kind = "Recurring",
-                    title = "Obsidian side content",
+                    kindKey = "faction.2524.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2524.activity.1.location.title",
+                    },
+                    titleKey = "faction.2524.activity.1.title",
                 },
             },
-            summary = "Led by the stalwart Scalecommander Azurathel, the Obsidian Warders were trained to be the shield of the black dragonflight. Today these dracthyr use those skills to defend those most in need against overwhelming odds.",
         },
         [2526] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Azure Span side quests",
+                    kindKey = "faction.2526.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2526.activity.1.location.title",
+                    },
+                    titleKey = "faction.2526.activity.1.title",
                 },
             },
-            summary = "The Winterpelt Furbolg speak a language no one seems to understand. Perhaps more will be revealed in the future.",
         },
         [2544] = {
             activities = {
                 {
-                    kind = "Hub",
-                    title = "Valdrakken professions hub",
+                    kindKey = "faction.2544.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2544.activity.1.location.title",
+                    },
+                    titleKey = "faction.2544.activity.1.title",
                 },
             },
-            summary = "Retail content for this faction is centered on Valdrakken professions hub.",
+            summaryKey = "faction.2544.summary",
         },
         [2550] = {
             activities = {
                 {
-                    kind = "Zone",
-                    title = "Azure Span side content",
+                    kindKey = "faction.2550.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2550.activity.1.location.title",
+                    },
+                    titleKey = "faction.2550.activity.1.title",
                 },
             },
-            summary = "The Cobalt Assembly was once a place where blue dragons would conjure marvelous creations with arcane magic. Now it has fallen into the hands of the Sundered Flame who intend to use its magic for war.",
         },
         [2553] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "When Time Needs Mending",
+                    kindKey = "faction.2553.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2553.activity.1.location.title",
+                    },
+                    titleKey = "faction.2553.activity.1.title",
                 },
             },
-            summary = "Soridormi's timewalkers travel the timeways and defend our world against limitless alternatives. When our timeline is under temporal assault or falling apart, Soridormi is the commander who holds everything together.",
         },
         [2564] = {
             activities = {
                 {
-                    kind = "Hub",
-                    title = "Loamm",
+                    kindKey = "faction.2564.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2564.activity.1.location.title",
+                    },
+                    titleKey = "faction.2564.activity.1.title",
                 },
                 {
-                    kind = "Weekly",
-                    title = "Sniffenseeking",
+                    kindKey = "faction.2564.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2564.activity.2.location.title",
+                    },
+                    titleKey = "faction.2564.activity.2.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "Zaralek world content",
+                    kindKey = "faction.2564.activity.3.kind",
+                    location = {
+                        titleKey = "faction.2564.activity.3.location.title",
+                    },
+                    titleKey = "faction.2564.activity.3.title",
                 },
             },
             quartermasters = {
                 {
-                    label = "Quartermaster",
-                    name = "Mimuup",
+                    labelKey = "faction.2564.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2564.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2564.quartermaster.1.name",
                 },
             },
-            summary = "Underneath the Dragon Isles, deep in Zaralek Cavern, lies the niffen town of Loamm. The friendly traders there are renowned for their hospitality, sense of smell, and peculiar bartering trade system.",
         },
         [2570] = {
             activities = {
                 {
-                    kind = "Weekly/Event",
-                    title = "Spreading the Light",
+                    kindKey = "faction.2570.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2570.activity.1.location.title",
+                    },
+                    titleKey = "faction.2570.activity.1.title",
                 },
                 {
-                    kind = "World quests",
-                    title = "World quests in Hallowfall",
+                    kindKey = "faction.2570.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2570.activity.2.location.title",
+                    },
+                    titleKey = "faction.2570.activity.2.title",
                 },
             },
             quartermasters = {
                 {
-                    label = "Quartermaster",
-                    name = "Auralia Steelstrike",
+                    labelKey = "faction.2570.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2570.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2570.quartermaster.1.name",
                 },
             },
-            summary = "The Arathi of the Hallowfall Expedition safeguard the star Beledar from the many threats found under Khaz Algar. Cut off from their overseas empire, they have built a new home with the strength of their faith in the Sacred Flame.",
         },
         [2574] = {
             activities = {
                 {
-                    kind = "Hub",
-                    title = "Central Encampment",
+                    kindKey = "faction.2574.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2574.activity.1.location.title",
+                    },
+                    titleKey = "faction.2574.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "Emerald Dream world content",
+                    kindKey = "faction.2574.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2574.activity.2.location.title",
+                    },
+                    titleKey = "faction.2574.activity.2.title",
                 },
                 {
-                    kind = "Story",
-                    title = "Story chapters in the Dream",
+                    kindKey = "faction.2574.activity.3.kind",
+                    location = {
+                        titleKey = "faction.2574.activity.3.location.title",
+                    },
+                    titleKey = "faction.2574.activity.3.title",
                 },
             },
             quartermasters = {
                 {
-                    label = "Quartermaster",
-                    name = "Pipsee",
+                    labelKey = "faction.2574.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2574.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2574.quartermaster.1.name",
                 },
             },
-            summary = "A coalition of various races ready to defend the Emerald Dream against any and all threats.",
         },
         [2590] = {
             activities = {
                 {
-                    kind = "World quests",
-                    title = "World quests on the Isle of Dorn",
+                    kindKey = "faction.2590.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2590.activity.1.location.title",
+                    },
+                    titleKey = "faction.2590.activity.1.title",
                 },
                 {
-                    kind = "One-time/Warband",
-                    title = "Story and side chapters in Dornogal",
+                    kindKey = "faction.2590.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2590.activity.2.location.title",
+                    },
+                    titleKey = "faction.2590.activity.2.title",
                 },
             },
             quartermasters = {
                 {
-                    label = "Quartermaster",
-                    name = "Auditor Balwurz",
+                    labelKey = "faction.2590.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2590.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2590.quartermaster.1.name",
                 },
             },
-            summary = "Ruling from the Foundation Hall under the leadership of Councilward Merrix, the Council of Dornogal makes decisions affecting all earthen in the Isle of Dorn.",
         },
         [2594] = {
             activities = {
                 {
-                    kind = "World quests",
-                    title = "World quests in The Ringing Deeps",
+                    kindKey = "faction.2594.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2594.activity.1.location.title",
+                    },
+                    titleKey = "faction.2594.activity.1.title",
                 },
                 {
-                    kind = "One-time/Warband",
-                    title = "Story and side chapters in Gundargaz",
+                    kindKey = "faction.2594.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2594.activity.2.location.title",
+                    },
+                    titleKey = "faction.2594.activity.2.title",
                 },
             },
             quartermasters = {
                 {
-                    label = "Quartermaster",
-                    name = "Waxmonger Squick",
+                    labelKey = "faction.2594.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2594.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2594.quartermaster.1.name",
                 },
             },
-            summary = "Throughout the Ringing Deeps, neglected machinery awaits repair. While Machine Speakers lend their technological acumen, kobolds scavenge parts left behind. Anyone wanting to explore and rebuild is welcome to help.",
         },
         [2600] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "Weekly pact",
+                    kindKey = "faction.2600.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2600.activity.1.location.title",
+                    },
+                    titleKey = "faction.2600.activity.1.title",
                 },
                 {
-                    kind = "World quests",
-                    title = "World quests in Azj-Kahet",
+                    kindKey = "faction.2600.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2600.activity.2.location.title",
+                    },
+                    titleKey = "faction.2600.activity.2.title",
                 },
             },
             quartermasters = {
                 {
-                    label = "Quartermaster",
-                    name = "Y'tekhi",
+                    labelKey = "faction.2600.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2600.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2600.quartermaster.1.name",
                 },
             },
-            summary = "Queen Ansurek's tumultuous reign has not been without its detractors. The Severed Threads work cleverly and quietly behind the scenes to unravel the tapestry of Ansurek's iron rule from within.",
         },
         [2601] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "Pact of the Weaver",
+                    kindKey = "faction.2601.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2601.activity.1.location.title",
+                    },
+                    titleKey = "faction.2601.activity.1.title",
                 },
             },
-            summary = "Once the Royal Weaver, the Widow Arak'nai now carefully watches her former home with a critical eye. With a network of weave-rats and spies at her disposal, there is little that escapes her notice.",
         },
         [2605] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "Pact of the General",
+                    kindKey = "faction.2605.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2605.activity.1.location.title",
+                    },
+                    titleKey = "faction.2605.activity.1.title",
                 },
             },
-            summary = "Once the most renowned military leader in Azj-Kahet, Anub'azal has been passed over in favor of one of Ansurek's beloved Ascended. This simply will not stand.",
         },
         [2607] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "Pact of the Vizier",
+                    kindKey = "faction.2607.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2607.activity.1.location.title",
+                    },
+                    titleKey = "faction.2607.activity.1.title",
                 },
             },
-            summary = "Perched in the most dangerous position of all, Executor Nizrek spends his days as Queen Ansurek's most loyal advisor. Fortunately, Ansurek has yet to discover that the rest of his time is spent trying to end her reign.",
         },
         [2615] = {
             activities = {
                 {
-                    kind = "Recurring",
-                    title = "Azerothian Archives",
+                    kindKey = "faction.2615.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2615.activity.1.location.title",
+                    },
+                    titleKey = "faction.2615.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "Archive activities in Tyrhold",
+                    kindKey = "faction.2615.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2615.activity.2.location.title",
+                    },
+                    titleKey = "faction.2615.activity.2.title",
                 },
             },
-            summary = "A charter group of scholars from the Dragonscale Expedition dedicated to the preservation of the antiquities for future generations.",
         },
         [2653] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "Weekly cartel contract",
+                    kindKey = "faction.2653.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2653.activity.1.location.title",
+                    },
+                    titleKey = "faction.2653.activity.1.title",
                 },
                 {
-                    kind = "Weekly",
-                    title = "C.H.E.T.T.-Liste",
+                    kindKey = "faction.2653.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2653.activity.2.location.title",
+                    },
+                    titleKey = "faction.2653.activity.2.title",
                 },
             },
             quartermasters = {
                 {
-                    label = "Quartermaster",
-                    name = "Smaks Topskimmer",
+                    labelKey = "faction.2653.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2653.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2653.quartermaster.1.name",
                 },
             },
-            summary = "Undermine isn't like other towns. There are no kings or chiefs, just cartels. Everyone wants to be part of the cartels. It's even better than being a king, because you can only have one king. But Undermine's got a lot of cartels, and they all need a pal.",
         },
         [2658] = {
             activities = {
                 {
-                    kind = "Story",
-                    title = "K'aresh campaign",
+                    kindKey = "faction.2658.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2658.activity.1.location.title",
+                    },
+                    titleKey = "faction.2658.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "K'aresh world content",
+                    kindKey = "faction.2658.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2658.activity.2.location.title",
+                    },
+                    titleKey = "faction.2658.activity.2.title",
                 },
             },
-            summary = "A coalition of cartels from brokers and ethereals formed with an impossible goal. To save a facet of their destroyed world from the All-Devouring.",
         },
         [2671] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "Kartellwahl: Venture Company",
+                    kindKey = "faction.2671.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2671.activity.1.location.title",
+                    },
+                    titleKey = "faction.2671.activity.1.title",
                 },
             },
-            summary = "Venture Company doesn't have the best rep in town, but no one harvests, mines, or drills faster. You want nice? Find a book club. You want raw material? Venture's got you covered.",
         },
         [2673] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "Kartellwahl: Bilgewasserkartell",
+                    kindKey = "faction.2673.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2673.activity.1.location.title",
+                    },
+                    titleKey = "faction.2673.activity.1.title",
                 },
             },
-            summary = "The Bilgewater Cartel has had more ups and downs than most, but no one can build and invent like they can. From cities to pool toys to [CLASSIFIED], Bilgewater builds it best.",
         },
         [2675] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "Kartellwahl: Schwarzmeer AG",
+                    kindKey = "faction.2675.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2675.activity.1.location.title",
+                    },
+                    titleKey = "faction.2675.activity.1.title",
                 },
             },
-            summary = "Blackwater Cartel is new to the cart, formerly plying the seas as pirates. But they are already making waves with shipping and luxury vacations. They can move any cargo, anywhere, any time, and now it's all nice and legal.",
         },
         [2677] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "Kartellwahl: Dampfdruckkartell",
+                    kindKey = "faction.2677.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2677.activity.1.location.title",
+                    },
+                    titleKey = "faction.2677.activity.1.title",
                 },
             },
-            summary = "Steamwheedle may be the oldest and largest cartel in Undermine. They have had their hands in almost every industry and their reach spans Azeroth and beyond. These days, with the rise of Noggenfogger, it's the alchemy that they are known for.",
         },
         [2685] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "Kartellwahl: Garbagio Treueclub",
+                    kindKey = "faction.2685.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2685.activity.1.location.title",
+                    },
+                    titleKey = "faction.2685.activity.1.title",
                 },
             },
-            summary = "The Gallagio is under new management, well it will be. And when it is, you want to be on their good side right? So, make the Gallagio a better place and make some new friends.",
         },
         [2688] = {
             activities = {
                 {
-                    kind = "Zone/Event",
-                    title = "Hallowfall defense activities",
+                    kindKey = "faction.2688.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2688.activity.1.location.title",
+                    },
+                    titleKey = "faction.2688.activity.1.title",
                 },
                 {
-                    kind = "Recurring",
-                    title = "Mereldar call to arms",
+                    kindKey = "faction.2688.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2688.activity.2.location.title",
+                    },
+                    titleKey = "faction.2688.activity.2.title",
                 },
             },
             quartermasters = {
                 {
-                    label = "Quartermaster",
-                    name = "Raen Dawncavalyr",
+                    labelKey = "faction.2688.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2688.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2688.quartermaster.1.name",
                 },
             },
-            summary = "When Hallowfall comes under threat and the army stretched thin, a call to arms is issued to those with the strength to wield a weapon and Flame's Radiance is formed. All allies are welcome to join in Hallowfall's defense.",
         },
         [2696] = {
             activities = {
                 {
-                    kind = "Story/Zone",
-                    title = "Zul'Aman-Kampagne",
+                    kindKey = "faction.2696.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2696.activity.1.location.title",
+                    },
+                    titleKey = "faction.2696.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "Local tasks in the Amani area",
+                    kindKey = "faction.2696.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2696.activity.2.location.title",
+                    },
+                    titleKey = "faction.2696.activity.2.title",
                 },
             },
-            summary = "The Amani conquered and claimed the majority of Eastern Kingdoms for thousands of years, but were forced back into current-day Zul'Aman once the elves and humans colonized the land themselves.",
         },
         [2699] = {
             activities = {
                 {
-                    kind = "Story/Zone",
-                    title = "Leerensturm-Kampagne",
+                    kindKey = "faction.2699.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2699.activity.1.location.title",
+                    },
+                    titleKey = "faction.2699.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "Local tasks in Voidstorm",
+                    kindKey = "faction.2699.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2699.activity.2.location.title",
+                    },
+                    titleKey = "faction.2699.activity.2.title",
                 },
             },
-            summary = "In the vortex of terror and violence that is the Voidstorm, few have the mettle to survive. The Singularity, gathered by Magister Umbric and the ren'dorei, encompasses any who would brave this fearsome land to stand up to Xal'atath.",
         },
         [2704] = {
             activities = {
                 {
-                    kind = "Story/Zone",
-                    title = "Harandar-Kampagne",
+                    kindKey = "faction.2704.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2704.activity.1.location.title",
+                    },
+                    titleKey = "faction.2704.activity.1.title",
                 },
                 {
-                    kind = "Zone",
-                    title = "Local tasks in Harandar",
+                    kindKey = "faction.2704.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2704.activity.2.location.title",
+                    },
+                    titleKey = "faction.2704.activity.2.title",
                 },
             },
-            summary = "Called to Harandar by the echo of their Goddess' song, the Hara'ti watch over her cradle in hopes that she may one day return.",
         },
         [2710] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "Saltherils Soiree",
+                    kindKey = "faction.2710.activity.1.kind",
+                    location = {
+                        titleKey = "activity.saltherils_soiree.title",
+                    },
+                    titleKey = "activity.saltherils_soiree.title",
                 },
             },
             quartermasters = {
                 {
-                    label = "Magister",
-                    name = "Lehrling Diell",
+                    labelKey = "faction.2710.quartermaster.magisters.label",
+                    location = {
+                        titleKey = "npc.apprentice_diell.name",
+                    },
+                    nameKey = "npc.apprentice_diell.name",
                 },
                 {
-                    label = "Blood Knight",
-                    name = "Armorsmith Goldcrest",
+                    labelKey = "faction.2710.quartermaster.blood_knights.label",
+                    location = {
+                        titleKey = "npc.armorsmith_goldcrest.name",
+                    },
+                    nameKey = "npc.armorsmith_goldcrest.name",
                 },
                 {
-                    label = "Lane Warden",
-                    name = "Neriv",
+                    labelKey = "faction.2710.quartermaster.lane_warden.label",
+                    location = {
+                        titleKey = "npc.neriv.name",
+                    },
+                    nameKey = "npc.neriv.name",
                 },
                 {
-                    label = "Wayfarer",
-                    name = "Ranger Allorn",
+                    labelKey = "faction.2710.quartermaster.wayfarer.label",
+                    location = {
+                        titleKey = "npc.ranger_allorn.name",
+                    },
+                    nameKey = "npc.ranger_allorn.name",
                 },
             },
-            summary = "Through elegance, intellect, and political precision, the Court ensures that Silvermoon City's light shines eternally radiant, and distinctly its own.",
         },
         [2711] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "Saltherils Soiree",
+                    kindKey = "faction.2711.activity.1.kind",
+                    location = {
+                        titleKey = "activity.saltherils_soiree.title",
+                    },
+                    titleKey = "activity.saltherils_soiree.title",
                 },
             },
             quartermasters = {
                 {
-                    label = "Quartermaster",
-                    name = "Lehrling Diell",
+                    labelKey = "common.quartermaster",
+                    location = {
+                        titleKey = "npc.apprentice_diell.name",
+                    },
+                    nameKey = "npc.apprentice_diell.name",
                 },
             },
-            summary = "Scholars, arcanists, and politicians of Silvermoon City, with intellects sharpened by hundreds of years of study.",
         },
         [2712] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "Saltherils Soiree",
+                    kindKey = "faction.2712.activity.1.kind",
+                    location = {
+                        titleKey = "activity.saltherils_soiree.title",
+                    },
+                    titleKey = "activity.saltherils_soiree.title",
                 },
             },
             quartermasters = {
                 {
-                    label = "Quartermaster",
-                    name = "Armorsmith Goldcrest",
+                    labelKey = "common.quartermaster",
+                    location = {
+                        titleKey = "npc.armorsmith_goldcrest.name",
+                    },
+                    nameKey = "npc.armorsmith_goldcrest.name",
                 },
             },
-            summary = "Silvermoon City's elves-at-arms. Stalwart heroes and chosen champions of the sun, they follow Lady Liadrin into battle to smite the foes of the Sin'dorei.",
         },
         [2713] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "Saltherils Soiree",
+                    kindKey = "faction.2713.activity.1.kind",
+                    location = {
+                        titleKey = "activity.saltherils_soiree.title",
+                    },
+                    titleKey = "activity.saltherils_soiree.title",
                 },
             },
             quartermasters = {
                 {
-                    label = "Quartermaster",
-                    name = "Ranger Allorn",
+                    labelKey = "common.quartermaster",
+                    location = {
+                        titleKey = "npc.ranger_allorn.name",
+                    },
+                    nameKey = "npc.ranger_allorn.name",
                 },
             },
-            summary = "Elite rangers of the Sin'dorei, formally tasked with guarding the forests, borders, and wildlands of the Eversong Woods.",
         },
         [2714] = {
             activities = {
                 {
-                    kind = "Weekly",
-                    title = "Saltherils Soiree",
+                    kindKey = "faction.2714.activity.1.kind",
+                    location = {
+                        titleKey = "activity.saltherils_soiree.title",
+                    },
+                    titleKey = "activity.saltherils_soiree.title",
                 },
             },
             quartermasters = {
                 {
-                    label = "Quartermaster",
-                    name = "Neriv",
+                    labelKey = "common.quartermaster",
+                    location = {
+                        titleKey = "npc.neriv.name",
+                    },
+                    nameKey = "npc.neriv.name",
                 },
             },
-            summary = "12.0 Z1 Eversong - Court Friendship Faction",
         },
         [2736] = {
             activities = {
                 {
-                    kind = "Recurring",
-                    title = "Manaforge sabotage operations",
+                    kindKey = "faction.2736.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2736.activity.1.location.title",
+                    },
+                    titleKey = "faction.2736.activity.1.title",
                 },
             },
-            summary = "While the K'aresh Trust works to unite the people of their dying star, some members prefer a more direct approach. Using all method of covert and under-handed tactics, the Manaforge Vandals seek to dismantle Salhadaar's forces by any means necessary.",
         },
         [2770] = {
             activities = {
                 {
-                    kind = "Story/Zone",
-                    title = "Voidstorm",
+                    kindKey = "faction.2770.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2770.activity.1.location.title",
+                    },
+                    titleKey = "faction.2770.activity.1.title",
                 },
                 {
-                    kind = "Hub",
-                    title = "Obskurionzitadelle",
+                    kindKey = "faction.2770.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2770.activity.2.location.title",
+                    },
+                    titleKey = "faction.2770.activity.2.title",
                 },
             },
-            summary = "Deep within the Voidstorm, the war between Vidious and Ziadan rages on.",
         },
         [9000111] = {
             activities = {
                 {
-                    kind = "Cluster",
-                    title = "Shattrath city factions",
+                    kindKey = "faction.9000111.activity.1.kind",
+                    location = {
+                        titleKey = "faction.9000111.activity.1.location.title",
+                    },
+                    titleKey = "activity.shattrath.city_factions.title",
                 },
             },
-            summary = "Virtuelle Gruppenfraktion für Shattrath. Sie bündelt die großen Stadtfraktionen der Scherbenwelt, damit sie im UI als zusammengehöriger Cluster statt als ungeordnete Einzelfunde erscheinen.",
+            summaryKey = "faction.9000111.summary",
         },
     },
 })
