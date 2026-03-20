@@ -260,7 +260,11 @@ function ns.Debug:CreateWindow()
     frame.output:SetTextInsets(0, 0, 0, 0)
     frame.output:SetJustifyH("LEFT")
     frame.output:SetScript("OnTextChanged", function(self)
-        self:SetHeight(math.max(1, self:GetStringHeight() + 16))
+        local textHeight = 0
+        if self.GetTextHeight then
+            textHeight = self:GetTextHeight() or 0
+        end
+        self:SetHeight(math.max(1, textHeight + 16))
     end)
     frame.output:SetScript("OnEscapePressed", function(self)
         self:ClearFocus()
