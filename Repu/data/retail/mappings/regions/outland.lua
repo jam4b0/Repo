@@ -185,61 +185,66 @@ ns.Data:RegisterRetailModule({
                     { factionID = 942, weight = 260 },
                 },
             },
-            ["102:sporeggar"] = {
+            ["102:sporeggar-hub"] = {
                 name = "Sporeggar",
                 parentMapID = 102,
                 source = "curated",
                 confidence = "medium",
                 notes = "Local Sporeggar hub in Zangarmarsh.",
                 mapIDs = { 102 },
+                subZoneKeys = { "Sporeggar" },
                 tags = { "primary", "hub", "local", "outland", "suppress-zone-fallback" },
                 factions = {
                     { factionID = 970, weight = 260 },
                 },
             },
-            ["100:honor hold"] = {
+            ["100:honor-hold"] = {
                 name = "Honor Hold",
                 parentMapID = 100,
                 source = "curated",
                 confidence = "medium",
                 notes = "Alliance hub cluster for Hellfire Peninsula.",
                 mapIDs = { 100 },
+                subZoneKeys = { "Honor Hold" },
                 tags = { "primary", "hub", "local", "outland", "suppress-zone-fallback" },
                 factions = {
                     { factionID = 946, factionGroups = { "Alliance" }, weight = 260 },
                 },
             },
-            ["100:thrallmar"] = {
+            ["100:thrallmar-hub"] = {
                 name = "Thrallmar",
                 parentMapID = 100,
                 source = "curated",
                 confidence = "medium",
                 notes = "Horde hub cluster for Hellfire Peninsula.",
                 mapIDs = { 100 },
+                subZoneKeys = { "Thrallmar" },
                 tags = { "primary", "hub", "local", "outland" },
                 factions = {
                     { factionID = 947, factionGroups = { "Horde" }, weight = 260 },
                 },
             },
-            ["104:area 52"] = {
+            ["104:area-52"] = {
                 name = "Area 52",
                 parentMapID = 104,
                 source = "seed",
                 confidence = "high",
                 notes = "Consortium hub cluster",
                 mapIDs = { 104 },
+                subZoneKeys = { "Area 52" },
                 tags = { "primary", "hub", "local", "outland" },
                 factions = {
                     { factionID = 933, weight = 260 },
                 },
             },
-            ["105:netherwing ledge"] = {
+            ["105:netherwing-ledge"] = {
                 name = "Netherwing Ledge",
                 parentMapID = 105,
                 source = "curated",
                 confidence = "medium",
                 notes = "Local Netherwing quest hub in Shadowmoon Valley.",
                 mapIDs = { 105 },
+                subZoneKeys = { "Netherwing Ledge" },
                 tags = { "primary", "hub", "local", "outland", "suppress-zone-fallback" },
                 factions = {
                     { factionID = 1015, weight = 260 },

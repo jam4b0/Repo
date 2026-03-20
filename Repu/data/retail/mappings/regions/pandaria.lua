@@ -120,13 +120,14 @@ ns.Data:RegisterRetailModule({
                     { factionID = 1359, weight = 220 },
                 },
             },
-            ["418:klaxxi'vess"] = {
+            ["418:klaxxivess"] = {
                 name = "Klaxxi'vess",
                 parentMapID = 418,
                 source = "curated",
                 confidence = "medium",
                 notes = "Klaxxi local hub in the Dread Wastes.",
                 mapIDs = { 418 },
+                subZoneKeys = { "Klaxxi'vess", "Klaxxivess" },
                 tags = { "hub", "local", "pandaria", "suppress-zone-fallback" },
                 factions = {
                     { factionID = 1337, weight = 260 },

@@ -53,22 +53,24 @@ ns.Data:RegisterRetailModule({
             },
         },
         subZones = {
-            ["2393:der basar"] = {
+            ["2393:bazaar"] = {
                 name = "Der Basar",
                 parentMapID = 2393,
                 source = "observed",
                 confidence = "medium",
+                subZoneKeys = { "Der Basar", "Bazaar" },
                 tags = { "midnight", "primary", "local", "observed" },
                 factions = {
                     { factionID = 2711, weight = 245 },
                     { factionID = 2714, weight = 240 },
                 },
             },
-            ["2405:obskurionzitadelle"] = {
+            ["2405:obscurus-citadel"] = {
                 name = "Obskurionzitadelle",
                 parentMapID = 2405,
                 source = "observed",
                 confidence = "medium",
+                subZoneKeys = { "Obskurionzitadelle", "Obscurus Citadel" },
                 tags = { "midnight", "primary", "local", "observed" },
                 factions = {
                     { factionID = 2699, weight = 250 },
