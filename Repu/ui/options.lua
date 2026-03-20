@@ -12,6 +12,17 @@ local function refreshDebugUI()
     end
 end
 
+local function layoutDebugColumn(panel)
+    local width = panel.GetWidth and panel:GetWidth() or 0
+    if not width or width <= 0 then
+        width = 760
+    end
+
+    local xOffset = math.max(300, math.floor(width * 0.5))
+    panel.debugAnchor:ClearAllPoints()
+    panel.debugAnchor:SetPoint("TOPLEFT", panel.title, "TOPLEFT", xOffset, -36)
+end
+
 local function createCheckbox(panel, anchor, label, onClick)
     local check = CreateFrame("CheckButton", nil, panel, "InterfaceOptionsCheckButtonTemplate")
     check:SetPoint("TOPLEFT", anchor, "BOTTOMLEFT", 0, -10)
@@ -121,7 +132,6 @@ function ns.UI:RegisterOptions()
     end)
 
     panel.debugAnchor = panel:CreateFontString(nil, "ARTWORK", "GameFontNormal")
-    panel.debugAnchor:SetPoint("TOPLEFT", panel.locked, "TOPLEFT", 300, 0)
     panel.debugAnchor:SetText("")
 
     panel.debugHeader = panel:CreateFontString(nil, "ARTWORK", "GameFontNormal")
@@ -148,6 +158,8 @@ function ns.UI:RegisterOptions()
         local isRetail = ns.Data:GetActiveFlavor() == "retail"
         local debugDB = ns.State:GetDebugDB()
 
+        layoutDebugColumn(self)
+
         self.locked:SetChecked(profile.locked)
         self.hideExalted:SetChecked(profile.hideExalted)
         self.hideInCombat:SetChecked(profile.hideInCombat)
@@ -166,6 +178,10 @@ function ns.UI:RegisterOptions()
         self.enableDebugCapture:SetChecked(debugDB.enabled)
         self.showDebugWindow:SetEnabled(profile.debug)
         self.enableDebugCapture:SetEnabled(profile.debug)
+    end)
+
+    panel:SetScript("OnSizeChanged", function(self)
+        layoutDebugColumn(self)
     end)
 
     if Settings and Settings.RegisterCanvasLayoutCategory then

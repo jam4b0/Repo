@@ -38,6 +38,14 @@ local function placeButton(button, parent, x, y)
     button:SetPoint("TOPLEFT", parent, "TOPLEFT", x, y)
 end
 
+local function setOutputText(editBox, text)
+    editBox._updating = true
+    editBox.currentText = text or ""
+    editBox:SetText(editBox.currentText)
+    editBox:HighlightText(0, 0)
+    editBox._updating = false
+end
+
 function ns.Debug:Init()
     SLASH_REPU1 = "/repu"
     SlashCmdList.REPU = function(message)
@@ -259,12 +267,24 @@ function ns.Debug:CreateWindow()
     frame.output:SetWidth(640)
     frame.output:SetTextInsets(0, 0, 0, 0)
     frame.output:SetJustifyH("LEFT")
+    frame.output:SetCursorPosition(0)
     frame.output:SetScript("OnTextChanged", function(self)
+        if not self._updating and self.currentText then
+            setOutputText(self, self.currentText)
+            self:ClearFocus()
+            return
+        end
         local textHeight = 0
         if self.GetTextHeight then
             textHeight = self:GetTextHeight() or 0
         end
         self:SetHeight(math.max(1, textHeight + 16))
+    end)
+    frame.output:SetScript("OnChar", function(self)
+        if self.currentText then
+            setOutputText(self, self.currentText)
+        end
+        self:ClearFocus()
     end)
     frame.output:SetScript("OnEscapePressed", function(self)
         self:ClearFocus()
@@ -318,45 +338,52 @@ function ns.Debug:CreateWindow()
     end)
     placeButton(frame.clearButton, frame.buttonRow, 412, 0)
 
+    frame.copyButton = createButton(frame.buttonRow, Locale:Get("DEBUG_COPY"), 80, function()
+        frame.output:SetFocus()
+        frame.output:HighlightText()
+        printLine(Locale:Get("DEBUG_COPY_READY"))
+    end)
+    placeButton(frame.copyButton, frame.buttonRow, 500, 0)
+
     frame.dumpButton = createButton(frame.buttonRow, Locale:Get("DEBUG_DUMP"), 80, function()
         ns.Debug:DumpState()
     end)
-    placeButton(frame.dumpButton, frame.buttonRow, 500, 0)
+    placeButton(frame.dumpButton, frame.buttonRow, 588, 0)
 
     frame.reloadButton = createButton(frame.buttonRow, Locale:Get("DEBUG_RELOAD"), 90, function()
         ReloadUI()
     end)
-    placeButton(frame.reloadButton, frame.buttonRow, 588, 0)
+    placeButton(frame.reloadButton, frame.buttonRow, 0, -28)
 
     frame.locationButton = createButton(frame.buttonRow, Locale:Get("DEBUG_LOCATION"), 90, function()
         ns.Debug:DumpLocation()
     end)
-    placeButton(frame.locationButton, frame.buttonRow, 0, -28)
+    placeButton(frame.locationButton, frame.buttonRow, 98, -28)
 
     frame.unmappedButton = createButton(frame.buttonRow, Locale:Get("DEBUG_UNMAPPED"), 90, function()
         ns.Debug:DumpUnmapped()
     end)
-    placeButton(frame.unmappedButton, frame.buttonRow, 98, -28)
+    placeButton(frame.unmappedButton, frame.buttonRow, 196, -28)
 
     frame.apiButton = createButton(frame.buttonRow, Locale:Get("DEBUG_API"), 72, function()
         ns.Debug:DumpAPI()
     end)
-    placeButton(frame.apiButton, frame.buttonRow, 196, -28)
+    placeButton(frame.apiButton, frame.buttonRow, 294, -28)
 
     frame.coverageButton = createButton(frame.buttonRow, Locale:Get("DEBUG_COVERAGE"), 90, function()
         ns.Debug:DumpCoverage()
     end)
-    placeButton(frame.coverageButton, frame.buttonRow, 276, -28)
+    placeButton(frame.coverageButton, frame.buttonRow, 374, -28)
 
     frame.candidatesButton = createButton(frame.buttonRow, Locale:Get("DEBUG_CANDIDATES"), 90, function()
         ns.Debug:DumpCandidates(8)
     end)
-    placeButton(frame.candidatesButton, frame.buttonRow, 374, -28)
+    placeButton(frame.candidatesButton, frame.buttonRow, 472, -28)
 
     frame.factionsButton = createButton(frame.buttonRow, Locale:Get("DEBUG_FACTIONS"), 90, function()
         ns.Debug:DumpFactions(12)
     end)
-    placeButton(frame.factionsButton, frame.buttonRow, 472, -28)
+    placeButton(frame.factionsButton, frame.buttonRow, 570, -28)
 
     self.window = frame
     self:RefreshWindow()
@@ -423,14 +450,14 @@ function ns.Debug:RefreshWindow()
         tostring(count),
         tostring(last and last.key or Locale:Get("DEBUG_LAST_NONE"))
     ))
-    self.window.output:SetText(self:BuildWindowReport())
-    self.window.output:HighlightText(0, 0)
+    setOutputText(self.window.output, self:BuildWindowReport())
     self.window:SetShown(profile.debug and profile.showDebugWindow)
     self.window.enableButton:SetEnabled(profile.debug and not debugDB.enabled)
     self.window.disableButton:SetEnabled(profile.debug and debugDB.enabled)
     self.window.captureNowButton:SetEnabled(profile.debug)
     self.window.refreshButton:SetEnabled(profile.debug)
     self.window.clearButton:SetEnabled(profile.debug)
+    self.window.copyButton:SetEnabled(profile.debug)
     self.window.dumpButton:SetEnabled(profile.debug)
     self.window.reloadButton:SetEnabled(profile.debug)
     self.window.locationButton:SetEnabled(profile.debug)
