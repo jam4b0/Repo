@@ -1,8 +1,8 @@
 {
   "summary": {
-    "already_with_coordinates": 71,
+    "already_with_coordinates": 72,
     "leave_without_coordinates_for_now": 59,
-    "needs_external_coordinate_source": 22,
+    "needs_external_coordinate_source": 21,
     "open_standard_gap": 0
   },
   "groups": {
@@ -18,6 +18,10 @@
       {
         "file": "bfa.lua",
         "factionID": 2161
+      },
+      {
+        "file": "bfa.lua",
+        "factionID": 2162
       },
       {
         "file": "bfa.lua",
@@ -531,11 +535,6 @@
       }
     ],
     "needs_external_coordinate_source": [
-      {
-        "file": "bfa.lua",
-        "factionID": 2162,
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
       {
         "file": "bfa.lua",
         "factionID": 2400,

@@ -1,16 +1,12 @@
 {
   "summary": {
     "totalFactions": 152,
-    "withAnyXY": 71,
-    "withQuartermasterXY": 63,
-    "withActivityXY": 71,
-    "withoutAnyXY": 81
+    "withAnyXY": 72,
+    "withQuartermasterXY": 64,
+    "withActivityXY": 72,
+    "withoutAnyXY": 80
   },
   "quartermasterWithoutXY": [
-    {
-      "file": "bfa.lua",
-      "factionID": 2162
-    },
     {
       "file": "bfa.lua",
       "factionID": 2400
@@ -100,10 +96,6 @@
     {
       "file": "bfa.lua",
       "factionID": 2157
-    },
-    {
-      "file": "bfa.lua",
-      "factionID": 2162
     },
     {
       "file": "bfa.lua",
@@ -434,6 +426,10 @@
     {
       "file": "bfa.lua",
       "factionID": 2161
+    },
+    {
+      "file": "bfa.lua",
+      "factionID": 2162
     },
     {
       "file": "bfa.lua",

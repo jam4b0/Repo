@@ -167,9 +167,12 @@ api.RegisterRetailContentModule({
                 {
                     label = "Quartermaster",
                     location = {
+                        mapID = 942,
                         title = "Brennadam",
+                        x = 0.594,
+                        y = 0.696,
                     },
-                    name = "Sister Lilyana",
+                    name = "Caspian",
                 },
             },
             source = "curated",
