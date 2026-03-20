@@ -522,7 +522,7 @@ function ns.Debug:CreateWindow()
     frame.outputScroll = CreateFrame("ScrollFrame", nil, frame, "UIPanelScrollFrameTemplate")
     frame.outputScroll:SetPoint("TOPLEFT", frame.resources, "BOTTOMLEFT", 0, -12)
     frame.outputScroll:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -28, -74)
-    frame.outputScroll:SetPoint("BOTTOM", frame, "BOTTOM", 0, 72)
+    frame.outputScroll:SetPoint("BOTTOM", frame, "BOTTOM", 0, 118)
 
     frame.output = CreateFrame("EditBox", nil, frame.outputScroll)
     frame.output:SetMultiLine(true)
