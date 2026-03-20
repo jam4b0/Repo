@@ -3,10 +3,11 @@
     "confirmed_modeled": 141,
     "excluded_global_system": 2,
     "excluded_legacy_hostile_or_event": 4,
-    "excluded_micro_side_rep": 7,
-    "not_in_blizzard_index": 4,
+    "excluded_micro_side_rep": 9,
+    "excluded_progression_track": 1,
+    "not_in_blizzard_index": 0,
     "optional_pvp_brawler": 3,
-    "superseded_by_current_model": 13
+    "superseded_by_current_model": 14
   },
   "rows": [
     {
@@ -24,7 +25,7 @@
       "side": "Alliance",
       "type": "Capital",
       "hint": "Gnom-Hauptstadtfraktion",
-      "status": "not_in_blizzard_index",
+      "status": "superseded_by_current_model",
       "factionID": null
     },
     {
@@ -1194,7 +1195,7 @@
       "side": "Neutral",
       "type": "Night Fae",
       "hint": "Nachtfae-spezifisch",
-      "status": "not_in_blizzard_index",
+      "status": "excluded_micro_side_rep",
       "factionID": null
     },
     {
@@ -1203,7 +1204,7 @@
       "side": "Neutral",
       "type": "Venthyr",
       "hint": "Venthyr-spezifisch",
-      "status": "not_in_blizzard_index",
+      "status": "excluded_micro_side_rep",
       "factionID": null
     },
     {
@@ -1563,7 +1564,7 @@
       "side": "Neutral",
       "type": "Seasonal progression",
       "hint": "Saisonaler Fortschrittstrack",
-      "status": "not_in_blizzard_index",
+      "status": "excluded_progression_track",
       "factionID": null
     },
     {
