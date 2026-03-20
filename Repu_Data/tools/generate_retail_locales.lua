@@ -48,8 +48,6 @@ local contentTextLocales = {
 
 local files = {
     "content/retail/summary/generated.lua",
-    "content/retail/families/quelthalas.lua",
-    "content/retail/families/shattrath.lua",
     "content/retail/expansions/midnight.lua",
     "content/retail/expansions/outland.lua",
     "content/retail/expansions/war_within.lua",

@@ -9,7 +9,6 @@
 ## Struktur
 
 - `content/retail/expansions/`: expansionsspezifische Fraktionsinhalte
-- `content/retail/families/`: echte Parent/Child-Familien wie `quelthalas.lua` oder `shattrath.lua`
 - `content/retail/legacy/`: Heimat-, Stadt- und Legacy-Hubs
 - `content/retail/summary/`: generierte oder einfache Fallback-Datensaetze
 

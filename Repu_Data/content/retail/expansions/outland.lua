@@ -29,6 +29,51 @@ api.RegisterRetailContentModule({
             source = "curated",
             summary = "Led by Nexus-Prince Haramad, the Consortium is a loosely affiliated cartel of ethereal smugglers, traders and thieves that has come to Outland to benefit from its riches.",
         },
+        [932] = {
+            activities = {
+                {
+                    kind = "City faction",
+                    location = {
+                        mapID = 111,
+                        title = "Shattrath",
+                    },
+                    titleKey = "activity.shattrath.aldor_tasks.title",
+                },
+            },
+            confidence = "medium",
+            source = "seed",
+            summary = "An ancient order of draenei priests once run by Velen, the Aldor are currently led by High Priestess Ishanah.  They are servants of the naaru in Shattrath City known as the Sha'tar.  Rivals of the Scryers.",
+        },
+        [934] = {
+            activities = {
+                {
+                    kind = "City faction",
+                    location = {
+                        mapID = 111,
+                        title = "Shattrath",
+                    },
+                    titleKey = "activity.shattrath.scryer_tasks.title",
+                },
+            },
+            confidence = "medium",
+            source = "seed",
+            summary = "Voren'thal the Seer leads the dissident blood elves who've rejected Kael'thas' path to power.  They've joined forces with the naaru of Shattrath City, much to the dismay of the Aldor.",
+        },
+        [935] = {
+            activities = {
+                {
+                    kind = "City/Instances",
+                    location = {
+                        mapID = 111,
+                        title = "Shattrath",
+                    },
+                    titleKey = "activity.shattrath.temple_tasks.title",
+                },
+            },
+            confidence = "medium",
+            source = "seed",
+            summary = "The Sha'tar are a group of powerful naaru who rule over a rebuilt Shattrath City.  With the help of the Aldor and the Scryers, they lead the battle against Illidan and the Burning Legion.",
+        },
         [941] = {
             activities = {
                 {
@@ -201,6 +246,21 @@ api.RegisterRetailContentModule({
             source = "curated",
             summary = "A secretive subgroup of the Bronze Dragonflight, led by Soridormi, prime mate of Nozdormu.",
         },
+        [1011] = {
+            activities = {
+                {
+                    kind = "City faction",
+                    location = {
+                        mapID = 111,
+                        title = "Shattrath",
+                    },
+                    titleKey = "activity.shattrath.lower_city_tasks.title",
+                },
+            },
+            confidence = "medium",
+            source = "seed",
+            summary = "The refugees of Shattrath come from diverse backgrounds and races.  Word of helpful deeds spreads quickly among the Denizens of Lower City.",
+        },
         [1012] = {
             activities = {
                 {
@@ -222,6 +282,21 @@ api.RegisterRetailContentModule({
             confidence = "medium",
             source = "curated",
             summary = "The elite of the Broken tribe known as the Ashtongue, officially aligned with Illidan. The Deathsworn are Akama's most trusted lieutenants and are privy to their leader's mysterious motivations.",
+        },
+        [9000111] = {
+            activities = {
+                {
+                    kind = "Cluster",
+                    location = {
+                        mapID = 111,
+                        title = "Shattrath",
+                    },
+                    titleKey = "activity.shattrath.city_factions.title",
+                },
+            },
+            confidence = "medium",
+            source = "seed",
+            summaryKey = "faction.9000111.summary",
         },
         [1015] = {
             activities = {
