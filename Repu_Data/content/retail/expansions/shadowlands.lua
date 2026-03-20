@@ -96,6 +96,13 @@ api.RegisterRetailContentModule({
                     },
                     title = "Halls of Atonement",
                 },
+                {
+                    kind = "Weekly",
+                    location = {
+                        title = "Revendreth",
+                    },
+                    title = "World quests and covenant callings",
+                },
             },
             confidence = "medium",
             quartermasters = {
@@ -125,6 +132,13 @@ api.RegisterRetailContentModule({
                         title = "Ve'nari's Refuge",
                     },
                     title = "Ve'nari's Refuge",
+                },
+                {
+                    kind = "Recurring",
+                    location = {
+                        title = "The Maw",
+                    },
+                    title = "Stygia, rares, and Maw objectives",
                 },
             },
             confidence = "medium",
@@ -186,6 +200,13 @@ api.RegisterRetailContentModule({
                     },
                     title = "Mists of Tirna Scithe",
                 },
+                {
+                    kind = "Recurring",
+                    location = {
+                        title = "Ardenweald",
+                    },
+                    title = "Court of Night support and anima work",
+                },
             },
             confidence = "medium",
             source = "curated",
@@ -229,6 +250,13 @@ api.RegisterRetailContentModule({
                         title = "Sanctum of Domination",
                     },
                     title = "Sanctum of Domination",
+                },
+                {
+                    kind = "Recurring",
+                    location = {
+                        title = "Korthia",
+                    },
+                    title = "Covenant assaults and Death's Advance objectives",
                 },
             },
             confidence = "medium",
