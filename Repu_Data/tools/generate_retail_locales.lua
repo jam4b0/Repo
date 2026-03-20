@@ -272,10 +272,26 @@ end
 local function buildQuartermasters(quartermasters, translator)
     local output = {}
     for index, quartermaster in ipairs(quartermasters or {}) do
-        output[index] = {
-            name = translator(quartermaster.name),
-            label = LABEL_MAP[quartermaster.label] or translator(quartermaster.label),
-        }
+        local localized = {}
+        if quartermaster.nameKey then
+            localized.nameKey = quartermaster.nameKey
+        else
+            localized.name = translator(quartermaster.name)
+        end
+        if quartermaster.labelKey then
+            localized.labelKey = quartermaster.labelKey
+        else
+            localized.label = LABEL_MAP[quartermaster.label] or translator(quartermaster.label)
+        end
+        if quartermaster.location then
+            localized.location = {}
+            if quartermaster.location.titleKey then
+                localized.location.titleKey = quartermaster.location.titleKey
+            else
+                localized.location.title = translator(quartermaster.location.title)
+            end
+        end
+        output[index] = localized
     end
     return output
 end
@@ -283,10 +299,26 @@ end
 local function buildActivities(activities, translator)
     local output = {}
     for index, activity in ipairs(activities or {}) do
-        output[index] = {
-            title = translator(activity.title),
-            kind = KIND_MAP[activity.kind] or translator(activity.kind),
-        }
+        local localized = {}
+        if activity.titleKey then
+            localized.titleKey = activity.titleKey
+        else
+            localized.title = translator(activity.title)
+        end
+        if activity.kindKey then
+            localized.kindKey = activity.kindKey
+        else
+            localized.kind = KIND_MAP[activity.kind] or translator(activity.kind)
+        end
+        if activity.location then
+            localized.location = {}
+            if activity.location.titleKey then
+                localized.location.titleKey = activity.location.titleKey
+            else
+                localized.location.title = translator(activity.location.title)
+            end
+        end
+        output[index] = localized
     end
     return output
 end
@@ -369,8 +401,10 @@ local function serialize(value, indent)
             local formattedKey
             if type(key) == "number" then
                 formattedKey = string.format("[%d]", key)
-            else
+            elseif tostring(key):match("^[A-Za-z_][A-Za-z0-9_]*$") then
                 formattedKey = key
+            else
+                formattedKey = string.format("[%q]", key)
             end
             parts[#parts + 1] = string.format("%s%s = %s,", nextSpacing, formattedKey, serialize(value[key], indent + 1))
         end
@@ -478,6 +512,18 @@ local existingEnglishText = loadExistingLocale("enUS", "retail_content_text", co
 local existingGermanText = loadExistingLocale("deDE", "retail_content_text", contentTextLocales.deDE)
 local englishTextPayload = buildTextPayload(existingEnglish, existingEnglishText)
 local germanTextPayload = buildTextPayload(existingGerman, existingGermanText)
+
+for key, value in pairs(existingEnglishText or {}) do
+    if englishTextPayload[key] == nil then
+        englishTextPayload[key] = value
+    end
+end
+
+for key, value in pairs(existingGermanText or {}) do
+    if germanTextPayload[key] == nil then
+        germanTextPayload[key] = value
+    end
+end
 
 writeLocale("enUS", englishPayload)
 writeLocale("deDE", germanPayload)

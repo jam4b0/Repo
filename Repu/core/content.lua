@@ -4,6 +4,51 @@ local function isRealFaction(faction)
     return faction and faction.factionID and not faction.isVirtualGroup and faction.factionID < 8000000
 end
 
+local function resolveContentText(entry, keyField, valueField)
+    if not entry then
+        return nil
+    end
+
+    local key = entry[keyField]
+    if key then
+        return ns.I18n:GetText("retail_content_text", key)
+    end
+
+    return entry[valueField]
+end
+
+local function resolveLocation(location)
+    if not location then
+        return nil
+    end
+
+    local resolved = ns.Utils:ShallowCopy(location)
+    resolved.title = resolveContentText(location, "titleKey", "title")
+    return resolved
+end
+
+local function resolveQuartermasters(quartermasters)
+    local resolved = {}
+    for index, quartermaster in ipairs(quartermasters or {}) do
+        resolved[index] = ns.Utils:ShallowCopy(quartermaster)
+        resolved[index].name = resolveContentText(quartermaster, "nameKey", "name")
+        resolved[index].label = resolveContentText(quartermaster, "labelKey", "label")
+        resolved[index].location = resolveLocation(quartermaster.location)
+    end
+    return resolved
+end
+
+local function resolveActivities(activities)
+    local resolved = {}
+    for index, activity in ipairs(activities or {}) do
+        resolved[index] = ns.Utils:ShallowCopy(activity)
+        resolved[index].title = resolveContentText(activity, "titleKey", "title")
+        resolved[index].kind = resolveContentText(activity, "kindKey", "kind")
+        resolved[index].location = resolveLocation(activity.location)
+    end
+    return resolved
+end
+
 local function mergeContent(base, overlay)
     if not overlay then
         return base
@@ -111,8 +156,8 @@ function ns.Content:GetFactionDetails(candidate, context)
         summary = summary,
         contentSource = content.source,
         contentConfidence = content.confidence,
-        quartermasters = content.quartermasters or {},
-        activities = content.activities or {},
+        quartermasters = resolveQuartermasters(content.quartermasters or {}),
+        activities = resolveActivities(content.activities or {}),
         context = {
             zoneName = context and context.zoneName or nil,
             subZoneName = context and context.subZoneName or nil,
