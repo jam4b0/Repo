@@ -106,37 +106,40 @@ ns.Data:RegisterRetailModule({
                     { factionID = 2413, weight = 262 },
                 },
             },
-            ["1525:ring der schicksale"] = {
+            ["1525:ring-of-fates"] = {
                 name = "Ring der Schicksale",
                 parentMapID = 1525,
                 source = "seed",
                 confidence = "high",
                 notes = "Oribos primary hub cluster",
                 mapIDs = { 1525, 1670 },
+                subZoneKeys = { "Ring der Schicksale", "Ring of Fates" },
                 tags = { "primary", "hub", "local", "shadowlands" },
                 factions = {
                     { factionID = 2413, weight = 260 },
                 },
             },
-            ["1525:ring der transzendenz"] = {
+            ["1525:ring-of-transference"] = {
                 name = "Ring der Transzendenz",
                 parentMapID = 1525,
                 source = "seed",
                 confidence = "high",
                 notes = "Oribos covenant cluster",
                 mapIDs = { 1525, 1670 },
+                subZoneKeys = { "Ring der Transzendenz", "Ring of Transference" },
                 tags = { "hub", "local", "shadowlands" },
                 factions = {
                     { factionID = 2413, weight = 255 },
                 },
             },
-            ["1543:ven'aris zuflucht"] = {
+            ["1543:venaris-refuge"] = {
                 name = "Ve'naris Zuflucht",
                 parentMapID = 1543,
                 source = "seed",
                 confidence = "high",
                 notes = "The Maw hub cluster",
                 mapIDs = { 1543 },
+                subZoneKeys = { "Ve'naris Zuflucht", "Ve'nari's Refuge", "Venaris Refuge" },
                 tags = { "primary", "hub", "local", "shadowlands" },
                 factions = {
                     { factionID = 2432, weight = 260 },
@@ -154,13 +157,14 @@ ns.Data:RegisterRetailModule({
                     { factionID = 2478, weight = 262 },
                 },
             },
-            ["1961:keeper's respite"] = {
+            ["1961:keepers-respite"] = {
                 name = "Keeper's Respite",
                 parentMapID = 1961,
                 source = "curated",
                 confidence = "medium",
                 notes = "Korthia hub cluster for the Archivists' Codex.",
                 mapIDs = { 1961 },
+                subZoneKeys = { "Keeper's Respite" },
                 tags = { "hub", "local", "shadowlands" },
                 factions = {
                     { factionID = 2472, weight = 258 },

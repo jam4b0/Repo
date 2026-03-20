@@ -151,31 +151,33 @@ ns.Data:RegisterRetailModule({
             },
         },
         subZones = {
-            ["1165:grosse pyramide"] = {
+            ["1165:great-pyramid"] = {
                 name = "Große Pyramide",
                 parentMapID = 1165,
                 source = "seed",
                 confidence = "high",
                 notes = "Dazar'alor central hub",
                 mapIDs = { 1165 },
+                subZoneKeys = { "Große Pyramide", "Die grosse Pyramide", "Great Pyramid" },
                 tags = { "primary", "hub", "local", "bfa" },
                 factions = {
                     { factionID = 2157, weight = 265 },
                 },
             },
-            ["1161:markt der sieben winde"] = {
+            ["1161:tradewinds-market"] = {
                 name = "Markt der Sieben Winde",
                 parentMapID = 1161,
                 source = "seed",
                 confidence = "high",
                 notes = "Boralus central hub",
                 mapIDs = { 1161 },
+                subZoneKeys = { "Markt der Sieben Winde", "Tradewinds Market" },
                 tags = { "primary", "hub", "local", "bfa" },
                 factions = {
                     { factionID = 2160, weight = 265 },
                 },
             },
-            ["862:die grosse versiegelung"] = {
+            ["862:the-great-seal"] = {
                 name = "Die große Versiegelung",
                 parentMapID = 862,
                 source = "seed",
@@ -218,6 +220,7 @@ ns.Data:RegisterRetailModule({
                 confidence = "high",
                 notes = "Nazjatar alliance hub cluster",
                 mapIDs = { 1355 },
+                subZoneKeys = { "Die große Versiegelung", "Die grosse Versiegelung", "The Great Seal" },
                 tags = { "primary", "hub", "local", "bfa" },
                 factions = {
                     { factionID = 2373, factionGroups = { "Alliance" }, weight = 262 },
@@ -247,13 +250,14 @@ ns.Data:RegisterRetailModule({
                     { factionID = 2370, factionGroups = { "Horde" }, weight = 262 },
                 },
             },
-            ["1462:rostbolzen"] = {
+            ["1462:rustbolt"] = {
                 name = "Rostbolzen",
                 parentMapID = 1462,
                 source = "seed",
                 confidence = "high",
                 notes = "Mechagon hub cluster",
                 mapIDs = { 1462 },
+                subZoneKeys = { "Rostbolzen", "Rustbolt" },
                 tags = { "primary", "hub", "local", "bfa" },
                 factions = {
                     { factionID = 2391, weight = 262 },

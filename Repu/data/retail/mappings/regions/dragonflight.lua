@@ -126,26 +126,28 @@ ns.Data:RegisterRetailModule({
             },
         },
         subZones = {
-            ["2112:sitz der aspekte"] = {
+            ["2112:seat-of-the-aspects"] = {
                 name = "Sitz der Aspekte",
                 parentMapID = 2112,
                 source = "seed",
                 confidence = "high",
                 notes = "Valdrakken core hub",
                 mapIDs = { 2112 },
+                subZoneKeys = { "Sitz der Aspekte", "Seat of the Aspects" },
                 tags = { "primary", "hub", "local", "dragonflight" },
                 factions = {
                     { factionID = 2510, weight = 265 },
                     { factionID = 2544, weight = 220 },
                 },
             },
-            ["2022:rubinlebensbecken"] = {
+            ["2022:ruby-life-pools"] = {
                 name = "Rubinlebensbecken",
                 parentMapID = 2022,
                 source = "seed",
                 confidence = "medium",
                 notes = "Dragonflight red dragon cluster",
                 mapIDs = { 2022 },
+                subZoneKeys = { "Rubinlebensbecken", "Ruby Life Pools" },
                 tags = { "local", "dragonflight" },
                 factions = {
                     { factionID = 2507, weight = 245 },
@@ -163,26 +165,28 @@ ns.Data:RegisterRetailModule({
                     { factionID = 2503, weight = 260 },
                 },
             },
-            ["2024:ismara"] = {
+            ["2024:ismara-hub"] = {
                 name = "Ismara",
                 parentMapID = 2024,
                 source = "seed",
                 confidence = "medium",
                 notes = "Azure Span tuskarr cluster",
                 mapIDs = { 2024 },
+                subZoneKeys = { "Ismara" },
                 tags = { "local", "dragonflight" },
                 factions = {
                     { factionID = 2511, weight = 245 },
                     { factionID = 2526, weight = 214 },
                 },
             },
-            ["2025:tyrhold"] = {
+            ["2025:tyrhold-hub"] = {
                 name = "Tyrhold",
                 parentMapID = 2025,
                 source = "seed",
                 confidence = "medium",
                 notes = "Thaldraszus hub cluster",
                 mapIDs = { 2025 },
+                subZoneKeys = { "Tyrhold" },
                 tags = { "local", "dragonflight" },
                 factions = {
                     { factionID = 2510, weight = 245 },
@@ -203,25 +207,27 @@ ns.Data:RegisterRetailModule({
                     { factionID = 2564, weight = 260 },
                 },
             },
-            ["2024:ismara schimmergrimm"] = {
+            ["2024:ismara-snowsong"] = {
                 name = "Ismara Schimmergrimm",
                 parentMapID = 2024,
                 source = "seed",
                 confidence = "medium",
                 notes = "Azure Span tuskarr sub-hub",
                 mapIDs = { 2024 },
+                subZoneKeys = { "Ismara Schimmergrimm", "Ismara Snowsong" },
                 tags = { "hub", "local", "dragonflight" },
                 factions = {
                     { factionID = 2511, weight = 248 },
                 },
             },
-            ["2151:central encampment"] = {
+            ["2151:central-encampment"] = {
                 name = "Central Encampment",
                 parentMapID = 2151,
                 source = "seed",
                 confidence = "medium",
                 notes = "Emerald Dream encampment cluster",
                 mapIDs = { 2151 },
+                subZoneKeys = { "Central Encampment" },
                 tags = { "hub", "local", "dragonflight" },
                 factions = {
                     { factionID = 2574, weight = 252 },

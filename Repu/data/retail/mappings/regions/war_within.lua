@@ -78,7 +78,7 @@ ns.Data:RegisterRetailModule({
             },
         },
         subZones = {
-            ["2255:the severed threads"] = {
+            ["2255:severed-threads-hub"] = {
                 name = "The Severed Threads",
                 parentMapID = 2255,
                 source = "seed",
@@ -104,6 +104,7 @@ ns.Data:RegisterRetailModule({
                 parentMapID = 2248,
                 source = "seed",
                 confidence = "high",
+                subZoneKeys = { "The Severed Threads" },
                 tags = { "war-within", "hub", "local" },
                 factions = {
                     { factionID = 2590, weight = 230 },
@@ -129,11 +130,12 @@ ns.Data:RegisterRetailModule({
                     { factionID = 2594, weight = 232 },
                 },
             },
-            ["2346:undermine city"] = {
+            ["2346:undermine-city"] = {
                 name = "Undermine City",
                 parentMapID = 2346,
                 source = "seed",
                 confidence = "high",
+                subZoneKeys = { "Undermine City" },
                 tags = { "war-within", "hub", "local" },
                 factions = {
                     { factionID = 2653, weight = 235 },

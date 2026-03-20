@@ -132,12 +132,13 @@ ns.Data:RegisterRetailModule({
                 factionIDs = { 609 },
                 weight = 245,
             },
-            ["silithus: die wunde"] = {
+            ["81:sword-wound"] = {
                 name = "Silithus: Die Wunde",
                 source = "seed",
                 confidence = "medium",
                 notes = "Legion/BfA world-state variant of Silithus after Sargeras' sword impact; kept separate from old Silithus.",
                 mapIDs = { 81 },
+                subZoneKeys = { "die wunde", "the wound" },
                 zoneKeys = { "silithus die wunde" },
                 tags = { "zone", "local", "kalimdor", "variant", "coverage-only", "legion-world-state" },
             },

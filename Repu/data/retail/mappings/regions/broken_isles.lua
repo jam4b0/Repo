@@ -97,13 +97,14 @@ ns.Data:RegisterRetailModule({
                     { factionID = 1883, weight = 262 },
                 },
             },
-            ["627:krasus' landeplatz"] = {
+            ["627:krasus-landing"] = {
                 name = "Krasus' Landeplatz",
                 parentMapID = 627,
                 source = "seed",
                 confidence = "high",
                 notes = "Legion Dalaran hub cluster",
                 mapIDs = { 627 },
+                subZoneKeys = { "Krasus' Landeplatz", "Krasus' Landing" },
                 tags = { "primary", "hub", "local", "legion" },
                 factions = {
                     { factionID = 1883, weight = 260 },

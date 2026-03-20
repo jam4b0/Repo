@@ -75,25 +75,27 @@ ns.Data:RegisterRetailModule({
             },
         },
         subZones = {
-            ["582:außenposten der erwachten"] = {
+            ["582:outpost-of-the-awakened"] = {
                 name = "Außenposten der Erwachten",
                 parentMapID = 582,
                 source = "seed",
                 confidence = "medium",
                 notes = "Lunarfall hub cluster",
                 mapIDs = { 582 },
+                subZoneKeys = { "Außenposten der Erwachten", "Aussenposten der Erwachten", "Outpost of the Awakened" },
                 tags = { "primary", "hub", "local", "draenor" },
                 factions = {
                     { factionID = 1710, weight = 255 },
                 },
             },
-            ["525:kriegsmühle"] = {
+            ["525:warsmill"] = {
                 name = "Kriegsmühle",
                 parentMapID = 525,
                 source = "seed",
                 confidence = "medium",
                 notes = "Frostfire garrison cluster",
                 mapIDs = { 525 },
+                subZoneKeys = { "Kriegsmühle", "Warsmill" },
                 tags = { "primary", "hub", "local", "draenor" },
                 factions = {
                     { factionID = 1445, weight = 255 },

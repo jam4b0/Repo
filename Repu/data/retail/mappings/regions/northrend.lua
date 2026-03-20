@@ -103,37 +103,40 @@ ns.Data:RegisterRetailModule({
                     { factionID = 1090, weight = 262 },
                 },
             },
-            ["125:die violette festung"] = {
+            ["125:violet-citadel"] = {
                 name = "Die Violette Festung",
                 parentMapID = 125,
                 source = "seed",
                 confidence = "high",
                 notes = "Dalaran Kirin Tor hub cluster",
                 mapIDs = { 125 },
+                subZoneKeys = { "Die Violette Festung", "The Violet Citadel" },
                 tags = { "primary", "hub", "local", "northrend" },
                 factions = {
                     { factionID = 1090, weight = 260 },
                 },
             },
-            ["125:die tonroste"] = {
+            ["125:the-underbelly"] = {
                 name = "Die Tonroste",
                 parentMapID = 125,
                 source = "seed",
                 confidence = "medium",
                 notes = "Dalaran city district cluster",
                 mapIDs = { 125 },
+                subZoneKeys = { "Die Tonroste", "The Underbelly" },
                 tags = { "hub", "local", "northrend" },
                 factions = {
                     { factionID = 1090, weight = 250 },
                 },
             },
-            ["118:argentumvorhut"] = {
+            ["118:argent-crusade-vanguard"] = {
                 name = "Argentumvorhut",
                 parentMapID = 118,
                 source = "seed",
                 confidence = "high",
                 notes = "Argent Crusade hub cluster",
                 mapIDs = { 118 },
+                subZoneKeys = { "Argentumvorhut", "Argent Vanguard", "Argent Crusade Vanguard" },
                 tags = { "primary", "hub", "local", "northrend" },
                 factions = {
                     { factionID = 1106, weight = 260 },

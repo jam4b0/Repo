@@ -88,13 +88,14 @@ ns.Data:RegisterRetailModule({
             },
         },
         subZones = {
-            ["111:terrasse des lichts"] = {
+            ["111:terrace-of-light"] = {
                 name = "Terrasse des Lichts",
                 parentMapID = 111,
                 source = "seed",
                 confidence = "high",
                 notes = "Retail legacy Shattrath subzone cluster",
                 mapIDs = { 111 },
+                subZoneKeys = { "Terrasse des Lichts", "Terrace of Light" },
                 tags = { "primary", "local" },
                 factions = {
                     { factionID = 935, weight = 255 },
@@ -136,50 +137,54 @@ ns.Data:RegisterRetailModule({
                     { factionID = 1077, weight = 244 },
                 },
             },
-            ["111:unteres viertel"] = {
+            ["111:lower-city"] = {
                 name = "Unteres Viertel",
                 parentMapID = 111,
                 source = "seed",
                 confidence = "high",
                 notes = "Retail legacy Lower City subzone cluster",
                 mapIDs = { 111, 108 },
+                subZoneKeys = { "Unteres Viertel", "Lower City" },
                 tags = { "primary", "local" },
                 factions = {
                     { factionID = 1011, weight = 260 },
                 },
             },
-            ["108:unteres viertel"] = {
+            ["108:lower-city"] = {
                 name = "Unteres Viertel",
                 parentMapID = 108,
                 source = "observed",
                 confidence = "medium",
                 notes = "Observed Terokkar capture near Shattrath cluster",
                 mapIDs = { 108 },
+                subZoneKeys = { "Unteres Viertel", "Lower City" },
                 tags = { "primary", "local" },
                 factions = {
                     { factionID = 1011, weight = 255 },
                 },
             },
-            ["111:terokks rast"] = {
+            ["111:terokks-rest"] = {
                 name = "Terokks Rast",
                 parentMapID = 111,
                 source = "seed",
                 confidence = "medium",
                 notes = "Shattrath transit subzone cluster",
                 mapIDs = { 111 },
+                subZoneKeys = { "Terokks Rast", "Terokkar's Rest", "Terokks Rest" },
                 tags = { "local", "outland" },
                 factions = {
                     { factionID = 935, weight = 248 },
                     { factionID = 1011, weight = 246 },
                 },
             },
-            ["102:cenarionszuflucht"] = {
+            ["102:cenarion-refuge"] = {
                 name = "Cenarionszuflucht",
                 parentMapID = 102,
                 source = "seed",
                 confidence = "high",
                 notes = "Cenarion Expedition hub cluster",
                 mapIDs = { 102 },
+                subZoneKeys = { "Cenarionszuflucht", "Cenarion Refuge" },
                 tags = { "primary", "hub", "local", "outland", "suppress-zone-fallback" },
                 factions = {
                     { factionID = 942, weight = 260 },

@@ -99,13 +99,14 @@ ns.Data:RegisterRetailModule({
                     { factionID = 1158, weight = 255 },
                 },
             },
-            ["207:tempel der erde"] = {
+            ["207:temple-of-earth"] = {
                 name = "Tempel der Erde",
                 parentMapID = 207,
                 source = "seed",
                 confidence = "high",
                 notes = "Deepholm primary hub cluster",
                 mapIDs = { 207 },
+                subZoneKeys = { "Tempel der Erde", "Temple of Earth" },
                 tags = { "primary", "hub", "local", "cataclysm" },
                 factions = {
                     { factionID = 1171, weight = 258 },
@@ -124,7 +125,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 2417, weight = 220 },
                 },
             },
-            ["773:tol barad"] = {
+            ["773:tol-barad"] = {
                 name = "Tol Barad",
                 parentMapID = 244,
                 source = "seed",

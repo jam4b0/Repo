@@ -94,26 +94,28 @@ ns.Data:RegisterRetailModule({
             },
         },
         subZones = {
-            ["390:schrein der zwei monde"] = {
+            ["390:shrine-of-two-moons"] = {
                 name = "Schrein der Zwei Monde",
                 parentMapID = 390,
                 source = "seed",
                 confidence = "high",
                 notes = "Horde Pandaria hub cluster",
                 mapIDs = { 390 },
+                subZoneKeys = { "Schrein der Zwei Monde", "Shrine of Two Moons" },
                 tags = { "primary", "hub", "local", "pandaria" },
                 factions = {
                     { factionID = 1375, weight = 260 },
                     { factionID = 1359, weight = 220 },
                 },
             },
-            ["390:schrein der sieben sterne"] = {
+            ["390:shrine-of-seven-stars"] = {
                 name = "Schrein der Sieben Sterne",
                 parentMapID = 390,
                 source = "seed",
                 confidence = "high",
                 notes = "Alliance Pandaria hub cluster",
                 mapIDs = { 390 },
+                subZoneKeys = { "Schrein der Sieben Sterne", "Shrine of Seven Stars" },
                 tags = { "primary", "hub", "local", "pandaria" },
                 factions = {
                     { factionID = 1376, weight = 260 },
@@ -133,25 +135,27 @@ ns.Data:RegisterRetailModule({
                     { factionID = 1337, weight = 260 },
                 },
             },
-            ["376:halbhügel"] = {
+            ["376:halfhill"] = {
                 name = "Halbhügel",
                 parentMapID = 376,
                 source = "seed",
                 confidence = "medium",
                 notes = "Tillers hub cluster",
                 mapIDs = { 376 },
+                subZoneKeys = { "Halbhügel", "Halfhill" },
                 tags = { "hub", "local", "pandaria" },
                 factions = {
                     { factionID = 1272, weight = 254 },
                 },
             },
-            ["507:insel des donnerkoenigs"] = {
+            ["507:isle-of-the-thunder-king"] = {
                 name = "Insel des Donnerkönigs",
                 parentMapID = 507,
                 source = "seed",
                 confidence = "high",
                 notes = "Shado-Pan Assault cluster",
                 mapIDs = { 507 },
+                subZoneKeys = { "Insel des Donnerkönigs", "Insel des Donnerkoenigs", "Isle of the Thunder King" },
                 tags = { "primary", "local", "pandaria" },
                 factions = {
                     { factionID = 1435, weight = 260 },
