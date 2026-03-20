@@ -1,9 +1,9 @@
 {
   "summary": {
     "already_modeled_header": 15,
-    "future_bg_or_legacy_root": 2,
-    "future_city_root": 1,
-    "future_zone_root": 1
+    "excluded_pvp_root": 2,
+    "excluded_folded_city_root": 1,
+    "excluded_missing_zone_basis": 1
   },
   "rows": [
     {
@@ -19,16 +19,16 @@
       "name": "Frostwolf Clan",
       "source": "blizzard_missing_header",
       "classification": "faction_header",
-      "class": "future_bg_or_legacy_root",
-      "reason": "Could become a PvP/Alterac-style legacy root, but not part of the normal local retail model today."
+      "class": "excluded_pvp_root",
+      "reason": "PvP/Alterac-style root, intentionally outside the normal local retail runtime model."
     },
     {
       "factionID": 54,
       "name": "Gnomeregan",
       "source": "blizzard_missing_header",
       "classification": "faction_header",
-      "class": "future_city_root",
-      "reason": "Possible city/root candidate if Gnomeregan and related children are modeled as an explicit cluster later."
+      "class": "excluded_folded_city_root",
+      "reason": "Folded into the current Dun Morogh/Ironforge homeland model instead of a separate runtime group root."
     },
     {
       "factionID": 1352,
@@ -75,8 +75,8 @@
       "name": "The League of Arathor",
       "source": "blizzard_missing_header",
       "classification": "faction_header",
-      "class": "future_bg_or_legacy_root",
-      "reason": "Could become a PvP/Arathi-style legacy root, but not part of the normal local retail model today."
+      "class": "excluded_pvp_root",
+      "reason": "PvP/Arathi-style root, intentionally outside the normal local retail runtime model."
     },
     {
       "factionID": 1094,
@@ -99,8 +99,8 @@
       "name": "Tranquillien",
       "source": "blizzard_missing_header",
       "classification": "faction_header",
-      "class": "future_zone_root",
-      "reason": "Potential Ghostlands/Quel'Thalas legacy root if that region is expanded later."
+      "class": "excluded_missing_zone_basis",
+      "reason": "Ghostlands is not part of the current retail location basis, so this cannot be a runtime group root today."
     },
     {
       "factionID": 1353,

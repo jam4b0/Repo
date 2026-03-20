@@ -14,12 +14,12 @@ CLASSIFICATION = {
         "reason": "Covered by current BfA alliance war campaign model; not a new parent to introduce now.",
     },
     729: {
-        "class": "future_bg_or_legacy_root",
-        "reason": "Could become a PvP/Alterac-style legacy root, but not part of the normal local retail model today.",
+        "class": "excluded_pvp_root",
+        "reason": "PvP/Alterac-style root, intentionally outside the normal local retail runtime model.",
     },
     54: {
-        "class": "future_city_root",
-        "reason": "Possible city/root candidate if Gnomeregan and related children are modeled as an explicit cluster later.",
+        "class": "excluded_folded_city_root",
+        "reason": "Folded into the current Dun Morogh/Ironforge homeland model instead of a separate runtime group root.",
     },
     1352: {
         "class": "already_modeled_header",
@@ -42,8 +42,8 @@ CLASSIFICATION = {
         "reason": "Covered by the current Zandalar-side faction model.",
     },
     509: {
-        "class": "future_bg_or_legacy_root",
-        "reason": "Could become a PvP/Arathi-style legacy root, but not part of the normal local retail model today.",
+        "class": "excluded_pvp_root",
+        "reason": "PvP/Arathi-style root, intentionally outside the normal local retail runtime model.",
     },
     1094: {
         "class": "already_modeled_header",
@@ -54,8 +54,8 @@ CLASSIFICATION = {
         "reason": "Handled by the current Northrend-side model; not worth a separate parent abstraction yet.",
     },
     922: {
-        "class": "future_zone_root",
-        "reason": "Potential Ghostlands/Quel'Thalas legacy root if that region is expanded later.",
+        "class": "excluded_missing_zone_basis",
+        "reason": "Ghostlands is not part of the current retail location basis, so this cannot be a runtime group root today.",
     },
     1353: {
         "class": "already_modeled_header",

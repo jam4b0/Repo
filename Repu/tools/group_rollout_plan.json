@@ -1,44 +1,12 @@
 {
   "summary": {
     "immediateCount": 0,
-    "deferredCount": 4,
-    "alreadyModeledCount": 15
+    "deferredCount": 0,
+    "alreadyModeledCount": 15,
+    "excludedCount": 4
   },
   "immediate": [],
-  "deferred": [
-    {
-      "factionID": 729,
-      "name": "Frostwolf Clan",
-      "source": "blizzard_missing_header",
-      "classification": "faction_header",
-      "class": "future_bg_or_legacy_root",
-      "reason": "Could become a PvP/Alterac-style legacy root, but not part of the normal local retail model today."
-    },
-    {
-      "factionID": 54,
-      "name": "Gnomeregan",
-      "source": "blizzard_missing_header",
-      "classification": "faction_header",
-      "class": "future_city_root",
-      "reason": "Possible city/root candidate if Gnomeregan and related children are modeled as an explicit cluster later."
-    },
-    {
-      "factionID": 509,
-      "name": "The League of Arathor",
-      "source": "blizzard_missing_header",
-      "classification": "faction_header",
-      "class": "future_bg_or_legacy_root",
-      "reason": "Could become a PvP/Arathi-style legacy root, but not part of the normal local retail model today."
-    },
-    {
-      "factionID": 922,
-      "name": "Tranquillien",
-      "source": "blizzard_missing_header",
-      "classification": "faction_header",
-      "class": "future_zone_root",
-      "reason": "Potential Ghostlands/Quel'Thalas legacy root if that region is expanded later."
-    }
-  ],
+  "deferred": [],
   "alreadyModeled": [
     {
       "factionID": 2159,
@@ -159,6 +127,40 @@
       "classification": "faction_header",
       "class": "already_modeled_header",
       "reason": "Covered by the current Zandalar-side faction model."
+    }
+  ],
+  "excluded": [
+    {
+      "factionID": 729,
+      "name": "Frostwolf Clan",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header",
+      "class": "excluded_pvp_root",
+      "reason": "PvP/Alterac-style root, intentionally outside the normal local retail runtime model."
+    },
+    {
+      "factionID": 54,
+      "name": "Gnomeregan",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header",
+      "class": "excluded_folded_city_root",
+      "reason": "Folded into the current Dun Morogh/Ironforge homeland model instead of a separate runtime group root."
+    },
+    {
+      "factionID": 509,
+      "name": "The League of Arathor",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header",
+      "class": "excluded_pvp_root",
+      "reason": "PvP/Arathi-style root, intentionally outside the normal local retail runtime model."
+    },
+    {
+      "factionID": 922,
+      "name": "Tranquillien",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header",
+      "class": "excluded_missing_zone_basis",
+      "reason": "Ghostlands is not part of the current retail location basis, so this cannot be a runtime group root today."
     }
   ]
 }

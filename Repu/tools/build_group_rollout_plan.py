@@ -9,13 +9,14 @@ CURATED = ROOT / "Repu" / "tools" / "group_backlog_curated.json"
 OUT = ROOT / "Repu" / "tools" / "group_rollout_plan.json"
 
 IMMEDIATE_CLASSES = set()
-DEFERRED_CLASSES = {
-    "future_bg_or_legacy_root",
-    "future_city_root",
-    "future_zone_root",
-}
+DEFERRED_CLASSES = set()
 ALREADY_CLASSES = {
     "already_modeled_header",
+}
+EXCLUDED_CLASSES = {
+    "excluded_pvp_root",
+    "excluded_folded_city_root",
+    "excluded_missing_zone_basis",
 }
 
 
@@ -24,6 +25,7 @@ def main() -> None:
     immediate = []
     deferred = []
     already = []
+    excluded = []
 
     for row in payload.get("rows", []):
         row_class = row.get("class")
@@ -33,16 +35,20 @@ def main() -> None:
             deferred.append(row)
         elif row_class in ALREADY_CLASSES:
             already.append(row)
+        elif row_class in EXCLUDED_CLASSES:
+            excluded.append(row)
 
     out = {
         "summary": {
             "immediateCount": len(immediate),
             "deferredCount": len(deferred),
             "alreadyModeledCount": len(already),
+            "excludedCount": len(excluded),
         },
         "immediate": immediate,
         "deferred": deferred,
         "alreadyModeled": already,
+        "excluded": excluded,
     }
 
     OUT.write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
