@@ -186,6 +186,26 @@ local function formatMemoryKB(memoryKB)
     return string.format("%.1f KB", value)
 end
 
+local function getDebugHelpLines()
+    return {
+        Locale:Get("DEBUG_HELP_DEBUG"),
+        Locale:Get("DEBUG_HELP_DUMP"),
+        Locale:Get("DEBUG_HELP_API"),
+        Locale:Get("DEBUG_HELP_CAPTURE"),
+        Locale:Get("DEBUG_HELP_FACTION"),
+        Locale:Get("DEBUG_HELP_FACTIONS"),
+        Locale:Get("DEBUG_HELP_LOCATION"),
+        Locale:Get("DEBUG_HELP_COVERAGE"),
+        Locale:Get("DEBUG_HELP_CANDIDATES"),
+        Locale:Get("DEBUG_HELP_MAPSCAN"),
+        Locale:Get("DEBUG_HELP_UNMAPPED"),
+        Locale:Get("DEBUG_HELP_REFRESH"),
+        Locale:Get("DEBUG_HELP_TEST"),
+        Locale:Get("DEBUG_HELP_LOCK"),
+        Locale:Get("DEBUG_HELP_EXALTED"),
+    }
+end
+
 local function collectAddonResourceUsage()
     local addonNames = { "Repu", "Repu_Data", "Repu_Map" }
     local rows = {}
@@ -541,7 +561,7 @@ function ns.Debug:CreateWindow()
 
     frame.buttonRow = CreateFrame("Frame", nil, frame)
     frame.buttonRow:SetPoint("BOTTOMLEFT", frame, "BOTTOMLEFT", 10, 14)
-    frame.buttonRow:SetSize(680, 56)
+    frame.buttonRow:SetSize(680, 84)
 
     frame.enableButton = createButton(frame.buttonRow, Locale:Get("DEBUG_CAPTURE_ON"), 90, function()
         local debugDB = ns.State:GetDebugDB()
@@ -629,8 +649,33 @@ function ns.Debug:CreateWindow()
     end)
     placeButton(frame.factionsButton, frame.buttonRow, 570, -28)
 
+    frame.mapscanRunButton = createButton(frame.buttonRow, Locale:Get("DEBUG_MAPSCAN_RUN"), 110, function()
+        ns.Debug:RunMapScan()
+    end)
+    placeButton(frame.mapscanRunButton, frame.buttonRow, 0, -56)
+
+    frame.mapscanStatusButton = createButton(frame.buttonRow, Locale:Get("DEBUG_MAPSCAN_STATUS"), 110, function()
+        ns.Debug:DumpMapScanStatus()
+    end)
+    placeButton(frame.mapscanStatusButton, frame.buttonRow, 118, -56)
+
+    frame.helpButton = createButton(frame.buttonRow, Locale:Get("DEBUG_HELP_BUTTON"), 90, function()
+        setOutputText(frame.output, ns.Debug:BuildHelpReport())
+        printLine(Locale:Get("DEBUG_HELP_READY"))
+    end)
+    placeButton(frame.helpButton, frame.buttonRow, 236, -56)
+
     self.window = frame
     self:RefreshWindow()
+end
+
+function ns.Debug:BuildHelpReport()
+    local sections = {
+        Locale:Get("DEBUG_HELP_TITLE"),
+        table.concat(getDebugHelpLines(), "\n"),
+    }
+
+    return table.concat(sections, "\n\n")
 end
 
 function ns.Debug:BuildWindowReport()
@@ -712,6 +757,11 @@ function ns.Debug:BuildWindowReport()
         end
     end
 
+    sections[#sections + 1] = table.concat({
+        Locale:Get("DEBUG_HELP_TITLE"),
+        table.concat(getDebugHelpLines(), "\n"),
+    }, "\n")
+
     for _, key in ipairs({ "location", "coverage", "candidates", "dump", "factions", "api", "refresh", "status", "test", "unmapped", "mapscan" }) do
         local diagnostic = debugDB.lastDiagnostics and debugDB.lastDiagnostics[key] or nil
         sections[#sections + 1] = string.format(
@@ -765,6 +815,9 @@ function ns.Debug:RefreshWindow()
     self.window.coverageButton:SetEnabled(profile.debug)
     self.window.candidatesButton:SetEnabled(profile.debug)
     self.window.factionsButton:SetEnabled(profile.debug)
+    self.window.mapscanRunButton:SetEnabled(profile.debug)
+    self.window.mapscanStatusButton:SetEnabled(profile.debug)
+    self.window.helpButton:SetEnabled(profile.debug)
 end
 
 function ns.Debug:DumpFactions(limit)
@@ -1026,21 +1079,9 @@ function ns.Debug:HandleSlash(message)
     verb = verb or command
 
     if command == "" or command == "help" then
-        printLine(Locale:Get("DEBUG_HELP_DEBUG"))
-        printLine(Locale:Get("DEBUG_HELP_DUMP"))
-        printLine(Locale:Get("DEBUG_HELP_API"))
-        printLine(Locale:Get("DEBUG_HELP_CAPTURE"))
-        printLine(Locale:Get("DEBUG_HELP_FACTION"))
-        printLine(Locale:Get("DEBUG_HELP_FACTIONS"))
-        printLine(Locale:Get("DEBUG_HELP_LOCATION"))
-        printLine(Locale:Get("DEBUG_HELP_COVERAGE"))
-        printLine(Locale:Get("DEBUG_HELP_CANDIDATES"))
-        printLine(Locale:Get("DEBUG_HELP_MAPSCAN"))
-        printLine(Locale:Get("DEBUG_HELP_UNMAPPED"))
-        printLine(Locale:Get("DEBUG_HELP_REFRESH"))
-        printLine(Locale:Get("DEBUG_HELP_TEST"))
-        printLine(Locale:Get("DEBUG_HELP_LOCK"))
-        printLine(Locale:Get("DEBUG_HELP_EXALTED"))
+        for _, line in ipairs(getDebugHelpLines()) do
+            printLine(line)
+        end
         return
     end
 
