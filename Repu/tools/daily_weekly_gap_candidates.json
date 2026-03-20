@@ -1,0 +1,614 @@
+{
+  "rows": [
+    {
+      "file": "bfa.lua",
+      "factionID": 2157,
+      "summary": "A special delegation of the Horde army, focused on disrupting Alliance operations in Kul Tiras."
+    },
+    {
+      "file": "bfa.lua",
+      "factionID": 2158,
+      "summary": "Comprised of exiles and scavengers, the Voldunai use their knowledge of the sands to thrive where others would wither an"
+    },
+    {
+      "file": "bfa.lua",
+      "factionID": 2160,
+      "summary": "Masters of the sea and commanders of Azeroth's finest navy, the distinguished Proudmoore family has led Kul Tiras for de"
+    },
+    {
+      "file": "bfa.lua",
+      "factionID": 2161,
+      "summary": "An ancient Kul Tiran order resurrected to battle the threat of witchcraft, the Order of Embers fights with knowledge gui"
+    },
+    {
+      "file": "bfa.lua",
+      "factionID": 2162,
+      "summary": "Home to farmers, craftsmen, soldiers, and the mysterious tidesages, the Storm's Wake seeks to reclaim Stormsong Valley a"
+    },
+    {
+      "file": "bfa.lua",
+      "factionID": 2373,
+      "summary": "The Unshackled are the Horde-aligned rebels of Nazjatar, operating from Newhome against Queen Azshara and her naga. Thei"
+    },
+    {
+      "file": "bfa.lua",
+      "factionID": 2391,
+      "summary": "The Rustbolt Resistance holds the line against King Mechagon and his evil plans."
+    },
+    {
+      "file": "bfa.lua",
+      "factionID": 2395,
+      "summary": "A species of bee known for their unusual size. While newcomers to Stormsong Valley, they quickly made their presence kno"
+    },
+    {
+      "file": "bfa.lua",
+      "factionID": 2415,
+      "summary": "A group of mogu loyal to the titan keeper Ra, they are charged with defending the Engine of Nalak'sha from N'Zoth's mini"
+    },
+    {
+      "file": "cataclysm.lua",
+      "factionID": 1158,
+      "summary": "Faced with the impending devastation of Mount Hyjal, the most powerful members of the Cenarion Circle have joined forces"
+    },
+    {
+      "file": "cataclysm.lua",
+      "factionID": 1171,
+      "summary": "The elemental plane of earth, Deepholm, is ruled by Therazane and her children, the Stone Lords.  After witnessing the d"
+    },
+    {
+      "file": "cataclysm.lua",
+      "factionID": 1173,
+      "summary": "The cat-like people of Ramkahen are the descendants of the Tol'vir, guardians of Uldum.  Though they've lost their stone"
+    },
+    {
+      "file": "cataclysm.lua",
+      "factionID": 1174,
+      "summary": "The Wildhammer dwarves are known for their near-reckless courage as well as their unsurpassed gryphon-riding skills.  Af"
+    },
+    {
+      "file": "cataclysm.lua",
+      "factionID": 1177,
+      "summary": "Once led by Duke Reginald Baradin II, this fierce army has historic ties to the island stronghold of Tol Barad.  They ha"
+    },
+    {
+      "file": "cataclysm.lua",
+      "factionID": 1178,
+      "summary": "Hellscream's Reach is an elite Horde regiment comprised solely of veterans of multiple tours of duty.   Handpicked by Ga"
+    },
+    {
+      "file": "cataclysm.lua",
+      "factionID": 2417,
+      "summary": "A loose coalition of allies headed by the Tol'vir, the Uldum Accord was founded to protect the Forge of Origination from"
+    },
+    {
+      "file": "draenor.lua",
+      "factionID": 1445,
+      "summary": "The Frostwolf orcs of Frostfire Ridge are a tight-knit family of brutal warriors, well equipped to deal with the savage "
+    },
+    {
+      "file": "draenor.lua",
+      "factionID": 1515,
+      "summary": "Working from the shadows, the Arakkoa Outcasts seek to bring a brighter tomorrow."
+    },
+    {
+      "file": "draenor.lua",
+      "factionID": 1710,
+      "summary": "The defenders of Shattrath struggle to regain control of their capital city, having been betrayed from within."
+    },
+    {
+      "file": "draenor.lua",
+      "factionID": 1711,
+      "summary": "The goblins of the Steamwheedle Preservation Society seek to liberate relics from the ogres of Nagrand with the noble in"
+    },
+    {
+      "file": "draenor.lua",
+      "factionID": 1731,
+      "summary": "Under the leadership of five powerful exarchs, the draenei of Draenor have prospered in a savage world."
+    },
+    {
+      "file": "draenor.lua",
+      "factionID": 1847,
+      "summary": "Yrel has assembled the remaining Exarchs and is calling for a crusade in Velen's name. Together they are working to esta"
+    },
+    {
+      "file": "draenor.lua",
+      "factionID": 1848,
+      "summary": "Seeking to protect Azeroth with a decisive victory on Draenor, Warchief Vol'jin is assembling an elite team of champions"
+    },
+    {
+      "file": "draenor.lua",
+      "factionID": 1849,
+      "summary": "Survivors of a grisly civil war, these beleaguered arakkoans hope the reclamation of apexis artifacts will hold the key "
+    },
+    {
+      "file": "draenor.lua",
+      "factionID": 1850,
+      "summary": "The treacherous wilds of Tanaan Jungle have attracted the craftiest hunters from both Azeroth and Draenor. To defeat the"
+    },
+    {
+      "file": "dragonflight.lua",
+      "factionID": 2510,
+      "summary": "Centered in their most ancient city, the Valdrakken Accord is the unified might of all dragonkind, seeking to protect no"
+    },
+    {
+      "file": "dragonflight.lua",
+      "factionID": 2511,
+      "summary": "The Iskaara Tuskarr have been on the Dragon Isles for generations, living in harmony and telling tales of the world arou"
+    },
+    {
+      "file": "dragonflight.lua",
+      "factionID": 2517,
+      "summary": "Long focused on protecting Azeroth, Wrathion's gaze has now turned to the future of the black dragonflight... and his de"
+    },
+    {
+      "file": "dragonflight.lua",
+      "factionID": 2518,
+      "summary": "Sabellian has established a new generation of uncorrupt black dragons, and works to protect it at all costs."
+    },
+    {
+      "file": "dragonflight.lua",
+      "factionID": 2526,
+      "summary": "The Winterpelt Furbolg speak a language no one seems to understand. Perhaps more will be revealed in the future."
+    },
+    {
+      "file": "dragonflight.lua",
+      "factionID": 2550,
+      "summary": "The Cobalt Assembly was once a place where blue dragons would conjure marvelous creations with arcane magic. Now it has "
+    },
+    {
+      "file": "dragonflight.lua",
+      "factionID": 2574,
+      "summary": "A coalition of various races ready to defend the Emerald Dream against any and all threats."
+    },
+    {
+      "file": "legion.lua",
+      "factionID": 1828,
+      "summary": "The Highmountain Tribe has dwindled in numbers over the years, and with the drogbar threat looming, seek new allies to s"
+    },
+    {
+      "file": "legion.lua",
+      "factionID": 1859,
+      "summary": "These exiled Nightborne elves suffer withdrawals after being cut off from the Nightwell. They oppose their people's alli"
+    },
+    {
+      "file": "legion.lua",
+      "factionID": 1883,
+      "summary": "The druids and their allies in Val'sharah have guarded the Emerald Dream since time immemorial."
+    },
+    {
+      "file": "legion.lua",
+      "factionID": 1894,
+      "summary": "After Legion forces broke the Vault of the Wardens with the aid of Gul'dan, what few Wardens remain are determined to re"
+    },
+    {
+      "file": "legion.lua",
+      "factionID": 1900,
+      "summary": "The ghostly Court of Farondis and its allies continue the fight against an onslaught of invaders on the cursed island of"
+    },
+    {
+      "file": "legion.lua",
+      "factionID": 1948,
+      "summary": "These are the chosen warriors of Odyn, sworn to his service in life and death."
+    },
+    {
+      "file": "legion.lua",
+      "factionID": 2045,
+      "summary": "The coalition of orders dedicated to defeating the Legion at the Tomb of Sargeras and Broken Shore."
+    },
+    {
+      "file": "legion.lua",
+      "factionID": 2165,
+      "summary": "After the fall of Argus, the draenei's finest warriors followed the prime naaru Xe'ra across the cosmos in an eternal wa"
+    },
+    {
+      "file": "legion.lua",
+      "factionID": 2170,
+      "summary": "Although many struggled to oppose the Burning Legion's conquest of Argus, not all were able to escape. Emboldened by the"
+    },
+    {
+      "file": "midnight.lua",
+      "factionID": 2696,
+      "summary": "The Amani conquered and claimed the majority of Eastern Kingdoms for thousands of years, but were forced back into curre"
+    },
+    {
+      "file": "midnight.lua",
+      "factionID": 2699,
+      "summary": "In the vortex of terror and violence that is the Voidstorm, few have the mettle to survive. The Singularity, gathered by"
+    },
+    {
+      "file": "midnight.lua",
+      "factionID": 2704,
+      "summary": "Called to Harandar by the echo of their Goddess' song, the Hara'ti watch over her cradle in hopes that she may one day r"
+    },
+    {
+      "file": "midnight.lua",
+      "factionID": 2770,
+      "summary": "Deep within the Voidstorm, the war between Vidious and Ziadan rages on."
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1067,
+      "summary": "The Forsaken tasked by Sylvanas Windrunner with enacting Undercity's vengeance against Arthas by delivering the latest s"
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1068,
+      "summary": "This organization seeks to find the origin of the dwarven race by collecting Titan artifacts.  Their most recent researc"
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1073,
+      "summary": "The tuskarr are a tough but peaceful people who derive their livelihood from fishing and whaling.  Their settlements hav"
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1090,
+      "summary": "The mages and archmages running the city of Dalaran.  Faced with the rising threats of the Blue Dragonflight and the Sco"
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1091,
+      "summary": "With the Blue Dragonflight's violent upheaval against all mortal users of magic, the remaining dragonflights have banded"
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1098,
+      "summary": "Freed from the grasp of the Lich King, his former Death Knights have regrouped against him under the banner of Highlord "
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1104,
+      "summary": "Driven from their lands by the Scourge, this fierce tribe of wolvar stumbled upon Sholazar Basin, where they intend to m"
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1105,
+      "summary": "The gorlocs of Sholazar Basin are a race of reptilian creatures who see themselves as guardians of the titan technology "
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1106,
+      "summary": "Led by Tirion Fordring, the Argent Crusade combines the reformed Order of the Silver Hand with the Argent Dawn in one fi"
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1119,
+      "summary": "The frost giants of the Storm Peaks are a war-like race that makes their home in Dun Niffelem."
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1124,
+      "summary": "Traditionally barred from Dalaran, the Horde has been accepted into the city through the efforts of Archmage Aethas Sunr"
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1126,
+      "summary": "This mysterious race of frost dwarves makes their home in the Storm Peaks.  They've recently befriended members of the E"
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1156,
+      "summary": "Under a pact by Tirion Fordring and Darion Mograine, the Argent Crusade and the Knights of the Ebon Blade have set aside"
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 932,
+      "summary": "An ancient order of draenei priests once run by Velen, the Aldor are currently led by High Priestess Ishanah.  They are "
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 933,
+      "summary": "Led by Nexus-Prince Haramad, the Consortium is a loosely affiliated cartel of ethereal smugglers, traders and thieves th"
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 934,
+      "summary": "Voren'thal the Seer leads the dissident blood elves who've rejected Kael'thas' path to power.  They've joined forces wit"
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 935,
+      "summary": "The Sha'tar are a group of powerful naaru who rule over a rebuilt Shattrath City.  With the help of the Aldor and the Sc"
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 941,
+      "summary": "This reclusive group of brown-skinned orcs has escaped any form of demonic corruption.  They have retained their traditi"
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 942,
+      "summary": "An exploratory force sent to Outland by the Cenarion Circle to study surviving life forms.  The Cenarion Expedition has "
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 946,
+      "summary": "Vestiges of the Sons of Lothar, veterans of the Alliance that first came into Draenor, have steadfastly held on to this "
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 947,
+      "summary": "The expedition sent through the Dark Portal by Thrall has built a stronghold in Hellfire Peninsula.  Thrallmar serves as"
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 970,
+      "summary": "The sporelings are a mostly peaceful race of mushroom-men native to Outland. Their home is located in the southern bogs "
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 978,
+      "summary": "Draenei for \\"
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 989,
+      "summary": "The Keepers of Time are bronze dragons hand-picked by Nozdormu to watch over the Caverns of Time."
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 990,
+      "summary": "A secretive subgroup of the Bronze Dragonflight, led by Soridormi, prime mate of Nozdormu."
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 1011,
+      "summary": "The refugees of Shattrath come from diverse backgrounds and races.  Word of helpful deeds spreads quickly among the Deni"
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 1012,
+      "summary": "The elite of the Broken tribe known as the Ashtongue, officially aligned with Illidan. The Deathsworn are Akama's most t"
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 1015,
+      "summary": "This unusual brood of dragons was spawned from the eggs of Deathwing's black dragonflight, and infused with raw nether-e"
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 1031,
+      "summary": "An airborne military force created by Shattrath City to deal with the threats that loom in the highest reaches of Outlan"
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 1038,
+      "summary": "The enlightened denizens of Ogri'la have made their dwelling in the western Blade's Edge Mountains, where proximity to a"
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 1416,
+      "summary": "Akama is distrustful of Warlocks after witnessing Illidan's fall to his own corruption, followed by the invasion of the "
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1269,
+      "summary": "This mysterious society of Pandaren intend to solve the Mogu problem once and for all."
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1270,
+      "summary": "The shadowy protectors of Pandaria's temples, the Shado-Pan are wrought with mystery."
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1271,
+      "summary": "Guardians of the East Temple"
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1272,
+      "summary": "The Tillers are peaceful and productive pandaren, working with the land to feed the massive appetites of their people."
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1302,
+      "summary": "The Anglers are a group of Pandaren fisherman that hope to feed their people and grow their knowledge of fishing."
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1337,
+      "summary": "These Mantid Elders are untouched by the corruption and insanity that has overtaken the remainder of the Mantid Swarm. T"
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1359,
+      "summary": "Black Prince Wrathion is the last of the black dragons. He has been known to richly reward those who earn his trust and "
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1375,
+      "summary": "Horde forces in Pandaria, stationed at Domination Point in Krasarang Wilds."
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1376,
+      "summary": "Alliance forces in Pandaria, stationed at Lion's Landing in Krasarang Wilds."
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1387,
+      "summary": "Ignited by Jaina's fury, the Kirin Tor Offensive seek to seize Thunder Isle for the glory of the Alliance!"
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1388,
+      "summary": "Outcast from Dalaran, the Sunreaver Onslaught fight to obtain powerful mogu artifacts from among the ruins of Thunder Is"
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1435,
+      "summary": "These valorous Shado-Pan venture into the Throne of Thunder to vanquish the evil found within, and exact justice for the"
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1492,
+      "summary": "Shaohao, the long lost Emperor of the Pandaren people, is a personage worthy of deep respect."
+    },
+    {
+      "file": "shadowlands.lua",
+      "factionID": 2407,
+      "summary": "Kyrian who complete the arduous process of purging their mortal encumbrances are deemed worthy of the rite of ascension,"
+    },
+    {
+      "file": "shadowlands.lua",
+      "factionID": 2410,
+      "summary": "Long ago, the Primus established the five houses of Maldraxxus to build the ultimate fighting force. Through might, clev"
+    },
+    {
+      "file": "shadowlands.lua",
+      "factionID": 2413,
+      "summary": "After countless ages spent under the rule of Sire Denathrius, authority in Revendreth is now shared amongst the Court of"
+    },
+    {
+      "file": "shadowlands.lua",
+      "factionID": 2432,
+      "summary": "Ve'nari knows more about the Maw than anyone, and she might share a fraction of that information with you if you earn he"
+    },
+    {
+      "file": "shadowlands.lua",
+      "factionID": 2439,
+      "summary": "Fiercely devoted to the Accuser, these archivists seek to restore and catalog the sinstones fragmented by the Lord Chamb"
+    },
+    {
+      "file": "shadowlands.lua",
+      "factionID": 2464,
+      "summary": "The anima drought and Drust invasion consume the Winter Queen and Wild Hunt's attention, leaving the droman of the Court"
+    },
+    {
+      "file": "shadowlands.lua",
+      "factionID": 2465,
+      "summary": "Called to serve the Winter Queen in times of dire need, the Wild Hunt assembles the finest huntresses and hunters in all"
+    },
+    {
+      "file": "shadowlands.lua",
+      "factionID": 2470,
+      "summary": "The combined might of the Shadowlands covenants, brought forth to breach the Sanctum of Domination."
+    },
+    {
+      "file": "shadowlands.lua",
+      "factionID": 2478,
+      "summary": "Once members of Cartel Al, the Enlightened have abandoned the pursuit of profit and glory out of devotion to the First O"
+    },
+    {
+      "file": "war_within.lua",
+      "factionID": 2570,
+      "summary": "The Hallowfall Expedition is the Arathi military and civic force centered on Mereldar. Most reputation progress comes fr"
+    },
+    {
+      "file": "war_within.lua",
+      "factionID": 2590,
+      "summary": "The Council of Dornogal is the civic authority based in Foundation Hall. Reputation is tied to Isle of Dorn activity, ci"
+    },
+    {
+      "file": "war_within.lua",
+      "factionID": 2594,
+      "summary": "The Machine Speakers coordinate reconstruction and maintenance throughout the Ringing Deeps. Their reputation is mainly "
+    },
+    {
+      "file": "war_within.lua",
+      "factionID": 2658,
+      "summary": "The K'aresh Trust unites brokers, ethereals, and allied survivors trying to stabilize a shattered world under threat fro"
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 47,
+      "summary": "This Alliance capital is the pride of the Dun Morogh dwarves.  Home to King Magni."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 59,
+      "summary": "The dwarves of the Thorium Brotherhood epitomize excellence in craftsmanship and are bent on unlocking the secrets of Bl"
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 68,
+      "summary": "Led by Sylvanas Windrunner, the Forsaken have joined a tenuous alliance with the Horde and established this capital in t"
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 69,
+      "summary": "This Alliance capital is populated by Night Elves and is located in the Island of Teldrassil.  Ruled by the Priestess of"
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 72,
+      "summary": "One of the last bastions of human power, this Alliance capital is ruled by the young but wise king, Anduin Wrynn."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 76,
+      "summary": "Founded by Thrall, this Horde capital city is home to many of the proud orc clans of Durotar."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 81,
+      "summary": "Baine Bloodhoof leads his people, the proud Tauren, from this mighty Horde capital."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 369,
+      "summary": "Capital of the Steamwheedle Cartel and home to goblinhood's finest engineers, alchemists and merchants."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 470,
+      "summary": "Part of the Steamwheedle Cartel, this goblin city provides a neutral haven for those that wish to trade goods and servic"
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 529,
+      "summary": "An organization focused on protecting Azeroth from the threat of the Scourge.  Strongholds of the Argent Dawn can be fou"
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 530,
+      "summary": "This tribe of exiled trolls has joined forces with Thrall and the Horde.  They now call Durotar their home, which they s"
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 576,
+      "summary": "As the last uncorrupted furbolg tribe, the Timbermaw seek to preserve their spiritual ways and end the suffering of thei"
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 577,
+      "summary": "This trading post is run by the goblins of the Steamwheedle Cartel and it sits in the crossroads of Winterspring's main "
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 609,
+      "summary": "The druids of Cenarion Circle are guardians of nature and make their home in tranquil Moonglade."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 749,
+      "summary": "These elementals have made their home on the islands east of Azshara.  Sworn enemies of the armies of Ragnaros."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 910,
+      "summary": "The descendants of the Bronze Dragonflight are the guardians of time and care little for the mortal races."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 930,
+      "summary": "The naaru vessel that brought the draenei to Azeroth.  Though stranded in the Azuremyst Isles, it acts as a home city fo"
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 1133,
+      "summary": "Run by the ruthless Trade Prince Gallywix, the Bilgewater Cartel is the most powerful trading company on the Isle of Kez"
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 1134,
+      "summary": "The people of Gilneas are a nation of survivors.  Having walled themselves off from the rest of humanity, they must now "
+    },
+    {
+      "file": "neutral_hubs.lua",
+      "factionID": 909,
+      "summary": "A carnival that showcases the weird and the extraordinary, located on a mysterious island only accessible for the first "
+    }
+  ]
+}
