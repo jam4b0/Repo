@@ -150,10 +150,15 @@ function ns.UI:Init()
 
     frame.detail.title = frame.detail:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
     frame.detail.title:SetPoint("TOPLEFT", frame.detail, "TOPLEFT", 12, -10)
+    frame.detail.title:SetPoint("RIGHT", frame.detail, "RIGHT", -12, 0)
+    frame.detail.title:SetJustifyH("LEFT")
+    frame.detail.title:SetJustifyV("TOP")
     frame.detail.title:SetTextColor(unpack(Styles.text))
 
     frame.detail.meta = frame.detail:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    frame.detail.meta:SetPoint("TOPLEFT", frame.detail, "TOPLEFT", 12, -34)
+    frame.detail.meta:SetPoint("TOPLEFT", frame.detail.title, "BOTTOMLEFT", 0, -6)
+    frame.detail.meta:SetPoint("RIGHT", frame.detail, "RIGHT", -12, 0)
+    frame.detail.meta:SetJustifyH("LEFT")
     frame.detail.meta:SetTextColor(unpack(Styles.accentText))
 
     frame.detail.source = frame.detail:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
@@ -170,7 +175,7 @@ function ns.UI:Init()
     frame.detail.contentMeta:SetTextColor(unpack(Styles.subtleText))
 
     frame.detail.body = frame.detail:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    frame.detail.body:SetPoint("TOPLEFT", frame.detail, "TOPLEFT", 12, -58)
+    frame.detail.body:SetPoint("TOPLEFT", frame.detail.meta, "BOTTOMLEFT", 0, -10)
     frame.detail.body:SetPoint("RIGHT", frame.detail, "RIGHT", -12, 0)
     frame.detail.body:SetJustifyH("LEFT")
     frame.detail.body:SetJustifyV("TOP")
@@ -406,6 +411,7 @@ function ns.UI:UpdateDetails(details, count, profile)
     end
 
     detail.title:SetText(details.name or UNKNOWN)
+    detail.title:SetWidth((profile.width or self.frame:GetWidth() or 320) - 40)
     detail.meta:SetText(progressText)
     detail.source:SetText("")
     detail.contentMeta:SetText("")
@@ -438,8 +444,19 @@ function ns.UI:UpdateDetails(details, count, profile)
         }
     end
 
+    local titleHeight = math.ceil(math.max(20, detail.title:GetStringHeight() or 0))
+    local metaTop = -10 - titleHeight - 6
+    detail.meta:ClearAllPoints()
+    detail.meta:SetPoint("TOPLEFT", detail, "TOPLEFT", 12, metaTop)
+    detail.meta:SetPoint("RIGHT", detail, "RIGHT", -12, metaTop)
+
+    local bodyTop = metaTop - 18
+    detail.body:ClearAllPoints()
+    detail.body:SetPoint("TOPLEFT", detail, "TOPLEFT", 12, bodyTop)
+    detail.body:SetPoint("RIGHT", detail, "RIGHT", -12, bodyTop)
+
     local bodyHeight = math.ceil(math.max(52, detail.body:GetStringHeight() or 0))
-    local contentTopOffset = -58 - bodyHeight - 8
+    local contentTopOffset = bodyTop - bodyHeight - 8
     local currentTopOffset = contentTopOffset
     local entryIndex = 0
 
