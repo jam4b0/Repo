@@ -43,6 +43,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 207,
+                        title = "Therazane's Throne",
+                    },
+                    name = "D'lom the Collector",
+                },
+            },
             source = "curated",
             summary = "The elemental plane of earth, Deepholm, is ruled by Therazane and her children, the Stone Lords.  After witnessing the devastation Deathwing and his followers caused her realm, Therazane treats all outsiders with open hostility.",
         },

@@ -137,6 +137,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 388,
+                        title = "Anglers Wharf",
+                    },
+                    name = "Nat Pagle",
+                },
+            },
             source = "curated",
             summary = "The Anglers are a group of Pandaren fisherman that hope to feed their people and grow their knowledge of fishing.",
         },

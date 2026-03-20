@@ -96,6 +96,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 550,
+                        title = "Ruins of Na'gwa",
+                    },
+                    name = "Kwilax Fuseshiv",
+                },
+            },
             source = "curated",
             summary = "The goblins of the Steamwheedle Preservation Society seek to liberate relics from the ogres of Nagrand with the noble intention of selling them to the highest bidder.",
         },
@@ -192,6 +202,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 543,
+                        title = "Fang'rila",
+                    },
+                    name = "Z'tenga the Walker",
+                },
+            },
             source = "curated",
             summary = "The treacherous wilds of Tanaan Jungle have attracted the craftiest hunters from both Azeroth and Draenor. To defeat the beasts of Tanaan, one must become a beast.",
         },

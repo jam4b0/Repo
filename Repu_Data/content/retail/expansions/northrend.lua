@@ -96,6 +96,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 115,
+                        title = "Wyrmrest Temple",
+                    },
+                    name = "Cielstrasza",
+                },
+            },
             source = "curated",
             summary = "With the Blue Dragonflight's violent upheaval against all mortal users of magic, the remaining dragonflights have banded under the leadership of the Red Dragonflight to combat their wayward kin.",
         },
@@ -117,6 +127,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 118,
+                        title = "The Shadow Vault",
+                    },
+                    name = "Duchess Mynx",
+                },
+            },
             source = "curated",
             summary = "Freed from the grasp of the Lich King, his former Death Knights have regrouped against him under the banner of Highlord Darion Mograine.",
         },

@@ -45,6 +45,15 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        title = "Maruukai",
+                    },
+                    name = "Quartermaster Huseng",
+                },
+            },
             source = "curated",
             summary = "Centaur clans roam the Ohn'ahran Plains, where they follow the call of the wind and seek the thrill of the hunt.",
         },
@@ -66,6 +75,15 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        title = "Dragonscale Basecamp",
+                    },
+                    name = "Cataloger Jakes",
+                },
+            },
             source = "curated",
             summary = "A joint expedition of the Explorers' League and Reliquary, this fearless group of adventurers, scholars, and crafters seek to uncover the many mysteries of the Dragon Isles.",
         },
@@ -87,6 +105,15 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        title = "Seat of the Aspects",
+                    },
+                    name = "Unatos",
+                },
+            },
             source = "curated",
             summary = "Centered in their most ancient city, the Valdrakken Accord is the unified might of all dragonkind, seeking to protect not only their island home but all of Azeroth.",
         },
@@ -108,6 +135,15 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        title = "Iskaara",
+                    },
+                    name = "Murik",
+                },
+            },
             source = "curated",
             summary = "The Iskaara Tuskarr have been on the Dragon Isles for generations, living in harmony and telling tales of the world around them.",
         },
