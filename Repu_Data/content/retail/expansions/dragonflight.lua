@@ -170,6 +170,13 @@ api.RegisterRetailContentModule({
                     },
                     title = "Waking Shores black dragonflight content",
                 },
+                {
+                    kind = "Recurring",
+                    location = {
+                        title = "Obsidian Citadel",
+                    },
+                    title = "Obsidian Citadel support tasks",
+                },
             },
             confidence = "medium",
             source = "curated",
@@ -183,6 +190,13 @@ api.RegisterRetailContentModule({
                         title = "The Waking Shores",
                     },
                     title = "Waking Shores black dragonflight content",
+                },
+                {
+                    kind = "Recurring",
+                    location = {
+                        title = "Obsidian Citadel",
+                    },
+                    title = "Obsidian Citadel support tasks",
                 },
             },
             confidence = "medium",
@@ -225,6 +239,13 @@ api.RegisterRetailContentModule({
                         title = "The Azure Span",
                     },
                     title = "Azure Span side quests",
+                },
+                {
+                    kind = "Recurring",
+                    location = {
+                        title = "Winterpelt Hollow",
+                    },
+                    title = "Language and ritual restoration work",
                 },
             },
             confidence = "medium",
@@ -289,6 +310,13 @@ api.RegisterRetailContentModule({
                         title = "The Azure Span",
                     },
                     title = "Azure Span side content",
+                },
+                {
+                    kind = "Recurring",
+                    location = {
+                        title = "The Azure Span",
+                    },
+                    title = "Arcane overflow and key turn-ins",
                 },
             },
             confidence = "medium",

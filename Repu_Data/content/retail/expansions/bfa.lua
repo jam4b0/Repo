@@ -22,6 +22,13 @@ api.RegisterRetailContentModule({
                     },
                     title = "Dazar'alor",
                 },
+                {
+                    kind = "Campaign",
+                    location = {
+                        title = "Kul Tiras",
+                    },
+                    title = "War campaign chapters and foothold work",
+                },
             },
             confidence = "medium",
             source = "curated",
@@ -281,6 +288,13 @@ api.RegisterRetailContentModule({
                         title = "Stormsong Valley",
                     },
                     title = "Stormsong Valley side content",
+                },
+                {
+                    kind = "Recurring",
+                    location = {
+                        title = "Stormsong Valley",
+                    },
+                    title = "Bee jelly turn-ins and ranch support",
                 },
             },
             confidence = "medium",
