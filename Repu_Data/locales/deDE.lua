@@ -2337,6 +2337,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     nameKey = "npc.ranger_allorn.name",
                 },
             },
+            summaryKey = "faction.2710.summary",
         },
         [2711] = {
             activities = {
@@ -2357,6 +2358,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     nameKey = "npc.apprentice_diell.name",
                 },
             },
+            summaryKey = "faction.2711.summary",
         },
         [2712] = {
             activities = {
@@ -2377,6 +2379,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     nameKey = "npc.armorsmith_goldcrest.name",
                 },
             },
+            summaryKey = "faction.2712.summary",
         },
         [2713] = {
             activities = {
@@ -2397,6 +2400,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     nameKey = "npc.ranger_allorn.name",
                 },
             },
+            summaryKey = "faction.2713.summary",
         },
         [2714] = {
             activities = {
@@ -2417,6 +2421,7 @@ api.RegisterLocaleDomain("retail_content", "deDE", {
                     nameKey = "npc.neriv.name",
                 },
             },
+            summaryKey = "faction.2714.summary",
         },
         [2736] = {
             activities = {

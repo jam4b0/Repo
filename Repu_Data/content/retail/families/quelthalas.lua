@@ -63,6 +63,7 @@ api.RegisterRetailContentModule({
                 },
             },
             source = "seed",
+            summaryKey = "faction.2710.summary",
             summary = "Through elegance, intellect, and political precision, the Court ensures that Silvermoon City's light shines eternally radiant, and distinctly its own.",
         },
         [2711] = {
@@ -92,6 +93,7 @@ api.RegisterRetailContentModule({
                 },
             },
             source = "seed",
+            summaryKey = "faction.2711.summary",
             summary = "Scholars, arcanists, and politicians of Silvermoon City, with intellects sharpened by hundreds of years of study.",
         },
         [2712] = {
@@ -121,6 +123,7 @@ api.RegisterRetailContentModule({
                 },
             },
             source = "seed",
+            summaryKey = "faction.2712.summary",
             summary = "Silvermoon City's elves-at-arms. Stalwart heroes and chosen champions of the sun, they follow Lady Liadrin into battle to smite the foes of the Sin'dorei.",
         },
         [2713] = {
@@ -150,6 +153,7 @@ api.RegisterRetailContentModule({
                 },
             },
             source = "seed",
+            summaryKey = "faction.2713.summary",
             summary = "Elite rangers of the Sin'dorei, formally tasked with guarding the forests, borders, and wildlands of the Eversong Woods.",
         },
         [2714] = {
@@ -179,6 +183,7 @@ api.RegisterRetailContentModule({
                 },
             },
             source = "seed",
+            summaryKey = "faction.2714.summary",
             summary = "12.0 Z1 Eversong - Court Friendship Faction",
         },
     },
