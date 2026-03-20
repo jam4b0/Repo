@@ -292,8 +292,8 @@ local function createSyntheticFaction(match)
     end
 
     local factionData = match.factionID and ns.Compat:GetFactionDataByID(match.factionID) or nil
-    local name = match.name or (factionData and factionData.name) or UNKNOWN
-    local description = match.description or (factionData and factionData.description) or nil
+    local name = (factionData and factionData.name) or match.name or UNKNOWN
+    local description = (factionData and factionData.description) or match.description or nil
     local hasRepEntry = factionData and (factionData.hasRep == true or factionData.hasRepEntry == true or (factionData.renownLevel and factionData.renownLevel > 0)) or false
     local standingLabel = Locale:Get("UI_NO_REP_ENTRY")
     local minValue = factionData and (factionData.min or factionData.barMin) or 0
