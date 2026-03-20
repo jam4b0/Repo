@@ -47,6 +47,37 @@ Der aktuelle Stand:
 - `content/retail/legacy/`: stabile Heimat- und Legacy-Fraktionen
 - `content/retail/summary/`: generierte Startdatensaetze fuer noch nicht vertiefte Fraktionen
 
+## Locale-System
+
+Das Projekt benutzt derzeit bewusst **zwei verschiedene Locale-Typen**:
+
+- `Repu/locales/*.lua`
+  - klassische UI-Lokalisierung
+  - flache Textkeys wie `OPTION_LOCK`, `DEBUG_STATUS`, `DETAIL_NO_DESCRIPTION`
+  - verantwortlich fuer Fenstertexte, Optionen, Debugausgaben und Statusmeldungen
+
+- `Repu_Data/locales/*.lua`
+  - lokalisierte **Content-Overlays** pro `factionID`
+  - Felder wie `summary`, `activities`, `quartermasters`
+  - verantwortlich fuer sprachabhaengige Fraktionsinhalte, nicht fuer die UI von `Repu`
+
+Wichtig:
+
+- `Repu` und `Repu_Data` verwenden also **nicht dieselbe Dateiform** fuer Lokalisierung.
+- Das ist beabsichtigt:
+  - `Repu` lokalisiert Oberflaechentexte
+  - `Repu_Data` lokalisiert Inhaltsdaten
+- `Repu_Map` hat aktuell noch keine eigene ausgepraegte Locale-Schicht und soll spaeter auf dasselbe gemeinsame I18n-Zielmodell gehoben werden.
+
+Fuer `Repu_Data` gilt ausserdem:
+
+- sprachneutrale Struktur bleibt in `content/retail/**/*.lua`
+- sprachabhaengige Textfelder werden in `locales/*.lua` ueberlagert
+- fuer echte Blizzard-Ruffraktionen gilt bei `enUS`:
+  - **Blizzard Game Data API `description` zuerst**
+  - danach kuratierter Addon-Text
+  - erst zuletzt generischer Fallback
+
 ## Datenquellen-Matrix
 
 Feste Projektregel: jeder Datentyp hat genau eine Primaerquelle.

@@ -33,6 +33,15 @@
 - Content-Einträge sollen nach Möglichkeit `source` und `confidence` tragen.
 - Quellen wie Wowhead dienen als Offline-Referenz; das Addon macht keine Live-Abfragen.
 
+## Locale-Regeln
+
+- `Repu/locales/*.lua` sind ausschliesslich fuer UI- und Systemtexte gedacht.
+- `Repu_Data/locales/*.lua` sind keine klassischen UI-Locales, sondern Content-Overlays pro `factionID`.
+- Neue UI-Texte gehoeren nie nach `Repu_Data/locales/`.
+- Neue Fraktionsinhalte gehoeren nie nach `Repu/locales/`.
+- Bei echten Blizzard-Ruffraktionen soll `enUS` nach Moeglichkeit die offizielle Blizzard-`description` als Primaertext nutzen.
+- Kuratierte Summary-Texte in `Repu_Data` sind Fallbacks oder ergaenzende Spezialtexte, keine bevorzugte Quelle fuer API-Fraktionen.
+
 ## Quellenregeln
 
 - `UiMap`, Standort, `mapID`, `mapChain` kommen primaer aus dem WoW-Client.
