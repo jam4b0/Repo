@@ -16,6 +16,14 @@ api.RegisterRetailContentModule({
                     },
                     title = "Darkmoon Island",
                 },
+                {
+                    kind = "Recurring",
+                    location = {
+                        mapID = 407,
+                        title = "Darkmoon Island",
+                    },
+                    title = "Monthly faire quests and turn-ins",
+                },
             },
             confidence = "medium",
             source = "curated",

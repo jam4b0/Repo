@@ -39,6 +39,14 @@ api.RegisterRetailContentModule({
                     },
                     title = "Burning Steppes",
                 },
+                {
+                    kind = "Recurring",
+                    location = {
+                        mapID = 242,
+                        title = "Blackrock Depths",
+                    },
+                    title = "Dark Iron residue and crafting turn-ins",
+                },
             },
             confidence = "medium",
             quartermasters = {
@@ -193,6 +201,14 @@ api.RegisterRetailContentModule({
                     },
                     title = "Eastern Plaguelands",
                 },
+                {
+                    kind = "Recurring",
+                    location = {
+                        mapID = 23,
+                        title = "Eastern Plaguelands",
+                    },
+                    title = "Scourgestone turn-ins and cauldron support",
+                },
             },
             confidence = "medium",
             source = "curated",
@@ -222,6 +238,14 @@ api.RegisterRetailContentModule({
                         title = "Felwood",
                     },
                     title = "Felwood",
+                },
+                {
+                    kind = "Recurring",
+                    location = {
+                        mapID = 77,
+                        title = "Timbermaw Hold",
+                    },
+                    title = "Bead turn-ins and tunnel support",
                 },
             },
             confidence = "medium",
@@ -285,6 +309,14 @@ api.RegisterRetailContentModule({
                     },
                     title = "Silithus",
                 },
+                {
+                    kind = "Recurring",
+                    location = {
+                        mapID = 81,
+                        title = "Silithus",
+                    },
+                    title = "Field duty and nature support work",
+                },
             },
             confidence = "medium",
             source = "curated",
@@ -298,6 +330,14 @@ api.RegisterRetailContentModule({
                         title = "Molten Core",
                     },
                     title = "Molten Core",
+                },
+                {
+                    kind = "Recurring",
+                    location = {
+                        mapID = 76,
+                        title = "Azshara",
+                    },
+                    title = "Legacy elemental turn-ins",
                 },
             },
             confidence = "medium",
@@ -319,6 +359,14 @@ api.RegisterRetailContentModule({
                         title = "Ruins of Ahn'Qiraj",
                     },
                     title = "Ruins of Ahn'Qiraj",
+                },
+                {
+                    kind = "Recurring",
+                    location = {
+                        mapID = 81,
+                        title = "Silithus",
+                    },
+                    title = "War effort and scarab lord era turn-ins",
                 },
             },
             confidence = "medium",
