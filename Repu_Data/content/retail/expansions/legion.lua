@@ -58,6 +58,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 680,
+                        title = "Shal'Aran",
+                    },
+                    name = "First Arcanist Thalyssra",
+                },
+            },
             source = "curated",
             summary = "These exiled Nightborne elves suffer withdrawals after being cut off from the Nightwell. They oppose their people's alliance with the Legion and fight for some kind of redemption.",
         },
@@ -192,6 +202,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 646,
+                        title = "Deliverance Point",
+                    },
+                    name = "Warmage Kath'leen",
+                },
+            },
             source = "curated",
             summary = "The coalition of orders dedicated to defeating the Legion at the Tomb of Sargeras and Broken Shore.",
         },
@@ -247,6 +267,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 830,
+                        title = "Vindicaar",
+                    },
+                    name = "Toraan the Revered",
+                },
+            },
             source = "curated",
             summary = "Although many struggled to oppose the Burning Legion's conquest of Argus, not all were able to escape. Emboldened by the arrival of new allies, these refugees and outcasts stand united in their mission to reclaim their home.",
         },

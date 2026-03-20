@@ -116,6 +116,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 245,
+                        title = "Baradin Base Camp",
+                    },
+                    name = "Quartermaster Brazie",
+                },
+            },
             source = "curated",
             summary = "Once led by Duke Reginald Baradin II, this fierce army has historic ties to the island stronghold of Tol Barad.  They have joined the forces of the Alliance in an effort to repeal the Horde invaders and gain control of this strategic island.",
         },
@@ -139,6 +149,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 245,
+                        title = "Hellscream's Grasp",
+                    },
+                    name = "Pogg",
+                },
+            },
             source = "curated",
             summary = "Hellscream's Reach is an elite Horde regiment comprised solely of veterans of multiple tours of duty.   Handpicked by Garrosh himself, he has commanded them to take complete control of Tol Barad.  Failure is not an option.",
         },
