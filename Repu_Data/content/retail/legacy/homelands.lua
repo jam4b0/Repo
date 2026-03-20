@@ -18,7 +18,7 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
-            source = "seed",
+            source = "curated",
             summary = "This Alliance capital is the pride of the Dun Morogh dwarves.  Home to King Magni.",
         },
         [59] = {
@@ -41,7 +41,7 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
-            source = "seed",
+            source = "curated",
             summary = "The dwarves of the Thorium Brotherhood epitomize excellence in craftsmanship and are bent on unlocking the secrets of Blackrock Mountain.",
         },
         [68] = {
@@ -56,7 +56,7 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
-            source = "seed",
+            source = "curated",
             summary = "Led by Sylvanas Windrunner, the Forsaken have joined a tenuous alliance with the Horde and established this capital in the vast depths under the Ruins of Lordaeron.",
         },
         [69] = {
@@ -71,7 +71,7 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
-            source = "seed",
+            source = "curated",
             summary = "This Alliance capital is populated by Night Elves and is located in the Island of Teldrassil.  Ruled by the Priestess of the Moon, Tyrande Whisperwind.",
         },
         [72] = {
@@ -86,7 +86,7 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
-            source = "seed",
+            source = "curated",
             summary = "One of the last bastions of human power, this Alliance capital is ruled by the young but wise king, Anduin Wrynn.",
         },
         [76] = {
@@ -101,7 +101,7 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
-            source = "seed",
+            source = "curated",
             summary = "Founded by Thrall, this Horde capital city is home to many of the proud orc clans of Durotar.",
         },
         [81] = {
@@ -116,7 +116,7 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
-            source = "seed",
+            source = "curated",
             summary = "Baine Bloodhoof leads his people, the proud Tauren, from this mighty Horde capital.",
         },
         [369] = {
@@ -185,7 +185,7 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
-            source = "seed",
+            source = "curated",
             summary = "An organization focused on protecting Azeroth from the threat of the Scourge.  Strongholds of the Argent Dawn can be found in the Eastern and Western Plaguelands.",
         },
         [530] = {
@@ -200,7 +200,7 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
-            source = "seed",
+            source = "curated",
             summary = "This tribe of exiled trolls has joined forces with Thrall and the Horde.  They now call Durotar their home, which they share with their orc allies.",
         },
         [576] = {
@@ -215,7 +215,7 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
-            source = "seed",
+            source = "curated",
             summary = "As the last uncorrupted furbolg tribe, the Timbermaw seek to preserve their spiritual ways and end the suffering of their brethren.",
         },
         [577] = {
@@ -277,7 +277,7 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
-            source = "seed",
+            source = "curated",
             summary = "The druids of Cenarion Circle are guardians of nature and make their home in tranquil Moonglade.",
         },
         [749] = {
@@ -343,7 +343,7 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
-            source = "seed",
+            source = "curated",
             summary = "The naaru vessel that brought the draenei to Azeroth.  Though stranded in the Azuremyst Isles, it acts as a home city for this noble race.",
         },
         [1133] = {
@@ -358,7 +358,7 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
-            source = "seed",
+            source = "curated",
             summary = "Run by the ruthless Trade Prince Gallywix, the Bilgewater Cartel is the most powerful trading company on the Isle of Kezan. From their headquarters at Bilgewater Port, the cartel dominates trade all over the South Seas.",
         },
         [1134] = {
@@ -373,7 +373,7 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
-            source = "seed",
+            source = "curated",
             summary = "The people of Gilneas are a nation of survivors.  Having walled themselves off from the rest of humanity, they must now face new threats from within.",
         },
     },
