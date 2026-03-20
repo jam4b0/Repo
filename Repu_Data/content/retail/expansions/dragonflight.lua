@@ -186,15 +186,50 @@ api.RegisterRetailContentModule({
                 {
                     kind = "Hub",
                     location = {
+                        mapID = 2112,
                         title = "Valdrakken",
+                        x = 0.360,
+                        y = 0.632,
                     },
-                    title = "Valdrakken professions hub",
+                    title = "Artisan's Market",
+                },
+                {
+                    kind = "Weekly",
+                    location = {
+                        mapID = 2112,
+                        title = "Valdrakken",
+                        x = 0.360,
+                        y = 0.632,
+                    },
+                    title = "Profession weeklies in Valdrakken",
+                },
+                {
+                    kind = "Crafting",
+                    location = {
+                        mapID = 2112,
+                        title = "Valdrakken",
+                        x = 0.360,
+                        y = 0.632,
+                    },
+                    title = "Crafting Orders and profession progression",
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 2112,
+                        title = "Artisan's Market",
+                        x = 0.360,
+                        y = 0.632,
+                    },
+                    name = "Rabul",
+                },
+            },
             source = "curated",
             summarySource = "curated",
-            summary = "Retail content for this faction is centered on Valdrakken professions hub.",
+            summary = "The Dragon Isles branch of the Artisan's Consortium brings crafters, gatherers, and traders together in Valdrakken's Artisan's Market. Most of its reputation comes from profession work, weekly tasks, and the broader crafting order ecosystem.",
         },
         [2550] = {
             activities = {
@@ -215,12 +250,35 @@ api.RegisterRetailContentModule({
                 {
                     kind = "Weekly",
                     location = {
-                        title = "Thaldraszus",
+                        mapID = 2025,
+                        title = "Tyrhold Reservoir",
+                        x = 0.612,
+                        y = 0.320,
                     },
                     title = "When Time Needs Mending",
                 },
+                {
+                    kind = "Recurring",
+                    location = {
+                        mapID = 2025,
+                        title = "Thaldraszus",
+                    },
+                    title = "Time Rifts and temporal anomalies",
+                },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 2025,
+                        title = "Tyrhold Reservoir",
+                        x = 0.612,
+                        y = 0.320,
+                    },
+                    name = "Soridormi",
+                },
+            },
             source = "curated",
             summary = "Soridormi's timewalkers travel the timeways and defend our world against limitless alternatives. When our timeline is under temporal assault or falling apart, Soridormi is the commander who holds everything together.",
         },
@@ -315,19 +373,47 @@ api.RegisterRetailContentModule({
                 {
                     kind = "Recurring",
                     location = {
-                        title = "Thaldraszus",
+                        mapID = 2025,
+                        title = "Azerothian Archives",
+                        x = 0.571,
+                        y = 0.664,
                     },
                     title = "Azerothian Archives",
                 },
                 {
                     kind = "Zone",
                     location = {
+                        mapID = 2025,
                         title = "Tyrhold",
+                        x = 0.571,
+                        y = 0.664,
                     },
                     title = "Archive activities in Tyrhold",
                 },
+                {
+                    kind = "Weekly",
+                    location = {
+                        mapID = 2025,
+                        title = "Azerothian Archives",
+                        x = 0.571,
+                        y = 0.664,
+                    },
+                    title = "Cataloging and archive weeklies",
+                },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 2025,
+                        title = "Azerothian Archives",
+                        x = 0.571,
+                        y = 0.664,
+                    },
+                    name = "Provisioner Aristta",
+                },
+            },
             source = "curated",
             summary = "A charter group of scholars from the Dragonscale Expedition dedicated to the preservation of the antiquities for future generations.",
         },
