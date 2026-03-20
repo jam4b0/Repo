@@ -62,6 +62,88 @@ local function getAddonInfo(index)
     return nil, nil
 end
 
+local function updateAddonMemoryUsage()
+    if C_AddOns and C_AddOns.UpdateAddOnMemoryUsage then
+        C_AddOns.UpdateAddOnMemoryUsage()
+        return
+    end
+
+    if UpdateAddOnMemoryUsage then
+        UpdateAddOnMemoryUsage()
+    end
+end
+
+local function updateAddonCPUUsage()
+    if C_AddOns and C_AddOns.UpdateAddOnCPUUsage then
+        C_AddOns.UpdateAddOnCPUUsage()
+        return
+    end
+
+    if UpdateAddOnCPUUsage then
+        UpdateAddOnCPUUsage()
+    end
+end
+
+local function getAddonMemoryUsage(index, addonName)
+    if C_AddOns and C_AddOns.GetAddOnMemoryUsage then
+        local value = nil
+        if index then
+            value = C_AddOns.GetAddOnMemoryUsage(index)
+        end
+        if value == nil and addonName then
+            value = C_AddOns.GetAddOnMemoryUsage(addonName)
+        end
+        if value ~= nil then
+            return tonumber(value or 0) or 0
+        end
+    end
+
+    if GetAddOnMemoryUsage then
+        local value = nil
+        if index then
+            value = GetAddOnMemoryUsage(index)
+        end
+        if value == nil and addonName then
+            value = GetAddOnMemoryUsage(addonName)
+        end
+        if value ~= nil then
+            return tonumber(value or 0) or 0
+        end
+    end
+
+    return 0
+end
+
+local function getAddonCPUUsage(index, addonName)
+    if C_AddOns and C_AddOns.GetAddOnCPUUsage then
+        local value = nil
+        if index then
+            value = C_AddOns.GetAddOnCPUUsage(index)
+        end
+        if value == nil and addonName then
+            value = C_AddOns.GetAddOnCPUUsage(addonName)
+        end
+        if value ~= nil then
+            return tonumber(value or 0) or 0
+        end
+    end
+
+    if GetAddOnCPUUsage then
+        local value = nil
+        if index then
+            value = GetAddOnCPUUsage(index)
+        end
+        if value == nil and addonName then
+            value = GetAddOnCPUUsage(addonName)
+        end
+        if value ~= nil then
+            return tonumber(value or 0) or 0
+        end
+    end
+
+    return nil
+end
+
 local function findAddonIndex(addonName)
     if not GetNumAddOns then
         return nil
@@ -84,30 +166,21 @@ local function collectAddonResourceUsage()
     local totalCPU = 0
     local cpuAvailable = false
 
-    if UpdateAddOnMemoryUsage then
-        UpdateAddOnMemoryUsage()
-    end
-    if UpdateAddOnCPUUsage then
-        UpdateAddOnCPUUsage()
-    end
+    updateAddonMemoryUsage()
+    updateAddonCPUUsage()
 
     for _, addonName in ipairs(addonNames) do
         local index = findAddonIndex(addonName)
         local memoryKB = 0
         local cpuMS = nil
 
-        if index and GetAddOnMemoryUsage then
-            memoryKB = tonumber(GetAddOnMemoryUsage(index) or 0) or 0
-            totalMemory = totalMemory + memoryKB
-        end
+        memoryKB = getAddonMemoryUsage(index, addonName)
+        totalMemory = totalMemory + memoryKB
 
-        if index and GetAddOnCPUUsage then
-            local value = GetAddOnCPUUsage(index)
-            if value ~= nil then
-                cpuMS = tonumber(value or 0) or 0
-                totalCPU = totalCPU + cpuMS
-                cpuAvailable = true
-            end
+        cpuMS = getAddonCPUUsage(index, addonName)
+        if cpuMS ~= nil then
+            totalCPU = totalCPU + cpuMS
+            cpuAvailable = true
         end
 
         rows[#rows + 1] = {
