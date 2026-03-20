@@ -42,10 +42,10 @@ ns.Data:RegisterRetailModule({
                 tags = { "city", "hub", "local" },
                 factions = {
                     { factionID = 2710, name = "Hof in Silbermond", weight = 246 },
-                    { name = "Magister", weight = 240 },
-                    { name = "Blutritter", weight = 240 },
-                    { name = "Schemen der Gasse", weight = 235 },
-                    { name = "Weltenwanderer", weight = 235 },
+                    { factionID = 2711, weight = 240 },
+                    { factionID = 2712, weight = 240 },
+                    { factionID = 2714, weight = 235 },
+                    { factionID = 2713, weight = 235 },
                 },
             },
             [2395] = {
@@ -57,7 +57,7 @@ ns.Data:RegisterRetailModule({
                 tags = { "zone", "local", "eastern-kingdoms", "observed" },
                 factions = {
                     { factionID = 2710, name = "Hof in Silbermond", weight = 248 },
-                    { name = "Weltenwanderer", weight = 245 },
+                    { factionID = 2713, weight = 245 },
                 },
             },
             [2405] = {
@@ -647,7 +647,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 2395 },
                 tags = { "local", "eastern-kingdoms", "observed" },
                 factions = {
-                    { name = "Weltenwanderer", weight = 252 },
+                    { factionID = 2713, weight = 252 },
                 },
             },
             ["2395:morgenluft"] = {
@@ -659,7 +659,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 2395 },
                 tags = { "local", "eastern-kingdoms", "observed" },
                 factions = {
-                    { name = "Weltenwanderer", weight = 251 },
+                    { factionID = 2713, weight = 251 },
                 },
             },
             ["2395:ankerplatz der sonnensegel"] = {
@@ -671,7 +671,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 2395 },
                 tags = { "local", "eastern-kingdoms", "observed" },
                 factions = {
-                    { name = "Weltenwanderer", weight = 253 },
+                    { factionID = 2713, weight = 253 },
                 },
             },
             ["2395:ruhende rast"] = {
@@ -683,7 +683,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 2395 },
                 tags = { "local", "eastern-kingdoms", "observed" },
                 factions = {
-                    { name = "Weltenwanderer", weight = 250 },
+                    { factionID = 2713, weight = 250 },
                 },
             },
             ["2395:saltherils hafen"] = {
@@ -696,7 +696,7 @@ ns.Data:RegisterRetailModule({
                 tags = { "local", "eastern-kingdoms", "event", "court-in-silvermoon" },
                 factions = {
                     { factionID = 2710, name = "Hof in Silbermond", weight = 255 },
-                    { name = "Weltenwanderer", weight = 240 },
+                    { factionID = 2713, weight = 240 },
                 },
             },
             ["37:tor von sturmwind"] = {
@@ -889,10 +889,10 @@ ns.Data:RegisterRetailModule({
                 tags = { "primary", "hub", "local", "observed" },
                 factions = {
                     { factionID = 2710, name = "Hof in Silbermond", weight = 262 },
-                    { name = "Magister", weight = 250 },
-                    { name = "Blutritter", weight = 248 },
-                    { name = "Schemen der Gasse", weight = 246 },
-                    { name = "Weltenwanderer", weight = 246 },
+                    { factionID = 2711, weight = 250 },
+                    { factionID = 2712, weight = 248 },
+                    { factionID = 2714, weight = 246 },
+                    { factionID = 2713, weight = 246 },
                 },
             },
             ["2393:der basar"] = {
@@ -904,8 +904,8 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 2393 },
                 tags = { "primary", "local" },
                 factions = {
-                    { name = "Magister", weight = 245 },
-                    { name = "Schemen der Gasse", weight = 240 },
+                    { factionID = 2711, weight = 245 },
+                    { factionID = 2714, weight = 240 },
                 },
             },
             ["2405:obskurionzitadelle"] = {
@@ -953,8 +953,8 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 2393 },
                 tags = { "primary", "local" },
                 factions = {
-                    { name = "Magister", weight = 245 },
-                    { name = "Schemen der Gasse", weight = 240 },
+                    { factionID = 2711, weight = 245 },
+                    { factionID = 2714, weight = 240 },
                 },
             },
             ["2393:astalors sanktum"] = {
@@ -966,8 +966,8 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 2393 },
                 tags = { "local", "observed" },
                 factions = {
-                    { name = "Magister", weight = 244 },
-                    { name = "Blutritter", weight = 242 },
+                    { factionID = 2711, weight = 244 },
+                    { factionID = 2712, weight = 242 },
                 },
             },
             ["2393:straße der urahnen"] = {
@@ -979,8 +979,8 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 2393 },
                 tags = { "local", "observed" },
                 factions = {
-                    { name = "Weltenwanderer", weight = 243 },
-                    { name = "Magister", weight = 241 },
+                    { factionID = 2713, weight = 243 },
+                    { factionID = 2711, weight = 241 },
                 },
             },
         },

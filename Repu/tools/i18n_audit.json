@@ -156,7 +156,7 @@
     {
       "path": "Repu/data/retail/mappings/regions/eastern_kingdoms.lua",
       "category": "mapping_and_coverage_data",
-      "matchCount": 59,
+      "matchCount": 43,
       "matches": [
         {
           "line": 7,
@@ -177,34 +177,6 @@
           "value": "Unterstadt",
           "markers": [
             "unterstadt"
-          ]
-        },
-        {
-          "line": 46,
-          "value": "Blutritter",
-          "markers": [
-            "blutritter"
-          ]
-        },
-        {
-          "line": 47,
-          "value": "Schemen der Gasse",
-          "markers": [
-            "schemen der gasse"
-          ]
-        },
-        {
-          "line": 48,
-          "value": "Weltenwanderer",
-          "markers": [
-            "weltenwanderer"
-          ]
-        },
-        {
-          "line": 60,
-          "value": "Weltenwanderer",
-          "markers": [
-            "weltenwanderer"
           ]
         },
         {
@@ -331,6 +303,34 @@
           "value": "84:sturmwind",
           "markers": [
             "sturmwind"
+          ]
+        },
+        {
+          "line": 546,
+          "value": "Sturmwind",
+          "markers": [
+            "sturmwind"
+          ]
+        },
+        {
+          "line": 593,
+          "value": "84:die kanäle",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 594,
+          "value": "Die Kanäle",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 605,
+          "value": "84:der östliche erdschrein",
+          "markers": [
+            "non_ascii"
           ]
         }
       ]
@@ -520,41 +520,13 @@
     {
       "path": "Repu/data/retail/mappings/regions/midnight.lua",
       "category": "mapping_and_coverage_data",
-      "matchCount": 6,
+      "matchCount": 2,
       "matches": [
         {
           "line": 14,
           "value": "Die Singularität",
           "markers": [
             "non_ascii"
-          ]
-        },
-        {
-          "line": 49,
-          "value": "Blutritter",
-          "markers": [
-            "blutritter"
-          ]
-        },
-        {
-          "line": 50,
-          "value": "Schemen der Gasse",
-          "markers": [
-            "schemen der gasse"
-          ]
-        },
-        {
-          "line": 51,
-          "value": "Weltenwanderer",
-          "markers": [
-            "weltenwanderer"
-          ]
-        },
-        {
-          "line": 64,
-          "value": "Schemen der Gasse",
-          "markers": [
-            "schemen der gasse"
           ]
         },
         {

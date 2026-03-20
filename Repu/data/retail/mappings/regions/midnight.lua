@@ -45,10 +45,10 @@ ns.Data:RegisterRetailModule({
                 tags = { "midnight", "city", "hub", "local", "observed" },
                 factions = {
                     { factionID = 2710, name = "Hof in Silbermond", weight = 246 },
-                    { name = "Magister", weight = 240 },
-                    { name = "Blutritter", weight = 240 },
-                    { name = "Schemen der Gasse", weight = 235 },
-                    { name = "Weltenwanderer", weight = 235 },
+                    { factionID = 2711, weight = 240 },
+                    { factionID = 2712, weight = 240 },
+                    { factionID = 2714, weight = 235 },
+                    { factionID = 2713, weight = 235 },
                 },
             },
         },
@@ -60,8 +60,8 @@ ns.Data:RegisterRetailModule({
                 confidence = "medium",
                 tags = { "midnight", "primary", "local", "observed" },
                 factions = {
-                    { name = "Magister", weight = 245 },
-                    { name = "Schemen der Gasse", weight = 240 },
+                    { factionID = 2711, weight = 245 },
+                    { factionID = 2714, weight = 240 },
                 },
             },
             ["2405:obskurionzitadelle"] = {
