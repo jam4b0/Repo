@@ -32,6 +32,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 198,
                         title = "Nordrassil",
+                        x = 0.620,
+                        y = 0.230,
                     },
                     name = "Provisioner Whitecloud",
                 },
@@ -84,6 +86,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 249,
                         title = "Ramkahen",
+                        x = 0.541,
+                        y = 0.333,
                     },
                     name = "Blacksmith Abasi",
                 },

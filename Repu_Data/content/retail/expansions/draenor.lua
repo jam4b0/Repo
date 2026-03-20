@@ -191,6 +191,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 543,
                         title = "Lion's Watch",
+                        x = 0.584,
+                        y = 0.604,
                     },
                     name = "Vindicator Krethos",
                 },
