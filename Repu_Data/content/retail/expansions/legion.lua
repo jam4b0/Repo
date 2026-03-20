@@ -26,7 +26,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Highmountain and Neltharion's Lair.",
         },
         [1859] = {
             activities = {
@@ -49,7 +49,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Suramar-Kampagne and Shal'Aran.",
         },
         [1883] = {
             activities = {
@@ -72,7 +72,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Legion-Dalaran and Krasus' Landing.",
         },
         [1894] = {
             activities = {
@@ -94,7 +94,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Broken Shore and Tomb of Sargeras.",
         },
         [1900] = {
             activities = {
@@ -116,7 +116,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Azsuna and Eye of Azshara.",
         },
         [1948] = {
             activities = {
@@ -139,7 +139,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Sturmheim and Haimont.",
         },
         [2045] = {
             activities = {
@@ -153,7 +153,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Vault of the Wardens.",
         },
         [2165] = {
             activities = {
@@ -176,7 +176,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Krokuun and Argus activities.",
         },
         [2170] = {
             activities = {
@@ -198,7 +198,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Argus activities and Antorus, the Burning Throne.",
         },
     },
 })

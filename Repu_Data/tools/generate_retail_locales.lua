@@ -67,8 +67,30 @@ end
 
 local TITLE_MAP = {
     ["Ardenwald"] = "Ardenweald",
+    ["Azurmythosinsel"] = "Azuremyst Isle",
+    ["Blutmythosinsel"] = "Bloodmyst Isle",
+    ["Brennende Steppe"] = "Burning Steppes",
+    ["Donnerfels"] = "Thunder Bluff",
+    ["Dunkelmond-Insel"] = "Darkmoon Island",
+    ["Dun Morogh"] = "Dun Morogh",
+    ["Durotar"] = "Durotar",
+    ["Eisenschmiede"] = "Ironforge",
+    ["Eschental"] = "Ashenvale",
+    ["Immersangwald"] = "Eversong Woods",
+    ["Nördliches Brachland"] = "Northern Barrens",
+    ["Östliche Pestländer"] = "Eastern Plaguelands",
+    ["Schlingendorntal"] = "Stranglethorn Vale",
+    ["Silbermond"] = "Silvermoon City",
+    ["Sengende Schlucht"] = "Searing Gorge",
+    ["Sturmwind"] = "Stormwind",
+    ["Teufelswald"] = "Felwood",
+    ["Unterstadt"] = "Undercity",
+    ["Westliche Pestländer"] = "Western Plaguelands",
+    ["Winterquell"] = "Winterspring",
+    ["Ardenwald"] = "Ardenweald",
     ["Argentumvorhut"] = "Argent Crusade",
     ["Argus-Aktivitaeten"] = "Argus activities",
+    ["Archivaktivitäten in Tyrhold"] = "Archive activities in Tyrhold",
     ["Aufgaben im Unteren Viertel"] = "Lower City tasks",
     ["Aussenposten der Erwachten"] = "Outpost of the Awakened",
     ["Azurblaue Gebirge"] = "The Azure Span",
@@ -97,6 +119,11 @@ local TITLE_MAP = {
     ["Lokale Aufgaben in Harandar"] = "Local tasks in Harandar",
     ["Mereldar call to arms"] = "Mereldar call to arms",
     ["Mondsturz"] = "Moonfall",
+    ["Mondlichtung"] = "Moonglade",
+    ["Nordliches Brachland"] = "Northern Barrens",
+    ["Pakt der Weberin"] = "Pact of the Weaver",
+    ["Pakt des Generals"] = "Pact of the General",
+    ["Pakt des Wesirs"] = "Pact of the Vizier",
     ["Questlinien im Heulenden Fjord"] = "Questlines in Howling Fjord",
     ["Questlinien im Jadewald"] = "Questlines in the Jade Forest",
     ["Questlinien im Sholazarbecken"] = "Questlines in Sholazar Basin",
@@ -191,19 +218,36 @@ local function translateTitle(value)
 end
 
 local function buildEnglishSummary(entry)
-    local hasQuartermasters = entry.quartermasters and #entry.quartermasters > 0
-    local hasActivities = entry.activities and #entry.activities > 0
+    local activityTitles = {}
+    for _, activity in ipairs(entry.activities or {}) do
+        local title = translateTitle(activity.title)
+        if title and title ~= "" then
+            activityTitles[#activityTitles + 1] = title
+        end
+    end
 
-    if hasQuartermasters and hasActivities then
-        return "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content."
+    if #activityTitles == 1 then
+        return string.format("Retail content for this faction is centered on %s.", activityTitles[1])
     end
-    if hasQuartermasters then
-        return "Localized retail content for this faction. Includes curated quartermaster notes for the mapped local content."
+
+    if #activityTitles == 2 then
+        return string.format("Retail content for this faction is centered on %s and %s.", activityTitles[1], activityTitles[2])
     end
-    if hasActivities then
-        return "Localized retail content for this faction. Includes curated activity notes for the mapped local content."
+
+    if #activityTitles >= 3 then
+        return string.format(
+            "Retail content for this faction is centered on %s, %s, and %s.",
+            activityTitles[1],
+            activityTitles[2],
+            activityTitles[3]
+        )
     end
-    return "Localized retail content for this faction."
+
+    if entry.quartermasters and #entry.quartermasters > 0 then
+        return "Retail content for this faction includes quartermaster support."
+    end
+
+    return "Retail content for this faction is available in the retail core."
 end
 
 local function buildQuartermasters(quartermasters, translator)
@@ -228,21 +272,22 @@ local function buildActivities(activities, translator)
     return output
 end
 
-local function buildPayload(summaryTranslator, stringTranslator)
+local function buildPayload(sourceFactions, summaryTranslator, stringTranslator)
     local payload = {
         factions = {},
     }
 
     for factionID, entry in pairs(collected.factions) do
+        local sourceEntry = sourceFactions and sourceFactions[factionID] or entry
         local localized = {}
-        localized.summary = summaryTranslator(entry)
+        localized.summary = summaryTranslator(sourceEntry or entry)
 
-        if entry.quartermasters and #entry.quartermasters > 0 then
-            localized.quartermasters = buildQuartermasters(entry.quartermasters, stringTranslator)
+        if sourceEntry and sourceEntry.quartermasters and #sourceEntry.quartermasters > 0 then
+            localized.quartermasters = buildQuartermasters(sourceEntry.quartermasters, stringTranslator)
         end
 
-        if entry.activities and #entry.activities > 0 then
-            localized.activities = buildActivities(entry.activities, stringTranslator)
+        if sourceEntry and sourceEntry.activities and #sourceEntry.activities > 0 then
+            localized.activities = buildActivities(sourceEntry.activities, stringTranslator)
         end
 
         payload.factions[factionID] = localized
@@ -335,6 +380,7 @@ local function loadExistingLocale(locale)
 end
 
 local germanPayload = buildPayload(
+    nil,
     function(entry)
         return entry.summary
     end,
@@ -349,6 +395,7 @@ if existingGerman and countKeys(existingGerman.factions) > 0 then
 end
 
 local englishPayload = buildPayload(
+    existingGerman and existingGerman.factions or nil,
     buildEnglishSummary,
     translateTitle
 )

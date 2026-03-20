@@ -11,15 +11,13 @@ api.RegisterRetailContentModule({
                 {
                     kind = "Recurring",
                     location = {
-                        mapID = 2025,
-                        title = "Tyrhold Reservoir",
+                        title = "Thaldraszus",
                     },
                     title = "Time Rifts",
                 },
                 {
                     kind = "Zone",
                     location = {
-                        mapID = 2025,
                         title = "Tyrhold",
                     },
                     title = "Temporal side activities",
@@ -27,14 +25,13 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Time Rifts and Temporal side activities.",
         },
         [2503] = {
             activities = {
                 {
                     kind = "Recurring",
                     location = {
-                        mapID = 2023,
                         title = "Ohn'ahran Plains",
                     },
                     title = "Grand Hunt",
@@ -42,89 +39,41 @@ api.RegisterRetailContentModule({
                 {
                     kind = "Zone",
                     location = {
-                        mapID = 2023,
-                        title = "Ohn'ahran Plains",
+                        title = "Maruukai",
                     },
                     title = "Ohn'ahran Plains",
                 },
-                {
-                    kind = "Hub",
-                    location = {
-                        mapID = 2023,
-                        title = "Maruukai",
-                    },
-                    title = "Maruukai",
-                },
             },
             confidence = "medium",
-            quartermasters = {
-                {
-                    label = "Quartermaster",
-                    location = {
-                        mapID = 2023,
-                        title = "Maruukai",
-                    },
-                    name = "Quartermaster Huseng",
-                },
-            },
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Grand Hunt, Ohn'ahran Plains, and Maruukai.",
         },
         [2507] = {
             activities = {
                 {
                     kind = "Recurring",
                     location = {
-                        mapID = 2022,
-                        title = "The Waking Shores",
+                        title = "Kueste des Erwachens",
                     },
                     title = "Siege on Dragonbane Keep",
                 },
                 {
                     kind = "Zone",
                     location = {
-                        mapID = 2022,
-                        title = "The Waking Shores",
+                        title = "Forbidden Reach",
                     },
                     title = "The Waking Shores",
                 },
-                {
-                    kind = "Zone",
-                    location = {
-                        mapID = 2151,
-                        title = "The Forbidden Reach",
-                    },
-                    title = "Forbidden Reach",
-                },
-                {
-                    kind = "Hub",
-                    location = {
-                        mapID = 2022,
-                        title = "Dragonscale Basecamp",
-                    },
-                    title = "Dragonscale Basecamp",
-                },
             },
             confidence = "medium",
-            quartermasters = {
-                {
-                    label = "Quartermaster",
-                    location = {
-                        mapID = 2022,
-                        title = "Dragonscale Basecamp",
-                    },
-                    name = "Cataloger Jakes",
-                },
-            },
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Siege on Dragonbane Keep, The Waking Shores, and Forbidden Reach.",
         },
         [2510] = {
             activities = {
                 {
                     kind = "Hub",
                     location = {
-                        mapID = 2112,
                         title = "Valdrakken",
                     },
                     title = "Valdrakken",
@@ -132,74 +81,35 @@ api.RegisterRetailContentModule({
                 {
                     kind = "Zone",
                     location = {
-                        mapID = 2025,
                         title = "Thaldraszus",
                     },
                     title = "Thaldraszus",
                 },
-                {
-                    kind = "Recurring",
-                    location = {
-                        mapID = 2112,
-                        title = "Seat of the Aspects",
-                    },
-                    title = "Story and world quests",
-                },
             },
             confidence = "medium",
-            quartermasters = {
-                {
-                    label = "Quartermaster",
-                    location = {
-                        mapID = 2112,
-                        title = "Seat of the Aspects",
-                    },
-                    name = "Unatos",
-                },
-            },
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Valdrakken, Thaldraszus, and Story and world quests.",
         },
         [2511] = {
             activities = {
                 {
                     kind = "Weekly/Event",
                     location = {
-                        mapID = 2024,
-                        title = "Iskaara",
+                        title = "The Azure Span",
                     },
                     title = "Community Feast",
                 },
                 {
                     kind = "Zone",
                     location = {
-                        mapID = 2024,
-                        title = "The Azure Span",
+                        title = "Iskaara",
                     },
                     title = "The Azure Span",
                 },
-                {
-                    kind = "Hub",
-                    location = {
-                        mapID = 2024,
-                        title = "Iskaara",
-                    },
-                    title = "Iskaara",
-                },
             },
             confidence = "medium",
-            quartermasters = {
-                {
-                    label = "Quartermaster",
-                    location = {
-                        mapID = 2024,
-                        title = "Iskaara",
-                    },
-                    name = "Murik",
-                },
-            },
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Community Feast, The Azure Span, and Iskaara.",
         },
         [2517] = {
             activities = {
@@ -213,7 +123,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Waking Shores black dragonflight content.",
         },
         [2518] = {
             activities = {
@@ -227,7 +137,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Waking Shores black dragonflight content.",
         },
         [2523] = {
             activities = {
@@ -241,7 +151,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Obsidian side content.",
         },
         [2524] = {
             activities = {
@@ -255,7 +165,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Obsidian side content.",
         },
         [2526] = {
             activities = {
@@ -269,7 +179,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Azure Span side quests.",
         },
         [2544] = {
             activities = {
@@ -283,7 +193,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Valdrakken professions hub.",
         },
         [2550] = {
             activities = {
@@ -297,40 +207,21 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Azure Span side content.",
         },
         [2553] = {
             activities = {
                 {
                     kind = "Weekly",
                     location = {
-                        mapID = 2025,
-                        title = "Tyrhold Reservoir",
+                        title = "Thaldraszus",
                     },
                     title = "When Time Needs Mending",
                 },
-                {
-                    kind = "Recurring",
-                    location = {
-                        mapID = 2025,
-                        title = "Tyrhold Reservoir",
-                    },
-                    title = "Time Rifts",
-                },
             },
             confidence = "medium",
-            quartermasters = {
-                {
-                    label = "Rift Vendor",
-                    location = {
-                        mapID = 2025,
-                        title = "Tyrhold Reservoir",
-                    },
-                    name = "Soridormi",
-                },
-            },
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on When Time Needs Mending and Time Rifts.",
         },
         [2564] = {
             activities = {
@@ -373,7 +264,7 @@ api.RegisterRetailContentModule({
                 },
             },
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Loamm, Sniffenseeking, and Zaralek world content.",
         },
         [2574] = {
             activities = {
@@ -416,30 +307,28 @@ api.RegisterRetailContentModule({
                 },
             },
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Central Encampment, Emerald Dream world content, and Story chapters in the Dream.",
         },
         [2615] = {
             activities = {
                 {
                     kind = "Recurring",
                     location = {
-                        mapID = 2025,
-                        title = "Tyrhold Reservoir",
+                        title = "Thaldraszus",
                     },
                     title = "Azerothian Archives",
                 },
                 {
                     kind = "Zone",
                     location = {
-                        mapID = 2025,
                         title = "Tyrhold",
                     },
-                    title = "Archivaktivitäten in Tyrhold",
+                    title = "Archive activities in Tyrhold",
                 },
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Azerothian Archives and Archive activities in Tyrhold.",
         },
     },
 })

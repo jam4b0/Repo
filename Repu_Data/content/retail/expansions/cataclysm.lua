@@ -19,7 +19,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Hyjal.",
         },
         [1171] = {
             activities = {
@@ -34,7 +34,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Tiefenheim.",
         },
         [1173] = {
             activities = {
@@ -49,7 +49,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Uldum.",
         },
         [1174] = {
             activities = {
@@ -64,7 +64,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Schattenhochland.",
         },
         [1177] = {
             activities = {
@@ -87,7 +87,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Tol Barad and Halbinsel von Tol Barad.",
         },
         [1178] = {
             activities = {
@@ -110,7 +110,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Tol Barad and Halbinsel von Tol Barad.",
         },
         [2417] = {
             activities = {
@@ -125,7 +125,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Uldum.",
         },
     },
 })

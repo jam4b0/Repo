@@ -63,7 +63,7 @@ api.RegisterRetailContentModule({
                 },
             },
             source = "seed",
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Saltherils Soiree.",
         },
         [2711] = {
             activities = {
@@ -92,7 +92,7 @@ api.RegisterRetailContentModule({
                 },
             },
             source = "seed",
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Saltherils Soiree.",
         },
         [2712] = {
             activities = {
@@ -121,7 +121,7 @@ api.RegisterRetailContentModule({
                 },
             },
             source = "seed",
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Saltherils Soiree.",
         },
         [2713] = {
             activities = {
@@ -150,7 +150,7 @@ api.RegisterRetailContentModule({
                 },
             },
             source = "seed",
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Saltherils Soiree.",
         },
         [2714] = {
             activities = {
@@ -179,7 +179,7 @@ api.RegisterRetailContentModule({
                 },
             },
             source = "seed",
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Saltherils Soiree.",
         },
     },
 })

@@ -12,9 +12,9 @@ api.RegisterRetailContentModule({
                     kind = "Zone",
                     location = {
                         mapID = 104,
-                        title = "Nethersturm",
+                        title = "Netherstorm",
                     },
-                    title = "Nethersturm",
+                    title = "Netherstorm",
                 },
                 {
                     kind = "Hub",
@@ -27,7 +27,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Nethersturm and Area 52.",
         },
         [941] = {
             activities = {
@@ -50,7 +50,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Nagrand and Garadar.",
         },
         [942] = {
             activities = {
@@ -73,7 +73,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Zangarmarschen and Cenarionszuflucht.",
         },
         [946] = {
             activities = {
@@ -96,7 +96,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Hellfire Peninsula and Honor Hold.",
         },
         [947] = {
             activities = {
@@ -118,7 +118,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Hellfire Peninsula and The Shattered Halls.",
         },
         [970] = {
             activities = {
@@ -141,7 +141,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Zangarmarschen and Sporeggar.",
         },
         [978] = {
             activities = {
@@ -164,7 +164,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Nagrand and Telaar.",
         },
         [989] = {
             activities = {
@@ -185,7 +185,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Old Hillsbrad Foothills and The Black Morass.",
         },
         [990] = {
             activities = {
@@ -199,7 +199,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Hyjal Summit.",
         },
         [1012] = {
             activities = {
@@ -221,7 +221,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Schattenmondtal and Black Temple.",
         },
         [1015] = {
             activities = {
@@ -244,7 +244,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Schattenmondtal and Netherwing Ledge.",
         },
         [1031] = {
             activities = {
@@ -267,7 +267,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Schergrat and Skyguard-tasks.",
         },
         [1038] = {
             activities = {
@@ -290,7 +290,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Schergrat and Ogri'la.",
         },
         [1077] = {
             activities = {
@@ -313,7 +313,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Isle of Quel'Danas and Quel'Danas dailies.",
         },
         [1416] = {
             activities = {
@@ -335,7 +335,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Schattenmondtal and Black Temple.",
         },
     },
 })

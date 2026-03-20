@@ -25,7 +25,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Bastion and Spires of Ascension.",
         },
         [2410] = {
             activities = {
@@ -46,7 +46,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Maldraxxus and Theater of Pain.",
         },
         [2413] = {
             activities = {
@@ -67,14 +67,13 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Revendreth and Halls of Atonement.",
         },
         [2432] = {
             activities = {
                 {
                     kind = "Zone",
                     location = {
-                        mapID = 1543,
                         title = "The Maw",
                     },
                     title = "The Maw",
@@ -82,74 +81,28 @@ api.RegisterRetailContentModule({
                 {
                     kind = "Hub",
                     location = {
-                        mapID = 1543,
-                        title = "Ve'nari's Refuge",
+                        title = "Ve'naris Zuflucht",
                     },
                     title = "Ve'naris Zuflucht",
                 },
-                {
-                    kind = "Recurring",
-                    location = {
-                        mapID = 1543,
-                        title = "The Maw",
-                    },
-                    title = "Maw activities",
-                },
             },
             confidence = "medium",
-            quartermasters = {
-                {
-                    label = "Quartermaster",
-                    location = {
-                        mapID = 1543,
-                        title = "The Maw",
-                    },
-                    name = "Ve'nari",
-                },
-            },
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on The Maw, Ve'naris Zuflucht, and Maw activities.",
         },
         [2439] = {
             activities = {
                 {
                     kind = "Hub",
                     location = {
-                        mapID = 1525,
-                        title = "Absolution Crypt",
+                        title = "Revendreth",
                     },
                     title = "Absolution Crypt",
                 },
-                {
-                    kind = "Recurring",
-                    location = {
-                        mapID = 1525,
-                        title = "Absolution Crypt",
-                    },
-                    title = "Sinstone turn-ins",
-                },
-                {
-                    kind = "Zone",
-                    location = {
-                        mapID = 1525,
-                        title = "Revendreth",
-                    },
-                    title = "Revendreth side content",
-                },
             },
             confidence = "medium",
-            quartermasters = {
-                {
-                    label = "Quartermaster",
-                    location = {
-                        mapID = 1525,
-                        title = "Absolution Crypt",
-                    },
-                    name = "Archivist Janeera",
-                },
-            },
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Absolution Crypt, Sinstone turn-ins, and Revendreth side content.",
         },
         [2464] = {
             activities = {
@@ -170,48 +123,21 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Ardenweald and Mists of Tirna Scithe.",
         },
         [2465] = {
             activities = {
                 {
                     kind = "Zone",
                     location = {
-                        mapID = 1565,
                         title = "Ardenweald",
                     },
                     title = "Ardenweald",
                 },
-                {
-                    kind = "Recurring",
-                    location = {
-                        mapID = 1565,
-                        title = "Ardenweald",
-                    },
-                    title = "Callings and side objectives",
-                },
             },
             confidence = "medium",
-            quartermasters = {
-                {
-                    label = "Quartermaster",
-                    location = {
-                        mapID = 1565,
-                        title = "Ardenweald",
-                    },
-                    name = "Aithlyn",
-                },
-                {
-                    label = "Quartermaster",
-                    location = {
-                        mapID = 1565,
-                        title = "Ardenweald",
-                    },
-                    name = "Liawyn",
-                },
-            },
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Ardenweald and Callings and side objectives.",
         },
         [2470] = {
             activities = {
@@ -225,7 +151,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Sanctum of Domination.",
         },
         [2472] = {
             activities = {
@@ -255,18 +181,8 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
-            quartermasters = {
-                {
-                    label = "Quartermaster",
-                    location = {
-                        mapID = 1961,
-                        title = "Korthia",
-                    },
-                    name = "Archivist Roh-Suir",
-                },
-            },
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Korthia, Keeper's Respite, and Relic research.",
         },
         [2478] = {
             activities = {
@@ -287,7 +203,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Zereth Mortis and Haven.",
         },
     },
 })

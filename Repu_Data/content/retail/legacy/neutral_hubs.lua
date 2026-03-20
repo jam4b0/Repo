@@ -12,14 +12,14 @@ api.RegisterRetailContentModule({
                     kind = "Zone/City",
                     location = {
                         mapID = 407,
-                        title = "Dunkelmond-Insel",
+                        title = "Darkmoon Island",
                     },
-                    title = "Dunkelmond-Insel",
+                    title = "Darkmoon Island",
                 },
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Darkmoon Island.",
         },
     },
 })

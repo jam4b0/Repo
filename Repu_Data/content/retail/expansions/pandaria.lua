@@ -26,7 +26,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Vale of Eternal Blossoms and Mogu'shan Palace.",
         },
         [1270] = {
             activities = {
@@ -48,7 +48,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Questlines in the Jade Forest and Shado-Pan Monastery.",
         },
         [1271] = {
             activities = {
@@ -70,7 +70,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Questlines in Dread Wastes and Heart of Fear.",
         },
         [1272] = {
             activities = {
@@ -93,7 +93,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Valley of the Four Winds and Halbhuegel.",
         },
         [1302] = {
             activities = {
@@ -108,7 +108,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Questlines in Krasarang Wilds.",
         },
         [1337] = {
             activities = {
@@ -138,7 +138,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Dread Wastes, Klaxxi'vess, and Heart of Fear.",
         },
         [1359] = {
             activities = {
@@ -161,7 +161,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Vale of Eternal Blossoms and Wrathion-Endgame.",
         },
         [1375] = {
             activities = {
@@ -176,7 +176,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Shrine of Two Moons.",
         },
         [1376] = {
             activities = {
@@ -191,7 +191,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Shrine of Seven Stars.",
         },
         [1387] = {
             activities = {
@@ -201,12 +201,12 @@ api.RegisterRetailContentModule({
                         mapID = 507,
                         title = "Isle of Thunder",
                     },
-                    title = "Isle of Thander",
+                    title = "Isle of Thunder",
                 },
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Isle of Thunder.",
         },
         [1388] = {
             activities = {
@@ -216,12 +216,12 @@ api.RegisterRetailContentModule({
                         mapID = 507,
                         title = "Isle of Thunder",
                     },
-                    title = "Isle of Thander",
+                    title = "Isle of Thunder",
                 },
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Isle of Thunder.",
         },
         [1435] = {
             activities = {
@@ -231,7 +231,7 @@ api.RegisterRetailContentModule({
                         mapID = 507,
                         title = "Isle of the Thunder King",
                     },
-                    title = "Isle of the Thander King",
+                    title = "Isle of the Thunder King",
                 },
                 {
                     kind = "Raid",
@@ -243,7 +243,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Isle of the Thunder King and Throne of Thander.",
         },
         [1492] = {
             activities = {
@@ -265,7 +265,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Zeitlose Insel and Siege of Orgrimmar.",
         },
     },
 })

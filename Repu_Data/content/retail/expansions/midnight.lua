@@ -27,7 +27,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Zul'Aman-Kampagne and Local tasks in the Amani area.",
         },
         [2699] = {
             activities = {
@@ -50,7 +50,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Leerensturm-Kampagne and Local tasks in Voidstorm.",
         },
         [2704] = {
             activities = {
@@ -73,7 +73,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Harandar-Kampagne and Local tasks in Harandar.",
         },
         [2770] = {
             activities = {
@@ -96,7 +96,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Voidstorm and Obskurionzitadelle.",
         },
     },
 })

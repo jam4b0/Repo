@@ -19,7 +19,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Howling Fjord.",
         },
         [1068] = {
             activities = {
@@ -34,7 +34,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Questlines in Howling Fjord.",
         },
         [1073] = {
             activities = {
@@ -44,12 +44,12 @@ api.RegisterRetailContentModule({
                         mapID = 114,
                         title = "Borean Tundra",
                     },
-                    title = "Questlines in Borean Tandra",
+                    title = "Questlines in Borean Tundra",
                 },
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Questlines in Borean Tundra.",
         },
         [1090] = {
             activities = {
@@ -72,7 +72,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Dalaran city activities and Northrend-Dungeons mit Dalaran-Bezug.",
         },
         [1091] = {
             activities = {
@@ -87,7 +87,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Questlines in Dragonblight.",
         },
         [1098] = {
             activities = {
@@ -108,7 +108,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Halls of Lightning and Ulduar.",
         },
         [1104] = {
             activities = {
@@ -123,7 +123,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Questlines in Sholazar Basin.",
         },
         [1105] = {
             activities = {
@@ -145,7 +145,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Questlines in Zul'Drak and Gandrak.",
         },
         [1106] = {
             activities = {
@@ -168,7 +168,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Argent Crusade and Questlines in Icecrown.",
         },
         [1119] = {
             activities = {
@@ -183,7 +183,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on K3 and Storm Peaks questlines.",
         },
         [1124] = {
             activities = {
@@ -197,7 +197,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Vault of Archavon.",
         },
         [1126] = {
             activities = {
@@ -212,7 +212,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on The Storm Peaks.",
         },
         [1156] = {
             activities = {
@@ -226,7 +226,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Icecrown Citadel.",
         },
     },
 })

@@ -12,14 +12,14 @@ api.RegisterRetailContentModule({
                     kind = "Zone/City",
                     location = {
                         mapID = 87,
-                        title = "Eisenschmiede",
+                        title = "Ironforge",
                     },
-                    title = "Eisenschmiede",
+                    title = "Ironforge",
                 },
             },
             confidence = "medium",
             source = "seed",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Ironforge.",
         },
         [59] = {
             activities = {
@@ -27,22 +27,22 @@ api.RegisterRetailContentModule({
                     kind = "Zone/City",
                     location = {
                         mapID = 32,
-                        title = "Sengende Schlucht",
+                        title = "Searing Gorge",
                     },
-                    title = "Sengende Schlucht",
+                    title = "Searing Gorge",
                 },
                 {
                     kind = "Zone/City",
                     location = {
                         mapID = 36,
-                        title = "Brennende Steppe",
+                        title = "Burning Steppes",
                     },
-                    title = "Brennende Steppe",
+                    title = "Burning Steppes",
                 },
             },
             confidence = "medium",
             source = "seed",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Searing Gorge and Burning Steppes.",
         },
         [68] = {
             activities = {
@@ -50,14 +50,14 @@ api.RegisterRetailContentModule({
                     kind = "Zone/City",
                     location = {
                         mapID = 90,
-                        title = "Unterstadt",
+                        title = "Undercity",
                     },
-                    title = "Unterstadt",
+                    title = "Undercity",
                 },
             },
             confidence = "medium",
             source = "seed",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Undercity.",
         },
         [69] = {
             activities = {
@@ -72,7 +72,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "seed",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Darnassus.",
         },
         [72] = {
             activities = {
@@ -80,14 +80,14 @@ api.RegisterRetailContentModule({
                     kind = "Zone/City",
                     location = {
                         mapID = 84,
-                        title = "Sturmwind",
+                        title = "Stormwind",
                     },
-                    title = "Sturmwind",
+                    title = "Stormwind",
                 },
             },
             confidence = "medium",
             source = "seed",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Stormwind.",
         },
         [76] = {
             activities = {
@@ -102,7 +102,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "seed",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Orgrimmar.",
         },
         [81] = {
             activities = {
@@ -110,14 +110,14 @@ api.RegisterRetailContentModule({
                     kind = "Zone/City",
                     location = {
                         mapID = 86,
-                        title = "Donnerfels",
+                        title = "Thunder Bluff",
                     },
-                    title = "Donnerfels",
+                    title = "Thunder Bluff",
                 },
             },
             confidence = "medium",
             source = "seed",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Thunder Bluff.",
         },
         [369] = {
             activities = {
@@ -140,7 +140,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Tanaris and Gadgetzan.",
         },
         [470] = {
             activities = {
@@ -148,9 +148,9 @@ api.RegisterRetailContentModule({
                     kind = "Zone/City",
                     location = {
                         mapID = 10,
-                        title = "Nördliches Brachland",
+                        title = "Northern Barrens",
                     },
-                    title = "Nördliches Brachland",
+                    title = "Northern Barrens",
                 },
                 {
                     kind = "Zone/City",
@@ -163,7 +163,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Northern Barrens and Ratchet.",
         },
         [529] = {
             activities = {
@@ -171,22 +171,22 @@ api.RegisterRetailContentModule({
                     kind = "Zone/City",
                     location = {
                         mapID = 22,
-                        title = "Westliche Pestländer",
+                        title = "Western Plaguelands",
                     },
-                    title = "Westliche Pestländer",
+                    title = "Western Plaguelands",
                 },
                 {
                     kind = "Zone/City",
                     location = {
                         mapID = 23,
-                        title = "Östliche Pestländer",
+                        title = "Eastern Plaguelands",
                     },
-                    title = "Östliche Pestländer",
+                    title = "Eastern Plaguelands",
                 },
             },
             confidence = "medium",
             source = "seed",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Western Plaguelands and Eastern Plaguelands.",
         },
         [530] = {
             activities = {
@@ -194,14 +194,14 @@ api.RegisterRetailContentModule({
                     kind = "Zone/City",
                     location = {
                         mapID = 63,
-                        title = "Eschental",
+                        title = "Ashenvale",
                     },
-                    title = "Eschental",
+                    title = "Ashenvale",
                 },
             },
             confidence = "medium",
             source = "seed",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Ashenvale.",
         },
         [576] = {
             activities = {
@@ -209,14 +209,14 @@ api.RegisterRetailContentModule({
                     kind = "Zone/City",
                     location = {
                         mapID = 77,
-                        title = "Teufelswald",
+                        title = "Felwood",
                     },
-                    title = "Teufelswald",
+                    title = "Felwood",
                 },
             },
             confidence = "medium",
             source = "seed",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Felwood.",
         },
         [577] = {
             activities = {
@@ -224,9 +224,9 @@ api.RegisterRetailContentModule({
                     kind = "Zone/City",
                     location = {
                         mapID = 83,
-                        title = "Winterquell",
+                        title = "Winterspring",
                     },
-                    title = "Winterquell",
+                    title = "Winterspring",
                 },
                 {
                     kind = "Zone/City",
@@ -239,7 +239,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Winterspring and Everlook.",
         },
         [609] = {
             activities = {
@@ -263,9 +263,9 @@ api.RegisterRetailContentModule({
                     kind = "Zone/City",
                     location = {
                         mapID = 80,
-                        title = "Mondlichtung",
+                        title = "Moonglade",
                     },
-                    title = "Mondlichtung",
+                    title = "Moonglade",
                 },
                 {
                     kind = "Zone/City",
@@ -278,7 +278,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "seed",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Desolace, Feralas, and Moonglade.",
         },
         [749] = {
             activities = {
@@ -292,7 +292,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Molten Core.",
         },
         [910] = {
             activities = {
@@ -313,7 +313,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Temple of Ahn'Qiraj and Ruins of Ahn'Qiraj.",
         },
         [930] = {
             activities = {
@@ -329,9 +329,9 @@ api.RegisterRetailContentModule({
                     kind = "Zone/City",
                     location = {
                         mapID = 97,
-                        title = "Azurmythosinsel",
+                        title = "Azuremyst Isle",
                     },
-                    title = "Azurmythosinsel",
+                    title = "Azuremyst Isle",
                 },
                 {
                     kind = "Zone/City",
@@ -344,7 +344,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "seed",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on The Exodar, Azuremyst Isle, and The Blutmythosinsel.",
         },
         [1133] = {
             activities = {
@@ -359,7 +359,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "seed",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Azshara.",
         },
         [1134] = {
             activities = {
@@ -374,7 +374,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "seed",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Gilneas.",
         },
     },
 })

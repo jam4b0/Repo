@@ -19,7 +19,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "seed",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Aldor-tasks in Shattrath.",
         },
         [934] = {
             activities = {
@@ -34,7 +34,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "seed",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Scryer tasks in Shattrath.",
         },
         [935] = {
             activities = {
@@ -49,7 +49,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "seed",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Shattrath and temple tasks.",
         },
         [1011] = {
             activities = {
@@ -64,7 +64,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "seed",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Lower City tasks.",
         },
         [9000111] = {
             activities = {
@@ -79,7 +79,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "seed",
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Shattrath city factions.",
         },
     },
 })

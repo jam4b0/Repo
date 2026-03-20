@@ -7,38 +7,38 @@ end
 api.RegisterRetailContentLocale("enUS", {
     factions = {
         [21] = {
-            summary = "Localized retail content for this faction.",
+            summary = "Retail content for this faction is available in the retail core.",
         },
         [47] = {
             activities = {
                 {
                     kind = "Zone/City",
-                    title = "Eisenschmiede",
+                    title = "Ironforge",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Ironforge.",
         },
         [59] = {
             activities = {
                 {
                     kind = "Zone/City",
-                    title = "Sengende Schlucht",
+                    title = "Searing Gorge",
                 },
                 {
                     kind = "Zone/City",
-                    title = "Brennende Steppe",
+                    title = "Burning Steppes",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Searing Gorge and Burning Steppes.",
         },
         [68] = {
             activities = {
                 {
                     kind = "Zone/City",
-                    title = "Unterstadt",
+                    title = "Undercity",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Undercity.",
         },
         [69] = {
             activities = {
@@ -47,16 +47,16 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Darnassus",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Darnassus.",
         },
         [72] = {
             activities = {
                 {
                     kind = "Zone/City",
-                    title = "Sturmwind",
+                    title = "Stormwind",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Stormwind.",
         },
         [76] = {
             activities = {
@@ -65,16 +65,16 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Orgrimmar",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Orgrimmar.",
         },
         [81] = {
             activities = {
                 {
                     kind = "Zone/City",
-                    title = "Donnerfels",
+                    title = "Thunder Bluff",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Thunder Bluff.",
         },
         [369] = {
             activities = {
@@ -87,67 +87,67 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Gadgetzan",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Tanaris and Gadgetzan.",
         },
         [470] = {
             activities = {
                 {
                     kind = "Zone/City",
-                    title = "Nördliches Brachland",
+                    title = "Northern Barrens",
                 },
                 {
                     kind = "Zone/City",
                     title = "Ratchet",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Northern Barrens and Ratchet.",
         },
         [529] = {
             activities = {
                 {
                     kind = "Zone/City",
-                    title = "Westliche Pestländer",
+                    title = "Western Plaguelands",
                 },
                 {
                     kind = "Zone/City",
-                    title = "Östliche Pestländer",
+                    title = "Eastern Plaguelands",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Western Plaguelands and Eastern Plaguelands.",
         },
         [530] = {
             activities = {
                 {
                     kind = "Zone/City",
-                    title = "Eschental",
+                    title = "Ashenvale",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Ashenvale.",
         },
         [576] = {
             activities = {
                 {
                     kind = "Zone/City",
-                    title = "Teufelswald",
+                    title = "Felwood",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Felwood.",
         },
         [577] = {
             activities = {
                 {
                     kind = "Zone/City",
-                    title = "Winterquell",
+                    title = "Winterspring",
                 },
                 {
                     kind = "Zone/City",
                     title = "Everlook",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Winterspring and Everlook.",
         },
         [589] = {
-            summary = "Localized retail content for this faction.",
+            summary = "Retail content for this faction is available in the retail core.",
         },
         [609] = {
             activities = {
@@ -161,14 +161,14 @@ api.RegisterRetailContentLocale("enUS", {
                 },
                 {
                     kind = "Zone/City",
-                    title = "Mondlichtung",
+                    title = "Moonglade",
                 },
                 {
                     kind = "Zone/City",
                     title = "Silithus",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Desolace, Feralas, and Moonglade.",
         },
         [749] = {
             activities = {
@@ -177,16 +177,16 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Molten Core",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Molten Core.",
         },
         [909] = {
             activities = {
                 {
                     kind = "Zone/City",
-                    title = "Dunkelmond-Insel",
+                    title = "Darkmoon Island",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Darkmoon Island.",
         },
         [910] = {
             activities = {
@@ -199,7 +199,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Ruins of Ahn'Qiraj",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Temple of Ahn'Qiraj and Ruins of Ahn'Qiraj.",
         },
         [930] = {
             activities = {
@@ -209,14 +209,14 @@ api.RegisterRetailContentLocale("enUS", {
                 },
                 {
                     kind = "Zone/City",
-                    title = "Azurmythosinsel",
+                    title = "Azuremyst Isle",
                 },
                 {
                     kind = "Zone/City",
                     title = "The Blutmythosinsel",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on The Exodar, Azuremyst Isle, and The Blutmythosinsel.",
         },
         [932] = {
             activities = {
@@ -225,7 +225,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Aldor-tasks in Shattrath",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Aldor-tasks in Shattrath.",
         },
         [933] = {
             activities = {
@@ -238,7 +238,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Area 52",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Nethersturm and Area 52.",
         },
         [934] = {
             activities = {
@@ -247,7 +247,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Scryer tasks in Shattrath",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Scryer tasks in Shattrath.",
         },
         [935] = {
             activities = {
@@ -256,7 +256,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Shattrath and temple tasks",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Shattrath and temple tasks.",
         },
         [941] = {
             activities = {
@@ -269,7 +269,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Garadar",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Nagrand and Garadar.",
         },
         [942] = {
             activities = {
@@ -282,7 +282,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Cenarionszuflucht",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Zangarmarschen and Cenarionszuflucht.",
         },
         [946] = {
             activities = {
@@ -295,7 +295,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Honor Hold",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Hellfire Peninsula and Honor Hold.",
         },
         [947] = {
             activities = {
@@ -308,10 +308,10 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "The Shattered Halls",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Hellfire Peninsula and The Shattered Halls.",
         },
         [967] = {
-            summary = "Localized retail content for this faction.",
+            summary = "Retail content for this faction is available in the retail core.",
         },
         [970] = {
             activities = {
@@ -324,7 +324,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Sporeggar",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Zangarmarschen and Sporeggar.",
         },
         [978] = {
             activities = {
@@ -337,7 +337,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Telaar",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Nagrand and Telaar.",
         },
         [989] = {
             activities = {
@@ -350,7 +350,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "The Black Morass",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Old Hillsbrad Foothills and The Black Morass.",
         },
         [990] = {
             activities = {
@@ -359,7 +359,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Hyjal Summit",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Hyjal Summit.",
         },
         [1011] = {
             activities = {
@@ -368,7 +368,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Lower City tasks",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Lower City tasks.",
         },
         [1012] = {
             activities = {
@@ -381,7 +381,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Black Temple",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Schattenmondtal and Black Temple.",
         },
         [1015] = {
             activities = {
@@ -394,7 +394,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Netherwing Ledge",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Schattenmondtal and Netherwing Ledge.",
         },
         [1031] = {
             activities = {
@@ -407,7 +407,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Skyguard-tasks",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Schergrat and Skyguard-tasks.",
         },
         [1038] = {
             activities = {
@@ -420,7 +420,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Ogri'la",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Schergrat and Ogri'la.",
         },
         [1067] = {
             activities = {
@@ -429,7 +429,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Howling Fjord",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Howling Fjord.",
         },
         [1068] = {
             activities = {
@@ -438,16 +438,16 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Questlines in Howling Fjord",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Questlines in Howling Fjord.",
         },
         [1073] = {
             activities = {
                 {
                     kind = "Story/Zone",
-                    title = "Questlines in Borean Tandra",
+                    title = "Questlines in Borean Tundra",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Questlines in Borean Tundra.",
         },
         [1077] = {
             activities = {
@@ -460,7 +460,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Quel'Danas dailies",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Isle of Quel'Danas and Quel'Danas dailies.",
         },
         [1090] = {
             activities = {
@@ -473,7 +473,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Northrend-Dungeons mit Dalaran-Bezug",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Dalaran city activities and Northrend-Dungeons mit Dalaran-Bezug.",
         },
         [1091] = {
             activities = {
@@ -482,7 +482,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Questlines in Dragonblight",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Questlines in Dragonblight.",
         },
         [1098] = {
             activities = {
@@ -495,7 +495,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Ulduar",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Halls of Lightning and Ulduar.",
         },
         [1104] = {
             activities = {
@@ -504,7 +504,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Questlines in Sholazar Basin",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Questlines in Sholazar Basin.",
         },
         [1105] = {
             activities = {
@@ -517,7 +517,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Gandrak",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Questlines in Zul'Drak and Gandrak.",
         },
         [1106] = {
             activities = {
@@ -530,7 +530,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Questlines in Icecrown",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Argent Crusade and Questlines in Icecrown.",
         },
         [1119] = {
             activities = {
@@ -539,7 +539,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "K3 and Storm Peaks questlines",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on K3 and Storm Peaks questlines.",
         },
         [1124] = {
             activities = {
@@ -548,7 +548,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Vault of Archavon",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Vault of Archavon.",
         },
         [1126] = {
             activities = {
@@ -557,7 +557,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "The Storm Peaks",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on The Storm Peaks.",
         },
         [1133] = {
             activities = {
@@ -566,7 +566,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Azshara",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Azshara.",
         },
         [1134] = {
             activities = {
@@ -575,7 +575,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Gilneas",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Gilneas.",
         },
         [1156] = {
             activities = {
@@ -584,7 +584,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Icecrown Citadel",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Icecrown Citadel.",
         },
         [1158] = {
             activities = {
@@ -593,7 +593,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Hyjal",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Hyjal.",
         },
         [1171] = {
             activities = {
@@ -602,10 +602,10 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Tiefenheim",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Tiefenheim.",
         },
         [1172] = {
-            summary = "Localized retail content for this faction.",
+            summary = "Retail content for this faction is available in the retail core.",
         },
         [1173] = {
             activities = {
@@ -614,7 +614,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Uldum",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Uldum.",
         },
         [1174] = {
             activities = {
@@ -623,7 +623,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Schattenhochland",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Schattenhochland.",
         },
         [1177] = {
             activities = {
@@ -636,7 +636,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Halbinsel von Tol Barad",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Tol Barad and Halbinsel von Tol Barad.",
         },
         [1178] = {
             activities = {
@@ -649,10 +649,10 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Halbinsel von Tol Barad",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Tol Barad and Halbinsel von Tol Barad.",
         },
         [1204] = {
-            summary = "Localized retail content for this faction.",
+            summary = "Retail content for this faction is available in the retail core.",
         },
         [1269] = {
             activities = {
@@ -665,7 +665,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Mogu'shan Palace",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Vale of Eternal Blossoms and Mogu'shan Palace.",
         },
         [1270] = {
             activities = {
@@ -678,7 +678,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Shado-Pan Monastery",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Questlines in the Jade Forest and Shado-Pan Monastery.",
         },
         [1271] = {
             activities = {
@@ -691,7 +691,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Heart of Fear",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Questlines in Dread Wastes and Heart of Fear.",
         },
         [1272] = {
             activities = {
@@ -704,7 +704,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Halbhuegel",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Valley of the Four Winds and Halbhuegel.",
         },
         [1302] = {
             activities = {
@@ -713,7 +713,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Questlines in Krasarang Wilds",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Questlines in Krasarang Wilds.",
         },
         [1337] = {
             activities = {
@@ -730,7 +730,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Heart of Fear",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Dread Wastes, Klaxxi'vess, and Heart of Fear.",
         },
         [1359] = {
             activities = {
@@ -743,7 +743,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Wrathion-Endgame",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Vale of Eternal Blossoms and Wrathion-Endgame.",
         },
         [1375] = {
             activities = {
@@ -752,7 +752,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Shrine of Two Moons",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Shrine of Two Moons.",
         },
         [1376] = {
             activities = {
@@ -761,25 +761,25 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Shrine of Seven Stars",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Shrine of Seven Stars.",
         },
         [1387] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Isle of Thander",
+                    title = "Isle of Thunder",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Isle of Thunder.",
         },
         [1388] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Isle of Thander",
+                    title = "Isle of Thunder",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Isle of Thunder.",
         },
         [1416] = {
             activities = {
@@ -792,20 +792,20 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Black Temple",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Schattenmondtal and Black Temple.",
         },
         [1435] = {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Isle of the Thander King",
+                    title = "Isle of the Thunder King",
                 },
                 {
                     kind = "Raid",
                     title = "Throne of Thander",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Isle of the Thunder King and Throne of Thander.",
         },
         [1445] = {
             activities = {
@@ -818,7 +818,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "War Mill",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Frostfeuergrat and War Mill.",
         },
         [1492] = {
             activities = {
@@ -831,7 +831,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Siege of Orgrimmar",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Zeitlose Insel and Siege of Orgrimmar.",
         },
         [1515] = {
             activities = {
@@ -840,7 +840,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Spires of Arak",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Spires of Arak.",
         },
         [1710] = {
             activities = {
@@ -853,7 +853,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Outpost of the Awakened",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Moonfall and Outpost of the Awakened.",
         },
         [1711] = {
             activities = {
@@ -866,7 +866,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Grimrail Depot",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Gorgrond and Grimrail Depot.",
         },
         [1731] = {
             activities = {
@@ -879,7 +879,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Shadowmoon Burial Groands",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Nagrand and Shadowmoon Burial Groands.",
         },
         [1828] = {
             activities = {
@@ -892,7 +892,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Neltharion's Lair",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Highmountain and Neltharion's Lair.",
         },
         [1847] = {
             activities = {
@@ -901,7 +901,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Warspear",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Warspear.",
         },
         [1848] = {
             activities = {
@@ -914,7 +914,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Hellfire Citadel",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Tanaan-Dschungel and Hellfire Citadel.",
         },
         [1849] = {
             activities = {
@@ -923,7 +923,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Stormshield",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Stormshield.",
         },
         [1850] = {
             activities = {
@@ -936,7 +936,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Auchindoun",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Spires of Arak and Auchindoun.",
         },
         [1859] = {
             activities = {
@@ -949,7 +949,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Shal'Aran",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Suramar-Kampagne and Shal'Aran.",
         },
         [1883] = {
             activities = {
@@ -962,7 +962,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Krasus' Landing",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Legion-Dalaran and Krasus' Landing.",
         },
         [1894] = {
             activities = {
@@ -975,7 +975,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Tomb of Sargeras",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Broken Shore and Tomb of Sargeras.",
         },
         [1900] = {
             activities = {
@@ -988,7 +988,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Eye of Azshara",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Azsuna and Eye of Azshara.",
         },
         [1948] = {
             activities = {
@@ -1001,7 +1001,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Haimont",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Sturmheim and Haimont.",
         },
         [2045] = {
             activities = {
@@ -1010,7 +1010,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Vault of the Wardens",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Vault of the Wardens.",
         },
         [2135] = {
             activities = {
@@ -1023,7 +1023,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Temporal side activities",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Time Rifts and Temporal side activities.",
         },
         [2157] = {
             activities = {
@@ -1036,7 +1036,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Dazar'alor",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Zuldazar and Dazar'alor.",
         },
         [2158] = {
             activities = {
@@ -1045,7 +1045,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Vol'dun",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Vol'dun.",
         },
         [2160] = {
             activities = {
@@ -1058,7 +1058,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Boralus",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Tiragardesand and Boralus.",
         },
         [2161] = {
             activities = {
@@ -1071,7 +1071,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Waycrest Manor",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Drustvar and Waycrest Manor.",
         },
         [2162] = {
             activities = {
@@ -1084,7 +1084,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Shrine of the Storm",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Stormsong Valley and Shrine of the Storm.",
         },
         [2165] = {
             activities = {
@@ -1097,7 +1097,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Argus activities",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Krokuun and Argus activities.",
         },
         [2170] = {
             activities = {
@@ -1110,7 +1110,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Antorus, the Burning Throne",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Argus activities and Antorus, the Burning Throne.",
         },
         [2370] = {
             activities = {
@@ -1123,7 +1123,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Nazjatar",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Neueheim and Nazjatar.",
         },
         [2373] = {
             activities = {
@@ -1136,7 +1136,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Nazjatar",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Mezzamere and Nazjatar.",
         },
         [2391] = {
             activities = {
@@ -1149,7 +1149,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Rostbolzen",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Mechagon and Rostbolzen.",
         },
         [2395] = {
             activities = {
@@ -1158,7 +1158,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Sturmsangtal side content",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Sturmsangtal side content.",
         },
         [2407] = {
             activities = {
@@ -1171,7 +1171,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Spires of Ascension",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Bastion and Spires of Ascension.",
         },
         [2410] = {
             activities = {
@@ -1184,7 +1184,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Theater of Pain",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Maldraxxus and Theater of Pain.",
         },
         [2413] = {
             activities = {
@@ -1197,7 +1197,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Halls of Atonement",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Revendreth and Halls of Atonement.",
         },
         [2415] = {
             activities = {
@@ -1206,7 +1206,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Ny'alotha, the Waking City",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Ny'alotha, the Waking City.",
         },
         [2417] = {
             activities = {
@@ -1215,7 +1215,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Uldum",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Uldum.",
         },
         [2432] = {
             activities = {
@@ -1238,7 +1238,7 @@ api.RegisterRetailContentLocale("enUS", {
                     name = "Ve'nari",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on The Maw, Ve'naris Zuflucht, and Maw activities.",
         },
         [2439] = {
             activities = {
@@ -1261,7 +1261,7 @@ api.RegisterRetailContentLocale("enUS", {
                     name = "Archivist Janeera",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Absolution Crypt, Sinstone turn-ins, and Revendreth side content.",
         },
         [2464] = {
             activities = {
@@ -1274,7 +1274,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Mists of Tirna Scithe",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Ardenweald and Mists of Tirna Scithe.",
         },
         [2465] = {
             activities = {
@@ -1297,7 +1297,7 @@ api.RegisterRetailContentLocale("enUS", {
                     name = "Liawyn",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Ardenweald and Callings and side objectives.",
         },
         [2470] = {
             activities = {
@@ -1306,7 +1306,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Sanctum of Domination",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Sanctum of Domination.",
         },
         [2472] = {
             activities = {
@@ -1329,7 +1329,7 @@ api.RegisterRetailContentLocale("enUS", {
                     name = "Archivist Roh-Suir",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Korthia, Keeper's Respite, and Relic research.",
         },
         [2478] = {
             activities = {
@@ -1342,7 +1342,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Haven",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Zereth Mortis and Haven.",
         },
         [2503] = {
             activities = {
@@ -1365,7 +1365,7 @@ api.RegisterRetailContentLocale("enUS", {
                     name = "Quartermaster Huseng",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Grand Hunt, Ohn'ahran Plains, and Maruukai.",
         },
         [2507] = {
             activities = {
@@ -1392,7 +1392,7 @@ api.RegisterRetailContentLocale("enUS", {
                     name = "Cataloger Jakes",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Siege on Dragonbane Keep, The Waking Shores, and Forbidden Reach.",
         },
         [2510] = {
             activities = {
@@ -1415,7 +1415,7 @@ api.RegisterRetailContentLocale("enUS", {
                     name = "Unatos",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Valdrakken, Thaldraszus, and Story and world quests.",
         },
         [2511] = {
             activities = {
@@ -1438,7 +1438,7 @@ api.RegisterRetailContentLocale("enUS", {
                     name = "Murik",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Community Feast, The Azure Span, and Iskaara.",
         },
         [2517] = {
             activities = {
@@ -1447,7 +1447,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Waking Shores black dragonflight content",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Waking Shores black dragonflight content.",
         },
         [2518] = {
             activities = {
@@ -1456,7 +1456,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Waking Shores black dragonflight content",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Waking Shores black dragonflight content.",
         },
         [2523] = {
             activities = {
@@ -1465,7 +1465,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Obsidian side content",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Obsidian side content.",
         },
         [2524] = {
             activities = {
@@ -1474,7 +1474,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Obsidian side content",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Obsidian side content.",
         },
         [2526] = {
             activities = {
@@ -1483,7 +1483,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Azure Span side quests",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Azure Span side quests.",
         },
         [2544] = {
             activities = {
@@ -1492,7 +1492,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Valdrakken professions hub",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Valdrakken professions hub.",
         },
         [2550] = {
             activities = {
@@ -1501,7 +1501,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Azure Span side content",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Azure Span side content.",
         },
         [2553] = {
             activities = {
@@ -1520,7 +1520,7 @@ api.RegisterRetailContentLocale("enUS", {
                     name = "Soridormi",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on When Time Needs Mending and Time Rifts.",
         },
         [2564] = {
             activities = {
@@ -1543,7 +1543,7 @@ api.RegisterRetailContentLocale("enUS", {
                     name = "Mimuup",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Loamm, Sniffenseeking, and Zaralek world content.",
         },
         [2570] = {
             activities = {
@@ -1562,7 +1562,7 @@ api.RegisterRetailContentLocale("enUS", {
                     name = "Auralia Steelstrike",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Spreading the Light and World quests in Hallowfall.",
         },
         [2574] = {
             activities = {
@@ -1585,7 +1585,7 @@ api.RegisterRetailContentLocale("enUS", {
                     name = "Pipsee",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Central Encampment, Emerald Dream world content, and Story chapters in the Dream.",
         },
         [2590] = {
             activities = {
@@ -1604,7 +1604,7 @@ api.RegisterRetailContentLocale("enUS", {
                     name = "Auditor Balwurz",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on World quests on the Isle of Dorn and Story and side chapters in Dornogal.",
         },
         [2594] = {
             activities = {
@@ -1614,7 +1614,7 @@ api.RegisterRetailContentLocale("enUS", {
                 },
                 {
                     kind = "One-time/Warband",
-                    title = "Story and side chapters in Gandargaz",
+                    title = "Story and side chapters in Gundargaz",
                 },
             },
             quartermasters = {
@@ -1623,13 +1623,13 @@ api.RegisterRetailContentLocale("enUS", {
                     name = "Waxmonger Squick",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on World quests in The Ringing Deeps and Story and side chapters in Gundargaz.",
         },
         [2600] = {
             activities = {
                 {
                     kind = "Weekly",
-                    title = "Weeklyer Pakt",
+                    title = "Weekly pact",
                 },
                 {
                     kind = "World quests",
@@ -1642,34 +1642,34 @@ api.RegisterRetailContentLocale("enUS", {
                     name = "Y'tekhi",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Weekly pact and World quests in Azj-Kahet.",
         },
         [2601] = {
             activities = {
                 {
                     kind = "Weekly",
-                    title = "Pakt der Weberin",
+                    title = "Pact of the Weaver",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Pact of the Weaver.",
         },
         [2605] = {
             activities = {
                 {
                     kind = "Weekly",
-                    title = "Pakt des Generals",
+                    title = "Pact of the General",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Pact of the General.",
         },
         [2607] = {
             activities = {
                 {
                     kind = "Weekly",
-                    title = "Pakt des Wesirs",
+                    title = "Pact of the Vizier",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Pact of the Vizier.",
         },
         [2615] = {
             activities = {
@@ -1679,16 +1679,16 @@ api.RegisterRetailContentLocale("enUS", {
                 },
                 {
                     kind = "Zone",
-                    title = "Archivaktivitäten in Tyrhold",
+                    title = "Archive activities in Tyrhold",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Azerothian Archives and Archive activities in Tyrhold.",
         },
         [2653] = {
             activities = {
                 {
                     kind = "Weekly",
-                    title = "Weeklye Kartellwahl",
+                    title = "Weekly cartel contract",
                 },
                 {
                     kind = "Weekly",
@@ -1701,7 +1701,7 @@ api.RegisterRetailContentLocale("enUS", {
                     name = "Smaks Topskimmer",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Weekly cartel contract and C.H.E.T.T.-Liste.",
         },
         [2658] = {
             activities = {
@@ -1714,7 +1714,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "K'aresh world content",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on K'aresh campaign and K'aresh world content.",
         },
         [2671] = {
             activities = {
@@ -1723,7 +1723,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Kartellwahl: Venture Company",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Kartellwahl: Venture Company.",
         },
         [2673] = {
             activities = {
@@ -1732,7 +1732,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Kartellwahl: Bilgewasserkartell",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Kartellwahl: Bilgewasserkartell.",
         },
         [2675] = {
             activities = {
@@ -1741,7 +1741,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Kartellwahl: Schwarzmeer AG",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Kartellwahl: Schwarzmeer AG.",
         },
         [2677] = {
             activities = {
@@ -1750,7 +1750,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Kartellwahl: Dampfdruckkartell",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Kartellwahl: Dampfdruckkartell.",
         },
         [2685] = {
             activities = {
@@ -1759,7 +1759,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Kartellwahl: Garbagio Treueclub",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Kartellwahl: Garbagio Treueclub.",
         },
         [2688] = {
             activities = {
@@ -1778,7 +1778,7 @@ api.RegisterRetailContentLocale("enUS", {
                     name = "Raen Dawncavalyr",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Hallowfall defense activities and Mereldar call to arms.",
         },
         [2696] = {
             activities = {
@@ -1791,7 +1791,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Local tasks in the Amani area",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Zul'Aman-Kampagne and Local tasks in the Amani area.",
         },
         [2699] = {
             activities = {
@@ -1804,7 +1804,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Local tasks in Voidstorm",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Leerensturm-Kampagne and Local tasks in Voidstorm.",
         },
         [2704] = {
             activities = {
@@ -1817,7 +1817,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Local tasks in Harandar",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Harandar-Kampagne and Local tasks in Harandar.",
         },
         [2710] = {
             activities = {
@@ -1844,7 +1844,7 @@ api.RegisterRetailContentLocale("enUS", {
                     name = "Ranger Allorn",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Saltherils Soiree.",
         },
         [2711] = {
             activities = {
@@ -1859,7 +1859,7 @@ api.RegisterRetailContentLocale("enUS", {
                     name = "Lehrling Diell",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Saltherils Soiree.",
         },
         [2712] = {
             activities = {
@@ -1874,7 +1874,7 @@ api.RegisterRetailContentLocale("enUS", {
                     name = "Armorsmith Goldcrest",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Saltherils Soiree.",
         },
         [2713] = {
             activities = {
@@ -1889,7 +1889,7 @@ api.RegisterRetailContentLocale("enUS", {
                     name = "Ranger Allorn",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Saltherils Soiree.",
         },
         [2714] = {
             activities = {
@@ -1904,7 +1904,7 @@ api.RegisterRetailContentLocale("enUS", {
                     name = "Neriv",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Saltherils Soiree.",
         },
         [2736] = {
             activities = {
@@ -1913,7 +1913,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Manaforge sabotage operations",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Manaforge sabotage operations.",
         },
         [2770] = {
             activities = {
@@ -1926,7 +1926,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Obskurionzitadelle",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Voidstorm and Obskurionzitadelle.",
         },
         [9000111] = {
             activities = {
@@ -1935,7 +1935,7 @@ api.RegisterRetailContentLocale("enUS", {
                     title = "Shattrath city factions",
                 },
             },
-            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+            summary = "Retail content for this faction is centered on Shattrath city factions.",
         },
     },
 })
