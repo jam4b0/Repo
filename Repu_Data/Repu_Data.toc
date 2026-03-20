@@ -6,6 +6,8 @@
 ## Dependencies: Repu
 
 content\shared.lua
+locales\enUS.lua
+locales\deDE.lua
 content\retail\summary\generated.lua
 content\retail\families\quelthalas.lua
 content\retail\families\shattrath.lua

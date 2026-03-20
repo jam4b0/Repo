@@ -38,13 +38,40 @@ function ns.Content:RegisterRetailContentModule(payload)
     _G.RepuAPIRetailContentModules[#_G.RepuAPIRetailContentModules + 1] = payload
 end
 
+function ns.Content:RegisterRetailContentLocale(locale, payload)
+    self.retailContentLocales = self.retailContentLocales or {}
+    self.retailContentLocales[locale] = mergeContent(self.retailContentLocales[locale] or {}, payload or {})
+end
+
+local function getRetailLocalePayload(self)
+    local locale = _G.GetLocale and _G.GetLocale() or "enUS"
+    local locales = self.retailContentLocales or {}
+    local english = locales.enUS or {}
+    local active = locale ~= "enUS" and locales[locale] or nil
+
+    if active then
+        return mergeContent(english, active)
+    end
+
+    return english
+end
+
 function ns.Content:GetFactionContent(factionID)
     self.registry = self.registry or {}
     local flavor = ns.Data:GetActiveFlavor()
     local shared = (self.registry.shared and self.registry.shared.factions) or {}
     local flavorData = (self.registry[flavor] and self.registry[flavor].factions) or {}
+    local content = mergeContent(shared[factionID] or {}, flavorData[factionID] or {})
 
-    return mergeContent(shared[factionID] or {}, flavorData[factionID] or {})
+    if flavor == "retail" then
+        local localePayload = getRetailLocalePayload(self)
+        local localized = localePayload.factions and localePayload.factions[factionID] or nil
+        if localized then
+            content = mergeContent(content, localized)
+        end
+    end
+
+    return content
 end
 
 function ns.Content:GetFactionDetails(candidate, context)
@@ -90,4 +117,7 @@ _G.RepuAPI.RegisterFlavorContent = function(flavor, payload)
 end
 _G.RepuAPI.RegisterRetailContentModule = function(payload)
     ns.Content:RegisterRetailContentModule(payload)
+end
+_G.RepuAPI.RegisterRetailContentLocale = function(locale, payload)
+    ns.Content:RegisterRetailContentLocale(locale, payload)
 end
