@@ -49,7 +49,10 @@ api.RegisterRetailContentModule({
                 {
                     label = "Quartermaster",
                     location = {
+                        mapID = 2023,
                         title = "Maruukai",
+                        x = 0.604,
+                        y = 0.376,
                     },
                     name = "Quartermaster Huseng",
                 },
@@ -79,7 +82,10 @@ api.RegisterRetailContentModule({
                 {
                     label = "Quartermaster",
                     location = {
+                        mapID = 2022,
                         title = "Dragonscale Basecamp",
+                        x = 0.470,
+                        y = 0.826,
                     },
                     name = "Cataloger Jakes",
                 },
@@ -153,7 +159,10 @@ api.RegisterRetailContentModule({
                 {
                     label = "Quartermaster",
                     location = {
+                        mapID = 2024,
                         title = "Iskaara",
+                        x = 0.130,
+                        y = 0.490,
                     },
                     name = "Murik",
                 },
