@@ -22,6 +22,13 @@ api.RegisterRetailContentModule({
                     },
                     title = "Spires of Ascension",
                 },
+                {
+                    kind = "Weekly",
+                    location = {
+                        title = "Bastion",
+                    },
+                    title = "World quests and covenant callings",
+                },
             },
             confidence = "medium",
             quartermasters = {
@@ -51,6 +58,13 @@ api.RegisterRetailContentModule({
                         title = "Theater of Pain",
                     },
                     title = "Theater of Pain",
+                },
+                {
+                    kind = "Weekly",
+                    location = {
+                        title = "Maldraxxus",
+                    },
+                    title = "World quests and covenant callings",
                 },
             },
             confidence = "medium",
@@ -135,6 +149,13 @@ api.RegisterRetailContentModule({
                     },
                     title = "Absolution Crypt",
                 },
+                {
+                    kind = "Daily",
+                    location = {
+                        title = "Revendreth",
+                    },
+                    title = "Avowed hunts and daily restoration work",
+                },
             },
             confidence = "medium",
             quartermasters = {
@@ -178,6 +199,13 @@ api.RegisterRetailContentModule({
                         title = "Ardenweald",
                     },
                     title = "Ardenweald",
+                },
+                {
+                    kind = "Weekly",
+                    location = {
+                        title = "Heart of the Forest",
+                    },
+                    title = "World quests and covenant callings",
                 },
             },
             confidence = "medium",
@@ -263,6 +291,13 @@ api.RegisterRetailContentModule({
                         title = "Haven",
                     },
                     title = "Haven",
+                },
+                {
+                    kind = "Weekly",
+                    location = {
+                        title = "Zereth Mortis",
+                    },
+                    title = "World quests and weekly patterns",
                 },
             },
             confidence = "medium",

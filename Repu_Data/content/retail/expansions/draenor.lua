@@ -24,6 +24,14 @@ api.RegisterRetailContentModule({
                     },
                     title = "War Mill",
                 },
+                {
+                    kind = "Weekly",
+                    location = {
+                        mapID = 525,
+                        title = "Frostfire Ridge",
+                    },
+                    title = "Frostfire hub quests and bonus objectives",
+                },
             },
             confidence = "medium",
             quartermasters = {
@@ -93,6 +101,14 @@ api.RegisterRetailContentModule({
                         title = "Grimrail Depot",
                     },
                     title = "Grimrail Depot",
+                },
+                {
+                    kind = "Recurring",
+                    location = {
+                        mapID = 550,
+                        title = "Nagrand",
+                    },
+                    title = "Relic turn-ins and repeatable scavenging",
                 },
             },
             confidence = "medium",
@@ -229,6 +245,14 @@ api.RegisterRetailContentModule({
                         title = "Auchindoun",
                     },
                     title = "Auchindoun",
+                },
+                {
+                    kind = "Daily",
+                    location = {
+                        mapID = 543,
+                        title = "Fang'rila",
+                    },
+                    title = "Fang'rila hunting loop",
                 },
             },
             confidence = "medium",

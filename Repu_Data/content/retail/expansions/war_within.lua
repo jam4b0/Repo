@@ -27,6 +27,14 @@ api.RegisterRetailContentModule({
                     title = "Hallowfall world quests and side activities",
                 },
                 {
+                    kind = "Weekly",
+                    location = {
+                        mapID = 2215,
+                        title = "Hallowfall",
+                    },
+                    title = "Hallowfall weekly quests",
+                },
+                {
                     kind = "Hub",
                     location = {
                         mapID = 2215,
@@ -63,6 +71,14 @@ api.RegisterRetailContentModule({
                         title = "Isle of Dorn",
                     },
                     title = "Isle of Dorn world quests and side activities",
+                },
+                {
+                    kind = "Weekly",
+                    location = {
+                        mapID = 2248,
+                        title = "Isle of Dorn",
+                    },
+                    title = "Council world quests and weeklies",
                 },
                 {
                     kind = "Hub",
@@ -111,6 +127,14 @@ api.RegisterRetailContentModule({
                         title = "The Ringing Deeps",
                     },
                     title = "Ringing Deeps world quests and side activities",
+                },
+                {
+                    kind = "Weekly",
+                    location = {
+                        mapID = 2214,
+                        title = "The Ringing Deeps",
+                    },
+                    title = "Machine-speaker world quests and weeklies",
                 },
                 {
                     kind = "Hub",
@@ -316,6 +340,14 @@ api.RegisterRetailContentModule({
                         title = "K'aresh",
                     },
                     title = "K'aresh world content",
+                },
+                {
+                    kind = "Weekly",
+                    location = {
+                        mapID = 2371,
+                        title = "K'aresh",
+                    },
+                    title = "K'aresh recurring hub and weekly work",
                 },
             },
             confidence = "medium",

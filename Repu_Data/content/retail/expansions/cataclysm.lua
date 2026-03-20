@@ -16,6 +16,14 @@ api.RegisterRetailContentModule({
                     },
                     title = "Hyjal",
                 },
+                {
+                    kind = "Daily",
+                    location = {
+                        mapID = 198,
+                        title = "Hyjal",
+                    },
+                    title = "Mount Hyjal dailies",
+                },
             },
             confidence = "medium",
             quartermasters = {
@@ -114,6 +122,14 @@ api.RegisterRetailContentModule({
                     },
                     title = "Halbinsel von Tol Barad",
                 },
+                {
+                    kind = "Daily",
+                    location = {
+                        mapID = 245,
+                        title = "Baradin Base Camp",
+                    },
+                    title = "Tol Barad daily quests",
+                },
             },
             confidence = "medium",
             quartermasters = {
@@ -146,6 +162,14 @@ api.RegisterRetailContentModule({
                         title = "Halbinsel von Tol Barad",
                     },
                     title = "Halbinsel von Tol Barad",
+                },
+                {
+                    kind = "Daily",
+                    location = {
+                        mapID = 245,
+                        title = "Hellscream's Grasp",
+                    },
+                    title = "Tol Barad daily quests",
                 },
             },
             confidence = "medium",

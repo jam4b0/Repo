@@ -103,6 +103,13 @@ api.RegisterRetailContentModule({
                     },
                     title = "Thaldraszus",
                 },
+                {
+                    kind = "Weekly",
+                    location = {
+                        title = "Valdrakken",
+                    },
+                    title = "World quests and renown weeklies",
+                },
             },
             confidence = "medium",
             quartermasters = {
@@ -125,6 +132,13 @@ api.RegisterRetailContentModule({
                         title = "The Azure Span",
                     },
                     title = "Community Feast",
+                },
+                {
+                    kind = "Weekly",
+                    location = {
+                        title = "Iskaara",
+                    },
+                    title = "World quests and Tuskarr weeklies",
                 },
                 {
                     kind = "Zone",
@@ -378,6 +392,14 @@ api.RegisterRetailContentModule({
                         title = "Emerald Dream",
                     },
                     title = "Emerald Dream world content",
+                },
+                {
+                    kind = "Weekly",
+                    location = {
+                        mapID = 2151,
+                        title = "Central Encampment",
+                    },
+                    title = "Emerald Dream weekly quests",
                 },
                 {
                     kind = "Story",

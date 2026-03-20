@@ -36,6 +36,13 @@ api.RegisterRetailContentModule({
                     },
                     title = "Vol'dun",
                 },
+                {
+                    kind = "Weekly",
+                    location = {
+                        title = "Vol'dun",
+                    },
+                    title = "World quests and emissary rotations",
+                },
             },
             confidence = "medium",
             quartermasters = {
@@ -66,6 +73,13 @@ api.RegisterRetailContentModule({
                     },
                     title = "Boralus",
                 },
+                {
+                    kind = "Weekly",
+                    location = {
+                        title = "Kul Tiras",
+                    },
+                    title = "World quests and emissary rotations",
+                },
             },
             confidence = "medium",
             quartermasters = {
@@ -95,6 +109,13 @@ api.RegisterRetailContentModule({
                         title = "Waycrest Manor",
                     },
                     title = "Waycrest Manor",
+                },
+                {
+                    kind = "Weekly",
+                    location = {
+                        title = "Drustvar",
+                    },
+                    title = "World quests and emissary rotations",
                 },
             },
             confidence = "medium",
@@ -194,6 +215,13 @@ api.RegisterRetailContentModule({
                     },
                     title = "Nazjatar",
                 },
+                {
+                    kind = "Daily",
+                    location = {
+                        title = "Newhome",
+                    },
+                    title = "Nazjatar dailies and bodyguard tasks",
+                },
             },
             confidence = "medium",
             quartermasters = {
@@ -223,6 +251,13 @@ api.RegisterRetailContentModule({
                         title = "Rustbolt",
                     },
                     title = "Rustbolt",
+                },
+                {
+                    kind = "Daily",
+                    location = {
+                        title = "Rustbolt",
+                    },
+                    title = "Mechagon repeatables and daily projects",
                 },
             },
             confidence = "medium",

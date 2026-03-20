@@ -23,6 +23,14 @@ api.RegisterRetailContentModule({
                     },
                     title = "Neltharion's Lair",
                 },
+                {
+                    kind = "Weekly",
+                    location = {
+                        mapID = 650,
+                        title = "Highmountain",
+                    },
+                    title = "World quests and emissary rotations",
+                },
             },
             confidence = "medium",
             quartermasters = {
@@ -56,6 +64,14 @@ api.RegisterRetailContentModule({
                     },
                     title = "Shal'Aran",
                 },
+                {
+                    kind = "Recurring",
+                    location = {
+                        mapID = 680,
+                        title = "Suramar",
+                    },
+                    title = "Suramar repeatables and world quests",
+                },
             },
             confidence = "medium",
             quartermasters = {
@@ -88,6 +104,14 @@ api.RegisterRetailContentModule({
                         title = "Krasus' Landing",
                     },
                     title = "Krasus' Landing",
+                },
+                {
+                    kind = "Weekly",
+                    location = {
+                        mapID = 641,
+                        title = "Val'sharah",
+                    },
+                    title = "World quests and emissary rotations",
                 },
             },
             confidence = "medium",
@@ -153,6 +177,14 @@ api.RegisterRetailContentModule({
                     },
                     title = "Eye of Azshara",
                 },
+                {
+                    kind = "Weekly",
+                    location = {
+                        mapID = 630,
+                        title = "Azsuna",
+                    },
+                    title = "World quests and emissary rotations",
+                },
             },
             confidence = "medium",
             quartermasters = {
@@ -185,6 +217,14 @@ api.RegisterRetailContentModule({
                         title = "Haimont",
                     },
                     title = "Haimont",
+                },
+                {
+                    kind = "Weekly",
+                    location = {
+                        mapID = 634,
+                        title = "Stormheim",
+                    },
+                    title = "World quests and emissary rotations",
                 },
             },
             confidence = "medium",
@@ -243,6 +283,14 @@ api.RegisterRetailContentModule({
                     },
                     title = "Argus activities",
                 },
+                {
+                    kind = "Weekly",
+                    location = {
+                        mapID = 830,
+                        title = "Argus",
+                    },
+                    title = "Argus weekly quests and world content",
+                },
             },
             confidence = "medium",
             quartermasters = {
@@ -274,6 +322,14 @@ api.RegisterRetailContentModule({
                         title = "Antorus, the Burning Throne",
                     },
                     title = "Antorus, the Burning Throne",
+                },
+                {
+                    kind = "Weekly",
+                    location = {
+                        mapID = 830,
+                        title = "Argus",
+                    },
+                    title = "Argus weekly quests and world content",
                 },
             },
             confidence = "medium",
