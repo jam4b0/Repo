@@ -26,8 +26,9 @@ function ns.UI:CreateRow(parent, index)
     row.owner = parent
     row.index = index
     row:SetHeight(profile.rowHeight)
-    row:SetPoint("TOPLEFT", parent, "TOPLEFT", 8, -24 - ((index - 1) * (profile.rowHeight + 3)))
-    row:SetPoint("TOPRIGHT", parent, "TOPRIGHT", -8, -24 - ((index - 1) * (profile.rowHeight + 3)))
+    local topOffset = parent.headerOffset or 24
+    row:SetPoint("TOPLEFT", parent, "TOPLEFT", 8, -topOffset - ((index - 1) * (profile.rowHeight + 3)))
+    row:SetPoint("TOPRIGHT", parent, "TOPRIGHT", -8, -topOffset - ((index - 1) * (profile.rowHeight + 3)))
 
     setBackdrop(row, Styles.border)
     row:RegisterForClicks("LeftButtonUp")
@@ -111,8 +112,9 @@ function ns.UI:UpdateRow(row, candidate, isActive, isSelected)
     row.nameText:SetText(tostring(faction.name or UNKNOWN))
 
     row:ClearAllPoints()
-    row:SetPoint("TOPLEFT", row.owner, "TOPLEFT", isChild and 22 or 8, -24 - ((row.index - 1) * (ns.State:GetProfile().rowHeight + 3)))
-    row:SetPoint("TOPRIGHT", row.owner, "TOPRIGHT", -8, -24 - ((row.index - 1) * (ns.State:GetProfile().rowHeight + 3)))
+    local topOffset = row.owner.headerOffset or 24
+    row:SetPoint("TOPLEFT", row.owner, "TOPLEFT", isChild and 22 or 8, -topOffset - ((row.index - 1) * (ns.State:GetProfile().rowHeight + 3)))
+    row:SetPoint("TOPRIGHT", row.owner, "TOPRIGHT", -8, -topOffset - ((row.index - 1) * (ns.State:GetProfile().rowHeight + 3)))
 
     row.bar:ClearAllPoints()
     row.bar:SetPoint("TOPLEFT", row, "TOPLEFT", 4, -4)

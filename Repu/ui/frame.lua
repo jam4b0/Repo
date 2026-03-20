@@ -118,7 +118,7 @@ function ns.UI:Init()
 
     frame.dragIcon = frame:CreateTexture(nil, "OVERLAY")
     frame.dragIcon:SetSize(14, 14)
-    frame.dragIcon:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -10, -9)
+    frame.dragIcon:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", -9, 9)
     frame.dragIcon:SetTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Up")
     frame.dragIcon:SetVertexColor(unpack(Styles.subtleText))
 
@@ -163,6 +163,7 @@ function ns.UI:Init()
     end
 
     frame.rows = {}
+    frame.headerOffset = 30
 
     frame:SetScript("OnDragStart", function(self)
         if ns.State:GetProfile().locked then
