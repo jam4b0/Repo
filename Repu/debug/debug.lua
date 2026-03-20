@@ -144,6 +144,27 @@ local function getAddonCPUUsage(index, addonName)
     return nil
 end
 
+local function isAddonLoaded(addonName)
+    if C_AddOns and C_AddOns.IsAddOnLoaded then
+        return C_AddOns.IsAddOnLoaded(addonName)
+    end
+
+    if IsAddOnLoaded then
+        return IsAddOnLoaded(addonName)
+    end
+
+    return nil
+end
+
+local function formatMemoryKB(memoryKB)
+    local value = tonumber(memoryKB or 0) or 0
+    if value >= 102.4 then
+        return string.format("%.1f MB", value / 1024)
+    end
+
+    return string.format("%.1f KB", value)
+end
+
 local function findAddonIndex(addonName)
     if not GetNumAddOns then
         return nil
@@ -187,6 +208,7 @@ local function collectAddonResourceUsage()
             name = addonName,
             memoryKB = memoryKB,
             cpuMS = cpuMS,
+            loaded = isAddonLoaded(addonName),
         }
     end
 
@@ -591,10 +613,12 @@ function ns.Debug:BuildWindowReport()
 
         for _, row in ipairs(resources.rows or {}) do
             resourceLines[#resourceLines + 1] = string.format(
-                "  %s: %.1f MB  CPU %s",
+                "  %s: %s  CPU %s  loaded=%s",
                 tostring(row.name),
-                (row.memoryKB or 0) / 1024,
+                tostring(formatMemoryKB(row.memoryKB)),
                 row.cpuMS ~= nil and string.format("%.1f ms", row.cpuMS) or Locale:Get("DEBUG_CPU_UNAVAILABLE")
+                ,
+                tostring(row.loaded)
             )
         end
 
@@ -631,12 +655,12 @@ function ns.Debug:RefreshWindow()
         tostring(last and last.key or Locale:Get("DEBUG_LAST_NONE"))
     ))
     self.window.resources:SetText(string.format(
-        "RAM %.1f MB  CPU %s  Repu %.1f MB  Data %.1f MB  Map %.1f MB",
+        "RAM %.1f MB  CPU %s  Repu %s  Data %s  Map %s",
         (resources.totalMemory or 0) / 1024,
         resources.cpuAvailable and string.format("%.1f ms", resources.totalCPU or 0) or Locale:Get("DEBUG_CPU_UNAVAILABLE"),
-        ((resources.rows and resources.rows[1] and resources.rows[1].memoryKB) or 0) / 1024,
-        ((resources.rows and resources.rows[2] and resources.rows[2].memoryKB) or 0) / 1024,
-        ((resources.rows and resources.rows[3] and resources.rows[3].memoryKB) or 0) / 1024
+        formatMemoryKB((resources.rows and resources.rows[1] and resources.rows[1].memoryKB) or 0),
+        formatMemoryKB((resources.rows and resources.rows[2] and resources.rows[2].memoryKB) or 0),
+        formatMemoryKB((resources.rows and resources.rows[3] and resources.rows[3].memoryKB) or 0)
     ))
     setOutputText(self.window.output, self:BuildWindowReport())
     self.window:SetShown(profile.debug and profile.showDebugWindow)
