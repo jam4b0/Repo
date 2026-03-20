@@ -25,7 +25,7 @@ local defaults = {
     },
     debug = {
         enabled = false,
-        autoCapture = true,
+        autoCapture = false,
         maxCaptures = 200,
         sweepMode = false,
         defaultMaxCaptures = 200,
