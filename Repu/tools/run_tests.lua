@@ -146,6 +146,7 @@ local function loadSuite(flavor, config)
     local ns = makeNamespace(flavor)
 
     loadAddonFile("core/utils.lua", ns)
+    loadAddonFile("core/i18n.lua", ns)
     loadAddonFile("core/localization.lua", ns)
     loadAddonFile("locales/enUS.lua", ns)
     loadAddonFile("locales/deDE.lua", ns)

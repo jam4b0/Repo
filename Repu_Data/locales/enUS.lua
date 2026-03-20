@@ -1,10 +1,10 @@
 local api = _G.RepuAPI
 
-if not api or not api.RegisterRetailContentLocale then
+if not api or not api.RegisterLocaleDomain then
     return
 end
 
-api.RegisterRetailContentLocale("enUS", {
+api.RegisterLocaleDomain("retail_content", "enUS", {
     factions = {
         [21] = {
             summary = "This booming coastal city is run by Baron Revilgaz of the Blackwater Raiders.  Mortal enemies of the Bloodsail Buccaneers and part of the Steamwheedle Cartel.",

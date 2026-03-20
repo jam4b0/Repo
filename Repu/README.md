@@ -47,32 +47,34 @@ Der aktuelle Stand:
 - `content/retail/legacy/`: stabile Heimat- und Legacy-Fraktionen
 - `content/retail/summary/`: generierte Startdatensaetze fuer noch nicht vertiefte Fraktionen
 
-## Locale-System
+## I18n-System
 
-Das Projekt benutzt derzeit bewusst **zwei verschiedene Locale-Typen**:
+Das Projekt benutzt jetzt ein gemeinsames, domainbasiertes I18n-Modell ueber alle drei Addons:
+
+- `ui`
+  - klassische UI- und Systemtexte von `Repu`
+  - Beispiele: `OPTION_LOCK`, `DEBUG_STATUS`, `DETAIL_NO_DESCRIPTION`
+- `retail_content`
+  - lokalisierte Inhaltsdaten aus `Repu_Data`
+  - Beispiele: `summary`, `activities`, `quartermasters` pro `factionID`
+- `map_ui`
+  - Karten-/Provider-Texte von `Repu_Map`
+
+Die gemeinsame Runtime lebt in [i18n.lua](/root/Repo/Repu/core/i18n.lua) und wird ueber `_G.RepuAPI.RegisterLocaleDomain(domain, locale, payload)` befuellt.
+
+Die Dateiform darf je Domain unterschiedlich aussehen:
 
 - `Repu/locales/*.lua`
-  - klassische UI-Lokalisierung
-  - flache Textkeys wie `OPTION_LOCK`, `DEBUG_STATUS`, `DETAIL_NO_DESCRIPTION`
-  - verantwortlich fuer Fenstertexte, Optionen, Debugausgaben und Statusmeldungen
-
+  - flache UI-Key-Tabellen fuer die Domain `ui`
 - `Repu_Data/locales/*.lua`
-  - lokalisierte **Content-Overlays** pro `factionID`
-  - Felder wie `summary`, `activities`, `quartermasters`
-  - verantwortlich fuer sprachabhaengige Fraktionsinhalte, nicht fuer die UI von `Repu`
-
-Wichtig:
-
-- `Repu` und `Repu_Data` verwenden also **nicht dieselbe Dateiform** fuer Lokalisierung.
-- Das ist beabsichtigt:
-  - `Repu` lokalisiert Oberflaechentexte
-  - `Repu_Data` lokalisiert Inhaltsdaten
-- `Repu_Map` hat aktuell noch keine eigene ausgepraegte Locale-Schicht und soll spaeter auf dasselbe gemeinsame I18n-Zielmodell gehoben werden.
+  - Content-Overlays pro `factionID` fuer die Domain `retail_content`
+- `Repu_Map/locales/*.lua`
+  - flache Key-Tabellen fuer die Domain `map_ui`
 
 Fuer `Repu_Data` gilt ausserdem:
 
 - sprachneutrale Struktur bleibt in `content/retail/**/*.lua`
-- sprachabhaengige Textfelder werden in `locales/*.lua` ueberlagert
+- sprachabhaengige Textfelder werden ueber `retail_content`-Locales ueberlagert
 - fuer echte Blizzard-Ruffraktionen gilt bei `enUS`:
   - **Blizzard Game Data API `description` zuerst**
   - danach kuratierter Addon-Text

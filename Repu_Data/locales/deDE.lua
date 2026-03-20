@@ -1,10 +1,10 @@
 local api = _G.RepuAPI
 
-if not api or not api.RegisterRetailContentLocale then
+if not api or not api.RegisterLocaleDomain then
     return
 end
 
-api.RegisterRetailContentLocale("deDE", {
+api.RegisterLocaleDomain("retail_content", "deDE", {
     factions = {
         [21] = {
             summary = "Startdatensatz für diese im Retail-Core lokal verankerte Fraktion. Der Kernbezug liegt aktuell vor allem bei Schlingendorntal, Nördliches Schlingendorntal, Das Schlingendornkap. Spezifische Rüstmeister- und Aktivitätsdaten können später präzisiert werden.",

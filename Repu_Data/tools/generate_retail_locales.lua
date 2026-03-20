@@ -362,10 +362,10 @@ local function writeLocale(locale, payload)
     local outPath = root .. "locales/" .. locale .. ".lua"
     local handle = assert(io.open(outPath, "w"))
     handle:write("local api = _G.RepuAPI\n\n")
-    handle:write("if not api or not api.RegisterRetailContentLocale then\n")
+    handle:write("if not api or not api.RegisterLocaleDomain then\n")
     handle:write("    return\n")
     handle:write("end\n\n")
-    handle:write(string.format("api.RegisterRetailContentLocale(%q, %s)\n", locale, serialize(payload, 0)))
+    handle:write(string.format("api.RegisterLocaleDomain(%q, %q, %s)\n", "retail_content", locale, serialize(payload, 0)))
     handle:close()
 end
 
@@ -380,8 +380,8 @@ local function loadExistingLocale(locale)
     local captured
     local previousAPI = _G.RepuAPI
     _G.RepuAPI = {
-        RegisterRetailContentLocale = function(loadedLocale, payload)
-            if loadedLocale == locale then
+        RegisterLocaleDomain = function(domain, loadedLocale, payload)
+            if domain == "retail_content" and loadedLocale == locale then
                 captured = shallowCopy(payload)
             end
         end,

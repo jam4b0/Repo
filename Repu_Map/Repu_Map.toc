@@ -6,4 +6,7 @@
 ## Dependencies: Repu
 ## OptionalDeps: Repu_Data, HandyNotes, TomTom
 
+core\i18n.lua
+locales\enUS.lua
+locales\deDE.lua
 core\init.lua

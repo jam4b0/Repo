@@ -31,6 +31,9 @@ local function onAddonLoaded(_, event, addonName)
     end
 
     state.isLoaded = true
+    if _G.RepuMapAPI.I18n then
+        _G.RepuMapAPI.I18n:Apply()
+    end
 end
 
 addon:RegisterEvent("ADDON_LOADED")

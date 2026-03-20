@@ -15,7 +15,8 @@
 
 ## Locale-Regeln
 
-- `locales/*.lua` sind Content-Overlays pro `factionID`, keine klassischen UI-Locale-Dateien.
+- `locales/*.lua` registrieren die gemeinsame I18n-Domain `retail_content`.
+- Das Projekt verwendet dieselbe I18n-Runtime wie `Repu` und `Repu_Map`; nur die Payload-Form ist hier datenfoermig pro `factionID`.
 - Rohdaten in `content/retail/**/*.lua` bleiben sprachneutral oder englisch-first.
 - Sprachabhaengige Texte werden ueber `locales/enUS.lua`, `locales/deDE.lua` und spaetere Overrides geliefert.
 - Fuer echte Blizzard-Ruffraktionen gilt:

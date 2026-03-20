@@ -39,21 +39,12 @@ function ns.Content:RegisterRetailContentModule(payload)
 end
 
 function ns.Content:RegisterRetailContentLocale(locale, payload)
-    self.retailContentLocales = self.retailContentLocales or {}
-    self.retailContentLocales[locale] = mergeContent(self.retailContentLocales[locale] or {}, payload or {})
+    ns.I18n:RegisterDomain("retail_content", locale, payload or {})
 end
 
 local function getRetailLocalePayload(self)
-    local locale = _G.GetLocale and _G.GetLocale() or "enUS"
-    local locales = self.retailContentLocales or {}
-    local english = locales.enUS or {}
-    local active = locale ~= "enUS" and locales[locale] or nil
-
-    if active then
-        return mergeContent(english, active)
-    end
-
-    return english
+    local payload = ns.I18n:GetDomain("retail_content")
+    return payload or {}
 end
 
 function ns.Content:GetFactionContent(factionID)

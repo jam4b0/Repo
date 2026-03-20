@@ -35,8 +35,13 @@
 
 ## Locale-Regeln
 
-- `Repu/locales/*.lua` sind ausschliesslich fuer UI- und Systemtexte gedacht.
-- `Repu_Data/locales/*.lua` sind keine klassischen UI-Locales, sondern Content-Overlays pro `factionID`.
+- Das Projekt benutzt eine gemeinsame I18n-Runtime mit Domains.
+- `ui` = `Repu` UI-/Systemtexte.
+- `retail_content` = `Repu_Data` Content-Overlays pro `factionID`.
+- `map_ui` = `Repu_Map` Karten-/Provider-Texte.
+- `Repu/locales/*.lua` registrieren immer die Domain `ui`.
+- `Repu_Data/locales/*.lua` registrieren immer die Domain `retail_content`.
+- `Repu_Map/locales/*.lua` registrieren immer die Domain `map_ui`.
 - Neue UI-Texte gehoeren nie nach `Repu_Data/locales/`.
 - Neue Fraktionsinhalte gehoeren nie nach `Repu/locales/`.
 - Bei echten Blizzard-Ruffraktionen soll `enUS` nach Moeglichkeit die offizielle Blizzard-`description` als Primaertext nutzen.

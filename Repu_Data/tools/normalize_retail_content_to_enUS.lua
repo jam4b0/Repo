@@ -180,8 +180,8 @@ end
 
 local englishLocales = { factions = {} }
 _G.RepuAPI = {
-    RegisterRetailContentLocale = function(locale, payload)
-        if locale == "enUS" then
+    RegisterLocaleDomain = function(domain, locale, payload)
+        if domain == "retail_content" and locale == "enUS" then
             deepMerge(englishLocales, payload or {})
         end
     end,
