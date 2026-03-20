@@ -94,6 +94,18 @@ local function createDetailButton(parent, index)
     return button
 end
 
+local function updateLockButtonAppearance(button, locked)
+    if not button or not button.icon then
+        return
+    end
+
+    if locked then
+        button.icon:SetTexture("Interface\\Buttons\\LockButton-Locked-Up")
+    else
+        button.icon:SetTexture("Interface\\Buttons\\LockButton-Unlocked-Up")
+    end
+end
+
 function ns.UI:Init()
     local profile = ns.State:GetProfile()
     local frame = CreateFrame("Frame", "RepuFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate")
@@ -125,8 +137,10 @@ function ns.UI:Init()
     frame.lockButton:SetScript("OnClick", function()
         local currentProfile = ns.State:GetProfile()
         currentProfile.locked = not currentProfile.locked
+        updateLockButtonAppearance(frame.lockButton, currentProfile.locked)
         ns.State:Refresh("FRAME_LOCK_TOGGLE")
     end)
+    updateLockButtonAppearance(frame.lockButton, profile.locked)
 
     frame.detail = CreateFrame("Frame", nil, frame, BackdropTemplateMixin and "BackdropTemplate")
     frame.detail:SetPoint("TOPLEFT", frame, "TOPLEFT", 8, -8)
@@ -303,7 +317,7 @@ function ns.UI:Refresh(candidates, context)
     self.frame:SetAlpha(profile.opacity or 1)
     self.frame:SetWidth(profile.width)
     self.frame:SetHeight(height)
-    self.frame.lockButton.icon:SetTexture(profile.locked and "Interface\\Buttons\\LockButton-Locked-Up" or "Interface\\Buttons\\LockButton-Unlocked-Up")
+    updateLockButtonAppearance(self.frame.lockButton, profile.locked)
 
     local title = ""
     if context and context.instanceName and context.instanceType and context.instanceType ~= "none" then
