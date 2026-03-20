@@ -115,4 +115,7 @@ ns.Locale:Register("enUS", {
     DEBUG_MAPSCAN_STATUS_SCANNED_AT = "MapScan ScannedAt=%s",
     DEBUG_UI_HINT = "UI: capture + diagnostics + mapscan buttons below",
     DEBUG_LAST_NONE = "none",
+    FALLBACK_FACTION_GROUP = "Faction Group",
+    FALLBACK_FACTION_GROUP_DESCRIPTION = "Grouped local factions for this area.",
+    FALLBACK_FACTION_FORMAT = "Faction %d",
 })

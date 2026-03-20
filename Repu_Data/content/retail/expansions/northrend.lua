@@ -44,7 +44,7 @@ api.RegisterRetailContentModule({
                         mapID = 114,
                         title = "Borean Tundra",
                     },
-                    title = "Questlines in Borean Tundra",
+                    title = "Questlines in Borean Tandra",
                 },
             },
             confidence = "medium",

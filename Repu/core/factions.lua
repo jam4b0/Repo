@@ -354,12 +354,14 @@ local function createSyntheticFaction(match)
 end
 
 local function createVirtualGroupFaction(factionID, name)
+    local Locale = ns.Locale
+    local fallbackName = name or Locale:Get("FALLBACK_FACTION_GROUP")
     return {
         index = 0,
         factionID = factionID,
-        name = name or "Fraktionsgruppe",
-        nameKey = Utils:NormalizeKey(name or "Fraktionsgruppe"),
-        description = "Gruppierte Ortsfraktionen dieses Gebiets.",
+        name = fallbackName,
+        nameKey = Utils:NormalizeKey(fallbackName),
+        description = Locale:Get("FALLBACK_FACTION_GROUP_DESCRIPTION"),
         standingID = 0,
         standingLabel = "",
         min = 0,
@@ -381,7 +383,8 @@ local function createVirtualGroupFaction(factionID, name)
 end
 
 local function createSyntheticKnownChildFaction(factionID, name, parentFactionID)
-    local factionName = name or ("Fraktion " .. tostring(factionID))
+    local Locale = ns.Locale
+    local factionName = name or string.format(Locale:Get("FALLBACK_FACTION_FORMAT"), factionID)
     return {
         index = 0,
         factionID = factionID,

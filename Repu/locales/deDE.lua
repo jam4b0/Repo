@@ -115,4 +115,7 @@ ns.Locale:Register("deDE", {
     DEBUG_MAPSCAN_STATUS_SCANNED_AT = "MapScan ScannedAt=%s",
     DEBUG_UI_HINT = "UI: Capture-, Diagnose- und Mapscan-Buttons unten",
     DEBUG_LAST_NONE = "none",
+    FALLBACK_FACTION_GROUP = "Fraktionsgruppe",
+    FALLBACK_FACTION_GROUP_DESCRIPTION = "Gruppierte Ortsfraktionen dieses Gebiets.",
+    FALLBACK_FACTION_FORMAT = "Fraktion %d",
 })

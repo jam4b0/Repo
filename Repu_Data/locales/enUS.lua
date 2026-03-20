@@ -444,7 +444,7 @@ api.RegisterRetailContentLocale("enUS", {
             activities = {
                 {
                     kind = "Story/Zone",
-                    title = "Questlines in Borean Tundra",
+                    title = "Questlines in Borean Tandra",
                 },
             },
             summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
@@ -767,7 +767,7 @@ api.RegisterRetailContentLocale("enUS", {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Isle of Thunder",
+                    title = "Isle of Thander",
                 },
             },
             summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
@@ -776,7 +776,7 @@ api.RegisterRetailContentLocale("enUS", {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Isle of Thunder",
+                    title = "Isle of Thander",
                 },
             },
             summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
@@ -798,7 +798,7 @@ api.RegisterRetailContentLocale("enUS", {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Isle of the Thunder King",
+                    title = "Isle of the Thander King",
                 },
                 {
                     kind = "Raid",
@@ -1614,7 +1614,7 @@ api.RegisterRetailContentLocale("enUS", {
                 },
                 {
                     kind = "One-time/Warband",
-                    title = "Story and side chapters in Gundargaz",
+                    title = "Story and side chapters in Gandargaz",
                 },
             },
             quartermasters = {
@@ -1629,7 +1629,7 @@ api.RegisterRetailContentLocale("enUS", {
             activities = {
                 {
                     kind = "Weekly",
-                    title = "Wöchentlicher Pakt",
+                    title = "Weeklyer Pakt",
                 },
                 {
                     kind = "World quests",
@@ -1688,7 +1688,7 @@ api.RegisterRetailContentLocale("enUS", {
             activities = {
                 {
                     kind = "Weekly",
-                    title = "Wöchentliche Kartellwahl",
+                    title = "Weeklye Kartellwahl",
                 },
                 {
                     kind = "Weekly",

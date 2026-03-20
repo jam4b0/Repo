@@ -98,7 +98,7 @@ api.RegisterRetailContentModule({
                         x = 0.432,
                         y = 0.328,
                     },
-                    title = "Story and side chapters in Gundargaz",
+                    title = "Story and side chapters in Gandargaz",
                 },
             },
             confidence = "medium",
