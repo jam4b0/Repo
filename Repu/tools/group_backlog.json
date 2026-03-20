@@ -1,0 +1,401 @@
+{
+  "summary": {
+    "explicitGroupCount": 5,
+    "explicitChildCount": 19,
+    "candidateRootCount": 19,
+    "supersededHeaderCount": 15
+  },
+  "explicitGroups": [
+    {
+      "parentFactionID": 2710,
+      "type": "retail_parent",
+      "name": null,
+      "children": [
+        {
+          "factionID": 2711,
+          "name": "Magisters",
+          "contentFiles": [
+            "Repu_Data/content/retail/expansions/midnight.lua"
+          ]
+        },
+        {
+          "factionID": 2712,
+          "name": "Blood Knights",
+          "contentFiles": [
+            "Repu_Data/content/retail/expansions/midnight.lua"
+          ]
+        },
+        {
+          "factionID": 2714,
+          "name": "Shades of the Row",
+          "contentFiles": [
+            "Repu_Data/content/retail/expansions/midnight.lua"
+          ]
+        },
+        {
+          "factionID": 2713,
+          "name": "Farstriders",
+          "contentFiles": [
+            "Repu_Data/content/retail/expansions/midnight.lua"
+          ]
+        }
+      ],
+      "contentFiles": [
+        "Repu_Data/content/retail/expansions/midnight.lua"
+      ]
+    },
+    {
+      "parentFactionID": 2600,
+      "type": "retail_parent",
+      "name": null,
+      "children": [
+        {
+          "factionID": 2605,
+          "name": "The General",
+          "contentFiles": [
+            "Repu_Data/content/retail/expansions/war_within.lua"
+          ]
+        },
+        {
+          "factionID": 2607,
+          "name": "The Vizier",
+          "contentFiles": [
+            "Repu_Data/content/retail/expansions/war_within.lua"
+          ]
+        },
+        {
+          "factionID": 2601,
+          "name": "The Weaver",
+          "contentFiles": [
+            "Repu_Data/content/retail/expansions/war_within.lua"
+          ]
+        }
+      ],
+      "contentFiles": [
+        "Repu_Data/content/retail/expansions/war_within.lua"
+      ]
+    },
+    {
+      "parentFactionID": 2653,
+      "type": "retail_parent",
+      "name": null,
+      "children": [
+        {
+          "factionID": 2677,
+          "name": "Steamwheedle Cartel",
+          "contentFiles": [
+            "Repu_Data/content/retail/expansions/war_within.lua"
+          ]
+        },
+        {
+          "factionID": 2675,
+          "name": "Blackwater Cartel",
+          "contentFiles": [
+            "Repu_Data/content/retail/expansions/war_within.lua"
+          ]
+        },
+        {
+          "factionID": 2673,
+          "name": "Bilgewater Cartel",
+          "contentFiles": [
+            "Repu_Data/content/retail/expansions/war_within.lua"
+          ]
+        },
+        {
+          "factionID": 2671,
+          "name": "Venture Company",
+          "contentFiles": [
+            "Repu_Data/content/retail/expansions/war_within.lua"
+          ]
+        },
+        {
+          "factionID": 2685,
+          "name": "Gallagio Loyalty Rewards Club",
+          "contentFiles": [
+            "Repu_Data/content/retail/expansions/war_within.lua"
+          ]
+        }
+      ],
+      "contentFiles": [
+        "Repu_Data/content/retail/expansions/war_within.lua"
+      ]
+    },
+    {
+      "parentFactionID": 2658,
+      "type": "retail_parent",
+      "name": null,
+      "children": [
+        {
+          "factionID": 2736,
+          "name": "Manaforge Vandals",
+          "contentFiles": [
+            "Repu_Data/content/retail/expansions/war_within.lua"
+          ]
+        }
+      ],
+      "contentFiles": [
+        "Repu_Data/content/retail/expansions/war_within.lua"
+      ]
+    },
+    {
+      "parentFactionID": 9000111,
+      "type": "virtual",
+      "name": "Shattrath",
+      "children": [
+        {
+          "factionID": 935,
+          "name": "The Sha'tar",
+          "contentFiles": [
+            "Repu_Data/content/retail/expansions/outland.lua"
+          ]
+        },
+        {
+          "factionID": 932,
+          "name": "The Aldor",
+          "contentFiles": [
+            "Repu_Data/content/retail/expansions/outland.lua"
+          ]
+        },
+        {
+          "factionID": 934,
+          "name": "The Scryers",
+          "contentFiles": [
+            "Repu_Data/content/retail/expansions/outland.lua"
+          ]
+        },
+        {
+          "factionID": 1011,
+          "name": "Lower City",
+          "contentFiles": [
+            "Repu_Data/content/retail/expansions/outland.lua"
+          ]
+        },
+        {
+          "factionID": 1031,
+          "name": "Sha'tari Skyguard",
+          "contentFiles": [
+            "Repu_Data/content/retail/expansions/outland.lua"
+          ]
+        },
+        {
+          "factionID": 1077,
+          "name": "Shattered Sun Offensive",
+          "contentFiles": [
+            "Repu_Data/content/retail/expansions/outland.lua"
+          ]
+        }
+      ],
+      "contentFiles": [
+        "Repu_Data/content/retail/expansions/outland.lua"
+      ]
+    }
+  ],
+  "candidateRoots": [
+    {
+      "factionID": 2159,
+      "name": "7th Legion",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 729,
+      "name": "Frostwolf Clan",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 54,
+      "name": "Gnomeregan",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 1352,
+      "name": "Huojin Pandaren",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 1708,
+      "name": "Laughing Skull Orcs",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 1242,
+      "name": "Pearlfin Jinyu",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 911,
+      "name": "Silvermoon City",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 2156,
+      "name": "Talanji's Expedition",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 509,
+      "name": "The League of Arathor",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 1094,
+      "name": "The Silver Covenant",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 1064,
+      "name": "The Taunka",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 922,
+      "name": "Tranquillien",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 1353,
+      "name": "Tushui Pandaren",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 1050,
+      "name": "Valiance Expedition",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 1681,
+      "name": "Vol'jin's Spear",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 1085,
+      "name": "Warsong Offensive",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 2400,
+      "name": "Waveblade Ankoan",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 1682,
+      "name": "Wrynn's Vanguard",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 2103,
+      "name": "Zandalari Empire",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header"
+    }
+  ],
+  "supersededHeaders": [
+    {
+      "factionID": 2159,
+      "name": "7th Legion",
+      "source": "superseded_by_current_model",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 1352,
+      "name": "Huojin Pandaren",
+      "source": "superseded_by_current_model",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 1708,
+      "name": "Laughing Skull Orcs",
+      "source": "superseded_by_current_model",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 1242,
+      "name": "Pearlfin Jinyu",
+      "source": "superseded_by_current_model",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 911,
+      "name": "Silvermoon City",
+      "source": "superseded_by_current_model",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 2156,
+      "name": "Talanji's Expedition",
+      "source": "superseded_by_current_model",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 1094,
+      "name": "The Silver Covenant",
+      "source": "superseded_by_current_model",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 1064,
+      "name": "The Taunka",
+      "source": "superseded_by_current_model",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 1353,
+      "name": "Tushui Pandaren",
+      "source": "superseded_by_current_model",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 1050,
+      "name": "Valiance Expedition",
+      "source": "superseded_by_current_model",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 1681,
+      "name": "Vol'jin's Spear",
+      "source": "superseded_by_current_model",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 1085,
+      "name": "Warsong Offensive",
+      "source": "superseded_by_current_model",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 2400,
+      "name": "Waveblade Ankoan",
+      "source": "superseded_by_current_model",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 1682,
+      "name": "Wrynn's Vanguard",
+      "source": "superseded_by_current_model",
+      "classification": "faction_header"
+    },
+    {
+      "factionID": 2103,
+      "name": "Zandalari Empire",
+      "source": "superseded_by_current_model",
+      "classification": "faction_header"
+    }
+  ]
+}
