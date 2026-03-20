@@ -39,6 +39,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 650,
                         title = "Thunder Totem",
+                        x = 0.388,
+                        y = 0.454,
                     },
                     name = "Ransa Greyfeather",
                 },

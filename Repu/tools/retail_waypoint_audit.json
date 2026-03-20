@@ -1,10 +1,10 @@
 {
   "summary": {
     "totalFactions": 152,
-    "withAnyXY": 55,
-    "withQuartermasterXY": 47,
-    "withActivityXY": 55,
-    "withoutAnyXY": 97
+    "withAnyXY": 57,
+    "withQuartermasterXY": 49,
+    "withActivityXY": 57,
+    "withoutAnyXY": 95
   },
   "quartermasterWithoutXY": [
     {
@@ -61,10 +61,6 @@
     },
     {
       "file": "legion.lua",
-      "factionID": 1828
-    },
-    {
-      "file": "legion.lua",
       "factionID": 2045
     },
     {
@@ -86,10 +82,6 @@
     {
       "file": "northrend.lua",
       "factionID": 1156
-    },
-    {
-      "file": "outland.lua",
-      "factionID": 933
     },
     {
       "file": "outland.lua",
@@ -271,10 +263,6 @@
     },
     {
       "file": "legion.lua",
-      "factionID": 1828
-    },
-    {
-      "file": "legion.lua",
       "factionID": 2045
     },
     {
@@ -336,10 +324,6 @@
     {
       "file": "northrend.lua",
       "factionID": 1156
-    },
-    {
-      "file": "outland.lua",
-      "factionID": 933
     },
     {
       "file": "outland.lua",
@@ -613,6 +597,10 @@
     },
     {
       "file": "legion.lua",
+      "factionID": 1828
+    },
+    {
+      "file": "legion.lua",
       "factionID": 1859
     },
     {
@@ -670,6 +658,10 @@
     {
       "file": "outland.lua",
       "factionID": 932
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 933
     },
     {
       "file": "outland.lua",

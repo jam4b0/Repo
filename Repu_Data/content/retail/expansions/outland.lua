@@ -57,10 +57,12 @@ api.RegisterRetailContentModule({
                 {
                     label = "Quartermaster",
                     location = {
-                        mapID = 107,
-                        title = "Aeris Landing",
+                        mapID = 104,
+                        title = "Stormspire",
+                        x = 0.440,
+                        y = 0.340,
                     },
-                    name = "Paulsta'ats",
+                    name = "Karaaz",
                 },
             },
             source = "curated",
