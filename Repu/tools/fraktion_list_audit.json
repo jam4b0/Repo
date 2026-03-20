@@ -1,10 +1,10 @@
 {
   "counts": {
     "confirmed_modeled": 141,
-    "excluded_global_system": 1,
+    "excluded_global_system": 2,
     "excluded_legacy_hostile_or_event": 4,
-    "excluded_micro_side_rep": 6,
-    "not_in_blizzard_index": 6,
+    "excluded_micro_side_rep": 7,
+    "not_in_blizzard_index": 4,
     "optional_pvp_brawler": 3,
     "superseded_by_current_model": 13
   },
@@ -627,7 +627,7 @@
       "side": "Neutral",
       "type": "Standard",
       "hint": "Elementare / Schamanen",
-      "status": "not_in_blizzard_index",
+      "status": "excluded_global_system",
       "factionID": null
     },
     {
@@ -861,7 +861,7 @@
       "side": "Neutral",
       "type": "Standard",
       "hint": "Tanaan / Fang'rila",
-      "status": "not_in_blizzard_index",
+      "status": "excluded_micro_side_rep",
       "factionID": null
     },
     {

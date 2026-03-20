@@ -1,0 +1,349 @@
+{
+  "summary": {
+    "confirmed_modeled": 141,
+    "excluded_global_system": 2,
+    "excluded_legacy_hostile_or_event": 4,
+    "excluded_micro_side_rep": 7,
+    "not_in_blizzard_index": 4,
+    "optional_pvp_brawler": 3,
+    "superseded_by_current_model": 13
+  },
+  "review": [
+    {
+      "exp": "Classic",
+      "name": "Gnomeregan Exiles",
+      "side": "Alliance",
+      "type": "Capital",
+      "hint": "Gnom-Hauptstadtfraktion",
+      "status": "not_in_blizzard_index",
+      "factionID": null,
+      "decision": "fold_into_existing_city_model",
+      "reason": "Nicht im Blizzard-Index; fachlich eher Gnomeregan/Gnom-Hauptstadtmodell statt eigener neuer Retail-Hauptblock."
+    },
+    {
+      "exp": "Classic",
+      "name": "Bloodsail Buccaneers",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Piratenfraktion",
+      "status": "excluded_legacy_hostile_or_event",
+      "factionID": 87,
+      "decision": "keep_current_classification"
+    },
+    {
+      "exp": "Classic",
+      "name": "Gelkis Clan Centaur",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Desolace-Alternative zu Magram",
+      "status": "excluded_legacy_hostile_or_event",
+      "factionID": 92,
+      "decision": "keep_current_classification"
+    },
+    {
+      "exp": "Classic",
+      "name": "Magram Clan Centaur",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Desolace-Alternative zu Gelkis",
+      "status": "excluded_legacy_hostile_or_event",
+      "factionID": 93,
+      "decision": "keep_current_classification"
+    },
+    {
+      "exp": "Classic",
+      "name": "Shen'dralar",
+      "side": "Neutral",
+      "type": "Legacy/retired",
+      "hint": "Retail-Legacy; historisch entfernt",
+      "status": "excluded_legacy_hostile_or_event",
+      "factionID": 809,
+      "decision": "keep_current_classification"
+    },
+    {
+      "exp": "Classic",
+      "name": "Silverwing Sentinels",
+      "side": "Alliance",
+      "type": "PvP",
+      "hint": "Warsong Gulch (Allianz)",
+      "status": "optional_pvp_brawler",
+      "factionID": 890,
+      "decision": "keep_current_classification"
+    },
+    {
+      "exp": "Classic",
+      "name": "Stormpike Guard",
+      "side": "Alliance",
+      "type": "PvP",
+      "hint": "Alterac Valley (Allianz)",
+      "status": "optional_pvp_brawler",
+      "factionID": 730,
+      "decision": "keep_current_classification"
+    },
+    {
+      "exp": "Classic",
+      "name": "Warsong Outriders",
+      "side": "Horde",
+      "type": "PvP",
+      "hint": "Warsong Gulch (Horde)",
+      "status": "optional_pvp_brawler",
+      "factionID": 889,
+      "decision": "keep_current_classification"
+    },
+    {
+      "exp": "The Burning Crusade",
+      "name": "Tranquillien",
+      "side": "Horde",
+      "type": "Standard",
+      "hint": "Ghostlands / Blutelfenfraktion",
+      "status": "superseded_by_current_model",
+      "factionID": 922,
+      "decision": "keep_current_classification"
+    },
+    {
+      "exp": "Wrath of the Lich King",
+      "name": "Alliance Vanguard",
+      "side": "Alliance",
+      "type": "Meta",
+      "hint": "Allianz-Metafraktion in Nordend",
+      "status": "superseded_by_current_model",
+      "factionID": 1037,
+      "decision": "keep_current_classification"
+    },
+    {
+      "exp": "Wrath of the Lich King",
+      "name": "The Silver Covenant",
+      "side": "Alliance",
+      "type": "Standard",
+      "hint": "Allianz-Teilfraktion / Dalaran",
+      "status": "superseded_by_current_model",
+      "factionID": 1094,
+      "decision": "keep_current_classification"
+    },
+    {
+      "exp": "Wrath of the Lich King",
+      "name": "Valiance Expedition",
+      "side": "Alliance",
+      "type": "Standard",
+      "hint": "Allianz-Teilfraktion",
+      "status": "superseded_by_current_model",
+      "factionID": 1050,
+      "decision": "keep_current_classification"
+    },
+    {
+      "exp": "Wrath of the Lich King",
+      "name": "Horde Expedition",
+      "side": "Horde",
+      "type": "Meta",
+      "hint": "Horde-Metafraktion in Nordend",
+      "status": "superseded_by_current_model",
+      "factionID": 1052,
+      "decision": "keep_current_classification"
+    },
+    {
+      "exp": "Wrath of the Lich King",
+      "name": "The Taunka",
+      "side": "Horde",
+      "type": "Standard",
+      "hint": "Horde-Teilfraktion",
+      "status": "superseded_by_current_model",
+      "factionID": 1064,
+      "decision": "keep_current_classification"
+    },
+    {
+      "exp": "Wrath of the Lich King",
+      "name": "Warsong Offensive",
+      "side": "Horde",
+      "type": "Standard",
+      "hint": "Horde-Teilfraktion",
+      "status": "superseded_by_current_model",
+      "factionID": 1085,
+      "decision": "keep_current_classification"
+    },
+    {
+      "exp": "Cataclysm",
+      "name": "Earthen Ring",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Elementare / Schamanen",
+      "status": "excluded_global_system",
+      "factionID": null,
+      "decision": "exclude_from_local_runtime_model",
+      "reason": "Bewusst nicht als normale lokale Hauptfraktion behandeln; expansionsuebergreifend/systemisch statt sauber ortsgebunden."
+    },
+    {
+      "exp": "Mists of Pandaria",
+      "name": "Pearlfin Jinyu",
+      "side": "Alliance",
+      "type": "Standard",
+      "hint": "Allianz-Jadewald",
+      "status": "superseded_by_current_model",
+      "factionID": 1242,
+      "decision": "keep_current_classification"
+    },
+    {
+      "exp": "Mists of Pandaria",
+      "name": "Huojin Pandaren",
+      "side": "Horde",
+      "type": "Capital",
+      "hint": "Horde-Pandarenfraktion",
+      "status": "superseded_by_current_model",
+      "factionID": 1352,
+      "decision": "keep_current_classification"
+    },
+    {
+      "exp": "Mists of Pandaria",
+      "name": "Forest Hozen",
+      "side": "Horde",
+      "type": "Standard",
+      "hint": "Horde-Jadewald",
+      "status": "excluded_micro_side_rep",
+      "factionID": 1228,
+      "decision": "keep_current_classification"
+    },
+    {
+      "exp": "Mists of Pandaria",
+      "name": "Tushui Pandaren",
+      "side": "Alliance",
+      "type": "Capital",
+      "hint": "Allianz-Pandarenfraktion",
+      "status": "superseded_by_current_model",
+      "factionID": 1353,
+      "decision": "keep_current_classification"
+    },
+    {
+      "exp": "Mists of Pandaria",
+      "name": "The August Celestials",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Pandaria-Tempelfraktion",
+      "status": "excluded_micro_side_rep",
+      "factionID": 1341,
+      "decision": "keep_current_classification"
+    },
+    {
+      "exp": "Mists of Pandaria",
+      "name": "The Lorewalkers",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Lore-/Sammlerfraktion",
+      "status": "excluded_micro_side_rep",
+      "factionID": 1345,
+      "decision": "keep_current_classification"
+    },
+    {
+      "exp": "Warlords of Draenor",
+      "name": "Saberstalkers",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Tanaan / Fang'rila",
+      "status": "excluded_micro_side_rep",
+      "factionID": null,
+      "decision": "exclude_from_local_runtime_model",
+      "reason": "Bewusst nicht als normale lokale Hauptfraktion behandeln; Patch-/Nebensystem statt allgemeiner Zonen- oder Stadtfraktion."
+    },
+    {
+      "exp": "Battle for Azeroth",
+      "name": "7th Legion",
+      "side": "Alliance",
+      "type": "War Campaign",
+      "hint": "Allianz-Kriegskampagne",
+      "status": "superseded_by_current_model",
+      "factionID": 2159,
+      "decision": "keep_current_classification"
+    },
+    {
+      "exp": "Battle for Azeroth",
+      "name": "Talanji's Expedition",
+      "side": "Horde",
+      "type": "Standard",
+      "hint": "Zandalar",
+      "status": "superseded_by_current_model",
+      "factionID": 2156,
+      "decision": "keep_current_classification"
+    },
+    {
+      "exp": "Battle for Azeroth",
+      "name": "Zandalari Empire",
+      "side": "Horde",
+      "type": "Standard",
+      "hint": "Zuldazar",
+      "status": "superseded_by_current_model",
+      "factionID": 2103,
+      "decision": "keep_current_classification"
+    },
+    {
+      "exp": "Battle for Azeroth",
+      "name": "Tortollan Seekers",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Schildkrötenforscher",
+      "status": "excluded_global_system",
+      "factionID": 2163,
+      "decision": "keep_current_classification"
+    },
+    {
+      "exp": "Shadowlands",
+      "name": "Stitchmasters",
+      "side": "Neutral",
+      "type": "Necrolord",
+      "hint": "Nekrolord-spezifisch",
+      "status": "excluded_micro_side_rep",
+      "factionID": 2462,
+      "decision": "keep_current_classification"
+    },
+    {
+      "exp": "Shadowlands",
+      "name": "Marasmius",
+      "side": "Neutral",
+      "type": "Night Fae",
+      "hint": "Nachtfae-spezifisch",
+      "status": "not_in_blizzard_index",
+      "factionID": null,
+      "decision": "exclude_side_system",
+      "reason": "Night-Fae-spezifisches Nebensystem, kein normaler Hauptfraktionsblock."
+    },
+    {
+      "exp": "Shadowlands",
+      "name": "Ember Court",
+      "side": "Neutral",
+      "type": "Venthyr",
+      "hint": "Venthyr-spezifisch",
+      "status": "not_in_blizzard_index",
+      "factionID": null,
+      "decision": "exclude_side_system",
+      "reason": "Venthyr-spezifisches Event-/Feature-System, kein normaler Hauptfraktionsblock."
+    },
+    {
+      "exp": "Dragonflight",
+      "name": "Glimmerogg Racer",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Zaralek / Nebensystem",
+      "status": "excluded_micro_side_rep",
+      "factionID": 2568,
+      "decision": "keep_current_classification"
+    },
+    {
+      "exp": "The War Within",
+      "name": "Darkfuse Solutions",
+      "side": "Neutral",
+      "type": "Cartels of Undermine subfaction",
+      "hint": "Unterfraktion von The Cartels of Undermine",
+      "status": "excluded_micro_side_rep",
+      "factionID": 2669,
+      "decision": "keep_current_classification"
+    },
+    {
+      "exp": "Midnight",
+      "name": "Preyseeker's Journey",
+      "side": "Neutral",
+      "type": "Seasonal progression",
+      "hint": "Saisonaler Fortschrittstrack",
+      "status": "not_in_blizzard_index",
+      "factionID": null,
+      "decision": "exclude_progression_track",
+      "reason": "Saisonaler Fortschrittstrack, keine normale Ruffraktion."
+    }
+  ]
+}
