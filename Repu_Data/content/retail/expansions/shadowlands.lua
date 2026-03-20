@@ -147,6 +147,8 @@ api.RegisterRetailContentModule({
                     label = "Quartermaster",
                     location = {
                         title = "Ve'nari's Refuge",
+                        x = 0.469,
+                        y = 0.417,
                     },
                     name = "Ve'nari",
                 },
@@ -297,6 +299,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 1961,
                         title = "Keeper's Respite",
+                        x = 0.634,
+                        y = 0.212,
                     },
                     name = "Archivist Roh-Suir",
                 },

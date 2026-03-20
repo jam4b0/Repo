@@ -1,10 +1,10 @@
 {
   "summary": {
     "totalFactions": 152,
-    "withAnyXY": 59,
-    "withQuartermasterXY": 51,
-    "withActivityXY": 59,
-    "withoutAnyXY": 93
+    "withAnyXY": 61,
+    "withQuartermasterXY": 53,
+    "withActivityXY": 61,
+    "withoutAnyXY": 91
   },
   "quartermasterWithoutXY": [
     {
@@ -121,19 +121,11 @@
     },
     {
       "file": "shadowlands.lua",
-      "factionID": 2432
-    },
-    {
-      "file": "shadowlands.lua",
       "factionID": 2439
     },
     {
       "file": "shadowlands.lua",
       "factionID": 2465
-    },
-    {
-      "file": "shadowlands.lua",
-      "factionID": 2472
     },
     {
       "file": "shadowlands.lua",
@@ -403,10 +395,6 @@
     },
     {
       "file": "shadowlands.lua",
-      "factionID": 2432
-    },
-    {
-      "file": "shadowlands.lua",
       "factionID": 2439
     },
     {
@@ -420,10 +408,6 @@
     {
       "file": "shadowlands.lua",
       "factionID": 2470
-    },
-    {
-      "file": "shadowlands.lua",
-      "factionID": 2472
     },
     {
       "file": "shadowlands.lua",
@@ -698,6 +682,14 @@
     {
       "file": "pandaria.lua",
       "factionID": 1337
+    },
+    {
+      "file": "shadowlands.lua",
+      "factionID": 2432
+    },
+    {
+      "file": "shadowlands.lua",
+      "factionID": 2472
     },
     {
       "file": "war_within.lua",
