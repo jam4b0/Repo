@@ -194,6 +194,7 @@ Wichtig:
 - `tools/generate_variant_zone_coverage.py` behandelt die verbleibenden Dubletten-/Variantenzonen als explizite Keep-/Exclude-Liste
 - `tools/build_retail_faction_backlog.py` erzeugt aus allen Retail-Modulen einen bereinigten Fraktionsstatus-Report und unterdrueckt dabei Coverage-Schatten, wenn bereits kuratierte Overrides existieren
 - `tools/retail_faction_backlog.json` haelt den aktuellen Retail-Backlog-/Statusreport fuer den Core-Unterbau
+- `/root/Repo/tools/generate_addon_tocs.py` regeneriert `Repu.toc`, `Repu_Data.toc` und `Repu_Map.toc` aus den jeweiligen `toc_manifest.json`-Dateien
 - `tools/run_tests.lua` fuehrt datengetriebene Mapping-Regressionstests aus:
   - `lua tools/run_tests.lua retail`
   - `lua tools/run_tests.lua classic`

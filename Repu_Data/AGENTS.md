@@ -22,6 +22,7 @@
 - Fuer echte Blizzard-Ruffraktionen gilt:
   - `enUS` soll nach Moeglichkeit die offizielle Blizzard-`description` verwenden
   - kuratierte Summary-Texte dienen als Fallback oder fuer virtuelle Gruppen/Spezialfaelle
+- `Repu_Data.toc` wird aus `toc_manifest.json` via `/root/Repo/tools/generate_addon_tocs.py` erzeugt.
 
 ## Datenregeln
 

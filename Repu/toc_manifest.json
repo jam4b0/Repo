@@ -1,0 +1,110 @@
+{
+  "output": "Repu.toc",
+  "metadata": {
+    "Interface": "120000, 120001, 120005, 50503, 40402, 30403, 20505, 11508",
+    "Title": "Repu",
+    "Notes": "Location-aware reputation tracker for Retail and Classic flavors.",
+    "Notes-deDE": "Standortbasierter Ruftracker fuer Retail- und Classic-Flavors.",
+    "Author": "Jam",
+    "Version": "0.1.0",
+    "SavedVariables": "RepuDB",
+    "IconTexture": "Interface\\Icons\\Achievement_Reputation_01",
+    "X-Repository": "https://github.com/jam4b0/Repo"
+  },
+  "sections": [
+    {
+      "title": "Core",
+      "files": [
+        "core\\init.lua",
+        "core\\utils.lua",
+        "core\\i18n.lua",
+        "core\\localization.lua"
+      ]
+    },
+    {
+      "title": "Locale",
+      "files": [
+        "locales\\enUS.lua",
+        "locales\\deDE.lua"
+      ]
+    },
+    {
+      "title": "State / Compatibility",
+      "files": [
+        "core\\config.lua",
+        "core\\compat.lua",
+        "core\\state.lua"
+      ]
+    },
+    {
+      "title": "Data",
+      "files": [
+        "data\\shared.lua",
+        "data\\classic.lua",
+        "data\\tbc.lua",
+        "data\\wrath.lua",
+        "data\\cata.lua",
+        "data\\mop.lua",
+        "data\\retail\\core.lua",
+        "data\\retail\\coverage\\client_seed.lua",
+        "data\\retail\\coverage\\generated\\coverage_generated.lua",
+        "data\\retail\\coverage\\generated\\coverage_hubs_generated.lua",
+        "data\\retail\\coverage\\generated\\coverage_hubs_wave2_generated.lua",
+        "data\\retail\\coverage\\generated\\coverage_wave2_generated.lua",
+        "data\\retail\\coverage\\generated\\coverage_cleanup_generated.lua",
+        "data\\retail\\coverage\\generated\\coverage_variants_generated.lua",
+        "data\\retail\\coverage\\generated\\coverage_world_variants_generated.lua",
+        "data\\retail\\coverage\\generated\\coverage_event_variants_generated.lua",
+        "data\\retail\\coverage\\generated\\coverage_special_zones_generated.lua",
+        "data\\retail\\coverage\\generated\\coverage_instance_adjacent_generated.lua",
+        "data\\retail\\coverage\\generated\\coverage_instance_variants_generated.lua",
+        "data\\retail\\coverage\\generated\\coverage_mixed_world_subzones_generated.lua",
+        "data\\retail\\coverage\\generated\\coverage_special_subzones_generated.lua",
+        "data\\retail\\coverage\\generated\\coverage_final_subzones_generated.lua",
+        "data\\retail\\mappings\\regions\\kalimdor.lua",
+        "data\\retail\\mappings\\regions\\eastern_kingdoms.lua",
+        "data\\retail\\mappings\\regions\\outland.lua",
+        "data\\retail\\mappings\\regions\\northrend.lua",
+        "data\\retail\\mappings\\regions\\cataclysm.lua",
+        "data\\retail\\mappings\\regions\\pandaria.lua",
+        "data\\retail\\mappings\\regions\\draenor.lua",
+        "data\\retail\\mappings\\regions\\broken_isles.lua",
+        "data\\retail\\mappings\\regions\\bfa.lua",
+        "data\\retail\\mappings\\regions\\shadowlands.lua",
+        "data\\retail\\mappings\\regions\\dragonflight.lua",
+        "data\\retail\\mappings\\regions\\war_within.lua",
+        "data\\retail\\mappings\\regions\\midnight.lua",
+        "data\\retail\\mappings\\regions\\neutral.lua",
+        "data\\retail\\variants\\catalog.lua",
+        "data\\retail.lua"
+      ]
+    },
+    {
+      "title": "Logic",
+      "files": [
+        "core\\location.lua",
+        "core\\inference.lua",
+        "core\\factions.lua",
+        "core\\scoring.lua",
+        "core\\content.lua",
+        "core\\waypoints.lua"
+      ]
+    },
+    {
+      "title": "UI",
+      "files": [
+        "ui\\styles.lua",
+        "ui\\row.lua",
+        "ui\\frame.lua",
+        "ui\\options.lua"
+      ]
+    },
+    {
+      "title": "Debug / Events",
+      "files": [
+        "debug\\debug.lua",
+        "core\\events.lua"
+      ]
+    }
+  ]
+}

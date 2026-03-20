@@ -1,0 +1,35 @@
+{
+  "output": "Repu_Map.toc",
+  "metadata": {
+    "Interface": "120000, 120001, 120005, 50503, 40402, 30403, 20505, 11508",
+    "Title": "Repu_Map",
+    "Notes": "Optional map integration for Repu.",
+    "Notes-deDE": "Optionale Kartenintegration fuer Repu.",
+    "Author": "Jam",
+    "Version": "0.1.0",
+    "Dependencies": "Repu",
+    "OptionalDeps": "Repu_Data, HandyNotes, TomTom",
+    "X-Repository": "https://github.com/jam4b0/Repo"
+  },
+  "sections": [
+    {
+      "title": "Core",
+      "files": [
+        "core\\i18n.lua"
+      ]
+    },
+    {
+      "title": "Locale",
+      "files": [
+        "locales\\enUS.lua",
+        "locales\\deDE.lua"
+      ]
+    },
+    {
+      "title": "Entry",
+      "files": [
+        "core\\init.lua"
+      ]
+    }
+  ]
+}

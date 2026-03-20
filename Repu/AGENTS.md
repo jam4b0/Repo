@@ -46,6 +46,7 @@
 - Neue Fraktionsinhalte gehoeren nie nach `Repu/locales/`.
 - Bei echten Blizzard-Ruffraktionen soll `enUS` nach Moeglichkeit die offizielle Blizzard-`description` als Primaertext nutzen.
 - Kuratierte Summary-Texte in `Repu_Data` sind Fallbacks oder ergaenzende Spezialtexte, keine bevorzugte Quelle fuer API-Fraktionen.
+- TOC-Dateien werden aus `toc_manifest.json` generiert; Manifest und TOC muessen zusammen gepflegt werden.
 
 ## Quellenregeln
 
