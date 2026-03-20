@@ -25,6 +25,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 650,
+                        title = "Thunder Totem",
+                    },
+                    name = "Ransa Greyfeather",
+                },
+            },
             source = "curated",
             summary = "The Highmountain Tribe has dwindled in numbers over the years, and with the drogbar threat looming, seek new allies to save their homeland.",
         },
@@ -71,6 +81,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 641,
+                        title = "Lorlathil",
+                    },
+                    name = "Sylvia Hartshorn",
+                },
+            },
             source = "curated",
             summary = "The druids and their allies in Val'sharah have guarded the Emerald Dream since time immemorial.",
         },
@@ -115,6 +135,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 630,
+                        title = "Azsuna",
+                    },
+                    name = "Veridis Fallon",
+                },
+            },
             source = "curated",
             summary = "The ghostly Court of Farondis and its allies continue the fight against an onslaught of invaders on the cursed island of Azsuna.",
         },
@@ -138,6 +168,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 634,
+                        title = "Valdisdall",
+                    },
+                    name = "Valdemar Stormseeker",
+                },
+            },
             source = "curated",
             summary = "These are the chosen warriors of Odyn, sworn to his service in life and death.",
         },
@@ -175,6 +215,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 830,
+                        title = "Vindicator's Point",
+                    },
+                    name = "Toraan the Revered",
+                },
+            },
             source = "curated",
             summary = "After the fall of Argus, the draenei's finest warriors followed the prime naaru Xe'ra across the cosmos in an eternal war to bring about the Legion's end. Since then, other survivors of the Burning Crusade have joined the ranks of the Lightforged.",
         },
