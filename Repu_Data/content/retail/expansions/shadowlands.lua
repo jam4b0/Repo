@@ -84,6 +84,15 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        title = "Darkhaven",
+                    },
+                    name = "Mistress Mihaela",
+                },
+            },
             source = "curated",
             summary = "After countless ages spent under the rule of Sire Denathrius, authority in Revendreth is now shared amongst the Court of Harvesters. These noble venthyr carry out the sacred duty of redeeming prideful souls.",
         },

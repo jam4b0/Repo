@@ -48,6 +48,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 117,
+                        title = "Kamagua",
+                    },
+                    name = "Tanaika",
+                },
+            },
             source = "curated",
             summary = "The tuskarr are a tough but peaceful people who derive their livelihood from fishing and whaling.  Their settlements have recently come under fierce attack and welcome any allies who would come to their aid.",
         },
@@ -275,6 +285,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 118,
+                        title = "Icecrown Citadel",
+                    },
+                    name = "Alchemist Finklestein",
+                },
+            },
             source = "curated",
             summary = "Under a pact by Tirion Fordring and Darion Mograine, the Argent Crusade and the Knights of the Ebon Blade have set aside their differences during the attack on Icecrown Citadel until the Lich King is slain.",
         },

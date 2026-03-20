@@ -128,6 +128,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 535,
+                        title = "Stormshield",
+                    },
+                    name = "Vindicator Nuurem",
+                },
+            },
             source = "curated",
             summary = "Under the leadership of five powerful exarchs, the draenei of Draenor have prospered in a savage world.",
         },
@@ -143,6 +153,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 543,
+                        title = "Lion's Watch",
+                    },
+                    name = "Vindicator Krethos",
+                },
+            },
             source = "curated",
             summary = "Yrel has assembled the remaining Exarchs and is calling for a crusade in Velen's name. Together they are working to establish a foothold in Tanaan Jungle and to overthrow Gul'dan.",
         },
@@ -180,6 +200,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 543,
+                        title = "Lion's Watch / Vol'mar",
+                    },
+                    name = "Dawn-Seeker Krisek",
+                },
+            },
             source = "curated",
             summary = "Survivors of a grisly civil war, these beleaguered arakkoans hope the reclamation of apexis artifacts will hold the key to peacefully rebuilding their civilization.",
         },

@@ -329,6 +329,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 71,
+                        title = "Caverns of Time",
+                    },
+                    name = "Alurmi",
+                },
+            },
             source = "curated",
             summary = "The Keepers of Time are bronze dragons hand-picked by Nozdormu to watch over the Caverns of Time.",
         },
@@ -390,6 +400,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 105,
+                        title = "Black Temple",
+                    },
+                    name = "Okuno",
+                },
+            },
             source = "curated",
             summary = "The elite of the Broken tribe known as the Ashtongue, officially aligned with Illidan. The Deathsworn are Akama's most trusted lieutenants and are privy to their leader's mysterious motivations.",
         },

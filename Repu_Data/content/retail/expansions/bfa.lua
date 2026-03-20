@@ -128,6 +128,15 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        title = "Brennadam",
+                    },
+                    name = "Sister Lilyana",
+                },
+            },
             source = "curated",
             summary = "Home to farmers, craftsmen, soldiers, and the mysterious tidesages, the Storm's Wake seeks to reclaim Stormsong Valley and affirm their place in Kul Tiras.",
         },
@@ -254,6 +263,15 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        title = "The Silent Sanctuary",
+                    },
+                    name = "Zhang Ku",
+                },
+            },
             source = "curated",
             summary = "A group of mogu loyal to the titan keeper Ra, they are charged with defending the Engine of Nalak'sha from N'Zoth's minions.",
         },

@@ -123,6 +123,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 630,
+                        title = "Wardens' Redoubt",
+                    },
+                    name = "Marin Bladewing",
+                },
+            },
             source = "curated",
             summary = "After Legion forces broke the Vault of the Wardens with the aid of Gul'dan, what few Wardens remain are determined to rebuild their prison and hunt down the terrifying beasts that were let loose when it fell.",
         },

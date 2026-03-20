@@ -89,6 +89,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 371,
+                        title = "The Arboretum",
+                    },
+                    name = "San Redscale",
+                },
+            },
             source = "curated",
             summary = "Guardians of the East Temple",
         },
