@@ -246,9 +246,12 @@ api.RegisterRetailContentModule({
                 {
                     label = "Quartermaster",
                     location = {
+                        mapID = 1565,
                         title = "Heart of the Forest",
+                        x = 0.485,
+                        y = 0.505,
                     },
-                    name = "Elwyn",
+                    name = "Aithlyn",
                 },
             },
             source = "curated",

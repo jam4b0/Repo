@@ -1,10 +1,10 @@
 {
   "summary": {
     "totalFactions": 152,
-    "withAnyXY": 72,
-    "withQuartermasterXY": 64,
-    "withActivityXY": 72,
-    "withoutAnyXY": 80
+    "withAnyXY": 73,
+    "withQuartermasterXY": 65,
+    "withActivityXY": 73,
+    "withoutAnyXY": 79
   },
   "quartermasterWithoutXY": [
     {
@@ -78,10 +78,6 @@
     {
       "file": "shadowlands.lua",
       "factionID": 2439
-    },
-    {
-      "file": "shadowlands.lua",
-      "factionID": 2465
     },
     {
       "file": "shadowlands.lua",
@@ -312,10 +308,6 @@
     {
       "file": "shadowlands.lua",
       "factionID": 2464
-    },
-    {
-      "file": "shadowlands.lua",
-      "factionID": 2465
     },
     {
       "file": "shadowlands.lua",
@@ -642,6 +634,10 @@
     {
       "file": "shadowlands.lua",
       "factionID": 2432
+    },
+    {
+      "file": "shadowlands.lua",
+      "factionID": 2465
     },
     {
       "file": "shadowlands.lua",
