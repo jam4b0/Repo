@@ -233,6 +233,14 @@ api.RegisterRetailContentModule({
                     },
                     title = "Shrine of Two Moons",
                 },
+                {
+                    kind = "Daily",
+                    location = {
+                        mapID = 388,
+                        title = "Domination Point",
+                    },
+                    title = "Dominance Offensive daily quests",
+                },
             },
             confidence = "medium",
             source = "curated",
@@ -247,6 +255,14 @@ api.RegisterRetailContentModule({
                         title = "Shrine of Seven Stars",
                     },
                     title = "Shrine of Seven Stars",
+                },
+                {
+                    kind = "Daily",
+                    location = {
+                        mapID = 388,
+                        title = "Lion's Landing",
+                    },
+                    title = "Operation: Shieldwall daily quests",
                 },
             },
             confidence = "medium",
@@ -263,6 +279,14 @@ api.RegisterRetailContentModule({
                     },
                     title = "Isle of Thunder",
                 },
+                {
+                    kind = "Daily",
+                    location = {
+                        mapID = 507,
+                        title = "Isle of Thunder",
+                    },
+                    title = "Isle of Thunder daily quests",
+                },
             },
             confidence = "medium",
             source = "curated",
@@ -277,6 +301,14 @@ api.RegisterRetailContentModule({
                         title = "Isle of Thunder",
                     },
                     title = "Isle of Thunder",
+                },
+                {
+                    kind = "Daily",
+                    location = {
+                        mapID = 507,
+                        title = "Isle of Thunder",
+                    },
+                    title = "Isle of Thunder daily quests",
                 },
             },
             confidence = "medium",
@@ -299,6 +331,13 @@ api.RegisterRetailContentModule({
                         title = "Throne of Thunder",
                     },
                     title = "Throne of Thunder",
+                },
+                {
+                    kind = "Recurring",
+                    location = {
+                        title = "Throne of Thunder",
+                    },
+                    title = "Raid clears and assault turn-ins",
                 },
             },
             confidence = "medium",

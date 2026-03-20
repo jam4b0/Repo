@@ -497,6 +497,14 @@ api.RegisterRetailContentModule({
                     },
                     title = "Ogri'la",
                 },
+                {
+                    kind = "Daily",
+                    location = {
+                        mapID = 109,
+                        title = "Ogri'la",
+                    },
+                    title = "Ogri'la apexis dailies",
+                },
             },
             confidence = "medium",
             source = "curated",
@@ -541,6 +549,13 @@ api.RegisterRetailContentModule({
                         title = "Black Temple",
                     },
                     title = "Black Temple",
+                },
+                {
+                    kind = "Recurring",
+                    location = {
+                        title = "Black Temple",
+                    },
+                    title = "Black Temple support and attunement-era tasks",
                 },
             },
             confidence = "medium",
