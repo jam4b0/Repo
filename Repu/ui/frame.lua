@@ -116,11 +116,17 @@ function ns.UI:Init()
     frame.title:SetText("")
     frame.title:SetTextColor(unpack(Styles.text))
 
-    frame.dragIcon = frame:CreateTexture(nil, "OVERLAY")
-    frame.dragIcon:SetSize(14, 14)
-    frame.dragIcon:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", -9, 9)
-    frame.dragIcon:SetTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Up")
-    frame.dragIcon:SetVertexColor(unpack(Styles.subtleText))
+    frame.lockButton = CreateFrame("Button", nil, frame)
+    frame.lockButton:SetSize(16, 16)
+    frame.lockButton:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -10, -8)
+    frame.lockButton.icon = frame.lockButton:CreateTexture(nil, "OVERLAY")
+    frame.lockButton.icon:SetAllPoints()
+    frame.lockButton.icon:SetVertexColor(unpack(Styles.subtleText))
+    frame.lockButton:SetScript("OnClick", function()
+        local currentProfile = ns.State:GetProfile()
+        currentProfile.locked = not currentProfile.locked
+        ns.State:Refresh("FRAME_LOCK_TOGGLE")
+    end)
 
     frame.detail = CreateFrame("Frame", nil, frame, BackdropTemplateMixin and "BackdropTemplate")
     frame.detail:SetPoint("TOPLEFT", frame, "TOPLEFT", 8, -8)
@@ -297,7 +303,7 @@ function ns.UI:Refresh(candidates, context)
     self.frame:SetAlpha(profile.opacity or 1)
     self.frame:SetWidth(profile.width)
     self.frame:SetHeight(height)
-    self.frame.dragIcon:SetShown(not profile.locked)
+    self.frame.lockButton.icon:SetTexture(profile.locked and "Interface\\Buttons\\LockButton-Locked-Up" or "Interface\\Buttons\\LockButton-Unlocked-Up")
 
     local title = ""
     if context and context.instanceName and context.instanceType and context.instanceType ~= "none" then
