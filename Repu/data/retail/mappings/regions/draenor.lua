@@ -60,7 +60,7 @@ ns.Data:RegisterRetailModule({
                 notes = "Draenor faction cluster",
                 mapIDs = { 534 },
                 tags = { "zone", "local", "draenor" },
-                factionIDs = { 1850 },
+                factionIDs = { 1850, 1515 },
                 weight = 240,
             },
             [543] = {

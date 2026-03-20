@@ -14,6 +14,14 @@ api.RegisterRetailContentModule({
                 { title = "Questlinien im Heulenden Fjord", kind = "Story/Zone", location = { mapID = 117, title = "Heulender Fjord" } },
             },
         },
+        [1067] = {
+            summary = "The Hand of Vengeance ist der Horde-seitige Nebenruf des Heulenden Fjords. Im Retail-Core bleibt er als lokaler Horde-Zweig der dortigen Forsaken-Kriegslinie modelliert.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                { title = "Heulender Fjord", kind = "Story/Zone", location = { mapID = 117, title = "Heulender Fjord" } },
+            },
+        },
         [1073] = {
             summary = "Der Kernbezug dieses Northrend-Rufblocks liegt in der Boreanischen Tundra. Fortschritt kommt vor allem aus den dortigen Story- und Hubaktivitaeten.",
             source = "curated",
@@ -80,6 +88,14 @@ api.RegisterRetailContentModule({
             confidence = "medium",
             activities = {
                 { title = "K3 und Sturmgipfel-Questlinien", kind = "Story/Zone", location = { mapID = 120, title = "Die Sturmgipfel" } },
+            },
+        },
+        [1126] = {
+            summary = "The Frostborn ist der Allianz-seitige Nebenruf der Sturmgipfel. Im Retail-Core bleibt er als lokaler Alliance-Zweig der Zone erhalten, ohne den Hauptblock der Sons of Hodir zu verdrängen.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                { title = "Die Sturmgipfel", kind = "Zone", location = { mapID = 120, title = "Die Sturmgipfel" } },
             },
         },
         [1124] = {

@@ -30,7 +30,10 @@ ns.Data:RegisterRetailModule({
                 notes = "Northrend reputation cluster",
                 mapIDs = { 120 },
                 tags = { "zone", "local", "northrend" },
-                factionIDs = { 1119 },
+                factions = {
+                    { factionID = 1119, weight = 250 },
+                    { factionID = 1126, factionGroups = { "Alliance" }, weight = 236 },
+                },
                 weight = 250,
             },
             [115] = {
@@ -60,7 +63,10 @@ ns.Data:RegisterRetailModule({
                 notes = "Northrend reputation cluster",
                 mapIDs = { 117 },
                 tags = { "zone", "local", "northrend" },
-                factionIDs = { 1068 },
+                factions = {
+                    { factionID = 1068, weight = 240 },
+                    { factionID = 1067, factionGroups = { "Horde" }, weight = 234 },
+                },
                 weight = 240,
             },
             [121] = {

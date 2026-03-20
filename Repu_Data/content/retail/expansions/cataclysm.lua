@@ -41,6 +41,14 @@ api.RegisterRetailContentModule({
                 zoneActivity(249, "Uldum"),
             },
         },
+        [1174] = {
+            summary = "Wildhammer Clan ist der Allianz-seitige Nebenruf der Schattenhochlande. Im Retail-Core bleibt er als klarer lokaler Alliance-Zweig der Zone modelliert.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                zoneActivity(241, "Schattenhochland"),
+            },
+        },
         [1177] = {
             summary = "Baradin's Wardens ist die Allianz-Fraktion von Tol Barad und der Halbinsel von Tol Barad.",
             source = "curated",

@@ -756,6 +756,7 @@ ns.Data:RegisterRetailModule({
                 tags = { "raid", "kalimdor", "local" },
                 factions = {
                     { factionID = 609, weight = 382 },
+                    { factionID = 910, weight = 378 },
                 },
             },
             ["firelands"] = {
@@ -774,6 +775,7 @@ ns.Data:RegisterRetailModule({
                 tags = { "raid", "kalimdor", "local" },
                 factions = {
                     { factionID = 609, weight = 375 },
+                    { factionID = 910, weight = 370 },
                 },
             },
         },

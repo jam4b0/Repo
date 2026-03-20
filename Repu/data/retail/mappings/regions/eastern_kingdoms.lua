@@ -1039,6 +1039,7 @@ ns.Data:RegisterRetailModule({
                 tags = { "raid", "eastern-kingdoms", "local" },
                 factions = {
                     { factionID = 59, weight = 388 },
+                    { factionID = 749, weight = 382 },
                 },
             },
             ["blackwing descent"] = {

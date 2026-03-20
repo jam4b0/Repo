@@ -12,6 +12,7 @@ ns.Data:RegisterRetailModule({
                 tags = { "midnight", "zone", "primary", "local", "observed" },
                 factions = {
                     { factionID = 2699, name = "Die Singularität", weight = 245 },
+                    { factionID = 2770, name = "Slayer's Duellum", weight = 230 },
                 },
             },
             [2413] = {
@@ -71,6 +72,7 @@ ns.Data:RegisterRetailModule({
                 tags = { "midnight", "primary", "local", "observed" },
                 factions = {
                     { factionID = 2699, name = "Die Singularität", weight = 250 },
+                    { factionID = 2770, name = "Slayer's Duellum", weight = 236 },
                 },
             },
             ["2413:harandar"] = {

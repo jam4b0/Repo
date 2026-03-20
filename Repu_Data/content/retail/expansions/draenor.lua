@@ -76,5 +76,13 @@ api.RegisterRetailContentModule({
                 { title = "Auchindoun", kind = "Dungeon", location = { title = "Auchindoun" } },
             },
         },
+        [1515] = {
+            summary = "Arakkoa Outcasts ist der lokale Seitenruf von Spires of Arak. Im Retail-Core ergänzt er den Zonenblock um den expliziten Ausgestoßenen-Pfad der Arakkoa.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                { title = "Spires of Arak", kind = "Zone", location = { mapID = 534, title = "Spires of Arak" } },
+            },
+        },
     },
 })

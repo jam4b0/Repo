@@ -40,6 +40,23 @@ api.RegisterRetailContentModule({
                 },
             },
         },
+        [2770] = {
+            summary = "Slayer's Duellum ist ein lokaler Midnight-Nebenruf aus dem Leerensturm-/Voidstorm-Zweig. Im Retail-Core bleibt er bewusst ein Seitenpfad unterhalb der Singularitaet und kein allgemeiner Ortsanker fuer andere Gebiete.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                {
+                    title = "Leerensturm",
+                    kind = "Story/Zone",
+                    location = { mapID = 2405, title = "Leerensturm" },
+                },
+                {
+                    title = "Obskurionzitadelle",
+                    kind = "Hub",
+                    location = { mapID = 2405, title = "Obskurionzitadelle" },
+                },
+            },
+        },
         [2704] = {
             summary = "Die Hara'ti sind der Midnight-Rufblock von Harandar. Der Fortschritt dreht sich um die Harandar-Story, lokale Aufgaben und den regionalen Endgame-Zweig dieser Zone.",
             source = "curated",

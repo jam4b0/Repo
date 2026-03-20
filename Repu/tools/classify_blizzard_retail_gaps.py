@@ -22,6 +22,8 @@ OPTIONAL_PVP_OR_BRAWLER = {
 }
 
 SUPSERSEDED_BY_CURRENT_MODEL = {
+    54,    # Gnomeregan -> folded into the Dun Morogh/Ironforge homeland model
+    922,   # Tranquillien -> Ghostlands is not part of the current retail location basis
     911,   # Silvermoon City -> Silvermoon Court family
     946,   # Honor Hold -> outland not yet modeled as retail core
     1037,  # Alliance Vanguard -> child header
@@ -58,6 +60,10 @@ MODERN_SIDE_SYSTEMS = {
 EXCLUDED_GLOBAL_SYSTEMS = {2163, 2164}
 
 ZONE_SIDE_SYSTEM_CANDIDATES = {2472}
+
+EXCLUDED_LEGACY_HOSTILE_OR_EVENT = {
+    70, 87, 92, 93, 270, 349, 809, 1135, 1440, 1984, 2018,
+}
 
 EXCLUDED_MICRO_SIDE_REPS = {
     1216, 1228, 1273, 1275, 1276, 1277, 1278, 1279, 1280, 1281, 1282, 1283, 1341, 1345, 1358,
@@ -98,6 +104,8 @@ def classify(row: dict) -> str:
         return "excluded_global_system"
     if faction_id in ZONE_SIDE_SYSTEM_CANDIDATES:
         return "candidate_zone_side_system"
+    if faction_id in EXCLUDED_LEGACY_HOSTILE_OR_EVENT:
+        return "excluded_legacy_hostile_or_event"
     if faction_id in EXCLUDED_MICRO_SIDE_REPS:
         return "excluded_micro_side_rep"
     if faction_id in LEGACY_CANDIDATES:

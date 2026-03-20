@@ -4,11 +4,11 @@
     "locale": "en_US",
     "blizzardFactionCount": 281,
     "blizzardRootCount": 14,
-    "addonCoreFactionCount": 147,
-    "addonContentFactionCount": 148,
-    "coreCoveredByContentCount": 147,
+    "addonCoreFactionCount": 156,
+    "addonContentFactionCount": 157,
+    "coreCoveredByContentCount": 156,
     "coreMissingContentCount": 0,
-    "blizzardMissingInCoreCount": 135,
+    "blizzardMissingInCoreCount": 126,
     "contentOnlyCount": 1
   },
   "classificationCounts": {
@@ -138,15 +138,6 @@
       "exampleLocations": []
     },
     {
-      "factionID": 749,
-      "name": "Hydraxian Waterlords",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
       "factionID": 809,
       "name": "Shen'dralar",
       "classification": "leaf",
@@ -192,15 +183,6 @@
       "exampleLocations": []
     },
     {
-      "factionID": 910,
-      "name": "Brood of Nozdormu",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
       "factionID": 911,
       "name": "Silvermoon City",
       "classification": "faction_header",
@@ -223,15 +205,6 @@
       "name": "The Burning Crusade",
       "classification": "generic_header",
       "isHeader": true,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 990,
-      "name": "The Scale of the Sands",
-      "classification": "leaf",
-      "isHeader": false,
       "isRenown": false,
       "sourceFiles": [],
       "exampleLocations": []
@@ -267,15 +240,6 @@
       "factionID": 1064,
       "name": "The Taunka",
       "classification": "faction_header",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 1067,
-      "name": "The Hand of Vengeance",
-      "classification": "leaf",
       "isHeader": false,
       "isRenown": false,
       "sourceFiles": [],
@@ -327,15 +291,6 @@
       "exampleLocations": []
     },
     {
-      "factionID": 1126,
-      "name": "The Frostborn",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
       "factionID": 1135,
       "name": "The Earthen Ring",
       "classification": "leaf",
@@ -367,15 +322,6 @@
       "name": "Guild",
       "classification": "generic_header",
       "isHeader": true,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 1174,
-      "name": "Wildhammer Clan",
-      "classification": "faction_header",
-      "isHeader": false,
       "isRenown": false,
       "sourceFiles": [],
       "exampleLocations": []
@@ -561,15 +507,6 @@
       "exampleLocations": []
     },
     {
-      "factionID": 1416,
-      "name": "Akama's Trust",
-      "classification": "leaf",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
       "factionID": 1419,
       "name": "Bizmo's Brawlpub (Season 1)",
       "classification": "faction_header",
@@ -592,15 +529,6 @@
       "name": "Warlords of Draenor",
       "classification": "generic_header",
       "isHeader": true,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 1515,
-      "name": "Arakkoa Outcasts",
-      "classification": "leaf",
-      "isHeader": false,
       "isRenown": false,
       "sourceFiles": [],
       "exampleLocations": []
@@ -1221,15 +1149,6 @@
       "factionID": 2767,
       "name": "Bizmo's Brawlpub",
       "classification": "faction_header",
-      "isHeader": false,
-      "isRenown": false,
-      "sourceFiles": [],
-      "exampleLocations": []
-    },
-    {
-      "factionID": 2770,
-      "name": "Slayer's Duellum",
-      "classification": "leaf",
       "isHeader": false,
       "isRenown": false,
       "sourceFiles": [],

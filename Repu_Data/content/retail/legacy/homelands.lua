@@ -110,6 +110,23 @@ api.RegisterRetailContentModule({
                 worldQuest(81, "Silithus"),
             },
         },
+        [749] = {
+            summary = "Hydraxian Waterlords ist im Retail-Core ein klassischer Raid-Nebenruf von Molten Core. Er bleibt bewusst raidlokal und wird nicht mehr als normale Zonenfraktion von Azshara verwendet.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                { title = "Molten Core", kind = "Raid", location = { title = "Molten Core" } },
+            },
+        },
+        [910] = {
+            summary = "Brood of Nozdormu ist im Retail-Core ein klassischer Ahn'Qiraj-Nebenruf. Er bleibt an die beiden Ahn'Qiraj-Raids gebunden und ersetzt dort nicht den generellen Silithus-Bezug.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                { title = "Temple of Ahn'Qiraj", kind = "Raid", location = { title = "Temple of Ahn'Qiraj" } },
+                { title = "Ruins of Ahn'Qiraj", kind = "Raid", location = { title = "Ruins of Ahn'Qiraj" } },
+            },
+        },
         [930] = {
             summary = "Die Exodar ist die Draenei-Hauptstadtfraktion. Im Retail-Core deckt sie die Stadt selbst sowie Azurmythos- und Blutmythosinsel als Heimatcluster ab.",
             source = "seed",

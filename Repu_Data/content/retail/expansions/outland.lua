@@ -96,6 +96,23 @@ api.RegisterRetailContentModule({
                 { title = "Der Schwarze Tempel", kind = "Raid", location = { title = "Der Schwarze Tempel" } },
             },
         },
+        [1416] = {
+            summary = "Akama's Trust ist der lokale Nebenruf rund um Schattenmondtal und den Schwarzen Tempel. Im Retail-Core wird er als klarer Outland-Seitenpfad neben dem Aschenzungen-Block behandelt.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                { title = "Schattenmondtal", kind = "Zone", location = { mapID = 105, title = "Schattenmondtal" } },
+                { title = "Der Schwarze Tempel", kind = "Raid", location = { title = "Der Schwarze Tempel" } },
+            },
+        },
+        [990] = {
+            summary = "The Scale of the Sands ist der lokale Raidruf von Hyjal Summit und ergänzt dort den groberen Hüter-der-Zeit-Bezug um den eigentlichen Bronze-Drachenblock des Raids.",
+            source = "curated",
+            confidence = "medium",
+            activities = {
+                { title = "Hyjal Summit", kind = "Raid", location = { title = "Hyjal Summit" } },
+            },
+        },
         [1031] = {
             summary = "Die Himmelswache der Sha'tari ist eine spätere Scherbenwelt-Fraktion mit Schwerpunkt auf Schergrat, Luftpfaden und wiederholbaren Himmelswache-Aktivitäten.",
             source = "curated",

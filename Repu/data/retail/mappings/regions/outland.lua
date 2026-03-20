@@ -63,7 +63,7 @@ ns.Data:RegisterRetailModule({
                 notes = "Ashtongue and Scryers/Aldor cluster",
                 mapIDs = { 105 },
                 tags = { "zone", "local", "outland" },
-                factionIDs = { 1012, 932, 934 },
+                factionIDs = { 1012, 1416, 932, 934 },
                 weight = 240,
             },
             [107] = {
@@ -418,6 +418,7 @@ ns.Data:RegisterRetailModule({
                 tags = { "raid", "outland", "local" },
                 factions = {
                     { factionID = 1012, weight = 390 },
+                    { factionID = 1416, weight = 384 },
                 },
             },
             ["hyjal summit"] = {
@@ -427,6 +428,7 @@ ns.Data:RegisterRetailModule({
                 tags = { "raid", "outland", "local" },
                 factions = {
                     { factionID = 989, weight = 385 },
+                    { factionID = 990, weight = 380 },
                 },
             },
             ["sunwell plateau"] = {
