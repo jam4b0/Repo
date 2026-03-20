@@ -1,10 +1,10 @@
 {
   "summary": {
     "totalFactions": 152,
-    "withAnyXY": 51,
-    "withQuartermasterXY": 43,
-    "withActivityXY": 51,
-    "withoutAnyXY": 101
+    "withAnyXY": 55,
+    "withQuartermasterXY": 47,
+    "withActivityXY": 55,
+    "withoutAnyXY": 97
   },
   "quartermasterWithoutXY": [
     {
@@ -93,23 +93,11 @@
     },
     {
       "file": "outland.lua",
-      "factionID": 947
-    },
-    {
-      "file": "outland.lua",
-      "factionID": 970
-    },
-    {
-      "file": "outland.lua",
       "factionID": 978
     },
     {
       "file": "outland.lua",
       "factionID": 989
-    },
-    {
-      "file": "outland.lua",
-      "factionID": 1011
     },
     {
       "file": "outland.lua",
@@ -134,10 +122,6 @@
     {
       "file": "pandaria.lua",
       "factionID": 1272
-    },
-    {
-      "file": "pandaria.lua",
-      "factionID": 1337
     },
     {
       "file": "shadowlands.lua",
@@ -359,14 +343,6 @@
     },
     {
       "file": "outland.lua",
-      "factionID": 947
-    },
-    {
-      "file": "outland.lua",
-      "factionID": 970
-    },
-    {
-      "file": "outland.lua",
       "factionID": 978
     },
     {
@@ -376,10 +352,6 @@
     {
       "file": "outland.lua",
       "factionID": 990
-    },
-    {
-      "file": "outland.lua",
-      "factionID": 1011
     },
     {
       "file": "outland.lua",
@@ -420,10 +392,6 @@
     {
       "file": "pandaria.lua",
       "factionID": 1272
-    },
-    {
-      "file": "pandaria.lua",
-      "factionID": 1337
     },
     {
       "file": "pandaria.lua",
@@ -724,12 +692,28 @@
       "factionID": 946
     },
     {
+      "file": "outland.lua",
+      "factionID": 947
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 970
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 1011
+    },
+    {
       "file": "pandaria.lua",
       "factionID": 1270
     },
     {
       "file": "pandaria.lua",
       "factionID": 1302
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1337
     },
     {
       "file": "war_within.lua",

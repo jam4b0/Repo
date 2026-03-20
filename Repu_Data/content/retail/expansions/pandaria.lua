@@ -197,6 +197,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 418,
                         title = "Klaxxi'vess",
+                        x = 0.550,
+                        y = 0.356,
                     },
                     name = "Ambersmith Zikk",
                 },

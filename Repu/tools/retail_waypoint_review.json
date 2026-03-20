@@ -1,8 +1,8 @@
 {
   "summary": {
-    "already_with_coordinates": 51,
+    "already_with_coordinates": 55,
     "leave_without_coordinates_for_now": 0,
-    "needs_external_coordinate_source": 42,
+    "needs_external_coordinate_source": 38,
     "open_standard_gap": 0
   },
   "groups": {
@@ -148,12 +148,28 @@
         "factionID": 946
       },
       {
+        "file": "outland.lua",
+        "factionID": 947
+      },
+      {
+        "file": "outland.lua",
+        "factionID": 970
+      },
+      {
+        "file": "outland.lua",
+        "factionID": 1011
+      },
+      {
         "file": "pandaria.lua",
         "factionID": 1270
       },
       {
         "file": "pandaria.lua",
         "factionID": 1302
+      },
+      {
+        "file": "pandaria.lua",
+        "factionID": 1337
       },
       {
         "file": "war_within.lua",
@@ -321,27 +337,12 @@
       },
       {
         "file": "outland.lua",
-        "factionID": 947,
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "file": "outland.lua",
-        "factionID": 970,
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "file": "outland.lua",
         "factionID": 978,
         "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
       },
       {
         "file": "outland.lua",
         "factionID": 989,
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "file": "outland.lua",
-        "factionID": 1011,
         "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
       },
       {
@@ -372,11 +373,6 @@
       {
         "file": "pandaria.lua",
         "factionID": 1272,
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "file": "pandaria.lua",
-        "factionID": 1337,
         "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
       },
       {

@@ -250,6 +250,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 100,
                         title = "Thrallmar",
+                        x = 0.544,
+                        y = 0.370,
                     },
                     name = "Quartermaster Urgronn",
                 },
@@ -283,6 +285,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 102,
                         title = "Sporeggar",
+                        x = 0.196,
+                        y = 0.524,
                     },
                     name = "Mycah",
                 },
@@ -386,6 +390,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 111,
                         title = "Lower City",
+                        x = 0.625,
+                        y = 0.690,
                     },
                     name = "Nakodu",
                 },
