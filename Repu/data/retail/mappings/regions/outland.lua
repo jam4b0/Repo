@@ -109,7 +109,7 @@ ns.Data:RegisterRetailModule({
                 confidence = "high",
                 notes = "Retail legacy city family anchor",
                 mapIDs = { 111 },
-                tags = { "primary", "hub", "local", "outland" },
+                tags = { "primary", "hub", "local", "outland", "suppress-zone-fallback" },
                 factions = {
                     { factionID = 935, weight = 258 },
                     { factionID = 932, weight = 252 },
@@ -180,7 +180,7 @@ ns.Data:RegisterRetailModule({
                 confidence = "high",
                 notes = "Cenarion Expedition hub cluster",
                 mapIDs = { 102 },
-                tags = { "primary", "hub", "local", "outland" },
+                tags = { "primary", "hub", "local", "outland", "suppress-zone-fallback" },
                 factions = {
                     { factionID = 942, weight = 260 },
                 },
@@ -192,7 +192,7 @@ ns.Data:RegisterRetailModule({
                 confidence = "medium",
                 notes = "Local Sporeggar hub in Zangarmarsh.",
                 mapIDs = { 102 },
-                tags = { "primary", "hub", "local", "outland" },
+                tags = { "primary", "hub", "local", "outland", "suppress-zone-fallback" },
                 factions = {
                     { factionID = 970, weight = 260 },
                 },
@@ -204,7 +204,7 @@ ns.Data:RegisterRetailModule({
                 confidence = "medium",
                 notes = "Alliance hub cluster for Hellfire Peninsula.",
                 mapIDs = { 100 },
-                tags = { "primary", "hub", "local", "outland" },
+                tags = { "primary", "hub", "local", "outland", "suppress-zone-fallback" },
                 factions = {
                     { factionID = 946, factionGroups = { "Alliance" }, weight = 260 },
                 },
@@ -240,7 +240,7 @@ ns.Data:RegisterRetailModule({
                 confidence = "medium",
                 notes = "Local Netherwing quest hub in Shadowmoon Valley.",
                 mapIDs = { 105 },
-                tags = { "primary", "hub", "local", "outland" },
+                tags = { "primary", "hub", "local", "outland", "suppress-zone-fallback" },
                 factions = {
                     { factionID = 1015, weight = 260 },
                 },

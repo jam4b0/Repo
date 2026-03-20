@@ -1,4 +1,10 @@
-local root = "/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu/"
+local source = debug and debug.getinfo and debug.getinfo(1, "S")
+local scriptPath = source and source.source and source.source:match("^@(.+)$") or nil
+local root = scriptPath and scriptPath:match("^(.*[/\\])tools[/\\]run_tests.lua$")
+
+if not root then
+    error("Unable to determine addon root from run_tests.lua path")
+end
 
 local function loadAddonFile(relPath, ns)
     local chunk, err = loadfile(root .. relPath)

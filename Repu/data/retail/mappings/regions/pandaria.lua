@@ -127,7 +127,7 @@ ns.Data:RegisterRetailModule({
                 confidence = "medium",
                 notes = "Klaxxi local hub in the Dread Wastes.",
                 mapIDs = { 418 },
-                tags = { "hub", "local", "pandaria" },
+                tags = { "hub", "local", "pandaria", "suppress-zone-fallback" },
                 factions = {
                     { factionID = 1337, weight = 260 },
                 },

@@ -105,6 +105,7 @@ function ns.Scoring:Prioritize(matches, rawFactions, context, options)
             factionID = faction.factionID,
             faction = faction,
             name = faction.name,
+            parentFactionID = faction.parentFactionID,
             sourceType = match.sourceType,
             sourceKey = match.sourceKey,
             score = score,

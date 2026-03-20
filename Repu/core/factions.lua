@@ -170,10 +170,13 @@ local function getKnownChildDefinition(parentFactionID, childFactionID)
 end
 
 local function matchApplies(match, context)
+    local contextZoneKey = Utils:NormalizeKey(context and context.zoneKey)
+    local contextSubZoneKey = Utils:NormalizeKey(context and context.subZoneKey)
+
     if match.zoneKeys and context.zoneKey then
         local allowed = false
         for _, zoneKey in ipairs(match.zoneKeys) do
-            if Utils:NormalizeKey(zoneKey) == context.zoneKey then
+            if Utils:NormalizeKey(zoneKey) == contextZoneKey then
                 allowed = true
                 break
             end
@@ -183,10 +186,10 @@ local function matchApplies(match, context)
         end
     end
 
-    if match.subZoneKeys and context.subZoneKey then
+    if match.subZoneKeys and contextSubZoneKey then
         local allowed = false
         for _, subZoneKey in ipairs(match.subZoneKeys) do
-            if Utils:NormalizeKey(subZoneKey) == context.subZoneKey then
+            if Utils:NormalizeKey(subZoneKey) == contextSubZoneKey then
                 allowed = true
                 break
             end
@@ -543,6 +546,8 @@ function ns.Factions:BuildMatches(rawFactions, context)
     local results = {}
     local seen = {}
     local hasSubZoneMatch = false
+    local suppressZoneFallbackForSubZone = false
+    local subZoneFactionIDs = {}
     local profile = ns.State:GetProfile()
 
     local function appendMatch(match, faction, sourceType, sourceKey)
@@ -616,7 +621,44 @@ function ns.Factions:BuildMatches(rawFactions, context)
             end
             appendMatch(match, faction, "subZone", rawKey or mapID)
             hasSubZoneMatch = true
+            if match.tags then
+                for _, tag in ipairs(match.tags) do
+                    if tag == "suppress-zone-fallback" then
+                        suppressZoneFallbackForSubZone = true
+                        break
+                    end
+                end
+            end
+            if faction and faction.factionID then
+                subZoneFactionIDs[faction.factionID] = true
+            end
         end
+    end
+
+    local function areRelatedFactionIDs(leftFactionID, rightFactionID)
+        if not leftFactionID or not rightFactionID then
+            return false
+        end
+        if leftFactionID == rightFactionID then
+            return true
+        end
+
+        local leftFaction = rawFactions.byID and rawFactions.byID[leftFactionID] or nil
+        local rightFaction = rawFactions.byID and rawFactions.byID[rightFactionID] or nil
+        local leftParent = (leftFaction and leftFaction.parentFactionID) or KNOWN_RETAIL_CHILD_TO_PARENT[leftFactionID]
+        local rightParent = (rightFaction and rightFaction.parentFactionID) or KNOWN_RETAIL_CHILD_TO_PARENT[rightFactionID]
+
+        if leftParent and leftParent == rightFactionID then
+            return true
+        end
+        if rightParent and rightParent == leftFactionID then
+            return true
+        end
+        if leftParent and rightParent and leftParent == rightParent then
+            return true
+        end
+
+        return false
     end
 
     local function resolveMapChain(sourceType)
@@ -666,6 +708,25 @@ function ns.Factions:BuildMatches(rawFactions, context)
                 end
             end
         end
+    elseif context.activeFlavor == "retail" and hasSubZoneMatch and suppressZoneFallbackForSubZone then
+        local filtered = {}
+        for _, match in ipairs(results) do
+            if match.sourceType ~= "zone" or not match.factionID then
+                filtered[#filtered + 1] = match
+            else
+                local keep = false
+                for subZoneFactionID in pairs(subZoneFactionIDs) do
+                    if areRelatedFactionIDs(match.factionID, subZoneFactionID) then
+                        keep = true
+                        break
+                    end
+                end
+                if keep then
+                    filtered[#filtered + 1] = match
+                end
+            end
+        end
+        results = filtered
     end
 
     local inferred = ns.Inference:BuildMatches(rawFactions, context, results)
@@ -731,6 +792,39 @@ function ns.Factions:SelectVisible(prioritized, context)
     end
 
     local appendKnownChildren
+
+    local function appendKnownParentGroup(parentFactionID, score)
+        if not parentFactionID or seenFactionIDs[parentFactionID] then
+            return true
+        end
+
+        local parentFaction = byID[parentFactionID] or ns.Compat:GetFactionDataByID(parentFactionID)
+        if not parentFaction then
+            return false
+        end
+
+        local parentCandidate = {
+            factionID = parentFactionID,
+            faction = parentFaction,
+            name = parentFaction.name,
+            sourceType = "group_parent",
+            sourceKey = tostring(parentFactionID),
+            score = score or 0,
+            isDirect = false,
+            isFallback = false,
+            hasKnownChildren = true,
+            factionClass = parentFaction.isMajorFaction and "major_faction" or "group_parent",
+            note = "Known parent faction for matched child",
+        }
+
+        appendVisible(parentCandidate, #visible + 1)
+        if visible[#visible] == parentCandidate then
+            appendKnownChildren(parentCandidate)
+            return true
+        end
+
+        return seenFactionIDs[parentFactionID] == true
+    end
 
     local function appendVirtualGroup(parentFactionID, score)
         local definition = virtualParentsByID[parentFactionID] or KNOWN_VIRTUAL_PARENT_FACTIONS[parentFactionID]
@@ -803,6 +897,19 @@ function ns.Factions:SelectVisible(prioritized, context)
         return false
     end
 
+    local function maybeAppendKnownParent(candidate)
+        if not candidate or not candidate.factionID then
+            return false
+        end
+
+        local parentFactionID = candidate.parentFactionID or KNOWN_RETAIL_CHILD_TO_PARENT[candidate.factionID]
+        if not parentFactionID then
+            return false
+        end
+
+        return appendKnownParentGroup(parentFactionID, candidate.score or 0)
+    end
+
     appendKnownChildren = function(parentCandidate)
         if not parentCandidate or not parentCandidate.factionID then
             return
@@ -864,7 +971,8 @@ function ns.Factions:SelectVisible(prioritized, context)
     end
 
     for index, candidate in ipairs(prioritized) do
-        local handledByVirtualGroup = maybeAppendLegacyVirtualGroup(candidate)
+        local handledByKnownParent = maybeAppendKnownParent(candidate)
+        local handledByVirtualGroup = handledByKnownParent or maybeAppendLegacyVirtualGroup(candidate)
         if not handledByVirtualGroup then
             appendVisible(candidate, index)
             if visible[#visible] == candidate then

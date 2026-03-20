@@ -60,11 +60,40 @@ local locationTypeToSection = {
     raids = "raid",
 }
 
+local function buildSubZoneKeys(key, record)
+    local keys = {}
+    local seen = {}
+
+    local function add(value)
+        local normalized = Utils:NormalizeKey(value)
+        if not normalized or seen[normalized] then
+            return
+        end
+        seen[normalized] = true
+        keys[#keys + 1] = value
+    end
+
+    for _, value in ipairs(record.subZoneKeys or {}) do
+        add(value)
+    end
+
+    add(record.name)
+
+    if type(key) == "string" then
+        local suffix = key:match("^[^:]+:(.+)$")
+        add(suffix)
+    end
+
+    return #keys > 0 and keys or nil
+end
+
 local function normalizeLocationRecord(locationType, key, record)
     local sectionName = locationTypeToSection[locationType]
     if not sectionName then
         return nil, nil
     end
+
+    local derivedSubZoneKeys = sectionName == "subZone" and buildSubZoneKeys(key, record) or record.subZoneKeys
 
     local entries = {}
     local factionIDs = record.factionIDs or {}
@@ -73,10 +102,11 @@ local function normalizeLocationRecord(locationType, key, record)
             factionID = factionID,
             weight = record.weight,
             mapIDs = record.mapIDs,
+            parentMapID = record.parentMapID,
             instanceMapIDs = record.instanceMapIDs,
             aliases = record.aliases,
             zoneKeys = record.zoneKeys,
-            subZoneKeys = record.subZoneKeys,
+            subZoneKeys = derivedSubZoneKeys,
             difficulties = record.difficulties,
             instanceTypes = record.instanceTypes,
             factionGroups = record.factionGroups,
@@ -96,10 +126,11 @@ local function normalizeLocationRecord(locationType, key, record)
             entry.note = entry.note or record.notes
             entry.weight = entry.weight or record.weight
             entry.mapIDs = entry.mapIDs or record.mapIDs
+            entry.parentMapID = entry.parentMapID or record.parentMapID
             entry.instanceMapIDs = entry.instanceMapIDs or record.instanceMapIDs
             entry.aliases = entry.aliases or record.aliases
             entry.zoneKeys = entry.zoneKeys or record.zoneKeys
-            entry.subZoneKeys = entry.subZoneKeys or record.subZoneKeys
+            entry.subZoneKeys = entry.subZoneKeys or derivedSubZoneKeys
             entry.difficulties = entry.difficulties or record.difficulties
             entry.instanceTypes = entry.instanceTypes or record.instanceTypes
             entry.factionGroups = entry.factionGroups or record.factionGroups
@@ -174,6 +205,8 @@ function ns.Data:BuildActiveData(flavor)
         index = {
             zoneByMapID = {},
             subZoneByMapID = {},
+            subZoneByParentMapID = {},
+            subZoneRecordByParentMapID = {},
             instanceByMapID = {},
             raidByMapID = {},
         },
@@ -188,16 +221,50 @@ function ns.Data:BuildActiveData(flavor)
             or sectionName == "instance" and "instances"
             or sectionName == "raid" and "raids"
 
+        local function addSubZoneRecordIndex(record)
+            if sectionName ~= "subZone" or not record or not record.parentMapID then
+                return
+            end
+
+            local target = merged.index.subZoneRecordByParentMapID
+            target[record.parentMapID] = target[record.parentMapID] or {}
+            for _, subZoneKey in ipairs(buildSubZoneKeys(nil, record) or {}) do
+                local normalized = Utils:NormalizeKey(subZoneKey)
+                if normalized then
+                    target[record.parentMapID][normalized] = record
+                end
+            end
+        end
+
         for rawKey, record in pairs((payload.locations or {})[locationType] or {}) do
             merged.locations[sectionName][rawKey] = record
+            addSubZoneRecordIndex(record)
         end
     end
 
     local function mergeMapSection(sectionName, payload)
+        local function addSubZoneMatchIndex(entry)
+            if sectionName ~= "subZone" or not entry or not entry.parentMapID then
+                return
+            end
+
+            local target = merged.index.subZoneByParentMapID
+            target[entry.parentMapID] = target[entry.parentMapID] or {}
+
+            for _, subZoneKey in ipairs(entry.subZoneKeys or {}) do
+                local normalized = Utils:NormalizeKey(subZoneKey)
+                if normalized then
+                    target[entry.parentMapID][normalized] = target[entry.parentMapID][normalized] or {}
+                    table.insert(target[entry.parentMapID][normalized], entry)
+                end
+            end
+        end
+
         for rawKey, entries in pairs((payload.map or emptyMap)[sectionName] or {}) do
             for _, entry in ipairs(entries) do
                 local normalized = normalizeEntry(entry, sectionName)
                 addKey(merged.map[sectionName], rawKey, normalized)
+                addSubZoneMatchIndex(normalized)
 
                 if normalized.aliases then
                     for _, alias in ipairs(normalized.aliases) do
@@ -275,14 +342,38 @@ function ns.Data:FindMatchesByMapID(sourceType, mapID)
 end
 
 function ns.Data:FindSubZoneMatches(mapID, rawKey)
-    local section = self.activeData.map.subZone or {}
     local results = {}
+    local seen = {}
+    local section = self.activeData.map.subZone or {}
+
+    local function append(entry)
+        local key = table.concat({
+            tostring(entry.factionID or entry.name or ""),
+            tostring(entry.weight or ""),
+            tostring(entry.parentMapID or ""),
+            tostring(entry.note or ""),
+        }, "::")
+        if seen[key] then
+            return
+        end
+        seen[key] = true
+        results[#results + 1] = entry
+    end
 
     if mapID and rawKey then
+        local parentMapIndex = self.activeData.index.subZoneByParentMapID or {}
+        local byParent = parentMapIndex[mapID] or {}
+        local normalized = Utils:NormalizeKey(rawKey)
+        if normalized and byParent[normalized] then
+            for _, entry in ipairs(byParent[normalized]) do
+                append(entry)
+            end
+        end
+
         local compositeKey = Utils:NormalizeKey(string.format("%s:%s", tostring(mapID), tostring(rawKey)))
         if compositeKey and section[compositeKey] then
             for _, entry in ipairs(section[compositeKey]) do
-                results[#results + 1] = entry
+                append(entry)
             end
         end
     end
@@ -291,7 +382,7 @@ function ns.Data:FindSubZoneMatches(mapID, rawKey)
         local simpleKey = Utils:NormalizeKey(rawKey)
         if simpleKey and section[simpleKey] then
             for _, entry in ipairs(section[simpleKey]) do
-                results[#results + 1] = entry
+                append(entry)
             end
         end
     end
@@ -318,6 +409,14 @@ function ns.Data:GetLocationRecordByMapID(sourceType, mapID)
 end
 
 function ns.Data:GetSubZoneRecord(mapID, rawKey)
+    if mapID and rawKey then
+        local byParent = self.activeData.index.subZoneRecordByParentMapID or {}
+        local normalized = Utils:NormalizeKey(rawKey)
+        if normalized and byParent[mapID] and byParent[mapID][normalized] then
+            return byParent[mapID][normalized], normalized
+        end
+    end
+
     if mapID and rawKey then
         local composite = string.format("%s:%s", tostring(mapID), tostring(rawKey))
         local compositeKey = Utils:NormalizeKey(composite)
@@ -351,10 +450,13 @@ function ns.Data:GetCoverage(context)
     local subZoneMatches = self:FindSubZoneMatches(context.mapID, context.subZoneName)
 
     local function matchesContext(entry)
-        if entry.zoneKeys and context.zoneKey then
+        local contextZoneKey = Utils:NormalizeKey(context and context.zoneKey)
+        local contextSubZoneKey = Utils:NormalizeKey(context and context.subZoneKey)
+
+        if entry.zoneKeys and contextZoneKey then
             local allowed = false
             for _, zoneKey in ipairs(entry.zoneKeys) do
-                if Utils:NormalizeKey(zoneKey) == context.zoneKey then
+                if Utils:NormalizeKey(zoneKey) == contextZoneKey then
                     allowed = true
                     break
                 end
@@ -364,10 +466,10 @@ function ns.Data:GetCoverage(context)
             end
         end
 
-        if entry.subZoneKeys and context.subZoneKey then
+        if entry.subZoneKeys and contextSubZoneKey then
             local allowed = false
             for _, subZoneKeyEntry in ipairs(entry.subZoneKeys) do
-                if Utils:NormalizeKey(subZoneKeyEntry) == context.subZoneKey then
+                if Utils:NormalizeKey(subZoneKeyEntry) == contextSubZoneKey then
                     allowed = true
                     break
                 end

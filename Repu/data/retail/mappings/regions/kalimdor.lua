@@ -332,7 +332,7 @@ ns.Data:RegisterRetailModule({
                 confidence = "medium",
                 notes = "Neutral goblin harbor hub in the Northern Barrens.",
                 mapIDs = { 10 },
-                tags = { "primary", "hub", "local", "kalimdor" },
+                tags = { "primary", "hub", "local", "kalimdor", "suppress-zone-fallback" },
                 factions = {
                     { factionID = 470, weight = 260 },
                 },
@@ -404,7 +404,7 @@ ns.Data:RegisterRetailModule({
                 confidence = "medium",
                 notes = "Neutral goblin town hub in Winterspring.",
                 mapIDs = { 83 },
-                tags = { "primary", "hub", "local", "kalimdor" },
+                tags = { "primary", "hub", "local", "kalimdor", "suppress-zone-fallback" },
                 factions = {
                     { factionID = 577, weight = 260 },
                 },
@@ -416,7 +416,7 @@ ns.Data:RegisterRetailModule({
                 confidence = "medium",
                 notes = "Neutral goblin town hub in Tanaris.",
                 mapIDs = { 71 },
-                tags = { "primary", "hub", "local", "kalimdor" },
+                tags = { "primary", "hub", "local", "kalimdor", "suppress-zone-fallback" },
                 factions = {
                     { factionID = 369, weight = 260 },
                 },
