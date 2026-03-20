@@ -106,7 +106,11 @@ function ns.UI:UpdateRow(row, candidate, isActive, isSelected)
 
     local hasChildren = candidate.hasKnownChildren and true or false
     local isChild = candidate.isChildOfVisibleParent and true or false
-    row.nameText:SetText((isChild and "   " or "") .. tostring(faction.name or UNKNOWN))
+    row.nameText:SetText(tostring(faction.name or UNKNOWN))
+
+    row.bar:ClearAllPoints()
+    row.bar:SetPoint("TOPLEFT", row, "TOPLEFT", isChild and 18 or 4, -4)
+    row.bar:SetPoint("BOTTOMRIGHT", row, "BOTTOMRIGHT", -4, 4)
 
     if hasChildren or not isChild then
         row.nameText:SetFontObject(GameFontNormal)
@@ -117,7 +121,7 @@ function ns.UI:UpdateRow(row, candidate, isActive, isSelected)
     end
 
     row.nameText:ClearAllPoints()
-    row.nameText:SetPoint("LEFT", row.overlay, "LEFT", isChild and 34 or 10, 0)
+    row.nameText:SetPoint("LEFT", row.overlay, "LEFT", isChild and 10 or 6, 0)
     row.nameText:SetPoint("RIGHT", row.valueText, "LEFT", -10, 0)
 
     local valueText = string.format(
