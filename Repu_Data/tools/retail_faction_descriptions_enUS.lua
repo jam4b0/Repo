@@ -110,6 +110,7 @@ return {
         ["2373"] = { name = "The Unshackled", description = "Oppressed by the Naga, these refugees have banded together to rise up and seize their freedom." },
         ["2391"] = { name = "Rustbolt Resistance", description = "The Rustbolt Resistance holds the line against King Mechagon and his evil plans." },
         ["2395"] = { name = "Honeyback Hive", description = "A species of bee known for their unusual size. While newcomers to Stormsong Valley, they quickly made their presence known to adventurers and insect enthusiasts alike." },
+        ["2400"] = { name = "Waveblade Ankoan", description = "Oppressed by the Naga, these refugees have banded together to rise up and seize their freedom." },
         ["2407"] = { name = "The Ascended", description = "Kyrian who complete the arduous process of purging their mortal encumbrances are deemed worthy of the rite of ascension, earning their wings and pledging eternal service to the Archon." },
         ["2410"] = { name = "The Undying Army", description = "Long ago, the Primus established the five houses of Maldraxxus to build the ultimate fighting force. Through might, cleverness, and guile, this unyielding armada is pledged to defend the Shadowlands against all threats." },
         ["2413"] = { name = "Court of Harvesters", description = "After countless ages spent under the rule of Sire Denathrius, authority in Revendreth is now shared amongst the Court of Harvesters. These noble venthyr carry out the sacred duty of redeeming prideful souls." },
@@ -163,7 +164,6 @@ return {
         ["2770"] = { name = "Slayer's Duellum", description = "Deep within the Voidstorm, the war between Vidious and Ziadan rages on." },
     },
     missing = {
-        2370,
         2544,
     },
 }

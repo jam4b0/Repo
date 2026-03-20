@@ -295,6 +295,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "activity.shattrath.aldor_tasks.title",
                 },
             },
+            quartermasters = {
+                {
+                    labelKey = "faction.932.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.932.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.932.quartermaster.1.name",
+                },
+            },
         },
         [933] = {
             activities = {
@@ -313,6 +322,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "faction.933.activity.2.title",
                 },
             },
+            quartermasters = {
+                {
+                    labelKey = "faction.933.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.933.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.933.quartermaster.1.name",
+                },
+            },
         },
         [934] = {
             activities = {
@@ -324,6 +342,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "activity.shattrath.scryer_tasks.title",
                 },
             },
+            quartermasters = {
+                {
+                    labelKey = "faction.934.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.934.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.934.quartermaster.1.name",
+                },
+            },
         },
         [935] = {
             activities = {
@@ -333,6 +360,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                         titleKey = "faction.935.activity.1.location.title",
                     },
                     titleKey = "activity.shattrath.temple_tasks.title",
+                },
+            },
+            quartermasters = {
+                {
+                    labelKey = "faction.935.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.935.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.935.quartermaster.1.name",
                 },
             },
         },
@@ -353,6 +389,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "faction.941.activity.2.title",
                 },
             },
+            quartermasters = {
+                {
+                    labelKey = "faction.941.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.941.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.941.quartermaster.1.name",
+                },
+            },
         },
         [942] = {
             activities = {
@@ -369,6 +414,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                         titleKey = "faction.942.activity.2.location.title",
                     },
                     titleKey = "faction.942.activity.2.title",
+                },
+            },
+            quartermasters = {
+                {
+                    labelKey = "faction.942.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.942.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.942.quartermaster.1.name",
                 },
             },
         },
@@ -389,6 +443,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "faction.946.activity.2.title",
                 },
             },
+            quartermasters = {
+                {
+                    labelKey = "faction.946.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.946.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.946.quartermaster.1.name",
+                },
+            },
         },
         [947] = {
             activities = {
@@ -405,6 +468,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                         titleKey = "faction.947.activity.2.location.title",
                     },
                     titleKey = "faction.947.activity.2.title",
+                },
+            },
+            quartermasters = {
+                {
+                    labelKey = "faction.947.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.947.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.947.quartermaster.1.name",
                 },
             },
         },
@@ -427,6 +499,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "faction.970.activity.2.title",
                 },
             },
+            quartermasters = {
+                {
+                    labelKey = "faction.970.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.970.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.970.quartermaster.1.name",
+                },
+            },
         },
         [978] = {
             activities = {
@@ -443,6 +524,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                         titleKey = "faction.978.activity.2.location.title",
                     },
                     titleKey = "faction.978.activity.2.title",
+                },
+            },
+            quartermasters = {
+                {
+                    labelKey = "faction.978.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.978.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.978.quartermaster.1.name",
                 },
             },
         },
@@ -485,6 +575,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "activity.shattrath.lower_city_tasks.title",
                 },
             },
+            quartermasters = {
+                {
+                    labelKey = "faction.1011.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.1011.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.1011.quartermaster.1.name",
+                },
+            },
         },
         [1012] = {
             activities = {
@@ -521,6 +620,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "faction.1015.activity.2.title",
                 },
             },
+            quartermasters = {
+                {
+                    labelKey = "faction.1015.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.1015.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.1015.quartermaster.1.name",
+                },
+            },
         },
         [1031] = {
             activities = {
@@ -537,6 +645,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                         titleKey = "faction.1031.activity.2.location.title",
                     },
                     titleKey = "faction.1031.activity.2.title",
+                },
+            },
+            quartermasters = {
+                {
+                    labelKey = "faction.1031.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.1031.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.1031.quartermaster.1.name",
                 },
             },
         },
@@ -626,6 +743,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "faction.1090.activity.2.title",
                 },
             },
+            quartermasters = {
+                {
+                    labelKey = "faction.1090.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.1090.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.1090.quartermaster.1.name",
+                },
+            },
         },
         [1091] = {
             activities = {
@@ -635,6 +761,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                         titleKey = "faction.1091.activity.1.location.title",
                     },
                     titleKey = "faction.1091.activity.1.title",
+                },
+            },
+            quartermasters = {
+                {
+                    labelKey = "faction.1091.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.1091.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.1091.quartermaster.1.name",
                 },
             },
         },
@@ -653,6 +788,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                         titleKey = "faction.1098.activity.2.location.title",
                     },
                     titleKey = "faction.1098.activity.2.title",
+                },
+            },
+            quartermasters = {
+                {
+                    labelKey = "faction.1098.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.1098.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.1098.quartermaster.1.name",
                 },
             },
         },
@@ -702,6 +846,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "faction.1106.activity.2.title",
                 },
             },
+            quartermasters = {
+                {
+                    labelKey = "faction.1106.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.1106.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.1106.quartermaster.1.name",
+                },
+            },
         },
         [1119] = {
             activities = {
@@ -711,6 +864,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                         titleKey = "faction.1119.activity.1.location.title",
                     },
                     titleKey = "faction.1119.activity.1.title",
+                },
+            },
+            quartermasters = {
+                {
+                    labelKey = "faction.1119.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.1119.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.1119.quartermaster.1.name",
                 },
             },
         },
@@ -779,6 +941,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "faction.1158.activity.1.title",
                 },
             },
+            quartermasters = {
+                {
+                    labelKey = "faction.1158.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.1158.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.1158.quartermaster.1.name",
+                },
+            },
         },
         [1171] = {
             activities = {
@@ -788,6 +959,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                         titleKey = "faction.1171.activity.1.location.title",
                     },
                     titleKey = "faction.1171.activity.1.title",
+                },
+            },
+            quartermasters = {
+                {
+                    labelKey = "faction.1171.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.1171.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.1171.quartermaster.1.name",
                 },
             },
         },
@@ -801,6 +981,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                         titleKey = "faction.1173.activity.1.location.title",
                     },
                     titleKey = "faction.1173.activity.1.title",
+                },
+            },
+            quartermasters = {
+                {
+                    labelKey = "faction.1173.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.1173.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.1173.quartermaster.1.name",
                 },
             },
         },
@@ -832,6 +1021,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "faction.1177.activity.2.title",
                 },
             },
+            quartermasters = {
+                {
+                    labelKey = "faction.1177.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.1177.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.1177.quartermaster.1.name",
+                },
+            },
         },
         [1178] = {
             activities = {
@@ -848,6 +1046,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                         titleKey = "faction.1178.activity.2.location.title",
                     },
                     titleKey = "faction.1178.activity.2.title",
+                },
+            },
+            quartermasters = {
+                {
+                    labelKey = "faction.1178.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.1178.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.1178.quartermaster.1.name",
                 },
             },
         },
@@ -870,6 +1077,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "faction.1269.activity.2.title",
                 },
             },
+            quartermasters = {
+                {
+                    labelKey = "faction.1269.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.1269.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.1269.quartermaster.1.name",
+                },
+            },
         },
         [1270] = {
             activities = {
@@ -886,6 +1102,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                         titleKey = "faction.1270.activity.2.location.title",
                     },
                     titleKey = "faction.1270.activity.2.title",
+                },
+            },
+            quartermasters = {
+                {
+                    labelKey = "faction.1270.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.1270.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.1270.quartermaster.1.name",
                 },
             },
         },
@@ -924,6 +1149,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "faction.1272.activity.2.title",
                 },
             },
+            quartermasters = {
+                {
+                    labelKey = "faction.1272.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.1272.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.1272.quartermaster.1.name",
+                },
+            },
         },
         [1302] = {
             activities = {
@@ -933,6 +1167,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                         titleKey = "faction.1302.activity.1.location.title",
                     },
                     titleKey = "faction.1302.activity.1.title",
+                },
+            },
+            quartermasters = {
+                {
+                    labelKey = "faction.1302.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.1302.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.1302.quartermaster.1.name",
                 },
             },
         },
@@ -958,6 +1201,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                         titleKey = "faction.1337.activity.3.location.title",
                     },
                     titleKey = "faction.1337.activity.3.title",
+                },
+            },
+            quartermasters = {
+                {
+                    labelKey = "faction.1337.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.1337.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.1337.quartermaster.1.name",
                 },
             },
         },
@@ -1076,6 +1328,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "faction.1445.activity.2.title",
                 },
             },
+            quartermasters = {
+                {
+                    labelKey = "faction.1445.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.1445.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.1445.quartermaster.1.name",
+                },
+            },
         },
         [1492] = {
             activities = {
@@ -1141,6 +1402,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "faction.1711.activity.2.title",
                 },
             },
+            quartermasters = {
+                {
+                    labelKey = "faction.1711.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.1711.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.1711.quartermaster.1.name",
+                },
+            },
         },
         [1731] = {
             activities = {
@@ -1175,6 +1445,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                         titleKey = "faction.1828.activity.2.location.title",
                     },
                     titleKey = "faction.1828.activity.2.title",
+                },
+            },
+            quartermasters = {
+                {
+                    labelKey = "faction.1828.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.1828.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.1828.quartermaster.1.name",
                 },
             },
         },
@@ -1235,6 +1514,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "faction.1850.activity.2.title",
                 },
             },
+            quartermasters = {
+                {
+                    labelKey = "faction.1850.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.1850.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.1850.quartermaster.1.name",
+                },
+            },
         },
         [1859] = {
             activities = {
@@ -1253,6 +1541,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "faction.1859.activity.2.title",
                 },
             },
+            quartermasters = {
+                {
+                    labelKey = "faction.1859.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.1859.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.1859.quartermaster.1.name",
+                },
+            },
         },
         [1883] = {
             activities = {
@@ -1269,6 +1566,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                         titleKey = "faction.1883.activity.2.location.title",
                     },
                     titleKey = "faction.1883.activity.2.title",
+                },
+            },
+            quartermasters = {
+                {
+                    labelKey = "faction.1883.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.1883.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.1883.quartermaster.1.name",
                 },
             },
         },
@@ -1307,6 +1613,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "faction.1900.activity.2.title",
                 },
             },
+            quartermasters = {
+                {
+                    labelKey = "faction.1900.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.1900.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.1900.quartermaster.1.name",
+                },
+            },
         },
         [1948] = {
             activities = {
@@ -1325,6 +1640,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "faction.1948.activity.2.title",
                 },
             },
+            quartermasters = {
+                {
+                    labelKey = "faction.1948.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.1948.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.1948.quartermaster.1.name",
+                },
+            },
         },
         [2045] = {
             activities = {
@@ -1334,6 +1658,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                         titleKey = "faction.2045.activity.1.location.title",
                     },
                     titleKey = "faction.2045.activity.1.title",
+                },
+            },
+            quartermasters = {
+                {
+                    labelKey = "faction.2045.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2045.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2045.quartermaster.1.name",
                 },
             },
         },
@@ -1383,6 +1716,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "faction.2158.activity.1.title",
                 },
             },
+            quartermasters = {
+                {
+                    labelKey = "faction.2158.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2158.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2158.quartermaster.1.name",
+                },
+            },
         },
         [2160] = {
             activities = {
@@ -1401,6 +1743,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "faction.2160.activity.2.title",
                 },
             },
+            quartermasters = {
+                {
+                    labelKey = "faction.2160.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2160.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2160.quartermaster.1.name",
+                },
+            },
         },
         [2161] = {
             activities = {
@@ -1417,6 +1768,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                         titleKey = "faction.2161.activity.2.location.title",
                     },
                     titleKey = "faction.2161.activity.2.title",
+                },
+            },
+            quartermasters = {
+                {
+                    labelKey = "faction.2161.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2161.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2161.quartermaster.1.name",
                 },
             },
         },
@@ -1455,6 +1815,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "faction.2165.activity.2.title",
                 },
             },
+            quartermasters = {
+                {
+                    labelKey = "faction.2165.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2165.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2165.quartermaster.1.name",
+                },
+            },
         },
         [2170] = {
             activities = {
@@ -1473,32 +1842,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "faction.2170.activity.2.title",
                 },
             },
-        },
-        [2370] = {
-            activities = {
+            quartermasters = {
                 {
-                    kindKey = "faction.2370.activity.1.kind",
+                    labelKey = "faction.2170.quartermaster.1.label",
                     location = {
-                        titleKey = "faction.2370.activity.1.location.title",
+                        titleKey = "faction.2170.quartermaster.1.location.title",
                     },
-                    titleKey = "faction.2370.activity.1.title",
-                },
-                {
-                    kindKey = "faction.2370.activity.2.kind",
-                    location = {
-                        titleKey = "faction.2370.activity.2.location.title",
-                    },
-                    titleKey = "faction.2370.activity.2.title",
-                },
-                {
-                    kindKey = "faction.2370.activity.3.kind",
-                    location = {
-                        titleKey = "faction.2370.activity.3.location.title",
-                    },
-                    titleKey = "faction.2370.activity.3.title",
+                    nameKey = "faction.2170.quartermaster.1.name",
                 },
             },
-            summaryKey = "faction.2370.summary",
         },
         [2373] = {
             activities = {
@@ -1515,6 +1867,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                         titleKey = "faction.2373.activity.2.location.title",
                     },
                     titleKey = "faction.2373.activity.2.title",
+                },
+            },
+            quartermasters = {
+                {
+                    labelKey = "faction.2373.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2373.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2373.quartermaster.1.name",
                 },
             },
         },
@@ -1535,6 +1896,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "faction.2391.activity.2.title",
                 },
             },
+            quartermasters = {
+                {
+                    labelKey = "faction.2391.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2391.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2391.quartermaster.1.name",
+                },
+            },
         },
         [2395] = {
             activities = {
@@ -1546,6 +1916,41 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "faction.2395.activity.1.title",
                 },
             },
+        },
+        [2400] = {
+            activities = {
+                {
+                    kindKey = "faction.2400.activity.1.kind",
+                    location = {
+                        titleKey = "faction.2400.activity.1.location.title",
+                    },
+                    titleKey = "faction.2400.activity.1.title",
+                },
+                {
+                    kindKey = "faction.2400.activity.2.kind",
+                    location = {
+                        titleKey = "faction.2400.activity.2.location.title",
+                    },
+                    titleKey = "faction.2400.activity.2.title",
+                },
+                {
+                    kindKey = "faction.2400.activity.3.kind",
+                    location = {
+                        titleKey = "faction.2400.activity.3.location.title",
+                    },
+                    titleKey = "faction.2400.activity.3.title",
+                },
+            },
+            quartermasters = {
+                {
+                    labelKey = "faction.2400.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2400.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2400.quartermaster.1.name",
+                },
+            },
+            summaryKey = "faction.2400.summary",
         },
         [2407] = {
             activities = {
@@ -1564,6 +1969,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "faction.2407.activity.2.title",
                 },
             },
+            quartermasters = {
+                {
+                    labelKey = "faction.2407.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2407.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2407.quartermaster.1.name",
+                },
+            },
         },
         [2410] = {
             activities = {
@@ -1580,6 +1994,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                         titleKey = "faction.2410.activity.2.location.title",
                     },
                     titleKey = "faction.2410.activity.2.title",
+                },
+            },
+            quartermasters = {
+                {
+                    labelKey = "faction.2410.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2410.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2410.quartermaster.1.name",
                 },
             },
         },
@@ -1640,6 +2063,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "faction.2432.activity.2.title",
                 },
             },
+            quartermasters = {
+                {
+                    labelKey = "faction.2432.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2432.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2432.quartermaster.1.name",
+                },
+            },
         },
         [2439] = {
             activities = {
@@ -1649,6 +2081,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                         titleKey = "faction.2439.activity.1.location.title",
                     },
                     titleKey = "faction.2439.activity.1.title",
+                },
+            },
+            quartermasters = {
+                {
+                    labelKey = "faction.2439.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2439.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2439.quartermaster.1.name",
                 },
             },
         },
@@ -1678,6 +2119,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                         titleKey = "faction.2465.activity.1.location.title",
                     },
                     titleKey = "faction.2465.activity.1.title",
+                },
+            },
+            quartermasters = {
+                {
+                    labelKey = "faction.2465.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2465.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2465.quartermaster.1.name",
                 },
             },
         },
@@ -1716,6 +2166,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "faction.2472.activity.3.title",
                 },
             },
+            quartermasters = {
+                {
+                    labelKey = "faction.2472.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2472.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2472.quartermaster.1.name",
+                },
+            },
         },
         [2478] = {
             activities = {
@@ -1732,6 +2191,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                         titleKey = "faction.2478.activity.2.location.title",
                     },
                     titleKey = "faction.2478.activity.2.title",
+                },
+            },
+            quartermasters = {
+                {
+                    labelKey = "faction.2478.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2478.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2478.quartermaster.1.name",
                 },
             },
         },
@@ -1752,6 +2220,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "faction.2503.activity.2.title",
                 },
             },
+            quartermasters = {
+                {
+                    labelKey = "faction.2503.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2503.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2503.quartermaster.1.name",
+                },
+            },
         },
         [2507] = {
             activities = {
@@ -1768,6 +2245,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                         titleKey = "faction.2507.activity.2.location.title",
                     },
                     titleKey = "faction.2507.activity.2.title",
+                },
+            },
+            quartermasters = {
+                {
+                    labelKey = "faction.2507.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2507.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2507.quartermaster.1.name",
                 },
             },
         },
@@ -1788,6 +2274,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                     titleKey = "faction.2510.activity.2.title",
                 },
             },
+            quartermasters = {
+                {
+                    labelKey = "faction.2510.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2510.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2510.quartermaster.1.name",
+                },
+            },
         },
         [2511] = {
             activities = {
@@ -1804,6 +2299,15 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
                         titleKey = "faction.2511.activity.2.location.title",
                     },
                     titleKey = "faction.2511.activity.2.title",
+                },
+            },
+            quartermasters = {
+                {
+                    labelKey = "faction.2511.quartermaster.1.label",
+                    location = {
+                        titleKey = "faction.2511.quartermaster.1.location.title",
+                    },
+                    nameKey = "faction.2511.quartermaster.1.name",
                 },
             },
         },

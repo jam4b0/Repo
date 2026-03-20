@@ -124,8 +124,8 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 1355 },
                 tags = { "zone", "local", "bfa" },
                 factions = {
-                    { factionID = 2373, factionGroups = { "Alliance" }, weight = 248 },
-                    { factionID = 2370, factionGroups = { "Horde" }, weight = 248 },
+                    { factionID = 2400, factionGroups = { "Alliance" }, weight = 248 },
+                    { factionID = 2373, factionGroups = { "Horde" }, weight = 248 },
                 },
                 weight = 248,
             },
@@ -218,12 +218,12 @@ ns.Data:RegisterRetailModule({
                 parentMapID = 1355,
                 source = "seed",
                 confidence = "high",
-                notes = "Nazjatar alliance hub cluster",
+                notes = "Nazjatar horde hub cluster",
                 mapIDs = { 1355 },
-                subZoneKeys = { "Die große Versiegelung", "Die grosse Versiegelung", "The Great Seal" },
+                subZoneKeys = { "Neueheim", "Neuheim", "Newhome" },
                 tags = { "primary", "hub", "local", "bfa" },
                 factions = {
-                    { factionID = 2373, factionGroups = { "Alliance" }, weight = 262 },
+                    { factionID = 2373, factionGroups = { "Horde" }, weight = 262 },
                 },
             },
             ["1355:mezzamere"] = {
@@ -231,23 +231,23 @@ ns.Data:RegisterRetailModule({
                 parentMapID = 1355,
                 source = "seed",
                 confidence = "high",
-                notes = "Nazjatar alliance hub alias cluster",
+                notes = "Nazjatar alliance hub cluster",
                 mapIDs = { 1355 },
                 tags = { "hub", "local", "bfa" },
                 factions = {
-                    { factionID = 2373, factionGroups = { "Alliance" }, weight = 260 },
+                    { factionID = 2400, factionGroups = { "Alliance" }, weight = 262 },
                 },
             },
-            ["1355:neueheim"] = {
-                name = "Neueheim",
+            ["1355:newhome"] = {
+                name = "Newhome",
                 parentMapID = 1355,
                 source = "seed",
                 confidence = "high",
-                notes = "Nazjatar horde hub cluster",
+                notes = "Nazjatar horde hub alias cluster",
                 mapIDs = { 1355 },
                 tags = { "primary", "hub", "local", "bfa" },
                 factions = {
-                    { factionID = 2370, factionGroups = { "Horde" }, weight = 262 },
+                    { factionID = 2373, factionGroups = { "Horde" }, weight = 260 },
                 },
             },
             ["1462:rustbolt"] = {
@@ -372,8 +372,8 @@ ns.Data:RegisterRetailModule({
                 confidence = "high",
                 tags = { "raid", "bfa", "local" },
                 factions = {
-                    { factionID = 2373, weight = 390 },
-                    { factionID = 2370, weight = 388 },
+                    { factionID = 2400, weight = 390 },
+                    { factionID = 2373, weight = 388 },
                 },
             },
         },

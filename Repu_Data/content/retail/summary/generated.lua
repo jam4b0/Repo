@@ -291,10 +291,10 @@ api.RegisterRetailContentModule({
             source = "seed",
             summary = "Although many struggled to oppose the Burning Legion's conquest of Argus, not all were able to escape. Emboldened by the arrival of new allies, these refugees and outcasts stand united in their mission to reclaim their home.",
         },
-        [2370] = {
+        [2400] = {
             confidence = "low",
             source = "seed",
-            summary = "Retail content for this faction is centered on Neueheim and Nazjatar.",
+            summary = "Waveblade Ankoan are the Alliance-aligned rebels of Nazjatar, operating from Mezzamere against Queen Azshara and her naga.",
         },
         [2373] = {
             confidence = "low",

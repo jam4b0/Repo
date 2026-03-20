@@ -1,0 +1,1579 @@
+{
+  "counts": {
+    "confirmed_modeled": 141,
+    "excluded_global_system": 1,
+    "excluded_legacy_hostile_or_event": 4,
+    "excluded_micro_side_rep": 6,
+    "not_in_blizzard_index": 6,
+    "optional_pvp_brawler": 3,
+    "superseded_by_current_model": 13
+  },
+  "rows": [
+    {
+      "exp": "Classic",
+      "name": "Darnassus",
+      "side": "Alliance",
+      "type": "Capital",
+      "hint": "Nachtelfen-Hauptstadtfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Classic",
+      "name": "Gnomeregan Exiles",
+      "side": "Alliance",
+      "type": "Capital",
+      "hint": "Gnom-Hauptstadtfraktion",
+      "status": "not_in_blizzard_index",
+      "factionID": null
+    },
+    {
+      "exp": "Classic",
+      "name": "Ironforge",
+      "side": "Alliance",
+      "type": "Capital",
+      "hint": "Zwergen-Hauptstadtfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Classic",
+      "name": "Stormwind",
+      "side": "Alliance",
+      "type": "Capital",
+      "hint": "Menschen-Hauptstadtfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Classic",
+      "name": "Darkspear Trolls",
+      "side": "Horde",
+      "type": "Capital",
+      "hint": "Troll-Hauptstadtfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Classic",
+      "name": "Orgrimmar",
+      "side": "Horde",
+      "type": "Capital",
+      "hint": "Ork-Hauptstadtfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Classic",
+      "name": "Thunder Bluff",
+      "side": "Horde",
+      "type": "Capital",
+      "hint": "Tauren-Hauptstadtfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Classic",
+      "name": "Undercity",
+      "side": "Horde",
+      "type": "Capital",
+      "hint": "Untoten-Hauptstadtfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Classic",
+      "name": "Argent Dawn",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Classic-Endgame / Naxxramas / Plaguelands",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Classic",
+      "name": "Bloodsail Buccaneers",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Piratenfraktion",
+      "status": "excluded_legacy_hostile_or_event",
+      "factionID": 87
+    },
+    {
+      "exp": "Classic",
+      "name": "Booty Bay",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Einzelstadt des Dampfdruckkartells",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Classic",
+      "name": "Brood of Nozdormu",
+      "side": "Neutral",
+      "type": "Raid",
+      "hint": "Ahn'Qiraj-Raidfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Classic",
+      "name": "Cenarion Circle",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Silithus / Druiden / AQ",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Classic",
+      "name": "Darkmoon Faire",
+      "side": "Neutral",
+      "type": "Event",
+      "hint": "Jahrmarktfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Classic",
+      "name": "Gadgetzan",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Einzelstadt des Dampfdruckkartells",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Classic",
+      "name": "Gelkis Clan Centaur",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Desolace-Alternative zu Magram",
+      "status": "excluded_legacy_hostile_or_event",
+      "factionID": 92
+    },
+    {
+      "exp": "Classic",
+      "name": "Hydraxian Waterlords",
+      "side": "Neutral",
+      "type": "Raid",
+      "hint": "Molten-Core-Raidfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Classic",
+      "name": "Magram Clan Centaur",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Desolace-Alternative zu Gelkis",
+      "status": "excluded_legacy_hostile_or_event",
+      "factionID": 93
+    },
+    {
+      "exp": "Classic",
+      "name": "Ratchet",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Einzelstadt des Dampfdruckkartells",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Classic",
+      "name": "Shen'dralar",
+      "side": "Neutral",
+      "type": "Legacy/retired",
+      "hint": "Retail-Legacy; historisch entfernt",
+      "status": "excluded_legacy_hostile_or_event",
+      "factionID": 809
+    },
+    {
+      "exp": "Classic",
+      "name": "Silverwing Sentinels",
+      "side": "Alliance",
+      "type": "PvP",
+      "hint": "Warsong Gulch (Allianz)",
+      "status": "optional_pvp_brawler",
+      "factionID": 890
+    },
+    {
+      "exp": "Classic",
+      "name": "Steamwheedle Cartel",
+      "side": "Neutral",
+      "type": "Meta/Cartel",
+      "hint": "Meta-Ruf für Booty Bay/Gadgetzan/Everlook/Ratchet",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Classic",
+      "name": "Stormpike Guard",
+      "side": "Alliance",
+      "type": "PvP",
+      "hint": "Alterac Valley (Allianz)",
+      "status": "optional_pvp_brawler",
+      "factionID": 730
+    },
+    {
+      "exp": "Classic",
+      "name": "Thorium Brotherhood",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Blackrock / Schmiede / Classic-Endgame",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Classic",
+      "name": "Warsong Outriders",
+      "side": "Horde",
+      "type": "PvP",
+      "hint": "Warsong Gulch (Horde)",
+      "status": "optional_pvp_brawler",
+      "factionID": 889
+    },
+    {
+      "exp": "Classic",
+      "name": "Wintersaber Trainers",
+      "side": "Alliance",
+      "type": "Standard",
+      "hint": "Winterspring-Mountfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The Burning Crusade",
+      "name": "Honor Hold",
+      "side": "Alliance",
+      "type": "Standard",
+      "hint": "Allianz-Höllenfeuerfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The Burning Crusade",
+      "name": "Kurenai",
+      "side": "Alliance",
+      "type": "Standard",
+      "hint": "Allianz-Nagrandfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The Burning Crusade",
+      "name": "Thrallmar",
+      "side": "Horde",
+      "type": "Standard",
+      "hint": "Horde-Höllenfeuerfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The Burning Crusade",
+      "name": "The Mag'har",
+      "side": "Horde",
+      "type": "Standard",
+      "hint": "Horde-Nagrandfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The Burning Crusade",
+      "name": "Tranquillien",
+      "side": "Horde",
+      "type": "Standard",
+      "hint": "Ghostlands / Blutelfenfraktion",
+      "status": "superseded_by_current_model",
+      "factionID": 922
+    },
+    {
+      "exp": "The Burning Crusade",
+      "name": "Ashtongue Deathsworn",
+      "side": "Neutral",
+      "type": "Raid",
+      "hint": "Black-Temple-bezogen",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The Burning Crusade",
+      "name": "Cenarion Expedition",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Zangarmarschen / Coilfang / Outland",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The Burning Crusade",
+      "name": "Keepers of Time",
+      "side": "Neutral",
+      "type": "Dungeon",
+      "hint": "Caverns of Time",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The Burning Crusade",
+      "name": "Lower City",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Shattrath / Auchindoun",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The Burning Crusade",
+      "name": "Netherwing",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Netherdrakes / Schattenmondtal",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The Burning Crusade",
+      "name": "Ogri'la",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Schergrat-Tagesquests",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The Burning Crusade",
+      "name": "Sha'tari Skyguard",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Skettis / Schergrat",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The Burning Crusade",
+      "name": "Sporeggar",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Sporelings in Zangarmarschen",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The Burning Crusade",
+      "name": "The Aldor",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Shattrath-Wahlfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The Burning Crusade",
+      "name": "The Consortium",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Nethersturm / Nagrand / Astrale",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The Burning Crusade",
+      "name": "The Scale of the Sands",
+      "side": "Neutral",
+      "type": "Raid",
+      "hint": "Hyjal Summit",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The Burning Crusade",
+      "name": "The Scryers",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Shattrath-Wahlfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The Burning Crusade",
+      "name": "The Sha'tar",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Shattrath / Tempest Keep",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The Burning Crusade",
+      "name": "The Violet Eye",
+      "side": "Neutral",
+      "type": "Raid",
+      "hint": "Karazhan-Raidfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The Burning Crusade",
+      "name": "Shattered Sun Offensive",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Insel von Quel'Danas",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Wrath of the Lich King",
+      "name": "Alliance Vanguard",
+      "side": "Alliance",
+      "type": "Meta",
+      "hint": "Allianz-Metafraktion in Nordend",
+      "status": "superseded_by_current_model",
+      "factionID": 1037
+    },
+    {
+      "exp": "Wrath of the Lich King",
+      "name": "Explorers' League",
+      "side": "Alliance",
+      "type": "Standard",
+      "hint": "Allianz-Teilfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Wrath of the Lich King",
+      "name": "The Frostborn",
+      "side": "Alliance",
+      "type": "Standard",
+      "hint": "Allianz-Teilfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Wrath of the Lich King",
+      "name": "The Silver Covenant",
+      "side": "Alliance",
+      "type": "Standard",
+      "hint": "Allianz-Teilfraktion / Dalaran",
+      "status": "superseded_by_current_model",
+      "factionID": 1094
+    },
+    {
+      "exp": "Wrath of the Lich King",
+      "name": "Valiance Expedition",
+      "side": "Alliance",
+      "type": "Standard",
+      "hint": "Allianz-Teilfraktion",
+      "status": "superseded_by_current_model",
+      "factionID": 1050
+    },
+    {
+      "exp": "Wrath of the Lich King",
+      "name": "Horde Expedition",
+      "side": "Horde",
+      "type": "Meta",
+      "hint": "Horde-Metafraktion in Nordend",
+      "status": "superseded_by_current_model",
+      "factionID": 1052
+    },
+    {
+      "exp": "Wrath of the Lich King",
+      "name": "The Hand of Vengeance",
+      "side": "Horde",
+      "type": "Standard",
+      "hint": "Horde-Teilfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Wrath of the Lich King",
+      "name": "The Sunreavers",
+      "side": "Horde",
+      "type": "Standard",
+      "hint": "Horde-Teilfraktion / Dalaran",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Wrath of the Lich King",
+      "name": "The Taunka",
+      "side": "Horde",
+      "type": "Standard",
+      "hint": "Horde-Teilfraktion",
+      "status": "superseded_by_current_model",
+      "factionID": 1064
+    },
+    {
+      "exp": "Wrath of the Lich King",
+      "name": "Warsong Offensive",
+      "side": "Horde",
+      "type": "Standard",
+      "hint": "Horde-Teilfraktion",
+      "status": "superseded_by_current_model",
+      "factionID": 1085
+    },
+    {
+      "exp": "Wrath of the Lich King",
+      "name": "Argent Crusade",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Argentumkreuzzug",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Wrath of the Lich King",
+      "name": "The Ashen Verdict",
+      "side": "Neutral",
+      "type": "Raid",
+      "hint": "Icecrown-Citadel-Raidfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Wrath of the Lich King",
+      "name": "Kirin Tor",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Dalaran / Magier",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Wrath of the Lich King",
+      "name": "Knights of the Ebon Blade",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Todesritterfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Wrath of the Lich King",
+      "name": "The Oracles",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Sholazar-Wahlfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Wrath of the Lich King",
+      "name": "The Wyrmrest Accord",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Drachenfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Wrath of the Lich King",
+      "name": "Frenzyheart Tribe",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Sholazar-Wahlfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Wrath of the Lich King",
+      "name": "The Sons of Hodir",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Sturmgipfel-Verzauberungen",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Cataclysm",
+      "name": "Gilneas",
+      "side": "Alliance",
+      "type": "Capital",
+      "hint": "Worgen-Hauptstadtfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Cataclysm",
+      "name": "Bilgewater Cartel",
+      "side": "Horde",
+      "type": "Capital",
+      "hint": "Goblin-Hauptstadtfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Cataclysm",
+      "name": "Avengers of Hyjal",
+      "side": "Neutral",
+      "type": "Raid",
+      "hint": "Firelands-Raidfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Cataclysm",
+      "name": "Baradin's Wardens",
+      "side": "Alliance",
+      "type": "PvP",
+      "hint": "Tol Barad (Allianz)",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Cataclysm",
+      "name": "Earthen Ring",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Elementare / Schamanen",
+      "status": "not_in_blizzard_index",
+      "factionID": null
+    },
+    {
+      "exp": "Cataclysm",
+      "name": "Hellscream's Reach",
+      "side": "Horde",
+      "type": "PvP",
+      "hint": "Tol Barad (Horde)",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Mists of Pandaria",
+      "name": "Pearlfin Jinyu",
+      "side": "Alliance",
+      "type": "Standard",
+      "hint": "Allianz-Jadewald",
+      "status": "superseded_by_current_model",
+      "factionID": 1242
+    },
+    {
+      "exp": "Mists of Pandaria",
+      "name": "Operation: Shieldwall",
+      "side": "Alliance",
+      "type": "Campaign",
+      "hint": "Allianz-Kriegskampagne 5.1",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Mists of Pandaria",
+      "name": "Kirin Tor Offensive",
+      "side": "Alliance",
+      "type": "Campaign",
+      "hint": "Allianz-Kampagne 5.2",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Mists of Pandaria",
+      "name": "Huojin Pandaren",
+      "side": "Horde",
+      "type": "Capital",
+      "hint": "Horde-Pandarenfraktion",
+      "status": "superseded_by_current_model",
+      "factionID": 1352
+    },
+    {
+      "exp": "Mists of Pandaria",
+      "name": "Forest Hozen",
+      "side": "Horde",
+      "type": "Standard",
+      "hint": "Horde-Jadewald",
+      "status": "excluded_micro_side_rep",
+      "factionID": 1228
+    },
+    {
+      "exp": "Mists of Pandaria",
+      "name": "Dominance Offensive",
+      "side": "Horde",
+      "type": "Campaign",
+      "hint": "Horde-Kriegskampagne 5.1",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Mists of Pandaria",
+      "name": "Sunreaver Onslaught",
+      "side": "Horde",
+      "type": "Campaign",
+      "hint": "Horde-Kampagne 5.2",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Mists of Pandaria",
+      "name": "Tushui Pandaren",
+      "side": "Alliance",
+      "type": "Capital",
+      "hint": "Allianz-Pandarenfraktion",
+      "status": "superseded_by_current_model",
+      "factionID": 1353
+    },
+    {
+      "exp": "Mists of Pandaria",
+      "name": "The Anglers",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Anglerfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Mists of Pandaria",
+      "name": "The August Celestials",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Pandaria-Tempelfraktion",
+      "status": "excluded_micro_side_rep",
+      "factionID": 1341
+    },
+    {
+      "exp": "Mists of Pandaria",
+      "name": "The Black Prince",
+      "side": "Neutral",
+      "type": "Legendary/Campaign",
+      "hint": "Wrathion-Legendary-Kampagne",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Mists of Pandaria",
+      "name": "Emperor Shaohao",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Zeitlose Insel",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Mists of Pandaria",
+      "name": "Golden Lotus",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Tal der Ewigen Blüten",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Mists of Pandaria",
+      "name": "The Lorewalkers",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Lore-/Sammlerfraktion",
+      "status": "excluded_micro_side_rep",
+      "factionID": 1345
+    },
+    {
+      "exp": "Mists of Pandaria",
+      "name": "Order of the Cloud Serpent",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Schlangenreiter",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Mists of Pandaria",
+      "name": "Shado-Pan",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Pandaria-Elitefraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Mists of Pandaria",
+      "name": "Shado-Pan Assault",
+      "side": "Neutral",
+      "type": "Raid",
+      "hint": "Throne of Thunder / Raidfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Mists of Pandaria",
+      "name": "The Tillers",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Halbhügel-Bauernfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Warlords of Draenor",
+      "name": "Council of Exarchs",
+      "side": "Alliance",
+      "type": "Standard",
+      "hint": "Allianz-Draenorfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Warlords of Draenor",
+      "name": "Hand of the Prophet",
+      "side": "Alliance",
+      "type": "Campaign",
+      "hint": "Allianz-Tanaan",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Warlords of Draenor",
+      "name": "Sha'tari Defense",
+      "side": "Alliance",
+      "type": "Standard",
+      "hint": "Allianz-Ashran/Tanaan-bezogen",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Warlords of Draenor",
+      "name": "Frostwolf Orcs",
+      "side": "Horde",
+      "type": "Standard",
+      "hint": "Horde-Draenorfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Warlords of Draenor",
+      "name": "Vol'jin's Headhunters",
+      "side": "Horde",
+      "type": "Campaign",
+      "hint": "Horde-Tanaan",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Warlords of Draenor",
+      "name": "Order of the Awakened",
+      "side": "Neutral",
+      "type": "Campaign",
+      "hint": "Tanaan / Patch 6.2",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Warlords of Draenor",
+      "name": "Saberstalkers",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Tanaan / Fang'rila",
+      "status": "not_in_blizzard_index",
+      "factionID": null
+    },
+    {
+      "exp": "Warlords of Draenor",
+      "name": "Steamwheedle Preservation Society",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Nagrand (Draenor)",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Legion",
+      "name": "Court of Farondis",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Azsuna",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Legion",
+      "name": "Dreamweavers",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Val'sharah",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Legion",
+      "name": "Highmountain Tribe",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Highmountain",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Legion",
+      "name": "The Nightfallen",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Suramar",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Legion",
+      "name": "The Wardens",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Wächterinnen",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Legion",
+      "name": "Valarjar",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Sturmheim",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Legion",
+      "name": "Armies of Legionfall",
+      "side": "Neutral",
+      "type": "Campaign",
+      "hint": "Broken Shore / Patch 7.2",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Legion",
+      "name": "Army of the Light",
+      "side": "Neutral",
+      "type": "Campaign",
+      "hint": "Argus / Patch 7.3",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Legion",
+      "name": "Argussian Reach",
+      "side": "Neutral",
+      "type": "Campaign",
+      "hint": "Argus / Patch 7.3",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Battle for Azeroth",
+      "name": "Proudmoore Admiralty",
+      "side": "Alliance",
+      "type": "Standard",
+      "hint": "Kul Tiras",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Battle for Azeroth",
+      "name": "Order of Embers",
+      "side": "Alliance",
+      "type": "Standard",
+      "hint": "Drustvar",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Battle for Azeroth",
+      "name": "Storm's Wake",
+      "side": "Alliance",
+      "type": "Standard",
+      "hint": "Sturmsangtal",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Battle for Azeroth",
+      "name": "7th Legion",
+      "side": "Alliance",
+      "type": "War Campaign",
+      "hint": "Allianz-Kriegskampagne",
+      "status": "superseded_by_current_model",
+      "factionID": 2159
+    },
+    {
+      "exp": "Battle for Azeroth",
+      "name": "Waveblade Ankoan",
+      "side": "Alliance",
+      "type": "Nazjatar",
+      "hint": "Nazjatar (Allianz)",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Battle for Azeroth",
+      "name": "Talanji's Expedition",
+      "side": "Horde",
+      "type": "Standard",
+      "hint": "Zandalar",
+      "status": "superseded_by_current_model",
+      "factionID": 2156
+    },
+    {
+      "exp": "Battle for Azeroth",
+      "name": "Voldunai",
+      "side": "Horde",
+      "type": "Standard",
+      "hint": "Vol'dun",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Battle for Azeroth",
+      "name": "Zandalari Empire",
+      "side": "Horde",
+      "type": "Standard",
+      "hint": "Zuldazar",
+      "status": "superseded_by_current_model",
+      "factionID": 2103
+    },
+    {
+      "exp": "Battle for Azeroth",
+      "name": "The Honorbound",
+      "side": "Horde",
+      "type": "War Campaign",
+      "hint": "Horde-Kriegskampagne",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Battle for Azeroth",
+      "name": "The Unshackled",
+      "side": "Horde",
+      "type": "Nazjatar",
+      "hint": "Nazjatar (Horde)",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Battle for Azeroth",
+      "name": "Honeyback Hive",
+      "side": "Alliance",
+      "type": "Standard",
+      "hint": "Allianz-only / Sturmtal-Bienen",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Battle for Azeroth",
+      "name": "Rajani",
+      "side": "Neutral",
+      "type": "Patch 8.3",
+      "hint": "Uldum / Patch 8.3",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Battle for Azeroth",
+      "name": "Rustbolt Resistance",
+      "side": "Neutral",
+      "type": "Patch 8.2",
+      "hint": "Mechagon / Patch 8.2",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Battle for Azeroth",
+      "name": "Tortollan Seekers",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Schildkrötenforscher",
+      "status": "excluded_global_system",
+      "factionID": 2163
+    },
+    {
+      "exp": "Battle for Azeroth",
+      "name": "Uldum Accord",
+      "side": "Neutral",
+      "type": "Patch 8.3",
+      "hint": "Uldum / Patch 8.3",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Shadowlands",
+      "name": "The Ascended",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Bastion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Shadowlands",
+      "name": "The Undying Army",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Maldraxxus",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Shadowlands",
+      "name": "The Wild Hunt",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Ardenweald",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Shadowlands",
+      "name": "Court of Night",
+      "side": "Neutral",
+      "type": "Night Fae",
+      "hint": "Night-Fae-spezifisch",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Shadowlands",
+      "name": "Court of Harvesters",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Revendreth",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Shadowlands",
+      "name": "The Avowed",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Revendreth / Sinstone-Archiv",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Shadowlands",
+      "name": "Ve'nari",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Der Schlund",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Shadowlands",
+      "name": "Death's Advance",
+      "side": "Neutral",
+      "type": "Patch 9.1",
+      "hint": "Korthia / Patch 9.1",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Shadowlands",
+      "name": "The Archivists' Codex",
+      "side": "Neutral",
+      "type": "Patch 9.1",
+      "hint": "Korthia / Patch 9.1",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Shadowlands",
+      "name": "The Enlightened",
+      "side": "Neutral",
+      "type": "Patch 9.2",
+      "hint": "Zereth Mortis / Patch 9.2",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Shadowlands",
+      "name": "Stitchmasters",
+      "side": "Neutral",
+      "type": "Necrolord",
+      "hint": "Nekrolord-spezifisch",
+      "status": "excluded_micro_side_rep",
+      "factionID": 2462
+    },
+    {
+      "exp": "Shadowlands",
+      "name": "Marasmius",
+      "side": "Neutral",
+      "type": "Night Fae",
+      "hint": "Nachtfae-spezifisch",
+      "status": "not_in_blizzard_index",
+      "factionID": null
+    },
+    {
+      "exp": "Shadowlands",
+      "name": "Ember Court",
+      "side": "Neutral",
+      "type": "Venthyr",
+      "hint": "Venthyr-spezifisch",
+      "status": "not_in_blizzard_index",
+      "factionID": null
+    },
+    {
+      "exp": "Dragonflight",
+      "name": "Dragonscale Expedition",
+      "side": "Neutral",
+      "type": "Major/Renown",
+      "hint": "Major Faction / Renown",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Dragonflight",
+      "name": "Iskaara Tuskarr",
+      "side": "Neutral",
+      "type": "Major/Renown",
+      "hint": "Major Faction / Renown",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Dragonflight",
+      "name": "Maruuk Centaur",
+      "side": "Neutral",
+      "type": "Major/Renown",
+      "hint": "Major Faction / Renown",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Dragonflight",
+      "name": "Valdrakken Accord",
+      "side": "Neutral",
+      "type": "Major/Renown",
+      "hint": "Major Faction / Renown",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Dragonflight",
+      "name": "Loamm Niffen",
+      "side": "Neutral",
+      "type": "Major/Renown",
+      "hint": "Major Faction / Renown",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Dragonflight",
+      "name": "Dream Wardens",
+      "side": "Neutral",
+      "type": "Major/Renown",
+      "hint": "Major Faction / Renown",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Dragonflight",
+      "name": "Artisan's Consortium - Dragon Isles Branch",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Berufs-/Handwerksfraktion",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Dragonflight",
+      "name": "Azerothian Archives",
+      "side": "Neutral",
+      "type": "Patch 10.2.5",
+      "hint": "Patch 10.2.5",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Dragonflight",
+      "name": "Cobalt Assembly",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Azurspan / Nebensystem",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Dragonflight",
+      "name": "Glimmerogg Racer",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Zaralek / Nebensystem",
+      "status": "excluded_micro_side_rep",
+      "factionID": 2568
+    },
+    {
+      "exp": "Dragonflight",
+      "name": "Sabellian",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Obsidian Citadel",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Dragonflight",
+      "name": "Soridormi",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Zeitriss / Patch 10.1.5",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Dragonflight",
+      "name": "Winterpelt Furbolg",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Patch 10.0.7",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Dragonflight",
+      "name": "Wrathion",
+      "side": "Neutral",
+      "type": "Standard",
+      "hint": "Obsidian Citadel",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The War Within",
+      "name": "Council of Dornogal",
+      "side": "Neutral",
+      "type": "Major/Renown",
+      "hint": "Major Faction / Renown",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The War Within",
+      "name": "Hallowfall Arathi",
+      "side": "Neutral",
+      "type": "Major/Renown",
+      "hint": "Major Faction / Renown",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The War Within",
+      "name": "The Assembly of the Deeps",
+      "side": "Neutral",
+      "type": "Major/Renown",
+      "hint": "Major Faction / Renown",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The War Within",
+      "name": "The Severed Threads",
+      "side": "Neutral",
+      "type": "Major/Renown",
+      "hint": "Major Faction / Renown",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The War Within",
+      "name": "The General",
+      "side": "Neutral",
+      "type": "Severed Threads subfaction",
+      "hint": "Unterfraktion von The Severed Threads",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The War Within",
+      "name": "The Vizier",
+      "side": "Neutral",
+      "type": "Severed Threads subfaction",
+      "hint": "Unterfraktion von The Severed Threads",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The War Within",
+      "name": "The Weaver",
+      "side": "Neutral",
+      "type": "Severed Threads subfaction",
+      "hint": "Unterfraktion von The Severed Threads",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The War Within",
+      "name": "The Cartels of Undermine",
+      "side": "Neutral",
+      "type": "Major/Renown",
+      "hint": "Major Faction / Renown",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The War Within",
+      "name": "Bilgewater Cartel",
+      "side": "Neutral",
+      "type": "Cartels of Undermine subfaction",
+      "hint": "Unterfraktion von The Cartels of Undermine",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The War Within",
+      "name": "Blackwater Cartel",
+      "side": "Neutral",
+      "type": "Cartels of Undermine subfaction",
+      "hint": "Unterfraktion von The Cartels of Undermine",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The War Within",
+      "name": "Darkfuse Solutions",
+      "side": "Neutral",
+      "type": "Cartels of Undermine subfaction",
+      "hint": "Unterfraktion von The Cartels of Undermine",
+      "status": "excluded_micro_side_rep",
+      "factionID": 2669
+    },
+    {
+      "exp": "The War Within",
+      "name": "Steamwheedle Cartel",
+      "side": "Neutral",
+      "type": "Cartels of Undermine subfaction",
+      "hint": "Unterfraktion von The Cartels of Undermine",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The War Within",
+      "name": "Venture Company",
+      "side": "Neutral",
+      "type": "Cartels of Undermine subfaction",
+      "hint": "Unterfraktion von The Cartels of Undermine",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The War Within",
+      "name": "Flame's Radiance",
+      "side": "Neutral",
+      "type": "Major/Renown",
+      "hint": "Major Faction / Renown",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The War Within",
+      "name": "The K'aresh Trust",
+      "side": "Neutral",
+      "type": "Major/Renown",
+      "hint": "Major Faction / Renown",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The War Within",
+      "name": "Gallagio Loyalty Rewards Club",
+      "side": "Neutral",
+      "type": "Raid renown",
+      "hint": "Raid-Renown / Liberation of Undermine",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "The War Within",
+      "name": "Manaforge Vandals",
+      "side": "Neutral",
+      "type": "Raid renown",
+      "hint": "Raid-Renown / Manaforge Omega",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Midnight",
+      "name": "Silvermoon Court",
+      "side": "Neutral",
+      "type": "Major/Renown",
+      "hint": "Major Faction / Renown",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Midnight",
+      "name": "Amani Tribe",
+      "side": "Neutral",
+      "type": "Major/Renown",
+      "hint": "Major Faction / Renown",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Midnight",
+      "name": "Hara'ti",
+      "side": "Neutral",
+      "type": "Major/Renown",
+      "hint": "Major Faction / Renown",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Midnight",
+      "name": "The Singularity",
+      "side": "Neutral",
+      "type": "Major/Renown",
+      "hint": "Major Faction / Renown",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Midnight",
+      "name": "Blood Knights",
+      "side": "Neutral",
+      "type": "Silvermoon Court subfaction",
+      "hint": "Unterfraktion von Silvermoon Court",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Midnight",
+      "name": "Farstriders",
+      "side": "Neutral",
+      "type": "Silvermoon Court subfaction",
+      "hint": "Unterfraktion von Silvermoon Court",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Midnight",
+      "name": "Magisters",
+      "side": "Neutral",
+      "type": "Silvermoon Court subfaction",
+      "hint": "Unterfraktion von Silvermoon Court",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Midnight",
+      "name": "Shades of the Row",
+      "side": "Neutral",
+      "type": "Silvermoon Court subfaction",
+      "hint": "Unterfraktion von Silvermoon Court",
+      "status": "confirmed_modeled",
+      "factionID": null
+    },
+    {
+      "exp": "Midnight",
+      "name": "Preyseeker's Journey",
+      "side": "Neutral",
+      "type": "Seasonal progression",
+      "hint": "Saisonaler Fortschrittstrack",
+      "status": "not_in_blizzard_index",
+      "factionID": null
+    },
+    {
+      "exp": "Midnight",
+      "name": "Slayer's Duellum",
+      "side": "Neutral",
+      "type": "PvP progression",
+      "hint": "PvP-Fortschrittstrack",
+      "status": "confirmed_modeled",
+      "factionID": null
+    }
+  ]
+}

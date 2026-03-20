@@ -131,45 +131,7 @@ api.RegisterRetailContentModule({
             source = "curated",
             summary = "Home to farmers, craftsmen, soldiers, and the mysterious tidesages, the Storm's Wake seeks to reclaim Stormsong Valley and affirm their place in Kul Tiras.",
         },
-        [2370] = {
-            activities = {
-                {
-                    kind = "Hub",
-                    location = {
-                        title = "Newhome",
-                    },
-                    title = "Newhome",
-                },
-                {
-                    kind = "Zone",
-                    location = {
-                        title = "Nazjatar",
-                    },
-                    title = "Nazjatar",
-                },
-                {
-                    kind = "Recurring",
-                    location = {
-                        title = "Newhome",
-                    },
-                    title = "Nazjatar ally and bodyguard activities",
-                },
-            },
-            confidence = "medium",
-            quartermasters = {
-                {
-                    label = "Quartermaster",
-                    location = {
-                        title = "Newhome",
-                    },
-                    name = "Atolia Seapearl",
-                },
-            },
-            source = "curated",
-            summary = "The Unshackled are the Horde-aligned rebels of Nazjatar, operating from Newhome against Queen Azshara and her naga. Their reputation is mainly earned through Nazjatar world content, ally support, and the zone's recurring progression systems.",
-            summarySource = "curated",
-        },
-        [2373] = {
+        [2400] = {
             activities = {
                 {
                     kind = "Hub",
@@ -185,6 +147,13 @@ api.RegisterRetailContentModule({
                     },
                     title = "Nazjatar",
                 },
+                {
+                    kind = "Recurring",
+                    location = {
+                        title = "Mezzamere",
+                    },
+                    title = "Nazjatar ally and bodyguard activities",
+                },
             },
             confidence = "medium",
             quartermasters = {
@@ -193,11 +162,42 @@ api.RegisterRetailContentModule({
                     location = {
                         title = "Mezzamere",
                     },
-                    name = "Speaker Utia",
+                    name = "Finder Palta",
                 },
             },
             source = "curated",
-            summary = "Oppressed by the Naga, these refugees have banded together to rise up and seize their freedom.",
+            summary = "Waveblade Ankoan are the Alliance-aligned rebels of Nazjatar, operating from Mezzamere against Queen Azshara and her naga. Their reputation is mainly earned through Nazjatar world content, ally support, and the zone's recurring progression systems.",
+            summarySource = "curated",
+        },
+        [2373] = {
+            activities = {
+                {
+                    kind = "Hub",
+                    location = {
+                        title = "Newhome",
+                    },
+                    title = "Newhome",
+                },
+                {
+                    kind = "Zone",
+                    location = {
+                        title = "Nazjatar",
+                    },
+                    title = "Nazjatar",
+                },
+            },
+            confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        title = "Newhome",
+                    },
+                    name = "Atolia Seapearl",
+                },
+            },
+            source = "curated",
+            summary = "The Unshackled are the Horde-aligned rebels of Nazjatar, operating from Newhome against Queen Azshara and her naga. Their reputation is mainly earned through Nazjatar world content, ally support, and the zone's recurring progression systems.",
         },
         [2391] = {
             activities = {
