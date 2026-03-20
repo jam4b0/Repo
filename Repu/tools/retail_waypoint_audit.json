@@ -1,10 +1,10 @@
 {
   "summary": {
     "totalFactions": 152,
-    "withAnyXY": 42,
-    "withQuartermasterXY": 34,
-    "withActivityXY": 42,
-    "withoutAnyXY": 110
+    "withAnyXY": 45,
+    "withQuartermasterXY": 37,
+    "withActivityXY": 45,
+    "withoutAnyXY": 107
   },
   "quartermasterWithoutXY": [
     {
@@ -34,14 +34,6 @@
     {
       "file": "draenor.lua",
       "factionID": 1445
-    },
-    {
-      "file": "draenor.lua",
-      "factionID": 1711
-    },
-    {
-      "file": "draenor.lua",
-      "factionID": 1731
     },
     {
       "file": "draenor.lua",
@@ -78,10 +70,6 @@
     {
       "file": "legion.lua",
       "factionID": 1883
-    },
-    {
-      "file": "legion.lua",
-      "factionID": 1894
     },
     {
       "file": "legion.lua",
@@ -267,14 +255,6 @@
     },
     {
       "file": "draenor.lua",
-      "factionID": 1711
-    },
-    {
-      "file": "draenor.lua",
-      "factionID": 1731
-    },
-    {
-      "file": "draenor.lua",
       "factionID": 1848
     },
     {
@@ -340,10 +320,6 @@
     {
       "file": "legion.lua",
       "factionID": 1883
-    },
-    {
-      "file": "legion.lua",
-      "factionID": 1894
     },
     {
       "file": "legion.lua",
@@ -685,6 +661,14 @@
     },
     {
       "file": "draenor.lua",
+      "factionID": 1711
+    },
+    {
+      "file": "draenor.lua",
+      "factionID": 1731
+    },
+    {
+      "file": "draenor.lua",
       "factionID": 1847
     },
     {
@@ -706,6 +690,10 @@
     {
       "file": "dragonflight.lua",
       "factionID": 2615
+    },
+    {
+      "file": "legion.lua",
+      "factionID": 1894
     },
     {
       "file": "midnight.lua",

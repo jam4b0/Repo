@@ -153,6 +153,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 630,
                         title = "Wardens' Redoubt",
+                        x = 0.462,
+                        y = 0.729,
                     },
                     name = "Marin Bladewing",
                 },

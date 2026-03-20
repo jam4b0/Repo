@@ -134,6 +134,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 550,
                         title = "Ruins of Na'gwa",
+                        x = 0.504,
+                        y = 0.414,
                     },
                     name = "Kwilax Fuseshiv",
                 },
@@ -166,6 +168,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 535,
                         title = "Stormshield",
+                        x = 0.427,
+                        y = 0.764,
                     },
                     name = "Vindicator Nuurem",
                 },

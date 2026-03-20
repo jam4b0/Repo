@@ -1,8 +1,8 @@
 {
   "summary": {
-    "already_with_coordinates": 42,
+    "already_with_coordinates": 45,
     "leave_without_coordinates_for_now": 0,
-    "needs_external_coordinate_source": 51,
+    "needs_external_coordinate_source": 48,
     "open_standard_gap": 0
   },
   "groups": {
@@ -37,6 +37,14 @@
       },
       {
         "file": "draenor.lua",
+        "factionID": 1711
+      },
+      {
+        "file": "draenor.lua",
+        "factionID": 1731
+      },
+      {
+        "file": "draenor.lua",
         "factionID": 1847
       },
       {
@@ -58,6 +66,10 @@
       {
         "file": "dragonflight.lua",
         "factionID": 2615
+      },
+      {
+        "file": "legion.lua",
+        "factionID": 1894
       },
       {
         "file": "midnight.lua",
@@ -215,16 +227,6 @@
       },
       {
         "file": "draenor.lua",
-        "factionID": 1711,
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "file": "draenor.lua",
-        "factionID": 1731,
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "file": "draenor.lua",
         "factionID": 1849,
         "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
       },
@@ -266,11 +268,6 @@
       {
         "file": "legion.lua",
         "factionID": 1883,
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "file": "legion.lua",
-        "factionID": 1894,
         "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
       },
       {
