@@ -46,6 +46,69 @@ local function setOutputText(editBox, text)
     editBox._updating = false
 end
 
+local function findAddonIndex(addonName)
+    if not GetNumAddOns or not GetAddOnInfo then
+        return nil
+    end
+
+    for index = 1, GetNumAddOns() do
+        local name = GetAddOnInfo(index)
+        if name == addonName then
+            return index
+        end
+    end
+
+    return nil
+end
+
+local function collectAddonResourceUsage()
+    local addonNames = { "Repu", "Repu_Data", "Repu_Map" }
+    local rows = {}
+    local totalMemory = 0
+    local totalCPU = 0
+    local cpuAvailable = false
+
+    if UpdateAddOnMemoryUsage then
+        UpdateAddOnMemoryUsage()
+    end
+    if UpdateAddOnCPUUsage then
+        UpdateAddOnCPUUsage()
+    end
+
+    for _, addonName in ipairs(addonNames) do
+        local index = findAddonIndex(addonName)
+        local memoryKB = 0
+        local cpuMS = nil
+
+        if index and GetAddOnMemoryUsage then
+            memoryKB = tonumber(GetAddOnMemoryUsage(index) or 0) or 0
+            totalMemory = totalMemory + memoryKB
+        end
+
+        if index and GetAddOnCPUUsage then
+            local value = GetAddOnCPUUsage(index)
+            if value ~= nil then
+                cpuMS = tonumber(value or 0) or 0
+                totalCPU = totalCPU + cpuMS
+                cpuAvailable = true
+            end
+        end
+
+        rows[#rows + 1] = {
+            name = addonName,
+            memoryKB = memoryKB,
+            cpuMS = cpuMS,
+        }
+    end
+
+    return {
+        rows = rows,
+        totalMemory = totalMemory,
+        totalCPU = totalCPU,
+        cpuAvailable = cpuAvailable,
+    }
+end
+
 function ns.Debug:Init()
     SLASH_REPU1 = "/repu"
     SlashCmdList.REPU = function(message)
@@ -393,6 +456,7 @@ function ns.Debug:BuildWindowReport()
     local debugDB = ns.State:GetDebugDB()
     local snapshot = ns.State:GetSnapshot()
     local lastCapture = debugDB.captures and debugDB.captures[#debugDB.captures] or nil
+    local resources = collectAddonResourceUsage()
     local sections = {}
 
     sections[#sections + 1] = string.format(
@@ -421,6 +485,27 @@ function ns.Debug:BuildWindowReport()
         tostring(debugDB.sweepMode),
         tostring(lastCapture and lastCapture.key or Locale:Get("DEBUG_LAST_NONE"))
     )
+
+    do
+        local resourceLines = {
+            string.format(
+                "Resources\n  Total memory: %.1f MB\n  Total CPU: %s",
+                (resources.totalMemory or 0) / 1024,
+                resources.cpuAvailable and string.format("%.1f ms", resources.totalCPU or 0) or Locale:Get("DEBUG_CPU_UNAVAILABLE")
+            )
+        }
+
+        for _, row in ipairs(resources.rows or {}) do
+            resourceLines[#resourceLines + 1] = string.format(
+                "  %s: %.1f MB  CPU %s",
+                tostring(row.name),
+                (row.memoryKB or 0) / 1024,
+                row.cpuMS ~= nil and string.format("%.1f ms", row.cpuMS) or Locale:Get("DEBUG_CPU_UNAVAILABLE")
+            )
+        end
+
+        sections[#sections + 1] = table.concat(resourceLines, "\n")
+    end
 
     for _, key in ipairs({ "location", "coverage", "candidates", "dump", "factions", "api", "refresh", "status", "test", "unmapped", "mapscan" }) do
         local diagnostic = debugDB.lastDiagnostics and debugDB.lastDiagnostics[key] or nil

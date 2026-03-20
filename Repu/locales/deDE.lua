@@ -73,6 +73,7 @@ ns.Locale:Register("deDE", {
     DEBUG_COVERAGE_SUMMARY = "Coverage-Zusammenfassung",
     DEBUG_CANDIDATE_SUMMARY = "Kandidaten-Zusammenfassung",
     DEBUG_UNMAPPED_PROBE = "Probe für ungemappte Zone",
+    DEBUG_CPU_UNAVAILABLE = "nicht verfuegbar",
     DEBUG_FACTION_DUMP_COUNT = "Fraktionsdump Anzahl=%s",
     DEBUG_USAGE_FACTION = "Verwendung: /repu faction <id>",
     DEBUG_UNKNOWN_COMMAND = "Unbekannter Befehl: %s",
