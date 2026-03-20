@@ -602,112 +602,121 @@ ns.Data:RegisterRetailModule({
                     { factionID = 930, weight = 262 },
                 },
             },
-            ["97:azurmythosinsel"] = {
+            ["97:azuremyst-isle"] = {
                 name = "Azurmythosinsel",
                 parentMapID = 97,
                 source = "seed",
                 confidence = "high",
                 notes = "Direct Azuremyst homeland anchor",
                 mapIDs = { 97, 776 },
+                subZoneKeys = { "Azurmythosinsel", "Azuremyst Isle" },
                 tags = { "primary", "local", "kalimdor" },
                 factions = {
                     { factionID = 930, weight = 252 },
                 },
             },
-            ["1:die blockade von dranosh'ar"] = {
+            ["1:dranoshar-blockade"] = {
                 name = "Die Blockade von Dranosh'ar",
                 parentMapID = 1,
                 source = "seed",
                 confidence = "low",
                 notes = "Durotar border subzone cluster",
                 mapIDs = { 1 },
+                subZoneKeys = { "Die Blockade von Dranosh'ar", "Dranosh'ar Blockade", "Draenosh'ar Blockade" },
                 tags = { "local", "kalimdor" },
                 factions = {
                     { factionID = 76, weight = 235 },
                 },
             },
-            ["1:der südstrom"] = {
+            ["1:southfury-river"] = {
                 name = "Der Südstrom",
                 parentMapID = 1,
                 source = "observed",
                 confidence = "medium",
                 notes = "Observed Durotar subzone from sweep",
                 mapIDs = { 1 },
+                subZoneKeys = { "Der Südstrom", "Southfury River" },
                 tags = { "local", "kalimdor", "observed" },
                 factions = {
                     { factionID = 76, weight = 236 },
                     { factionID = 530, weight = 234 },
                 },
             },
-            ["1:knochenhöhle"] = {
+            ["1:bone-cavern"] = {
                 name = "Knochenhöhle",
                 parentMapID = 1,
                 source = "observed",
                 confidence = "medium",
                 notes = "Observed Durotar subzone from sweep",
                 mapIDs = { 1 },
+                subZoneKeys = { "Knochenhöhle", "Bone Cavern" },
                 tags = { "local", "kalimdor", "observed" },
                 factions = {
                     { factionID = 76, weight = 235 },
                     { factionID = 530, weight = 235 },
                 },
             },
-            ["1:scheckeneberhof"] = {
+            ["1:razormane-grounds"] = {
                 name = "Scheckeneberhof",
                 parentMapID = 1,
                 source = "observed",
                 confidence = "medium",
                 notes = "Observed Durotar subzone from sweep",
                 mapIDs = { 1 },
+                subZoneKeys = { "Scheckeneberhof", "Razormane Grounds" },
                 tags = { "local", "kalimdor", "observed" },
                 factions = {
                     { factionID = 76, weight = 236 },
                     { factionID = 530, weight = 234 },
                 },
             },
-            ["7:die wogenden ebenen"] = {
+            ["7:rolling-plains"] = {
                 name = "Die Wogenden Ebenen",
                 parentMapID = 7,
                 source = "observed",
                 confidence = "medium",
                 notes = "Observed Mulgore subzone from sweep",
                 mapIDs = { 7 },
+                subZoneKeys = { "Die Wogenden Ebenen", "Rolling Plains" },
                 tags = { "local", "kalimdor", "observed" },
                 factions = {
                     { factionID = 81, weight = 242 },
                 },
             },
-            ["462:camp narache"] = {
+            ["462:camp-narache"] = {
                 name = "Camp Narache",
                 parentMapID = 462,
                 source = "observed",
                 confidence = "medium",
                 notes = "Observed Tauren starting subzone from sweep",
                 mapIDs = { 462 },
+                subZoneKeys = { "Camp Narache" },
                 tags = { "local", "kalimdor", "observed" },
                 factions = {
                     { factionID = 81, weight = 245 },
                 },
             },
-            ["80:nachthafen"] = {
+            ["80:nighthaven"] = {
                 name = "Nachthafen",
                 parentMapID = 80,
                 source = "seed",
                 confidence = "medium",
                 notes = "Moonglade hub subzone from sweep",
                 mapIDs = { 80 },
+                subZoneKeys = { "Nachthafen", "Nighthaven" },
                 tags = { "primary", "local", "kalimdor" },
                 factions = {
                     { factionID = 609, weight = 250 },
                 },
             },
-            ["80:see von elune'ara"] = {
+            ["80:lake-eluneara"] = {
                 name = "See von Elune'ara",
                 parentMapID = 80,
                 source = "seed",
                 confidence = "medium",
                 notes = "Moonglade sacred subzone from sweep",
                 mapIDs = { 80 },
+                subZoneKeys = { "See von Elune'ara", "Lake Elune'ara" },
                 tags = { "local", "kalimdor" },
                 factions = {
                     { factionID = 609, weight = 246 },

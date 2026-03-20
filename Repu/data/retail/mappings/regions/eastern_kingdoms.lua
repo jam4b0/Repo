@@ -646,194 +646,210 @@ ns.Data:RegisterRetailModule({
                     { factionID = 72, weight = 253 },
                 },
             },
-            ["2395:pfad der dämmerung"] = {
+            ["2395:dawn-trail"] = {
                 name = "Pfad der Dämmerung",
                 parentMapID = 2395,
                 source = "observed",
                 confidence = "medium",
                 notes = "Observed Eversong Woods subzone from sweep",
                 mapIDs = { 2395 },
+                subZoneKeys = { "Pfad der Dämmerung", "Dawn Trail" },
                 tags = { "local", "eastern-kingdoms", "observed" },
                 factions = {
                     { factionID = 2713, weight = 252 },
                 },
             },
-            ["2395:morgenluft"] = {
+            ["2395:morning-air"] = {
                 name = "Morgenluft",
                 parentMapID = 2395,
                 source = "observed",
                 confidence = "medium",
                 notes = "Observed Eversong Woods subzone from sweep",
                 mapIDs = { 2395 },
+                subZoneKeys = { "Morgenluft", "Morning Air" },
                 tags = { "local", "eastern-kingdoms", "observed" },
                 factions = {
                     { factionID = 2713, weight = 251 },
                 },
             },
-            ["2395:ankerplatz der sonnensegel"] = {
+            ["2395:sunstrider-anchorage"] = {
                 name = "Ankerplatz der Sonnensegel",
                 parentMapID = 2395,
                 source = "observed",
                 confidence = "medium",
                 notes = "Observed Eversong Woods subzone from sweep",
                 mapIDs = { 2395 },
+                subZoneKeys = { "Ankerplatz der Sonnensegel", "Sunstrider Anchorage" },
                 tags = { "local", "eastern-kingdoms", "observed" },
                 factions = {
                     { factionID = 2713, weight = 253 },
                 },
             },
-            ["2395:ruhende rast"] = {
+            ["2395:tranquil-rest"] = {
                 name = "Ruhende Rast",
                 parentMapID = 2395,
                 source = "observed",
                 confidence = "medium",
                 notes = "Observed Eversong Woods subzone from sweep",
                 mapIDs = { 2395 },
+                subZoneKeys = { "Ruhende Rast", "Tranquil Rest" },
                 tags = { "local", "eastern-kingdoms", "observed" },
                 factions = {
                     { factionID = 2713, weight = 250 },
                 },
             },
-            ["2395:saltherils hafen"] = {
+            ["2395:saltherils-haven"] = {
                 name = "Saltherils Hafen",
                 parentMapID = 2395,
                 source = "seed",
                 confidence = "high",
                 notes = "Court in Silvermoon weekly hub in Eversong Woods",
                 mapIDs = { 2395 },
+                subZoneKeys = { "Saltherils Hafen", "Saltheril's Haven" },
                 tags = { "local", "eastern-kingdoms", "event", "court-in-silvermoon" },
                 factions = {
                     { factionID = 2710, weight = 255 },
                     { factionID = 2713, weight = 240 },
                 },
             },
-            ["37:tor von sturmwind"] = {
+            ["37:stormwind-gate"] = {
                 name = "Tor von Sturmwind",
                 parentMapID = 37,
                 source = "seed",
                 confidence = "medium",
                 notes = "Elwynn city-adjacent subzone from sweep",
                 mapIDs = { 37 },
+                subZoneKeys = { "Tor von Sturmwind", "Stormwind Gate" },
                 tags = { "local", "eastern-kingdoms" },
                 factions = {
                     { factionID = 72, weight = 248 },
                 },
             },
-            ["37:heldenwache"] = {
+            ["37:heroes-watch"] = {
                 name = "Heldenwache",
                 parentMapID = 37,
                 source = "seed",
                 confidence = "medium",
                 notes = "Elwynn homeland subzone from sweep",
                 mapIDs = { 37 },
+                subZoneKeys = { "Heldenwache", "Heroes' Watch", "Heroes Watch" },
                 tags = { "local", "eastern-kingdoms" },
                 factions = {
                     { factionID = 72, weight = 246 },
                 },
             },
-            ["49:seenhain"] = {
+            ["49:lakeshire"] = {
                 name = "Seenhain",
                 parentMapID = 49,
                 source = "seed",
                 confidence = "medium",
                 notes = "Redridge homeland subzone from sweep",
                 mapIDs = { 49 },
+                subZoneKeys = { "Seenhain", "Lakeshire" },
                 tags = { "primary", "local", "eastern-kingdoms" },
                 factions = {
                     { factionID = 72, weight = 250 },
                 },
             },
-            ["18:balnirs bauernhof"] = {
+            ["18:balnir-farmstead"] = {
                 name = "Balnirs Bauernhof",
                 parentMapID = 18,
                 source = "seed",
                 confidence = "medium",
                 notes = "Tirisfal homeland subzone from sweep",
                 mapIDs = { 18 },
+                subZoneKeys = { "Balnirs Bauernhof", "Balnir Farmstead" },
                 tags = { "local", "eastern-kingdoms" },
                 factions = {
                     { factionID = 68, weight = 246 },
                 },
             },
-            ["27:nordtorpass"] = {
+            ["27:north-gate-pass"] = {
                 name = "Nordtorpass",
                 parentMapID = 27,
                 source = "seed",
                 confidence = "medium",
                 notes = "Dun Morogh homeland subzone from sweep",
                 mapIDs = { 27 },
+                subZoneKeys = { "Nordtorpass", "North Gate Pass" },
                 tags = { "local", "eastern-kingdoms" },
                 factions = {
                     { factionID = 47, weight = 246 },
                 },
             },
-            ["48:silberbachmine"] = {
+            ["48:silver-stream-mine"] = {
                 name = "Silberbachmine",
                 parentMapID = 48,
                 source = "seed",
                 confidence = "medium",
                 notes = "Loch Modan homeland subzone from sweep",
                 mapIDs = { 48 },
+                subZoneKeys = { "Silberbachmine", "Silver Stream Mine" },
                 tags = { "local", "eastern-kingdoms" },
                 factions = {
                     { factionID = 47, weight = 245 },
                 },
             },
-            ["48:station algaz"] = {
+            ["48:algaz-station"] = {
                 name = "Station Algaz",
                 parentMapID = 48,
                 source = "seed",
                 confidence = "medium",
                 notes = "Loch Modan homeland subzone from sweep",
                 mapIDs = { 48 },
+                subZoneKeys = { "Station Algaz", "Algaz Station" },
                 tags = { "local", "eastern-kingdoms" },
                 factions = {
                     { factionID = 47, weight = 244 },
                 },
             },
-            ["52:die staubebenen"] = {
+            ["52:dust-plains"] = {
                 name = "Die Staubebenen",
                 parentMapID = 52,
                 source = "seed",
                 confidence = "medium",
                 notes = "Westfall homeland subzone from sweep",
                 mapIDs = { 52 },
+                subZoneKeys = { "Die Staubebenen", "Dust Plains" },
                 tags = { "local", "eastern-kingdoms" },
                 factions = {
                     { factionID = 72, weight = 244 },
                 },
             },
-            ["56:der grüne gürtel"] = {
+            ["56:green-belt"] = {
                 name = "Der Grüne Gürtel",
                 parentMapID = 56,
                 source = "seed",
                 confidence = "medium",
                 notes = "Wetlands alliance corridor subzone from sweep",
                 mapIDs = { 56 },
+                subZoneKeys = { "Der Grüne Gürtel", "Green Belt" },
                 tags = { "local", "eastern-kingdoms" },
                 factions = {
                     { factionID = 47, weight = 243 },
                 },
             },
-            ["56:raptorgrat"] = {
+            ["56:raptor-ridge"] = {
                 name = "Raptorgrat",
                 parentMapID = 56,
                 source = "seed",
                 confidence = "medium",
                 notes = "Wetlands alliance corridor subzone from sweep",
                 mapIDs = { 56 },
+                subZoneKeys = { "Raptorgrat", "Raptor Ridge" },
                 tags = { "local", "eastern-kingdoms" },
                 factions = {
                     { factionID = 47, weight = 242 },
                 },
             },
-            ["56:moosfellmoor"] = {
+            ["56:mosshide-fen"] = {
                 name = "Moosfellmoor",
                 parentMapID = 56,
                 source = "seed",
                 confidence = "medium",
                 notes = "Wetlands alliance corridor subzone from sweep",
                 mapIDs = { 56 },
+                subZoneKeys = { "Moosfellmoor", "Mosshide Fen" },
                 tags = { "local", "eastern-kingdoms" },
                 factions = {
                     { factionID = 47, weight = 242 },
