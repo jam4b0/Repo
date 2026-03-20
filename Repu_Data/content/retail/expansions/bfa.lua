@@ -31,6 +31,18 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 862,
+                        title = "Dazar'alor",
+                        x = 0.580,
+                        y = 0.626,
+                    },
+                    name = "Arcanist Peroleth",
+                },
+            },
             source = "curated",
             summary = "A special delegation of the Horde army, focused on disrupting Alliance operations in Kul Tiras.",
         },
