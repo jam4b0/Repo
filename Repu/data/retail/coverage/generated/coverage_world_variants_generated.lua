@@ -55,148 +55,166 @@ ns.Data:RegisterRetailModule({
             },
         },
         subZones = {
-            ["378:Die Wandernde Insel"] = {
+            ["378:die-wandernde-insel"] = {
                 name = "Die Wandernde Insel",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for a reviewed world/phasing variant subzone; faction mapping pending.",
                 mapIDs = { 378 },
+                subZoneKeys = { "Die Wandernde Insel" },
                 tags = { "subzone", "coverage-only", "generated-variant", "world-phasing-variant", "Azeroth" },
             },
-            ["1528:Nazjatar"] = {
+            ["1528:nazjatar"] = {
                 name = "Nazjatar",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for a reviewed world/phasing variant subzone; faction mapping pending.",
                 mapIDs = { 1528 },
+                subZoneKeys = { "Nazjatar" },
                 tags = { "subzone", "coverage-only", "generated-variant", "world-phasing-variant", "Azeroth" },
             },
-            ["697:Azshara"] = {
+            ["697:azshara"] = {
                 name = "Azshara",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for a reviewed world/phasing variant subzone; faction mapping pending.",
                 mapIDs = { 697 },
+                subZoneKeys = { "Azshara" },
                 tags = { "subzone", "coverage-only", "generated-variant", "world-phasing-variant", "Azshara" },
             },
-            ["709:Die Wandernde Insel"] = {
+            ["709:die-wandernde-insel"] = {
                 name = "Die Wandernde Insel",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for a reviewed world/phasing variant subzone; faction mapping pending.",
                 mapIDs = { 709 },
+                subZoneKeys = { "Die Wandernde Insel" },
                 tags = { "subzone", "coverage-only", "generated-variant", "world-phasing-variant", "Die Verheerten Inseln" },
             },
-            ["676:Verheerte Küste"] = {
+            ["676:verheerte-kueste"] = {
                 name = "Verheerte Küste",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for a reviewed world/phasing variant subzone; faction mapping pending.",
                 mapIDs = { 676 },
+                subZoneKeys = { "Verheerte Küste" },
                 tags = { "subzone", "coverage-only", "generated-variant", "world-phasing-variant", "Die Verheerten Inseln" },
             },
-            ["906:Arathihochland"] = {
+            ["906:arathihochland"] = {
                 name = "Arathihochland",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for a reviewed world/phasing variant subzone; faction mapping pending.",
                 mapIDs = { 906 },
+                subZoneKeys = { "Arathihochland" },
                 tags = { "subzone", "coverage-only", "generated-variant", "world-phasing-variant", "Die Östlichen Königreiche" },
             },
-            ["943:Arathihochland"] = {
+            ["943:arathihochland"] = {
                 name = "Arathihochland",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for a reviewed world/phasing variant subzone; faction mapping pending.",
                 mapIDs = { 943 },
+                subZoneKeys = { "Arathihochland" },
                 tags = { "subzone", "coverage-only", "generated-variant", "world-phasing-variant", "Die Östlichen Königreiche" },
             },
-            ["1044:Arathihochland"] = {
+            ["1044:arathihochland"] = {
                 name = "Arathihochland",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for a reviewed world/phasing variant subzone; faction mapping pending.",
                 mapIDs = { 1044 },
+                subZoneKeys = { "Arathihochland" },
                 tags = { "subzone", "coverage-only", "generated-variant", "world-phasing-variant", "Die Östlichen Königreiche" },
             },
-            ["179:Gilneas"] = {
+            ["179:gilneas"] = {
                 name = "Gilneas",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for a reviewed world/phasing variant subzone; faction mapping pending.",
                 mapIDs = { 179 },
+                subZoneKeys = { "Gilneas" },
                 tags = { "subzone", "coverage-only", "generated-variant", "world-phasing-variant", "Die Östlichen Königreiche" },
             },
-            ["1476:Schattenhochland"] = {
+            ["1476:schattenhochland"] = {
                 name = "Schattenhochland",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for a reviewed world/phasing variant subzone; faction mapping pending.",
                 mapIDs = { 1476 },
+                subZoneKeys = { "Schattenhochland" },
                 tags = { "subzone", "coverage-only", "generated-variant", "world-phasing-variant", "Die Östlichen Königreiche" },
             },
-            ["416:Düstermarschen"] = {
+            ["416:duestermarschen"] = {
                 name = "Düstermarschen",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for a reviewed world/phasing variant subzone; faction mapping pending.",
                 mapIDs = { 416 },
+                subZoneKeys = { "Düstermarschen" },
                 tags = { "subzone", "coverage-only", "generated-variant", "world-phasing-variant", "Düstermarschen" },
             },
-            ["483:Düstermarschen"] = {
+            ["483:duestermarschen"] = {
                 name = "Düstermarschen",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for a reviewed world/phasing variant subzone; faction mapping pending.",
                 mapIDs = { 483 },
+                subZoneKeys = { "Düstermarschen" },
                 tags = { "subzone", "coverage-only", "generated-variant", "world-phasing-variant", "Düstermarschen" },
             },
-            ["776:Azurmythosinsel"] = {
+            ["776:azurmythosinsel"] = {
                 name = "Azurmythosinsel",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for a reviewed world/phasing variant subzone; faction mapping pending.",
                 mapIDs = { 776 },
+                subZoneKeys = { "Azurmythosinsel" },
                 tags = { "subzone", "coverage-only", "generated-variant", "world-phasing-variant", "Kalimdor" },
             },
-            ["775:Die Exodar"] = {
+            ["775:die-exodar"] = {
                 name = "Die Exodar",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for a reviewed world/phasing variant subzone; faction mapping pending.",
                 mapIDs = { 775 },
+                subZoneKeys = { "Die Exodar" },
                 tags = { "subzone", "coverage-only", "generated-variant", "world-phasing-variant", "Kalimdor" },
             },
-            ["1203:Dunkelküste"] = {
+            ["1203:dunkelkueste"] = {
                 name = "Dunkelküste",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for a reviewed world/phasing variant subzone; faction mapping pending.",
                 mapIDs = { 1203 },
+                subZoneKeys = { "Dunkelküste" },
                 tags = { "subzone", "coverage-only", "generated-variant", "world-phasing-variant", "Kalimdor" },
             },
-            ["1332:Dunkelküste"] = {
+            ["1332:dunkelkueste"] = {
                 name = "Dunkelküste",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for a reviewed world/phasing variant subzone; faction mapping pending.",
                 mapIDs = { 1332 },
+                subZoneKeys = { "Dunkelküste" },
                 tags = { "subzone", "coverage-only", "generated-variant", "world-phasing-variant", "Kalimdor" },
             },
-            ["1333:Dunkelküste"] = {
+            ["1333:dunkelkueste"] = {
                 name = "Dunkelküste",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for a reviewed world/phasing variant subzone; faction mapping pending.",
                 mapIDs = { 1333 },
+                subZoneKeys = { "Dunkelküste" },
                 tags = { "subzone", "coverage-only", "generated-variant", "world-phasing-variant", "Kalimdor" },
             },
-            ["1338:Dunkelküste"] = {
+            ["1338:dunkelkueste"] = {
                 name = "Dunkelküste",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for a reviewed world/phasing variant subzone; faction mapping pending.",
                 mapIDs = { 1338 },
+                subZoneKeys = { "Dunkelküste" },
                 tags = { "subzone", "coverage-only", "generated-variant", "world-phasing-variant", "Kalimdor" },
             },
         },

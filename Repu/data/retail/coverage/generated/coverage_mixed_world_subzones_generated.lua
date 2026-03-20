@@ -6,164 +6,184 @@ ns.Data:RegisterRetailModule({
     locations = {
         zones = {},
         subZones = {
-            ["1709:Ardenwald"] = {
+            ["1709:ardenwald"] = {
                 name = "Ardenwald",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an approved mixed/manual world subzone variant; faction mapping pending.",
                 mapIDs = { 1709 },
+                subZoneKeys = { "Ardenwald" },
                 tags = { "subzone", "coverage-only", "generated-variant", "mixed-world-variant", "Ardenwald" },
             },
-            ["448:Der Jadewald"] = {
+            ["448:der-jadewald"] = {
                 name = "Der Jadewald",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an approved mixed/manual world subzone variant; faction mapping pending.",
                 mapIDs = { 448 },
+                subZoneKeys = { "Der Jadewald" },
                 tags = { "subzone", "coverage-only", "generated-variant", "mixed-world-variant", "Der Jadewald" },
             },
-            ["1603:Ardenwald"] = {
+            ["1603:ardenwald"] = {
                 name = "Ardenwald",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an approved mixed/manual world subzone variant; faction mapping pending.",
                 mapIDs = { 1603 },
+                subZoneKeys = { "Ardenwald" },
                 tags = { "subzone", "coverage-only", "generated-variant", "mixed-world-variant", "Die Schattenlande" },
             },
-            ["2005:Ardenwald"] = {
+            ["2005:ardenwald"] = {
                 name = "Ardenwald",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an approved mixed/manual world subzone variant; faction mapping pending.",
                 mapIDs = { 2005 },
+                subZoneKeys = { "Ardenwald" },
                 tags = { "subzone", "coverage-only", "generated-variant", "mixed-world-variant", "Die Schattenlande" },
             },
-            ["1689:Maldraxxus"] = {
+            ["1689:maldraxxus"] = {
                 name = "Maldraxxus",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an approved mixed/manual world subzone variant; faction mapping pending.",
                 mapIDs = { 1689 },
+                subZoneKeys = { "Maldraxxus" },
                 tags = { "subzone", "coverage-only", "generated-variant", "mixed-world-variant", "Die Schattenlande" },
             },
-            ["1688:Revendreth"] = {
+            ["1688:revendreth"] = {
                 name = "Revendreth",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an approved mixed/manual world subzone variant; faction mapping pending.",
                 mapIDs = { 1688 },
+                subZoneKeys = { "Revendreth" },
                 tags = { "subzone", "coverage-only", "generated-variant", "mixed-world-variant", "Die Schattenlande" },
             },
-            ["1734:Revendreth"] = {
+            ["1734:revendreth"] = {
                 name = "Revendreth",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an approved mixed/manual world subzone variant; faction mapping pending.",
                 mapIDs = { 1734 },
+                subZoneKeys = { "Revendreth" },
                 tags = { "subzone", "coverage-only", "generated-variant", "mixed-world-variant", "Die Schattenlande" },
             },
-            ["696:Sturmheim"] = {
+            ["696:sturmheim"] = {
                 name = "Sturmheim",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an approved mixed/manual world subzone variant; faction mapping pending.",
                 mapIDs = { 696 },
+                subZoneKeys = { "Sturmheim" },
                 tags = { "subzone", "coverage-only", "generated-variant", "mixed-world-variant", "Die Verheerten Inseln" },
             },
-            ["1642:Val'sharah"] = {
+            ["1642:val-sharah"] = {
                 name = "Val'sharah",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an approved mixed/manual world subzone variant; faction mapping pending.",
                 mapIDs = { 1642 },
+                subZoneKeys = { "Val'sharah" },
                 tags = { "subzone", "coverage-only", "generated-variant", "mixed-world-variant", "Die Verheerten Inseln" },
             },
-            ["1012:Sturmwind"] = {
+            ["1012:sturmwind"] = {
                 name = "Sturmwind",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an approved mixed/manual world subzone variant; faction mapping pending.",
                 mapIDs = { 1012 },
+                subZoneKeys = { "Sturmwind" },
                 tags = { "subzone", "coverage-only", "generated-variant", "mixed-world-variant", "Die Östlichen Königreiche" },
             },
-            ["2135:Valdrakken"] = {
+            ["2135:valdrakken"] = {
                 name = "Valdrakken",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an approved mixed/manual world subzone variant; faction mapping pending.",
                 mapIDs = { 2135 },
+                subZoneKeys = { "Valdrakken" },
                 tags = { "subzone", "coverage-only", "generated-variant", "mixed-world-variant", "Dracheninseln" },
             },
-            ["594:Shattrath"] = {
+            ["594:shattrath"] = {
                 name = "Shattrath",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an approved mixed/manual world subzone variant; faction mapping pending.",
                 mapIDs = { 594 },
+                subZoneKeys = { "Shattrath" },
                 tags = { "subzone", "coverage-only", "generated-variant", "mixed-world-variant", "Draenor" },
             },
-            ["577:Tanaandschungel"] = {
+            ["577:tanaandschungel"] = {
                 name = "Tanaandschungel",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an approved mixed/manual world subzone variant; faction mapping pending.",
                 mapIDs = { 577 },
+                subZoneKeys = { "Tanaandschungel" },
                 tags = { "subzone", "coverage-only", "generated-variant", "mixed-world-variant", "Draenor" },
             },
-            ["523:Dun Morogh"] = {
+            ["523:dun-morogh"] = {
                 name = "Dun Morogh",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an approved mixed/manual world subzone variant; faction mapping pending.",
                 mapIDs = { 523 },
+                subZoneKeys = { "Dun Morogh" },
                 tags = { "subzone", "coverage-only", "generated-variant", "mixed-world-variant", "Dun Morogh" },
             },
-            ["1535:Durotar"] = {
+            ["1535:durotar"] = {
                 name = "Durotar",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an approved mixed/manual world subzone variant; faction mapping pending.",
                 mapIDs = { 1535 },
+                subZoneKeys = { "Durotar" },
                 tags = { "subzone", "coverage-only", "generated-variant", "mixed-world-variant", "Kalimdor" },
             },
-            ["1534:Orgrimmar"] = {
+            ["1534:orgrimmar"] = {
                 name = "Orgrimmar",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an approved mixed/manual world subzone variant; faction mapping pending.",
                 mapIDs = { 1534 },
+                subZoneKeys = { "Orgrimmar" },
                 tags = { "subzone", "coverage-only", "generated-variant", "mixed-world-variant", "Kalimdor" },
             },
-            ["486:Krasarangwildnis"] = {
+            ["486:krasarangwildnis"] = {
                 name = "Krasarangwildnis",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an approved mixed/manual world subzone variant; faction mapping pending.",
                 mapIDs = { 486 },
+                subZoneKeys = { "Krasarangwildnis" },
                 tags = { "subzone", "coverage-only", "generated-variant", "mixed-world-variant", "Krasarangwildnis" },
             },
-            ["498:Krasarangwildnis"] = {
+            ["498:krasarangwildnis"] = {
                 name = "Krasarangwildnis",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an approved mixed/manual world subzone variant; faction mapping pending.",
                 mapIDs = { 498 },
+                subZoneKeys = { "Krasarangwildnis" },
                 tags = { "subzone", "coverage-only", "generated-variant", "mixed-world-variant", "Krasarangwildnis" },
             },
-            ["520:Tal der Ewigen Blüten"] = {
+            ["520:tal-der-ewigen-blueten"] = {
                 name = "Tal der Ewigen Blüten",
                 source = "seed",
                 confidence = "medium",
                 notes = "Retail subzone variant used by the 8.3 Black Empire assault in the Vale; kept separate until a phase-specific faction mapping is defined.",
                 mapIDs = { 520 },
+                subZoneKeys = { "Tal der Ewigen Blüten" },
                 tags = { "subzone", "coverage-only", "generated-variant", "mixed-world-variant", "Tal der Ewigen Blüten", "assault-variant" },
             },
-            ["1181:Zuldazar"] = {
+            ["1181:zuldazar"] = {
                 name = "Zuldazar",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an approved mixed/manual world subzone variant; faction mapping pending.",
                 mapIDs = { 1181 },
+                subZoneKeys = { "Zuldazar" },
                 tags = { "subzone", "coverage-only", "generated-variant", "mixed-world-variant", "Zandalar" },
             },
         },

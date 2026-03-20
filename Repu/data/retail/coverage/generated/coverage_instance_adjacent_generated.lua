@@ -6,300 +6,337 @@ ns.Data:RegisterRetailModule({
     locations = {
         zones = {},
         subZones = {
-            ["1917:Die Andre Seite"] = {
+            ["1917:die-andre-seite"] = {
                 name = "Die Andre Seite",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 1917 },
+                subZoneKeys = { "Die Andre Seite" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Ardenwald" },
             },
-            ["1717:Reich der Kälte"] = {
+            ["1717:reich-der-kaelte"] = {
                 name = "Reich der Kälte",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 1717 },
+                subZoneKeys = { "Reich der Kälte" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Argus" },
             },
-            ["1715:Vestibül der Ewigkeit"] = {
+            ["1715:vestibuel-der-ewigkeit"] = {
                 name = "Vestibül der Ewigkeit",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 1715 },
+                subZoneKeys = { "Vestibül der Ewigkeit" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Argus" },
             },
-            ["1691:Zerschmetterter Hain"] = {
+            ["1691:zerschmetterter-hain"] = {
                 name = "Zerschmetterter Hain",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 1691 },
+                subZoneKeys = { "Zerschmetterter Hain" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Argus" },
             },
-            ["2183:Azurblaues Gewölbe"] = {
+            ["2183:azurblaues-gewoelbe"] = {
                 name = "Azurblaues Gewölbe",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 2183 },
+                subZoneKeys = { "Azurblaues Gewölbe" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Azurblaues Gebirge" },
             },
-            ["1711:Kolosseum des Aufstiegs"] = {
+            ["1711:kolosseum-des-aufstiegs"] = {
                 name = "Kolosseum des Aufstiegs",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 1711 },
+                subZoneKeys = { "Kolosseum des Aufstiegs" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Bastion" },
             },
-            ["1560:Pechschwingenhort"] = {
+            ["1560:pechschwingenhort"] = {
                 name = "Pechschwingenhort",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 1560 },
+                subZoneKeys = { "Pechschwingenhort" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Brennende Steppe" },
             },
-            ["760:Malornes Alptraum"] = {
+            ["760:malornes-alptraum"] = {
                 name = "Malornes Alptraum",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 760 },
+                subZoneKeys = { "Malornes Alptraum" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Der Hyjal" },
             },
-            ["2016:Tazavesh, der Verhüllte Markt"] = {
+            ["2016:tazavesh-der-verhuellte-markt"] = {
                 name = "Tazavesh, der Verhüllte Markt",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 2016 },
+                subZoneKeys = { "Tazavesh, der Verhüllte Markt" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Die Schattenlande" },
             },
-            ["671:Bucht von Nashal"] = {
+            ["671:bucht-von-nashal"] = {
                 name = "Bucht von Nashal",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 671 },
+                subZoneKeys = { "Bucht von Nashal" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Die Verheerten Inseln" },
             },
-            ["1971:Himmelsfeste"] = {
+            ["1971:himmelsfeste"] = {
                 name = "Himmelsfeste",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 1971 },
+                subZoneKeys = { "Himmelsfeste" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Die Verheerten Inseln" },
             },
-            ["694:Höllenschlundmorast"] = {
+            ["694:hoellenschlundmorast"] = {
                 name = "Höllenschlundmorast",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 694 },
+                subZoneKeys = { "Höllenschlundmorast" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Die Verheerten Inseln" },
             },
-            ["645:Wirbelnder Nether"] = {
+            ["645:wirbelnder-nether"] = {
                 name = "Wirbelnder Nether",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 645 },
+                subZoneKeys = { "Wirbelnder Nether" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Die Verheerten Inseln" },
             },
-            ["1013:Das Verlies"] = {
+            ["1013:das-verlies"] = {
                 name = "Das Verlies",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 1013 },
+                subZoneKeys = { "Das Verlies" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Die Östlichen Königreiche" },
             },
-            ["155:Das Obsidiansanktum"] = {
+            ["155:das-obsidiansanktum"] = {
                 name = "Das Obsidiansanktum",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 155 },
+                subZoneKeys = { "Das Obsidiansanktum" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Drachenöde" },
             },
-            ["1558:Eiskronenzitadelle"] = {
+            ["1558:eiskronenzitadelle"] = {
                 name = "Eiskronenzitadelle",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 1558 },
+                subZoneKeys = { "Eiskronenzitadelle" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Eiskrone" },
             },
-            ["903:Sitz des Triumvirats"] = {
+            ["903:sitz-des-triumvirats"] = {
                 name = "Sitz des Triumvirats",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 903 },
+                subZoneKeys = { "Sitz des Triumvirats" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Eredath" },
             },
-            ["234:Düsterbruch"] = {
+            ["234:duesterbruch"] = {
                 name = "Düsterbruch",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 234 },
+                subZoneKeys = { "Düsterbruch" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Feralas" },
             },
-            ["757:Ursocs Unterschlupf"] = {
+            ["757:ursocs-unterschlupf"] = {
                 name = "Ursocs Unterschlupf",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 757 },
+                subZoneKeys = { "Ursocs Unterschlupf" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Grizzlyhügel" },
             },
-            ["2330:Priorat der Heiligen Flamme"] = {
+            ["2330:priorat-der-heiligen-flamme"] = {
                 name = "Priorat der Heiligen Flamme",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 2330 },
+                subZoneKeys = { "Priorat der Heiligen Flamme" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Heilsturz" },
             },
-            ["1472:Der Drachenrücken"] = {
+            ["1472:der-drachenruecken"] = {
                 name = "Der Drachenrücken",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 1472 },
+                subZoneKeys = { "Der Drachenrücken" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Hochberg" },
             },
-            ["731:Neltharions Hort"] = {
+            ["731:neltharions-hort"] = {
                 name = "Neltharions Hort",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 731 },
+                subZoneKeys = { "Neltharions Hort" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Hochberg" },
             },
-            ["273:Der Schwarze Morast"] = {
+            ["273:der-schwarze-morast"] = {
                 name = "Der Schwarze Morast",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 273 },
+                subZoneKeys = { "Der Schwarze Morast" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Höhlen der Zeit" },
             },
-            ["327:Ahn'Qiraj: Das Gefallene Königreich"] = {
+            ["327:ahn-qiraj-das-gefallene-koenigreich"] = {
                 name = "Ahn'Qiraj: Das Gefallene Königreich",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 327 },
+                subZoneKeys = { "Ahn'Qiraj: Das Gefallene Königreich" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Kalimdor" },
             },
-            ["1644:Gluthof"] = {
+            ["1644:gluthof"] = {
                 name = "Gluthof",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 1644 },
+                subZoneKeys = { "Gluthof" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Revendreth" },
             },
-            ["1755:Schloss Nathria"] = {
+            ["1755:schloss-nathria"] = {
                 name = "Schloss Nathria",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 1755 },
+                subZoneKeys = { "Schloss Nathria" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Revendreth" },
             },
-            ["1559:Bastion des Zwielichts"] = {
+            ["1559:bastion-des-zwielichts"] = {
                 name = "Bastion des Zwielichts",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 1559 },
+                subZoneKeys = { "Bastion des Zwielichts" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Schattenhochland" },
             },
-            ["247:Ruinen von Ahn'Qiraj"] = {
+            ["247:ruinen-von-ahn-qiraj"] = {
                 name = "Ruinen von Ahn'Qiraj",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 247 },
+                subZoneKeys = { "Ruinen von Ahn'Qiraj" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Silithus" },
             },
-            ["649:Helheim"] = {
+            ["649:helheim"] = {
                 name = "Helheim",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 649 },
+                subZoneKeys = { "Helheim" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Sturmheim" },
             },
-            ["398:Brunnen der Ewigkeit"] = {
+            ["398:brunnen-der-ewigkeit"] = {
                 name = "Brunnen der Ewigkeit",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 398 },
+                subZoneKeys = { "Brunnen der Ewigkeit" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Tanaris" },
             },
-            ["219:Zul'Farrak"] = {
+            ["219:zul-farrak"] = {
                 name = "Zul'Farrak",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 219 },
+                subZoneKeys = { "Zul'Farrak" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Tanaris" },
             },
-            ["277:Verlorene Stadt der Tol'vir"] = {
+            ["277:verlorene-stadt-der-tol-vir"] = {
                 name = "Verlorene Stadt der Tol'vir",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 277 },
+                subZoneKeys = { "Verlorene Stadt der Tol'vir" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Uldum" },
             },
-            ["758:Dämmerndes Riff"] = {
+            ["758:daemmerndes-riff"] = {
                 name = "Dämmerndes Riff",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 758 },
+                subZoneKeys = { "Dämmerndes Riff" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Val'sharah" },
             },
-            ["733:Finsterherzdickicht"] = {
+            ["733:finsterherzdickicht"] = {
                 name = "Finsterherzdickicht",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 733 },
+                subZoneKeys = { "Finsterherzdickicht" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Val'sharah" },
             },
-            ["2211:Aberrus, Schmelztiegel der Schatten"] = {
+            ["2211:aberrus-schmelztiegel-der-schatten"] = {
                 name = "Aberrus, Schmelztiegel der Schatten",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 2211 },
+                subZoneKeys = { "Aberrus, Schmelztiegel der Schatten" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Zaralekhöhle" },
             },
-            ["153:Gundrak"] = {
+            ["153:gundrak"] = {
                 name = "Gundrak",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 153 },
+                subZoneKeys = { "Gundrak" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Zul'Drak" },
             },
-            ["124:Pestländer: Die Scharlachrote Enklave"] = {
+            ["124:pestlaender-die-scharlachrote-enklave"] = {
                 name = "Pestländer: Die Scharlachrote Enklave",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",
                 mapIDs = { 124 },
+                subZoneKeys = { "Pestländer: Die Scharlachrote Enklave" },
                 tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "Östliche Pestländer" },
             },
         },

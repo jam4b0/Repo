@@ -47,52 +47,58 @@ ns.Data:RegisterRetailModule({
             },
         },
         subZones = {
-            ["773:Tol Barad"] = {
+            ["773:tol-barad"] = {
                 name = "Tol Barad",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an approved event/pvp variant subzone; faction mapping pending.",
                 mapIDs = { 773 },
+                subZoneKeys = { "Tol Barad" },
                 tags = { "subzone", "coverage-only", "generated-variant", "event-pvp-variant", "Die Östlichen Königreiche" },
             },
-            ["1470:Vision von Sturmwind"] = {
+            ["1470:vision-von-sturmwind"] = {
                 name = "Vision von Sturmwind",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an approved event/pvp variant subzone; faction mapping pending.",
                 mapIDs = { 1470 },
+                subZoneKeys = { "Vision von Sturmwind" },
                 tags = { "subzone", "coverage-only", "generated-variant", "event-pvp-variant", "Die Östlichen Königreiche" },
             },
-            ["1478:Ashran"] = {
+            ["1478:ashran"] = {
                 name = "Ashran",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an approved event/pvp variant subzone; faction mapping pending.",
                 mapIDs = { 1478 },
+                subZoneKeys = { "Ashran" },
                 tags = { "subzone", "coverage-only", "generated-variant", "event-pvp-variant", "Draenor" },
             },
-            ["1469:Vision von Orgrimmar"] = {
+            ["1469:vision-von-orgrimmar"] = {
                 name = "Vision von Orgrimmar",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an approved event/pvp variant subzone; faction mapping pending.",
                 mapIDs = { 1469 },
+                subZoneKeys = { "Vision von Orgrimmar" },
                 tags = { "subzone", "coverage-only", "generated-variant", "event-pvp-variant", "Kalimdor" },
             },
-            ["1334:Tausendwinter"] = {
+            ["1334:tausendwinter"] = {
                 name = "Tausendwinter",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an approved event/pvp variant subzone; faction mapping pending.",
                 mapIDs = { 1334 },
+                subZoneKeys = { "Tausendwinter" },
                 tags = { "subzone", "coverage-only", "generated-variant", "event-pvp-variant", "Nordend" },
             },
-            ["516:Insel des Donners"] = {
+            ["516:insel-des-donners"] = {
                 name = "Insel des Donners",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an approved event/pvp variant subzone; faction mapping pending.",
                 mapIDs = { 516 },
+                subZoneKeys = { "Insel des Donners" },
                 tags = { "subzone", "coverage-only", "generated-variant", "event-pvp-variant", "Pandaria" },
             },
         },

@@ -6,6 +6,8 @@ import argparse
 import json
 from pathlib import Path
 
+from coverage_key_utils import esc_lua, normalized_subzone_key
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -51,12 +53,13 @@ def normalize_zone_entry(entry: dict) -> dict:
 
 
 def normalize_subzone_entry(entry: dict) -> dict:
-    key = f'{entry["mapID"]}:{entry["name"]}'
+    key = normalized_subzone_key(entry["mapID"], entry["name"])
     return key, {
         "name": entry["name"],
         "source": "client_seed",
         "confidence": "low",
         "mapIDs": [entry["mapID"]],
+        "subZoneKeys": [entry["name"]],
         "factionIDs": [],
         "notes": "Generated hub/subzone from client map scan; faction mapping pending review.",
         "tags": ["generated", "client_scan", entry["candidateClass"]],
@@ -104,9 +107,6 @@ def build_seed(manifest: dict) -> dict:
 
 
 def render_lua(seed: dict) -> str:
-    def esc(value: str) -> str:
-        return value.replace("\\", "\\\\").replace('"', '\\"')
-
     lines = []
     lines.append("-- Generated from Repu map manifest")
     lines.append("return {")
@@ -114,7 +114,7 @@ def render_lua(seed: dict) -> str:
     for key in ("source", "confidence", "rawNodeCount", "mapBasisEligible", "generatedAt", "scannedAt"):
         value = seed["meta"][key]
         if isinstance(value, str):
-            lines.append(f'        {key} = "{esc(value)}",')
+            lines.append(f'        {key} = "{esc_lua(value)}",')
         else:
             lines.append(f"        {key} = {value},")
     lines.append("        roots = { " + ", ".join(str(v) for v in seed["meta"]["roots"]) + " },")
@@ -125,15 +125,15 @@ def render_lua(seed: dict) -> str:
     for map_id in sorted(seed["locations"]["zones"], key=lambda value: int(value)):
         entry = seed["locations"]["zones"][map_id]
         lines.append(f"            [{map_id}] = {{")
-        lines.append(f'                name = "{esc(entry["name"])}",')
+        lines.append(f'                name = "{esc_lua(entry["name"])}",')
         lines.append('                source = "client_seed",')
         lines.append('                confidence = "low",')
         lines.append(f"                mapIDs = {{ {entry['mapIDs'][0]} }},")
         lines.append("                factionIDs = {},")
-        lines.append(f'                notes = "{esc(entry["notes"])}",')
+        lines.append(f'                notes = "{esc_lua(entry["notes"])}",')
         lines.append(
             "                tags = { "
-            + ", ".join(f'"{esc(tag)}"' for tag in entry["tags"])
+            + ", ".join(f'"{esc_lua(tag)}"' for tag in entry["tags"])
             + " },"
         )
         lines.append("            },")
@@ -142,16 +142,21 @@ def render_lua(seed: dict) -> str:
     lines.append("        subZones = {")
     for key in sorted(seed["locations"]["subZones"]):
         entry = seed["locations"]["subZones"][key]
-        lines.append(f'            ["{esc(key)}"] = {{')
-        lines.append(f'                name = "{esc(entry["name"])}",')
+        lines.append(f'            ["{esc_lua(key)}"] = {{')
+        lines.append(f'                name = "{esc_lua(entry["name"])}",')
         lines.append('                source = "client_seed",')
         lines.append('                confidence = "low",')
         lines.append(f"                mapIDs = {{ {entry['mapIDs'][0]} }},")
+        lines.append(
+            "                subZoneKeys = { "
+            + ", ".join(f'"{esc_lua(value)}"' for value in entry.get("subZoneKeys", []))
+            + " },"
+        )
         lines.append("                factionIDs = {},")
-        lines.append(f'                notes = "{esc(entry["notes"])}",')
+        lines.append(f'                notes = "{esc_lua(entry["notes"])}",')
         lines.append(
             "                tags = { "
-            + ", ".join(f'"{esc(tag)}"' for tag in entry["tags"])
+            + ", ".join(f'"{esc_lua(tag)}"' for tag in entry["tags"])
             + " },"
         )
         lines.append("            },")

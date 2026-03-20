@@ -53,84 +53,94 @@ ns.Data:RegisterRetailModule({
     locations = {
         zones = {},
         subZones = {
-            ["1662:Konservatorium der Königin"] = {
+            ["1662:konservatorium-der-koenigin"] = {
                 name = "Konservatorium der Königin",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated explicit keep-case for a reviewed hub/subzone; faction mapping pending.",
                 mapIDs = { 1662 },
+                subZoneKeys = { "Konservatorium der Königin" },
                 tags = { "subzone", "coverage-only", "generated-review", "reviewed-hub-keep", "Ardenwald" },
             },
-            ["622:Sturmschild"] = {
+            ["622:sturmschild"] = {
                 name = "Sturmschild",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated explicit keep-case for a reviewed hub/subzone; faction mapping pending.",
                 mapIDs = { 622 },
+                subZoneKeys = { "Sturmschild" },
                 tags = { "subzone", "coverage-only", "generated-review", "reviewed-hub-keep", "Ashran" },
             },
-            ["338:Geschmolzene Front"] = {
+            ["338:geschmolzene-front"] = {
                 name = "Geschmolzene Front",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated explicit keep-case for a reviewed hub/subzone; faction mapping pending.",
                 mapIDs = { 338 },
+                subZoneKeys = { "Geschmolzene Front" },
                 tags = { "subzone", "coverage-only", "generated-review", "reviewed-hub-keep", "Der Hyjal" },
             },
-            ["2345:Tiefbeuteschlucht"] = {
+            ["2345:tiefbeuteschlucht"] = {
                 name = "Tiefbeuteschlucht",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated explicit keep-case for a reviewed hub/subzone; faction mapping pending.",
                 mapIDs = { 2345 },
+                subZoneKeys = { "Tiefbeuteschlucht" },
                 tags = { "subzone", "coverage-only", "generated-review", "reviewed-hub-keep", "Die Schallenden Tiefen" },
             },
-            ["1648:Der Schlund"] = {
+            ["1648:der-schlund"] = {
                 name = "Der Schlund",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated explicit keep-case for a reviewed hub/subzone; faction mapping pending.",
                 mapIDs = { 1648 },
+                subZoneKeys = { "Der Schlund" },
                 tags = { "subzone", "coverage-only", "generated-review", "reviewed-hub-keep", "Die Schattenlande" },
             },
-            ["750:Donnertotem"] = {
+            ["750:donnertotem"] = {
                 name = "Donnertotem",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated explicit keep-case for a reviewed hub/subzone; faction mapping pending.",
                 mapIDs = { 750 },
+                subZoneKeys = { "Donnertotem" },
                 tags = { "subzone", "coverage-only", "generated-review", "reviewed-hub-keep", "Hochberg" },
             },
-            ["218:Ruinen von Gilneas (Stadt)"] = {
+            ["218:ruinen-von-gilneas-stadt"] = {
                 name = "Ruinen von Gilneas (Stadt)",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated explicit keep-case for a reviewed hub/subzone; faction mapping pending.",
                 mapIDs = { 218 },
+                subZoneKeys = { "Ruinen von Gilneas (Stadt)" },
                 tags = { "subzone", "coverage-only", "generated-review", "reviewed-hub-keep", "Ruinen von Gilneas" },
             },
-            ["2146:Östliche Lichtungen"] = {
+            ["2146:oestliche-lichtungen"] = {
                 name = "Östliche Lichtungen",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated explicit keep-case for a reviewed hub/subzone; faction mapping pending.",
                 mapIDs = { 2146 },
+                subZoneKeys = { "Östliche Lichtungen" },
                 tags = { "subzone", "coverage-only", "generated-review", "reviewed-hub-keep", "Tirisfal" },
             },
-            ["1468:Der Hain der Träume"] = {
+            ["1468:der-hain-der-traeume"] = {
                 name = "Der Hain der Träume",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated explicit keep-case for a reviewed hub/subzone; faction mapping pending.",
                 mapIDs = { 1468 },
+                subZoneKeys = { "Der Hain der Träume" },
                 tags = { "subzone", "coverage-only", "generated-review", "reviewed-hub-keep", "Val'sharah" },
             },
-            ["793:Rabenwehr"] = {
+            ["793:rabenwehr"] = {
                 name = "Rabenwehr",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated explicit keep-case for a reviewed hub/subzone; faction mapping pending.",
                 mapIDs = { 793 },
+                subZoneKeys = { "Rabenwehr" },
                 tags = { "subzone", "coverage-only", "generated-review", "reviewed-hub-keep", "Val'sharah" },
             },
         },

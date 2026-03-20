@@ -6,6 +6,7 @@ import argparse
 import json
 from pathlib import Path
 
+from coverage_key_utils import esc_lua, normalized_subzone_key
 from generate_reviewed_coverage import collect_subzone_rows  # type: ignore
 
 
@@ -41,9 +42,9 @@ def render_module(rows: list[dict]) -> str:
     lines.append("        zones = {},")
     lines.append("        subZones = {")
     for row in rows:
-        key = row["key"].replace("\\", "\\\\").replace('"', '\\"')
-        name = row["name"].replace("\\", "\\\\").replace('"', '\\"')
-        group_name = row["groupName"].replace("\\", "\\\\").replace('"', '\\"')
+        key = normalized_subzone_key(row["mapID"], row["name"])
+        name = esc_lua(row["name"])
+        group_name = esc_lua(row["groupName"])
         lines.append(f'            ["{key}"] = {{')
         lines.append(f'                name = "{name}",')
         lines.append('                source = "seed",')
@@ -52,6 +53,7 @@ def render_module(rows: list[dict]) -> str:
             '                notes = "Generated conservative hub coverage from client_seed priority matrix; faction mapping pending.",'
         )
         lines.append(f"                mapIDs = {{ {row['mapID']} }},")
+        lines.append(f'                subZoneKeys = {{ "{name}" }},')
         lines.append(
             '                tags = { "subzone", "coverage-only", "generated-review", "client-seed-reviewed", "'
             + group_name

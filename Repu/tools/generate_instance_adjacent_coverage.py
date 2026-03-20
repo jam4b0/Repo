@@ -6,6 +6,8 @@ import argparse
 import json
 from pathlib import Path
 
+from coverage_key_utils import esc_lua, normalized_subzone_key
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -56,9 +58,9 @@ def render_module(rows: list[dict]) -> str:
     lines.append("        zones = {},")
     lines.append("        subZones = {")
     for row in rows:
-        key = row["key"].replace("\\", "\\\\").replace('"', '\\"')
-        name = row["name"].replace("\\", "\\\\").replace('"', '\\"')
-        group_name = row["group"].replace("\\", "\\\\").replace('"', '\\"')
+        key = normalized_subzone_key(row["mapID"], row["name"])
+        name = esc_lua(row["name"])
+        group_name = esc_lua(row["group"])
         lines.append(f'            ["{key}"] = {{')
         lines.append(f'                name = "{name}",')
         lines.append('                source = "seed",')
@@ -67,6 +69,7 @@ def render_module(rows: list[dict]) -> str:
             '                notes = "Generated coverage for an instance-adjacent subzone; faction mapping pending.",'
         )
         lines.append(f"                mapIDs = {{ {row['mapID']} }},")
+        lines.append(f'                subZoneKeys = {{ "{name}" }},')
         lines.append(
             '                tags = { "subzone", "coverage-only", "generated-review", "instance-adjacent", "'
             + group_name

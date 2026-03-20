@@ -15,188 +15,211 @@ ns.Data:RegisterRetailModule({
             },
         },
         subZones = {
-            ["713:Das Auge Azsharas"] = {
+            ["713:das-auge-azsharas"] = {
                 name = "Das Auge Azsharas",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance/raid variant subzone; faction mapping pending.",
                 mapIDs = { 713 },
+                subZoneKeys = { "Das Auge Azsharas" },
                 tags = { "subzone", "coverage-only", "generated-variant", "instance-variant", "Azsuna" },
             },
-            ["2017:Spitzen des Aufstiegs"] = {
+            ["2017:spitzen-des-aufstiegs"] = {
                 name = "Spitzen des Aufstiegs",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance/raid variant subzone; faction mapping pending.",
                 mapIDs = { 2017 },
+                subZoneKeys = { "Spitzen des Aufstiegs" },
                 tags = { "subzone", "coverage-only", "generated-variant", "instance-variant", "Bastion" },
             },
-            ["2018:Spitzen des Aufstiegs"] = {
+            ["2018:spitzen-des-aufstiegs"] = {
                 name = "Spitzen des Aufstiegs",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance/raid variant subzone; faction mapping pending.",
                 mapIDs = { 2018 },
+                subZoneKeys = { "Spitzen des Aufstiegs" },
                 tags = { "subzone", "coverage-only", "generated-variant", "instance-variant", "Bastion" },
             },
-            ["142:Das Oculus"] = {
+            ["142:das-oculus"] = {
                 name = "Das Oculus",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance/raid variant subzone; faction mapping pending.",
                 mapIDs = { 142 },
+                subZoneKeys = { "Das Oculus" },
                 tags = { "subzone", "coverage-only", "generated-variant", "instance-variant", "Boreanische Tundra" },
             },
-            ["799:Das Oculus"] = {
+            ["799:das-oculus"] = {
                 name = "Das Oculus",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance/raid variant subzone; faction mapping pending.",
                 mapIDs = { 799 },
+                subZoneKeys = { "Das Oculus" },
                 tags = { "subzone", "coverage-only", "generated-variant", "instance-variant", "Boreanische Tundra" },
             },
-            ["738:Feuerlande"] = {
+            ["738:feuerlande"] = {
                 name = "Feuerlande",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance/raid variant subzone; faction mapping pending.",
                 mapIDs = { 738 },
+                subZoneKeys = { "Feuerlande" },
                 tags = { "subzone", "coverage-only", "generated-variant", "instance-variant", "Der Hyjal" },
             },
-            ["1556:Hyjalgipfel"] = {
+            ["1556:hyjalgipfel"] = {
                 name = "Hyjalgipfel",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance/raid variant subzone; faction mapping pending.",
                 mapIDs = { 1556 },
+                subZoneKeys = { "Hyjalgipfel" },
                 tags = { "subzone", "coverage-only", "generated-variant", "instance-variant", "Der Hyjal" },
             },
-            ["672:Mardum, der Zerrüttete Abgrund"] = {
+            ["672:mardum-der-zerruettete-abgrund"] = {
                 name = "Mardum, der Zerrüttete Abgrund",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance/raid variant subzone; faction mapping pending.",
                 mapIDs = { 672 },
+                subZoneKeys = { "Mardum, der Zerrüttete Abgrund" },
                 tags = { "subzone", "coverage-only", "generated-variant", "instance-variant", "Die Verheerten Inseln" },
             },
-            ["714:Niskara"] = {
+            ["714:niskara"] = {
                 name = "Niskara",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance/raid variant subzone; faction mapping pending.",
                 mapIDs = { 714 },
+                subZoneKeys = { "Niskara" },
                 tags = { "subzone", "coverage-only", "generated-variant", "instance-variant", "Die Verheerten Inseln" },
             },
-            ["748:Niskara"] = {
+            ["748:niskara"] = {
                 name = "Niskara",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance/raid variant subzone; faction mapping pending.",
                 mapIDs = { 748 },
+                subZoneKeys = { "Niskara" },
                 tags = { "subzone", "coverage-only", "generated-variant", "instance-variant", "Die Verheerten Inseln" },
             },
-            ["456:Terrasse des Endlosen Frühlings"] = {
+            ["456:terrasse-des-endlosen-fruehlings"] = {
                 name = "Terrasse des Endlosen Frühlings",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance/raid variant subzone; faction mapping pending.",
                 mapIDs = { 456 },
+                subZoneKeys = { "Terrasse des Endlosen Frühlings" },
                 tags = { "subzone", "coverage-only", "generated-variant", "instance-variant", "Die Verhüllte Treppe" },
             },
-            ["728:Terrasse des Endlosen Frühlings"] = {
+            ["728:terrasse-des-endlosen-fruehlings"] = {
                 name = "Terrasse des Endlosen Frühlings",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance/raid variant subzone; faction mapping pending.",
                 mapIDs = { 728 },
+                subZoneKeys = { "Terrasse des Endlosen Frühlings" },
                 tags = { "subzone", "coverage-only", "generated-variant", "instance-variant", "Die Verhüllte Treppe" },
             },
-            ["200:Rubinsanktum"] = {
+            ["200:rubinsanktum"] = {
                 name = "Rubinsanktum",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance/raid variant subzone; faction mapping pending.",
                 mapIDs = { 200 },
+                subZoneKeys = { "Rubinsanktum" },
                 tags = { "subzone", "coverage-only", "generated-variant", "instance-variant", "Drachenöde" },
             },
-            ["860:Rubinsanktum"] = {
+            ["860:rubinsanktum"] = {
                 name = "Rubinsanktum",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance/raid variant subzone; faction mapping pending.",
                 mapIDs = { 860 },
+                subZoneKeys = { "Rubinsanktum" },
                 tags = { "subzone", "coverage-only", "generated-variant", "instance-variant", "Drachenöde" },
             },
-            ["184:Grube von Saron"] = {
+            ["184:grube-von-saron"] = {
                 name = "Grube von Saron",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance/raid variant subzone; faction mapping pending.",
                 mapIDs = { 184 },
+                subZoneKeys = { "Grube von Saron" },
                 tags = { "subzone", "coverage-only", "generated-variant", "instance-variant", "Eiskrone" },
             },
-            ["823:Grube von Saron"] = {
+            ["823:grube-von-saron"] = {
                 name = "Grube von Saron",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance/raid variant subzone; faction mapping pending.",
                 mapIDs = { 823 },
+                subZoneKeys = { "Grube von Saron" },
                 tags = { "subzone", "coverage-only", "generated-variant", "instance-variant", "Eiskrone" },
             },
-            ["1561:Feuerlande"] = {
+            ["1561:feuerlande"] = {
                 name = "Feuerlande",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance/raid variant subzone; faction mapping pending.",
                 mapIDs = { 1561 },
+                subZoneKeys = { "Feuerlande" },
                 tags = { "subzone", "coverage-only", "generated-variant", "instance-variant", "Feuerlande" },
             },
-            ["329:Hyjalgipfel"] = {
+            ["329:hyjalgipfel"] = {
                 name = "Hyjalgipfel",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance/raid variant subzone; faction mapping pending.",
                 mapIDs = { 329 },
+                subZoneKeys = { "Hyjalgipfel" },
                 tags = { "subzone", "coverage-only", "generated-variant", "instance-variant", "Höhlen der Zeit" },
             },
-            ["861:Mardum, der Zerrüttete Abgrund"] = {
+            ["861:mardum-der-zerruettete-abgrund"] = {
                 name = "Mardum, der Zerrüttete Abgrund",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance/raid variant subzone; faction mapping pending.",
                 mapIDs = { 861 },
+                subZoneKeys = { "Mardum, der Zerrüttete Abgrund" },
                 tags = { "subzone", "coverage-only", "generated-variant", "instance-variant", "Mardum, der Zerrüttete Abgrund" },
             },
-            ["233:Zul'Gurub"] = {
+            ["233:zul-gurub"] = {
                 name = "Zul'Gurub",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance/raid variant subzone; faction mapping pending.",
                 mapIDs = { 233 },
+                subZoneKeys = { "Zul'Gurub" },
                 tags = { "subzone", "coverage-only", "generated-variant", "instance-variant", "Nördliches Schlingendorntal" },
             },
-            ["337:Zul'Gurub"] = {
+            ["337:zul-gurub"] = {
                 name = "Zul'Gurub",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance/raid variant subzone; faction mapping pending.",
                 mapIDs = { 337 },
+                subZoneKeys = { "Zul'Gurub" },
                 tags = { "subzone", "coverage-only", "generated-variant", "instance-variant", "Nördliches Schlingendorntal" },
             },
-            ["974:Tol Dagor"] = {
+            ["974:tol-dagor"] = {
                 name = "Tol Dagor",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance/raid variant subzone; faction mapping pending.",
                 mapIDs = { 974 },
+                subZoneKeys = { "Tol Dagor" },
                 tags = { "subzone", "coverage-only", "generated-variant", "instance-variant", "Tiragardesund" },
             },
-            ["1349:Tol Dagor"] = {
+            ["1349:tol-dagor"] = {
                 name = "Tol Dagor",
                 source = "seed",
                 confidence = "medium",
                 notes = "Generated coverage for an instance/raid variant subzone; faction mapping pending.",
                 mapIDs = { 1349 },
+                subZoneKeys = { "Tol Dagor" },
                 tags = { "subzone", "coverage-only", "generated-variant", "instance-variant", "Tiragardesund" },
             },
         },
