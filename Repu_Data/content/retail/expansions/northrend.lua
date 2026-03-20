@@ -46,6 +46,14 @@ api.RegisterRetailContentModule({
                     },
                     title = "Questlines in Borean Tundra",
                 },
+                {
+                    kind = "Daily",
+                    location = {
+                        mapID = 114,
+                        title = "Borean Tundra",
+                    },
+                    title = "Tuskarr dailies and village support",
+                },
             },
             confidence = "medium",
             quartermasters = {
@@ -78,6 +86,14 @@ api.RegisterRetailContentModule({
                         title = "Dalaran",
                     },
                     title = "Northrend dungeons tied to Dalaran",
+                },
+                {
+                    kind = "Daily",
+                    location = {
+                        mapID = 125,
+                        title = "Dalaran",
+                    },
+                    title = "Dalaran daily quests and dungeon tasks",
                 },
             },
             confidence = "medium",
@@ -134,6 +150,14 @@ api.RegisterRetailContentModule({
                         title = "Ulduar",
                     },
                     title = "Ulduar",
+                },
+                {
+                    kind = "Daily",
+                    location = {
+                        mapID = 118,
+                        title = "The Shadow Vault",
+                    },
+                    title = "Shadow Vault dailies",
                 },
             },
             confidence = "medium",
@@ -205,6 +229,14 @@ api.RegisterRetailContentModule({
                     },
                     title = "Questlines in Icecrown",
                 },
+                {
+                    kind = "Daily",
+                    location = {
+                        mapID = 118,
+                        title = "Icecrown",
+                    },
+                    title = "Icecrown crusade dailies",
+                },
             },
             confidence = "medium",
             quartermasters = {
@@ -229,6 +261,14 @@ api.RegisterRetailContentModule({
                         title = "The Storm Peaks",
                     },
                     title = "K3 and Storm Peaks questlines",
+                },
+                {
+                    kind = "Daily",
+                    location = {
+                        mapID = 120,
+                        title = "Dun Niffelem",
+                    },
+                    title = "Sons of Hodir dailies and relic turn-ins",
                 },
             },
             confidence = "medium",
