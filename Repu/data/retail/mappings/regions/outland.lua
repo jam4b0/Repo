@@ -33,7 +33,7 @@ ns.Data:RegisterRetailModule({
                 notes = "Retail legacy zone cluster",
                 mapIDs = { 108 },
                 tags = { "zone", "local" },
-                factionIDs = { 1011, 935 },
+                factionIDs = { 1011, 935, 932, 934, 1031 },
                 weight = 240,
             },
             [102] = {
@@ -53,7 +53,7 @@ ns.Data:RegisterRetailModule({
                 notes = "Sha'tar and Consortium cluster",
                 mapIDs = { 104 },
                 tags = { "zone", "local", "outland" },
-                factionIDs = { 935, 933 },
+                factionIDs = { 935, 933, 932, 934 },
                 weight = 245,
             },
             [105] = {
@@ -63,7 +63,7 @@ ns.Data:RegisterRetailModule({
                 notes = "Ashtongue and Scryers/Aldor cluster",
                 mapIDs = { 105 },
                 tags = { "zone", "local", "outland" },
-                factionIDs = { 1012, 1416, 932, 934 },
+                factionIDs = { 1015, 1012, 1416, 932, 934 },
                 weight = 240,
             },
             [107] = {
@@ -201,6 +201,19 @@ ns.Data:RegisterRetailModule({
                 tags = { "primary", "hub", "local", "outland", "suppress-zone-fallback" },
                 factions = {
                     { factionID = 970, weight = 260 },
+                },
+            },
+            ["108:skettis"] = {
+                name = "Skettis",
+                parentMapID = 108,
+                source = "curated",
+                confidence = "medium",
+                notes = "Sha'tari Skyguard hub in Terokkar Forest.",
+                mapIDs = { 108 },
+                subZoneKeys = { "Skettis" },
+                tags = { "primary", "hub", "local", "outland", "suppress-zone-fallback" },
+                factions = {
+                    { factionID = 1031, weight = 260 },
                 },
             },
             ["100:honor-hold"] = {
