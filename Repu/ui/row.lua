@@ -23,6 +23,8 @@ end
 function ns.UI:CreateRow(parent, index)
     local profile = ns.State:GetProfile()
     local row = CreateFrame("Button", nil, parent, BackdropTemplateMixin and "BackdropTemplate")
+    row.owner = parent
+    row.index = index
     row:SetHeight(profile.rowHeight)
     row:SetPoint("TOPLEFT", parent, "TOPLEFT", 8, -24 - ((index - 1) * (profile.rowHeight + 3)))
     row:SetPoint("TOPRIGHT", parent, "TOPRIGHT", -8, -24 - ((index - 1) * (profile.rowHeight + 3)))
@@ -108,8 +110,12 @@ function ns.UI:UpdateRow(row, candidate, isActive, isSelected)
     local isChild = candidate.isChildOfVisibleParent and true or false
     row.nameText:SetText(tostring(faction.name or UNKNOWN))
 
+    row:ClearAllPoints()
+    row:SetPoint("TOPLEFT", row.owner, "TOPLEFT", isChild and 22 or 8, -24 - ((row.index - 1) * (ns.State:GetProfile().rowHeight + 3)))
+    row:SetPoint("TOPRIGHT", row.owner, "TOPRIGHT", -8, -24 - ((row.index - 1) * (ns.State:GetProfile().rowHeight + 3)))
+
     row.bar:ClearAllPoints()
-    row.bar:SetPoint("TOPLEFT", row, "TOPLEFT", isChild and 18 or 4, -4)
+    row.bar:SetPoint("TOPLEFT", row, "TOPLEFT", 4, -4)
     row.bar:SetPoint("BOTTOMRIGHT", row, "BOTTOMRIGHT", -4, 4)
 
     if hasChildren or not isChild then
@@ -121,7 +127,7 @@ function ns.UI:UpdateRow(row, candidate, isActive, isSelected)
     end
 
     row.nameText:ClearAllPoints()
-    row.nameText:SetPoint("LEFT", row.overlay, "LEFT", isChild and 10 or 6, 0)
+    row.nameText:SetPoint("LEFT", row.overlay, "LEFT", isChild and 12 or 6, 0)
     row.nameText:SetPoint("RIGHT", row.valueText, "LEFT", -10, 0)
 
     local valueText = string.format(
