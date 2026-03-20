@@ -692,22 +692,24 @@ function ns.Debug:BuildWindowReport()
 
     do
         local registryRows = collectAddonRegistryDiagnostics()
-        local lines = { "Addon registry" }
+        if #registryRows > 0 then
+            local lines = { "Addon registry" }
 
-        for _, row in ipairs(registryRows) do
-            lines[#lines + 1] = string.format(
-                "  #%s name=%s title=%s canonical=%s loaded=%s memory=%s cpu=%s",
-                tostring(row.index),
-                tostring(row.name),
-                tostring(row.title),
-                tostring(row.canonical),
-                tostring(row.loaded),
-                tostring(formatMemoryKB(row.memoryKB)),
-                row.cpuMS ~= nil and string.format("%.1f ms", row.cpuMS) or Locale:Get("DEBUG_CPU_UNAVAILABLE")
-            )
+            for _, row in ipairs(registryRows) do
+                lines[#lines + 1] = string.format(
+                    "  #%s name=%s title=%s canonical=%s loaded=%s memory=%s cpu=%s",
+                    tostring(row.index),
+                    tostring(row.name),
+                    tostring(row.title),
+                    tostring(row.canonical),
+                    tostring(row.loaded),
+                    tostring(formatMemoryKB(row.memoryKB)),
+                    row.cpuMS ~= nil and string.format("%.1f ms", row.cpuMS) or Locale:Get("DEBUG_CPU_UNAVAILABLE")
+                )
+            end
+
+            sections[#sections + 1] = table.concat(lines, "\n")
         end
-
-        sections[#sections + 1] = table.concat(lines, "\n")
     end
 
     for _, key in ipairs({ "location", "coverage", "candidates", "dump", "factions", "api", "refresh", "status", "test", "unmapped", "mapscan" }) do
