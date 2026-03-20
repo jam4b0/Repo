@@ -1,0 +1,145 @@
+{
+  "summary": {
+    "leave_as_campaign_hub": 1,
+    "leave_as_speculative_midnight": 4,
+    "leave_as_virtual_cluster": 1,
+    "leave_as_raid_or_progression_special": 3,
+    "leave_as_city_or_homeland": 13,
+    "open_standard_gap": 0,
+    "needs_manual_review": 0
+  },
+  "entries": [
+    {
+      "file": "bfa.lua",
+      "factionID": 2157,
+      "classification": "leave_as_campaign_hub",
+      "reason": "War-campaign faction with a strong campaign anchor, not a normal recurring quest hub."
+    },
+    {
+      "file": "midnight.lua",
+      "factionID": 2696,
+      "classification": "leave_as_speculative_midnight",
+      "reason": "Midnight-era faction kept intentionally thin until the expansion data model hardens."
+    },
+    {
+      "file": "midnight.lua",
+      "factionID": 2699,
+      "classification": "leave_as_speculative_midnight",
+      "reason": "Midnight-era faction kept intentionally thin until the expansion data model hardens."
+    },
+    {
+      "file": "midnight.lua",
+      "factionID": 2704,
+      "classification": "leave_as_speculative_midnight",
+      "reason": "Midnight-era faction kept intentionally thin until the expansion data model hardens."
+    },
+    {
+      "file": "midnight.lua",
+      "factionID": 2770,
+      "classification": "leave_as_speculative_midnight",
+      "reason": "Midnight-era side faction kept intentionally thin until the expansion data model hardens."
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 990,
+      "classification": "leave_as_raid_or_progression_special",
+      "reason": "Raid-special reputation; no standard open-world quartermaster or recurring hub loop to model like a normal zone faction."
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 9000111,
+      "classification": "leave_as_virtual_cluster",
+      "reason": "Synthetic Shattrath cluster, not a Blizzard faction with its own quartermaster or recurring loop."
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1359,
+      "classification": "leave_as_raid_or_progression_special",
+      "reason": "Wrathion/Black Prince progression is a special legendary track, not a normal recurring faction loop."
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1492,
+      "classification": "leave_as_raid_or_progression_special",
+      "reason": "Timeless Isle progression faction with unusual repeatable structure; intentionally not modeled as a standard recurring block."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 47,
+      "classification": "leave_as_city_or_homeland",
+      "reason": "Pure homeland/city endpoint by project rule."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 68,
+      "classification": "leave_as_city_or_homeland",
+      "reason": "Pure homeland/city endpoint by project rule."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 69,
+      "classification": "leave_as_city_or_homeland",
+      "reason": "Pure homeland/city endpoint by project rule."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 72,
+      "classification": "leave_as_city_or_homeland",
+      "reason": "Pure homeland/city endpoint by project rule."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 76,
+      "classification": "leave_as_city_or_homeland",
+      "reason": "Pure homeland/city endpoint by project rule."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 81,
+      "classification": "leave_as_city_or_homeland",
+      "reason": "Pure homeland/city endpoint by project rule."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 369,
+      "classification": "leave_as_city_or_homeland",
+      "reason": "Pure homeland/city endpoint by project rule."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 470,
+      "classification": "leave_as_city_or_homeland",
+      "reason": "Pure homeland/city endpoint by project rule."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 530,
+      "classification": "leave_as_city_or_homeland",
+      "reason": "Pure homeland/city endpoint by project rule."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 577,
+      "classification": "leave_as_city_or_homeland",
+      "reason": "Pure homeland/city endpoint by project rule."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 930,
+      "classification": "leave_as_city_or_homeland",
+      "reason": "Pure homeland/city endpoint by project rule."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 1133,
+      "classification": "leave_as_city_or_homeland",
+      "reason": "Pure homeland/city endpoint by project rule."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 1134,
+      "classification": "leave_as_city_or_homeland",
+      "reason": "Pure homeland/city endpoint by project rule."
+    }
+  ]
+}
