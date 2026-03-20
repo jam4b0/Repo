@@ -1,10 +1,10 @@
 {
   "summary": {
     "totalFactions": 152,
-    "withAnyXY": 27,
-    "withQuartermasterXY": 19,
-    "withActivityXY": 27,
-    "withoutAnyXY": 125
+    "withAnyXY": 30,
+    "withQuartermasterXY": 22,
+    "withActivityXY": 30,
+    "withoutAnyXY": 122
   },
   "quartermasterWithoutXY": [
     {
@@ -42,10 +42,6 @@
     {
       "file": "cataclysm.lua",
       "factionID": 1177
-    },
-    {
-      "file": "cataclysm.lua",
-      "factionID": 1178
     },
     {
       "file": "draenor.lua",
@@ -166,14 +162,6 @@
     {
       "file": "outland.lua",
       "factionID": 935
-    },
-    {
-      "file": "outland.lua",
-      "factionID": 941
-    },
-    {
-      "file": "outland.lua",
-      "factionID": 942
     },
     {
       "file": "outland.lua",
@@ -320,10 +308,6 @@
     {
       "file": "cataclysm.lua",
       "factionID": 1177
-    },
-    {
-      "file": "cataclysm.lua",
-      "factionID": 1178
     },
     {
       "file": "cataclysm.lua",
@@ -528,14 +512,6 @@
     {
       "file": "outland.lua",
       "factionID": 935
-    },
-    {
-      "file": "outland.lua",
-      "factionID": 941
-    },
-    {
-      "file": "outland.lua",
-      "factionID": 942
     },
     {
       "file": "outland.lua",
@@ -788,6 +764,10 @@
       "factionID": 1171
     },
     {
+      "file": "cataclysm.lua",
+      "factionID": 1178
+    },
+    {
       "file": "dragonflight.lua",
       "factionID": 2544
     },
@@ -826,6 +806,14 @@
     {
       "file": "midnight.lua",
       "factionID": 2714
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 941
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 942
     },
     {
       "file": "war_within.lua",

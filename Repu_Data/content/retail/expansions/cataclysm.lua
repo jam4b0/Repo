@@ -189,6 +189,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 245,
                         title = "Hellscream's Grasp",
+                        x = 0.545,
+                        y = 0.814,
                     },
                     name = "Pogg",
                 },

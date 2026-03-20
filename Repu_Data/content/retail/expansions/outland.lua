@@ -140,6 +140,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 107,
                         title = "Garadar",
+                        x = 0.534,
+                        y = 0.370,
                     },
                     name = "Provisioner Nasela",
                 },
@@ -173,6 +175,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 102,
                         title = "Cenarion Refuge",
+                        x = 0.790,
+                        y = 0.640,
                     },
                     name = "Fedryen Swiftspear",
                 },
