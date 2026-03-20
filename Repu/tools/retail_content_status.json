@@ -2,9 +2,9 @@
   "summary": {
     "totalSummaries": 151,
     "withQuartermaster": 85,
-    "withRecurring": 87,
-    "thinNoQMNoRecurring": 32,
-    "zoneOnlyShape": 77
+    "withRecurring": 98,
+    "thinNoQMNoRecurring": 22,
+    "zoneOnlyShape": 34
   },
   "remainingThin": [
     {
@@ -15,51 +15,6 @@
       "hasHub": true,
       "hasCampaign": true,
       "hasDungeonOrRaid": false
-    },
-    {
-      "file": "cataclysm.lua",
-      "factionID": 1174,
-      "hasQuartermaster": false,
-      "hasRecurring": false,
-      "hasHub": false,
-      "hasCampaign": false,
-      "hasDungeonOrRaid": false
-    },
-    {
-      "file": "cataclysm.lua",
-      "factionID": 2417,
-      "hasQuartermaster": false,
-      "hasRecurring": false,
-      "hasHub": false,
-      "hasCampaign": false,
-      "hasDungeonOrRaid": false
-    },
-    {
-      "file": "draenor.lua",
-      "factionID": 1515,
-      "hasQuartermaster": false,
-      "hasRecurring": false,
-      "hasHub": false,
-      "hasCampaign": false,
-      "hasDungeonOrRaid": false
-    },
-    {
-      "file": "draenor.lua",
-      "factionID": 1710,
-      "hasQuartermaster": false,
-      "hasRecurring": false,
-      "hasHub": true,
-      "hasCampaign": false,
-      "hasDungeonOrRaid": false
-    },
-    {
-      "file": "draenor.lua",
-      "factionID": 1848,
-      "hasQuartermaster": false,
-      "hasRecurring": false,
-      "hasHub": false,
-      "hasCampaign": false,
-      "hasDungeonOrRaid": true
     },
     {
       "file": "midnight.lua",
@@ -98,60 +53,6 @@
       "hasDungeonOrRaid": false
     },
     {
-      "file": "northrend.lua",
-      "factionID": 1067,
-      "hasQuartermaster": false,
-      "hasRecurring": false,
-      "hasHub": false,
-      "hasCampaign": false,
-      "hasDungeonOrRaid": false
-    },
-    {
-      "file": "northrend.lua",
-      "factionID": 1068,
-      "hasQuartermaster": false,
-      "hasRecurring": false,
-      "hasHub": false,
-      "hasCampaign": false,
-      "hasDungeonOrRaid": false
-    },
-    {
-      "file": "northrend.lua",
-      "factionID": 1104,
-      "hasQuartermaster": false,
-      "hasRecurring": false,
-      "hasHub": false,
-      "hasCampaign": false,
-      "hasDungeonOrRaid": false
-    },
-    {
-      "file": "northrend.lua",
-      "factionID": 1105,
-      "hasQuartermaster": false,
-      "hasRecurring": false,
-      "hasHub": false,
-      "hasCampaign": false,
-      "hasDungeonOrRaid": true
-    },
-    {
-      "file": "northrend.lua",
-      "factionID": 1124,
-      "hasQuartermaster": false,
-      "hasRecurring": false,
-      "hasHub": false,
-      "hasCampaign": false,
-      "hasDungeonOrRaid": true
-    },
-    {
-      "file": "northrend.lua",
-      "factionID": 1126,
-      "hasQuartermaster": false,
-      "hasRecurring": false,
-      "hasHub": false,
-      "hasCampaign": false,
-      "hasDungeonOrRaid": false
-    },
-    {
       "file": "outland.lua",
       "factionID": 990,
       "hasQuartermaster": false,
@@ -159,6 +60,15 @@
       "hasHub": false,
       "hasCampaign": false,
       "hasDungeonOrRaid": true
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 9000111,
+      "hasQuartermaster": false,
+      "hasRecurring": false,
+      "hasHub": false,
+      "hasCampaign": false,
+      "hasDungeonOrRaid": false
     },
     {
       "file": "pandaria.lua",
