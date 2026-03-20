@@ -130,6 +130,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 376,
                         title = "Halfhill",
+                        x = 0.532,
+                        y = 0.518,
                     },
                     name = "Gina Mudclaw",
                 },

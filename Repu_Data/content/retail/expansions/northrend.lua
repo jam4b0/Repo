@@ -276,6 +276,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 118,
                         title = "Argent Vanguard",
+                        x = 0.875,
+                        y = 0.756,
                     },
                     name = "Veteran Crusader Aliocha Segard",
                 },

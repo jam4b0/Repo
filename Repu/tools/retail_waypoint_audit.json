@@ -1,10 +1,10 @@
 {
   "summary": {
     "totalFactions": 152,
-    "withAnyXY": 57,
-    "withQuartermasterXY": 49,
-    "withActivityXY": 57,
-    "withoutAnyXY": 95
+    "withAnyXY": 59,
+    "withQuartermasterXY": 51,
+    "withActivityXY": 59,
+    "withoutAnyXY": 93
   },
   "quartermasterWithoutXY": [
     {
@@ -77,10 +77,6 @@
     },
     {
       "file": "northrend.lua",
-      "factionID": 1106
-    },
-    {
-      "file": "northrend.lua",
       "factionID": 1156
     },
     {
@@ -110,10 +106,6 @@
     {
       "file": "pandaria.lua",
       "factionID": 1271
-    },
-    {
-      "file": "pandaria.lua",
-      "factionID": 1272
     },
     {
       "file": "shadowlands.lua",
@@ -311,10 +303,6 @@
     },
     {
       "file": "northrend.lua",
-      "factionID": 1106
-    },
-    {
-      "file": "northrend.lua",
       "factionID": 1124
     },
     {
@@ -372,10 +360,6 @@
     {
       "file": "pandaria.lua",
       "factionID": 1271
-    },
-    {
-      "file": "pandaria.lua",
-      "factionID": 1272
     },
     {
       "file": "pandaria.lua",
@@ -653,6 +637,10 @@
     },
     {
       "file": "northrend.lua",
+      "factionID": 1106
+    },
+    {
+      "file": "northrend.lua",
       "factionID": 1119
     },
     {
@@ -698,6 +686,10 @@
     {
       "file": "pandaria.lua",
       "factionID": 1270
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1272
     },
     {
       "file": "pandaria.lua",
