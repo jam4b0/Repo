@@ -41,6 +41,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 242,
+                        title = "Blackrock Depths",
+                    },
+                    name = "Lokhtos Darkbargainer",
+                },
+            },
             source = "curated",
             summary = "The dwarves of the Thorium Brotherhood epitomize excellence in craftsmanship and are bent on unlocking the secrets of Blackrock Mountain.",
         },

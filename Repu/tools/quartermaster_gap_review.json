@@ -1,0 +1,481 @@
+{
+  "summary": {
+    "leave_empty_on_purpose": 35,
+    "modeled_true_quartermaster": 1,
+    "vendor_but_not_classic_quartermaster": 30,
+    "leave_empty_on_purpose": 35,
+    "true_quartermaster_candidate": 0,
+    "needs_manual_review": 0
+  },
+  "rows": [
+    {
+      "file": "bfa.lua",
+      "factionID": 2157,
+      "summary": "A special delegation of the Horde army, focused on disrupting Alliance operations in Kul Tiras.",
+      "classification": "leave_empty_on_purpose",
+      "reason": "The Honorbound is better treated as war-campaign content than a localized quartermaster faction."
+    },
+    {
+      "file": "bfa.lua",
+      "factionID": 2395,
+      "summary": "A species of bee known for their unusual size. While newcomers to Stormsong Valley, they quickly mad",
+      "classification": "leave_empty_on_purpose",
+      "reason": "Honeyback Hive is a side reputation without a strong quartermaster identity."
+    },
+    {
+      "file": "cataclysm.lua",
+      "factionID": 1174,
+      "summary": "The Wildhammer dwarves are known for their near-reckless courage as well as their unsurpassed grypho",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "Wildhammer Clan has reward vendors in Twilight Highlands, but not a strong enough quartermaster anchor to encode here without overfitting."
+    },
+    {
+      "file": "cataclysm.lua",
+      "factionID": 2417,
+      "summary": "A loose coalition of allies headed by the Tol'vir, the Uldum Accord was founded to protect the Forge",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "Uldum Accord is patch-assault style content with vendors, but not a clean classic quartermaster anchor for this data model."
+    },
+    {
+      "file": "draenor.lua",
+      "factionID": 1515,
+      "summary": "Working from the shadows, the Arakkoa Outcasts seek to bring a brighter tomorrow.",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "Arakkoa Outcasts has reward vendors, but the role is less canonical than a classic quartermaster NPC."
+    },
+    {
+      "file": "draenor.lua",
+      "factionID": 1710,
+      "summary": "The defenders of Shattrath struggle to regain control of their capital city, having been betrayed fr",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "Sha'tari Defense rewards are tied to the Shattrath campaign hub rather than a strong classic quartermaster anchor."
+    },
+    {
+      "file": "draenor.lua",
+      "factionID": 1848,
+      "summary": "Seeking to protect Azeroth with a decisive victory on Draenor, Warchief Vol'jin is assembling an eli",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "Vol'jin's Headhunters uses Tanaan reward vendors, but not a strong classic quartermaster presentation."
+    },
+    {
+      "file": "dragonflight.lua",
+      "factionID": 2135,
+      "summary": "Chronormu (Chromie for short) has always been one of the more active, approachable bronze dragons. S",
+      "classification": "leave_empty_on_purpose",
+      "reason": "Chromie is a system-style reputation line, not a normal quartermaster faction."
+    },
+    {
+      "file": "dragonflight.lua",
+      "factionID": 2517,
+      "summary": "Long focused on protecting Azeroth, Wrathion's gaze has now turned to the future of the black dragon",
+      "classification": "leave_empty_on_purpose",
+      "reason": "Wrathion is a side reputation without a classic quartermaster vendor."
+    },
+    {
+      "file": "dragonflight.lua",
+      "factionID": 2518,
+      "summary": "Sabellian has established a new generation of uncorrupt black dragons, and works to protect it at al",
+      "classification": "leave_empty_on_purpose",
+      "reason": "Sabellian is a side reputation without a classic quartermaster vendor."
+    },
+    {
+      "file": "dragonflight.lua",
+      "factionID": 2523,
+      "summary": "Led by the brave Scalecommander Cindrethresh, the Dark Talons were trained to be the secret weapon o",
+      "classification": "leave_empty_on_purpose",
+      "reason": "Dark Talons is a side subfaction, not a classic quartermaster faction."
+    },
+    {
+      "file": "dragonflight.lua",
+      "factionID": 2524,
+      "summary": "Led by the stalwart Scalecommander Azurathel, the Obsidian Warders were trained to be the shield of ",
+      "classification": "leave_empty_on_purpose",
+      "reason": "Obsidian Warders is a side subfaction, not a classic quartermaster faction."
+    },
+    {
+      "file": "dragonflight.lua",
+      "factionID": 2526,
+      "summary": "The Winterpelt Furbolg speak a language no one seems to understand. Perhaps more will be revealed in",
+      "classification": "leave_empty_on_purpose",
+      "reason": "Winterpelt Furbolg is language/progression driven, not a quartermaster-centered faction."
+    },
+    {
+      "file": "dragonflight.lua",
+      "factionID": 2550,
+      "summary": "The Cobalt Assembly was once a place where blue dragons would conjure marvelous creations with arcan",
+      "classification": "leave_empty_on_purpose",
+      "reason": "Cobalt Assembly rewards are progression-based rather than a stable quartermaster loop."
+    },
+    {
+      "file": "midnight.lua",
+      "factionID": 2696,
+      "summary": "The Amani conquered and claimed the majority of Eastern Kingdoms for thousands of years, but were fo",
+      "classification": "leave_empty_on_purpose",
+      "reason": "Midnight data is still too new/speculative for hard quartermaster assignment."
+    },
+    {
+      "file": "midnight.lua",
+      "factionID": 2699,
+      "summary": "In the vortex of terror and violence that is the Voidstorm, few have the mettle to survive. The Sing",
+      "classification": "leave_empty_on_purpose",
+      "reason": "Midnight data is still too new/speculative for hard quartermaster assignment."
+    },
+    {
+      "file": "midnight.lua",
+      "factionID": 2704,
+      "summary": "Called to Harandar by the echo of their Goddess' song, the Hara'ti watch over her cradle in hopes th",
+      "classification": "leave_empty_on_purpose",
+      "reason": "Midnight data is still too new/speculative for hard quartermaster assignment."
+    },
+    {
+      "file": "midnight.lua",
+      "factionID": 2770,
+      "summary": "Deep within the Voidstorm, the war between Vidious and Ziadan rages on.",
+      "classification": "leave_empty_on_purpose",
+      "reason": "Midnight side track is not a normal quartermaster faction."
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1067,
+      "summary": "The Forsaken tasked by Sylvanas Windrunner with enacting Undercity's vengeance against Arthas by del",
+      "classification": "leave_empty_on_purpose",
+      "reason": "Hand of Vengeance is a military/campaign faction without a strong localized quartermaster anchor in retail."
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1068,
+      "summary": "This organization seeks to find the origin of the dwarven race by collecting Titan artifacts.  Their",
+      "classification": "leave_empty_on_purpose",
+      "reason": "Explorers' League spans multiple hubs and lacks a single clean quartermaster anchor for this model."
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1104,
+      "summary": "Driven from their lands by the Scourge, this fierce tribe of wolvar stumbled upon Sholazar Basin, wh",
+      "classification": "leave_empty_on_purpose",
+      "reason": "Frenzyheart rewards are oracle/frenzyheart choice content rather than a stable quartermaster anchor."
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1105,
+      "summary": "The gorlocs of Sholazar Basin are a race of reptilian creatures who see themselves as guardians of t",
+      "classification": "leave_empty_on_purpose",
+      "reason": "The Oracles rewards are oracle/frenzyheart choice content rather than a stable quartermaster anchor."
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1124,
+      "summary": "Traditionally barred from Dalaran, the Horde has been accepted into the city through the efforts of ",
+      "classification": "leave_empty_on_purpose",
+      "reason": "The Sunreavers are represented through Dalaran and side-content rather than a clean quartermaster loop in this model."
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1126,
+      "summary": "This mysterious race of frost dwarves makes their home in the Storm Peaks.  They've recently befrien",
+      "classification": "leave_empty_on_purpose",
+      "reason": "The Frostborn are a side alliance subgroup without a strong classic quartermaster anchor."
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 990,
+      "summary": "A secretive subgroup of the Bronze Dragonflight, led by Soridormi, prime mate of Nozdormu.",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "The Scale of the Sands uses Hyjal Summit reward vendors, but is better treated as raid reward content."
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 1038,
+      "summary": "The enlightened denizens of Ogri'la have made their dwelling in the western Blade's Edge Mountains, ",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "Ogri'la has apexis-style vendors, but not a strong quartermaster identity to model here."
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 1077,
+      "summary": "Shattrath City's final push against Prince Kael'thas' operations in the Sunwell.",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "Shattered Sun Offensive uses patch hub vendors, but is better treated as campaign reward content."
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 1416,
+      "summary": "Akama is distrustful of Warlocks after witnessing Illidan's fall to his own corruption, followed by ",
+      "classification": "leave_empty_on_purpose",
+      "reason": "Akama's Trust is a narrow Black Temple side track without a classic quartermaster loop."
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1359,
+      "summary": "Black Prince Wrathion is the last of the black dragons. He has been known to richly reward those who",
+      "classification": "leave_empty_on_purpose",
+      "reason": "The Black Prince progression does not map cleanly to a normal quartermaster."
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1375,
+      "summary": "Horde forces in Pandaria, stationed at Domination Point in Krasarang Wilds.",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "Dominance Offensive uses patch hub vendors, but is better treated as a campaign reward faction."
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1376,
+      "summary": "Alliance forces in Pandaria, stationed at Lion's Landing in Krasarang Wilds.",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "Operation: Shieldwall uses patch hub vendors, but is better treated as a campaign reward faction."
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1387,
+      "summary": "Ignited by Jaina's fury, the Kirin Tor Offensive seek to seize Thunder Isle for the glory of the All",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "Kirin Tor Offensive uses patch hub vendors, but is better treated as a campaign reward faction."
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1388,
+      "summary": "Outcast from Dalaran, the Sunreaver Onslaught fight to obtain powerful mogu artifacts from among the",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "Sunreaver Onslaught uses patch hub vendors, but is better treated as a campaign reward faction."
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1435,
+      "summary": "These valorous Shado-Pan venture into the Throne of Thunder to vanquish the evil found within, and e",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "Shado-Pan Assault rewards are raid/patched-hub based, not a normal quartermaster loop."
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1492,
+      "summary": "Shaohao, the long lost Emperor of the Pandaren people, is a personage worthy of deep respect.",
+      "classification": "leave_empty_on_purpose",
+      "reason": "Emperor Shaohao rewards are Timeless Isle progression, not a classic quartermaster faction."
+    },
+    {
+      "file": "shadowlands.lua",
+      "factionID": 2464,
+      "summary": "The anima drought and Drust invasion consume the Winter Queen and Wild Hunt's attention, leaving the",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "Court of Night rewards exist, but the faction is side-feature oriented rather than a clean quartermaster faction."
+    },
+    {
+      "file": "shadowlands.lua",
+      "factionID": 2470,
+      "summary": "The combined might of the Shadowlands covenants, brought forth to breach the Sanctum of Domination.",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "Death's Advance is Korthia/Zereth style patch content with vendors, but not a clean classic quartermaster model."
+    },
+    {
+      "file": "war_within.lua",
+      "factionID": 2601,
+      "summary": "Once the Royal Weaver, the Widow Arak'nai now carefully watches her former home with a critical eye.",
+      "classification": "leave_empty_on_purpose",
+      "reason": "The Weaver is a subfaction/persona track, not a quartermaster faction."
+    },
+    {
+      "file": "war_within.lua",
+      "factionID": 2605,
+      "summary": "Once the most renowned military leader in Azj-Kahet, Anub'azal has been passed over in favor of one ",
+      "classification": "leave_empty_on_purpose",
+      "reason": "The General is a subfaction/persona track, not a quartermaster faction."
+    },
+    {
+      "file": "war_within.lua",
+      "factionID": 2607,
+      "summary": "Perched in the most dangerous position of all, Executor Nizrek spends his days as Queen Ansurek's mo",
+      "classification": "leave_empty_on_purpose",
+      "reason": "The Vizier is a subfaction/persona track, not a quartermaster faction."
+    },
+    {
+      "file": "war_within.lua",
+      "factionID": 2658,
+      "summary": "The K'aresh Trust unites brokers, ethereals, and allied survivors trying to stabilize a shattered wo",
+      "classification": "leave_empty_on_purpose",
+      "reason": "The K'aresh Trust currently reads more as a story/hub faction than a settled quartermaster loop."
+    },
+    {
+      "file": "war_within.lua",
+      "factionID": 2671,
+      "summary": "Venture Company doesn't have the best rep in town, but no one harvests, mines, or drills faster. You",
+      "classification": "leave_empty_on_purpose",
+      "reason": "Venture Company cartel track is not a classic quartermaster faction."
+    },
+    {
+      "file": "war_within.lua",
+      "factionID": 2673,
+      "summary": "The Bilgewater Cartel has had more ups and downs than most, but no one can build and invent like the",
+      "classification": "leave_empty_on_purpose",
+      "reason": "Bilgewater Cartel cartel track is not a classic quartermaster faction."
+    },
+    {
+      "file": "war_within.lua",
+      "factionID": 2675,
+      "summary": "Blackwater Cartel is new to the cart, formerly plying the seas as pirates. But they are already maki",
+      "classification": "leave_empty_on_purpose",
+      "reason": "Blackwater Cartel cartel track is not a classic quartermaster faction."
+    },
+    {
+      "file": "war_within.lua",
+      "factionID": 2677,
+      "summary": "Steamwheedle may be the oldest and largest cartel in Undermine. They have had their hands in almost ",
+      "classification": "leave_empty_on_purpose",
+      "reason": "Steamwheedle Cartel cartel track is not a classic quartermaster faction."
+    },
+    {
+      "file": "war_within.lua",
+      "factionID": 2685,
+      "summary": "The Gallagio Loyalty Rewards Club covers hospitality and service work tied to the Gallagio's future ",
+      "classification": "leave_empty_on_purpose",
+      "reason": "Gallagio Loyalty Rewards Club is a hospitality/rewards track, not a quartermaster faction."
+    },
+    {
+      "file": "war_within.lua",
+      "factionID": 2736,
+      "summary": "While the K'aresh Trust works to unite the people of their dying star, some members prefer a more di",
+      "classification": "leave_empty_on_purpose",
+      "reason": "Manaforge Vandals is a side branch, not a classic quartermaster faction."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 47,
+      "summary": "This Alliance capital is the pride of the Dun Morogh dwarves.  Home to King Magni.",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "Home city quartermasters exist historically, but are not consistent enough for the current clean data model."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 59,
+      "summary": "The dwarves of the Thorium Brotherhood epitomize excellence in craftsmanship and are bent on unlocki",
+      "classification": "modeled_true_quartermaster",
+      "reason": "Lokhtos Darkbargainer is now modeled as the stable Thorium Brotherhood quartermaster."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 68,
+      "summary": "Led by Sylvanas Windrunner, the Forsaken have joined a tenuous alliance with the Horde and establish",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "Home city quartermasters exist historically, but are not consistent enough for the current clean data model."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 69,
+      "summary": "This Alliance capital is populated by Night Elves and is located in the Island of Teldrassil.  Ruled",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "Home city quartermasters exist historically, but are not consistent enough for the current clean data model."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 72,
+      "summary": "One of the last bastions of human power, this Alliance capital is ruled by the young but wise king, ",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "Home city quartermasters exist historically, but are not consistent enough for the current clean data model."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 76,
+      "summary": "Founded by Thrall, this Horde capital city is home to many of the proud orc clans of Durotar.",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "Home city quartermasters exist historically, but are not consistent enough for the current clean data model."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 81,
+      "summary": "Baine Bloodhoof leads his people, the proud Tauren, from this mighty Horde capital.",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "Home city quartermasters exist historically, but are not consistent enough for the current clean data model."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 369,
+      "summary": "Capital of the Steamwheedle Cartel and home to goblinhood's finest engineers, alchemists and merchan",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "Neutral goblin towns have vendors, but not clean reputation quartermasters in the modern model."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 470,
+      "summary": "Part of the Steamwheedle Cartel, this goblin city provides a neutral haven for those that wish to tr",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "Neutral goblin towns have vendors, but not clean reputation quartermasters in the modern model."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 529,
+      "summary": "An organization focused on protecting Azeroth from the threat of the Scourge.  Strongholds of the Ar",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "Argent Dawn has reward vendors, but the modern retail presentation is not a clean localized quartermaster anchor."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 530,
+      "summary": "This tribe of exiled trolls has joined forces with Thrall and the Horde.  They now call Durotar thei",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "Darkspear Trolls home-faction vendors are inconsistent as modern quartermaster data."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 576,
+      "summary": "As the last uncorrupted furbolg tribe, the Timbermaw seek to preserve their spiritual ways and end t",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "Timbermaw Hold has reward vendors, but they are not modeled here as a modern localized quartermaster anchor."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 577,
+      "summary": "This trading post is run by the goblins of the Steamwheedle Cartel and it sits in the crossroads of ",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "Neutral goblin towns have vendors, but not clean reputation quartermasters in the modern model."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 609,
+      "summary": "The druids of Cenarion Circle are guardians of nature and make their home in tranquil Moonglade.",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "Cenarion Circle has reward vendors, but the modern retail presentation is not a clean localized quartermaster anchor."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 749,
+      "summary": "These elementals have made their home on the islands east of Azshara.  Sworn enemies of the armies o",
+      "classification": "leave_empty_on_purpose",
+      "reason": "Hydraxian Waterlords is raid/legacy reputation content without a strong modern quartermaster anchor."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 910,
+      "summary": "The descendants of the Bronze Dragonflight are the guardians of time and care little for the mortal ",
+      "classification": "leave_empty_on_purpose",
+      "reason": "Brood of Nozdormu is raid/event reputation content without a stable local quartermaster anchor."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 930,
+      "summary": "The naaru vessel that brought the draenei to Azeroth.  Though stranded in the Azuremyst Isles, it ac",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "The Exodar home-faction vendors are inconsistent as modern quartermaster data."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 1133,
+      "summary": "Run by the ruthless Trade Prince Gallywix, the Bilgewater Cartel is the most powerful trading compan",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "Bilgewater Cartel home-faction vendors are inconsistent as modern quartermaster data."
+    },
+    {
+      "file": "homelands.lua",
+      "factionID": 1134,
+      "summary": "The people of Gilneas are a nation of survivors.  Having walled themselves off from the rest of huma",
+      "classification": "vendor_but_not_classic_quartermaster",
+      "reason": "Gilneas home-faction vendors are inconsistent as modern quartermaster data."
+    },
+    {
+      "file": "neutral_hubs.lua",
+      "factionID": 909,
+      "summary": "A carnival that showcases the weird and the extraordinary, located on a mysterious island only acces",
+      "classification": "leave_empty_on_purpose",
+      "reason": "Darkmoon Faire has many vendors, but not a single clean quartermaster identity to model here."
+    }
+  ]
+}
