@@ -18,6 +18,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 111,
+                        title = "The Aldor Rise",
+                    },
+                    name = "Quartermaster Endarin",
+                },
+            },
             source = "curated",
             summary = "An ancient order of draenei priests once run by Velen, the Aldor are currently led by High Priestess Ishanah.  They are servants of the naaru in Shattrath City known as the Sha'tar.  Rivals of the Scryers.",
         },
@@ -41,6 +51,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 107,
+                        title = "Aeris Landing",
+                    },
+                    name = "Paulsta'ats",
+                },
+            },
             source = "curated",
             summary = "Led by Nexus-Prince Haramad, the Consortium is a loosely affiliated cartel of ethereal smugglers, traders and thieves that has come to Outland to benefit from its riches.",
         },
@@ -56,6 +76,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 111,
+                        title = "Scryer's Tier",
+                    },
+                    name = "Quartermaster Enuril",
+                },
+            },
             source = "curated",
             summary = "Voren'thal the Seer leads the dissident blood elves who've rejected Kael'thas' path to power.  They've joined forces with the naaru of Shattrath City, much to the dismay of the Aldor.",
         },
@@ -71,6 +101,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 111,
+                        title = "Terrace of Light",
+                    },
+                    name = "Almaador",
+                },
+            },
             source = "curated",
             summary = "The Sha'tar are a group of powerful naaru who rule over a rebuilt Shattrath City.  With the help of the Aldor and the Scryers, they lead the battle against Illidan and the Burning Legion.",
         },
@@ -94,6 +134,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 107,
+                        title = "Garadar",
+                    },
+                    name = "Provisioner Nasela",
+                },
+            },
             source = "curated",
             summary = "This reclusive group of brown-skinned orcs has escaped any form of demonic corruption.  They have retained their traditional way of life in the face of great changes in Outland.",
         },
@@ -117,6 +167,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 102,
+                        title = "Cenarion Refuge",
+                    },
+                    name = "Fedryen Swiftspear",
+                },
+            },
             source = "curated",
             summary = "An exploratory force sent to Outland by the Cenarion Circle to study surviving life forms.  The Cenarion Expedition has quickly gained in size and autonomy since the opening of the Dark Portal.",
         },
@@ -140,6 +200,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 100,
+                        title = "Honor Hold",
+                    },
+                    name = "Logistics Officer Ulrike",
+                },
+            },
             source = "curated",
             summary = "Vestiges of the Sons of Lothar, veterans of the Alliance that first came into Draenor, have steadfastly held on to this Hellfire outpost.  They are now joined by the armies from Stormwind and Ironforge.",
         },
@@ -162,6 +232,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 100,
+                        title = "Thrallmar",
+                    },
+                    name = "Quartermaster Urgronn",
+                },
+            },
             source = "curated",
             summary = "The expedition sent through the Dark Portal by Thrall has built a stronghold in Hellfire Peninsula.  Thrallmar serves as a base of operations for much of the Horde's activities in Outland.",
         },
@@ -185,6 +265,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 102,
+                        title = "Sporeggar",
+                    },
+                    name = "Mycah",
+                },
+            },
             source = "curated",
             summary = "The sporelings are a mostly peaceful race of mushroom-men native to Outland. Their home is located in the southern bogs of Zangarmarsh.",
         },
@@ -208,6 +298,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 107,
+                        title = "Telaar",
+                    },
+                    name = "Trader Narasu",
+                },
+            },
             source = "curated",
             summary = "Draenei for \"redeemed.\"  These Broken have escaped the grasp of their various slavers in Outland and have made their home in Nagrand.  It is there that they seek to rediscover their destiny.",
         },
@@ -258,6 +358,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 111,
+                        title = "Lower City",
+                    },
+                    name = "Nakodu",
+                },
+            },
             source = "curated",
             summary = "The refugees of Shattrath come from diverse backgrounds and races.  Word of helpful deeds spreads quickly among the Denizens of Lower City.",
         },
@@ -303,6 +413,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 105,
+                        title = "Netherwing Ledge",
+                    },
+                    name = "Drake Dealer Hurlunk",
+                },
+            },
             source = "curated",
             summary = "This unusual brood of dragons was spawned from the eggs of Deathwing's black dragonflight, and infused with raw nether-energies.  Now, they seek to find their identity beyond the shadows of their father's destructive heritage.",
         },
@@ -326,6 +446,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 109,
+                        title = "Blackwind Landing",
+                    },
+                    name = "Grella",
+                },
+            },
             source = "curated",
             summary = "An airborne military force created by Shattrath City to deal with the threats that loom in the highest reaches of Outland.",
         },
