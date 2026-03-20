@@ -1,20 +1,29 @@
 ## Interface: 120000, 120001, 120005, 50503, 40402, 30403, 20505, 11508
 ## Title: Repu
-## Notes: Location-aware reputation tracker with shared Retail/Classic architecture.
-## Author: OpenAI Codex
+## Notes: Location-aware reputation tracker for Retail and Classic flavors.
+## Notes-deDE: Standortbasierter Ruftracker fuer Retail- und Classic-Flavors.
+## Author: Jam
 ## Version: 0.1.0
 ## SavedVariables: RepuDB
 ## IconTexture: Interface\Icons\Achievement_Reputation_01
+## X-Repository: https://github.com/jam4b0/Repo
 
+## Core
 core\init.lua
 core\utils.lua
 core\i18n.lua
 core\localization.lua
+
+## Locale
 locales\enUS.lua
 locales\deDE.lua
+
+## State / Compatibility
 core\config.lua
 core\compat.lua
 core\state.lua
+
+## Data
 data\shared.lua
 data\classic.lua
 data\tbc.lua
@@ -53,15 +62,21 @@ data\retail\mappings\regions\midnight.lua
 data\retail\mappings\regions\neutral.lua
 data\retail\variants\catalog.lua
 data\retail.lua
+
+## Logic
 core\location.lua
 core\inference.lua
 core\factions.lua
 core\scoring.lua
 core\content.lua
 core\waypoints.lua
+
+## UI
 ui\styles.lua
 ui\row.lua
 ui\frame.lua
 ui\options.lua
+
+## Debug / Events
 debug\debug.lua
 core\events.lua

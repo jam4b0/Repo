@@ -46,16 +46,8 @@ function ns.UI:CreateRow(parent, index)
     row.overlay:SetFrameLevel(row.bar:GetFrameLevel() + 5)
     row.overlay:EnableMouse(false)
 
-    row.toggleText = row.overlay:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    row.toggleText:SetPoint("LEFT", row.overlay, "LEFT", 8, 0)
-    row.toggleText:SetJustifyH("LEFT")
-    row.toggleText:SetTextColor(unpack(Styles.accentText))
-    row.toggleText:SetShadowOffset(1, -1)
-    row.toggleText:SetShadowColor(0, 0, 0, 0.85)
-    row.toggleText:SetWidth(10)
-
     row.nameText = row.overlay:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-    row.nameText:SetPoint("LEFT", row.toggleText, "RIGHT", 2, 0)
+    row.nameText:SetPoint("LEFT", row.overlay, "LEFT", 10, 0)
     row.nameText:SetJustifyH("LEFT")
     row.nameText:SetTextColor(unpack(Styles.text))
     row.nameText:SetShadowOffset(1, -1)
@@ -88,11 +80,7 @@ function ns.UI:CreateRow(parent, index)
 
     row:SetScript("OnClick", function(self)
         if self.candidate then
-            local cursorX = GetCursorPosition()
-            local scale = self:GetEffectiveScale()
-            local left = self:GetLeft() or 0
-            local localX = (cursorX / scale) - left
-            ns.UI:HandleRowClick(self.candidate, localX)
+            ns.UI:HandleRowClick(self.candidate)
         end
     end)
 
@@ -118,22 +106,16 @@ function ns.UI:UpdateRow(row, candidate, isActive, isSelected)
     row.isSelected = isSelected and true or false
 
     local hasChildren = candidate.hasKnownChildren and true or false
-    local isExpanded = candidate.isExpanded and true or false
-    if hasChildren then
-        row.toggleText:SetText(isExpanded and "-" or "+")
+    local isChild = candidate.isChildOfVisibleParent and true or false
+
+    if hasChildren or not isChild then
         row.nameText:SetFontObject(GameFontNormal)
     else
-        row.toggleText:SetText("")
         row.nameText:SetFontObject(GameFontHighlightSmall)
     end
 
-    if candidate.isChildOfVisibleParent then
-        row.nameText:ClearAllPoints()
-        row.nameText:SetPoint("LEFT", row.overlay, "LEFT", 18, 0)
-    else
-        row.nameText:ClearAllPoints()
-        row.nameText:SetPoint("LEFT", row.toggleText, "RIGHT", 2, 0)
-    end
+    row.nameText:ClearAllPoints()
+    row.nameText:SetPoint("LEFT", row.overlay, "LEFT", isChild and 22 or 10, 0)
     row.nameText:SetPoint("RIGHT", row.valueText, "LEFT", -10, 0)
 
     local valueText = string.format(

@@ -15,6 +15,7 @@ local defaults = {
         width = 320,
         rowHeight = 22,
         debug = false,
+        showDebugWindow = false,
         hideInCombat = false,
         showMinimapButton = true,
         showQuartermasters = true,

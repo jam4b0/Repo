@@ -1,15 +1,22 @@
 ## Interface: 120000, 120001, 120005, 50503, 40402, 30403, 20505, 11508
 ## Title: Repu_Data
-## Notes: Optional content data pack for Repu.
-## Author: OpenAI Codex
+## Notes: Optional content pack for Repu.
+## Notes-deDE: Optionales Inhaltsmodul fuer Repu.
+## Author: Jam
 ## Version: 0.1.0
 ## Dependencies: Repu
+## X-Repository: https://github.com/jam4b0/Repo
 
+## Shared
 content\shared.lua
+
+## Locale
 locales\enUS.lua
 locales\deDE.lua
 locales\content_text_enUS.lua
 locales\content_text_deDE.lua
+
+## Retail Content
 content\retail\summary\generated.lua
 content\retail\families\quelthalas.lua
 content\retail\families\shattrath.lua

@@ -51,7 +51,8 @@ function ns.Debug:IsEnabled()
 end
 
 function ns.Debug:IsCaptureEnabled()
-    return ns.State:GetDebugDB().enabled
+    local profile = ns.State:GetProfile()
+    return profile.debug and ns.State:GetDebugDB().enabled
 end
 
 function ns.Debug:Log(message)
@@ -180,12 +181,14 @@ function ns.Debug:CaptureSnapshot(reason, force)
 end
 
 function ns.Debug:SetSweepMode(enabled)
+    local profile = ns.State:GetProfile()
     local debugDB = ns.State:GetDebugDB()
+    profile.debug = true
+    profile.showDebugWindow = true
     debugDB.sweepMode = enabled and true or false
     debugDB.enabled = true
     debugDB.autoCapture = true
     debugDB.maxCaptures = enabled and (debugDB.sweepMaxCaptures or 2000) or (debugDB.defaultMaxCaptures or 200)
-    debugDB.forceWindowVisible = true
     self:CreateWindow()
     self:RefreshWindow()
     printLine(enabled and "Sweep mode enabled" or "Sweep mode disabled")
@@ -204,7 +207,7 @@ function ns.Debug:CreateWindow()
     end
 
     local frame = CreateFrame("Frame", "RepuDebugWindow", UIParent, BackdropTemplateMixin and "BackdropTemplate")
-    frame:SetSize(640, 400)
+    frame:SetSize(700, 430)
     frame:SetPoint("TOP", UIParent, "TOP", 0, -120)
     frame:SetMovable(true)
     frame:EnableMouse(true)
@@ -233,16 +236,44 @@ function ns.Debug:CreateWindow()
     frame.title:SetPoint("TOPLEFT", frame, "TOPLEFT", 10, -8)
     frame.title:SetText(Locale:Get("DEBUG_WINDOW_TITLE"))
 
-    frame.text = frame:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    frame.text:SetPoint("TOPLEFT", frame, "TOPLEFT", 10, -28)
-    frame.text:SetPoint("RIGHT", frame, "RIGHT", -10, 0)
-    frame.text:SetHeight(164)
-    frame.text:SetJustifyH("LEFT")
-    frame.text:SetJustifyV("TOP")
+    frame.subtitle = frame:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    frame.subtitle:SetPoint("TOPLEFT", frame.title, "BOTTOMLEFT", 0, -6)
+    frame.subtitle:SetPoint("RIGHT", frame, "RIGHT", -10, 0)
+    frame.subtitle:SetJustifyH("LEFT")
+    frame.subtitle:SetText(Locale:Get("DEBUG_WINDOW_SUBTITLE"))
+
+    frame.status = frame:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    frame.status:SetPoint("TOPLEFT", frame.subtitle, "BOTTOMLEFT", 0, -10)
+    frame.status:SetPoint("RIGHT", frame, "RIGHT", -10, 0)
+    frame.status:SetJustifyH("LEFT")
+
+    frame.outputScroll = CreateFrame("ScrollFrame", nil, frame, "UIPanelScrollFrameTemplate")
+    frame.outputScroll:SetPoint("TOPLEFT", frame.status, "BOTTOMLEFT", 0, -12)
+    frame.outputScroll:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -28, -74)
+    frame.outputScroll:SetPoint("BOTTOM", frame, "BOTTOM", 0, 72)
+
+    frame.output = CreateFrame("EditBox", nil, frame.outputScroll)
+    frame.output:SetMultiLine(true)
+    frame.output:SetAutoFocus(false)
+    frame.output:SetFontObject(ChatFontNormal)
+    frame.output:SetWidth(640)
+    frame.output:SetTextInsets(0, 0, 0, 0)
+    frame.output:SetJustifyH("LEFT")
+    frame.output:SetScript("OnTextChanged", function(self)
+        self:SetHeight(math.max(1, self:GetStringHeight() + 16))
+    end)
+    frame.output:SetScript("OnEscapePressed", function(self)
+        self:ClearFocus()
+    end)
+    frame.outputScroll:SetScrollChild(frame.output)
+
+    frame.actionsLabel = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+    frame.actionsLabel:SetPoint("BOTTOMLEFT", frame, "BOTTOMLEFT", 10, 54)
+    frame.actionsLabel:SetText(Locale:Get("DEBUG_ACTIONS"))
 
     frame.buttonRow = CreateFrame("Frame", nil, frame)
-    frame.buttonRow:SetPoint("BOTTOMLEFT", frame, "BOTTOMLEFT", 10, 12)
-    frame.buttonRow:SetSize(620, 228)
+    frame.buttonRow:SetPoint("BOTTOMLEFT", frame, "BOTTOMLEFT", 10, 14)
+    frame.buttonRow:SetSize(680, 56)
 
     frame.enableButton = createButton(frame.buttonRow, Locale:Get("DEBUG_CAPTURE_ON"), 90, function()
         local debugDB = ns.State:GetDebugDB()
@@ -266,91 +297,6 @@ function ns.Debug:CreateWindow()
     end)
     placeButton(frame.captureNowButton, frame.buttonRow, 196, 0)
 
-    frame.sweepOnButton = createButton(frame.buttonRow, Locale:Get("DEBUG_SWEEP_ON"), 84, function()
-        ns.Debug:SetSweepMode(true)
-    end)
-    placeButton(frame.sweepOnButton, frame.buttonRow, 314, 0)
-
-    frame.sweepOffButton = createButton(frame.buttonRow, Locale:Get("DEBUG_SWEEP_OFF"), 84, function()
-        ns.Debug:SetSweepMode(false)
-    end)
-    placeButton(frame.sweepOffButton, frame.buttonRow, 406, 0)
-
-    frame.clearButton = createButton(frame.buttonRow, Locale:Get("DEBUG_CLEAR"), 80, function()
-        ns.Debug:ClearCaptures()
-        printLine(Locale:Get("DEBUG_CAPTURES_CLEARED"))
-    end)
-    placeButton(frame.clearButton, frame.buttonRow, 0, -32)
-
-    frame.dumpButton = createButton(frame.buttonRow, Locale:Get("DEBUG_DUMP"), 80, function()
-        ns.Debug:DumpState()
-    end)
-    placeButton(frame.dumpButton, frame.buttonRow, 88, -32)
-
-    frame.statusButton = createButton(frame.buttonRow, Locale:Get("DEBUG_STATUS"), 80, function()
-        local debugDB = ns.State:GetDebugDB()
-        ns.Debug:SetLastDiagnostic("status", {
-            enabled = debugDB.enabled,
-            sweepMode = debugDB.sweepMode,
-            stored = #(debugDB.captures or {}),
-            maxCaptures = debugDB.maxCaptures or 200,
-        })
-        printLine(Locale:Format("DEBUG_CAPTURE_STATUS_SHORT", tostring(debugDB.enabled), tostring(#(debugDB.captures or {}))))
-    end)
-    placeButton(frame.statusButton, frame.buttonRow, 176, -32)
-
-    frame.reloadButton = createButton(frame.buttonRow, Locale:Get("DEBUG_RELOAD"), 90, function()
-        ReloadUI()
-    end)
-    placeButton(frame.reloadButton, frame.buttonRow, 264, -32)
-
-    frame.mapScanRunButton = createButton(frame.buttonRow, Locale:Get("DEBUG_MAPSCAN_RUN"), 120, function()
-        ns.Debug:RunMapScan()
-        ns.Debug:RefreshWindow()
-    end)
-    placeButton(frame.mapScanRunButton, frame.buttonRow, 0, -64)
-
-    frame.mapScanStatusButton = createButton(frame.buttonRow, Locale:Get("DEBUG_MAPSCAN_STATUS"), 138, function()
-        ns.Debug:DumpMapScanStatus()
-    end)
-    placeButton(frame.mapScanStatusButton, frame.buttonRow, 128, -64)
-
-    frame.mapScanClearButton = createButton(frame.buttonRow, Locale:Get("DEBUG_MAPSCAN_CLEAR"), 124, function()
-        ns.Debug:ClearMapScan()
-        ns.Debug:RefreshWindow()
-    end)
-    placeButton(frame.mapScanClearButton, frame.buttonRow, 274, -64)
-
-    frame.locationButton = createButton(frame.buttonRow, Locale:Get("DEBUG_LOCATION"), 90, function()
-        ns.Debug:DumpLocation()
-    end)
-    placeButton(frame.locationButton, frame.buttonRow, 0, -96)
-
-    frame.unmappedButton = createButton(frame.buttonRow, Locale:Get("DEBUG_UNMAPPED"), 90, function()
-        ns.Debug:DumpUnmapped()
-    end)
-    placeButton(frame.unmappedButton, frame.buttonRow, 98, -96)
-
-    frame.apiButton = createButton(frame.buttonRow, Locale:Get("DEBUG_API"), 72, function()
-        ns.Debug:DumpAPI()
-    end)
-    placeButton(frame.apiButton, frame.buttonRow, 196, -96)
-
-    frame.coverageButton = createButton(frame.buttonRow, Locale:Get("DEBUG_COVERAGE"), 90, function()
-        ns.Debug:DumpCoverage()
-    end)
-    placeButton(frame.coverageButton, frame.buttonRow, 276, -96)
-
-    frame.candidatesButton = createButton(frame.buttonRow, Locale:Get("DEBUG_CANDIDATES"), 90, function()
-        ns.Debug:DumpCandidates(8)
-    end)
-    placeButton(frame.candidatesButton, frame.buttonRow, 374, -96)
-
-    frame.factionsButton = createButton(frame.buttonRow, Locale:Get("DEBUG_FACTIONS"), 90, function()
-        ns.Debug:DumpFactions(12)
-    end)
-    placeButton(frame.factionsButton, frame.buttonRow, 472, -96)
-
     frame.refreshButton = createButton(frame.buttonRow, Locale:Get("DEBUG_REFRESH"), 90, function()
         ns.State:Refresh("BUTTON_REFRESH")
         ns.Debug:SetLastDiagnostic("refresh", {
@@ -360,24 +306,101 @@ function ns.Debug:CreateWindow()
         })
         printLine(Locale:Get("DEBUG_REFRESH_TRIGGERED"))
     end)
-    placeButton(frame.refreshButton, frame.buttonRow, 472, -96)
+    placeButton(frame.refreshButton, frame.buttonRow, 314, 0)
 
-    frame.testButton = createButton(frame.buttonRow, Locale:Get("DEBUG_TEST"), 90, function()
-        ns.State:Refresh("BUTTON_TEST", { forceTest = true })
-        ns.Debug:SetLastDiagnostic("test", {
-            reason = "BUTTON_TEST",
-            context = ns.State.runtime.context,
-            coverage = ns.State.runtime.coverage,
-        })
-        printLine(Locale:Get("DEBUG_TEST_TRIGGERED"))
+    frame.clearButton = createButton(frame.buttonRow, Locale:Get("DEBUG_CLEAR"), 80, function()
+        ns.Debug:ClearCaptures()
+        printLine(Locale:Get("DEBUG_CAPTURES_CLEARED"))
     end)
-    placeButton(frame.testButton, frame.buttonRow, 0, -128)
+    placeButton(frame.clearButton, frame.buttonRow, 412, 0)
 
-    frame.refreshButton:ClearAllPoints()
-    placeButton(frame.refreshButton, frame.buttonRow, 98, -128)
+    frame.dumpButton = createButton(frame.buttonRow, Locale:Get("DEBUG_DUMP"), 80, function()
+        ns.Debug:DumpState()
+    end)
+    placeButton(frame.dumpButton, frame.buttonRow, 500, 0)
+
+    frame.reloadButton = createButton(frame.buttonRow, Locale:Get("DEBUG_RELOAD"), 90, function()
+        ReloadUI()
+    end)
+    placeButton(frame.reloadButton, frame.buttonRow, 588, 0)
+
+    frame.locationButton = createButton(frame.buttonRow, Locale:Get("DEBUG_LOCATION"), 90, function()
+        ns.Debug:DumpLocation()
+    end)
+    placeButton(frame.locationButton, frame.buttonRow, 0, -28)
+
+    frame.unmappedButton = createButton(frame.buttonRow, Locale:Get("DEBUG_UNMAPPED"), 90, function()
+        ns.Debug:DumpUnmapped()
+    end)
+    placeButton(frame.unmappedButton, frame.buttonRow, 98, -28)
+
+    frame.apiButton = createButton(frame.buttonRow, Locale:Get("DEBUG_API"), 72, function()
+        ns.Debug:DumpAPI()
+    end)
+    placeButton(frame.apiButton, frame.buttonRow, 196, -28)
+
+    frame.coverageButton = createButton(frame.buttonRow, Locale:Get("DEBUG_COVERAGE"), 90, function()
+        ns.Debug:DumpCoverage()
+    end)
+    placeButton(frame.coverageButton, frame.buttonRow, 276, -28)
+
+    frame.candidatesButton = createButton(frame.buttonRow, Locale:Get("DEBUG_CANDIDATES"), 90, function()
+        ns.Debug:DumpCandidates(8)
+    end)
+    placeButton(frame.candidatesButton, frame.buttonRow, 374, -28)
+
+    frame.factionsButton = createButton(frame.buttonRow, Locale:Get("DEBUG_FACTIONS"), 90, function()
+        ns.Debug:DumpFactions(12)
+    end)
+    placeButton(frame.factionsButton, frame.buttonRow, 472, -28)
 
     self.window = frame
     self:RefreshWindow()
+end
+
+function ns.Debug:BuildWindowReport()
+    local debugDB = ns.State:GetDebugDB()
+    local snapshot = ns.State:GetSnapshot()
+    local lastCapture = debugDB.captures and debugDB.captures[#debugDB.captures] or nil
+    local sections = {}
+
+    sections[#sections + 1] = string.format(
+        "Context\n  Flavor: %s\n  Zone: %s\n  SubZone: %s\n  MapID: %s\n  Instance: %s\n  Coverage: zone=%s subzone=%s",
+        tostring(snapshot.context and snapshot.context.activeFlavor or "none"),
+        tostring(snapshot.context and snapshot.context.zoneName or "none"),
+        tostring(snapshot.context and snapshot.context.subZoneName or "none"),
+        tostring(snapshot.context and snapshot.context.mapID or "none"),
+        tostring(snapshot.context and snapshot.context.instanceName or "none"),
+        tostring(snapshot.coverage and snapshot.coverage.zoneHasMapping or false),
+        tostring(snapshot.coverage and snapshot.coverage.subZoneHasMapping or false)
+    )
+
+    sections[#sections + 1] = string.format(
+        "Runtime\n  Raw factions: %s\n  Matches: %s\n  Prioritized: %s\n  Visible: %s",
+        tostring(snapshot.rawFactions and #(snapshot.rawFactions.list or {}) or 0),
+        tostring(#(snapshot.matches or {})),
+        tostring(#(snapshot.prioritized or {})),
+        tostring(#(snapshot.visible or {}))
+    )
+
+    sections[#sections + 1] = string.format(
+        "Captures\n  Stored: %s\n  Auto: %s\n  Sweep: %s\n  Last: %s",
+        tostring(#(debugDB.captures or {})),
+        tostring(debugDB.autoCapture),
+        tostring(debugDB.sweepMode),
+        tostring(lastCapture and lastCapture.key or Locale:Get("DEBUG_LAST_NONE"))
+    )
+
+    for _, key in ipairs({ "location", "coverage", "candidates", "dump", "factions", "api", "refresh", "status", "test", "unmapped", "mapscan" }) do
+        local diagnostic = debugDB.lastDiagnostics and debugDB.lastDiagnostics[key] or nil
+        sections[#sections + 1] = string.format(
+            "Diag %-10s %s",
+            key .. ":",
+            tostring(diagnostic and diagnostic.timestamp or Locale:Get("DEBUG_LAST_NONE"))
+        )
+    end
+
+    return table.concat(sections, "\n\n")
 end
 
 function ns.Debug:RefreshWindow()
@@ -385,36 +408,33 @@ function ns.Debug:RefreshWindow()
         return
     end
 
+    local profile = ns.State:GetProfile()
     local debugDB = ns.State:GetDebugDB()
     local count = #(debugDB.captures or {})
     local last = count > 0 and debugDB.captures[count] or nil
-    local mapScan = debugDB.mapScan or {}
-    local text = {
-        Locale:Format("DEBUG_CAPTURE_STATUS_SHORT", tostring(debugDB.enabled), tostring(count)),
-        "Auto: " .. tostring(debugDB.autoCapture),
-        "Sweep: " .. tostring(debugDB.sweepMode),
-        "Stored: " .. tostring(count),
-        "Max: " .. tostring(debugDB.maxCaptures or 200),
-        "Last: " .. tostring(last and last.key or Locale:Get("DEBUG_LAST_NONE")),
-        "MapScan: " .. tostring(mapScan.nodeCount or 0) .. " nodes",
-        "MapScanAt: " .. tostring(mapScan.scannedAt or Locale:Get("DEBUG_LAST_NONE")),
-        "Diag Location: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.location and debugDB.lastDiagnostics.location.timestamp or Locale:Get("DEBUG_LAST_NONE")),
-        "Diag Unmapped: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.unmapped and debugDB.lastDiagnostics.unmapped.timestamp or Locale:Get("DEBUG_LAST_NONE")),
-        "Diag API: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.api and debugDB.lastDiagnostics.api.timestamp or Locale:Get("DEBUG_LAST_NONE")),
-        "Diag Coverage: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.coverage and debugDB.lastDiagnostics.coverage.timestamp or Locale:Get("DEBUG_LAST_NONE")),
-        "Diag Candidates: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.candidates and debugDB.lastDiagnostics.candidates.timestamp or Locale:Get("DEBUG_LAST_NONE")),
-        "Diag Dump: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.dump and debugDB.lastDiagnostics.dump.timestamp or Locale:Get("DEBUG_LAST_NONE")),
-        "Diag Status: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.status and debugDB.lastDiagnostics.status.timestamp or Locale:Get("DEBUG_LAST_NONE")),
-        "Diag Factions: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.factions and debugDB.lastDiagnostics.factions.timestamp or Locale:Get("DEBUG_LAST_NONE")),
-        "Diag MapScan: " .. tostring(debugDB.lastDiagnostics and debugDB.lastDiagnostics.mapscan and debugDB.lastDiagnostics.mapscan.timestamp or Locale:Get("DEBUG_LAST_NONE")),
-        Locale:Get("DEBUG_UI_HINT"),
-    }
-    self.window.text:SetText(table.concat(text, "\n"))
-    self.window:SetShown(debugDB.enabled or count > 0 or debugDB.forceWindowVisible)
-    self.window.enableButton:SetEnabled(not debugDB.enabled)
-    self.window.disableButton:SetEnabled(debugDB.enabled)
-    self.window.sweepOnButton:SetEnabled(not debugDB.sweepMode)
-    self.window.sweepOffButton:SetEnabled(debugDB.sweepMode)
+    self.window.status:SetText(Locale:Format(
+        "DEBUG_WINDOW_STATUS",
+        tostring(profile.debug),
+        tostring(debugDB.enabled),
+        tostring(count),
+        tostring(last and last.key or Locale:Get("DEBUG_LAST_NONE"))
+    ))
+    self.window.output:SetText(self:BuildWindowReport())
+    self.window.output:HighlightText(0, 0)
+    self.window:SetShown(profile.debug and profile.showDebugWindow)
+    self.window.enableButton:SetEnabled(profile.debug and not debugDB.enabled)
+    self.window.disableButton:SetEnabled(profile.debug and debugDB.enabled)
+    self.window.captureNowButton:SetEnabled(profile.debug)
+    self.window.refreshButton:SetEnabled(profile.debug)
+    self.window.clearButton:SetEnabled(profile.debug)
+    self.window.dumpButton:SetEnabled(profile.debug)
+    self.window.reloadButton:SetEnabled(profile.debug)
+    self.window.locationButton:SetEnabled(profile.debug)
+    self.window.unmappedButton:SetEnabled(profile.debug)
+    self.window.apiButton:SetEnabled(profile.debug)
+    self.window.coverageButton:SetEnabled(profile.debug)
+    self.window.candidatesButton:SetEnabled(profile.debug)
+    self.window.factionsButton:SetEnabled(profile.debug)
 end
 
 function ns.Debug:DumpFactions(limit)
@@ -697,6 +717,10 @@ function ns.Debug:HandleSlash(message)
     if verb == "debug" then
         local profile = ns.State:GetProfile()
         profile.debug = not profile.debug
+        if profile.debug and profile.showDebugWindow == false then
+            profile.showDebugWindow = true
+        end
+        self:RefreshWindow()
         printLine(profile.debug and Locale:Get("DEBUG_ENABLED") or Locale:Get("DEBUG_DISABLED"))
         return
     end
@@ -723,11 +747,13 @@ function ns.Debug:HandleSlash(message)
 
     if verb == "capture" then
         local debugDB = ns.State:GetDebugDB()
+        local profile = ns.State:GetProfile()
         if tail == "on" then
+            profile.debug = true
+            profile.showDebugWindow = true
             debugDB.enabled = true
             debugDB.sweepMode = false
             debugDB.maxCaptures = debugDB.defaultMaxCaptures or 200
-            debugDB.forceWindowVisible = true
             self:CreateWindow()
             self:RefreshWindow()
             printLine(Locale:Get("DEBUG_CAPTURE_ENABLED"))
@@ -749,16 +775,17 @@ function ns.Debug:HandleSlash(message)
             return
         end
         if tail == "show" then
-            debugDB.forceWindowVisible = true
+            profile.debug = true
+            profile.showDebugWindow = true
             self:CreateWindow()
             self:RefreshWindow()
-            printLine(Locale:Get("DEBUG_CAPTURE_WINDOW_SHOWN"))
+            printLine(Locale:Get("DEBUG_WINDOW_ENABLED"))
             return
         end
         if tail == "hide" then
-            debugDB.forceWindowVisible = false
+            profile.showDebugWindow = false
             self:RefreshWindow()
-            printLine(Locale:Get("DEBUG_CAPTURE_WINDOW_HIDDEN"))
+            printLine(Locale:Get("DEBUG_WINDOW_DISABLED"))
             return
         end
         if tail == "now" then

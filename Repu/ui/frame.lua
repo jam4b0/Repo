@@ -178,7 +178,6 @@ function ns.UI:Init()
 
     self.frame = frame
     self.selectedFactionID = nil
-    self.expandedParents = self.expandedParents or {}
     self:EnsureMinimapButton()
     self:RegisterOptions()
     self:Refresh({}, nil)
@@ -257,31 +256,14 @@ function ns.UI:EnsureRows(count)
     end
 end
 
-function ns.UI:IsParentExpanded(factionID)
-    if not factionID then
-        return false
-    end
-
-    if self.expandedParents[factionID] == nil then
-        return false
-    end
-
-    return self.expandedParents[factionID]
-end
-
 function ns.UI:BuildDisplayCandidates(candidates)
     local display = {}
 
     for _, candidate in ipairs(candidates or {}) do
-        if candidate.parentFactionID then
-            if self:IsParentExpanded(candidate.parentFactionID) then
-                display[#display + 1] = candidate
-            end
-        else
+        if not candidate.parentFactionID then
             candidate.hasKnownChildren = ns.Factions:GetKnownChildFactionIDs(candidate.factionID) ~= nil
-            candidate.isExpanded = candidate.hasKnownChildren and self:IsParentExpanded(candidate.factionID) or false
-            display[#display + 1] = candidate
         end
+        display[#display + 1] = candidate
     end
 
     return display
@@ -344,14 +326,8 @@ function ns.UI:Refresh(candidates, context)
     self.frame:SetShown(shouldShow)
 end
 
-function ns.UI:HandleRowClick(candidate, localX)
+function ns.UI:HandleRowClick(candidate)
     if not candidate or not candidate.factionID then
-        return
-    end
-
-    if candidate.hasKnownChildren and localX and localX <= 18 then
-        self.expandedParents[candidate.factionID] = not self:IsParentExpanded(candidate.factionID)
-        self:Refresh(ns.State.runtime.visible or {}, ns.State.runtime.context)
         return
     end
 

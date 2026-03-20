@@ -1,12 +1,19 @@
 ## Interface: 120000, 120001, 120005, 50503, 40402, 30403, 20505, 11508
 ## Title: Repu_Map
 ## Notes: Optional map integration for Repu.
-## Author: OpenAI Codex
+## Notes-deDE: Optionale Kartenintegration fuer Repu.
+## Author: Jam
 ## Version: 0.1.0
 ## Dependencies: Repu
 ## OptionalDeps: Repu_Data, HandyNotes, TomTom
+## X-Repository: https://github.com/jam4b0/Repo
 
+## Core
 core\i18n.lua
+
+## Locale
 locales\enUS.lua
 locales\deDE.lua
+
+## Entry
 core\init.lua

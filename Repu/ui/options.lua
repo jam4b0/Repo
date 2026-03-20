@@ -6,6 +6,12 @@ local function refreshUI(reason)
     ns.State:Refresh(reason or "OPTIONS_UPDATE")
 end
 
+local function refreshDebugUI()
+    if ns.Debug and ns.Debug.RefreshWindow then
+        ns.Debug:RefreshWindow()
+    end
+end
+
 local function createCheckbox(panel, anchor, label, onClick)
     local check = CreateFrame("CheckButton", nil, panel, "InterfaceOptionsCheckButtonTemplate")
     check:SetPoint("TOPLEFT", anchor, "BOTTOMLEFT", 0, -10)
@@ -114,9 +120,29 @@ function ns.UI:RegisterOptions()
         refreshUI("OPTIONS_SCALE")
     end)
 
+    panel.debugHeader = panel:CreateFontString(nil, "ARTWORK", "GameFontNormal")
+    panel.debugHeader:SetPoint("TOPLEFT", panel.scaleSlider, "BOTTOMLEFT", 0, -28)
+    panel.debugHeader:SetText(Locale:Get("OPTION_DEBUG_SECTION"))
+
+    panel.enableDebug = createCheckbox(panel, panel.debugHeader, Locale:Get("OPTION_ENABLE_DEBUG"), function(value)
+        ns.State:GetProfile().debug = value
+        refreshDebugUI()
+    end)
+
+    panel.showDebugWindow = createCheckbox(panel, panel.enableDebug, Locale:Get("OPTION_SHOW_DEBUG_WINDOW"), function(value)
+        ns.State:GetProfile().showDebugWindow = value
+        refreshDebugUI()
+    end)
+
+    panel.enableDebugCapture = createCheckbox(panel, panel.showDebugWindow, Locale:Get("OPTION_ENABLE_DEBUG_CAPTURE"), function(value)
+        ns.State:GetDebugDB().enabled = value
+        refreshDebugUI()
+    end)
+
     panel:SetScript("OnShow", function(self)
         local profile = ns.State:GetProfile()
         local isRetail = ns.Data:GetActiveFlavor() == "retail"
+        local debugDB = ns.State:GetDebugDB()
 
         self.locked:SetChecked(profile.locked)
         self.hideExalted:SetChecked(profile.hideExalted)
@@ -130,6 +156,12 @@ function ns.UI:RegisterOptions()
         self.maxBarsSlider:SetValue(profile.maxBars or 5)
         self.opacitySlider:SetValue(profile.opacity or 1)
         self.scaleSlider:SetValue(profile.scale or 1)
+
+        self.enableDebug:SetChecked(profile.debug)
+        self.showDebugWindow:SetChecked(profile.showDebugWindow)
+        self.enableDebugCapture:SetChecked(debugDB.enabled)
+        self.showDebugWindow:SetEnabled(profile.debug)
+        self.enableDebugCapture:SetEnabled(profile.debug)
     end)
 
     if Settings and Settings.RegisterCanvasLayoutCategory then
