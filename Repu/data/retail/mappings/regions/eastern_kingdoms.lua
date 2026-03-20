@@ -326,7 +326,7 @@ ns.Data:RegisterRetailModule({
             },
         },
         subZones = {
-            ["179:gilneas"] = {
+            ["179:gilneas-city"] = {
                 name = "Gilneas",
                 parentMapID = 1577,
                 source = "seed",
@@ -338,7 +338,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 1134, weight = 252 },
                 },
             },
-            ["18:tirisfal"] = {
+            ["18:tirisfal-glades"] = {
                 name = "Tirisfal",
                 parentMapID = 18,
                 source = "seed",
@@ -350,7 +350,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 68, weight = 248 },
                 },
             },
-            ["2070:tirisfal"] = {
+            ["2070:tirisfal-glades-variant"] = {
                 name = "Tirisfal",
                 parentMapID = 2070,
                 source = "seed",
@@ -362,7 +362,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 68, weight = 248 },
                 },
             },
-            ["21:silberwald"] = {
+            ["21:silverpine-forest"] = {
                 name = "Silberwald",
                 parentMapID = 21,
                 source = "seed",
@@ -374,7 +374,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 68, weight = 246 },
                 },
             },
-            ["22:westliche pestländer"] = {
+            ["22:western-plaguelands"] = {
                 name = "Westliche Pestländer",
                 parentMapID = 22,
                 source = "seed",
@@ -386,7 +386,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 529, weight = 250 },
                 },
             },
-            ["23:östliche pestländer"] = {
+            ["23:eastern-plaguelands"] = {
                 name = "Östliche Pestländer",
                 parentMapID = 23,
                 source = "seed",
@@ -398,7 +398,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 529, weight = 252 },
                 },
             },
-            ["27:dun morogh"] = {
+            ["27:dun-morogh"] = {
                 name = "Dun Morogh",
                 parentMapID = 27,
                 source = "seed",
@@ -410,7 +410,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 47, weight = 248 },
                 },
             },
-            ["32:sengende schlucht"] = {
+            ["32:searing-gorge"] = {
                 name = "Sengende Schlucht",
                 parentMapID = 32,
                 source = "seed",
@@ -422,7 +422,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 59, weight = 248 },
                 },
             },
-            ["36:brennende steppe"] = {
+            ["36:burning-steppes"] = {
                 name = "Brennende Steppe",
                 parentMapID = 36,
                 source = "seed",
@@ -434,7 +434,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 59, weight = 250 },
                 },
             },
-            ["37:wald von elwynn"] = {
+            ["37:elwynn-forest"] = {
                 name = "Wald von Elwynn",
                 parentMapID = 37,
                 source = "seed",
@@ -446,7 +446,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 72, weight = 248 },
                 },
             },
-            ["47:dämmerwald"] = {
+            ["47:duskwood"] = {
                 name = "Dämmerwald",
                 parentMapID = 47,
                 source = "seed",
@@ -458,7 +458,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 72, weight = 246 },
                 },
             },
-            ["48:loch modan"] = {
+            ["48:loch-modan"] = {
                 name = "Loch Modan",
                 parentMapID = 48,
                 source = "seed",
@@ -470,7 +470,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 47, weight = 246 },
                 },
             },
-            ["49:rotkammgebirge"] = {
+            ["49:redridge-mountains"] = {
                 name = "Rotkammgebirge",
                 parentMapID = 49,
                 source = "seed",
@@ -482,7 +482,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 72, weight = 246 },
                 },
             },
-            ["50:nördliches schlingendorntal"] = {
+            ["50:northern-stranglethorn"] = {
                 name = "Nördliches Schlingendorntal",
                 parentMapID = 50,
                 source = "seed",
@@ -494,7 +494,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 21, weight = 246 },
                 },
             },
-            ["52:westfall"] = {
+            ["52:westfall-zone"] = {
                 name = "Westfall",
                 parentMapID = 52,
                 source = "seed",
@@ -506,7 +506,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 72, weight = 246 },
                 },
             },
-            ["56:sumpfland"] = {
+            ["56:wetlands"] = {
                 name = "Sumpfland",
                 parentMapID = 56,
                 source = "seed",
@@ -518,7 +518,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 47, weight = 244 },
                 },
             },
-            ["210:das schlingendornkap"] = {
+            ["210:cape-of-stranglethorn"] = {
                 name = "Das Schlingendornkap",
                 parentMapID = 210,
                 source = "seed",
@@ -530,7 +530,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 21, weight = 246 },
                 },
             },
-            ["224:schlingendorntal"] = {
+            ["224:stranglethorn-vale"] = {
                 name = "Schlingendorntal",
                 parentMapID = 224,
                 source = "seed",
@@ -951,7 +951,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 2699, weight = 250 },
                 },
             },
-            ["2413:harandar"] = {
+            ["2413:harandar-hub"] = {
                 name = "Harandar",
                 parentMapID = 2413,
                 source = "seed",
@@ -963,7 +963,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 2704, weight = 250 },
                 },
             },
-            ["2437:zul'aman"] = {
+            ["2437:zulaman"] = {
                 name = "Zul'Aman",
                 parentMapID = 2437,
                 source = "seed",
@@ -975,7 +975,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 2696, weight = 252 },
                 },
             },
-            ["2393:wanderers ruh'"] = {
+            ["2393:wanderers-rest"] = {
                 name = "Wanderers Ruh'",
                 parentMapID = 2393,
                 source = "observed",
@@ -988,7 +988,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 2714, weight = 240 },
                 },
             },
-            ["2393:astalors sanktum"] = {
+            ["2393:astalors-sanctum"] = {
                 name = "Astalors Sanktum",
                 parentMapID = 2393,
                 source = "observed",
@@ -1001,7 +1001,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 2712, weight = 242 },
                 },
             },
-            ["2393:straße der urahnen"] = {
+            ["2393:walk-of-elders"] = {
                 name = "Straße der Urahnen",
                 parentMapID = 2393,
                 source = "observed",

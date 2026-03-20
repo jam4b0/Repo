@@ -251,7 +251,7 @@ ns.Data:RegisterRetailModule({
             },
         },
         subZones = {
-            ["1203:dunkelküste"] = {
+            ["1203:darkshore-variant-a"] = {
                 name = "Dunkelküste",
                 parentMapID = 62,
                 source = "seed",
@@ -260,7 +260,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 1203 },
                 tags = { "subzone", "coverage-only", "kalimdor", "variant-separated", "world-phasing-variant", "warfront-variant" },
             },
-            ["1332:dunkelküste"] = {
+            ["1332:darkshore-variant-b"] = {
                 name = "Dunkelküste",
                 parentMapID = 62,
                 source = "seed",
@@ -269,7 +269,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 1332 },
                 tags = { "subzone", "coverage-only", "kalimdor", "variant-separated", "world-phasing-variant", "warfront-variant" },
             },
-            ["1333:dunkelküste"] = {
+            ["1333:darkshore-variant-c"] = {
                 name = "Dunkelküste",
                 parentMapID = 62,
                 source = "seed",
@@ -278,7 +278,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 1333 },
                 tags = { "subzone", "coverage-only", "kalimdor", "variant-separated", "world-phasing-variant", "warfront-variant" },
             },
-            ["1338:dunkelküste"] = {
+            ["1338:darkshore-variant-d"] = {
                 name = "Dunkelküste",
                 parentMapID = 62,
                 source = "seed",
@@ -287,7 +287,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 1338 },
                 tags = { "subzone", "coverage-only", "kalimdor", "variant-separated", "world-phasing-variant", "warfront-variant" },
             },
-            ["1:durotar"] = {
+            ["1:durotar-zone"] = {
                 name = "Durotar",
                 parentMapID = 1,
                 source = "observed",
@@ -300,7 +300,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 530, weight = 244 },
                 },
             },
-            ["7:mulgore"] = {
+            ["7:mulgore-zone"] = {
                 name = "Mulgore",
                 parentMapID = 7,
                 source = "observed",
@@ -312,7 +312,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 81, weight = 248 },
                 },
             },
-            ["10:nördliches brachland"] = {
+            ["10:northern-barrens"] = {
                 name = "Nördliches Brachland",
                 parentMapID = 10,
                 source = "seed",
@@ -325,7 +325,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 530, weight = 242 },
                 },
             },
-            ["10:ratchet"] = {
+            ["10:ratchet-hub"] = {
                 name = "Ratchet",
                 parentMapID = 10,
                 source = "curated",
@@ -337,7 +337,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 470, weight = 260 },
                 },
             },
-            ["15:ödland"] = {
+            ["15:the-barrens"] = {
                 name = "Ödland",
                 parentMapID = 15,
                 source = "seed",
@@ -349,7 +349,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 81, weight = 244 },
                 },
             },
-            ["63:eschental"] = {
+            ["63:ashenvale"] = {
                 name = "Eschental",
                 parentMapID = 63,
                 source = "seed",
@@ -361,7 +361,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 530, weight = 244 },
                 },
             },
-            ["66:desolace"] = {
+            ["66:desolace-zone"] = {
                 name = "Desolace",
                 parentMapID = 66,
                 source = "seed",
@@ -373,7 +373,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 609, weight = 244 },
                 },
             },
-            ["69:feralas"] = {
+            ["69:feralas-zone"] = {
                 name = "Feralas",
                 parentMapID = 69,
                 source = "seed",
@@ -385,7 +385,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 609, weight = 242 },
                 },
             },
-            ["80:mondlichtung"] = {
+            ["80:moonglade"] = {
                 name = "Mondlichtung",
                 parentMapID = 80,
                 source = "seed",
@@ -397,7 +397,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 609, weight = 248 },
                 },
             },
-            ["83:everlook"] = {
+            ["83:everlook-hub"] = {
                 name = "Everlook",
                 parentMapID = 83,
                 source = "curated",
@@ -409,7 +409,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 577, weight = 260 },
                 },
             },
-            ["71:gadgetzan"] = {
+            ["71:gadgetzan-hub"] = {
                 name = "Gadgetzan",
                 parentMapID = 71,
                 source = "curated",
@@ -421,7 +421,7 @@ ns.Data:RegisterRetailModule({
                     { factionID = 369, weight = 260 },
                 },
             },
-            ["106:die blutmythosinsel"] = {
+            ["106:bloodmyst-isle"] = {
                 name = "Die Blutmythosinsel",
                 parentMapID = 106,
                 source = "seed",
