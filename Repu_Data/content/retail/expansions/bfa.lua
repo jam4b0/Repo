@@ -95,7 +95,10 @@ api.RegisterRetailContentModule({
                 {
                     label = "Quartermaster",
                     location = {
+                        mapID = 1161,
                         title = "Boralus",
+                        x = 0.676,
+                        y = 0.218,
                     },
                     name = "Provisioner Fray",
                 },
@@ -276,7 +279,10 @@ api.RegisterRetailContentModule({
                 {
                     label = "Quartermaster",
                     location = {
+                        mapID = 1462,
                         title = "Rustbolt",
+                        x = 0.736,
+                        y = 0.366,
                     },
                     name = "Stolen Royal Vendorbot",
                 },
