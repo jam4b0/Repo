@@ -62,6 +62,27 @@ local function getAddonInfo(index)
     return nil, nil
 end
 
+local function canonicalAddonLabel(name, title)
+    local haystack = string.lower(table.concat({
+        tostring(name or ""),
+        tostring(title or ""),
+    }, " "))
+
+    if string.find(haystack, "repu_data", 1, true) then
+        return "Repu_Data"
+    end
+
+    if string.find(haystack, "repu_map", 1, true) then
+        return "Repu_Map"
+    end
+
+    if string.find(haystack, "repu", 1, true) then
+        return "Repu"
+    end
+
+    return nil
+end
+
 local function updateAddonMemoryUsage()
     if C_AddOns and C_AddOns.UpdateAddOnMemoryUsage then
         C_AddOns.UpdateAddOnMemoryUsage()
@@ -165,51 +186,62 @@ local function formatMemoryKB(memoryKB)
     return string.format("%.1f KB", value)
 end
 
-local function findAddonIndex(addonName)
-    if not GetNumAddOns then
-        return nil
-    end
-
-    for index = 1, GetNumAddOns() do
-        local name, title = getAddonInfo(index)
-        if name == addonName or title == addonName then
-            return index
-        end
-    end
-
-    return nil
-end
-
 local function collectAddonResourceUsage()
     local addonNames = { "Repu", "Repu_Data", "Repu_Map" }
     local rows = {}
     local totalMemory = 0
     local totalCPU = 0
     local cpuAvailable = false
+    local knownRows = {}
 
     updateAddonMemoryUsage()
     updateAddonCPUUsage()
 
-    for _, addonName in ipairs(addonNames) do
-        local index = findAddonIndex(addonName)
-        local memoryKB = 0
-        local cpuMS = nil
+    if GetNumAddOns then
+        for index = 1, GetNumAddOns() do
+            local name, title = getAddonInfo(index)
+            local canonical = canonicalAddonLabel(name, title)
+            if canonical then
+                local row = knownRows[canonical]
+                if not row then
+                    row = {
+                        name = canonical,
+                        memoryKB = 0,
+                        cpuMS = nil,
+                        loaded = false,
+                    }
+                    knownRows[canonical] = row
+                end
 
-        memoryKB = getAddonMemoryUsage(index, addonName)
-        totalMemory = totalMemory + memoryKB
+                row.memoryKB = row.memoryKB + getAddonMemoryUsage(index, name or canonical)
 
-        cpuMS = getAddonCPUUsage(index, addonName)
-        if cpuMS ~= nil then
-            totalCPU = totalCPU + cpuMS
-            cpuAvailable = true
+                local cpuValue = getAddonCPUUsage(index, name or canonical)
+                if cpuValue ~= nil then
+                    row.cpuMS = (row.cpuMS or 0) + cpuValue
+                    cpuAvailable = true
+                end
+
+                if isAddonLoaded(name or canonical) or isAddonLoaded(title or "") then
+                    row.loaded = true
+                end
+            end
         end
+    end
 
-        rows[#rows + 1] = {
+    for _, addonName in ipairs(addonNames) do
+        local row = knownRows[addonName] or {
             name = addonName,
-            memoryKB = memoryKB,
-            cpuMS = cpuMS,
+            memoryKB = getAddonMemoryUsage(nil, addonName),
+            cpuMS = getAddonCPUUsage(nil, addonName),
             loaded = isAddonLoaded(addonName),
         }
+
+        totalMemory = totalMemory + (row.memoryKB or 0)
+        if row.cpuMS ~= nil then
+            totalCPU = totalCPU + row.cpuMS
+        end
+
+        rows[#rows + 1] = row
     end
 
     return {
