@@ -1,8 +1,8 @@
 {
   "summary": {
-    "already_with_coordinates": 61,
-    "leave_without_coordinates_for_now": 0,
-    "needs_external_coordinate_source": 32,
+    "already_with_coordinates": 65,
+    "leave_without_coordinates_for_now": 59,
+    "needs_external_coordinate_source": 28,
     "open_standard_gap": 0
   },
   "groups": {
@@ -177,6 +177,10 @@
       },
       {
         "file": "pandaria.lua",
+        "factionID": 1271
+      },
+      {
+        "file": "pandaria.lua",
         "factionID": 1272
       },
       {
@@ -186,6 +190,18 @@
       {
         "file": "pandaria.lua",
         "factionID": 1337
+      },
+      {
+        "file": "shadowlands.lua",
+        "factionID": 2407
+      },
+      {
+        "file": "shadowlands.lua",
+        "factionID": 2410
+      },
+      {
+        "file": "shadowlands.lua",
+        "factionID": 2413
       },
       {
         "file": "shadowlands.lua",
@@ -252,7 +268,244 @@
         "factionID": 2688
       }
     ],
-    "leave_without_coordinates_for_now": [],
+    "leave_without_coordinates_for_now": [
+      {
+        "file": "bfa.lua",
+        "factionID": 2157
+      },
+      {
+        "file": "bfa.lua",
+        "factionID": 2395
+      },
+      {
+        "file": "cataclysm.lua",
+        "factionID": 1174
+      },
+      {
+        "file": "cataclysm.lua",
+        "factionID": 2417
+      },
+      {
+        "file": "draenor.lua",
+        "factionID": 1515
+      },
+      {
+        "file": "draenor.lua",
+        "factionID": 1710
+      },
+      {
+        "file": "draenor.lua",
+        "factionID": 1848
+      },
+      {
+        "file": "dragonflight.lua",
+        "factionID": 2135
+      },
+      {
+        "file": "dragonflight.lua",
+        "factionID": 2517
+      },
+      {
+        "file": "dragonflight.lua",
+        "factionID": 2518
+      },
+      {
+        "file": "dragonflight.lua",
+        "factionID": 2523
+      },
+      {
+        "file": "dragonflight.lua",
+        "factionID": 2524
+      },
+      {
+        "file": "dragonflight.lua",
+        "factionID": 2526
+      },
+      {
+        "file": "dragonflight.lua",
+        "factionID": 2550
+      },
+      {
+        "file": "midnight.lua",
+        "factionID": 2696
+      },
+      {
+        "file": "midnight.lua",
+        "factionID": 2699
+      },
+      {
+        "file": "midnight.lua",
+        "factionID": 2704
+      },
+      {
+        "file": "midnight.lua",
+        "factionID": 2770
+      },
+      {
+        "file": "northrend.lua",
+        "factionID": 1067
+      },
+      {
+        "file": "northrend.lua",
+        "factionID": 1068
+      },
+      {
+        "file": "northrend.lua",
+        "factionID": 1104
+      },
+      {
+        "file": "northrend.lua",
+        "factionID": 1105
+      },
+      {
+        "file": "northrend.lua",
+        "factionID": 1124
+      },
+      {
+        "file": "northrend.lua",
+        "factionID": 1126
+      },
+      {
+        "file": "outland.lua",
+        "factionID": 990
+      },
+      {
+        "file": "outland.lua",
+        "factionID": 1038
+      },
+      {
+        "file": "outland.lua",
+        "factionID": 1077
+      },
+      {
+        "file": "outland.lua",
+        "factionID": 1416
+      },
+      {
+        "file": "outland.lua",
+        "factionID": 9000111
+      },
+      {
+        "file": "pandaria.lua",
+        "factionID": 1359
+      },
+      {
+        "file": "pandaria.lua",
+        "factionID": 1375
+      },
+      {
+        "file": "pandaria.lua",
+        "factionID": 1376
+      },
+      {
+        "file": "pandaria.lua",
+        "factionID": 1387
+      },
+      {
+        "file": "pandaria.lua",
+        "factionID": 1388
+      },
+      {
+        "file": "pandaria.lua",
+        "factionID": 1435
+      },
+      {
+        "file": "pandaria.lua",
+        "factionID": 1492
+      },
+      {
+        "file": "shadowlands.lua",
+        "factionID": 2464
+      },
+      {
+        "file": "shadowlands.lua",
+        "factionID": 2470
+      },
+      {
+        "file": "war_within.lua",
+        "factionID": 2658
+      },
+      {
+        "file": "war_within.lua",
+        "factionID": 2736
+      },
+      {
+        "file": "homelands.lua",
+        "factionID": 47
+      },
+      {
+        "file": "homelands.lua",
+        "factionID": 68
+      },
+      {
+        "file": "homelands.lua",
+        "factionID": 69
+      },
+      {
+        "file": "homelands.lua",
+        "factionID": 72
+      },
+      {
+        "file": "homelands.lua",
+        "factionID": 76
+      },
+      {
+        "file": "homelands.lua",
+        "factionID": 81
+      },
+      {
+        "file": "homelands.lua",
+        "factionID": 369
+      },
+      {
+        "file": "homelands.lua",
+        "factionID": 470
+      },
+      {
+        "file": "homelands.lua",
+        "factionID": 529
+      },
+      {
+        "file": "homelands.lua",
+        "factionID": 530
+      },
+      {
+        "file": "homelands.lua",
+        "factionID": 576
+      },
+      {
+        "file": "homelands.lua",
+        "factionID": 577
+      },
+      {
+        "file": "homelands.lua",
+        "factionID": 609
+      },
+      {
+        "file": "homelands.lua",
+        "factionID": 749
+      },
+      {
+        "file": "homelands.lua",
+        "factionID": 910
+      },
+      {
+        "file": "homelands.lua",
+        "factionID": 930
+      },
+      {
+        "file": "homelands.lua",
+        "factionID": 1133
+      },
+      {
+        "file": "homelands.lua",
+        "factionID": 1134
+      },
+      {
+        "file": "neutral_hubs.lua",
+        "factionID": 909
+      }
+    ],
     "needs_external_coordinate_source": [
       {
         "file": "bfa.lua",
@@ -372,26 +625,6 @@
       {
         "file": "pandaria.lua",
         "factionID": 1269,
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "file": "pandaria.lua",
-        "factionID": 1271,
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "file": "shadowlands.lua",
-        "factionID": 2407,
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "file": "shadowlands.lua",
-        "factionID": 2410,
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "file": "shadowlands.lua",
-        "factionID": 2413,
         "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
       },
       {

@@ -1,10 +1,10 @@
 {
   "summary": {
     "totalFactions": 152,
-    "withAnyXY": 61,
-    "withQuartermasterXY": 53,
-    "withActivityXY": 61,
-    "withoutAnyXY": 91
+    "withAnyXY": 65,
+    "withQuartermasterXY": 57,
+    "withActivityXY": 65,
+    "withoutAnyXY": 87
   },
   "quartermasterWithoutXY": [
     {
@@ -102,22 +102,6 @@
     {
       "file": "pandaria.lua",
       "factionID": 1269
-    },
-    {
-      "file": "pandaria.lua",
-      "factionID": 1271
-    },
-    {
-      "file": "shadowlands.lua",
-      "factionID": 2407
-    },
-    {
-      "file": "shadowlands.lua",
-      "factionID": 2410
-    },
-    {
-      "file": "shadowlands.lua",
-      "factionID": 2413
     },
     {
       "file": "shadowlands.lua",
@@ -351,10 +335,6 @@
     },
     {
       "file": "pandaria.lua",
-      "factionID": 1271
-    },
-    {
-      "file": "pandaria.lua",
       "factionID": 1359
     },
     {
@@ -380,18 +360,6 @@
     {
       "file": "pandaria.lua",
       "factionID": 1492
-    },
-    {
-      "file": "shadowlands.lua",
-      "factionID": 2407
-    },
-    {
-      "file": "shadowlands.lua",
-      "factionID": 2410
-    },
-    {
-      "file": "shadowlands.lua",
-      "factionID": 2413
     },
     {
       "file": "shadowlands.lua",
@@ -673,6 +641,10 @@
     },
     {
       "file": "pandaria.lua",
+      "factionID": 1271
+    },
+    {
+      "file": "pandaria.lua",
       "factionID": 1272
     },
     {
@@ -682,6 +654,18 @@
     {
       "file": "pandaria.lua",
       "factionID": 1337
+    },
+    {
+      "file": "shadowlands.lua",
+      "factionID": 2407
+    },
+    {
+      "file": "shadowlands.lua",
+      "factionID": 2410
+    },
+    {
+      "file": "shadowlands.lua",
+      "factionID": 2413
     },
     {
       "file": "shadowlands.lua",

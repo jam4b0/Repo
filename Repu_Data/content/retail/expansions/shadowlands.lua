@@ -35,7 +35,10 @@ api.RegisterRetailContentModule({
                 {
                     label = "Quartermaster",
                     location = {
+                        mapID = 1533,
                         title = "Sanctum of Binding",
+                        x = 0.522,
+                        y = 0.471,
                     },
                     name = "Adjutant Nikos",
                 },
@@ -72,7 +75,10 @@ api.RegisterRetailContentModule({
                 {
                     label = "Quartermaster",
                     location = {
+                        mapID = 1536,
                         title = "Theater of Pain",
+                        x = 0.508,
+                        y = 0.534,
                     },
                     name = "Nalcorn Talsen",
                 },
@@ -109,7 +115,10 @@ api.RegisterRetailContentModule({
                 {
                     label = "Quartermaster",
                     location = {
+                        mapID = 1525,
                         title = "Darkhaven",
+                        x = 0.613,
+                        y = 0.638,
                     },
                     name = "Mistress Mihaela",
                 },
@@ -146,6 +155,7 @@ api.RegisterRetailContentModule({
                 {
                     label = "Quartermaster",
                     location = {
+                        mapID = 1543,
                         title = "Ve'nari's Refuge",
                         x = 0.469,
                         y = 0.417,

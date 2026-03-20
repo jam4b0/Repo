@@ -97,6 +97,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 371,
                         title = "The Arboretum",
+                        x = 0.566,
+                        y = 0.444,
                     },
                     name = "San Redscale",
                 },
