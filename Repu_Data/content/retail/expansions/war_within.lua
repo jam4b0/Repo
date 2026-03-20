@@ -51,8 +51,8 @@ api.RegisterRetailContentModule({
                 },
             },
             source = "curated",
-            summarySource = "curated",
             summary = "The Hallowfall Expedition is the Arathi military and civic force centered on Mereldar. Most reputation progress comes from Hallowfall world content, the Spreading the Light cycle, and activity around the Sacred Flame.",
+            summarySource = "curated",
         },
         [2590] = {
             activities = {
@@ -99,8 +99,8 @@ api.RegisterRetailContentModule({
                 },
             },
             source = "curated",
-            summarySource = "curated",
             summary = "The Council of Dornogal is the civic authority based in Foundation Hall. Reputation is tied to Isle of Dorn activity, city-side progression, and service work connected to Dornogal's earthen administration.",
+            summarySource = "curated",
         },
         [2594] = {
             activities = {
@@ -147,8 +147,8 @@ api.RegisterRetailContentModule({
                 },
             },
             source = "curated",
-            summarySource = "curated",
             summary = "The Machine Speakers coordinate reconstruction and maintenance throughout the Ringing Deeps. Their reputation is mainly built through regional world content, Gundargaz hub work, and campaign progress tied to restored machinery.",
+            summarySource = "curated",
         },
         [2600] = {
             activities = {
@@ -195,8 +195,8 @@ api.RegisterRetailContentModule({
                 },
             },
             source = "curated",
-            summarySource = "curated",
             summary = "The Severed Threads are the resistance network operating out of the Weaver's Lair in Azj-Kahet. Reputation centers on world content across the zone, weekly pact choices, and the wider insurgency against Ansurek's rule.",
+            summarySource = "curated",
         },
         [2601] = {
             activities = {
@@ -296,8 +296,8 @@ api.RegisterRetailContentModule({
                 },
             },
             source = "curated",
-            summarySource = "curated",
             summary = "Cartels of Undermine tracks your standing with the wider goblin power structure in Undermine. Most progress comes from weekly cartel contracts, the C.H.E.T.T. List, and city-side work centered on the Incontinental Hotel.",
+            summarySource = "curated",
         },
         [2658] = {
             activities = {
@@ -320,8 +320,8 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summarySource = "curated",
             summary = "The K'aresh Trust unites brokers, ethereals, and allied survivors trying to stabilize a shattered world under threat from the All-Devouring. Its reputation comes from K'aresh campaign progress and broader zone activity.",
+            summarySource = "curated",
         },
         [2671] = {
             activities = {
@@ -416,8 +416,8 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summarySource = "curated",
             summary = "The Gallagio Loyalty Rewards Club covers hospitality and service work tied to the Gallagio's future operations in Undermine. Progress is driven by its contract rotation and support tasks tied to the hotel hub.",
+            summarySource = "curated",
         },
         [2688] = {
             activities = {

@@ -132,8 +132,8 @@ api.RegisterRetailContentModule({
                 },
             },
             source = "curated",
-            summaryKey = "faction.2710.summary",
             summary = "Through elegance, intellect, and political precision, the Court ensures that Silvermoon City's light shines eternally radiant, and distinctly its own.",
+            summaryKey = "faction.2710.summary",
         },
         [2711] = {
             activities = {
@@ -162,8 +162,8 @@ api.RegisterRetailContentModule({
                 },
             },
             source = "curated",
-            summaryKey = "faction.2711.summary",
             summary = "Scholars, arcanists, and politicians of Silvermoon City, with intellects sharpened by hundreds of years of study.",
+            summaryKey = "faction.2711.summary",
         },
         [2712] = {
             activities = {
@@ -192,8 +192,8 @@ api.RegisterRetailContentModule({
                 },
             },
             source = "curated",
-            summaryKey = "faction.2712.summary",
             summary = "Silvermoon City's elves-at-arms. Stalwart heroes and chosen champions of the sun, they follow Lady Liadrin into battle to smite the foes of the Sin'dorei.",
+            summaryKey = "faction.2712.summary",
         },
         [2713] = {
             activities = {
@@ -222,8 +222,8 @@ api.RegisterRetailContentModule({
                 },
             },
             source = "curated",
-            summaryKey = "faction.2713.summary",
             summary = "Elite rangers of the Sin'dorei, formally tasked with guarding the forests, borders, and wildlands of the Eversong Woods.",
+            summaryKey = "faction.2713.summary",
         },
         [2714] = {
             activities = {
@@ -252,8 +252,8 @@ api.RegisterRetailContentModule({
                 },
             },
             source = "curated",
-            summaryKey = "faction.2714.summary",
             summary = "The Shades of the Row handle Silvermoon's quiet favors, hidden exchanges, and the informal obligations that keep the city functioning beyond the public eye.",
+            summaryKey = "faction.2714.summary",
         },
         [2770] = {
             activities = {

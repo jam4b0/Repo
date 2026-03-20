@@ -39,7 +39,24 @@ _G.RepuAPI = {
     end,
 }
 
-local root = "/root/Repo/Repu_Data/"
+local function getRoot()
+    local scriptPath = arg and arg[0] or ""
+    if scriptPath == "" then
+        local source = debug.getinfo(1, "S").source or ""
+        if source:sub(1, 1) == "@" then
+            scriptPath = source:sub(2)
+        end
+    end
+
+    local base = scriptPath:match("^(.*)[/\\]tools[/\\][^/\\]+$")
+    if not base or base == "" then
+        error("Unable to determine Repu_Data root from script path")
+    end
+
+    return base .. "/"
+end
+
+local root = getRoot()
 local descriptionCachePath = root .. "tools/retail_faction_descriptions_enUS.lua"
 local contentTextLocales = {
     enUS = root .. "locales/content_text_enUS.lua",

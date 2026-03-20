@@ -1,12 +1,12 @@
 {
   "summary": {
-    "scannedFileCount": 70,
-    "filesWithLocaleSensitiveMarkers": 14,
+    "scannedFileCount": 68,
+    "filesWithLocaleSensitiveMarkers": 13,
     "categories": {
       "core_runtime_strings": 19,
       "mapping_and_coverage_data": 23,
       "locale_ui_domain": 4,
-      "content_data_strings": 18,
+      "content_data_strings": 16,
       "locale_content_domain": 4,
       "map_runtime_strings": 2
     }
@@ -810,28 +810,35 @@
       "matchCount": 16,
       "matches": [
         {
-          "line": 6,
+          "line": 5,
           "value": "Kein Rufeintrag",
           "markers": [
             "kein rufeintrag"
           ]
         },
         {
-          "line": 10,
+          "line": 9,
           "value": "Keine Beschreibung verfügbar.",
           "markers": [
             "non_ascii"
           ]
         },
         {
-          "line": 11,
+          "line": 10,
           "value": "Noch kein Datensatz.",
           "markers": [
             "noch kein"
           ]
         },
         {
-          "line": 12,
+          "line": 11,
+          "value": "Rüstmeister",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 13,
           "value": "Rüstmeister",
           "markers": [
             "non_ascii"
@@ -839,20 +846,13 @@
         },
         {
           "line": 14,
-          "value": "Rüstmeister",
-          "markers": [
-            "non_ascii"
-          ]
-        },
-        {
-          "line": 15,
           "value": "Aktivität",
           "markers": [
             "non_ascii"
           ]
         },
         {
-          "line": 17,
+          "line": 16,
           "value": "Für diesen Eintrag sind noch keine Wegpunkt-Daten hinterlegt.",
           "markers": [
             "noch kein",
@@ -860,63 +860,63 @@
           ]
         },
         {
-          "line": 22,
+          "line": 21,
           "value": "Ehrfürchtig ausblenden",
           "markers": [
             "non_ascii"
           ]
         },
         {
-          "line": 25,
+          "line": 24,
           "value": "Rüstmeister anzeigen",
           "markers": [
             "non_ascii"
           ]
         },
         {
-          "line": 54,
+          "line": 63,
           "value": "Captures gelöscht",
           "markers": [
             "non_ascii"
           ]
         },
         {
-          "line": 56,
+          "line": 67,
           "value": "Snapshot übersprungen",
           "markers": [
             "non_ascii"
           ]
         },
         {
-          "line": 57,
+          "line": 68,
           "value": "Refresh ausgelöst",
           "markers": [
             "non_ascii"
           ]
         },
         {
-          "line": 58,
+          "line": 69,
           "value": "Test-Rendering ausgelöst",
           "markers": [
             "non_ascii"
           ]
         },
         {
-          "line": 62,
+          "line": 73,
           "value": "Map-Scan wird auf diesem Client/API nicht unterstützt",
           "markers": [
             "non_ascii"
           ]
         },
         {
-          "line": 63,
+          "line": 74,
           "value": "Map-Scan gelöscht",
           "markers": [
             "non_ascii"
           ]
         },
         {
-          "line": 66,
+          "line": 77,
           "value": "Probe für ungemappte Zone",
           "markers": [
             "non_ascii"
@@ -927,25 +927,53 @@
     {
       "path": "Repu_Data/locales/content_text_deDE.lua",
       "category": "locale_content_domain",
-      "matchCount": 1,
+      "matchCount": 7,
       "matches": [
         {
-          "line": 8,
+          "line": 14,
+          "value": "Rüstmeister",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 642,
+          "value": "Blutritter",
+          "markers": [
+            "blutritter"
+          ]
+        },
+        {
+          "line": 643,
+          "value": "Schemen der Gasse",
+          "markers": [
+            "schemen der gasse"
+          ]
+        },
+        {
+          "line": 645,
+          "value": "Weltenwanderer",
+          "markers": [
+            "weltenwanderer"
+          ]
+        },
+        {
+          "line": 735,
           "value": "Virtuelle Gruppenfraktion für Shattrath. Sie bündelt die großen Stadtfraktionen der Scherbenwelt, damit sie im UI als zusammengehöriger Cluster statt als ungeordnete Einzelfunde erscheinen.",
           "markers": [
             "non_ascii"
           ]
-        }
-      ]
-    },
-    {
-      "path": "Repu_Data/locales/deDE.lua",
-      "category": "locale_content_domain",
-      "matchCount": 1,
-      "matches": [
+        },
         {
-          "line": 1840,
-          "value": "Virtuelle Gruppenfraktion für Shattrath. Sie bündelt die großen Stadtfraktionen der Scherbenwelt, damit sie im UI als zusammengehöriger Cluster statt als ungeordnete Einzelfunde erscheinen.",
+          "line": 812,
+          "value": "Rüstungsschmied Goldwappen",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 814,
+          "value": "Waldläufer Allorn",
           "markers": [
             "non_ascii"
           ]

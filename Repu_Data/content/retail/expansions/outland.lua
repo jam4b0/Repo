@@ -6,6 +6,21 @@ end
 
 api.RegisterRetailContentModule({
     factions = {
+        [932] = {
+            activities = {
+                {
+                    kind = "City faction",
+                    location = {
+                        mapID = 111,
+                        title = "Shattrath",
+                    },
+                    titleKey = "activity.shattrath.aldor_tasks.title",
+                },
+            },
+            confidence = "medium",
+            source = "curated",
+            summary = "An ancient order of draenei priests once run by Velen, the Aldor are currently led by High Priestess Ishanah.  They are servants of the naaru in Shattrath City known as the Sha'tar.  Rivals of the Scryers.",
+        },
         [933] = {
             activities = {
                 {
@@ -28,21 +43,6 @@ api.RegisterRetailContentModule({
             confidence = "medium",
             source = "curated",
             summary = "Led by Nexus-Prince Haramad, the Consortium is a loosely affiliated cartel of ethereal smugglers, traders and thieves that has come to Outland to benefit from its riches.",
-        },
-        [932] = {
-            activities = {
-                {
-                    kind = "City faction",
-                    location = {
-                        mapID = 111,
-                        title = "Shattrath",
-                    },
-                    titleKey = "activity.shattrath.aldor_tasks.title",
-                },
-            },
-            confidence = "medium",
-            source = "curated",
-            summary = "An ancient order of draenei priests once run by Velen, the Aldor are currently led by High Priestess Ishanah.  They are servants of the naaru in Shattrath City known as the Sha'tar.  Rivals of the Scryers.",
         },
         [934] = {
             activities = {
@@ -283,21 +283,6 @@ api.RegisterRetailContentModule({
             source = "curated",
             summary = "The elite of the Broken tribe known as the Ashtongue, officially aligned with Illidan. The Deathsworn are Akama's most trusted lieutenants and are privy to their leader's mysterious motivations.",
         },
-        [9000111] = {
-            activities = {
-                {
-                    kind = "Cluster",
-                    location = {
-                        mapID = 111,
-                        title = "Shattrath",
-                    },
-                    titleKey = "activity.shattrath.city_factions.title",
-                },
-            },
-            confidence = "medium",
-            source = "curated",
-            summaryKey = "faction.9000111.summary",
-        },
         [1015] = {
             activities = {
                 {
@@ -411,6 +396,21 @@ api.RegisterRetailContentModule({
             confidence = "medium",
             source = "curated",
             summary = "Akama is distrustful of Warlocks after witnessing Illidan's fall to his own corruption, followed by the invasion of the Black Temple by Warlocks after the Cataclysm.",
+        },
+        [9000111] = {
+            activities = {
+                {
+                    kind = "Cluster",
+                    location = {
+                        mapID = 111,
+                        title = "Shattrath",
+                    },
+                    titleKey = "activity.shattrath.city_factions.title",
+                },
+            },
+            confidence = "medium",
+            source = "curated",
+            summaryKey = "faction.9000111.summary",
         },
     },
 })

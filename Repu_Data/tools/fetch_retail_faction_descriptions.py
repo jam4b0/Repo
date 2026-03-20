@@ -11,9 +11,10 @@ import urllib.request
 from pathlib import Path
 
 
-ENV_PATH = Path("/root/.env")
-BACKLOG_PATH = Path("/mnt/d/Battlenet/World of Warcraft/_retail_/Interface/AddOns/Repu_Data/tools/retail_content_backlog.json")
-OUT_PATH = Path("/root/Repo/Repu_Data/tools/retail_faction_descriptions_enUS.lua")
+ROOT = Path(__file__).resolve().parents[2]
+ENV_PATH = Path.home() / ".env"
+BACKLOG_PATH = ROOT / "Repu_Data" / "tools" / "retail_content_backlog.json"
+OUT_PATH = ROOT / "Repu_Data" / "tools" / "retail_faction_descriptions_enUS.lua"
 REGION = "eu"
 LOCALE = "en_US"
 

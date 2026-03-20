@@ -5,7 +5,7 @@ import json
 import re
 from pathlib import Path
 
-ROOT = Path("/root/Repo")
+ROOT = Path(__file__).resolve().parents[2]
 CORE_FACTIONS = ROOT / "Repu" / "core" / "factions.lua"
 RETAIL_CONTENT_ROOT = ROOT / "Repu_Data" / "content" / "retail"
 OUT = ROOT / "Repu" / "tools" / "grouped_faction_audit.json"

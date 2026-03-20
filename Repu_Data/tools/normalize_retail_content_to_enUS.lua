@@ -21,7 +21,24 @@ local function deepMerge(target, source)
     end
 end
 
-local root = "/root/Repo/Repu_Data/"
+local function getRoot()
+    local scriptPath = arg and arg[0] or ""
+    if scriptPath == "" then
+        local source = debug.getinfo(1, "S").source or ""
+        if source:sub(1, 1) == "@" then
+            scriptPath = source:sub(2)
+        end
+    end
+
+    local base = scriptPath:match("^(.*)[/\\]tools[/\\][^/\\]+$")
+    if not base or base == "" then
+        error("Unable to determine Repu_Data root from script path")
+    end
+
+    return base .. "/"
+end
+
+local root = getRoot()
 
 local contentFiles = {
     "content/retail/summary/generated.lua",

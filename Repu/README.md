@@ -59,7 +59,7 @@ Das Projekt benutzt jetzt ein gemeinsames, domainbasiertes I18n-Modell ueber all
 - `map_ui`
   - Karten-/Provider-Texte von `Repu_Map`
 
-Die gemeinsame Runtime lebt in [i18n.lua](/root/Repo/Repu/core/i18n.lua) und wird ueber `_G.RepuAPI.RegisterLocaleDomain(domain, locale, payload)` befuellt.
+Die gemeinsame Runtime lebt in [i18n.lua](core/i18n.lua) und wird ueber `_G.RepuAPI.RegisterLocaleDomain(domain, locale, payload)` befuellt.
 
 Die Dateiform darf je Domain unterschiedlich aussehen:
 
@@ -193,7 +193,7 @@ Wichtig:
 - `tools/generate_variant_zone_coverage.py` behandelt die verbleibenden Dubletten-/Variantenzonen als explizite Keep-/Exclude-Liste
 - `tools/build_retail_faction_backlog.py` erzeugt aus allen Retail-Modulen einen bereinigten Fraktionsstatus-Report und unterdrueckt dabei Coverage-Schatten, wenn bereits kuratierte Overrides existieren
 - `tools/retail_faction_backlog.json` haelt den aktuellen Retail-Backlog-/Statusreport fuer den Core-Unterbau
-- `/root/Repo/tools/generate_addon_tocs.py` regeneriert `Repu.toc`, `Repu_Data.toc` und `Repu_Map.toc` aus den jeweiligen `toc_manifest.json`-Dateien
+- `tools/generate_addon_tocs.py` im Repo-Root regeneriert `Repu.toc`, `Repu_Data.toc` und `Repu_Map.toc` aus den jeweiligen `toc_manifest.json`-Dateien
 - `tools/run_tests.lua` fuehrt datengetriebene Mapping-Regressionstests aus:
   - `lua tools/run_tests.lua retail`
   - `lua tools/run_tests.lua classic`

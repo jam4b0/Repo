@@ -4,7 +4,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-ROOT = Path("/root/Repo")
+ROOT = Path(__file__).resolve().parents[2]
 GROUP_AUDIT = ROOT / "Repu" / "tools" / "grouped_faction_audit.json"
 BLIZZARD_AUDIT = ROOT / "Repu" / "tools" / "blizzard_retail_faction_audit.json"
 SUPERSEDED = ROOT / "Repu" / "tools" / "audit" / "blizzard_retail_gaps" / "superseded_by_current_model.json"

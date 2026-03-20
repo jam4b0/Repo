@@ -5,7 +5,7 @@ import json
 import re
 from pathlib import Path
 
-ROOT = Path("/root/Repo")
+ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "Repu" / "tools" / "i18n_audit.json"
 
 SCAN_DIRS = [

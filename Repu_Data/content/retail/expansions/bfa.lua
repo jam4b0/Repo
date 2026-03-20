@@ -130,8 +130,8 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summarySource = "curated",
             summary = "The Unshackled are the Horde-aligned rebels of Nazjatar, operating from Newhome against Queen Azshara and her naga. Their reputation is mainly earned through Nazjatar world content, ally support, and the zone's recurring progression systems.",
+            summarySource = "curated",
         },
         [2373] = {
             activities = {

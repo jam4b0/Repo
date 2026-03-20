@@ -188,7 +188,7 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 2112,
                         title = "Valdrakken",
-                        x = 0.360,
+                        x = 0.36,
                         y = 0.632,
                     },
                     title = "Artisan's Market",
@@ -198,7 +198,7 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 2112,
                         title = "Valdrakken",
-                        x = 0.360,
+                        x = 0.36,
                         y = 0.632,
                     },
                     title = "Profession weeklies in Valdrakken",
@@ -208,7 +208,7 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 2112,
                         title = "Valdrakken",
-                        x = 0.360,
+                        x = 0.36,
                         y = 0.632,
                     },
                     title = "Crafting Orders and profession progression",
@@ -221,15 +221,15 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 2112,
                         title = "Artisan's Market",
-                        x = 0.360,
+                        x = 0.36,
                         y = 0.632,
                     },
                     name = "Rabul",
                 },
             },
             source = "curated",
-            summarySource = "curated",
             summary = "The Dragon Isles branch of the Artisan's Consortium brings crafters, gatherers, and traders together in Valdrakken's Artisan's Market. Most of its reputation comes from profession work, weekly tasks, and the broader crafting order ecosystem.",
+            summarySource = "curated",
         },
         [2550] = {
             activities = {
@@ -253,7 +253,7 @@ api.RegisterRetailContentModule({
                         mapID = 2025,
                         title = "Tyrhold Reservoir",
                         x = 0.612,
-                        y = 0.320,
+                        y = 0.32,
                     },
                     title = "When Time Needs Mending",
                 },
@@ -274,7 +274,7 @@ api.RegisterRetailContentModule({
                         mapID = 2025,
                         title = "Tyrhold Reservoir",
                         x = 0.612,
-                        y = 0.320,
+                        y = 0.32,
                     },
                     name = "Soridormi",
                 },
