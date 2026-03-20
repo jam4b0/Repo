@@ -99,6 +99,14 @@ api.RegisterRetailContentModule({
                     },
                     title = "Twilight Highlands",
                 },
+                {
+                    kind = "Recurring",
+                    location = {
+                        mapID = 241,
+                        title = "Wildhammer Stronghold / Thundermar",
+                    },
+                    title = "Twilight Highlands support and Wildhammer war efforts",
+                },
             },
             confidence = "medium",
             source = "curated",
@@ -195,6 +203,14 @@ api.RegisterRetailContentModule({
                         title = "Uldum",
                     },
                     title = "Uldum",
+                },
+                {
+                    kind = "Recurring",
+                    location = {
+                        mapID = 249,
+                        title = "Ramkahen / Accord operations",
+                    },
+                    title = "Assaults and Uldum defense objectives",
                 },
             },
             confidence = "medium",

@@ -16,6 +16,14 @@ api.RegisterRetailContentModule({
                     },
                     title = "Howling Fjord",
                 },
+                {
+                    kind = "Recurring",
+                    location = {
+                        mapID = 117,
+                        title = "Vengeance Landing",
+                    },
+                    title = "Forsaken war effort and plague support",
+                },
             },
             confidence = "medium",
             source = "curated",
@@ -30,6 +38,14 @@ api.RegisterRetailContentModule({
                         title = "Howling Fjord",
                     },
                     title = "Questlines in Howling Fjord",
+                },
+                {
+                    kind = "Recurring",
+                    location = {
+                        mapID = 117,
+                        title = "Explorers' League Outpost",
+                    },
+                    title = "Artifact recovery and field research",
                 },
             },
             confidence = "medium",
@@ -184,6 +200,14 @@ api.RegisterRetailContentModule({
                     },
                     title = "Questlines in Sholazar Basin",
                 },
+                {
+                    kind = "Recurring",
+                    location = {
+                        mapID = 119,
+                        title = "Frenzyheart Hill",
+                    },
+                    title = "Tribal tasks and basin support",
+                },
             },
             confidence = "medium",
             source = "curated",
@@ -194,17 +218,18 @@ api.RegisterRetailContentModule({
                 {
                     kind = "Story/Zone",
                     location = {
-                        mapID = 121,
-                        title = "Zul'Drak",
+                        mapID = 119,
+                        title = "Sholazar Basin",
                     },
-                    title = "Questlines in Zul'Drak",
+                    title = "Questlines in Sholazar Basin",
                 },
                 {
-                    kind = "Dungeon",
+                    kind = "Recurring",
                     location = {
-                        title = "Gundrak",
+                        mapID = 119,
+                        title = "Rainspeaker Canopy",
                     },
-                    title = "Gundrak",
+                    title = "Oracle tasks and basin support",
                 },
             },
             confidence = "medium",
@@ -294,6 +319,14 @@ api.RegisterRetailContentModule({
                     },
                     title = "Vault of Archavon",
                 },
+                {
+                    kind = "Recurring",
+                    location = {
+                        mapID = 125,
+                        title = "Sunreaver's Sanctuary",
+                    },
+                    title = "Dalaran city support and Sunreaver errands",
+                },
             },
             confidence = "medium",
             source = "curated",
@@ -308,6 +341,14 @@ api.RegisterRetailContentModule({
                         title = "The Storm Peaks",
                     },
                     title = "The Storm Peaks",
+                },
+                {
+                    kind = "Recurring",
+                    location = {
+                        mapID = 120,
+                        title = "Frosthold",
+                    },
+                    title = "Alliance support and Frostborn field tasks",
                 },
             },
             confidence = "medium",

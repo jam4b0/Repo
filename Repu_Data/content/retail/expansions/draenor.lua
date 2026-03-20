@@ -57,6 +57,14 @@ api.RegisterRetailContentModule({
                     },
                     title = "Spires of Arak",
                 },
+                {
+                    kind = "Recurring",
+                    location = {
+                        mapID = 534,
+                        title = "Veil Terokk / Southport",
+                    },
+                    title = "Outcast support and apexis work",
+                },
             },
             confidence = "medium",
             source = "curated",
@@ -79,6 +87,14 @@ api.RegisterRetailContentModule({
                         title = "Outpost of the Awakened",
                     },
                     title = "Outpost of the Awakened",
+                },
+                {
+                    kind = "Recurring",
+                    location = {
+                        mapID = 582,
+                        title = "Shattrath City",
+                    },
+                    title = "Apexis assault support and city defense work",
                 },
             },
             confidence = "medium",
@@ -198,6 +214,14 @@ api.RegisterRetailContentModule({
                         title = "Hellfire Citadel",
                     },
                     title = "Hellfire Citadel",
+                },
+                {
+                    kind = "Recurring",
+                    location = {
+                        mapID = 534,
+                        title = "Vol'mar",
+                    },
+                    title = "Tanaan daily quests and war campaign support",
                 },
             },
             confidence = "medium",
