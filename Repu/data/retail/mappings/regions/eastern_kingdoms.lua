@@ -41,7 +41,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 2393 },
                 tags = { "city", "hub", "local" },
                 factions = {
-                    { factionID = 2710, name = "Hof in Silbermond", weight = 246 },
+                    { factionID = 2710, weight = 246 },
                     { factionID = 2711, weight = 240 },
                     { factionID = 2712, weight = 240 },
                     { factionID = 2714, weight = 235 },
@@ -56,7 +56,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 2395 },
                 tags = { "zone", "local", "eastern-kingdoms", "observed" },
                 factions = {
-                    { factionID = 2710, name = "Hof in Silbermond", weight = 248 },
+                    { factionID = 2710, weight = 248 },
                     { factionID = 2713, weight = 245 },
                 },
             },
@@ -68,7 +68,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 2405 },
                 tags = { "zone", "local" },
                 factions = {
-                    { factionID = 2699, name = "Die Singularität", weight = 245 },
+                    { factionID = 2699, weight = 245 },
                 },
             },
             [2413] = {
@@ -79,7 +79,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 2413 },
                 tags = { "zone", "local" },
                 factions = {
-                    { factionID = 2704, name = "Hara'ti", weight = 245 },
+                    { factionID = 2704, weight = 245 },
                 },
             },
             [2437] = {
@@ -90,7 +90,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 2437 },
                 tags = { "zone", "local" },
                 factions = {
-                    { factionID = 2696, name = "Amanistamm", weight = 248 },
+                    { factionID = 2696, weight = 248 },
                 },
             },
             [56] = {
@@ -695,7 +695,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 2395 },
                 tags = { "local", "eastern-kingdoms", "event", "court-in-silvermoon" },
                 factions = {
-                    { factionID = 2710, name = "Hof in Silbermond", weight = 255 },
+                    { factionID = 2710, weight = 255 },
                     { factionID = 2713, weight = 240 },
                 },
             },
@@ -888,7 +888,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 2393 },
                 tags = { "primary", "hub", "local", "observed" },
                 factions = {
-                    { factionID = 2710, name = "Hof in Silbermond", weight = 262 },
+                    { factionID = 2710, weight = 262 },
                     { factionID = 2711, weight = 250 },
                     { factionID = 2712, weight = 248 },
                     { factionID = 2714, weight = 246 },
@@ -917,7 +917,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 2405 },
                 tags = { "primary", "local" },
                 factions = {
-                    { factionID = 2699, name = "Die Singularität", weight = 250 },
+                    { factionID = 2699, weight = 250 },
                 },
             },
             ["2413:harandar"] = {
@@ -929,7 +929,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 2413 },
                 tags = { "primary", "local" },
                 factions = {
-                    { factionID = 2704, name = "Hara'ti", weight = 250 },
+                    { factionID = 2704, weight = 250 },
                 },
             },
             ["2437:zul'aman"] = {
@@ -941,7 +941,7 @@ ns.Data:RegisterRetailModule({
                 mapIDs = { 2437 },
                 tags = { "primary", "local" },
                 factions = {
-                    { factionID = 2696, name = "Amanistamm", weight = 252 },
+                    { factionID = 2696, weight = 252 },
                 },
             },
             ["2393:wanderers ruh'"] = {
