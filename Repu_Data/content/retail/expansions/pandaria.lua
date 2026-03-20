@@ -63,6 +63,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 371,
                         title = "Shado-Pan Garrison",
+                        x = 0.489,
+                        y = 0.706,
                     },
                     name = "Rushi the Fox",
                 },
@@ -153,6 +155,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 388,
                         title = "Anglers Wharf",
+                        x = 0.684,
+                        y = 0.434,
                     },
                     name = "Nat Pagle",
                 },

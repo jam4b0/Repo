@@ -1,10 +1,10 @@
 {
   "summary": {
     "totalFactions": 152,
-    "withAnyXY": 45,
-    "withQuartermasterXY": 37,
-    "withActivityXY": 45,
-    "withoutAnyXY": 107
+    "withAnyXY": 48,
+    "withQuartermasterXY": 40,
+    "withActivityXY": 48,
+    "withoutAnyXY": 104
   },
   "quartermasterWithoutXY": [
     {
@@ -66,10 +66,6 @@
     {
       "file": "legion.lua",
       "factionID": 1859
-    },
-    {
-      "file": "legion.lua",
-      "factionID": 1883
     },
     {
       "file": "legion.lua",
@@ -145,19 +141,11 @@
     },
     {
       "file": "pandaria.lua",
-      "factionID": 1270
-    },
-    {
-      "file": "pandaria.lua",
       "factionID": 1271
     },
     {
       "file": "pandaria.lua",
       "factionID": 1272
-    },
-    {
-      "file": "pandaria.lua",
-      "factionID": 1302
     },
     {
       "file": "pandaria.lua",
@@ -319,10 +307,6 @@
     },
     {
       "file": "legion.lua",
-      "factionID": 1883
-    },
-    {
-      "file": "legion.lua",
       "factionID": 1900
     },
     {
@@ -455,19 +439,11 @@
     },
     {
       "file": "pandaria.lua",
-      "factionID": 1270
-    },
-    {
-      "file": "pandaria.lua",
       "factionID": 1271
     },
     {
       "file": "pandaria.lua",
       "factionID": 1272
-    },
-    {
-      "file": "pandaria.lua",
-      "factionID": 1302
     },
     {
       "file": "pandaria.lua",
@@ -693,6 +669,10 @@
     },
     {
       "file": "legion.lua",
+      "factionID": 1883
+    },
+    {
+      "file": "legion.lua",
       "factionID": 1894
     },
     {
@@ -754,6 +734,14 @@
     {
       "file": "outland.lua",
       "factionID": 946
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1270
+    },
+    {
+      "file": "pandaria.lua",
+      "factionID": 1302
     },
     {
       "file": "war_within.lua",

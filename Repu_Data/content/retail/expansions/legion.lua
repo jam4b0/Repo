@@ -121,6 +121,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 641,
                         title = "Lorlathil",
+                        x = 0.547,
+                        y = 0.732,
                     },
                     name = "Sylvia Hartshorn",
                 },
