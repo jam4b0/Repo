@@ -559,6 +559,28 @@ return {
         requireVisibleFactionIDs = { 935, 932, 934 },
     },
     {
+        name = "retail_outland_netherstorm_ignores_expansion_header",
+        context = {
+            activeFlavor = "retail",
+            mapID = 104,
+            mapName = "Nethersturm",
+            zoneName = "Nethersturm",
+            zoneKey = "nethersturm",
+            subZoneName = "Nethersturm",
+            subZoneKey = "nethersturm",
+            playerFactionGroup = "Alliance",
+            instanceType = "none",
+            isInInstance = false,
+        },
+        rawFactions = {
+            { factionID = 980001, name = "The Burning Crusade", isHeader = true, hasRepEntry = false },
+            { factionID = 933, name = "Das Konsortium", standingID = 6, progressValue = 4100, progressMax = 12000, progressPct = 34.1, hasRepEntry = true },
+            { factionID = 935, name = "Die Sha'tar", standingID = 5, progressValue = 1600, progressMax = 6000, progressPct = 26.6, hasRepEntry = true },
+        },
+        expectTopFactionID = 933,
+        forbidVisibleFactionNames = { "The Burning Crusade" },
+    },
+    {
         name = "retail_northrend_dalaran_prefers_kirin_tor",
         context = {
             activeFlavor = "retail",

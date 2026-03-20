@@ -240,6 +240,15 @@ local function hasFactionID(rows, factionID)
     return false
 end
 
+local function hasFactionName(rows, factionName)
+    for _, row in ipairs(rows or {}) do
+        if row.name == factionName then
+            return true
+        end
+    end
+    return false
+end
+
 local function runCase(ns, case)
     ns.State.profile = ns.Utils:DeepMerge({
         maxBars = 5,
@@ -279,6 +288,10 @@ local function runCase(ns, case)
 
     for _, factionID in ipairs(case.forbidVisibleFactionIDs or {}) do
         assert(not hasFactionID(visible, factionID), string.format("%s: forbidden visible faction %s", case.name, tostring(factionID)))
+    end
+
+    for _, factionName in ipairs(case.forbidVisibleFactionNames or {}) do
+        assert(not hasFactionName(visible, factionName), string.format("%s: forbidden visible faction name %s", case.name, tostring(factionName)))
     end
 
     return {
