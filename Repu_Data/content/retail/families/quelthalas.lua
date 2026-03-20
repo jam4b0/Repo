@@ -63,7 +63,7 @@ api.RegisterRetailContentModule({
                 },
             },
             source = "seed",
-            summary = "Retail content for this faction is centered on Saltherils Soiree.",
+            summary = "Through elegance, intellect, and political precision, the Court ensures that Silvermoon City's light shines eternally radiant, and distinctly its own.",
         },
         [2711] = {
             activities = {
@@ -92,7 +92,7 @@ api.RegisterRetailContentModule({
                 },
             },
             source = "seed",
-            summary = "Retail content for this faction is centered on Saltherils Soiree.",
+            summary = "Scholars, arcanists, and politicians of Silvermoon City, with intellects sharpened by hundreds of years of study.",
         },
         [2712] = {
             activities = {
@@ -121,7 +121,7 @@ api.RegisterRetailContentModule({
                 },
             },
             source = "seed",
-            summary = "Retail content for this faction is centered on Saltherils Soiree.",
+            summary = "Silvermoon City's elves-at-arms. Stalwart heroes and chosen champions of the sun, they follow Lady Liadrin into battle to smite the foes of the Sin'dorei.",
         },
         [2713] = {
             activities = {
@@ -150,7 +150,7 @@ api.RegisterRetailContentModule({
                 },
             },
             source = "seed",
-            summary = "Retail content for this faction is centered on Saltherils Soiree.",
+            summary = "Elite rangers of the Sin'dorei, formally tasked with guarding the forests, borders, and wildlands of the Eversong Woods.",
         },
         [2714] = {
             activities = {
@@ -179,7 +179,7 @@ api.RegisterRetailContentModule({
                 },
             },
             source = "seed",
-            summary = "Retail content for this faction is centered on Saltherils Soiree.",
+            summary = "12.0 Z1 Eversong - Court Friendship Faction",
         },
     },
 })

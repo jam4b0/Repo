@@ -19,7 +19,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "seed",
-            summary = "Retail content for this faction is centered on Aldor-tasks in Shattrath.",
+            summary = "An ancient order of draenei priests once run by Velen, the Aldor are currently led by High Priestess Ishanah.  They are servants of the naaru in Shattrath City known as the Sha'tar.  Rivals of the Scryers.",
         },
         [934] = {
             activities = {
@@ -34,7 +34,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "seed",
-            summary = "Retail content for this faction is centered on Scryer tasks in Shattrath.",
+            summary = "Voren'thal the Seer leads the dissident blood elves who've rejected Kael'thas' path to power.  They've joined forces with the naaru of Shattrath City, much to the dismay of the Aldor.",
         },
         [935] = {
             activities = {
@@ -49,7 +49,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "seed",
-            summary = "Retail content for this faction is centered on Shattrath and temple tasks.",
+            summary = "The Sha'tar are a group of powerful naaru who rule over a rebuilt Shattrath City.  With the help of the Aldor and the Scryers, they lead the battle against Illidan and the Burning Legion.",
         },
         [1011] = {
             activities = {
@@ -64,7 +64,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "seed",
-            summary = "Retail content for this faction is centered on Lower City tasks.",
+            summary = "The refugees of Shattrath come from diverse backgrounds and races.  Word of helpful deeds spreads quickly among the Denizens of Lower City.",
         },
         [9000111] = {
             activities = {
@@ -79,7 +79,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "seed",
-            summary = "Retail content for this faction is centered on Shattrath city factions.",
+            summary = "Shattrath is modeled as a legacy family cluster in the retail core. It groups Sha'tar, Aldor, Scryers, and Lower City so the city appears as a coherent reputation block instead of unrelated one-off entries.",
         },
     },
 })

@@ -27,7 +27,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Nethersturm and Area 52.",
+            summary = "Led by Nexus-Prince Haramad, the Consortium is a loosely affiliated cartel of ethereal smugglers, traders and thieves that has come to Outland to benefit from its riches.",
         },
         [941] = {
             activities = {
@@ -50,7 +50,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Nagrand and Garadar.",
+            summary = "This reclusive group of brown-skinned orcs has escaped any form of demonic corruption.  They have retained their traditional way of life in the face of great changes in Outland.",
         },
         [942] = {
             activities = {
@@ -73,7 +73,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Zangarmarschen and Cenarionszuflucht.",
+            summary = "An exploratory force sent to Outland by the Cenarion Circle to study surviving life forms.  The Cenarion Expedition has quickly gained in size and autonomy since the opening of the Dark Portal.",
         },
         [946] = {
             activities = {
@@ -96,7 +96,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Hellfire Peninsula and Honor Hold.",
+            summary = "Vestiges of the Sons of Lothar, veterans of the Alliance that first came into Draenor, have steadfastly held on to this Hellfire outpost.  They are now joined by the armies from Stormwind and Ironforge.",
         },
         [947] = {
             activities = {
@@ -118,7 +118,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Hellfire Peninsula and The Shattered Halls.",
+            summary = "The expedition sent through the Dark Portal by Thrall has built a stronghold in Hellfire Peninsula.  Thrallmar serves as a base of operations for much of the Horde's activities in Outland.",
         },
         [970] = {
             activities = {
@@ -141,7 +141,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Zangarmarschen and Sporeggar.",
+            summary = "The sporelings are a mostly peaceful race of mushroom-men native to Outland. Their home is located in the southern bogs of Zangarmarsh.",
         },
         [978] = {
             activities = {
@@ -164,7 +164,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Nagrand and Telaar.",
+            summary = "Draenei for \"redeemed.\"  These Broken have escaped the grasp of their various slavers in Outland and have made their home in Nagrand.  It is there that they seek to rediscover their destiny.",
         },
         [989] = {
             activities = {
@@ -185,7 +185,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Old Hillsbrad Foothills and The Black Morass.",
+            summary = "The Keepers of Time are bronze dragons hand-picked by Nozdormu to watch over the Caverns of Time.",
         },
         [990] = {
             activities = {
@@ -199,7 +199,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Hyjal Summit.",
+            summary = "A secretive subgroup of the Bronze Dragonflight, led by Soridormi, prime mate of Nozdormu.",
         },
         [1012] = {
             activities = {
@@ -221,7 +221,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Schattenmondtal and Black Temple.",
+            summary = "The elite of the Broken tribe known as the Ashtongue, officially aligned with Illidan. The Deathsworn are Akama's most trusted lieutenants and are privy to their leader's mysterious motivations.",
         },
         [1015] = {
             activities = {
@@ -244,7 +244,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Schattenmondtal and Netherwing Ledge.",
+            summary = "This unusual brood of dragons was spawned from the eggs of Deathwing's black dragonflight, and infused with raw nether-energies.  Now, they seek to find their identity beyond the shadows of their father's destructive heritage.",
         },
         [1031] = {
             activities = {
@@ -267,7 +267,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Schergrat and Skyguard-tasks.",
+            summary = "An airborne military force created by Shattrath City to deal with the threats that loom in the highest reaches of Outland.",
         },
         [1038] = {
             activities = {
@@ -290,7 +290,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Schergrat and Ogri'la.",
+            summary = "The enlightened denizens of Ogri'la have made their dwelling in the western Blade's Edge Mountains, where proximity to apexis crystals has caused them to transcend their brutish ogre nature.",
         },
         [1077] = {
             activities = {
@@ -313,7 +313,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Isle of Quel'Danas and Quel'Danas dailies.",
+            summary = "Shattrath City's final push against Prince Kael'thas' operations in the Sunwell.",
         },
         [1416] = {
             activities = {
@@ -335,7 +335,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Schattenmondtal and Black Temple.",
+            summary = "Akama is distrustful of Warlocks after witnessing Illidan's fall to his own corruption, followed by the invasion of the Black Temple by Warlocks after the Cataclysm.",
         },
     },
 })

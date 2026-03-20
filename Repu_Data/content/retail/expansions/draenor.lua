@@ -27,7 +27,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Frostfeuergrat and War Mill.",
+            summary = "The Frostwolf orcs of Frostfire Ridge are a tight-knit family of brutal warriors, well equipped to deal with the savage realities of Draenor.",
         },
         [1515] = {
             activities = {
@@ -42,7 +42,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Spires of Arak.",
+            summary = "Working from the shadows, the Arakkoa Outcasts seek to bring a brighter tomorrow.",
         },
         [1710] = {
             activities = {
@@ -65,7 +65,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Moonfall and Outpost of the Awakened.",
+            summary = "The defenders of Shattrath struggle to regain control of their capital city, having been betrayed from within.",
         },
         [1711] = {
             activities = {
@@ -87,7 +87,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Gorgrond and Grimrail Depot.",
+            summary = "The goblins of the Steamwheedle Preservation Society seek to liberate relics from the ogres of Nagrand with the noble intention of selling them to the highest bidder.",
         },
         [1731] = {
             activities = {
@@ -109,7 +109,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Nagrand and Shadowmoon Burial Groands.",
+            summary = "Under the leadership of five powerful exarchs, the draenei of Draenor have prospered in a savage world.",
         },
         [1847] = {
             activities = {
@@ -124,7 +124,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Warspear.",
+            summary = "Yrel has assembled the remaining Exarchs and is calling for a crusade in Velen's name. Together they are working to establish a foothold in Tanaan Jungle and to overthrow Gul'dan.",
         },
         [1848] = {
             activities = {
@@ -146,7 +146,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Tanaan-Dschungel and Hellfire Citadel.",
+            summary = "Seeking to protect Azeroth with a decisive victory on Draenor, Warchief Vol'jin is assembling an elite team of champions to establish a foothold in Tanaan Jungle and to overthrow Gul'dan.",
         },
         [1849] = {
             activities = {
@@ -161,7 +161,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Stormshield.",
+            summary = "Survivors of a grisly civil war, these beleaguered arakkoans hope the reclamation of apexis artifacts will hold the key to peacefully rebuilding their civilization.",
         },
         [1850] = {
             activities = {
@@ -183,7 +183,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Spires of Arak and Auchindoun.",
+            summary = "The treacherous wilds of Tanaan Jungle have attracted the craftiest hunters from both Azeroth and Draenor. To defeat the beasts of Tanaan, one must become a beast.",
         },
     },
 })

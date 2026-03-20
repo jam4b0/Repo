@@ -25,7 +25,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Time Rifts and Temporal side activities.",
+            summary = "Chronormu (Chromie for short) has always been one of the more active, approachable bronze dragons. Strengthening your bond with her will increase her power in the Deaths of Chromie scenario.",
         },
         [2503] = {
             activities = {
@@ -46,7 +46,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Grand Hunt, Ohn'ahran Plains, and Maruukai.",
+            summary = "Centaur clans roam the Ohn'ahran Plains, where they follow the call of the wind and seek the thrill of the hunt.",
         },
         [2507] = {
             activities = {
@@ -67,7 +67,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Siege on Dragonbane Keep, The Waking Shores, and Forbidden Reach.",
+            summary = "A joint expedition of the Explorers' League and Reliquary, this fearless group of adventurers, scholars, and crafters seek to uncover the many mysteries of the Dragon Isles.",
         },
         [2510] = {
             activities = {
@@ -88,7 +88,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Valdrakken, Thaldraszus, and Story and world quests.",
+            summary = "Centered in their most ancient city, the Valdrakken Accord is the unified might of all dragonkind, seeking to protect not only their island home but all of Azeroth.",
         },
         [2511] = {
             activities = {
@@ -109,7 +109,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Community Feast, The Azure Span, and Iskaara.",
+            summary = "The Iskaara Tuskarr have been on the Dragon Isles for generations, living in harmony and telling tales of the world around them.",
         },
         [2517] = {
             activities = {
@@ -123,7 +123,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Waking Shores black dragonflight content.",
+            summary = "Long focused on protecting Azeroth, Wrathion's gaze has now turned to the future of the black dragonflight... and his destiny.",
         },
         [2518] = {
             activities = {
@@ -137,7 +137,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Waking Shores black dragonflight content.",
+            summary = "Sabellian has established a new generation of uncorrupt black dragons, and works to protect it at all costs.",
         },
         [2523] = {
             activities = {
@@ -151,7 +151,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Obsidian side content.",
+            summary = "Led by the brave Scalecommander Cindrethresh, the Dark Talons were trained to be the secret weapon of the black dragonflight. Today, these dracthyr use their skills to turn the tide of any battle regardless of how outnumbered they are.",
         },
         [2524] = {
             activities = {
@@ -165,7 +165,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Obsidian side content.",
+            summary = "Led by the stalwart Scalecommander Azurathel, the Obsidian Warders were trained to be the shield of the black dragonflight. Today these dracthyr use those skills to defend those most in need against overwhelming odds.",
         },
         [2526] = {
             activities = {
@@ -179,7 +179,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Azure Span side quests.",
+            summary = "The Winterpelt Furbolg speak a language no one seems to understand. Perhaps more will be revealed in the future.",
         },
         [2544] = {
             activities = {
@@ -207,7 +207,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Azure Span side content.",
+            summary = "The Cobalt Assembly was once a place where blue dragons would conjure marvelous creations with arcane magic. Now it has fallen into the hands of the Sundered Flame who intend to use its magic for war.",
         },
         [2553] = {
             activities = {
@@ -221,7 +221,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on When Time Needs Mending and Time Rifts.",
+            summary = "Soridormi's timewalkers travel the timeways and defend our world against limitless alternatives. When our timeline is under temporal assault or falling apart, Soridormi is the commander who holds everything together.",
         },
         [2564] = {
             activities = {
@@ -264,7 +264,7 @@ api.RegisterRetailContentModule({
                 },
             },
             source = "curated",
-            summary = "Retail content for this faction is centered on Loamm, Sniffenseeking, and Zaralek world content.",
+            summary = "Underneath the Dragon Isles, deep in Zaralek Cavern, lies the niffen town of Loamm. The friendly traders there are renowned for their hospitality, sense of smell, and peculiar bartering trade system.",
         },
         [2574] = {
             activities = {
@@ -307,7 +307,7 @@ api.RegisterRetailContentModule({
                 },
             },
             source = "curated",
-            summary = "Retail content for this faction is centered on Central Encampment, Emerald Dream world content, and Story chapters in the Dream.",
+            summary = "A coalition of various races ready to defend the Emerald Dream against any and all threats.",
         },
         [2615] = {
             activities = {
@@ -328,7 +328,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Azerothian Archives and Archive activities in Tyrhold.",
+            summary = "A charter group of scholars from the Dragonscale Expedition dedicated to the preservation of the antiquities for future generations.",
         },
     },
 })

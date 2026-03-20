@@ -26,7 +26,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Vale of Eternal Blossoms and Mogu'shan Palace.",
+            summary = "This mysterious society of Pandaren intend to solve the Mogu problem once and for all.",
         },
         [1270] = {
             activities = {
@@ -48,7 +48,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Questlines in the Jade Forest and Shado-Pan Monastery.",
+            summary = "The shadowy protectors of Pandaria's temples, the Shado-Pan are wrought with mystery.",
         },
         [1271] = {
             activities = {
@@ -70,7 +70,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Questlines in Dread Wastes and Heart of Fear.",
+            summary = "Guardians of the East Temple",
         },
         [1272] = {
             activities = {
@@ -93,7 +93,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Valley of the Four Winds and Halbhuegel.",
+            summary = "The Tillers are peaceful and productive pandaren, working with the land to feed the massive appetites of their people.",
         },
         [1302] = {
             activities = {
@@ -108,7 +108,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Questlines in Krasarang Wilds.",
+            summary = "The Anglers are a group of Pandaren fisherman that hope to feed their people and grow their knowledge of fishing.",
         },
         [1337] = {
             activities = {
@@ -138,7 +138,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Dread Wastes, Klaxxi'vess, and Heart of Fear.",
+            summary = "These Mantid Elders are untouched by the corruption and insanity that has overtaken the remainder of the Mantid Swarm. They seek to work with the races of Pandaria to restore their Queen to glory.",
         },
         [1359] = {
             activities = {
@@ -161,7 +161,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Vale of Eternal Blossoms and Wrathion-Endgame.",
+            summary = "Black Prince Wrathion is the last of the black dragons. He has been known to richly reward those who earn his trust and support his endeavors.",
         },
         [1375] = {
             activities = {
@@ -176,7 +176,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Shrine of Two Moons.",
+            summary = "Horde forces in Pandaria, stationed at Domination Point in Krasarang Wilds.",
         },
         [1376] = {
             activities = {
@@ -191,7 +191,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Shrine of Seven Stars.",
+            summary = "Alliance forces in Pandaria, stationed at Lion's Landing in Krasarang Wilds.",
         },
         [1387] = {
             activities = {
@@ -206,7 +206,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Isle of Thunder.",
+            summary = "Ignited by Jaina's fury, the Kirin Tor Offensive seek to seize Thunder Isle for the glory of the Alliance!",
         },
         [1388] = {
             activities = {
@@ -221,7 +221,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Isle of Thunder.",
+            summary = "Outcast from Dalaran, the Sunreaver Onslaught fight to obtain powerful mogu artifacts from among the ruins of Thunder Isle, and to secure their future if the Horde falls to anarchy.",
         },
         [1435] = {
             activities = {
@@ -243,7 +243,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Isle of the Thunder King and Throne of Thander.",
+            summary = "These valorous Shado-Pan venture into the Throne of Thunder to vanquish the evil found within, and exact justice for the centuries of slavery they endured under the Thunder King's reign.",
         },
         [1492] = {
             activities = {
@@ -265,7 +265,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Zeitlose Insel and Siege of Orgrimmar.",
+            summary = "Shaohao, the long lost Emperor of the Pandaren people, is a personage worthy of deep respect.",
         },
     },
 })

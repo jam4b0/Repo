@@ -40,6 +40,7 @@ _G.RepuAPI = {
 }
 
 local root = "/root/Repo/Repu_Data/"
+local descriptionCachePath = root .. "tools/retail_faction_descriptions_enUS.lua"
 
 local files = {
     "content/retail/summary/generated.lua",
@@ -60,6 +61,20 @@ local files = {
     "content/retail/expansions/dragonflight.lua",
 }
 
+local function loadEnglishDescriptionCache()
+    local chunk = loadfile(descriptionCachePath)
+    if not chunk then
+        return {}
+    end
+
+    local ok, payload = pcall(chunk)
+    if not ok or type(payload) ~= "table" then
+        return {}
+    end
+
+    return payload.factions or {}
+end
+
 for _, relativePath in ipairs(files) do
     local chunk = assert(loadfile(root .. relativePath))
     chunk()
@@ -69,6 +84,7 @@ local TITLE_MAP = {
     ["Ardenwald"] = "Ardenweald",
     ["Azurmythosinsel"] = "Azuremyst Isle",
     ["Blutmythosinsel"] = "Bloodmyst Isle",
+    ["The Blutmythosinsel"] = "Bloodmyst Isle",
     ["Brennende Steppe"] = "Burning Steppes",
     ["Donnerfels"] = "Thunder Bluff",
     ["Dunkelmond-Insel"] = "Darkmoon Island",
@@ -213,7 +229,6 @@ local function translateTitle(value)
     translated = translated:gsub("Weltquests", "World quests")
     translated = translated:gsub("Lokale Aufgaben", "Local tasks")
     translated = translated:gsub("Aufgaben", "tasks")
-    translated = translated:gsub("und", "and")
     return translated
 end
 
@@ -280,7 +295,7 @@ local function buildPayload(sourceFactions, summaryTranslator, stringTranslator)
     for factionID, entry in pairs(collected.factions) do
         local sourceEntry = sourceFactions and sourceFactions[factionID] or entry
         local localized = {}
-        localized.summary = summaryTranslator(sourceEntry or entry)
+        localized.summary = summaryTranslator(factionID, sourceEntry or entry)
 
         if sourceEntry and sourceEntry.quartermasters and #sourceEntry.quartermasters > 0 then
             localized.quartermasters = buildQuartermasters(sourceEntry.quartermasters, stringTranslator)
@@ -381,7 +396,7 @@ end
 
 local germanPayload = buildPayload(
     nil,
-    function(entry)
+    function(_, entry)
         return entry.summary
     end,
     function(value)
@@ -394,9 +409,20 @@ if existingGerman and countKeys(existingGerman.factions) > 0 then
     germanPayload = existingGerman
 end
 
+local englishDescriptions = loadEnglishDescriptionCache()
+
 local englishPayload = buildPayload(
-    existingGerman and existingGerman.factions or nil,
-    buildEnglishSummary,
+    nil,
+    function(factionID, entry)
+        local descriptionEntry = englishDescriptions[tostring(factionID)] or nil
+        if descriptionEntry and descriptionEntry.description and descriptionEntry.description ~= "" then
+            return descriptionEntry.description
+        end
+        if entry.summary and entry.summary ~= "" then
+            return entry.summary
+        end
+        return buildEnglishSummary(entry)
+    end,
     translateTitle
 )
 

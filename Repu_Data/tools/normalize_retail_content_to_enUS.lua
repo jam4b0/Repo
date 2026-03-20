@@ -45,6 +45,7 @@ local contentFiles = {
 local TITLE_MAP = {
     ["Azurmythosinsel"] = "Azuremyst Isle",
     ["Blutmythosinsel"] = "Bloodmyst Isle",
+    ["The Blutmythosinsel"] = "Bloodmyst Isle",
     ["Brennende Steppe"] = "Burning Steppes",
     ["Donnerfels"] = "Thunder Bluff",
     ["Dunkelmond-Insel"] = "Darkmoon Island",

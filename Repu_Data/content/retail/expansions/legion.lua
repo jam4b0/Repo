@@ -26,7 +26,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Highmountain and Neltharion's Lair.",
+            summary = "The Highmountain Tribe has dwindled in numbers over the years, and with the drogbar threat looming, seek new allies to save their homeland.",
         },
         [1859] = {
             activities = {
@@ -49,7 +49,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Suramar-Kampagne and Shal'Aran.",
+            summary = "These exiled Nightborne elves suffer withdrawals after being cut off from the Nightwell. They oppose their people's alliance with the Legion and fight for some kind of redemption.",
         },
         [1883] = {
             activities = {
@@ -72,7 +72,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Legion-Dalaran and Krasus' Landing.",
+            summary = "The druids and their allies in Val'sharah have guarded the Emerald Dream since time immemorial.",
         },
         [1894] = {
             activities = {
@@ -94,7 +94,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Broken Shore and Tomb of Sargeras.",
+            summary = "After Legion forces broke the Vault of the Wardens with the aid of Gul'dan, what few Wardens remain are determined to rebuild their prison and hunt down the terrifying beasts that were let loose when it fell.",
         },
         [1900] = {
             activities = {
@@ -116,7 +116,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Azsuna and Eye of Azshara.",
+            summary = "The ghostly Court of Farondis and its allies continue the fight against an onslaught of invaders on the cursed island of Azsuna.",
         },
         [1948] = {
             activities = {
@@ -139,7 +139,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Sturmheim and Haimont.",
+            summary = "These are the chosen warriors of Odyn, sworn to his service in life and death.",
         },
         [2045] = {
             activities = {
@@ -153,7 +153,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Vault of the Wardens.",
+            summary = "The coalition of orders dedicated to defeating the Legion at the Tomb of Sargeras and Broken Shore.",
         },
         [2165] = {
             activities = {
@@ -176,7 +176,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Krokuun and Argus activities.",
+            summary = "After the fall of Argus, the draenei's finest warriors followed the prime naaru Xe'ra across the cosmos in an eternal war to bring about the Legion's end. Since then, other survivors of the Burning Crusade have joined the ranks of the Lightforged.",
         },
         [2170] = {
             activities = {
@@ -198,7 +198,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Argus activities and Antorus, the Burning Throne.",
+            summary = "Although many struggled to oppose the Burning Legion's conquest of Argus, not all were able to escape. Emboldened by the arrival of new allies, these refugees and outcasts stand united in their mission to reclaim their home.",
         },
     },
 })

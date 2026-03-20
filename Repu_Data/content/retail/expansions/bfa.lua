@@ -25,7 +25,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Zuldazar and Dazar'alor.",
+            summary = "A special delegation of the Horde army, focused on disrupting Alliance operations in Kul Tiras.",
         },
         [2158] = {
             activities = {
@@ -39,7 +39,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Vol'dun.",
+            summary = "Comprised of exiles and scavengers, the Voldunai use their knowledge of the sands to thrive where others would wither and die.",
         },
         [2160] = {
             activities = {
@@ -60,7 +60,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Tiragardesand and Boralus.",
+            summary = "Masters of the sea and commanders of Azeroth's finest navy, the distinguished Proudmoore family has led Kul Tiras for decades from their seat of power in Boralus.",
         },
         [2161] = {
             activities = {
@@ -81,7 +81,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Drustvar and Waycrest Manor.",
+            summary = "An ancient Kul Tiran order resurrected to battle the threat of witchcraft, the Order of Embers fights with knowledge guiding their blades.",
         },
         [2162] = {
             activities = {
@@ -102,7 +102,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Stormsong Valley and Shrine of the Storm.",
+            summary = "Home to farmers, craftsmen, soldiers, and the mysterious tidesages, the Storm's Wake seeks to reclaim Stormsong Valley and affirm their place in Kul Tiras.",
         },
         [2370] = {
             activities = {
@@ -144,7 +144,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Mezzamere and Nazjatar.",
+            summary = "Oppressed by the Naga, these refugees have banded together to rise up and seize their freedom.",
         },
         [2391] = {
             activities = {
@@ -165,7 +165,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Mechagon and Rostbolzen.",
+            summary = "The Rustbolt Resistance holds the line against King Mechagon and his evil plans.",
         },
         [2395] = {
             activities = {
@@ -179,7 +179,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Sturmsangtal side content.",
+            summary = "A species of bee known for their unusual size. While newcomers to Stormsong Valley, they quickly made their presence known to adventurers and insect enthusiasts alike.",
         },
         [2415] = {
             activities = {
@@ -193,7 +193,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Ny'alotha, the Waking City.",
+            summary = "A group of mogu loyal to the titan keeper Ra, they are charged with defending the Engine of Nalak'sha from N'Zoth's minions.",
         },
     },
 })

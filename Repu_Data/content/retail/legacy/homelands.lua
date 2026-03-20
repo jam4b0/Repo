@@ -19,7 +19,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "seed",
-            summary = "Retail content for this faction is centered on Ironforge.",
+            summary = "This Alliance capital is the pride of the Dun Morogh dwarves.  Home to King Magni.",
         },
         [59] = {
             activities = {
@@ -42,7 +42,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "seed",
-            summary = "Retail content for this faction is centered on Searing Gorge and Burning Steppes.",
+            summary = "The dwarves of the Thorium Brotherhood epitomize excellence in craftsmanship and are bent on unlocking the secrets of Blackrock Mountain.",
         },
         [68] = {
             activities = {
@@ -57,7 +57,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "seed",
-            summary = "Retail content for this faction is centered on Undercity.",
+            summary = "Led by Sylvanas Windrunner, the Forsaken have joined a tenuous alliance with the Horde and established this capital in the vast depths under the Ruins of Lordaeron.",
         },
         [69] = {
             activities = {
@@ -72,7 +72,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "seed",
-            summary = "Retail content for this faction is centered on Darnassus.",
+            summary = "This Alliance capital is populated by Night Elves and is located in the Island of Teldrassil.  Ruled by the Priestess of the Moon, Tyrande Whisperwind.",
         },
         [72] = {
             activities = {
@@ -87,7 +87,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "seed",
-            summary = "Retail content for this faction is centered on Stormwind.",
+            summary = "One of the last bastions of human power, this Alliance capital is ruled by the young but wise king, Anduin Wrynn.",
         },
         [76] = {
             activities = {
@@ -102,7 +102,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "seed",
-            summary = "Retail content for this faction is centered on Orgrimmar.",
+            summary = "Founded by Thrall, this Horde capital city is home to many of the proud orc clans of Durotar.",
         },
         [81] = {
             activities = {
@@ -117,7 +117,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "seed",
-            summary = "Retail content for this faction is centered on Thunder Bluff.",
+            summary = "Baine Bloodhoof leads his people, the proud Tauren, from this mighty Horde capital.",
         },
         [369] = {
             activities = {
@@ -140,7 +140,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Tanaris and Gadgetzan.",
+            summary = "Capital of the Steamwheedle Cartel and home to goblinhood's finest engineers, alchemists and merchants.",
         },
         [470] = {
             activities = {
@@ -163,7 +163,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Northern Barrens and Ratchet.",
+            summary = "Part of the Steamwheedle Cartel, this goblin city provides a neutral haven for those that wish to trade goods and services in the Barrens.",
         },
         [529] = {
             activities = {
@@ -186,7 +186,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "seed",
-            summary = "Retail content for this faction is centered on Western Plaguelands and Eastern Plaguelands.",
+            summary = "An organization focused on protecting Azeroth from the threat of the Scourge.  Strongholds of the Argent Dawn can be found in the Eastern and Western Plaguelands.",
         },
         [530] = {
             activities = {
@@ -201,7 +201,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "seed",
-            summary = "Retail content for this faction is centered on Ashenvale.",
+            summary = "This tribe of exiled trolls has joined forces with Thrall and the Horde.  They now call Durotar their home, which they share with their orc allies.",
         },
         [576] = {
             activities = {
@@ -216,7 +216,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "seed",
-            summary = "Retail content for this faction is centered on Felwood.",
+            summary = "As the last uncorrupted furbolg tribe, the Timbermaw seek to preserve their spiritual ways and end the suffering of their brethren.",
         },
         [577] = {
             activities = {
@@ -239,7 +239,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Winterspring and Everlook.",
+            summary = "This trading post is run by the goblins of the Steamwheedle Cartel and it sits in the crossroads of Winterspring's main trade routes.",
         },
         [609] = {
             activities = {
@@ -278,7 +278,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "seed",
-            summary = "Retail content for this faction is centered on Desolace, Feralas, and Moonglade.",
+            summary = "The druids of Cenarion Circle are guardians of nature and make their home in tranquil Moonglade.",
         },
         [749] = {
             activities = {
@@ -292,7 +292,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Molten Core.",
+            summary = "These elementals have made their home on the islands east of Azshara.  Sworn enemies of the armies of Ragnaros.",
         },
         [910] = {
             activities = {
@@ -313,7 +313,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "curated",
-            summary = "Retail content for this faction is centered on Temple of Ahn'Qiraj and Ruins of Ahn'Qiraj.",
+            summary = "The descendants of the Bronze Dragonflight are the guardians of time and care little for the mortal races.",
         },
         [930] = {
             activities = {
@@ -337,14 +337,14 @@ api.RegisterRetailContentModule({
                     kind = "Zone/City",
                     location = {
                         mapID = 106,
-                        title = "The Blutmythosinsel",
+                        title = "Bloodmyst Isle",
                     },
-                    title = "The Blutmythosinsel",
+                    title = "Bloodmyst Isle",
                 },
             },
             confidence = "medium",
             source = "seed",
-            summary = "Retail content for this faction is centered on The Exodar, Azuremyst Isle, and The Blutmythosinsel.",
+            summary = "The naaru vessel that brought the draenei to Azeroth.  Though stranded in the Azuremyst Isles, it acts as a home city for this noble race.",
         },
         [1133] = {
             activities = {
@@ -359,7 +359,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "seed",
-            summary = "Retail content for this faction is centered on Azshara.",
+            summary = "Run by the ruthless Trade Prince Gallywix, the Bilgewater Cartel is the most powerful trading company on the Isle of Kezan. From their headquarters at Bilgewater Port, the cartel dominates trade all over the South Seas.",
         },
         [1134] = {
             activities = {
@@ -374,7 +374,7 @@ api.RegisterRetailContentModule({
             },
             confidence = "medium",
             source = "seed",
-            summary = "Retail content for this faction is centered on Gilneas.",
+            summary = "The people of Gilneas are a nation of survivors.  Having walled themselves off from the rest of humanity, they must now face new threats from within.",
         },
     },
 })
