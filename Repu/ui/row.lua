@@ -101,21 +101,23 @@ function ns.UI:UpdateRow(row, candidate, isActive, isSelected)
     row.bar:SetStatusBarColor(barColorR, barColorG, barColorB)
     row.bar:SetMinMaxValues(0, math.max(1, faction.progressMax or 1))
     row.bar:SetValue(math.min(faction.progressMax or 1, faction.progressValue or 0))
-    row.nameText:SetText(faction.name or UNKNOWN)
     row.candidate = candidate
     row.isSelected = isSelected and true or false
 
     local hasChildren = candidate.hasKnownChildren and true or false
     local isChild = candidate.isChildOfVisibleParent and true or false
+    row.nameText:SetText((isChild and "   " or "") .. tostring(faction.name or UNKNOWN))
 
     if hasChildren or not isChild then
         row.nameText:SetFontObject(GameFontNormal)
+        row.nameText:SetTextColor(unpack(Styles.text))
     else
         row.nameText:SetFontObject(GameFontHighlightSmall)
+        row.nameText:SetTextColor(unpack(Styles.subtleText))
     end
 
     row.nameText:ClearAllPoints()
-    row.nameText:SetPoint("LEFT", row.overlay, "LEFT", isChild and 22 or 10, 0)
+    row.nameText:SetPoint("LEFT", row.overlay, "LEFT", isChild and 34 or 10, 0)
     row.nameText:SetPoint("RIGHT", row.valueText, "LEFT", -10, 0)
 
     local valueText = string.format(

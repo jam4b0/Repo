@@ -120,8 +120,12 @@ function ns.UI:RegisterOptions()
         refreshUI("OPTIONS_SCALE")
     end)
 
+    panel.debugAnchor = panel:CreateFontString(nil, "ARTWORK", "GameFontNormal")
+    panel.debugAnchor:SetPoint("TOPLEFT", panel.locked, "TOPLEFT", 300, 0)
+    panel.debugAnchor:SetText("")
+
     panel.debugHeader = panel:CreateFontString(nil, "ARTWORK", "GameFontNormal")
-    panel.debugHeader:SetPoint("TOPLEFT", panel.scaleSlider, "BOTTOMLEFT", 0, -28)
+    panel.debugHeader:SetPoint("TOPLEFT", panel.debugAnchor, "TOPLEFT", 0, 0)
     panel.debugHeader:SetText(Locale:Get("OPTION_DEBUG_SECTION"))
 
     panel.enableDebug = createCheckbox(panel, panel.debugHeader, Locale:Get("OPTION_ENABLE_DEBUG"), function(value)
