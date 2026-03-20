@@ -46,14 +46,30 @@ local function setOutputText(editBox, text)
     editBox._updating = false
 end
 
+local function getAddonInfo(index)
+    if C_AddOns and C_AddOns.GetAddOnInfo then
+        local info = C_AddOns.GetAddOnInfo(index)
+        if type(info) == "table" then
+            return info.name, info.title
+        end
+    end
+
+    if GetAddOnInfo then
+        local name, title = GetAddOnInfo(index)
+        return name, title
+    end
+
+    return nil, nil
+end
+
 local function findAddonIndex(addonName)
-    if not GetNumAddOns or not GetAddOnInfo then
+    if not GetNumAddOns then
         return nil
     end
 
     for index = 1, GetNumAddOns() do
-        local name = GetAddOnInfo(index)
-        if name == addonName then
+        local name, title = getAddonInfo(index)
+        if name == addonName or title == addonName then
             return index
         end
     end
