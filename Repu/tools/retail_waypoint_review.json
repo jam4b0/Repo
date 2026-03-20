@@ -1,12 +1,24 @@
 {
   "summary": {
-    "already_with_coordinates": 24,
+    "already_with_coordinates": 27,
     "leave_without_coordinates_for_now": 0,
-    "needs_external_coordinate_source": 69,
+    "needs_external_coordinate_source": 66,
     "open_standard_gap": 0
   },
   "groups": {
     "already_with_coordinates": [
+      {
+        "file": "bfa.lua",
+        "factionID": 2158
+      },
+      {
+        "file": "bfa.lua",
+        "factionID": 2161
+      },
+      {
+        "file": "cataclysm.lua",
+        "factionID": 1171
+      },
       {
         "file": "dragonflight.lua",
         "factionID": 2544
@@ -108,17 +120,7 @@
     "needs_external_coordinate_source": [
       {
         "file": "bfa.lua",
-        "factionID": 2158,
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "file": "bfa.lua",
         "factionID": 2160,
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "file": "bfa.lua",
-        "factionID": 2161,
         "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
       },
       {
@@ -149,11 +151,6 @@
       {
         "file": "cataclysm.lua",
         "factionID": 1158,
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "file": "cataclysm.lua",
-        "factionID": 1171,
         "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
       },
       {

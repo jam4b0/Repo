@@ -1,23 +1,15 @@
 {
   "summary": {
     "totalFactions": 152,
-    "withAnyXY": 24,
-    "withQuartermasterXY": 16,
-    "withActivityXY": 24,
-    "withoutAnyXY": 128
+    "withAnyXY": 27,
+    "withQuartermasterXY": 19,
+    "withActivityXY": 27,
+    "withoutAnyXY": 125
   },
   "quartermasterWithoutXY": [
     {
       "file": "bfa.lua",
-      "factionID": 2158
-    },
-    {
-      "file": "bfa.lua",
       "factionID": 2160
-    },
-    {
-      "file": "bfa.lua",
-      "factionID": 2161
     },
     {
       "file": "bfa.lua",
@@ -42,10 +34,6 @@
     {
       "file": "cataclysm.lua",
       "factionID": 1158
-    },
-    {
-      "file": "cataclysm.lua",
-      "factionID": 1171
     },
     {
       "file": "cataclysm.lua",
@@ -291,15 +279,7 @@
     },
     {
       "file": "bfa.lua",
-      "factionID": 2158
-    },
-    {
-      "file": "bfa.lua",
       "factionID": 2160
-    },
-    {
-      "file": "bfa.lua",
-      "factionID": 2161
     },
     {
       "file": "bfa.lua",
@@ -328,10 +308,6 @@
     {
       "file": "cataclysm.lua",
       "factionID": 1158
-    },
-    {
-      "file": "cataclysm.lua",
-      "factionID": 1171
     },
     {
       "file": "cataclysm.lua",
@@ -799,6 +775,18 @@
     }
   ],
   "factionsWithXY": [
+    {
+      "file": "bfa.lua",
+      "factionID": 2158
+    },
+    {
+      "file": "bfa.lua",
+      "factionID": 2161
+    },
+    {
+      "file": "cataclysm.lua",
+      "factionID": 1171
+    },
     {
       "file": "dragonflight.lua",
       "factionID": 2544

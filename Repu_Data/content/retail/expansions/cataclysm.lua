@@ -57,6 +57,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 207,
                         title = "Therazane's Throne",
+                        x = 0.569,
+                        y = 0.132,
                     },
                     name = "D'lom the Collector",
                 },

@@ -56,7 +56,9 @@ api.RegisterRetailContentModule({
                 {
                     label = "Quartermaster",
                     location = {
-                        title = "Voldun",
+                        title = "Vulpera Hideaway",
+                        x = 0.566,
+                        y = 0.498,
                     },
                     name = "Hoarder Jena",
                 },
@@ -130,7 +132,9 @@ api.RegisterRetailContentModule({
                 {
                     label = "Quartermaster",
                     location = {
-                        title = "Drustvar",
+                        title = "Arom's Stand",
+                        x = 0.378,
+                        y = 0.490,
                     },
                     name = "Quartermaster Alcorn",
                 },
