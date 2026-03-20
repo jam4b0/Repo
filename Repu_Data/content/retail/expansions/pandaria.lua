@@ -25,6 +25,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 390,
+                        title = "Vale of Eternal Blossoms",
+                    },
+                    name = "Jaluu the Generous",
+                },
+            },
             source = "curated",
             summary = "This mysterious society of Pandaren intend to solve the Mogu problem once and for all.",
         },
@@ -47,6 +57,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 371,
+                        title = "Shado-Pan Garrison",
+                    },
+                    name = "Rushi the Fox",
+                },
+            },
             source = "curated",
             summary = "The shadowy protectors of Pandaria's temples, the Shado-Pan are wrought with mystery.",
         },
@@ -92,6 +112,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 376,
+                        title = "Halfhill",
+                    },
+                    name = "Gina Mudclaw",
+                },
+            },
             source = "curated",
             summary = "The Tillers are peaceful and productive pandaren, working with the land to feed the massive appetites of their people.",
         },
@@ -137,6 +167,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 418,
+                        title = "Klaxxi'vess",
+                    },
+                    name = "Ambersmith Zikk",
+                },
+            },
             source = "curated",
             summary = "These Mantid Elders are untouched by the corruption and insanity that has overtaken the remainder of the Mantid Swarm. They seek to work with the races of Pandaria to restore their Queen to glory.",
         },

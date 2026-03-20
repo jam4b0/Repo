@@ -71,6 +71,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 125,
+                        title = "Dalaran",
+                    },
+                    name = "Archmage Alvareaux",
+                },
+            },
             source = "curated",
             summary = "The mages and archmages running the city of Dalaran.  Faced with the rising threats of the Blue Dragonflight and the Scourge, they've transported their city to the heart of Northrend.",
         },
@@ -167,6 +177,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 118,
+                        title = "Argent Vanguard",
+                    },
+                    name = "Veteran Crusader Aliocha Segard",
+                },
+            },
             source = "curated",
             summary = "Led by Tirion Fordring, the Argent Crusade combines the reformed Order of the Silver Hand with the Argent Dawn in one final push against the forces of the Lich King.",
         },
@@ -182,6 +202,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 120,
+                        title = "Dun Niffelem",
+                    },
+                    name = "Lillehoff",
+                },
+            },
             source = "curated",
             summary = "The frost giants of the Storm Peaks are a war-like race that makes their home in Dun Niffelem.",
         },

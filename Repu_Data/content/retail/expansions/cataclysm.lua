@@ -18,6 +18,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 198,
+                        title = "Nordrassil",
+                    },
+                    name = "Provisioner Whitecloud",
+                },
+            },
             source = "curated",
             summary = "Faced with the impending devastation of Mount Hyjal, the most powerful members of the Cenarion Circle have joined forces with their Emerald Dragonflight allies to fend off Ragnaros' elemental hordes and the Twilight's Hammer.",
         },
@@ -48,6 +58,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 249,
+                        title = "Ramkahen",
+                    },
+                    name = "Blacksmith Abasi",
+                },
+            },
             source = "curated",
             summary = "The cat-like people of Ramkahen are the descendants of the Tol'vir, guardians of Uldum.  Though they've lost their stone bodies, protecting the secrets of the titans is still a part of their rigid tradition.",
         },
