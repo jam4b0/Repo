@@ -58,17 +58,17 @@ api.RegisterRetailContentModule({
                     kind = "Zone",
                     location = {
                         mapID = 102,
-                        title = "Zangarmarschen",
+                        title = "Zangarmarsh",
                     },
-                    title = "Zangarmarschen",
+                    title = "Zangarmarsh",
                 },
                 {
                     kind = "Hub",
                     location = {
                         mapID = 102,
-                        title = "Cenarionszuflucht",
+                        title = "Cenarion Refuge",
                     },
-                    title = "Cenarionszuflucht",
+                    title = "Cenarion Refuge",
                 },
             },
             confidence = "medium",
@@ -126,9 +126,9 @@ api.RegisterRetailContentModule({
                     kind = "Zone",
                     location = {
                         mapID = 102,
-                        title = "Zangarmarschen",
+                        title = "Zangarmarsh",
                     },
-                    title = "Zangarmarschen",
+                    title = "Zangarmarsh",
                 },
                 {
                     kind = "Hub",
@@ -207,9 +207,9 @@ api.RegisterRetailContentModule({
                     kind = "Zone",
                     location = {
                         mapID = 105,
-                        title = "Schattenmondtal",
+                        title = "Shadowmoon Valley",
                     },
-                    title = "Schattenmondtal",
+                    title = "Shadowmoon Valley",
                 },
                 {
                     kind = "Raid",
@@ -229,9 +229,9 @@ api.RegisterRetailContentModule({
                     kind = "Zone",
                     location = {
                         mapID = 105,
-                        title = "Schattenmondtal",
+                        title = "Shadowmoon Valley",
                     },
-                    title = "Schattenmondtal",
+                    title = "Shadowmoon Valley",
                 },
                 {
                     kind = "Hub",
@@ -252,15 +252,15 @@ api.RegisterRetailContentModule({
                     kind = "Zone",
                     location = {
                         mapID = 109,
-                        title = "Schergrat",
+                        title = "Blade's Edge Mountains",
                     },
-                    title = "Schergrat",
+                    title = "Blade's Edge Mountains",
                 },
                 {
                     kind = "Daily/Repeatable",
                     location = {
                         mapID = 109,
-                        title = "Schergrat",
+                        title = "Blade's Edge Mountains",
                     },
                     title = "Skyguard-tasks",
                 },
@@ -275,9 +275,9 @@ api.RegisterRetailContentModule({
                     kind = "Zone",
                     location = {
                         mapID = 109,
-                        title = "Schergrat",
+                        title = "Blade's Edge Mountains",
                     },
-                    title = "Schergrat",
+                    title = "Blade's Edge Mountains",
                 },
                 {
                     kind = "Hub",
@@ -321,9 +321,9 @@ api.RegisterRetailContentModule({
                     kind = "Zone",
                     location = {
                         mapID = 105,
-                        title = "Schattenmondtal",
+                        title = "Shadowmoon Valley",
                     },
-                    title = "Schattenmondtal",
+                    title = "Shadowmoon Valley",
                 },
                 {
                     kind = "Raid",

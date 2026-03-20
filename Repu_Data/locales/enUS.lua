@@ -275,11 +275,11 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Zangarmarschen",
+                    title = "Zangarmarsh",
                 },
                 {
                     kind = "Hub",
-                    title = "Cenarionszuflucht",
+                    title = "Cenarion Refuge",
                 },
             },
             summary = "An exploratory force sent to Outland by the Cenarion Circle to study surviving life forms.  The Cenarion Expedition has quickly gained in size and autonomy since the opening of the Dark Portal.",
@@ -317,7 +317,7 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Zangarmarschen",
+                    title = "Zangarmarsh",
                 },
                 {
                     kind = "Hub",
@@ -374,7 +374,7 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Schattenmondtal",
+                    title = "Shadowmoon Valley",
                 },
                 {
                     kind = "Raid",
@@ -387,7 +387,7 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Schattenmondtal",
+                    title = "Shadowmoon Valley",
                 },
                 {
                     kind = "Hub",
@@ -400,7 +400,7 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Schergrat",
+                    title = "Blade's Edge Mountains",
                 },
                 {
                     kind = "Daily/Repeatable",
@@ -413,7 +413,7 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Schergrat",
+                    title = "Blade's Edge Mountains",
                 },
                 {
                     kind = "Hub",
@@ -785,7 +785,7 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Schattenmondtal",
+                    title = "Shadowmoon Valley",
                 },
                 {
                     kind = "Raid",
@@ -811,7 +811,7 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Frostfeuergrat",
+                    title = "Frostfire Ridge",
                 },
                 {
                     kind = "Hub",
@@ -907,7 +907,7 @@ api.RegisterLocaleDomain("retail_content", "enUS", {
             activities = {
                 {
                     kind = "Zone",
-                    title = "Tanaan-Dschungel",
+                    title = "Tanaan Jungle",
                 },
                 {
                     kind = "Raid",

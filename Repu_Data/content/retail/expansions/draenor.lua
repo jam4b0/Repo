@@ -12,9 +12,9 @@ api.RegisterRetailContentModule({
                     kind = "Zone",
                     location = {
                         mapID = 525,
-                        title = "Frostfeuergrat",
+                        title = "Frostfire Ridge",
                     },
-                    title = "Frostfeuergrat",
+                    title = "Frostfire Ridge",
                 },
                 {
                     kind = "Hub",
@@ -132,9 +132,9 @@ api.RegisterRetailContentModule({
                     kind = "Zone",
                     location = {
                         mapID = 543,
-                        title = "Tanaan-Dschungel",
+                        title = "Tanaan Jungle",
                     },
-                    title = "Tanaan-Dschungel",
+                    title = "Tanaan Jungle",
                 },
                 {
                     kind = "Raid",
