@@ -542,97 +542,105 @@ ns.Data:RegisterRetailModule({
                     { factionID = 21, weight = 248 },
                 },
             },
-            ["84:sturmwind"] = {
+            ["84:stormwind-city"] = {
                 name = "Sturmwind",
                 parentMapID = 84,
                 source = "observed",
                 confidence = "high",
                 notes = "Direct Stormwind city anchor",
                 mapIDs = { 84 },
+                subZoneKeys = { "Sturmwind", "Stormwind City", "Stormwind" },
                 tags = { "primary", "hub", "local", "eastern-kingdoms", "observed" },
                 factions = {
                     { factionID = 72, weight = 262 },
                 },
             },
-            ["84:handelsdistrikt"] = {
+            ["84:trade-district"] = {
                 name = "Handelsdistrikt",
                 parentMapID = 84,
                 source = "seed",
                 confidence = "medium",
                 notes = "Stormwind hub subzone",
                 mapIDs = { 84 },
+                subZoneKeys = { "Handelsdistrikt", "Trade District" },
                 tags = { "primary", "local", "eastern-kingdoms" },
                 factions = {
                     { factionID = 72, weight = 260 },
                 },
             },
-            ["84:das tal der helden"] = {
+            ["84:valley-of-heroes"] = {
                 name = "Das Tal der Helden",
                 parentMapID = 84,
                 source = "observed",
                 confidence = "medium",
                 notes = "Observed Stormwind city subzone from sweep",
                 mapIDs = { 84 },
+                subZoneKeys = { "Das Tal der Helden", "Valley of Heroes" },
                 tags = { "primary", "local", "eastern-kingdoms", "observed" },
                 factions = {
                     { factionID = 72, weight = 258 },
                 },
             },
-            ["84:der kathedralenplatz"] = {
+            ["84:cathedral-square"] = {
                 name = "Der Kathedralenplatz",
                 parentMapID = 84,
                 source = "observed",
                 confidence = "medium",
                 notes = "Observed Stormwind city subzone from sweep",
                 mapIDs = { 84 },
+                subZoneKeys = { "Der Kathedralenplatz", "Cathedral Square" },
                 tags = { "local", "eastern-kingdoms", "observed" },
                 factions = {
                     { factionID = 72, weight = 256 },
                 },
             },
-            ["84:die kanäle"] = {
+            ["84:the-canals"] = {
                 name = "Die Kanäle",
                 parentMapID = 84,
                 source = "observed",
                 confidence = "medium",
                 notes = "Observed Stormwind city subzone from sweep",
                 mapIDs = { 84 },
+                subZoneKeys = { "Die Kanäle", "The Canals" },
                 tags = { "local", "eastern-kingdoms", "observed" },
                 factions = {
                     { factionID = 72, weight = 254 },
                 },
             },
-            ["84:der östliche erdschrein"] = {
+            ["84:eastern-earthshrine"] = {
                 name = "Der Östliche Erdschrein",
                 parentMapID = 84,
                 source = "observed",
                 confidence = "medium",
                 notes = "Observed Stormwind city subzone from sweep",
                 mapIDs = { 84 },
+                subZoneKeys = { "Der Östliche Erdschrein", "Eastern Earthshrine" },
                 tags = { "local", "eastern-kingdoms", "observed" },
                 factions = {
                     { factionID = 72, weight = 253 },
                 },
             },
-            ["84:stadtrand von sturmwind"] = {
+            ["84:stormwind-outskirts"] = {
                 name = "Stadtrand von Sturmwind",
                 parentMapID = 84,
                 source = "observed",
                 confidence = "medium",
                 notes = "Observed Stormwind city subzone from sweep",
                 mapIDs = { 84 },
+                subZoneKeys = { "Stadtrand von Sturmwind", "Stormwind Outskirts" },
                 tags = { "local", "eastern-kingdoms", "observed" },
                 factions = {
                     { factionID = 72, weight = 252 },
                 },
             },
-            ["84:der zwergendistrikt"] = {
+            ["84:dwarven-district"] = {
                 name = "Der Zwergendistrikt",
                 parentMapID = 84,
                 source = "observed",
                 confidence = "medium",
                 notes = "Observed Stormwind city subzone from sweep",
                 mapIDs = { 84 },
+                subZoneKeys = { "Der Zwergendistrikt", "Dwarven District" },
                 tags = { "local", "eastern-kingdoms", "observed" },
                 factions = {
                     { factionID = 72, weight = 253 },
@@ -831,61 +839,66 @@ ns.Data:RegisterRetailModule({
                     { factionID = 47, weight = 242 },
                 },
             },
-            ["87:große schmiede"] = {
+            ["87:the-great-forge"] = {
                 name = "Große Schmiede",
                 parentMapID = 87,
                 source = "seed",
                 confidence = "medium",
                 notes = "Ironforge hub subzone",
                 mapIDs = { 87 },
+                subZoneKeys = { "Große Schmiede", "The Great Forge" },
                 tags = { "primary", "local", "eastern-kingdoms" },
                 factions = {
                     { factionID = 47, weight = 260 },
                 },
             },
-            ["87:eisenschmiede"] = {
+            ["87:ironforge-city"] = {
                 name = "Eisenschmiede",
                 parentMapID = 87,
                 source = "seed",
                 confidence = "high",
                 notes = "Direct Ironforge city anchor",
                 mapIDs = { 87 },
+                subZoneKeys = { "Eisenschmiede", "Ironforge" },
                 tags = { "primary", "hub", "local", "eastern-kingdoms" },
                 factions = {
                     { factionID = 47, weight = 262 },
                 },
             },
-            ["90:apothekerdistrikt"] = {
+            ["90:apothecarium"] = {
                 name = "Apothekerdistrikt",
                 parentMapID = 90,
                 source = "seed",
                 confidence = "medium",
                 notes = "Undercity hub subzone",
                 mapIDs = { 90 },
+                subZoneKeys = { "Apothekerdistrikt", "The Apothecarium" },
                 tags = { "primary", "local", "eastern-kingdoms" },
                 factions = {
                     { factionID = 68, weight = 260 },
                 },
             },
-            ["90:unterstadt"] = {
+            ["90:undercity-city"] = {
                 name = "Unterstadt",
                 parentMapID = 90,
                 source = "seed",
                 confidence = "high",
                 notes = "Direct Undercity city anchor",
                 mapIDs = { 90 },
+                subZoneKeys = { "Unterstadt", "Undercity" },
                 tags = { "primary", "hub", "local", "eastern-kingdoms" },
                 factions = {
                     { factionID = 68, weight = 262 },
                 },
             },
-            ["2393:silbermond"] = {
+            ["2393:silvermoon-city"] = {
                 name = "Silbermond",
                 parentMapID = 2393,
                 source = "observed",
                 confidence = "high",
                 notes = "Direct Silvermoon city anchor",
                 mapIDs = { 2393 },
+                subZoneKeys = { "Silbermond", "Silvermoon City", "Silvermoon" },
                 tags = { "primary", "hub", "local", "observed" },
                 factions = {
                     { factionID = 2710, weight = 262 },

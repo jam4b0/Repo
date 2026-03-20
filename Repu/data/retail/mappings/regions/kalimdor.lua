@@ -433,157 +433,170 @@ ns.Data:RegisterRetailModule({
                     { factionID = 930, weight = 250 },
                 },
             },
-            ["85:orgrimmar"] = {
+            ["85:orgrimmar-city"] = {
                 name = "Orgrimmar",
                 parentMapID = 85,
                 source = "observed",
                 confidence = "high",
                 notes = "Direct Orgrimmar city anchor",
                 mapIDs = { 85 },
+                subZoneKeys = { "Orgrimmar" },
                 tags = { "city", "hub", "primary", "local", "observed" },
                 factions = {
                     { factionID = 76, weight = 262 },
                 },
             },
-            ["85:das tal der stärke"] = {
+            ["85:valley-of-strength"] = {
                 name = "Das Tal der Stärke",
                 parentMapID = 85,
                 source = "observed",
                 confidence = "high",
                 notes = "Observed repeatedly in Orgrimmar capture set",
                 mapIDs = { 85 },
+                subZoneKeys = { "Das Tal der Stärke", "Valley of Strength" },
                 tags = { "city", "hub", "primary", "local" },
                 factions = {
                     { factionID = 76, weight = 255 },
                 },
             },
-            ["85:die pfadfinderhöhle"] = {
+            ["85:cavern-of-the-pathfinders"] = {
                 name = "Die Pfadfinderhöhle",
                 parentMapID = 85,
                 source = "observed",
                 confidence = "high",
                 notes = "Observed across multiple Orgrimmar internal map variants",
                 mapIDs = { 85 },
+                subZoneKeys = { "Die Pfadfinderhöhle", "Cavern of the Pathfinders" },
                 tags = { "city", "hub", "local", "observed" },
                 factions = {
                     { factionID = 76, weight = 250 },
                 },
             },
-            ["85:das tal der geister"] = {
+            ["85:valley-of-spirits"] = {
                 name = "Das Tal der Geister",
                 parentMapID = 85,
                 source = "observed",
                 confidence = "medium",
                 notes = "Observed Orgrimmar city subzone from sweep",
                 mapIDs = { 85 },
+                subZoneKeys = { "Das Tal der Geister", "Valley of Spirits" },
                 tags = { "city", "hub", "local", "observed" },
                 factions = {
                     { factionID = 76, weight = 248 },
                 },
             },
-            ["85:das tal der weisheit"] = {
+            ["85:valley-of-wisdom"] = {
                 name = "Das Tal der Weisheit",
                 parentMapID = 85,
                 source = "observed",
                 confidence = "medium",
                 notes = "Observed Orgrimmar city subzone from sweep",
                 mapIDs = { 85 },
+                subZoneKeys = { "Das Tal der Weisheit", "Valley of Wisdom" },
                 tags = { "city", "hub", "local", "observed" },
                 factions = {
                     { factionID = 76, weight = 248 },
                 },
             },
-            ["85:das tal der ehre"] = {
+            ["85:valley-of-honor"] = {
                 name = "Das Tal der Ehre",
                 parentMapID = 85,
                 source = "observed",
                 confidence = "medium",
                 notes = "Observed Orgrimmar city subzone from sweep",
                 mapIDs = { 85 },
+                subZoneKeys = { "Das Tal der Ehre", "Valley of Honor" },
                 tags = { "city", "hub", "local", "observed" },
                 factions = {
                     { factionID = 76, weight = 248 },
                 },
             },
-            ["85:die feste grommash"] = {
+            ["85:grommash-hold"] = {
                 name = "Die Feste Grommash",
                 parentMapID = 85,
                 source = "observed",
                 confidence = "medium",
                 notes = "Observed Orgrimmar city subzone from sweep",
                 mapIDs = { 85 },
+                subZoneKeys = { "Die Feste Grommash", "Grommash Hold" },
                 tags = { "city", "hub", "local", "observed" },
                 factions = {
                     { factionID = 76, weight = 250 },
                 },
             },
-            ["85:die gasse"] = {
+            ["85:the-drag"] = {
                 name = "Die Gasse",
                 parentMapID = 85,
                 source = "observed",
                 confidence = "medium",
                 notes = "Observed Orgrimmar city subzone from sweep",
                 mapIDs = { 85 },
+                subZoneKeys = { "Die Gasse", "The Drag" },
                 tags = { "city", "hub", "local", "observed" },
                 factions = {
                     { factionID = 76, weight = 247 },
                 },
             },
-            ["85:der westliche erdschrein"] = {
+            ["85:western-earthshrine"] = {
                 name = "Der Westliche Erdschrein",
                 parentMapID = 85,
                 source = "observed",
                 confidence = "medium",
                 notes = "Observed Orgrimmar city subzone from sweep",
                 mapIDs = { 85 },
+                subZoneKeys = { "Der Westliche Erdschrein", "Western Earthshrine" },
                 tags = { "city", "hub", "local", "observed" },
                 factions = {
                     { factionID = 76, weight = 247 },
                 },
             },
-            ["85:das tor von orgrimmar"] = {
+            ["85:orgrimmar-gate"] = {
                 name = "Das Tor von Orgrimmar",
                 parentMapID = 85,
                 source = "observed",
                 confidence = "medium",
                 notes = "Observed Orgrimmar city subzone from sweep",
                 mapIDs = { 85 },
+                subZoneKeys = { "Das Tor von Orgrimmar", "Orgrimmar Gate" },
                 tags = { "city", "local", "observed" },
                 factions = {
                     { factionID = 76, weight = 246 },
                 },
             },
-            ["86:jägerhöhe"] = {
+            ["86:hunter-rise"] = {
                 name = "Jägerhöhe",
                 parentMapID = 86,
                 source = "seed",
                 confidence = "medium",
                 notes = "Thunder Bluff hub subzone",
                 mapIDs = { 86 },
+                subZoneKeys = { "Jägerhöhe", "Hunter Rise" },
                 tags = { "primary", "local", "kalimdor" },
                 factions = {
                     { factionID = 81, weight = 260 },
                 },
             },
-            ["86:donnerfels"] = {
+            ["86:thunder-bluff-city"] = {
                 name = "Donnerfels",
                 parentMapID = 86,
                 source = "seed",
                 confidence = "high",
                 notes = "Direct Thunder Bluff city anchor",
                 mapIDs = { 86, 88 },
+                subZoneKeys = { "Donnerfels", "Thunder Bluff" },
                 tags = { "primary", "hub", "local", "kalimdor" },
                 factions = {
                     { factionID = 81, weight = 262 },
                 },
             },
-            ["103:die exodar"] = {
+            ["103:the-exodar"] = {
                 name = "Die Exodar",
                 parentMapID = 103,
                 source = "seed",
                 confidence = "high",
                 notes = "Direct Exodar city anchor",
                 mapIDs = { 103, 775 },
+                subZoneKeys = { "Die Exodar", "The Exodar", "Exodar" },
                 tags = { "primary", "hub", "local", "kalimdor" },
                 factions = {
                     { factionID = 930, weight = 262 },
