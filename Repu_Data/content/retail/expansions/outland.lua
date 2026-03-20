@@ -353,6 +353,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 71,
                         title = "Caverns of Time",
+                        x = 0.550,
+                        y = 0.545,
                     },
                     name = "Alurmi",
                 },
