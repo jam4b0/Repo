@@ -80,6 +80,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 680,
                         title = "Shal'Aran",
+                        x = 0.365,
+                        y = 0.466,
                     },
                     name = "First Arcanist Thalyssra",
                 },
@@ -197,6 +199,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 630,
                         title = "Azsuna",
+                        x = 0.467,
+                        y = 0.412,
                     },
                     name = "Veridis Fallon",
                 },
@@ -238,6 +242,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 634,
                         title = "Valdisdall",
+                        x = 0.608,
+                        y = 0.512,
                     },
                     name = "Valdemar Stormseeker",
                 },

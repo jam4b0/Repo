@@ -1,8 +1,8 @@
 {
   "summary": {
-    "already_with_coordinates": 48,
+    "already_with_coordinates": 51,
     "leave_without_coordinates_for_now": 0,
-    "needs_external_coordinate_source": 45,
+    "needs_external_coordinate_source": 42,
     "open_standard_gap": 0
   },
   "groups": {
@@ -69,11 +69,23 @@
       },
       {
         "file": "legion.lua",
+        "factionID": 1859
+      },
+      {
+        "file": "legion.lua",
         "factionID": 1883
       },
       {
         "file": "legion.lua",
         "factionID": 1894
+      },
+      {
+        "file": "legion.lua",
+        "factionID": 1900
+      },
+      {
+        "file": "legion.lua",
+        "factionID": 1948
       },
       {
         "file": "midnight.lua",
@@ -270,21 +282,6 @@
       {
         "file": "legion.lua",
         "factionID": 1828,
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "file": "legion.lua",
-        "factionID": 1859,
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "file": "legion.lua",
-        "factionID": 1900,
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "file": "legion.lua",
-        "factionID": 1948,
         "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
       },
       {

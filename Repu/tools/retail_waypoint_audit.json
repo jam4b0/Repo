@@ -1,10 +1,10 @@
 {
   "summary": {
     "totalFactions": 152,
-    "withAnyXY": 48,
-    "withQuartermasterXY": 40,
-    "withActivityXY": 48,
-    "withoutAnyXY": 104
+    "withAnyXY": 51,
+    "withQuartermasterXY": 43,
+    "withActivityXY": 51,
+    "withoutAnyXY": 101
   },
   "quartermasterWithoutXY": [
     {
@@ -62,18 +62,6 @@
     {
       "file": "legion.lua",
       "factionID": 1828
-    },
-    {
-      "file": "legion.lua",
-      "factionID": 1859
-    },
-    {
-      "file": "legion.lua",
-      "factionID": 1900
-    },
-    {
-      "file": "legion.lua",
-      "factionID": 1948
     },
     {
       "file": "legion.lua",
@@ -300,18 +288,6 @@
     {
       "file": "legion.lua",
       "factionID": 1828
-    },
-    {
-      "file": "legion.lua",
-      "factionID": 1859
-    },
-    {
-      "file": "legion.lua",
-      "factionID": 1900
-    },
-    {
-      "file": "legion.lua",
-      "factionID": 1948
     },
     {
       "file": "legion.lua",
@@ -669,11 +645,23 @@
     },
     {
       "file": "legion.lua",
+      "factionID": 1859
+    },
+    {
+      "file": "legion.lua",
       "factionID": 1883
     },
     {
       "file": "legion.lua",
       "factionID": 1894
+    },
+    {
+      "file": "legion.lua",
+      "factionID": 1900
+    },
+    {
+      "file": "legion.lua",
+      "factionID": 1948
     },
     {
       "file": "midnight.lua",
