@@ -1,0 +1,1280 @@
+{
+  "summary": {
+    "scannedFileCount": 68,
+    "filesWithLocaleSensitiveMarkers": 16,
+    "categories": {
+      "core_runtime_strings": 19,
+      "mapping_and_coverage_data": 23,
+      "locale_ui_domain": 4,
+      "content_data_strings": 18,
+      "locale_content_domain": 2,
+      "map_runtime_strings": 2
+    }
+  },
+  "categories": {
+    "locale_ui_domain": "Expected UI locale files.",
+    "locale_content_domain": "Expected content locale overlay files.",
+    "content_data_strings": "Structured content text data; candidates for future text-key refactor.",
+    "mapping_and_coverage_data": "Location/mapping strings; expected data layer, but locale-sensitive by design.",
+    "core_runtime_strings": "Runtime strings in addon logic; strongest i18n cleanup candidates.",
+    "map_runtime_strings": "Runtime strings in Repu_Map; should stay on map_ui domain."
+  },
+  "files": [
+    {
+      "path": "Repu/data/retail/mappings/regions/bfa.lua",
+      "category": "mapping_and_coverage_data",
+      "matchCount": 2,
+      "matches": [
+        {
+          "line": 155,
+          "value": "Große Pyramide",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 179,
+          "value": "Die große Versiegelung",
+          "markers": [
+            "non_ascii"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Repu/data/retail/mappings/regions/broken_isles.lua",
+      "category": "mapping_and_coverage_data",
+      "matchCount": 1,
+      "matches": [
+        {
+          "line": 67,
+          "value": "Scherbenküste",
+          "markers": [
+            "non_ascii"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Repu/data/retail/mappings/regions/draenor.lua",
+      "category": "mapping_and_coverage_data",
+      "matchCount": 8,
+      "matches": [
+        {
+          "line": 37,
+          "value": "Schattenmondtal",
+          "markers": [
+            "schattenmondtal"
+          ]
+        },
+        {
+          "line": 67,
+          "value": "Tanaan-Dschungel",
+          "markers": [
+            "tanaan-dschungel"
+          ]
+        },
+        {
+          "line": 78,
+          "value": "582:außenposten der erwachten",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 79,
+          "value": "Außenposten der Erwachten",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 90,
+          "value": "525:kriegsmühle",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 91,
+          "value": "Kriegsmühle",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 103,
+          "value": "Kriegsspeer",
+          "markers": [
+            "kriegsspeer"
+          ]
+        },
+        {
+          "line": 115,
+          "value": "Sturmschild",
+          "markers": [
+            "sturmschild"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Repu/data/retail/mappings/regions/dragonflight.lua",
+      "category": "mapping_and_coverage_data",
+      "matchCount": 4,
+      "matches": [
+        {
+          "line": 23,
+          "value": "Küste des Erwachens",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 88,
+          "value": "Zaralekhöhle",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 98,
+          "value": "Smaragdgrüner Traum",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 118,
+          "value": "Der Vergessene Küstenstrich",
+          "markers": [
+            "non_ascii"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Repu/data/retail/mappings/regions/eastern_kingdoms.lua",
+      "category": "mapping_and_coverage_data",
+      "matchCount": 59,
+      "matches": [
+        {
+          "line": 7,
+          "value": "Sturmwind",
+          "markers": [
+            "sturmwind"
+          ]
+        },
+        {
+          "line": 17,
+          "value": "Eisenschmiede",
+          "markers": [
+            "eisenschmiede"
+          ]
+        },
+        {
+          "line": 27,
+          "value": "Unterstadt",
+          "markers": [
+            "unterstadt"
+          ]
+        },
+        {
+          "line": 46,
+          "value": "Blutritter",
+          "markers": [
+            "blutritter"
+          ]
+        },
+        {
+          "line": 47,
+          "value": "Schemen der Gasse",
+          "markers": [
+            "schemen der gasse"
+          ]
+        },
+        {
+          "line": 48,
+          "value": "Weltenwanderer",
+          "markers": [
+            "weltenwanderer"
+          ]
+        },
+        {
+          "line": 60,
+          "value": "Weltenwanderer",
+          "markers": [
+            "weltenwanderer"
+          ]
+        },
+        {
+          "line": 71,
+          "value": "Die Singularität",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 214,
+          "value": "Verwüstete Lande",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 232,
+          "value": "Westliche Pestländer",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 242,
+          "value": "Östliche Pestländer",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 260,
+          "value": "Sengende Schlucht",
+          "markers": [
+            "sengende schlucht"
+          ]
+        },
+        {
+          "line": 288,
+          "value": "Dämmerwald",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 308,
+          "value": "Nördliches Schlingendorntal",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 377,
+          "value": "22:westliche pestländer",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 378,
+          "value": "Westliche Pestländer",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 389,
+          "value": "23:östliche pestländer",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 390,
+          "value": "Östliche Pestländer",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 413,
+          "value": "32:sengende schlucht",
+          "markers": [
+            "sengende schlucht"
+          ]
+        },
+        {
+          "line": 414,
+          "value": "Sengende Schlucht",
+          "markers": [
+            "sengende schlucht"
+          ]
+        },
+        {
+          "line": 449,
+          "value": "47:dämmerwald",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 450,
+          "value": "Dämmerwald",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 485,
+          "value": "50:nördliches schlingendorntal",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 486,
+          "value": "Nördliches Schlingendorntal",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 545,
+          "value": "84:sturmwind",
+          "markers": [
+            "sturmwind"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Repu/data/retail/mappings/regions/kalimdor.lua",
+      "category": "mapping_and_coverage_data",
+      "matchCount": 33,
+      "matches": [
+        {
+          "line": 17,
+          "value": "Donnerfels",
+          "markers": [
+            "donnerfels"
+          ]
+        },
+        {
+          "line": 107,
+          "value": "Dunkelküste",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 112,
+          "value": "dunkelküste",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 115,
+          "value": "die dunkelküste",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 116,
+          "value": "Die Dunkelküste",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 121,
+          "value": "die dunkelküste",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 175,
+          "value": "Nördliches Brachland",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 185,
+          "value": "Ödland",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 225,
+          "value": "Düstermarschen",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 254,
+          "value": "1203:dunkelküste",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 255,
+          "value": "Dunkelküste",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 263,
+          "value": "1332:dunkelküste",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 264,
+          "value": "Dunkelküste",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 272,
+          "value": "1333:dunkelküste",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 273,
+          "value": "Dunkelküste",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 281,
+          "value": "1338:dunkelküste",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 282,
+          "value": "Dunkelküste",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 315,
+          "value": "10:nördliches brachland",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 316,
+          "value": "Nördliches Brachland",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 340,
+          "value": "15:ödland",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 341,
+          "value": "Ödland",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 448,
+          "value": "85:das tal der stärke",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 449,
+          "value": "Das Tal der Stärke",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 460,
+          "value": "85:die pfadfinderhöhle",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 461,
+          "value": "Die Pfadfinderhöhle",
+          "markers": [
+            "non_ascii"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Repu/data/retail/mappings/regions/midnight.lua",
+      "category": "mapping_and_coverage_data",
+      "matchCount": 6,
+      "matches": [
+        {
+          "line": 14,
+          "value": "Die Singularität",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 49,
+          "value": "Blutritter",
+          "markers": [
+            "blutritter"
+          ]
+        },
+        {
+          "line": 50,
+          "value": "Schemen der Gasse",
+          "markers": [
+            "schemen der gasse"
+          ]
+        },
+        {
+          "line": 51,
+          "value": "Weltenwanderer",
+          "markers": [
+            "weltenwanderer"
+          ]
+        },
+        {
+          "line": 64,
+          "value": "Schemen der Gasse",
+          "markers": [
+            "schemen der gasse"
+          ]
+        },
+        {
+          "line": 74,
+          "value": "Die Singularität",
+          "markers": [
+            "non_ascii"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Repu/data/retail/mappings/regions/northrend.lua",
+      "category": "mapping_and_coverage_data",
+      "matchCount": 1,
+      "matches": [
+        {
+          "line": 40,
+          "value": "Drachenöde",
+          "markers": [
+            "non_ascii"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Repu/data/retail/mappings/regions/outland.lua",
+      "category": "mapping_and_coverage_data",
+      "matchCount": 10,
+      "matches": [
+        {
+          "line": 17,
+          "value": "Höllenfeuerhalbinsel",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 30,
+          "value": "Wälder von Terokkar",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 40,
+          "value": "Zangarmarschen",
+          "markers": [
+            "zangarmarschen"
+          ]
+        },
+        {
+          "line": 60,
+          "value": "Schattenmondtal",
+          "markers": [
+            "schattenmondtal"
+          ]
+        },
+        {
+          "line": 139,
+          "value": "111:unteres viertel",
+          "markers": [
+            "unteres viertel"
+          ]
+        },
+        {
+          "line": 140,
+          "value": "Unteres Viertel",
+          "markers": [
+            "unteres viertel"
+          ]
+        },
+        {
+          "line": 151,
+          "value": "108:unteres viertel",
+          "markers": [
+            "unteres viertel"
+          ]
+        },
+        {
+          "line": 152,
+          "value": "Unteres Viertel",
+          "markers": [
+            "unteres viertel"
+          ]
+        },
+        {
+          "line": 176,
+          "value": "102:cenarionszuflucht",
+          "markers": [
+            "cenarionszuflucht"
+          ]
+        },
+        {
+          "line": 177,
+          "value": "Cenarionszuflucht",
+          "markers": [
+            "cenarionszuflucht"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Repu/data/retail/mappings/regions/pandaria.lua",
+      "category": "mapping_and_coverage_data",
+      "matchCount": 5,
+      "matches": [
+        {
+          "line": 27,
+          "value": "Tal der Ewigen Blüten",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 70,
+          "value": "Schreckensöde",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 135,
+          "value": "376:halbhügel",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 136,
+          "value": "Halbhügel",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 148,
+          "value": "Insel des Donnerkönigs",
+          "markers": [
+            "non_ascii"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Repu/data/retail/variants/catalog.lua",
+      "category": "mapping_and_coverage_data",
+      "matchCount": 14,
+      "matches": [
+        {
+          "line": 55,
+          "value": "416:Düstermarschen",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 56,
+          "value": "Düstermarschen",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 63,
+          "value": "483:Düstermarschen",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 64,
+          "value": "Düstermarschen",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 71,
+          "value": "520:Tal der Ewigen Blüten",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 72,
+          "value": "Tal der Ewigen Blüten",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 106,
+          "value": "1203:Dunkelküste",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 107,
+          "value": "Dunkelküste",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 114,
+          "value": "1332:Dunkelküste",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 115,
+          "value": "Dunkelküste",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 122,
+          "value": "1333:Dunkelküste",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 123,
+          "value": "Dunkelküste",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 130,
+          "value": "1338:Dunkelküste",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 131,
+          "value": "Dunkelküste",
+          "markers": [
+            "non_ascii"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Repu/locales/deDE.lua",
+      "category": "locale_ui_domain",
+      "matchCount": 16,
+      "matches": [
+        {
+          "line": 6,
+          "value": "Kein Rufeintrag",
+          "markers": [
+            "kein rufeintrag"
+          ]
+        },
+        {
+          "line": 10,
+          "value": "Keine Beschreibung verfügbar.",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 11,
+          "value": "Noch kein Datensatz.",
+          "markers": [
+            "noch kein"
+          ]
+        },
+        {
+          "line": 12,
+          "value": "Rüstmeister",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 14,
+          "value": "Rüstmeister",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 15,
+          "value": "Aktivität",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 17,
+          "value": "Für diesen Eintrag sind noch keine Wegpunkt-Daten hinterlegt.",
+          "markers": [
+            "noch kein",
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 22,
+          "value": "Ehrfürchtig ausblenden",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 25,
+          "value": "Rüstmeister anzeigen",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 54,
+          "value": "Captures gelöscht",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 56,
+          "value": "Snapshot übersprungen",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 57,
+          "value": "Refresh ausgelöst",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 58,
+          "value": "Test-Rendering ausgelöst",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 62,
+          "value": "Map-Scan wird auf diesem Client/API nicht unterstützt",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 63,
+          "value": "Map-Scan gelöscht",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 66,
+          "value": "Probe für ungemappte Zone",
+          "markers": [
+            "non_ascii"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Repu_Data/content/retail/expansions/draenor.lua",
+      "category": "content_data_strings",
+      "matchCount": 2,
+      "matches": [
+        {
+          "line": 135,
+          "value": "Tanaan-Dschungel",
+          "markers": [
+            "tanaan-dschungel"
+          ]
+        },
+        {
+          "line": 137,
+          "value": "Tanaan-Dschungel",
+          "markers": [
+            "tanaan-dschungel"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Repu_Data/content/retail/expansions/outland.lua",
+      "category": "content_data_strings",
+      "matchCount": 12,
+      "matches": [
+        {
+          "line": 61,
+          "value": "Zangarmarschen",
+          "markers": [
+            "zangarmarschen"
+          ]
+        },
+        {
+          "line": 63,
+          "value": "Zangarmarschen",
+          "markers": [
+            "zangarmarschen"
+          ]
+        },
+        {
+          "line": 69,
+          "value": "Cenarionszuflucht",
+          "markers": [
+            "cenarionszuflucht"
+          ]
+        },
+        {
+          "line": 71,
+          "value": "Cenarionszuflucht",
+          "markers": [
+            "cenarionszuflucht"
+          ]
+        },
+        {
+          "line": 129,
+          "value": "Zangarmarschen",
+          "markers": [
+            "zangarmarschen"
+          ]
+        },
+        {
+          "line": 131,
+          "value": "Zangarmarschen",
+          "markers": [
+            "zangarmarschen"
+          ]
+        },
+        {
+          "line": 210,
+          "value": "Schattenmondtal",
+          "markers": [
+            "schattenmondtal"
+          ]
+        },
+        {
+          "line": 212,
+          "value": "Schattenmondtal",
+          "markers": [
+            "schattenmondtal"
+          ]
+        },
+        {
+          "line": 232,
+          "value": "Schattenmondtal",
+          "markers": [
+            "schattenmondtal"
+          ]
+        },
+        {
+          "line": 234,
+          "value": "Schattenmondtal",
+          "markers": [
+            "schattenmondtal"
+          ]
+        },
+        {
+          "line": 324,
+          "value": "Schattenmondtal",
+          "markers": [
+            "schattenmondtal"
+          ]
+        },
+        {
+          "line": 326,
+          "value": "Schattenmondtal",
+          "markers": [
+            "schattenmondtal"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Repu_Data/locales/deDE.lua",
+      "category": "locale_content_domain",
+      "matchCount": 114,
+      "matches": [
+        {
+          "line": 10,
+          "value": "Startdatensatz für diese im Retail-Core lokal verankerte Fraktion. Der Kernbezug liegt aktuell vor allem bei Schlingendorntal, Nördliches Schlingendorntal, Das Schlingendornkap. Spezifische Rüstmeister- und Aktivitätsdaten können später präzisiert werden.",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 16,
+          "value": "Eisenschmiede",
+          "markers": [
+            "eisenschmiede"
+          ]
+        },
+        {
+          "line": 19,
+          "value": "Klassische Zwergenfraktion von Eisenschmiede. In Retail taucht sie vor allem in Eisenschmiede, Dun Morogh, Loch Modan und angrenzenden Allianz-Gebieten als lokale Heimatfraktion auf.",
+          "markers": [
+            "eisenschmiede"
+          ]
+        },
+        {
+          "line": 25,
+          "value": "Sengende Schlucht",
+          "markers": [
+            "sengende schlucht"
+          ]
+        },
+        {
+          "line": 32,
+          "value": "Die Thoriumbruderschaft deckt im Retail-Core vor allem die Blackrock-Gebiete rund um Sengende Schlucht und Brennende Steppe ab.",
+          "markers": [
+            "sengende schlucht"
+          ]
+        },
+        {
+          "line": 38,
+          "value": "Unterstadt",
+          "markers": [
+            "unterstadt"
+          ]
+        },
+        {
+          "line": 41,
+          "value": "Klassische Untotenfraktion von Unterstadt. In Retail taucht sie vor allem in Tirisfal, Silberwald, Unterstadt und angrenzenden Gebieten als lokale Heimatfraktion auf.",
+          "markers": [
+            "unterstadt"
+          ]
+        },
+        {
+          "line": 50,
+          "value": "Legacy-Hauptstadtfraktion von Darnassus. Im Retail-Core bleibt sie als klassische Allianz-Stadtfraktion erhalten, auch wenn die Stadt selbst heute nur noch in Legacy-Zusammenhängen relevant ist.",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 56,
+          "value": "Sturmwind",
+          "markers": [
+            "sturmwind"
+          ]
+        },
+        {
+          "line": 59,
+          "value": "Klassische Menschenfraktion von Sturmwind. In Retail taucht sie in Sturmwind, Elwynn, Westfall, Rotkamm und angrenzenden Allianz-Gebieten als lokale Heimatfraktion auf.",
+          "markers": [
+            "sturmwind"
+          ]
+        },
+        {
+          "line": 68,
+          "value": "Klassische Orc-Hauptstadtfraktion von Orgrimmar. In Retail taucht sie in Orgrimmar, Durotar und Teilen des nördlichen Brachlands als lokale Heimatfraktion auf.",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 74,
+          "value": "Donnerfels",
+          "markers": [
+            "donnerfels"
+          ]
+        },
+        {
+          "line": 77,
+          "value": "Klassische Tauren-Hauptstadtfraktion von Donnerfels. In Retail taucht sie in Donnerfels, Mulgore und den zugehörigen Tauren-Gebieten als lokale Heimatfraktion auf.",
+          "markers": [
+            "donnerfels",
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 90,
+          "value": "Gadgetzan ist die neutrale Goblin-Stadtfraktion von Tanaris. Im Retail-Core ist sie als lokaler Hubanker für die Stadt selbst modelliert, nicht als ganze Zonenfraktion für Tanaris.",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 96,
+          "value": "Nördliches Brachland",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 103,
+          "value": "Ratchet ist die neutrale Goblin-Hafenfraktion im Nördlichen Brachland. Im Retail-Core ist sie als lokaler Stadtanker für den Hafen modelliert.",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 109,
+          "value": "Westliche Pestländer",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 113,
+          "value": "Östliche Pestländer",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 116,
+          "value": "Die Argentumdämmerung ist im Retail-Core die lokale Pestländer-Fraktion. Sie deckt vor allem Westliche und Östliche Pestländer sowie deren klassische Scharlach-/Geißel-Kontexte ab.",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 125,
+          "value": "Die Dunkelspeertrolle werden im Retail-Core als lokale Horde-Fraktion in Teilen von Durotar, Eschental und den nördlichen Brachlanden genutzt.",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 147,
+          "value": "Everlook ist die neutrale Goblin-Stadtfraktion in Winterquell. Im Retail-Core ist sie als lokaler Hubanker für die Stadt selbst modelliert.",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 150,
+          "value": "Startdatensatz für diese im Retail-Core lokal verankerte Fraktion. Der Kernbezug liegt aktuell vor allem bei Winterquell. Spezifische Rüstmeister- und Aktivitätsdaten können später präzisiert werden.",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 171,
+          "value": "Der Cenarionzirkel ist im Retail-Core die lokale Fraktion für mehrere klassische Natur- und Wüstengebiete wie Desolace, Feralas, Mondlichtung und Silithus.",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 189,
+          "value": "Der Dunkelmond-Jahrmarkt ist der lokale Rufblock der Dunkelmond-Insel. Im Retail-Core ist er als neutraler Hubanker für die Insel selbst modelliert.",
+          "markers": [
+            "non_ascii"
+          ]
+        },
+        {
+          "line": 228,
+          "value": "Die Aldor sind eine der beiden großen politischen Fraktionen Shattraths. Ihr Fortschritt ist vor allem an die Stadt und an die entsprechende Scryer/Aldor-Entscheidung gebunden.",
+          "markers": [
+            "die aldor",
+            "non_ascii"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Repu_Data/locales/enUS.lua",
+      "category": "locale_content_domain",
+      "matchCount": 7,
+      "matches": [
+        {
+          "line": 278,
+          "value": "Zangarmarschen",
+          "markers": [
+            "zangarmarschen"
+          ]
+        },
+        {
+          "line": 282,
+          "value": "Cenarionszuflucht",
+          "markers": [
+            "cenarionszuflucht"
+          ]
+        },
+        {
+          "line": 320,
+          "value": "Zangarmarschen",
+          "markers": [
+            "zangarmarschen"
+          ]
+        },
+        {
+          "line": 377,
+          "value": "Schattenmondtal",
+          "markers": [
+            "schattenmondtal"
+          ]
+        },
+        {
+          "line": 390,
+          "value": "Schattenmondtal",
+          "markers": [
+            "schattenmondtal"
+          ]
+        },
+        {
+          "line": 788,
+          "value": "Schattenmondtal",
+          "markers": [
+            "schattenmondtal"
+          ]
+        },
+        {
+          "line": 910,
+          "value": "Tanaan-Dschungel",
+          "markers": [
+            "tanaan-dschungel"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -9,26 +9,26 @@ local RETAIL_COMPANION_FACTION_IDS = {
 local KNOWN_RETAIL_PARENT_FACTIONS = {
     [2710] = {
         children = {
-            [2711] = { name = "Magister" },
-            [2712] = { name = "Blutritter" },
-            [2714] = { name = "Schemen der Gasse" },
-            [2713] = { name = "Weltenwanderer" },
+            [2711] = { name = "Magisters" },
+            [2712] = { name = "Blood Knights" },
+            [2714] = { name = "Shades of the Row" },
+            [2713] = { name = "Farstriders" },
         },
     },
     [2600] = {
         children = {
-            [2605] = { name = "Der General" },
-            [2607] = { name = "Der Wesir" },
-            [2601] = { name = "Die Weberin" },
+            [2605] = { name = "The General" },
+            [2607] = { name = "The Vizier" },
+            [2601] = { name = "The Weaver" },
         },
     },
     [2653] = {
         children = {
-            [2677] = { name = "Dampfdruckkartell" },
-            [2675] = { name = "Schwarzmeer AG" },
-            [2673] = { name = "Bilgewasserkartell" },
+            [2677] = { name = "Steamwheedle Cartel" },
+            [2675] = { name = "Blackwater Cartel" },
+            [2673] = { name = "Bilgewater Cartel" },
             [2671] = { name = "Venture Company" },
-            [2685] = { name = "Garbagio Treueclub" },
+            [2685] = { name = "Gallagio Loyalty Rewards Club" },
         },
     },
     [2658] = {
@@ -41,12 +41,12 @@ local KNOWN_VIRTUAL_PARENT_FACTIONS = {
     [9000111] = {
         name = "Shattrath",
         children = {
-            [935] = { name = "Die Sha'tar" },
-            [932] = { name = "Die Aldor" },
-            [934] = { name = "Die Seher" },
-            [1011] = { name = "Unteres Viertel" },
-            [1031] = { name = "Himmelswache der Sha'tari" },
-            [1077] = { name = "Offensive der Zerschmetterten Sonne" },
+            [935] = { name = "The Sha'tar" },
+            [932] = { name = "The Aldor" },
+            [934] = { name = "The Scryers" },
+            [1011] = { name = "Lower City" },
+            [1031] = { name = "Sha'tari Skyguard" },
+            [1077] = { name = "Shattered Sun Offensive" },
         },
     },
 }
@@ -493,7 +493,11 @@ isRetailCompanionFaction = function(faction)
         return true
     end
 
-    return descriptionKey and string.find(descriptionKey, "tiefengefahrtin", 1, true) ~= nil
+    return descriptionKey
+        and (
+            string.find(descriptionKey, "tiefengefahrtin", 1, true) ~= nil
+            or string.find(descriptionKey, "delve companion", 1, true) ~= nil
+        )
 end
 
 function ns.Factions:CollectAll()

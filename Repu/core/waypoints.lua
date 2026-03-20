@@ -1,5 +1,7 @@
 local _, ns = ...
 
+local Locale = ns.Locale
+
 local function printMessage(message)
     if DEFAULT_CHAT_FRAME then
         DEFAULT_CHAT_FRAME:AddMessage("|cffd4af37Repu|r " .. tostring(message))
@@ -15,11 +17,11 @@ end
 
 function ns.Waypoints:SetLocationWaypoint(location)
     if not location or not location.mapID or not location.x or not location.y then
-        printMessage("Für diesen Eintrag sind noch keine Wegpunkt-Daten hinterlegt.")
+        printMessage(Locale:Get("WAYPOINT_NO_DATA"))
         return false
     end
 
-    local title = location.title or location.name or "Repu"
+    local title = location.title or location.name or Locale:Get("WAYPOINT_DEFAULT_TITLE")
 
     if TomTom and TomTom.AddWaypoint then
         TomTom:AddWaypoint(location.mapID, location.x, location.y, {
@@ -28,7 +30,7 @@ function ns.Waypoints:SetLocationWaypoint(location)
             minimap = true,
             world = true,
         })
-        printMessage(string.format("Wegpunkt gesetzt: %s", title))
+        printMessage(Locale:Format("WAYPOINT_SET", title))
         return true
     end
 
@@ -39,13 +41,13 @@ function ns.Waypoints:SetLocationWaypoint(location)
             if C_SuperTrack and C_SuperTrack.SetSuperTrackedUserWaypoint then
                 C_SuperTrack.SetSuperTrackedUserWaypoint(true)
             end
-            printMessage(string.format("Kartenmarkierung gesetzt: %s", title))
+            printMessage(Locale:Format("WAYPOINT_MAP_MARKER_SET", title))
             return true
         end
     end
 
-    printMessage(string.format(
-        "Kein Wegpunkt-Addon erkannt. Ziel: %s (%s, %.2f / %.2f)",
+    printMessage(Locale:Format(
+        "WAYPOINT_ADDON_MISSING",
         title,
         tostring(location.mapID),
         roundCoordinate(location.x),
@@ -53,4 +55,3 @@ function ns.Waypoints:SetLocationWaypoint(location)
     ))
     return false
 end
-
