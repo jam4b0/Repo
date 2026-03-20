@@ -1,10 +1,10 @@
 {
   "summary": {
     "totalFactions": 152,
-    "withAnyXY": 38,
-    "withQuartermasterXY": 30,
-    "withActivityXY": 38,
-    "withoutAnyXY": 114
+    "withAnyXY": 42,
+    "withQuartermasterXY": 34,
+    "withActivityXY": 42,
+    "withoutAnyXY": 110
   },
   "quartermasterWithoutXY": [
     {
@@ -109,23 +109,7 @@
     },
     {
       "file": "northrend.lua",
-      "factionID": 1090
-    },
-    {
-      "file": "northrend.lua",
-      "factionID": 1091
-    },
-    {
-      "file": "northrend.lua",
-      "factionID": 1098
-    },
-    {
-      "file": "northrend.lua",
       "factionID": 1106
-    },
-    {
-      "file": "northrend.lua",
-      "factionID": 1119
     },
     {
       "file": "northrend.lua",
@@ -411,18 +395,6 @@
     },
     {
       "file": "northrend.lua",
-      "factionID": 1090
-    },
-    {
-      "file": "northrend.lua",
-      "factionID": 1091
-    },
-    {
-      "file": "northrend.lua",
-      "factionID": 1098
-    },
-    {
-      "file": "northrend.lua",
       "factionID": 1104
     },
     {
@@ -432,10 +404,6 @@
     {
       "file": "northrend.lua",
       "factionID": 1106
-    },
-    {
-      "file": "northrend.lua",
-      "factionID": 1119
     },
     {
       "file": "northrend.lua",
@@ -758,6 +726,22 @@
     {
       "file": "midnight.lua",
       "factionID": 2714
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1090
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1091
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1098
+    },
+    {
+      "file": "northrend.lua",
+      "factionID": 1119
     },
     {
       "file": "outland.lua",

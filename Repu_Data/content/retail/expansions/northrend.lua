@@ -119,6 +119,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 125,
                         title = "Dalaran",
+                        x = 0.256,
+                        y = 0.478,
                     },
                     name = "Archmage Alvareaux",
                 },
@@ -144,6 +146,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 115,
                         title = "Wyrmrest Temple",
+                        x = 0.599,
+                        y = 0.531,
                     },
                     name = "Cielstrasza",
                 },
@@ -183,6 +187,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 118,
                         title = "The Shadow Vault",
+                        x = 0.430,
+                        y = 0.200,
                     },
                     name = "Duchess Mynx",
                 },
@@ -303,6 +309,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 120,
                         title = "Dun Niffelem",
+                        x = 0.662,
+                        y = 0.614,
                     },
                     name = "Lillehoff",
                 },
