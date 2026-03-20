@@ -152,6 +152,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 245,
                         title = "Baradin Base Camp",
+                        x = 0.728,
+                        y = 0.621,
                     },
                     name = "Quartermaster Brazie",
                 },

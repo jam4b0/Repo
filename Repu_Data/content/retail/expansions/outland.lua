@@ -24,6 +24,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 111,
                         title = "The Aldor Rise",
+                        x = 0.470,
+                        y = 0.260,
                     },
                     name = "Quartermaster Endarin",
                 },
@@ -82,6 +84,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 111,
                         title = "Scryer's Tier",
+                        x = 0.600,
+                        y = 0.640,
                     },
                     name = "Quartermaster Enuril",
                 },
@@ -107,6 +111,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 111,
                         title = "Terrace of Light",
+                        x = 0.516,
+                        y = 0.416,
                     },
                     name = "Almaador",
                 },
@@ -210,6 +216,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 100,
                         title = "Honor Hold",
+                        x = 0.567,
+                        y = 0.626,
                     },
                     name = "Logistics Officer Ulrike",
                 },

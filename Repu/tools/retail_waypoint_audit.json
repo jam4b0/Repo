@@ -1,10 +1,10 @@
 {
   "summary": {
     "totalFactions": 152,
-    "withAnyXY": 33,
-    "withQuartermasterXY": 25,
-    "withActivityXY": 33,
-    "withoutAnyXY": 119
+    "withAnyXY": 38,
+    "withQuartermasterXY": 30,
+    "withActivityXY": 38,
+    "withoutAnyXY": 114
   },
   "quartermasterWithoutXY": [
     {
@@ -30,10 +30,6 @@
     {
       "file": "bfa.lua",
       "factionID": 2415
-    },
-    {
-      "file": "cataclysm.lua",
-      "factionID": 1177
     },
     {
       "file": "draenor.lua",
@@ -137,23 +133,7 @@
     },
     {
       "file": "outland.lua",
-      "factionID": 932
-    },
-    {
-      "file": "outland.lua",
       "factionID": 933
-    },
-    {
-      "file": "outland.lua",
-      "factionID": 934
-    },
-    {
-      "file": "outland.lua",
-      "factionID": 935
-    },
-    {
-      "file": "outland.lua",
-      "factionID": 946
     },
     {
       "file": "outland.lua",
@@ -284,10 +264,6 @@
     {
       "file": "cataclysm.lua",
       "factionID": 1174
-    },
-    {
-      "file": "cataclysm.lua",
-      "factionID": 1177
     },
     {
       "file": "cataclysm.lua",
@@ -475,23 +451,7 @@
     },
     {
       "file": "outland.lua",
-      "factionID": 932
-    },
-    {
-      "file": "outland.lua",
       "factionID": 933
-    },
-    {
-      "file": "outland.lua",
-      "factionID": 934
-    },
-    {
-      "file": "outland.lua",
-      "factionID": 935
-    },
-    {
-      "file": "outland.lua",
-      "factionID": 946
     },
     {
       "file": "outland.lua",
@@ -749,6 +709,10 @@
     },
     {
       "file": "cataclysm.lua",
+      "factionID": 1177
+    },
+    {
+      "file": "cataclysm.lua",
       "factionID": 1178
     },
     {
@@ -797,11 +761,27 @@
     },
     {
       "file": "outland.lua",
+      "factionID": 932
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 934
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 935
+    },
+    {
+      "file": "outland.lua",
       "factionID": 941
     },
     {
       "file": "outland.lua",
       "factionID": 942
+    },
+    {
+      "file": "outland.lua",
+      "factionID": 946
     },
     {
       "file": "war_within.lua",

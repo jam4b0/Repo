@@ -1,8 +1,8 @@
 {
   "summary": {
-    "already_with_coordinates": 33,
+    "already_with_coordinates": 38,
     "leave_without_coordinates_for_now": 0,
-    "needs_external_coordinate_source": 60,
+    "needs_external_coordinate_source": 55,
     "open_standard_gap": 0
   },
   "groups": {
@@ -26,6 +26,10 @@
       {
         "file": "cataclysm.lua",
         "factionID": 1173
+      },
+      {
+        "file": "cataclysm.lua",
+        "factionID": 1177
       },
       {
         "file": "cataclysm.lua",
@@ -77,11 +81,27 @@
       },
       {
         "file": "outland.lua",
+        "factionID": 932
+      },
+      {
+        "file": "outland.lua",
+        "factionID": 934
+      },
+      {
+        "file": "outland.lua",
+        "factionID": 935
+      },
+      {
+        "file": "outland.lua",
         "factionID": 941
       },
       {
         "file": "outland.lua",
         "factionID": 942
+      },
+      {
+        "file": "outland.lua",
+        "factionID": 946
       },
       {
         "file": "war_within.lua",
@@ -170,11 +190,6 @@
       {
         "file": "bfa.lua",
         "factionID": 2415,
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "file": "cataclysm.lua",
-        "factionID": 1177,
         "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
       },
       {
@@ -304,27 +319,7 @@
       },
       {
         "file": "outland.lua",
-        "factionID": 932,
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "file": "outland.lua",
         "factionID": 933,
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "file": "outland.lua",
-        "factionID": 934,
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "file": "outland.lua",
-        "factionID": 935,
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "file": "outland.lua",
-        "factionID": 946,
         "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
       },
       {
