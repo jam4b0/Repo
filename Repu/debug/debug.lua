@@ -318,8 +318,13 @@ function ns.Debug:CreateWindow()
     frame.status:SetPoint("RIGHT", frame, "RIGHT", -10, 0)
     frame.status:SetJustifyH("LEFT")
 
+    frame.resources = frame:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    frame.resources:SetPoint("TOPLEFT", frame.status, "BOTTOMLEFT", 0, -8)
+    frame.resources:SetPoint("RIGHT", frame, "RIGHT", -10, 0)
+    frame.resources:SetJustifyH("LEFT")
+
     frame.outputScroll = CreateFrame("ScrollFrame", nil, frame, "UIPanelScrollFrameTemplate")
-    frame.outputScroll:SetPoint("TOPLEFT", frame.status, "BOTTOMLEFT", 0, -12)
+    frame.outputScroll:SetPoint("TOPLEFT", frame.resources, "BOTTOMLEFT", 0, -12)
     frame.outputScroll:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -28, -74)
     frame.outputScroll:SetPoint("BOTTOM", frame, "BOTTOM", 0, 72)
 
@@ -528,12 +533,21 @@ function ns.Debug:RefreshWindow()
     local debugDB = ns.State:GetDebugDB()
     local count = #(debugDB.captures or {})
     local last = count > 0 and debugDB.captures[count] or nil
+    local resources = collectAddonResourceUsage()
     self.window.status:SetText(Locale:Format(
         "DEBUG_WINDOW_STATUS",
         tostring(profile.debug),
         tostring(debugDB.enabled),
         tostring(count),
         tostring(last and last.key or Locale:Get("DEBUG_LAST_NONE"))
+    ))
+    self.window.resources:SetText(string.format(
+        "RAM %.1f MB  CPU %s  Repu %.1f MB  Data %.1f MB  Map %.1f MB",
+        (resources.totalMemory or 0) / 1024,
+        resources.cpuAvailable and string.format("%.1f ms", resources.totalCPU or 0) or Locale:Get("DEBUG_CPU_UNAVAILABLE"),
+        ((resources.rows and resources.rows[1] and resources.rows[1].memoryKB) or 0) / 1024,
+        ((resources.rows and resources.rows[2] and resources.rows[2].memoryKB) or 0) / 1024,
+        ((resources.rows and resources.rows[3] and resources.rows[3].memoryKB) or 0) / 1024
     ))
     setOutputText(self.window.output, self:BuildWindowReport())
     self.window:SetShown(profile.debug and profile.showDebugWindow)
