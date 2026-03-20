@@ -1,0 +1,162 @@
+{
+  "summary": {
+    "already_modeled_header": 15,
+    "future_bg_or_legacy_root": 2,
+    "future_city_root": 1,
+    "future_zone_root": 1
+  },
+  "rows": [
+    {
+      "factionID": 2159,
+      "name": "7th Legion",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header",
+      "class": "already_modeled_header",
+      "reason": "Covered by current BfA alliance war campaign model; not a new parent to introduce now."
+    },
+    {
+      "factionID": 729,
+      "name": "Frostwolf Clan",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header",
+      "class": "future_bg_or_legacy_root",
+      "reason": "Could become a PvP/Alterac-style legacy root, but not part of the normal local retail model today."
+    },
+    {
+      "factionID": 54,
+      "name": "Gnomeregan",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header",
+      "class": "future_city_root",
+      "reason": "Possible city/root candidate if Gnomeregan and related children are modeled as an explicit cluster later."
+    },
+    {
+      "factionID": 1352,
+      "name": "Huojin Pandaren",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header",
+      "class": "already_modeled_header",
+      "reason": "Covered by current Pandaria faction modeling; no separate parent layer needed now."
+    },
+    {
+      "factionID": 1708,
+      "name": "Laughing Skull Orcs",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header",
+      "class": "already_modeled_header",
+      "reason": "Covered by existing legacy content model; not strong enough for a separate runtime parent yet."
+    },
+    {
+      "factionID": 1242,
+      "name": "Pearlfin Jinyu",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header",
+      "class": "already_modeled_header",
+      "reason": "Handled by the current Pandaria model; header-level grouping would duplicate existing behavior."
+    },
+    {
+      "factionID": 911,
+      "name": "Silvermoon City",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header",
+      "class": "already_modeled_header",
+      "reason": "Already represented through the Midnight/Silvermoon court cluster in the current model."
+    },
+    {
+      "factionID": 2156,
+      "name": "Talanji's Expedition",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header",
+      "class": "already_modeled_header",
+      "reason": "Covered by the current Zandalar-side faction model."
+    },
+    {
+      "factionID": 509,
+      "name": "The League of Arathor",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header",
+      "class": "future_bg_or_legacy_root",
+      "reason": "Could become a PvP/Arathi-style legacy root, but not part of the normal local retail model today."
+    },
+    {
+      "factionID": 1094,
+      "name": "The Silver Covenant",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header",
+      "class": "already_modeled_header",
+      "reason": "Represented by the Dalaran/Silver Covenant area logic already."
+    },
+    {
+      "factionID": 1064,
+      "name": "The Taunka",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header",
+      "class": "already_modeled_header",
+      "reason": "Handled by the current Northrend-side model; not worth a separate parent abstraction yet."
+    },
+    {
+      "factionID": 922,
+      "name": "Tranquillien",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header",
+      "class": "future_zone_root",
+      "reason": "Potential Ghostlands/Quel'Thalas legacy root if that region is expanded later."
+    },
+    {
+      "factionID": 1353,
+      "name": "Tushui Pandaren",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header",
+      "class": "already_modeled_header",
+      "reason": "Covered by current Pandaria faction modeling; no separate parent layer needed now."
+    },
+    {
+      "factionID": 1050,
+      "name": "Valiance Expedition",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header",
+      "class": "already_modeled_header",
+      "reason": "Handled by current Northrend alliance expedition logic."
+    },
+    {
+      "factionID": 1681,
+      "name": "Vol'jin's Spear",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header",
+      "class": "already_modeled_header",
+      "reason": "Already covered by the current faction/location model for Horde Ashran-side content."
+    },
+    {
+      "factionID": 1085,
+      "name": "Warsong Offensive",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header",
+      "class": "already_modeled_header",
+      "reason": "Handled by the current Northrend Horde expedition logic."
+    },
+    {
+      "factionID": 2400,
+      "name": "Waveblade Ankoan",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header",
+      "class": "already_modeled_header",
+      "reason": "Already represented by the Nazjatar alliance-side model."
+    },
+    {
+      "factionID": 1682,
+      "name": "Wrynn's Vanguard",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header",
+      "class": "already_modeled_header",
+      "reason": "Already covered by the current faction/location model for Alliance Ashran-side content."
+    },
+    {
+      "factionID": 2103,
+      "name": "Zandalari Empire",
+      "source": "blizzard_missing_header",
+      "classification": "faction_header",
+      "class": "already_modeled_header",
+      "reason": "Covered by the current Zandalar-side faction model."
+    }
+  ]
+}
