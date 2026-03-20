@@ -1,0 +1,72 @@
+{
+  "summary": {
+    "leave_as_city_or_homeland": 13
+  },
+  "rows": [
+    {
+      "factionID": 47,
+      "classification": "leave_as_city_or_homeland",
+      "reason": "Pure capital-city faction; no clean recurring reputation loop to encode."
+    },
+    {
+      "factionID": 68,
+      "classification": "leave_as_city_or_homeland",
+      "reason": "Pure capital-city faction; no clean recurring reputation loop to encode."
+    },
+    {
+      "factionID": 69,
+      "classification": "leave_as_city_or_homeland",
+      "reason": "Pure capital-city faction; no clean recurring reputation loop to encode."
+    },
+    {
+      "factionID": 72,
+      "classification": "leave_as_city_or_homeland",
+      "reason": "Pure capital-city faction; no clean recurring reputation loop to encode."
+    },
+    {
+      "factionID": 76,
+      "classification": "leave_as_city_or_homeland",
+      "reason": "Pure capital-city faction; no clean recurring reputation loop to encode."
+    },
+    {
+      "factionID": 81,
+      "classification": "leave_as_city_or_homeland",
+      "reason": "Pure capital-city faction; no clean recurring reputation loop to encode."
+    },
+    {
+      "factionID": 369,
+      "classification": "leave_as_city_or_homeland",
+      "reason": "Neutral city/trading hub; not a true recurring reputation loop in the current retail model."
+    },
+    {
+      "factionID": 470,
+      "classification": "leave_as_city_or_homeland",
+      "reason": "Neutral city/trading hub; not a true recurring reputation loop in the current retail model."
+    },
+    {
+      "factionID": 530,
+      "classification": "leave_as_city_or_homeland",
+      "reason": "Homeland/racial faction; not a true recurring reputation loop in the current retail model."
+    },
+    {
+      "factionID": 577,
+      "classification": "leave_as_city_or_homeland",
+      "reason": "Neutral city/trading hub; not a true recurring reputation loop in the current retail model."
+    },
+    {
+      "factionID": 930,
+      "classification": "leave_as_city_or_homeland",
+      "reason": "Pure capital-city faction; no clean recurring reputation loop to encode."
+    },
+    {
+      "factionID": 1133,
+      "classification": "leave_as_city_or_homeland",
+      "reason": "Homeland/cartel faction; not a true recurring reputation loop in the current retail model."
+    },
+    {
+      "factionID": 1134,
+      "classification": "leave_as_city_or_homeland",
+      "reason": "Homeland/city-survivor faction; not a true recurring reputation loop in the current retail model."
+    }
+  ]
+}
