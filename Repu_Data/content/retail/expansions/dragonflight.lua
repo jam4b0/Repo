@@ -122,7 +122,10 @@ api.RegisterRetailContentModule({
                 {
                     label = "Quartermaster",
                     location = {
+                        mapID = 2112,
                         title = "Seat of the Aspects",
+                        x = 0.580,
+                        y = 0.356,
                     },
                     name = "Unatos",
                 },
