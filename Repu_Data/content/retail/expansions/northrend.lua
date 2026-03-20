@@ -6,113 +6,227 @@ end
 
 api.RegisterRetailContentModule({
     factions = {
-        [1068] = {
-            summary = "Dieser Northrend-Rufblock ist vor allem im Heulenden Fjord verankert. Relevanter Fortschritt kommt ueber die Zonengeschichten und die dortigen Northrend-Aktivitaeten.",
-            source = "curated",
-            confidence = "medium",
-            activities = {
-                { title = "Questlinien im Heulenden Fjord", kind = "Story/Zone", location = { mapID = 117, title = "Heulender Fjord" } },
-            },
-        },
         [1067] = {
-            summary = "The Hand of Vengeance ist der Horde-seitige Nebenruf des Heulenden Fjords. Im Retail-Core bleibt er als lokaler Horde-Zweig der dortigen Forsaken-Kriegslinie modelliert.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Heulender Fjord", kind = "Story/Zone", location = { mapID = 117, title = "Heulender Fjord" } },
+                {
+                    kind = "Story/Zone",
+                    location = {
+                        mapID = 117,
+                        title = "Howling Fjord",
+                    },
+                    title = "Howling Fjord",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+        },
+        [1068] = {
+            activities = {
+                {
+                    kind = "Story/Zone",
+                    location = {
+                        mapID = 117,
+                        title = "Howling Fjord",
+                    },
+                    title = "Questlines in Howling Fjord",
+                },
+            },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [1073] = {
-            summary = "Der Kernbezug dieses Northrend-Rufblocks liegt in der Boreanischen Tundra. Fortschritt kommt vor allem aus den dortigen Story- und Hubaktivitaeten.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Questlinien in der Boreanischen Tundra", kind = "Story/Zone", location = { mapID = 114, title = "Boreanische Tundra" } },
+                {
+                    kind = "Story/Zone",
+                    location = {
+                        mapID = 114,
+                        title = "Borean Tundra",
+                    },
+                    title = "Questlines in Borean Tundra",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [1090] = {
-            summary = "Dalarans zentraler Northrend-Rufblock. Im heutigen Spiel ist der Bezug vor allem an Dalaran, die Violette Festung und klassische Northrend-Dungeon- bzw. Stadtaktivitaeten gebunden.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Dalaran-Stadtaktivitaeten", kind = "Hub", location = { mapID = 125, title = "Dalaran" } },
-                { title = "Northrend-Dungeons mit Dalaran-Bezug", kind = "Dungeon", location = { mapID = 125, title = "Dalaran" } },
+                {
+                    kind = "Hub",
+                    location = {
+                        mapID = 125,
+                        title = "Dalaran",
+                    },
+                    title = "Dalaran city activities",
+                },
+                {
+                    kind = "Dungeon",
+                    location = {
+                        mapID = 125,
+                        title = "Dalaran",
+                    },
+                    title = "Northrend-Dungeons mit Dalaran-Bezug",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [1091] = {
-            summary = "Dieser Rufblock ist im Retail-Core an die Drachenoede gebunden. Im Vordergrund stehen die dortigen Storylinien und Northrend-Zonenaktivitaeten.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Questlinien in der Drachenoede", kind = "Story/Zone", location = { mapID = 115, title = "Drachenoede" } },
+                {
+                    kind = "Story/Zone",
+                    location = {
+                        mapID = 115,
+                        title = "Dragonblight",
+                    },
+                    title = "Questlines in Dragonblight",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [1098] = {
-            summary = "Dieser Rufblock ist im Retail-Core besonders eng mit den Titanen- und Ulduar-Inhalten in den Sturmgipfeln verbunden.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Halls of Lightning", kind = "Dungeon", location = { title = "Halls of Lightning" } },
-                { title = "Ulduar", kind = "Raid", location = { title = "Ulduar" } },
+                {
+                    kind = "Dungeon",
+                    location = {
+                        title = "Halls of Lightning",
+                    },
+                    title = "Halls of Lightning",
+                },
+                {
+                    kind = "Raid",
+                    location = {
+                        title = "Ulduar",
+                    },
+                    title = "Ulduar",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [1104] = {
-            summary = "Dieser Rufblock gehoert in den Retail-Daten zum Sholazarbecken. Der Schwerpunkt liegt auf den lokalen Story- und Zonenaktivitaeten.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Questlinien im Sholazarbecken", kind = "Story/Zone", location = { mapID = 119, title = "Sholazarbecken" } },
+                {
+                    kind = "Story/Zone",
+                    location = {
+                        mapID = 119,
+                        title = "Sholazar Basin",
+                    },
+                    title = "Questlines in Sholazar Basin",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [1105] = {
-            summary = "Der Kernbezug dieses Rufblocks liegt bei Zul'Drak und den zugehoerigen Trollen-Instanzen.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Questlinien in Zul'Drak", kind = "Story/Zone", location = { mapID = 121, title = "Zul'Drak" } },
-                { title = "Gundrak", kind = "Dungeon", location = { title = "Gundrak" } },
+                {
+                    kind = "Story/Zone",
+                    location = {
+                        mapID = 121,
+                        title = "Zul'Drak",
+                    },
+                    title = "Questlines in Zul'Drak",
+                },
+                {
+                    kind = "Dungeon",
+                    location = {
+                        title = "Gundrak",
+                    },
+                    title = "Gandrak",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [1106] = {
-            summary = "Dieser Northrend-Rufblock ist eng mit Eiskrone und der Argentumvorhut verknuepft. Der Fortschritt dreht sich vor allem um die dortigen Story- und Dungeon/Raid-Inhalte.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Argentumvorhut", kind = "Hub", location = { mapID = 118, title = "Argentumvorhut" } },
-                { title = "Questlinien in Eiskrone", kind = "Story/Zone", location = { mapID = 118, title = "Eiskrone" } },
+                {
+                    kind = "Hub",
+                    location = {
+                        mapID = 118,
+                        title = "Argent Crusade",
+                    },
+                    title = "Argent Crusade",
+                },
+                {
+                    kind = "Story/Zone",
+                    location = {
+                        mapID = 118,
+                        title = "Eiskrone",
+                    },
+                    title = "Questlines in Icecrown",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [1119] = {
-            summary = "Der Kernbezug dieses Rufblocks liegt bei K3 und den Sturmgipfeln. Klassisch dreht sich der Fortschritt um die lokalen Storylinien und taeglichen Aufgaben in der Zone.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "K3 und Sturmgipfel-Questlinien", kind = "Story/Zone", location = { mapID = 120, title = "Die Sturmgipfel" } },
+                {
+                    kind = "Story/Zone",
+                    location = {
+                        mapID = 120,
+                        title = "The Storm Peaks",
+                    },
+                    title = "K3 and Storm Peaks questlines",
+                },
             },
-        },
-        [1126] = {
-            summary = "The Frostborn ist der Allianz-seitige Nebenruf der Sturmgipfel. Im Retail-Core bleibt er als lokaler Alliance-Zweig der Zone erhalten, ohne den Hauptblock der Sons of Hodir zu verdrängen.",
-            source = "curated",
             confidence = "medium",
-            activities = {
-                { title = "Die Sturmgipfel", kind = "Zone", location = { mapID = 120, title = "Die Sturmgipfel" } },
-            },
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [1124] = {
-            summary = "Dieser Rufblock ist im Retail-Core an Vault of Archavon verankert. Im aktuellen Addon-Kontext ist der Raid der relevante Bezugspunkt.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Vault of Archavon", kind = "Raid", location = { title = "Vault of Archavon" } },
+                {
+                    kind = "Raid",
+                    location = {
+                        title = "Vault of Archavon",
+                    },
+                    title = "Vault of Archavon",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+        },
+        [1126] = {
+            activities = {
+                {
+                    kind = "Zone",
+                    location = {
+                        mapID = 120,
+                        title = "The Storm Peaks",
+                    },
+                    title = "The Storm Peaks",
+                },
+            },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [1156] = {
-            summary = "Dieser Rufblock ist direkt an Icecrown Citadel gebunden. Der heutige Kernbezug liegt entsprechend beim Raid selbst.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Icecrown Citadel", kind = "Raid", location = { title = "Icecrown Citadel" } },
+                {
+                    kind = "Raid",
+                    location = {
+                        title = "Icecrown Citadel",
+                    },
+                    title = "Icecrown Citadel",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
     },
 })

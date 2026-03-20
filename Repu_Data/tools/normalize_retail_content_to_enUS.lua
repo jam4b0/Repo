@@ -1,47 +1,29 @@
-local function deepMerge(target, source)
-    for key, value in pairs(source or {}) do
-        if type(value) == "table" and #value == 0 then
-            target[key] = target[key] or {}
-            deepMerge(target[key], value)
-        else
-            target[key] = value
-        end
-    end
-end
-
-local function countKeys(tableValue)
-    local count = 0
-    for _ in pairs(tableValue or {}) do
-        count = count + 1
-    end
-    return count
-end
-
-local function shallowCopy(value)
+local function deepCopy(value)
     if type(value) ~= "table" then
         return value
     end
 
     local copy = {}
     for key, entry in pairs(value) do
-        copy[key] = shallowCopy(entry)
+        copy[key] = deepCopy(entry)
     end
     return copy
 end
 
-local collected = {
-    factions = {},
-}
-
-_G.RepuAPI = {
-    RegisterRetailContentModule = function(payload)
-        deepMerge(collected, payload or {})
-    end,
-}
+local function deepMerge(target, source)
+    for key, value in pairs(source or {}) do
+        if type(value) == "table" and #value == 0 then
+            target[key] = target[key] or {}
+            deepMerge(target[key], value)
+        else
+            target[key] = deepCopy(value)
+        end
+    end
+end
 
 local root = "/root/Repo/Repu_Data/"
 
-local files = {
+local contentFiles = {
     "content/retail/summary/generated.lua",
     "content/retail/families/quelthalas.lua",
     "content/retail/families/shattrath.lua",
@@ -59,11 +41,6 @@ local files = {
     "content/retail/expansions/shadowlands.lua",
     "content/retail/expansions/dragonflight.lua",
 }
-
-for _, relativePath in ipairs(files) do
-    local chunk = assert(loadfile(root .. relativePath))
-    chunk()
-end
 
 local TITLE_MAP = {
     ["Ardenwald"] = "Ardenweald",
@@ -133,41 +110,9 @@ local TITLE_MAP = {
     ["Waldläufer Allorn"] = "Ranger Allorn",
 }
 
-local LABEL_MAP = {
-    ["Blutritter"] = "Blood Knight",
-    ["Magister"] = "Magister",
-    ["Risshändlerin"] = "Rift Vendor",
-    ["Rüstmeister"] = "Quartermaster",
-    ["Schemen der Gasse"] = "Lane Warden",
-    ["Weltenwanderer"] = "Wayfarer",
-}
-
-local KIND_MAP = {
-    ["Cluster"] = "Cluster",
-    ["Dungeon"] = "Dungeon",
-    ["Einmalig/Warband"] = "One-time/Warband",
-    ["Hub"] = "Hub",
-    ["Raid"] = "Raid",
-    ["Recurring"] = "Recurring",
-    ["Stadt/Instanzen"] = "City/Instances",
-    ["Stadtfraktion"] = "City faction",
-    ["Story"] = "Story",
-    ["Story/Zone"] = "Story/Zone",
-    ["Täglich"] = "Daily",
-    ["Täglich/Wiederholbar"] = "Daily/Repeatable",
-    ["Weekly"] = "Weekly",
-    ["Weltquests"] = "World quests",
-    ["Wiederkehrend"] = "Recurring",
-    ["Wöchentlich"] = "Weekly",
-    ["Wöchentlich/Event"] = "Weekly/Event",
-    ["Zone"] = "Zone",
-    ["Zone/Event"] = "Zone/Event",
-    ["Zone/Stadt"] = "Zone/City",
-}
-
-local function translateTitle(value)
-    if not value then
-        return nil
+local function translateString(value)
+    if type(value) ~= "string" then
+        return value
     end
 
     if TITLE_MAP[value] then
@@ -184,68 +129,46 @@ local function translateTitle(value)
     translated = translated:gsub("Weltquests", "World quests")
     translated = translated:gsub("Lokale Aufgaben", "Local tasks")
     translated = translated:gsub("Aufgaben", "tasks")
-    translated = translated:gsub("und", "and")
+    translated = translated:gsub("Wöchentlich", "Weekly")
+    translated = translated:gsub("Wiederkehrend", "Recurring")
+    translated = translated:gsub("Täglich", "Daily")
+    translated = translated:gsub("Rüstmeister", "Quartermaster")
     return translated
 end
 
-local function buildEnglishSummary(entry)
-    local hasQuartermasters = entry.quartermasters and #entry.quartermasters > 0
-    local hasActivities = entry.activities and #entry.activities > 0
+local function translateTitles(value)
+    if type(value) ~= "table" then
+        return value
+    end
 
-    if hasQuartermasters and hasActivities then
-        return "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content."
+    for key, entry in pairs(value) do
+        if type(entry) == "table" then
+            translateTitles(entry)
+        elseif type(entry) == "string" and (key == "title" or key == "name" or key == "label" or key == "kind") then
+            value[key] = translateString(entry)
+        end
     end
-    if hasQuartermasters then
-        return "Localized retail content for this faction. Includes curated quartermaster notes for the mapped local content."
-    end
-    if hasActivities then
-        return "Localized retail content for this faction. Includes curated activity notes for the mapped local content."
-    end
-    return "Localized retail content for this faction."
+    return value
 end
 
-local function buildQuartermasters(quartermasters, translator)
-    local output = {}
-    for index, quartermaster in ipairs(quartermasters or {}) do
-        output[index] = {
-            name = translator(quartermaster.name),
-            label = LABEL_MAP[quartermaster.label] or translator(quartermaster.label),
-        }
-    end
-    return output
-end
+local englishLocales = { factions = {} }
+_G.RepuAPI = {
+    RegisterRetailContentLocale = function(locale, payload)
+        if locale == "enUS" then
+            deepMerge(englishLocales, payload or {})
+        end
+    end,
+}
+dofile(root .. "locales/enUS.lua")
 
-local function buildActivities(activities, translator)
-    local output = {}
-    for index, activity in ipairs(activities or {}) do
-        output[index] = {
-            title = translator(activity.title),
-            kind = KIND_MAP[activity.kind] or translator(activity.kind),
-        }
-    end
-    return output
-end
-
-local function buildPayload(summaryTranslator, stringTranslator)
-    local payload = {
-        factions = {},
+local function loadModule(path)
+    local payload
+    _G.RepuAPI = {
+        RegisterRetailContentModule = function(data)
+            payload = deepCopy(data)
+        end,
     }
-
-    for factionID, entry in pairs(collected.factions) do
-        local localized = {}
-        localized.summary = summaryTranslator(entry)
-
-        if entry.quartermasters and #entry.quartermasters > 0 then
-            localized.quartermasters = buildQuartermasters(entry.quartermasters, stringTranslator)
-        end
-
-        if entry.activities and #entry.activities > 0 then
-            localized.activities = buildActivities(entry.activities, stringTranslator)
-        end
-
-        payload.factions[factionID] = localized
-    end
-
+    assert(loadfile(root .. path))()
     return payload
 end
 
@@ -257,17 +180,16 @@ local function serialize(value, indent)
     if type(value) == "string" then
         return string.format("%q", value)
     end
-
     if type(value) ~= "table" then
         return tostring(value)
     end
 
-    local isArray = (#value > 0)
-    local parts = {"{"}
+    local isArray = #value > 0
+    local lines = {"{"}
 
     if isArray then
         for _, entry in ipairs(value) do
-            parts[#parts + 1] = string.format("%s%s,", nextSpacing, serialize(entry, indent + 1))
+            lines[#lines + 1] = string.format("%s%s,", nextSpacing, serialize(entry, indent + 1))
         end
     else
         local keys = {}
@@ -280,7 +202,6 @@ local function serialize(value, indent)
             end
             return tostring(a) < tostring(b)
         end)
-
         for _, key in ipairs(keys) do
             local formattedKey
             if type(key) == "number" then
@@ -288,68 +209,59 @@ local function serialize(value, indent)
             else
                 formattedKey = key
             end
-            parts[#parts + 1] = string.format("%s%s = %s,", nextSpacing, formattedKey, serialize(value[key], indent + 1))
+            lines[#lines + 1] = string.format("%s%s = %s,", nextSpacing, formattedKey, serialize(value[key], indent + 1))
         end
     end
 
-    parts[#parts + 1] = spacing .. "}"
-    return table.concat(parts, "\n")
+    lines[#lines + 1] = spacing .. "}"
+    return table.concat(lines, "\n")
 end
 
-local function writeLocale(locale, payload)
-    local outPath = root .. "locales/" .. locale .. ".lua"
-    local handle = assert(io.open(outPath, "w"))
+local function normalizePayload(payload)
+    payload = deepCopy(payload)
+    for factionID, entry in pairs(payload.factions or {}) do
+        local localized = englishLocales.factions and englishLocales.factions[factionID] or nil
+        if localized then
+            if localized.summary then
+                entry.summary = localized.summary
+            end
+            if entry.quartermasters and localized.quartermasters then
+                for index, quartermaster in ipairs(entry.quartermasters) do
+                    local overlay = localized.quartermasters[index]
+                    if overlay then
+                        quartermaster.name = overlay.name or quartermaster.name
+                        quartermaster.label = overlay.label or quartermaster.label
+                    end
+                end
+            end
+            if entry.activities and localized.activities then
+                for index, activity in ipairs(entry.activities) do
+                    local overlay = localized.activities[index]
+                    if overlay then
+                        activity.title = overlay.title or activity.title
+                        activity.kind = overlay.kind or activity.kind
+                    end
+                end
+            end
+        end
+        translateTitles(entry)
+    end
+    return payload
+end
+
+local function writeModule(path, payload)
+    local handle = assert(io.open(root .. path, "w"))
     handle:write("local api = _G.RepuAPI\n\n")
-    handle:write("if not api or not api.RegisterRetailContentLocale then\n")
+    handle:write("if not api or not api.RegisterRetailContentModule then\n")
     handle:write("    return\n")
     handle:write("end\n\n")
-    handle:write(string.format("api.RegisterRetailContentLocale(%q, %s)\n", locale, serialize(payload, 0)))
+    handle:write("api.RegisterRetailContentModule(")
+    handle:write(serialize(payload, 0))
+    handle:write(")\n")
     handle:close()
 end
 
-local function loadExistingLocale(locale)
-    local outPath = root .. "locales/" .. locale .. ".lua"
-    local handle = io.open(outPath, "r")
-    if not handle then
-        return nil
-    end
-    handle:close()
-
-    local captured
-    local previousAPI = _G.RepuAPI
-    _G.RepuAPI = {
-        RegisterRetailContentLocale = function(loadedLocale, payload)
-            if loadedLocale == locale then
-                captured = shallowCopy(payload)
-            end
-        end,
-    }
-    local ok = pcall(dofile, outPath)
-    _G.RepuAPI = previousAPI
-    if not ok then
-        return nil
-    end
-    return captured
+for _, path in ipairs(contentFiles) do
+    local payload = loadModule(path)
+    writeModule(path, normalizePayload(payload))
 end
-
-local germanPayload = buildPayload(
-    function(entry)
-        return entry.summary
-    end,
-    function(value)
-        return value
-    end
-)
-
-local existingGerman = loadExistingLocale("deDE")
-if existingGerman and countKeys(existingGerman.factions) > 0 then
-    germanPayload = existingGerman
-end
-
-local englishPayload = buildPayload(
-    buildEnglishSummary,
-    translateTitle
-)
-
-writeLocale("enUS", englishPayload)
-writeLocale("deDE", germanPayload)

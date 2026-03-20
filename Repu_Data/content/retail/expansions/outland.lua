@@ -7,138 +7,335 @@ end
 api.RegisterRetailContentModule({
     factions = {
         [933] = {
-            summary = "Das Konsortium ist der Nethersturm- und Area-52-Rufblock der Scherbenwelt. Der Fortschritt sitzt an den arkanen, etherealen und ökonomischen Nebenpfaden dieser Region.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Nethersturm", kind = "Zone", location = { mapID = 104, title = "Nethersturm" } },
-                { title = "Area 52", kind = "Hub", location = { mapID = 104, title = "Area 52" } },
+                {
+                    kind = "Zone",
+                    location = {
+                        mapID = 104,
+                        title = "Nethersturm",
+                    },
+                    title = "Nethersturm",
+                },
+                {
+                    kind = "Hub",
+                    location = {
+                        mapID = 104,
+                        title = "Area 52",
+                    },
+                    title = "Area 52",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [941] = {
-            summary = "Die Mag'har sind der Horde-bezogene Nagrand-Rufblock der Scherbenwelt. Der Fortschritt konzentriert sich auf Garadar und die Nagrand-Story.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Nagrand", kind = "Zone", location = { mapID = 107, title = "Nagrand" } },
-                { title = "Garadar", kind = "Hub", location = { mapID = 107, title = "Garadar" } },
+                {
+                    kind = "Zone",
+                    location = {
+                        mapID = 107,
+                        title = "Nagrand",
+                    },
+                    title = "Nagrand",
+                },
+                {
+                    kind = "Hub",
+                    location = {
+                        mapID = 107,
+                        title = "Garadar",
+                    },
+                    title = "Garadar",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [942] = {
-            summary = "Die Expedition des Cenarius ist der lokale Rufblock von Zangarmarschen. Der Fortschritt sitzt an Cenarionszuflucht, den Dungeons des Gebiets und den dortigen Storypfaden.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Zangarmarschen", kind = "Zone", location = { mapID = 102, title = "Zangarmarschen" } },
-                { title = "Cenarionszuflucht", kind = "Hub", location = { mapID = 102, title = "Cenarionszuflucht" } },
+                {
+                    kind = "Zone",
+                    location = {
+                        mapID = 102,
+                        title = "Zangarmarschen",
+                    },
+                    title = "Zangarmarschen",
+                },
+                {
+                    kind = "Hub",
+                    location = {
+                        mapID = 102,
+                        title = "Cenarionszuflucht",
+                    },
+                    title = "Cenarionszuflucht",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [946] = {
-            summary = "Honor Hold ist der Allianz-Rufblock der Höllenfeuerhalbinsel. Im Retail-Core ist er der lokale Allianz-Anker für die Zone und ihre allianzgeprägten Instanzpfade.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Höllenfeuerhalbinsel", kind = "Zone", location = { mapID = 100, title = "Höllenfeuerhalbinsel" } },
-                { title = "Honor Hold", kind = "Hub", location = { mapID = 100, title = "Honor Hold" } },
+                {
+                    kind = "Zone",
+                    location = {
+                        mapID = 100,
+                        title = "Hellfire Peninsula",
+                    },
+                    title = "Hellfire Peninsula",
+                },
+                {
+                    kind = "Hub",
+                    location = {
+                        mapID = 100,
+                        title = "Honor Hold",
+                    },
+                    title = "Honor Hold",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [947] = {
-            summary = "Thrallmar ist der Horde-Rufblock der Höllenfeuerhalbinsel. Im Retail-Core ist er der lokale Anker für die Zone und ihre hordegeprägten Instanzpfade.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Höllenfeuerhalbinsel", kind = "Zone", location = { mapID = 100, title = "Höllenfeuerhalbinsel" } },
-                { title = "The Shattered Halls", kind = "Dungeon", location = { title = "The Shattered Halls" } },
+                {
+                    kind = "Zone",
+                    location = {
+                        mapID = 100,
+                        title = "Hellfire Peninsula",
+                    },
+                    title = "Hellfire Peninsula",
+                },
+                {
+                    kind = "Dungeon",
+                    location = {
+                        title = "The Shattered Halls",
+                    },
+                    title = "The Shattered Halls",
+                },
             },
-        },
-        [978] = {
-            summary = "Die Kurenai sind der Allianz-bezogene Nagrand-Rufblock der Scherbenwelt. Der Fortschritt konzentriert sich auf Telaar und die Nagrand-Story.",
-            source = "curated",
             confidence = "medium",
-            activities = {
-                { title = "Nagrand", kind = "Zone", location = { mapID = 107, title = "Nagrand" } },
-                { title = "Telaar", kind = "Hub", location = { mapID = 107, title = "Telaar" } },
-            },
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [970] = {
-            summary = "Sporeggar ist der lokale Siedlungsruf der Sporenlinge in Zangarmarschen. Im Retail-Core ist er als klarer Hubanker für die Stadt selbst modelliert.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Zangarmarschen", kind = "Zone", location = { mapID = 102, title = "Zangarmarschen" } },
-                { title = "Sporeggar", kind = "Hub", location = { mapID = 102, title = "Sporeggar" } },
+                {
+                    kind = "Zone",
+                    location = {
+                        mapID = 102,
+                        title = "Zangarmarschen",
+                    },
+                    title = "Zangarmarschen",
+                },
+                {
+                    kind = "Hub",
+                    location = {
+                        mapID = 102,
+                        title = "Sporeggar",
+                    },
+                    title = "Sporeggar",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+        },
+        [978] = {
+            activities = {
+                {
+                    kind = "Zone",
+                    location = {
+                        mapID = 107,
+                        title = "Nagrand",
+                    },
+                    title = "Nagrand",
+                },
+                {
+                    kind = "Hub",
+                    location = {
+                        mapID = 107,
+                        title = "Telaar",
+                    },
+                    title = "Telaar",
+                },
+            },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [989] = {
-            summary = "Die Hüter der Zeit sind der Caverns-of-Time-Rufblock und im Retail-Core über die Scherbenwelt-Zeitreiseinstanzen verankert.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Old Hillsbrad Foothills", kind = "Dungeon", location = { title = "Old Hillsbrad Foothills" } },
-                { title = "The Black Morass", kind = "Dungeon", location = { title = "The Black Morass" } },
+                {
+                    kind = "Dungeon",
+                    location = {
+                        title = "Old Hillsbrad Foothills",
+                    },
+                    title = "Old Hillsbrad Foothills",
+                },
+                {
+                    kind = "Dungeon",
+                    location = {
+                        title = "The Black Morass",
+                    },
+                    title = "The Black Morass",
+                },
             },
-        },
-        [1015] = {
-            summary = "Netherwing ist der lokale Rufblock des Netherwing-Ledge-Komplexes im Schattenmondtal. Im Retail-Core ist er als Hubanker für diese Teilregion modelliert.",
-            source = "curated",
             confidence = "medium",
-            activities = {
-                { title = "Schattenmondtal", kind = "Zone", location = { mapID = 105, title = "Schattenmondtal" } },
-                { title = "Netherwing Ledge", kind = "Hub", location = { mapID = 105, title = "Netherwing Ledge" } },
-            },
-        },
-        [1012] = {
-            summary = "Die Aschenzungen-Todesschwur ist der Schattenmondtal-/Schwarzer-Tempel-Rufblock der Scherbenwelt.",
             source = "curated",
-            confidence = "medium",
-            activities = {
-                { title = "Schattenmondtal", kind = "Zone", location = { mapID = 105, title = "Schattenmondtal" } },
-                { title = "Der Schwarze Tempel", kind = "Raid", location = { title = "Der Schwarze Tempel" } },
-            },
-        },
-        [1416] = {
-            summary = "Akama's Trust ist der lokale Nebenruf rund um Schattenmondtal und den Schwarzen Tempel. Im Retail-Core wird er als klarer Outland-Seitenpfad neben dem Aschenzungen-Block behandelt.",
-            source = "curated",
-            confidence = "medium",
-            activities = {
-                { title = "Schattenmondtal", kind = "Zone", location = { mapID = 105, title = "Schattenmondtal" } },
-                { title = "Der Schwarze Tempel", kind = "Raid", location = { title = "Der Schwarze Tempel" } },
-            },
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [990] = {
-            summary = "The Scale of the Sands ist der lokale Raidruf von Hyjal Summit und ergänzt dort den groberen Hüter-der-Zeit-Bezug um den eigentlichen Bronze-Drachenblock des Raids.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Hyjal Summit", kind = "Raid", location = { title = "Hyjal Summit" } },
+                {
+                    kind = "Raid",
+                    location = {
+                        title = "Hyjal Summit",
+                    },
+                    title = "Hyjal Summit",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+        },
+        [1012] = {
+            activities = {
+                {
+                    kind = "Zone",
+                    location = {
+                        mapID = 105,
+                        title = "Schattenmondtal",
+                    },
+                    title = "Schattenmondtal",
+                },
+                {
+                    kind = "Raid",
+                    location = {
+                        title = "Black Temple",
+                    },
+                    title = "Black Temple",
+                },
+            },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+        },
+        [1015] = {
+            activities = {
+                {
+                    kind = "Zone",
+                    location = {
+                        mapID = 105,
+                        title = "Schattenmondtal",
+                    },
+                    title = "Schattenmondtal",
+                },
+                {
+                    kind = "Hub",
+                    location = {
+                        mapID = 105,
+                        title = "Netherwing Ledge",
+                    },
+                    title = "Netherwing Ledge",
+                },
+            },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [1031] = {
-            summary = "Die Himmelswache der Sha'tari ist eine spätere Scherbenwelt-Fraktion mit Schwerpunkt auf Schergrat, Luftpfaden und wiederholbaren Himmelswache-Aktivitäten.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Schergrat", kind = "Zone", location = { mapID = 109, title = "Schergrat" } },
-                { title = "Skyguard-Aufgaben", kind = "Täglich/Wiederholbar", location = { mapID = 109, title = "Schergrat" } },
+                {
+                    kind = "Zone",
+                    location = {
+                        mapID = 109,
+                        title = "Schergrat",
+                    },
+                    title = "Schergrat",
+                },
+                {
+                    kind = "Daily/Repeatable",
+                    location = {
+                        mapID = 109,
+                        title = "Schergrat",
+                    },
+                    title = "Skyguard-tasks",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [1038] = {
-            summary = "Ogri'la ist der Hub-Rufblock der Ogerhochburg im Schergrat und bündelt die dortigen wiederholbaren Aufgaben.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Schergrat", kind = "Zone", location = { mapID = 109, title = "Schergrat" } },
-                { title = "Ogri'la", kind = "Hub", location = { mapID = 109, title = "Ogri'la" } },
+                {
+                    kind = "Zone",
+                    location = {
+                        mapID = 109,
+                        title = "Schergrat",
+                    },
+                    title = "Schergrat",
+                },
+                {
+                    kind = "Hub",
+                    location = {
+                        mapID = 109,
+                        title = "Ogri'la",
+                    },
+                    title = "Ogri'la",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [1077] = {
-            summary = "Die Offensive der Zerschmetterten Sonne ist der spaete Scherbenwelt-Endgame-Rufblock von Quel'Danas und dessen Daily-Zyklus.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Isle of Quel'Danas", kind = "Zone", location = { mapID = 122, title = "Isle of Quel'Danas" } },
-                { title = "Quel'Danas-Dailys", kind = "Täglich", location = { mapID = 122, title = "Isle of Quel'Danas" } },
+                {
+                    kind = "Zone",
+                    location = {
+                        mapID = 122,
+                        title = "Isle of Quel'Danas",
+                    },
+                    title = "Isle of Quel'Danas",
+                },
+                {
+                    kind = "Daily",
+                    location = {
+                        mapID = 122,
+                        title = "Isle of Quel'Danas",
+                    },
+                    title = "Quel'Danas dailies",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+        },
+        [1416] = {
+            activities = {
+                {
+                    kind = "Zone",
+                    location = {
+                        mapID = 105,
+                        title = "Schattenmondtal",
+                    },
+                    title = "Schattenmondtal",
+                },
+                {
+                    kind = "Raid",
+                    location = {
+                        title = "Black Temple",
+                    },
+                    title = "Black Temple",
+                },
+            },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
     },
 })

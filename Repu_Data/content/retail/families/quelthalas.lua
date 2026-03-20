@@ -4,200 +4,182 @@ if not api or not api.RegisterRetailContentModule then
     return
 end
 
-local SALTHERILS_HAVEN = {
-    mapID = 2395,
-    x = 0.434,
-    y = 0.474,
-}
-
-local SALTHERILS_HAVEN_WEST = {
-    mapID = 2395,
-    x = 0.434,
-    y = 0.476,
-}
-
-local SALTHERILS_SOIREE = {
-    mapID = 2395,
-    x = 0.426,
-    y = 0.472,
-}
-
 api.RegisterRetailContentModule({
     factions = {
         [2710] = {
-            summary = "Die große Ruhmfraktion von Quel'Thalas. Fortschritt entsteht parallel zu den vier lokalen Unterfraktionen des Hofs in Silbermond. Je nach aktueller Auswahl sind unterschiedliche Rüstmeister relevant.",
-            source = "seed",
+            activities = {
+                {
+                    kind = "Weekly",
+                    location = {
+                        mapID = 2395,
+                        title = "Saltherils Soiree",
+                        x = 0.426,
+                        y = 0.472,
+                    },
+                    title = "Saltherils Soiree",
+                },
+            },
             confidence = "medium",
             quartermasters = {
                 {
-                    name = "Lehrling Diell",
                     label = "Magister",
                     location = {
-                        mapID = SALTHERILS_HAVEN.mapID,
-                        x = SALTHERILS_HAVEN.x,
-                        y = SALTHERILS_HAVEN.y,
+                        mapID = 2395,
                         title = "Lehrling Diell",
+                        x = 0.434,
+                        y = 0.474,
                     },
+                    name = "Lehrling Diell",
                 },
                 {
-                    name = "Rüstungsschmied Goldwappen",
-                    label = "Blutritter",
+                    label = "Blood Knight",
                     location = {
-                        mapID = SALTHERILS_HAVEN.mapID,
-                        x = SALTHERILS_HAVEN.x,
-                        y = SALTHERILS_HAVEN.y,
-                        title = "Rüstungsschmied Goldwappen",
+                        mapID = 2395,
+                        title = "Armorsmith Goldcrest",
+                        x = 0.434,
+                        y = 0.474,
                     },
+                    name = "Armorsmith Goldcrest",
                 },
                 {
-                    name = "Neriv",
-                    label = "Schemen der Gasse",
+                    label = "Lane Warden",
                     location = {
-                        mapID = SALTHERILS_HAVEN_WEST.mapID,
-                        x = SALTHERILS_HAVEN_WEST.x,
-                        y = SALTHERILS_HAVEN_WEST.y,
+                        mapID = 2395,
                         title = "Neriv",
+                        x = 0.434,
+                        y = 0.476,
                     },
+                    name = "Neriv",
                 },
                 {
-                    name = "Waldläufer Allorn",
-                    label = "Weltenwanderer",
+                    label = "Wayfarer",
                     location = {
-                        mapID = SALTHERILS_HAVEN_WEST.mapID,
-                        x = SALTHERILS_HAVEN_WEST.x,
-                        y = SALTHERILS_HAVEN_WEST.y,
-                        title = "Waldläufer Allorn",
+                        mapID = 2395,
+                        title = "Ranger Allorn",
+                        x = 0.434,
+                        y = 0.476,
                     },
+                    name = "Ranger Allorn",
                 },
             },
-            activities = {
-                {
-                    title = "Saltherils Soiree",
-                    kind = "Wöchentlich",
-                    location = {
-                        mapID = SALTHERILS_SOIREE.mapID,
-                        x = SALTHERILS_SOIREE.x,
-                        y = SALTHERILS_SOIREE.y,
-                        title = "Saltherils Soiree",
-                    },
-                },
-            },
-        },
-        [2713] = {
-            summary = "Gebietsfraktion des Immersangwalds mit Fokus auf Wald, Grenzen und Wildnis. Ruf erhältst du vor allem über Quests und Fraktionsaktivitäten im Immersangwald.",
             source = "seed",
-            confidence = "medium",
-            quartermasters = {
-                {
-                    name = "Waldläufer Allorn",
-                    label = "Rüstmeister",
-                    location = {
-                        mapID = SALTHERILS_HAVEN_WEST.mapID,
-                        x = SALTHERILS_HAVEN_WEST.x,
-                        y = SALTHERILS_HAVEN_WEST.y,
-                        title = "Waldläufer Allorn",
-                    },
-                },
-            },
-            activities = {
-                {
-                    title = "Saltherils Soiree",
-                    kind = "Wöchentlich",
-                    location = {
-                        mapID = SALTHERILS_SOIREE.mapID,
-                        x = SALTHERILS_SOIREE.x,
-                        y = SALTHERILS_SOIREE.y,
-                        title = "Saltherils Soiree",
-                    },
-                },
-            },
+            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
         },
         [2711] = {
-            summary = "Städtische Fraktion rund um arkane Ordnung, Verwaltung und Magister-Infrastruktur. Ruf erhältst du über passende Questlinien und Silbermond-Aktivitäten.",
-            source = "seed",
+            activities = {
+                {
+                    kind = "Weekly",
+                    location = {
+                        mapID = 2395,
+                        title = "Saltherils Soiree",
+                        x = 0.426,
+                        y = 0.472,
+                    },
+                    title = "Saltherils Soiree",
+                },
+            },
             confidence = "medium",
             quartermasters = {
                 {
-                    name = "Lehrling Diell",
-                    label = "Rüstmeister",
+                    label = "Quartermaster",
                     location = {
-                        mapID = SALTHERILS_HAVEN.mapID,
-                        x = SALTHERILS_HAVEN.x,
-                        y = SALTHERILS_HAVEN.y,
+                        mapID = 2395,
                         title = "Lehrling Diell",
+                        x = 0.434,
+                        y = 0.474,
                     },
+                    name = "Lehrling Diell",
                 },
             },
-            activities = {
-                {
-                    title = "Saltherils Soiree",
-                    kind = "Wöchentlich",
-                    location = {
-                        mapID = SALTHERILS_SOIREE.mapID,
-                        x = SALTHERILS_SOIREE.x,
-                        y = SALTHERILS_SOIREE.y,
-                        title = "Saltherils Soiree",
-                    },
-                },
-            },
+            source = "seed",
+            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
         },
         [2712] = {
-            summary = "Militärisch geprägte Stadtfraktion mit Fokus auf Blutritter und Sicherheitsstruktur. Ruf entsteht über den Immersangwald und das Silbermond-Eventsystem.",
-            source = "seed",
+            activities = {
+                {
+                    kind = "Weekly",
+                    location = {
+                        mapID = 2395,
+                        title = "Saltherils Soiree",
+                        x = 0.426,
+                        y = 0.472,
+                    },
+                    title = "Saltherils Soiree",
+                },
+            },
             confidence = "medium",
             quartermasters = {
                 {
-                    name = "Rüstungsschmied Goldwappen",
-                    label = "Rüstmeister",
+                    label = "Quartermaster",
                     location = {
-                        mapID = SALTHERILS_HAVEN.mapID,
-                        x = SALTHERILS_HAVEN.x,
-                        y = SALTHERILS_HAVEN.y,
-                        title = "Rüstungsschmied Goldwappen",
+                        mapID = 2395,
+                        title = "Armorsmith Goldcrest",
+                        x = 0.434,
+                        y = 0.474,
                     },
+                    name = "Armorsmith Goldcrest",
                 },
             },
+            source = "seed",
+            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+        },
+        [2713] = {
             activities = {
                 {
-                    title = "Saltherils Soiree",
-                    kind = "Wöchentlich",
+                    kind = "Weekly",
                     location = {
-                        mapID = SALTHERILS_SOIREE.mapID,
-                        x = SALTHERILS_SOIREE.x,
-                        y = SALTHERILS_SOIREE.y,
+                        mapID = 2395,
                         title = "Saltherils Soiree",
+                        x = 0.426,
+                        y = 0.472,
                     },
+                    title = "Saltherils Soiree",
                 },
             },
+            confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 2395,
+                        title = "Ranger Allorn",
+                        x = 0.434,
+                        y = 0.476,
+                    },
+                    name = "Ranger Allorn",
+                },
+            },
+            source = "seed",
+            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
         },
         [2714] = {
-            summary = "Lokale Stadtfraktion für Gassen- und Untergrundbereiche in Silbermond. Ruf erhältst du über passende Quests und das wöchentliche Stadt-Event.",
-            source = "seed",
+            activities = {
+                {
+                    kind = "Weekly",
+                    location = {
+                        mapID = 2395,
+                        title = "Saltherils Soiree",
+                        x = 0.426,
+                        y = 0.472,
+                    },
+                    title = "Saltherils Soiree",
+                },
+            },
             confidence = "medium",
             quartermasters = {
                 {
-                    name = "Neriv",
-                    label = "Rüstmeister",
+                    label = "Quartermaster",
                     location = {
-                        mapID = SALTHERILS_HAVEN_WEST.mapID,
-                        x = SALTHERILS_HAVEN_WEST.x,
-                        y = SALTHERILS_HAVEN_WEST.y,
+                        mapID = 2395,
                         title = "Neriv",
+                        x = 0.434,
+                        y = 0.476,
                     },
+                    name = "Neriv",
                 },
             },
-            activities = {
-                {
-                    title = "Saltherils Soiree",
-                    kind = "Wöchentlich",
-                    location = {
-                        mapID = SALTHERILS_SOIREE.mapID,
-                        x = SALTHERILS_SOIREE.x,
-                        y = SALTHERILS_SOIREE.y,
-                        title = "Saltherils Soiree",
-                    },
-                },
-            },
+            source = "seed",
+            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
         },
     },
 })

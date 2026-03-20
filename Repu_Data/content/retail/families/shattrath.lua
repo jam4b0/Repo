@@ -4,72 +4,82 @@ if not api or not api.RegisterRetailContentModule then
     return
 end
 
-local SHATTRATH_CITY = {
-    mapID = 111,
-    title = "Shattrath",
-}
-
 api.RegisterRetailContentModule({
     factions = {
-        [9000111] = {
-            summary = "Virtuelle Gruppenfraktion für Shattrath. Sie bündelt die großen Stadtfraktionen der Scherbenwelt, damit sie im UI als zusammengehöriger Cluster statt als ungeordnete Einzelfunde erscheinen.",
-            source = "seed",
-            confidence = "medium",
-            activities = {
-                {
-                    title = "Shattrath-Stadtfraktionen",
-                    kind = "Cluster",
-                    location = SHATTRATH_CITY,
-                },
-            },
-        },
         [932] = {
-            summary = "Die Aldor sind eine der beiden großen politischen Fraktionen Shattraths. Ihr Fortschritt ist vor allem an die Stadt und an die entsprechende Scryer/Aldor-Entscheidung gebunden.",
-            source = "seed",
-            confidence = "medium",
             activities = {
                 {
-                    title = "Aldor-Aufgaben in Shattrath",
-                    kind = "Stadtfraktion",
-                    location = SHATTRATH_CITY,
+                    kind = "City faction",
+                    location = {
+                        mapID = 111,
+                        title = "Shattrath",
+                    },
+                    title = "Aldor-tasks in Shattrath",
                 },
             },
+            confidence = "medium",
+            source = "seed",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [934] = {
-            summary = "Die Seher sind die Gegenfraktion zu den Aldor in Shattrath. Ihr Fortschritt ist vor allem an die Stadt und an die entsprechende Aldor/Seher-Entscheidung gebunden.",
-            source = "seed",
-            confidence = "medium",
             activities = {
                 {
-                    title = "Seher-Aufgaben in Shattrath",
-                    kind = "Stadtfraktion",
-                    location = SHATTRATH_CITY,
+                    kind = "City faction",
+                    location = {
+                        mapID = 111,
+                        title = "Shattrath",
+                    },
+                    title = "Scryer tasks in Shattrath",
                 },
             },
+            confidence = "medium",
+            source = "seed",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [935] = {
-            summary = "Die Sha'tar bilden die zentrale Stadt- und Astralfraktion Shattraths. Sie begleiten einen großen Teil des Scherbenwelt-Fortschritts rund um die Stadt und ihre Instanzen.",
-            source = "seed",
-            confidence = "medium",
             activities = {
                 {
-                    title = "Shattrath- und Tempelaufgaben",
-                    kind = "Stadt/Instanzen",
-                    location = SHATTRATH_CITY,
+                    kind = "City/Instances",
+                    location = {
+                        mapID = 111,
+                        title = "Shattrath",
+                    },
+                    title = "Shattrath and temple tasks",
                 },
             },
+            confidence = "medium",
+            source = "seed",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [1011] = {
-            summary = "Unteres Viertel ist die Fraktion des unteren Stadtviertels von Shattrath und vieler umliegender Scherbenwelt-Aufgaben.",
-            source = "seed",
-            confidence = "medium",
             activities = {
                 {
-                    title = "Aufgaben im Unteren Viertel",
-                    kind = "Stadtfraktion",
-                    location = SHATTRATH_CITY,
+                    kind = "City faction",
+                    location = {
+                        mapID = 111,
+                        title = "Shattrath",
+                    },
+                    title = "Lower City tasks",
                 },
             },
+            confidence = "medium",
+            source = "seed",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+        },
+        [9000111] = {
+            activities = {
+                {
+                    kind = "Cluster",
+                    location = {
+                        mapID = 111,
+                        title = "Shattrath",
+                    },
+                    title = "Shattrath city factions",
+                },
+            },
+            confidence = "medium",
+            source = "seed",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
     },
 })

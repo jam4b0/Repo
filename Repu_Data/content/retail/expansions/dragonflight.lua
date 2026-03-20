@@ -6,157 +6,440 @@ end
 
 api.RegisterRetailContentModule({
     factions = {
-        [2503] = {
-            summary = "Dieser Dragonflight-Rufblock ist an die Ebenen von Ohn'ahra und Maruukai gebunden.",
-            source = "curated",
-            confidence = "medium",
+        [2135] = {
             activities = {
-                { title = "Ebenen von Ohn'ahra", kind = "Zone", location = { title = "Ebenen von Ohn'ahra" } },
-                { title = "Maruukai", kind = "Hub", location = { title = "Maruukai" } },
+                {
+                    kind = "Recurring",
+                    location = {
+                        mapID = 2025,
+                        title = "Tyrhold Reservoir",
+                    },
+                    title = "Time Rifts",
+                },
+                {
+                    kind = "Zone",
+                    location = {
+                        mapID = 2025,
+                        title = "Tyrhold",
+                    },
+                    title = "Temporal side activities",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+        },
+        [2503] = {
+            activities = {
+                {
+                    kind = "Recurring",
+                    location = {
+                        mapID = 2023,
+                        title = "Ohn'ahran Plains",
+                    },
+                    title = "Grand Hunt",
+                },
+                {
+                    kind = "Zone",
+                    location = {
+                        mapID = 2023,
+                        title = "Ohn'ahran Plains",
+                    },
+                    title = "Ohn'ahran Plains",
+                },
+                {
+                    kind = "Hub",
+                    location = {
+                        mapID = 2023,
+                        title = "Maruukai",
+                    },
+                    title = "Maruukai",
+                },
+            },
+            confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 2023,
+                        title = "Maruukai",
+                    },
+                    name = "Quartermaster Huseng",
+                },
+            },
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
         },
         [2507] = {
-            summary = "Dieser Dragonflight-Rufblock ist an die Kuesten- und Expeditionsinhalte der Dracheninseln gebunden.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Kueste des Erwachens", kind = "Zone", location = { title = "Kueste des Erwachens" } },
-                { title = "Verbotene Insel", kind = "Zone", location = { title = "Verbotene Insel" } },
+                {
+                    kind = "Recurring",
+                    location = {
+                        mapID = 2022,
+                        title = "The Waking Shores",
+                    },
+                    title = "Siege on Dragonbane Keep",
+                },
+                {
+                    kind = "Zone",
+                    location = {
+                        mapID = 2022,
+                        title = "The Waking Shores",
+                    },
+                    title = "The Waking Shores",
+                },
+                {
+                    kind = "Zone",
+                    location = {
+                        mapID = 2151,
+                        title = "The Forbidden Reach",
+                    },
+                    title = "Forbidden Reach",
+                },
+                {
+                    kind = "Hub",
+                    location = {
+                        mapID = 2022,
+                        title = "Dragonscale Basecamp",
+                    },
+                    title = "Dragonscale Basecamp",
+                },
             },
+            confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 2022,
+                        title = "Dragonscale Basecamp",
+                    },
+                    name = "Cataloger Jakes",
+                },
+            },
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
         },
         [2510] = {
-            summary = "Der zentrale Dragonflight-Hubruf von Valdrakken und Thaldraszus. Relevanter Fortschritt kommt vor allem aus Story, Weltquests und Hubaktivitaeten.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Valdrakken", kind = "Hub", location = { title = "Valdrakken" } },
-                { title = "Thaldraszus", kind = "Zone", location = { title = "Thaldraszus" } },
+                {
+                    kind = "Hub",
+                    location = {
+                        mapID = 2112,
+                        title = "Valdrakken",
+                    },
+                    title = "Valdrakken",
+                },
+                {
+                    kind = "Zone",
+                    location = {
+                        mapID = 2025,
+                        title = "Thaldraszus",
+                    },
+                    title = "Thaldraszus",
+                },
+                {
+                    kind = "Recurring",
+                    location = {
+                        mapID = 2112,
+                        title = "Seat of the Aspects",
+                    },
+                    title = "Story and world quests",
+                },
             },
+            confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 2112,
+                        title = "Seat of the Aspects",
+                    },
+                    name = "Unatos",
+                },
+            },
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
         },
         [2511] = {
-            summary = "Dieser Dragonflight-Rufblock ist an das Azurblaue Gebirge und die tuskarrnahen Hub- und Zoneninhalte gekoppelt.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Azurblaue Gebirge", kind = "Zone", location = { title = "Azurblaue Gebirge" } },
-                { title = "Iskaara", kind = "Hub", location = { title = "Iskaara" } },
+                {
+                    kind = "Weekly/Event",
+                    location = {
+                        mapID = 2024,
+                        title = "Iskaara",
+                    },
+                    title = "Community Feast",
+                },
+                {
+                    kind = "Zone",
+                    location = {
+                        mapID = 2024,
+                        title = "The Azure Span",
+                    },
+                    title = "The Azure Span",
+                },
+                {
+                    kind = "Hub",
+                    location = {
+                        mapID = 2024,
+                        title = "Iskaara",
+                    },
+                    title = "Iskaara",
+                },
             },
+            confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 2024,
+                        title = "Iskaara",
+                    },
+                    name = "Murik",
+                },
+            },
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
         },
         [2517] = {
-            summary = "Wrathion ist ein lokaler Nebenruf der Waking Shores rund um die schwarze Drachenflug-Geschichte. Der Fortschritt sitzt an den obsidianbezogenen Aufgaben dieses Gebiets.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Waking Shores black dragonflight content", kind = "Zone", location = { title = "Küste des Erwachens" } },
+                {
+                    kind = "Zone",
+                    location = {
+                        title = "The Waking Shores",
+                    },
+                    title = "Waking Shores black dragonflight content",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [2518] = {
-            summary = "Sabellian ist der zweite lokale schwarze Drachenflug-Nebenruf der Waking Shores. Der Fortschritt bündelt seine obsidianbezogenen Story- und Hilfsaufgaben.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Waking Shores black dragonflight content", kind = "Zone", location = { title = "Küste des Erwachens" } },
+                {
+                    kind = "Zone",
+                    location = {
+                        title = "The Waking Shores",
+                    },
+                    title = "Waking Shores black dragonflight content",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [2523] = {
-            summary = "Dark Talons ist ein lokaler Dracthyr-Nebenruf im Obsidian-Umfeld der Waking Shores. Er ergänzt die schwarze Drachenflug-Linie um einen einsatzorientierten Zweig.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Obsidian side content", kind = "Recurring", location = { title = "Küste des Erwachens" } },
+                {
+                    kind = "Recurring",
+                    location = {
+                        title = "The Waking Shores",
+                    },
+                    title = "Obsidian side content",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [2524] = {
-            summary = "Obsidian Warders ist ein lokaler Dracthyr-Nebenruf im Obsidian-Umfeld der Waking Shores. Er ergänzt die dortigen Verteidigungs- und Schutzaktivitäten.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Obsidian side content", kind = "Recurring", location = { title = "Küste des Erwachens" } },
+                {
+                    kind = "Recurring",
+                    location = {
+                        title = "The Waking Shores",
+                    },
+                    title = "Obsidian side content",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [2526] = {
-            summary = "Winterpelt Furbolg ist ein lokaler Nebenruf im Azurblauen Gebirge. Der Fortschritt sitzt an der Winterpelt-Hilfe und den zugehörigen Aufgaben rund um die Furbolg.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Azure Span side quests", kind = "Zone", location = { title = "Azurblaue Gebirge" } },
+                {
+                    kind = "Zone",
+                    location = {
+                        title = "The Azure Span",
+                    },
+                    title = "Azure Span side quests",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [2544] = {
-            summary = "Artisan's Consortium - Dragon Isles Branch ist die professionsnahe Stadtfraktion von Valdrakken. Der Fortschritt ist an Handwerk, Aufträge und die Hauptprofessionen des Hubs gebunden.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Valdrakken professions hub", kind = "Hub", location = { title = "Valdrakken" } },
+                {
+                    kind = "Hub",
+                    location = {
+                        title = "Valdrakken",
+                    },
+                    title = "Valdrakken professions hub",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [2550] = {
-            summary = "Cobalt Assembly ist ein lokaler Nebenruf des Azurblauen Gebirges. Der Fortschritt sitzt an den Cobalt-Aktivitäten und den zugehörigen Sammel- und Kampfschleifen der Zone.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Azure Span side content", kind = "Zone", location = { title = "Azurblaue Gebirge" } },
+                {
+                    kind = "Zone",
+                    location = {
+                        title = "The Azure Span",
+                    },
+                    title = "Azure Span side content",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [2553] = {
-            summary = "Soridormi ist der Nebenruf der Zeitriss-Inhalte von Thaldraszus. Der Fortschritt bündelt die wiederkehrenden Aktivitäten rund um die zeitgestörten Ereignisse.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                { title = "Time Rifts", kind = "Recurring", location = { title = "Thaldraszus" } },
+                {
+                    kind = "Weekly",
+                    location = {
+                        mapID = 2025,
+                        title = "Tyrhold Reservoir",
+                    },
+                    title = "When Time Needs Mending",
+                },
+                {
+                    kind = "Recurring",
+                    location = {
+                        mapID = 2025,
+                        title = "Tyrhold Reservoir",
+                    },
+                    title = "Time Rifts",
+                },
             },
-        },
-        [2135] = {
-            summary = "Chromie bündelt die zeitbezogenen Nebenaktivitäten in Thaldraszus. Der Fortschritt hängt vor allem an Zeitrissen und den dazugehörigen wiederkehrenden Aufgaben.",
-            source = "curated",
             confidence = "medium",
-            activities = {
-                { title = "Time Rifts", kind = "Recurring", location = { title = "Thaldraszus" } },
-                { title = "Temporal side activities", kind = "Zone", location = { title = "Tyrhold" } },
+            quartermasters = {
+                {
+                    label = "Rift Vendor",
+                    location = {
+                        mapID = 2025,
+                        title = "Tyrhold Reservoir",
+                    },
+                    name = "Soridormi",
+                },
             },
-        },
-        [2615] = {
-            summary = "Azerothian Archives ist der archivbezogene Nebenruf in Thaldraszus. Der Fortschritt sitzt an den wiederkehrenden Archiv- und Forschungsaktivitäten rund um Tyrhold.",
             source = "curated",
-            confidence = "medium",
-            activities = {
-                { title = "Azerothian Archives", kind = "Recurring", location = { title = "Thaldraszus" } },
-                { title = "Tyrhold archive activities", kind = "Zone", location = { title = "Tyrhold" } },
-            },
+            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
         },
         [2564] = {
-            summary = "Loamm Niffen ist die große Patch-Ruhmfraktion der Zaralekhöhle. Fortschritt kommt vor allem über Loamm, die Schnüffel-Suche, Weltinhalte in Zaralek und den dortigen Storyblock.",
-            source = "curated",
+            activities = {
+                {
+                    kind = "Hub",
+                    location = {
+                        mapID = 2133,
+                        title = "Loamm",
+                    },
+                    title = "Loamm",
+                },
+                {
+                    kind = "Weekly",
+                    location = {
+                        mapID = 2133,
+                        title = "Zaralek Cavern",
+                    },
+                    title = "Sniffenseeking",
+                },
+                {
+                    kind = "Zone",
+                    location = {
+                        mapID = 2133,
+                        title = "Zaralek Cavern",
+                    },
+                    title = "Zaralek world content",
+                },
+            },
             confidence = "medium",
             quartermasters = {
                 {
-                    name = "Mimuup",
                     label = "Quartermaster",
-                    location = { mapID = 2133, x = 0.560, y = 0.556, title = "Loamm" },
+                    location = {
+                        mapID = 2133,
+                        title = "Loamm",
+                        x = 0.56,
+                        y = 0.556,
+                    },
+                    name = "Mimuup",
                 },
             },
-            activities = {
-                { title = "Loamm", kind = "Hub", location = { mapID = 2133, title = "Loamm" } },
-                { title = "Sniffenseeking", kind = "Weekly", location = { mapID = 2133, title = "Zaralek Cavern" } },
-                { title = "Zaralek world content", kind = "Zone", location = { mapID = 2133, title = "Zaralek Cavern" } },
-            },
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
         },
         [2574] = {
-            summary = "Dream Wardens ist die große Patch-Ruhmfraktion des Smaragdgrünen Traums. Fortschritt kommt über den Storypfad, Weltinhalte im Traum und den zentralen Lagerbereich.",
-            source = "curated",
+            activities = {
+                {
+                    kind = "Hub",
+                    location = {
+                        mapID = 2151,
+                        title = "Central Encampment",
+                    },
+                    title = "Central Encampment",
+                },
+                {
+                    kind = "Zone",
+                    location = {
+                        mapID = 2151,
+                        title = "Emerald Dream",
+                    },
+                    title = "Emerald Dream world content",
+                },
+                {
+                    kind = "Story",
+                    location = {
+                        mapID = 2151,
+                        title = "Emerald Dream",
+                    },
+                    title = "Story chapters in the Dream",
+                },
+            },
             confidence = "medium",
             quartermasters = {
                 {
-                    name = "Pipsee",
                     label = "Quartermaster",
-                    location = { mapID = 2151, x = 0.500, y = 0.620, title = "Central Encampment" },
+                    location = {
+                        mapID = 2151,
+                        title = "Central Encampment",
+                        x = 0.5,
+                        y = 0.62,
+                    },
+                    name = "Pipsee",
                 },
             },
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated quartermaster and activity notes for the mapped local content.",
+        },
+        [2615] = {
             activities = {
-                { title = "Central Encampment", kind = "Hub", location = { mapID = 2151, title = "Central Encampment" } },
-                { title = "Emerald Dream world content", kind = "Zone", location = { mapID = 2151, title = "Emerald Dream" } },
-                { title = "Story chapters in the Dream", kind = "Story", location = { mapID = 2151, title = "Emerald Dream" } },
+                {
+                    kind = "Recurring",
+                    location = {
+                        mapID = 2025,
+                        title = "Tyrhold Reservoir",
+                    },
+                    title = "Azerothian Archives",
+                },
+                {
+                    kind = "Zone",
+                    location = {
+                        mapID = 2025,
+                        title = "Tyrhold",
+                    },
+                    title = "Archivaktivitäten in Tyrhold",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
     },
 })

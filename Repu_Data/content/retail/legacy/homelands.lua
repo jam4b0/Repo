@@ -4,181 +4,377 @@ if not api or not api.RegisterRetailContentModule then
     return
 end
 
-local function worldQuest(mapID, title)
-    return {
-        title = title,
-        kind = "Zone/Stadt",
-        location = {
-            mapID = mapID,
-            title = title,
-        },
-    }
-end
-
 api.RegisterRetailContentModule({
     factions = {
         [47] = {
-            summary = "Klassische Zwergenfraktion von Eisenschmiede. In Retail taucht sie vor allem in Eisenschmiede, Dun Morogh, Loch Modan und angrenzenden Allianz-Gebieten als lokale Heimatfraktion auf.",
-            source = "seed",
-            confidence = "medium",
             activities = {
-                worldQuest(87, "Eisenschmiede"),
+                {
+                    kind = "Zone/City",
+                    location = {
+                        mapID = 87,
+                        title = "Eisenschmiede",
+                    },
+                    title = "Eisenschmiede",
+                },
             },
+            confidence = "medium",
+            source = "seed",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [59] = {
-            summary = "Die Thoriumbruderschaft deckt im Retail-Core vor allem die Blackrock-Gebiete rund um Sengende Schlucht und Brennende Steppe ab.",
-            source = "seed",
-            confidence = "medium",
             activities = {
-                worldQuest(32, "Sengende Schlucht"),
-                worldQuest(36, "Brennende Steppe"),
+                {
+                    kind = "Zone/City",
+                    location = {
+                        mapID = 32,
+                        title = "Sengende Schlucht",
+                    },
+                    title = "Sengende Schlucht",
+                },
+                {
+                    kind = "Zone/City",
+                    location = {
+                        mapID = 36,
+                        title = "Brennende Steppe",
+                    },
+                    title = "Brennende Steppe",
+                },
             },
+            confidence = "medium",
+            source = "seed",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [68] = {
-            summary = "Klassische Untotenfraktion von Unterstadt. In Retail taucht sie vor allem in Tirisfal, Silberwald, Unterstadt und angrenzenden Gebieten als lokale Heimatfraktion auf.",
-            source = "seed",
-            confidence = "medium",
             activities = {
-                worldQuest(90, "Unterstadt"),
+                {
+                    kind = "Zone/City",
+                    location = {
+                        mapID = 90,
+                        title = "Unterstadt",
+                    },
+                    title = "Unterstadt",
+                },
             },
+            confidence = "medium",
+            source = "seed",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [69] = {
-            summary = "Legacy-Hauptstadtfraktion von Darnassus. Im Retail-Core bleibt sie als klassische Allianz-Stadtfraktion erhalten, auch wenn die Stadt selbst heute nur noch in Legacy-Zusammenhängen relevant ist.",
-            source = "seed",
-            confidence = "medium",
             activities = {
-                worldQuest(89, "Darnassus"),
+                {
+                    kind = "Zone/City",
+                    location = {
+                        mapID = 89,
+                        title = "Darnassus",
+                    },
+                    title = "Darnassus",
+                },
             },
+            confidence = "medium",
+            source = "seed",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [72] = {
-            summary = "Klassische Menschenfraktion von Sturmwind. In Retail taucht sie in Sturmwind, Elwynn, Westfall, Rotkamm und angrenzenden Allianz-Gebieten als lokale Heimatfraktion auf.",
-            source = "seed",
-            confidence = "medium",
             activities = {
-                worldQuest(84, "Sturmwind"),
+                {
+                    kind = "Zone/City",
+                    location = {
+                        mapID = 84,
+                        title = "Sturmwind",
+                    },
+                    title = "Sturmwind",
+                },
             },
+            confidence = "medium",
+            source = "seed",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [76] = {
-            summary = "Klassische Orc-Hauptstadtfraktion von Orgrimmar. In Retail taucht sie in Orgrimmar, Durotar und Teilen des nördlichen Brachlands als lokale Heimatfraktion auf.",
-            source = "seed",
-            confidence = "medium",
             activities = {
-                worldQuest(85, "Orgrimmar"),
+                {
+                    kind = "Zone/City",
+                    location = {
+                        mapID = 85,
+                        title = "Orgrimmar",
+                    },
+                    title = "Orgrimmar",
+                },
             },
+            confidence = "medium",
+            source = "seed",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [81] = {
-            summary = "Klassische Tauren-Hauptstadtfraktion von Donnerfels. In Retail taucht sie in Donnerfels, Mulgore und den zugehörigen Tauren-Gebieten als lokale Heimatfraktion auf.",
+            activities = {
+                {
+                    kind = "Zone/City",
+                    location = {
+                        mapID = 86,
+                        title = "Donnerfels",
+                    },
+                    title = "Donnerfels",
+                },
+            },
+            confidence = "medium",
             source = "seed",
-            confidence = "medium",
-            activities = {
-                worldQuest(86, "Donnerfels"),
-            },
-        },
-        [529] = {
-            summary = "Die Argentumdämmerung ist im Retail-Core die lokale Pestländer-Fraktion. Sie deckt vor allem Westliche und Östliche Pestländer sowie deren klassische Scharlach-/Geißel-Kontexte ab.",
-            source = "seed",
-            confidence = "medium",
-            activities = {
-                worldQuest(22, "Westliche Pestländer"),
-                worldQuest(23, "Östliche Pestländer"),
-            },
-        },
-        [530] = {
-            summary = "Die Dunkelspeertrolle werden im Retail-Core als lokale Horde-Fraktion in Teilen von Durotar, Eschental und den nördlichen Brachlanden genutzt.",
-            source = "seed",
-            confidence = "medium",
-            activities = {
-                worldQuest(63, "Eschental"),
-            },
-        },
-        [576] = {
-            summary = "Holzschlundfeste deckt im Retail-Core die klassischen Grenzgebiete rund um Teufelswald und Winterquell ab.",
-            source = "seed",
-            confidence = "medium",
-            activities = {
-                worldQuest(77, "Teufelswald"),
-            },
-        },
-        [609] = {
-            summary = "Der Cenarionzirkel ist im Retail-Core die lokale Fraktion für mehrere klassische Natur- und Wüstengebiete wie Desolace, Feralas, Mondlichtung und Silithus.",
-            source = "seed",
-            confidence = "medium",
-            activities = {
-                worldQuest(66, "Desolace"),
-                worldQuest(69, "Feralas"),
-                worldQuest(80, "Mondlichtung"),
-                worldQuest(81, "Silithus"),
-            },
-        },
-        [749] = {
-            summary = "Hydraxian Waterlords ist im Retail-Core ein klassischer Raid-Nebenruf von Molten Core. Er bleibt bewusst raidlokal und wird nicht mehr als normale Zonenfraktion von Azshara verwendet.",
-            source = "curated",
-            confidence = "medium",
-            activities = {
-                { title = "Molten Core", kind = "Raid", location = { title = "Molten Core" } },
-            },
-        },
-        [910] = {
-            summary = "Brood of Nozdormu ist im Retail-Core ein klassischer Ahn'Qiraj-Nebenruf. Er bleibt an die beiden Ahn'Qiraj-Raids gebunden und ersetzt dort nicht den generellen Silithus-Bezug.",
-            source = "curated",
-            confidence = "medium",
-            activities = {
-                { title = "Temple of Ahn'Qiraj", kind = "Raid", location = { title = "Temple of Ahn'Qiraj" } },
-                { title = "Ruins of Ahn'Qiraj", kind = "Raid", location = { title = "Ruins of Ahn'Qiraj" } },
-            },
-        },
-        [930] = {
-            summary = "Die Exodar ist die Draenei-Hauptstadtfraktion. Im Retail-Core deckt sie die Stadt selbst sowie Azurmythos- und Blutmythosinsel als Heimatcluster ab.",
-            source = "seed",
-            confidence = "medium",
-            activities = {
-                worldQuest(103, "Die Exodar"),
-                worldQuest(97, "Azurmythosinsel"),
-                worldQuest(106, "Die Blutmythosinsel"),
-            },
-        },
-        [1133] = {
-            summary = "Das Bilgewasserkartell ist im Retail-Core die lokale Goblinfraktion für Azshara und verwandte Goblin-Kontexte.",
-            source = "seed",
-            confidence = "medium",
-            activities = {
-                worldQuest(76, "Azshara"),
-            },
-        },
-        [1134] = {
-            summary = "Gilneas ist im Retail-Core die lokale Fraktion für die gilneische Heimatstadt und ihr Umland.",
-            source = "seed",
-            confidence = "medium",
-            activities = {
-                worldQuest(1577, "Gilneas"),
-            },
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [369] = {
-            summary = "Gadgetzan ist die neutrale Goblin-Stadtfraktion von Tanaris. Im Retail-Core ist sie als lokaler Hubanker für die Stadt selbst modelliert, nicht als ganze Zonenfraktion für Tanaris.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                worldQuest(71, "Tanaris"),
-                worldQuest(71, "Gadgetzan"),
+                {
+                    kind = "Zone/City",
+                    location = {
+                        mapID = 71,
+                        title = "Tanaris",
+                    },
+                    title = "Tanaris",
+                },
+                {
+                    kind = "Zone/City",
+                    location = {
+                        mapID = 71,
+                        title = "Gadgetzan",
+                    },
+                    title = "Gadgetzan",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [470] = {
-            summary = "Ratchet ist die neutrale Goblin-Hafenfraktion im Nördlichen Brachland. Im Retail-Core ist sie als lokaler Stadtanker für den Hafen modelliert.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                worldQuest(10, "Nördliches Brachland"),
-                worldQuest(10, "Ratchet"),
+                {
+                    kind = "Zone/City",
+                    location = {
+                        mapID = 10,
+                        title = "Nördliches Brachland",
+                    },
+                    title = "Nördliches Brachland",
+                },
+                {
+                    kind = "Zone/City",
+                    location = {
+                        mapID = 10,
+                        title = "Ratchet",
+                    },
+                    title = "Ratchet",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+        },
+        [529] = {
+            activities = {
+                {
+                    kind = "Zone/City",
+                    location = {
+                        mapID = 22,
+                        title = "Westliche Pestländer",
+                    },
+                    title = "Westliche Pestländer",
+                },
+                {
+                    kind = "Zone/City",
+                    location = {
+                        mapID = 23,
+                        title = "Östliche Pestländer",
+                    },
+                    title = "Östliche Pestländer",
+                },
+            },
+            confidence = "medium",
+            source = "seed",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+        },
+        [530] = {
+            activities = {
+                {
+                    kind = "Zone/City",
+                    location = {
+                        mapID = 63,
+                        title = "Eschental",
+                    },
+                    title = "Eschental",
+                },
+            },
+            confidence = "medium",
+            source = "seed",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+        },
+        [576] = {
+            activities = {
+                {
+                    kind = "Zone/City",
+                    location = {
+                        mapID = 77,
+                        title = "Teufelswald",
+                    },
+                    title = "Teufelswald",
+                },
+            },
+            confidence = "medium",
+            source = "seed",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
         [577] = {
-            summary = "Everlook ist die neutrale Goblin-Stadtfraktion in Winterquell. Im Retail-Core ist sie als lokaler Hubanker für die Stadt selbst modelliert.",
-            source = "curated",
-            confidence = "medium",
             activities = {
-                worldQuest(83, "Winterquell"),
-                worldQuest(83, "Everlook"),
+                {
+                    kind = "Zone/City",
+                    location = {
+                        mapID = 83,
+                        title = "Winterquell",
+                    },
+                    title = "Winterquell",
+                },
+                {
+                    kind = "Zone/City",
+                    location = {
+                        mapID = 83,
+                        title = "Everlook",
+                    },
+                    title = "Everlook",
+                },
             },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+        },
+        [609] = {
+            activities = {
+                {
+                    kind = "Zone/City",
+                    location = {
+                        mapID = 66,
+                        title = "Desolace",
+                    },
+                    title = "Desolace",
+                },
+                {
+                    kind = "Zone/City",
+                    location = {
+                        mapID = 69,
+                        title = "Feralas",
+                    },
+                    title = "Feralas",
+                },
+                {
+                    kind = "Zone/City",
+                    location = {
+                        mapID = 80,
+                        title = "Mondlichtung",
+                    },
+                    title = "Mondlichtung",
+                },
+                {
+                    kind = "Zone/City",
+                    location = {
+                        mapID = 81,
+                        title = "Silithus",
+                    },
+                    title = "Silithus",
+                },
+            },
+            confidence = "medium",
+            source = "seed",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+        },
+        [749] = {
+            activities = {
+                {
+                    kind = "Raid",
+                    location = {
+                        title = "Molten Core",
+                    },
+                    title = "Molten Core",
+                },
+            },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+        },
+        [910] = {
+            activities = {
+                {
+                    kind = "Raid",
+                    location = {
+                        title = "Temple of Ahn'Qiraj",
+                    },
+                    title = "Temple of Ahn'Qiraj",
+                },
+                {
+                    kind = "Raid",
+                    location = {
+                        title = "Ruins of Ahn'Qiraj",
+                    },
+                    title = "Ruins of Ahn'Qiraj",
+                },
+            },
+            confidence = "medium",
+            source = "curated",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+        },
+        [930] = {
+            activities = {
+                {
+                    kind = "Zone/City",
+                    location = {
+                        mapID = 103,
+                        title = "The Exodar",
+                    },
+                    title = "The Exodar",
+                },
+                {
+                    kind = "Zone/City",
+                    location = {
+                        mapID = 97,
+                        title = "Azurmythosinsel",
+                    },
+                    title = "Azurmythosinsel",
+                },
+                {
+                    kind = "Zone/City",
+                    location = {
+                        mapID = 106,
+                        title = "The Blutmythosinsel",
+                    },
+                    title = "The Blutmythosinsel",
+                },
+            },
+            confidence = "medium",
+            source = "seed",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+        },
+        [1133] = {
+            activities = {
+                {
+                    kind = "Zone/City",
+                    location = {
+                        mapID = 76,
+                        title = "Azshara",
+                    },
+                    title = "Azshara",
+                },
+            },
+            confidence = "medium",
+            source = "seed",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
+        },
+        [1134] = {
+            activities = {
+                {
+                    kind = "Zone/City",
+                    location = {
+                        mapID = 1577,
+                        title = "Gilneas",
+                    },
+                    title = "Gilneas",
+                },
+            },
+            confidence = "medium",
+            source = "seed",
+            summary = "Localized retail content for this faction. Includes curated activity notes for the mapped local content.",
         },
     },
 })
