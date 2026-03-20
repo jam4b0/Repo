@@ -87,6 +87,15 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        title = "Ve'nari's Refuge",
+                    },
+                    name = "Ve'nari",
+                },
+            },
             source = "curated",
             summary = "Ve'nari knows more about the Maw than anyone, and she might share a fraction of that information with you if you earn her regard.",
         },
@@ -181,6 +190,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 1961,
+                        title = "Keeper's Respite",
+                    },
+                    name = "Archivist Roh-Suir",
+                },
+            },
             source = "curated",
             summary = "Korthian attendants have committed their existence to researching relics from across the Shadowlands. Led by their Archivist, they are dedicated to recovering the relics scattered across Korthia in the wake of the mawsworn invasion.",
         },
@@ -202,6 +221,15 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        title = "Haven",
+                    },
+                    name = "Vilo",
+                },
+            },
             source = "curated",
             summary = "Once members of Cartel Al, the Enlightened have abandoned the pursuit of profit and glory out of devotion to the First Ones. By earning their favor, the brokers may be willing to share the knowledge they have gleaned.",
         },

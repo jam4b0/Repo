@@ -38,6 +38,15 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        title = "Voldun",
+                    },
+                    name = "Hoarder Jena",
+                },
+            },
             source = "curated",
             summary = "Comprised of exiles and scavengers, the Voldunai use their knowledge of the sands to thrive where others would wither and die.",
         },
@@ -59,6 +68,15 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        title = "Boralus",
+                    },
+                    name = "Provisioner Fray",
+                },
+            },
             source = "curated",
             summary = "Masters of the sea and commanders of Azeroth's finest navy, the distinguished Proudmoore family has led Kul Tiras for decades from their seat of power in Boralus.",
         },
@@ -80,6 +98,15 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        title = "Drustvar",
+                    },
+                    name = "Quartermaster Alcorn",
+                },
+            },
             source = "curated",
             summary = "An ancient Kul Tiran order resurrected to battle the threat of witchcraft, the Order of Embers fights with knowledge guiding their blades.",
         },
@@ -172,6 +199,15 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        title = "Rustbolt",
+                    },
+                    name = "Stolen Royal Vendorbot",
+                },
+            },
             source = "curated",
             summary = "The Rustbolt Resistance holds the line against King Mechagon and his evil plans.",
         },

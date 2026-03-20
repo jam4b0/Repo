@@ -26,6 +26,16 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        mapID = 525,
+                        title = "Frostfire Ridge",
+                    },
+                    name = "Beska Redtusk",
+                },
+            },
             source = "curated",
             summary = "The Frostwolf orcs of Frostfire Ridge are a tight-knit family of brutal warriors, well equipped to deal with the savage realities of Draenor.",
         },
