@@ -41,7 +41,7 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
-            source = "seed",
+            source = "curated",
             summary = "An ancient order of draenei priests once run by Velen, the Aldor are currently led by High Priestess Ishanah.  They are servants of the naaru in Shattrath City known as the Sha'tar.  Rivals of the Scryers.",
         },
         [934] = {
@@ -56,7 +56,7 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
-            source = "seed",
+            source = "curated",
             summary = "Voren'thal the Seer leads the dissident blood elves who've rejected Kael'thas' path to power.  They've joined forces with the naaru of Shattrath City, much to the dismay of the Aldor.",
         },
         [935] = {
@@ -71,7 +71,7 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
-            source = "seed",
+            source = "curated",
             summary = "The Sha'tar are a group of powerful naaru who rule over a rebuilt Shattrath City.  With the help of the Aldor and the Scryers, they lead the battle against Illidan and the Burning Legion.",
         },
         [941] = {
@@ -258,7 +258,7 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
-            source = "seed",
+            source = "curated",
             summary = "The refugees of Shattrath come from diverse backgrounds and races.  Word of helpful deeds spreads quickly among the Denizens of Lower City.",
         },
         [1012] = {
@@ -295,7 +295,7 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
-            source = "seed",
+            source = "curated",
             summaryKey = "faction.9000111.summary",
         },
         [1015] = {
@@ -337,7 +337,7 @@ api.RegisterRetailContentModule({
                         mapID = 109,
                         title = "Blade's Edge Mountains",
                     },
-                    title = "Skyguard-tasks",
+                    title = "Skyguard daily tasks",
                 },
             },
             confidence = "medium",

@@ -48,7 +48,7 @@ api.RegisterRetailContentModule({
                     location = {
                         title = "Tiragarde Sound",
                     },
-                    title = "Tiragardesand",
+                    title = "Tiragarde Sound",
                 },
                 {
                     kind = "Hub",
@@ -120,11 +120,18 @@ api.RegisterRetailContentModule({
                     },
                     title = "Nazjatar",
                 },
+                {
+                    kind = "Recurring",
+                    location = {
+                        title = "Newhome",
+                    },
+                    title = "Nazjatar ally and bodyguard activities",
+                },
             },
             confidence = "medium",
             source = "curated",
             summarySource = "curated",
-            summary = "Retail content for this faction is centered on Newhome and Nazjatar.",
+            summary = "The Unshackled are the Horde-aligned rebels of Nazjatar, operating from Newhome against Queen Azshara and her naga. Their reputation is mainly earned through Nazjatar world content, ally support, and the zone's recurring progression systems.",
         },
         [2373] = {
             activities = {
@@ -159,9 +166,9 @@ api.RegisterRetailContentModule({
                 {
                     kind = "Hub",
                     location = {
-                        title = "Rostbolzen",
+                        title = "Rustbolt",
                     },
-                    title = "Rostbolzen",
+                    title = "Rustbolt",
                 },
             },
             confidence = "medium",
@@ -175,7 +182,7 @@ api.RegisterRetailContentModule({
                     location = {
                         title = "Stormsong Valley",
                     },
-                    title = "Sturmsangtal side content",
+                    title = "Stormsong Valley side content",
                 },
             },
             confidence = "medium",
