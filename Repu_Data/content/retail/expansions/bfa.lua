@@ -156,6 +156,15 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        title = "Newhome",
+                    },
+                    name = "Atolia Seapearl",
+                },
+            },
             source = "curated",
             summary = "The Unshackled are the Horde-aligned rebels of Nazjatar, operating from Newhome against Queen Azshara and her naga. Their reputation is mainly earned through Nazjatar world content, ally support, and the zone's recurring progression systems.",
             summarySource = "curated",
@@ -178,6 +187,15 @@ api.RegisterRetailContentModule({
                 },
             },
             confidence = "medium",
+            quartermasters = {
+                {
+                    label = "Quartermaster",
+                    location = {
+                        title = "Mezzamere",
+                    },
+                    name = "Speaker Utia",
+                },
+            },
             source = "curated",
             summary = "Oppressed by the Naga, these refugees have banded together to rise up and seize their freedom.",
         },
