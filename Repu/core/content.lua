@@ -63,8 +63,14 @@ local function mergeContent(base, overlay)
         if type(value) == "table" then
             if #value > 0 then
                 local copy = {}
+                local baseList = type(base[key]) == "table" and base[key] or {}
                 for index, entry in ipairs(value) do
-                    copy[index] = type(entry) == "table" and ns.Utils:ShallowCopy(entry) or entry
+                    if type(entry) == "table" then
+                        local baseEntry = type(baseList[index]) == "table" and baseList[index] or {}
+                        copy[index] = mergeContent(baseEntry, entry)
+                    else
+                        copy[index] = entry
+                    end
                 end
                 base[key] = copy
             else
