@@ -86,7 +86,7 @@ api.RegisterRetailContentModule({
                         y = 0.4742,
                     },
                     questgiverLocation = {
-                        mapID = 2395,
+                        mapID = 2393,
                         titleKey = "npc.magistrix_bluflamme.name",
                         x = 0.4346,
                         y = 0.4742,
