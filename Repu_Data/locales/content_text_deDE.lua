@@ -979,6 +979,7 @@ api.RegisterLocaleDomain("retail_content_text", "deDE", {
     ["npc.apprentice_diell.name"] = "Lehrling Diell",
     ["npc.armorsmith_goldcrest.name"] = "Rüstungsschmied Goldwappen",
     ["npc.lord_saltheril.name"] = "Lord Saltheril",
+    ["npc.magistrix_bluflamme.name"] = "Magistrix Bluflamme",
     ["npc.neriv.name"] = "Neriv",
     ["npc.ranger_allorn.name"] = "Waldläufer Allorn",
 })
