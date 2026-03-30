@@ -978,8 +978,10 @@ api.RegisterLocaleDomain("retail_content_text", "deDE", {
     ["faction.990.activity.1.title"] = "Hyjal Summit",
     ["npc.apprentice_diell.name"] = "Lehrling Diell",
     ["npc.armorsmith_goldcrest.name"] = "Rüstungsschmied Goldwappen",
+    ["npc.knight_lord_sunguard.name"] = "Ritterfürst Sonnenwacht",
     ["npc.lord_saltheril.name"] = "Lord Saltheril",
     ["npc.magistrix_bluflamme.name"] = "Magistrix Bluflamme",
     ["npc.neriv.name"] = "Neriv",
+    ["npc.ranger_captain_morningarrow.name"] = "Wäldläuferhauptmann Morgenpfeil",
     ["npc.ranger_allorn.name"] = "Waldläufer Allorn",
 })
