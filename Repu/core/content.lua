@@ -52,29 +52,6 @@ local function resolveActivities(activities)
     return resolved
 end
 
-local function getRuntimeValue(key)
-    if ns.State and ns.State.GetRuntimeValue then
-        return ns.State:GetRuntimeValue(key)
-    end
-
-    return ns.State and ns.State.runtime and ns.State.runtime[key] or nil
-end
-
-local function isSilvermoonCourtChild(factionID)
-    return factionID == 2711 or factionID == 2712 or factionID == 2713 or factionID == 2714
-end
-
-local function resolveSilvermoonCourtQuestgiver(contentApi)
-    local childFactionID = tonumber(getRuntimeValue("lastRelevantFactionID") or 0)
-    if not isSilvermoonCourtChild(childFactionID) then
-        return nil
-    end
-
-    local childContent = contentApi:GetFactionContent(childFactionID)
-    local childActivities = resolveActivities(childContent.activities or {})
-    return childActivities[1]
-end
-
 local function mergeContent(base, overlay)
     if not overlay then
         return base
@@ -169,17 +146,6 @@ function ns.Content:GetFactionDetails(candidate, context)
     end
 
     local activities = resolveActivities(content.activities or {})
-
-    if faction.factionID == 2710 then
-        local childActivity = resolveSilvermoonCourtQuestgiver(self)
-        if childActivity then
-            for _, activity in ipairs(activities) do
-                activity.questgiverName = childActivity.questgiverName or activity.questgiverName
-                activity.questgiverLabel = childActivity.questgiverLabel or activity.questgiverLabel
-                activity.questgiverLocation = childActivity.questgiverLocation or activity.questgiverLocation
-            end
-        end
-    end
 
     return {
         factionID = faction.factionID,
