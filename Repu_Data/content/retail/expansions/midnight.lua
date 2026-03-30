@@ -88,10 +88,9 @@ api.RegisterRetailContentModule({
                     questgiverLocation = {
                         mapID = 2395,
                         titleKey = "npc.apprentice_diell.name",
-                        x = 0.4352,
-                        y = 0.4752,
+                        x = 0.4346,
+                        y = 0.4742,
                     },
-                    questgiverNameKey = "npc.apprentice_diell.name",
                     titleKey = "activity.saltherils_soiree.title",
                 },
             },
