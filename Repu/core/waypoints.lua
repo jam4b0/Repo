@@ -15,6 +15,46 @@ local function roundCoordinate(value)
     return math.floor((value * 10000) + 0.5) / 100
 end
 
+local function setBlizzardWaypoint(location)
+    if not (C_Map and C_Map.SetUserWaypoint) then
+        return false
+    end
+
+    local point = nil
+    if UiMapPoint and UiMapPoint.CreateFromCoordinates then
+        point = UiMapPoint.CreateFromCoordinates(location.mapID, location.x, location.y)
+    end
+
+    if not point and C_AddOns and C_AddOns.LoadAddOn then
+        pcall(C_AddOns.LoadAddOn, "Blizzard_MapCanvas")
+        if UiMapPoint and UiMapPoint.CreateFromCoordinates then
+            point = UiMapPoint.CreateFromCoordinates(location.mapID, location.x, location.y)
+        end
+    end
+
+    if not point then
+        local vector = CreateVector2D and CreateVector2D(location.x, location.y) or {
+            x = location.x,
+            y = location.y,
+        }
+        point = {
+            uiMapID = location.mapID,
+            position = vector,
+        }
+    end
+
+    local ok = pcall(C_Map.SetUserWaypoint, point)
+    if not ok then
+        return false
+    end
+
+    if C_SuperTrack and C_SuperTrack.SetSuperTrackedUserWaypoint then
+        pcall(C_SuperTrack.SetSuperTrackedUserWaypoint, true)
+    end
+
+    return true
+end
+
 function ns.Waypoints:SetLocationWaypoint(location)
     if not location or not location.mapID or not location.x or not location.y then
         printMessage(Locale:Get("WAYPOINT_NO_DATA"))
@@ -31,6 +71,11 @@ function ns.Waypoints:SetLocationWaypoint(location)
             world = true,
         })
         printMessage(Locale:Format("WAYPOINT_SET", title))
+        return true
+    end
+
+    if setBlizzardWaypoint(location) then
+        printMessage(Locale:Format("WAYPOINT_MAP_MARKER_SET", title))
         return true
     end
 
