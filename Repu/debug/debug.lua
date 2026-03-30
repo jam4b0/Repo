@@ -1109,6 +1109,63 @@ function ns.Debug:DumpFactionByID(input)
     end
 end
 
+function ns.Debug:SetFactionQuartermasterWaypoint(input)
+    local factionText, indexText = tostring(input or ""):match("^(%S+)%s*(.-)$")
+    local factionID = tonumber(factionText or "")
+    local qmIndex = tonumber(indexText or "") or 1
+
+    if not factionID then
+        printLine("Usage: /repu waypoint <factionID> [index]")
+        return
+    end
+
+    local runtime = ns.State.runtime or {}
+    local context = runtime.context or ns.Location:BuildContext()
+    local candidate = nil
+    for _, row in ipairs(runtime.visible or {}) do
+        if row and row.factionID == factionID then
+            candidate = row
+            break
+        end
+    end
+
+    if not candidate then
+        local data = ns.Compat:GetFactionDataByID(factionID)
+        if data then
+            candidate = {
+                factionID = factionID,
+                faction = data,
+                sourceType = "debug",
+                sourceKey = "manual",
+            }
+        end
+    end
+
+    if not candidate then
+        printLine("Keine Fraktion im Runtime-Kontext gefunden: " .. tostring(factionID))
+        return
+    end
+
+    local details = ns.Content:GetFactionDetails(candidate, context)
+    local quartermasters = details and details.quartermasters or {}
+    local qm = quartermasters[qmIndex]
+    if not qm or not qm.location then
+        printLine(string.format("Kein Quartermaster-Eintrag fuer factionID=%s index=%s", tostring(factionID), tostring(qmIndex)))
+        return
+    end
+
+    printLine(string.format(
+        "Waypoint-Test factionID=%s index=%s mapID=%s x=%s y=%s title=%s",
+        tostring(factionID),
+        tostring(qmIndex),
+        tostring(qm.location.mapID),
+        tostring(qm.location.x),
+        tostring(qm.location.y),
+        tostring(qm.location.title or qm.name)
+    ))
+    ns.Waypoints:SetLocationWaypoint(qm.location)
+end
+
 function ns.Debug:HandleSlash(message)
     local command = Utils:NormalizeKey(message) or ""
     local verb, tail = command:match("^(%S+)%s*(.-)$")
@@ -1215,6 +1272,11 @@ function ns.Debug:HandleSlash(message)
 
     if verb == "faction" then
         self:DumpFactionByID(tail)
+        return
+    end
+
+    if verb == "waypoint" then
+        self:SetFactionQuartermasterWaypoint(tail)
         return
     end
 
