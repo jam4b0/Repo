@@ -80,13 +80,13 @@ api.RegisterRetailContentModule({
                 {
                     kind = "Weekly",
                     location = {
-                        mapID = 2395,
+                        mapID = 2393,
                         titleKey = "activity.saltherils_soiree.title",
                         x = 0.426,
                         y = 0.472,
                     },
                     questgiverLocation = {
-                        mapID = 2395,
+                        mapID = 2393,
                         titleKey = "npc.apprentice_diell.name",
                         x = 0.434,
                         y = 0.474,
@@ -100,7 +100,7 @@ api.RegisterRetailContentModule({
                 {
                     labelKey = "faction.2710.quartermaster.magisters.label",
                     location = {
-                        mapID = 2395,
+                        mapID = 2393,
                         titleKey = "npc.apprentice_diell.name",
                         x = 0.434,
                         y = 0.474,
@@ -110,7 +110,7 @@ api.RegisterRetailContentModule({
                 {
                     labelKey = "faction.2710.quartermaster.blood_knights.label",
                     location = {
-                        mapID = 2395,
+                        mapID = 2393,
                         titleKey = "npc.armorsmith_goldcrest.name",
                         x = 0.434,
                         y = 0.474,
@@ -120,7 +120,7 @@ api.RegisterRetailContentModule({
                 {
                     labelKey = "faction.2710.quartermaster.lane_warden.label",
                     location = {
-                        mapID = 2395,
+                        mapID = 2393,
                         titleKey = "npc.neriv.name",
                         x = 0.434,
                         y = 0.476,
@@ -130,7 +130,7 @@ api.RegisterRetailContentModule({
                 {
                     labelKey = "faction.2710.quartermaster.wayfarer.label",
                     location = {
-                        mapID = 2395,
+                        mapID = 2393,
                         titleKey = "npc.ranger_allorn.name",
                         x = 0.434,
                         y = 0.476,
@@ -147,13 +147,13 @@ api.RegisterRetailContentModule({
                 {
                     kind = "Weekly",
                     location = {
-                        mapID = 2395,
+                        mapID = 2393,
                         titleKey = "activity.saltherils_soiree.title",
                         x = 0.426,
                         y = 0.472,
                     },
                     questgiverLocation = {
-                        mapID = 2395,
+                        mapID = 2393,
                         titleKey = "npc.apprentice_diell.name",
                         x = 0.434,
                         y = 0.474,
@@ -167,7 +167,7 @@ api.RegisterRetailContentModule({
                 {
                     labelKey = "common.quartermaster",
                     location = {
-                        mapID = 2395,
+                        mapID = 2393,
                         titleKey = "npc.apprentice_diell.name",
                         x = 0.434,
                         y = 0.474,
@@ -184,13 +184,13 @@ api.RegisterRetailContentModule({
                 {
                     kind = "Weekly",
                     location = {
-                        mapID = 2395,
+                        mapID = 2393,
                         titleKey = "activity.saltherils_soiree.title",
                         x = 0.426,
                         y = 0.472,
                     },
                     questgiverLocation = {
-                        mapID = 2395,
+                        mapID = 2393,
                         titleKey = "npc.armorsmith_goldcrest.name",
                         x = 0.434,
                         y = 0.474,
@@ -204,7 +204,7 @@ api.RegisterRetailContentModule({
                 {
                     labelKey = "common.quartermaster",
                     location = {
-                        mapID = 2395,
+                        mapID = 2393,
                         titleKey = "npc.armorsmith_goldcrest.name",
                         x = 0.434,
                         y = 0.474,
@@ -221,13 +221,13 @@ api.RegisterRetailContentModule({
                 {
                     kind = "Weekly",
                     location = {
-                        mapID = 2395,
+                        mapID = 2393,
                         titleKey = "activity.saltherils_soiree.title",
                         x = 0.426,
                         y = 0.472,
                     },
                     questgiverLocation = {
-                        mapID = 2395,
+                        mapID = 2393,
                         titleKey = "npc.ranger_allorn.name",
                         x = 0.434,
                         y = 0.476,
@@ -241,7 +241,7 @@ api.RegisterRetailContentModule({
                 {
                     labelKey = "common.quartermaster",
                     location = {
-                        mapID = 2395,
+                        mapID = 2393,
                         titleKey = "npc.ranger_allorn.name",
                         x = 0.434,
                         y = 0.476,
@@ -258,13 +258,13 @@ api.RegisterRetailContentModule({
                 {
                     kind = "Weekly",
                     location = {
-                        mapID = 2395,
+                        mapID = 2393,
                         titleKey = "activity.saltherils_soiree.title",
                         x = 0.426,
                         y = 0.472,
                     },
                     questgiverLocation = {
-                        mapID = 2395,
+                        mapID = 2393,
                         titleKey = "npc.neriv.name",
                         x = 0.434,
                         y = 0.476,
@@ -278,7 +278,7 @@ api.RegisterRetailContentModule({
                 {
                     labelKey = "common.quartermaster",
                     location = {
-                        mapID = 2395,
+                        mapID = 2393,
                         titleKey = "npc.neriv.name",
                         x = 0.434,
                         y = 0.476,
