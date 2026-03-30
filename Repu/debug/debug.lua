@@ -305,6 +305,28 @@ local function collectAddonRegistryDiagnostics()
     return rows
 end
 
+local function getPlayerCoordsForMap(mapID)
+    if not (C_Map and C_Map.GetPlayerMapPosition and mapID) then
+        return nil, nil
+    end
+
+    local pos = C_Map.GetPlayerMapPosition(mapID, "player")
+    if not pos then
+        return nil, nil
+    end
+
+    local x = nil
+    local y = nil
+    if pos.x and pos.y then
+        x = pos.x
+        y = pos.y
+    elseif pos.GetXY then
+        x, y = pos:GetXY()
+    end
+
+    return x, y
+end
+
 function ns.Debug:Init()
     SLASH_REPU1 = "/repu"
     SlashCmdList.REPU = function(message)
@@ -880,9 +902,14 @@ end
 function ns.Debug:DumpLocation()
     local context = ns.State.runtime.context or ns.Location:BuildContext()
     local coverage = ns.State.runtime.coverage or ns.Data:GetCoverage(context)
+    local x, y = getPlayerCoordsForMap(context and context.mapID or nil)
     self:SetLastDiagnostic("location", {
         context = context,
         coverage = coverage,
+        playerCoords = {
+            x = x,
+            y = y,
+        },
     })
     printLine(Locale:Format("DEBUG_FLAVOR", tostring(context.activeFlavor)))
     printLine(Locale:Format("DEBUG_ZONE", tostring(context.zoneName)))
@@ -893,8 +920,24 @@ function ns.Debug:DumpLocation()
     printLine(Locale:Format("DEBUG_INSTANCE_MAP_ID", tostring(context.instanceMapID)))
     printLine(Locale:Format("DEBUG_DIFFICULTY", tostring(context.instanceDifficultyID)))
     printLine(Locale:Format("DEBUG_WATCHED_FACTION_ID", tostring(context.watchedFactionID)))
+    if x and y then
+        printLine(string.format("PlayerCoords(map=%s): %.4f / %.4f", tostring(context.mapID), x, y))
+    else
+        printLine(string.format("PlayerCoords(map=%s): unavailable", tostring(context.mapID)))
+    end
     printLine(Locale:Format("DEBUG_COVERAGE_DATA", Utils:Stringify(coverage)))
     printLine(Locale:Format("DEBUG_MAP_CHAIN", Utils:Stringify(context.mapChain)))
+end
+
+function ns.Debug:DumpCoords()
+    local context = ns.State.runtime.context or ns.Location:BuildContext()
+    local mapID = context and context.mapID or nil
+    local x, y = getPlayerCoordsForMap(mapID)
+    if x and y then
+        printLine(string.format("Coords: mapID=%s x=%.4f y=%.4f", tostring(mapID), x, y))
+    else
+        printLine(string.format("Coords unavailable on mapID=%s", tostring(mapID)))
+    end
 end
 
 function ns.Debug:DumpCoverage()
@@ -1201,6 +1244,11 @@ function ns.Debug:HandleSlash(message)
 
     if verb == "coverage" then
         self:DumpCoverage()
+        return
+    end
+
+    if verb == "coords" then
+        self:DumpCoords()
         return
     end
 
