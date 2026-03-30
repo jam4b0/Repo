@@ -353,7 +353,10 @@ api.RegisterRetailContentModule({
                 {
                     label = "Quartermaster",
                     location = {
+                        mapID = 1970,
                         title = "Haven",
+                        x = 0.348,
+                        y = 0.642,
                     },
                     name = "Vilo",
                 },

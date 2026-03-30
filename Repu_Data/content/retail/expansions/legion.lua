@@ -270,6 +270,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 646,
                         title = "Deliverance Point",
+                        x = 0.444,
+                        y = 0.622,
                     },
                     name = "Warmage Kath'leen",
                 },
@@ -311,6 +313,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 830,
                         title = "Vindicator's Point",
+                        x = 0.668,
+                        y = 0.564,
                     },
                     name = "Toraan the Revered",
                 },
@@ -351,6 +355,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 830,
                         title = "Vindicaar",
+                        x = 0.668,
+                        y = 0.564,
                     },
                     name = "Toraan the Revered",
                 },

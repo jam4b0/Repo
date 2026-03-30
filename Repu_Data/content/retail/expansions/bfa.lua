@@ -219,7 +219,10 @@ api.RegisterRetailContentModule({
                 {
                     label = "Quartermaster",
                     location = {
+                        mapID = 1355,
                         title = "Mezzamere",
+                        x = 0.492,
+                        y = 0.620,
                     },
                     name = "Finder Palta",
                 },
@@ -257,7 +260,10 @@ api.RegisterRetailContentModule({
                 {
                     label = "Quartermaster",
                     location = {
+                        mapID = 1355,
                         title = "Newhome",
+                        x = 0.508,
+                        y = 0.652,
                     },
                     name = "Atolia Seapearl",
                 },

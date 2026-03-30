@@ -1,45 +1,17 @@
 {
   "summary": {
     "totalFactions": 152,
-    "withAnyXY": 80,
-    "withQuartermasterXY": 72,
+    "withAnyXY": 91,
+    "withQuartermasterXY": 83,
     "withActivityXY": 22,
-    "withoutAnyXY": 72
+    "withoutAnyXY": 61
   },
   "quartermasterWithoutXY": [
-    {
-      "factionID": 59,
-      "file": "homelands.lua",
-      "quartermasters": [
-        "Lokhtos Darkbargainer"
-      ]
-    },
-    {
-      "factionID": 1012,
-      "file": "outland.lua",
-      "quartermasters": [
-        "Okuno"
-      ]
-    },
-    {
-      "factionID": 1015,
-      "file": "outland.lua",
-      "quartermasters": [
-        "Drake Dealer Hurlunk"
-      ]
-    },
     {
       "factionID": 1156,
       "file": "northrend.lua",
       "quartermasters": [
         "Alchemist Finklestein"
-      ]
-    },
-    {
-      "factionID": 1445,
-      "file": "draenor.lua",
-      "quartermasters": [
-        "Beska Redtusk"
       ]
     },
     {
@@ -50,59 +22,10 @@
       ]
     },
     {
-      "factionID": 1850,
-      "file": "draenor.lua",
-      "quartermasters": [
-        "Z'tenga the Walker"
-      ]
-    },
-    {
-      "factionID": 2045,
-      "file": "legion.lua",
-      "quartermasters": [
-        "Warmage Kath'leen"
-      ]
-    },
-    {
-      "factionID": 2165,
-      "file": "legion.lua",
-      "quartermasters": [
-        "Toraan the Revered"
-      ]
-    },
-    {
-      "factionID": 2170,
-      "file": "legion.lua",
-      "quartermasters": [
-        "Toraan the Revered"
-      ]
-    },
-    {
-      "factionID": 2373,
-      "file": "bfa.lua",
-      "quartermasters": [
-        "Atolia Seapearl"
-      ]
-    },
-    {
-      "factionID": 2400,
-      "file": "bfa.lua",
-      "quartermasters": [
-        "Finder Palta"
-      ]
-    },
-    {
       "factionID": 2415,
       "file": "bfa.lua",
       "quartermasters": [
         "Zhang Ku"
-      ]
-    },
-    {
-      "factionID": 2478,
-      "file": "shadowlands.lua",
-      "quartermasters": [
-        "Vilo"
       ]
     }
   ],
@@ -760,6 +683,10 @@
   ],
   "factionsWithXY": [
     {
+      "factionID": 59,
+      "file": "homelands.lua"
+    },
+    {
       "factionID": 932,
       "file": "outland.lua"
     },
@@ -805,6 +732,14 @@
     },
     {
       "factionID": 1011,
+      "file": "outland.lua"
+    },
+    {
+      "factionID": 1012,
+      "file": "outland.lua"
+    },
+    {
+      "factionID": 1015,
       "file": "outland.lua"
     },
     {
@@ -880,6 +815,10 @@
       "file": "pandaria.lua"
     },
     {
+      "factionID": 1445,
+      "file": "draenor.lua"
+    },
+    {
       "factionID": 1711,
       "file": "draenor.lua"
     },
@@ -893,6 +832,10 @@
     },
     {
       "factionID": 1847,
+      "file": "draenor.lua"
+    },
+    {
+      "factionID": 1850,
       "file": "draenor.lua"
     },
     {
@@ -916,6 +859,10 @@
       "file": "legion.lua"
     },
     {
+      "factionID": 2045,
+      "file": "legion.lua"
+    },
+    {
       "factionID": 2157,
       "file": "bfa.lua"
     },
@@ -936,7 +883,23 @@
       "file": "bfa.lua"
     },
     {
+      "factionID": 2165,
+      "file": "legion.lua"
+    },
+    {
+      "factionID": 2170,
+      "file": "legion.lua"
+    },
+    {
+      "factionID": 2373,
+      "file": "bfa.lua"
+    },
+    {
       "factionID": 2391,
+      "file": "bfa.lua"
+    },
+    {
+      "factionID": 2400,
       "file": "bfa.lua"
     },
     {
@@ -965,6 +928,10 @@
     },
     {
       "factionID": 2472,
+      "file": "shadowlands.lua"
+    },
+    {
+      "factionID": 2478,
       "file": "shadowlands.lua"
     },
     {

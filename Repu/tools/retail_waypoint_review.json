@@ -1,12 +1,17 @@
 {
   "summary": {
-    "already_with_coordinates": 80,
+    "already_with_coordinates": 91,
     "leave_without_coordinates_for_now": 58,
-    "needs_external_coordinate_source": 14,
+    "needs_external_coordinate_source": 3,
     "open_standard_gap": 0
   },
   "groups": {
     "already_with_coordinates": [
+      {
+        "factionID": 59,
+        "file": "homelands.lua",
+        "reason": "Coordinates already modeled."
+      },
       {
         "factionID": 932,
         "file": "outland.lua",
@@ -64,6 +69,16 @@
       },
       {
         "factionID": 1011,
+        "file": "outland.lua",
+        "reason": "Coordinates already modeled."
+      },
+      {
+        "factionID": 1012,
+        "file": "outland.lua",
+        "reason": "Coordinates already modeled."
+      },
+      {
+        "factionID": 1015,
         "file": "outland.lua",
         "reason": "Coordinates already modeled."
       },
@@ -158,6 +173,11 @@
         "reason": "Coordinates already modeled."
       },
       {
+        "factionID": 1445,
+        "file": "draenor.lua",
+        "reason": "Coordinates already modeled."
+      },
+      {
         "factionID": 1711,
         "file": "draenor.lua",
         "reason": "Coordinates already modeled."
@@ -174,6 +194,11 @@
       },
       {
         "factionID": 1847,
+        "file": "draenor.lua",
+        "reason": "Coordinates already modeled."
+      },
+      {
+        "factionID": 1850,
         "file": "draenor.lua",
         "reason": "Coordinates already modeled."
       },
@@ -203,6 +228,11 @@
         "reason": "Coordinates already modeled."
       },
       {
+        "factionID": 2045,
+        "file": "legion.lua",
+        "reason": "Coordinates already modeled."
+      },
+      {
         "factionID": 2157,
         "file": "bfa.lua",
         "reason": "Coordinates already modeled."
@@ -228,7 +258,27 @@
         "reason": "Coordinates already modeled."
       },
       {
+        "factionID": 2165,
+        "file": "legion.lua",
+        "reason": "Coordinates already modeled."
+      },
+      {
+        "factionID": 2170,
+        "file": "legion.lua",
+        "reason": "Coordinates already modeled."
+      },
+      {
+        "factionID": 2373,
+        "file": "bfa.lua",
+        "reason": "Coordinates already modeled."
+      },
+      {
         "factionID": 2391,
+        "file": "bfa.lua",
+        "reason": "Coordinates already modeled."
+      },
+      {
+        "factionID": 2400,
         "file": "bfa.lua",
         "reason": "Coordinates already modeled."
       },
@@ -264,6 +314,11 @@
       },
       {
         "factionID": 2472,
+        "file": "shadowlands.lua",
+        "reason": "Coordinates already modeled."
+      },
+      {
+        "factionID": 2478,
         "file": "shadowlands.lua",
         "reason": "Coordinates already modeled."
       },
@@ -702,28 +757,8 @@
     ],
     "needs_external_coordinate_source": [
       {
-        "factionID": 59,
-        "file": "homelands.lua",
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "factionID": 1012,
-        "file": "outland.lua",
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "factionID": 1015,
-        "file": "outland.lua",
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
         "factionID": 1156,
         "file": "northrend.lua",
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "factionID": 1445,
-        "file": "draenor.lua",
         "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
       },
       {
@@ -732,43 +767,8 @@
         "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
       },
       {
-        "factionID": 1850,
-        "file": "draenor.lua",
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "factionID": 2045,
-        "file": "legion.lua",
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "factionID": 2165,
-        "file": "legion.lua",
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "factionID": 2170,
-        "file": "legion.lua",
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "factionID": 2373,
-        "file": "bfa.lua",
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "factionID": 2400,
-        "file": "bfa.lua",
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
         "factionID": 2415,
         "file": "bfa.lua",
-        "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
-      },
-      {
-        "factionID": 2478,
-        "file": "shadowlands.lua",
         "reason": "Has a modeled quartermaster but no x/y coordinates; safe waypointing needs an external verified coordinate source or in-game capture."
       }
     ]

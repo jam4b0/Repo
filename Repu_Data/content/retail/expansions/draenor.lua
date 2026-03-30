@@ -40,6 +40,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 525,
                         title = "Frostfire Ridge",
+                        x = 0.532,
+                        y = 0.610,
                     },
                     name = "Beska Redtusk",
                 },
@@ -292,6 +294,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 543,
                         title = "Fang'rila",
+                        x = 0.552,
+                        y = 0.748,
                     },
                     name = "Z'tenga the Walker",
                 },

@@ -322,8 +322,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 107,
                         title = "Telaar",
-                        x = 0.540,
-                        y = 0.700,
+                        x = 0.544,
+                        y = 0.752,
                     },
                     name = "Trader Narasu",
                 },
@@ -430,6 +430,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 105,
                         title = "Black Temple",
+                        x = 0.614,
+                        y = 0.510,
                     },
                     name = "Okuno",
                 },
@@ -463,6 +465,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 105,
                         title = "Netherwing Ledge",
+                        x = 0.654,
+                        y = 0.858,
                     },
                     name = "Drake Dealer Hurlunk",
                 },
@@ -494,10 +498,10 @@ api.RegisterRetailContentModule({
                 {
                     label = "Quartermaster",
                     location = {
-                        mapID = 109,
+                        mapID = 108,
                         title = "Blackwind Landing",
-                        x = 0.640,
-                        y = 0.660,
+                        x = 0.112,
+                        y = 0.392,
                     },
                     name = "Grella",
                 },

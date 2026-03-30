@@ -55,6 +55,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 242,
                         title = "Blackrock Depths",
+                        x = 0.502,
+                        y = 0.584,
                     },
                     name = "Lokhtos Darkbargainer",
                 },
