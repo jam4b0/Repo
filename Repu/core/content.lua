@@ -45,6 +45,9 @@ local function resolveActivities(activities)
         resolved[index].title = resolveContentText(activity, "titleKey", "title")
         resolved[index].kind = resolveContentText(activity, "kindKey", "kind")
         resolved[index].location = resolveLocation(activity.location)
+        resolved[index].questgiverName = resolveContentText(activity, "questgiverNameKey", "questgiverName")
+        resolved[index].questgiverLabel = resolveContentText(activity, "questgiverLabelKey", "questgiverLabel")
+        resolved[index].questgiverLocation = resolveLocation(activity.questgiverLocation)
     end
     return resolved
 end

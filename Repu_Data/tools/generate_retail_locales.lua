@@ -398,6 +398,24 @@ local function buildActivities(activities, translator)
                 localized.location.title = translator(activity.location.title)
             end
         end
+        if activity.questgiverNameKey then
+            localized.questgiverNameKey = activity.questgiverNameKey
+        elseif activity.questgiverName then
+            localized.questgiverName = translator(activity.questgiverName)
+        end
+        if activity.questgiverLabelKey then
+            localized.questgiverLabelKey = activity.questgiverLabelKey
+        elseif activity.questgiverLabel then
+            localized.questgiverLabel = translator(activity.questgiverLabel)
+        end
+        if activity.questgiverLocation then
+            localized.questgiverLocation = {}
+            if activity.questgiverLocation.titleKey then
+                localized.questgiverLocation.titleKey = activity.questgiverLocation.titleKey
+            else
+                localized.questgiverLocation.title = translator(activity.questgiverLocation.title)
+            end
+        end
         output[index] = localized
     end
     return output
@@ -622,6 +640,16 @@ local function buildNeutralPayload()
                     localizedActivity.location = {}
                     localizedActivity.location.titleKey = activity.location.titleKey or generatedKey("faction", factionID, "activity", index, "location", "title")
                 end
+                if activity.questgiverNameKey or activity.questgiverName then
+                    localizedActivity.questgiverNameKey = activity.questgiverNameKey or generatedKey("faction", factionID, "activity", index, "questgiver", "name")
+                end
+                if activity.questgiverLabelKey or activity.questgiverLabel then
+                    localizedActivity.questgiverLabelKey = activity.questgiverLabelKey or generatedKey("faction", factionID, "activity", index, "questgiver", "label")
+                end
+                if activity.questgiverLocation then
+                    localizedActivity.questgiverLocation = {}
+                    localizedActivity.questgiverLocation.titleKey = activity.questgiverLocation.titleKey or generatedKey("faction", factionID, "activity", index, "questgiver", "location", "title")
+                end
                 localized.activities[index] = localizedActivity
             end
         end
@@ -679,6 +707,21 @@ local function buildTextPayload(locale, neutralSource, retailSource, existingRet
                 local sourceTitle = sourceActivity and sourceActivity.location and sourceActivity.location.title or nil
                 local localeTitle = localeActivity and localeActivity.location and localeActivity.location.title or nil
                 carry(neutralActivity.location.titleKey, localeTitle or sourceTitle or (existingTextLocale and existingTextLocale[neutralActivity.location.titleKey]))
+            end
+            if neutralActivity.questgiverNameKey then
+                local sourceName = sourceActivity and sourceActivity.questgiverName or nil
+                local localeName = localeActivity and localeActivity.questgiverName or nil
+                carry(neutralActivity.questgiverNameKey, localeName or sourceName or (existingTextLocale and existingTextLocale[neutralActivity.questgiverNameKey]))
+            end
+            if neutralActivity.questgiverLabelKey then
+                local sourceLabel = sourceActivity and sourceActivity.questgiverLabel or nil
+                local localeLabel = localeActivity and localeActivity.questgiverLabel or nil
+                carry(neutralActivity.questgiverLabelKey, localeLabel or sourceLabel or (existingTextLocale and existingTextLocale[neutralActivity.questgiverLabelKey]))
+            end
+            if neutralActivity.questgiverLocation and neutralActivity.questgiverLocation.titleKey then
+                local sourceTitle = sourceActivity and sourceActivity.questgiverLocation and sourceActivity.questgiverLocation.title or nil
+                local localeTitle = localeActivity and localeActivity.questgiverLocation and localeActivity.questgiverLocation.title or nil
+                carry(neutralActivity.questgiverLocation.titleKey, localeTitle or sourceTitle or (existingTextLocale and existingTextLocale[neutralActivity.questgiverLocation.titleKey]))
             end
         end
     end

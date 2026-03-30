@@ -12,6 +12,7 @@ ns.Locale:Register("deDE", {
     DETAIL_SECTION_ACTIVITIES = "Daily/Weekly",
     DETAIL_LABEL_QUARTERMASTER = "Rüstmeister",
     DETAIL_LABEL_ACTIVITY = "Aktivität",
+    DETAIL_LABEL_QUESTGIVER = "Questgeber",
     WAYPOINT_DEFAULT_TITLE = "Repu",
     WAYPOINT_NO_DATA = "Für diesen Eintrag sind noch keine Wegpunkt-Daten hinterlegt.",
     WAYPOINT_SET = "Wegpunkt gesetzt: %s",

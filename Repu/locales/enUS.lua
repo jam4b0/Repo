@@ -12,6 +12,7 @@ ns.Locale:Register("enUS", {
     DETAIL_SECTION_ACTIVITIES = "Dailies/Weeklies",
     DETAIL_LABEL_QUARTERMASTER = "Quartermaster",
     DETAIL_LABEL_ACTIVITY = "Activity",
+    DETAIL_LABEL_QUESTGIVER = "Questgiver",
     WAYPOINT_DEFAULT_TITLE = "Repu",
     WAYPOINT_NO_DATA = "No waypoint data is available for this entry yet.",
     WAYPOINT_SET = "Waypoint set: %s",

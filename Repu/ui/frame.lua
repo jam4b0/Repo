@@ -106,6 +106,16 @@ local function updateLockButtonAppearance(button, locked)
     end
 end
 
+local function buildActivityMeta(activity)
+    local baseMeta = activity.kind or Locale:Get("DETAIL_LABEL_ACTIVITY")
+    if not activity.questgiverName or activity.questgiverName == "" then
+        return baseMeta
+    end
+
+    local role = activity.questgiverLabel or Locale:Get("DETAIL_LABEL_QUESTGIVER")
+    return string.format("%s | %s: %s", baseMeta, role, activity.questgiverName)
+end
+
 function ns.UI:Init()
     local profile = ns.State:GetProfile()
     local frame = CreateFrame("Frame", "RepuFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate")
@@ -439,8 +449,8 @@ function ns.UI:UpdateDetails(details, count, profile)
     for _, activity in ipairs(activities) do
         entries[#entries + 1] = {
             label = activity.title or activity.name or Locale:Get("DETAIL_LABEL_ACTIVITY"),
-            meta = activity.kind or Locale:Get("DETAIL_LABEL_ACTIVITY"),
-            location = activity.location,
+            meta = buildActivityMeta(activity),
+            location = activity.questgiverLocation or activity.location,
         }
     end
 

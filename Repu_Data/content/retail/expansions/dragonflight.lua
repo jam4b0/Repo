@@ -345,6 +345,13 @@ api.RegisterRetailContentModule({
                         x = 0.612,
                         y = 0.32,
                     },
+                    questgiverLocation = {
+                        mapID = 2025,
+                        title = "Tyrhold Reservoir",
+                        x = 0.612,
+                        y = 0.32,
+                    },
+                    questgiverName = "Soridormi",
                     title = "When Time Needs Mending",
                 },
                 {
