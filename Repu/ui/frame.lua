@@ -193,7 +193,7 @@ function ns.UI:Init()
     frame.detail.body:SetSpacing(1)
 
     frame.detail.buttons = {}
-    for index = 1, 6 do
+    for index = 1, 12 do
         frame.detail.buttons[index] = createDetailButton(frame.detail, index)
     end
 
@@ -438,22 +438,6 @@ function ns.UI:UpdateDetails(details, count, profile)
     detail.body:SetText(table.concat(bodyLines, "\n"))
     detail.body:SetWidth((profile.width or self.frame:GetWidth() or 320) - 40)
 
-    local entries = {}
-    for _, quartermaster in ipairs(quartermasters) do
-        entries[#entries + 1] = {
-            label = quartermaster.name or Locale:Get("DETAIL_LABEL_QUARTERMASTER"),
-            meta = quartermaster.label or Locale:Get("DETAIL_LABEL_QUARTERMASTER"),
-            location = quartermaster.location,
-        }
-    end
-    for _, activity in ipairs(activities) do
-        entries[#entries + 1] = {
-            label = activity.title or activity.name or Locale:Get("DETAIL_LABEL_ACTIVITY"),
-            meta = buildActivityMeta(activity),
-            location = activity.questgiverLocation or activity.location,
-        }
-    end
-
     local titleHeight = math.ceil(math.max(20, detail.title:GetStringHeight() or 0))
     local metaTop = -10 - titleHeight - 6
     detail.meta:ClearAllPoints()
@@ -548,7 +532,7 @@ function ns.UI:UpdateDetails(details, count, profile)
                 addEntry(
                     activity.title or activity.name or Locale:Get("DETAIL_LABEL_ACTIVITY"),
                     activity.kind or Locale:Get("DETAIL_LABEL_ACTIVITY"),
-                    activity.location
+                    activity.questgiverLocation or activity.location
                 )
             end
         end

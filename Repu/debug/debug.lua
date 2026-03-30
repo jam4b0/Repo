@@ -1079,6 +1079,34 @@ function ns.Debug:DumpFactionByID(input)
 
     local data = ns.Compat:GetFactionDataByID(factionID)
     printLine("FactionData[" .. tostring(factionID) .. "]: " .. Utils:Stringify(data))
+
+    local runtime = ns.State.runtime or {}
+    local context = runtime.context or ns.Location:BuildContext()
+    local candidate = nil
+    for _, row in ipairs(runtime.visible or {}) do
+        if row and row.factionID == factionID then
+            candidate = row
+            break
+        end
+    end
+
+    if not candidate and data then
+        candidate = {
+            factionID = factionID,
+            faction = data,
+            sourceType = "debug",
+            sourceKey = "manual",
+        }
+    end
+
+    if candidate then
+        local details = ns.Content:GetFactionDetails(candidate, context)
+        if details then
+            printLine("FactionContent[" .. tostring(factionID) .. "].summary: " .. tostring(details.summary))
+            printLine("FactionContent[" .. tostring(factionID) .. "].quartermasters: " .. Utils:Stringify(details.quartermasters))
+            printLine("FactionContent[" .. tostring(factionID) .. "].activities: " .. Utils:Stringify(details.activities))
+        end
+    end
 end
 
 function ns.Debug:HandleSlash(message)
