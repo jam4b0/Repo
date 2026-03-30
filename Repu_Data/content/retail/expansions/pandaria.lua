@@ -30,7 +30,9 @@ api.RegisterRetailContentModule({
                     label = "Quartermaster",
                     location = {
                         mapID = 390,
-                        title = "Vale of Eternal Blossoms",
+                        title = "Shrine of Seven Stars",
+                        x = 0.842,
+                        y = 0.628,
                     },
                     name = "Jaluu the Generous",
                 },

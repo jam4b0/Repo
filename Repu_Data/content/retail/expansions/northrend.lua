@@ -78,6 +78,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 117,
                         title = "Kamagua",
+                        x = 0.259,
+                        y = 0.579,
                     },
                     name = "Tanaika",
                 },

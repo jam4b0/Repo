@@ -322,6 +322,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 107,
                         title = "Telaar",
+                        x = 0.540,
+                        y = 0.700,
                     },
                     name = "Trader Narasu",
                 },
@@ -494,6 +496,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 109,
                         title = "Blackwind Landing",
+                        x = 0.640,
+                        y = 0.660,
                     },
                     name = "Grella",
                 },

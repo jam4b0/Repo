@@ -1,699 +1,1083 @@
 {
   "summary": {
     "totalFactions": 152,
-    "withAnyXY": 75,
-    "withQuartermasterXY": 67,
-    "withActivityXY": 75,
-    "withoutAnyXY": 77
+    "withAnyXY": 80,
+    "withQuartermasterXY": 72,
+    "withActivityXY": 22,
+    "withoutAnyXY": 72
   },
   "quartermasterWithoutXY": [
     {
-      "file": "bfa.lua",
-      "factionID": 2400
-    },
-    {
-      "file": "bfa.lua",
-      "factionID": 2373
-    },
-    {
-      "file": "bfa.lua",
-      "factionID": 2415
-    },
-    {
-      "file": "draenor.lua",
-      "factionID": 1445
-    },
-    {
-      "file": "draenor.lua",
-      "factionID": 1849
-    },
-    {
-      "file": "draenor.lua",
-      "factionID": 1850
-    },
-    {
-      "file": "legion.lua",
-      "factionID": 2045
-    },
-    {
-      "file": "legion.lua",
-      "factionID": 2165
-    },
-    {
-      "file": "legion.lua",
-      "factionID": 2170
-    },
-    {
-      "file": "northrend.lua",
-      "factionID": 1073
-    },
-    {
-      "file": "northrend.lua",
-      "factionID": 1156
-    },
-    {
-      "file": "outland.lua",
-      "factionID": 978
-    },
-    {
-      "file": "outland.lua",
-      "factionID": 1012
-    },
-    {
-      "file": "outland.lua",
-      "factionID": 1015
-    },
-    {
-      "file": "outland.lua",
-      "factionID": 1031
-    },
-    {
-      "file": "pandaria.lua",
-      "factionID": 1269
-    },
-    {
-      "file": "shadowlands.lua",
-      "factionID": 2439
-    },
-    {
-      "file": "shadowlands.lua",
-      "factionID": 2478
-    },
-    {
+      "factionID": 59,
       "file": "homelands.lua",
-      "factionID": 59
+      "quartermasters": [
+        "Lokhtos Darkbargainer"
+      ]
+    },
+    {
+      "factionID": 1012,
+      "file": "outland.lua",
+      "quartermasters": [
+        "Okuno"
+      ]
+    },
+    {
+      "factionID": 1015,
+      "file": "outland.lua",
+      "quartermasters": [
+        "Drake Dealer Hurlunk"
+      ]
+    },
+    {
+      "factionID": 1156,
+      "file": "northrend.lua",
+      "quartermasters": [
+        "Alchemist Finklestein"
+      ]
+    },
+    {
+      "factionID": 1445,
+      "file": "draenor.lua",
+      "quartermasters": [
+        "Beska Redtusk"
+      ]
+    },
+    {
+      "factionID": 1849,
+      "file": "draenor.lua",
+      "quartermasters": [
+        "Dawn-Seeker Krisek"
+      ]
+    },
+    {
+      "factionID": 1850,
+      "file": "draenor.lua",
+      "quartermasters": [
+        "Z'tenga the Walker"
+      ]
+    },
+    {
+      "factionID": 2045,
+      "file": "legion.lua",
+      "quartermasters": [
+        "Warmage Kath'leen"
+      ]
+    },
+    {
+      "factionID": 2165,
+      "file": "legion.lua",
+      "quartermasters": [
+        "Toraan the Revered"
+      ]
+    },
+    {
+      "factionID": 2170,
+      "file": "legion.lua",
+      "quartermasters": [
+        "Toraan the Revered"
+      ]
+    },
+    {
+      "factionID": 2373,
+      "file": "bfa.lua",
+      "quartermasters": [
+        "Atolia Seapearl"
+      ]
+    },
+    {
+      "factionID": 2400,
+      "file": "bfa.lua",
+      "quartermasters": [
+        "Finder Palta"
+      ]
+    },
+    {
+      "factionID": 2415,
+      "file": "bfa.lua",
+      "quartermasters": [
+        "Zhang Ku"
+      ]
+    },
+    {
+      "factionID": 2478,
+      "file": "shadowlands.lua",
+      "quartermasters": [
+        "Vilo"
+      ]
     }
   ],
   "activityWithoutXY": [
     {
-      "file": "bfa.lua",
-      "factionID": 2400
-    },
-    {
-      "file": "bfa.lua",
-      "factionID": 2373
-    },
-    {
-      "file": "bfa.lua",
-      "factionID": 2395
-    },
-    {
-      "file": "bfa.lua",
-      "factionID": 2415
-    },
-    {
-      "file": "cataclysm.lua",
-      "factionID": 1174
-    },
-    {
-      "file": "cataclysm.lua",
-      "factionID": 2417
-    },
-    {
-      "file": "draenor.lua",
-      "factionID": 1445
-    },
-    {
-      "file": "draenor.lua",
-      "factionID": 1515
-    },
-    {
-      "file": "draenor.lua",
-      "factionID": 1710
-    },
-    {
-      "file": "draenor.lua",
-      "factionID": 1848
-    },
-    {
-      "file": "draenor.lua",
-      "factionID": 1849
-    },
-    {
-      "file": "draenor.lua",
-      "factionID": 1850
-    },
-    {
-      "file": "dragonflight.lua",
-      "factionID": 2135
-    },
-    {
-      "file": "dragonflight.lua",
-      "factionID": 2517
-    },
-    {
-      "file": "dragonflight.lua",
-      "factionID": 2518
-    },
-    {
-      "file": "dragonflight.lua",
-      "factionID": 2523
-    },
-    {
-      "file": "dragonflight.lua",
-      "factionID": 2524
-    },
-    {
-      "file": "dragonflight.lua",
-      "factionID": 2526
-    },
-    {
-      "file": "dragonflight.lua",
-      "factionID": 2550
-    },
-    {
-      "file": "legion.lua",
-      "factionID": 2045
-    },
-    {
-      "file": "legion.lua",
-      "factionID": 2165
-    },
-    {
-      "file": "legion.lua",
-      "factionID": 2170
-    },
-    {
-      "file": "midnight.lua",
-      "factionID": 2696
-    },
-    {
-      "file": "midnight.lua",
-      "factionID": 2699
-    },
-    {
-      "file": "midnight.lua",
-      "factionID": 2704
-    },
-    {
-      "file": "midnight.lua",
-      "factionID": 2770
-    },
-    {
-      "file": "northrend.lua",
-      "factionID": 1067
-    },
-    {
-      "file": "northrend.lua",
-      "factionID": 1068
-    },
-    {
-      "file": "northrend.lua",
-      "factionID": 1073
-    },
-    {
-      "file": "northrend.lua",
-      "factionID": 1104
-    },
-    {
-      "file": "northrend.lua",
-      "factionID": 1105
-    },
-    {
-      "file": "northrend.lua",
-      "factionID": 1124
-    },
-    {
-      "file": "northrend.lua",
-      "factionID": 1126
-    },
-    {
-      "file": "northrend.lua",
-      "factionID": 1156
-    },
-    {
-      "file": "outland.lua",
-      "factionID": 978
-    },
-    {
-      "file": "outland.lua",
-      "factionID": 990
-    },
-    {
-      "file": "outland.lua",
-      "factionID": 1012
-    },
-    {
-      "file": "outland.lua",
-      "factionID": 1015
-    },
-    {
-      "file": "outland.lua",
-      "factionID": 1031
-    },
-    {
-      "file": "outland.lua",
-      "factionID": 1038
-    },
-    {
-      "file": "outland.lua",
-      "factionID": 1077
-    },
-    {
-      "file": "outland.lua",
-      "factionID": 1416
-    },
-    {
-      "file": "outland.lua",
-      "factionID": 9000111
-    },
-    {
-      "file": "pandaria.lua",
-      "factionID": 1269
-    },
-    {
-      "file": "pandaria.lua",
-      "factionID": 1359
-    },
-    {
-      "file": "pandaria.lua",
-      "factionID": 1375
-    },
-    {
-      "file": "pandaria.lua",
-      "factionID": 1376
-    },
-    {
-      "file": "pandaria.lua",
-      "factionID": 1387
-    },
-    {
-      "file": "pandaria.lua",
-      "factionID": 1388
-    },
-    {
-      "file": "pandaria.lua",
-      "factionID": 1435
-    },
-    {
-      "file": "pandaria.lua",
-      "factionID": 1492
-    },
-    {
-      "file": "shadowlands.lua",
-      "factionID": 2439
-    },
-    {
-      "file": "shadowlands.lua",
-      "factionID": 2464
-    },
-    {
-      "file": "shadowlands.lua",
-      "factionID": 2470
-    },
-    {
-      "file": "shadowlands.lua",
-      "factionID": 2478
-    },
-    {
-      "file": "war_within.lua",
-      "factionID": 2658
-    },
-    {
-      "file": "war_within.lua",
-      "factionID": 2736
-    },
-    {
+      "factionID": 47,
       "file": "homelands.lua",
-      "factionID": 47
+      "reason": "Has activities with locations but no x/y coordinates."
     },
     {
+      "factionID": 59,
       "file": "homelands.lua",
-      "factionID": 59
+      "reason": "Has activities with locations but no x/y coordinates."
     },
     {
+      "factionID": 68,
       "file": "homelands.lua",
-      "factionID": 68
+      "reason": "Has activities with locations but no x/y coordinates."
     },
     {
+      "factionID": 69,
       "file": "homelands.lua",
-      "factionID": 69
+      "reason": "Has activities with locations but no x/y coordinates."
     },
     {
+      "factionID": 72,
       "file": "homelands.lua",
-      "factionID": 72
+      "reason": "Has activities with locations but no x/y coordinates."
     },
     {
+      "factionID": 76,
       "file": "homelands.lua",
-      "factionID": 76
+      "reason": "Has activities with locations but no x/y coordinates."
     },
     {
+      "factionID": 81,
       "file": "homelands.lua",
-      "factionID": 81
+      "reason": "Has activities with locations but no x/y coordinates."
     },
     {
+      "factionID": 369,
       "file": "homelands.lua",
-      "factionID": 369
+      "reason": "Has activities with locations but no x/y coordinates."
     },
     {
+      "factionID": 470,
       "file": "homelands.lua",
-      "factionID": 470
+      "reason": "Has activities with locations but no x/y coordinates."
     },
     {
+      "factionID": 529,
       "file": "homelands.lua",
-      "factionID": 529
+      "reason": "Has activities with locations but no x/y coordinates."
     },
     {
+      "factionID": 530,
       "file": "homelands.lua",
-      "factionID": 530
+      "reason": "Has activities with locations but no x/y coordinates."
     },
     {
+      "factionID": 576,
       "file": "homelands.lua",
-      "factionID": 576
+      "reason": "Has activities with locations but no x/y coordinates."
     },
     {
+      "factionID": 577,
       "file": "homelands.lua",
-      "factionID": 577
+      "reason": "Has activities with locations but no x/y coordinates."
     },
     {
+      "factionID": 609,
       "file": "homelands.lua",
-      "factionID": 609
+      "reason": "Has activities with locations but no x/y coordinates."
     },
     {
+      "factionID": 749,
       "file": "homelands.lua",
-      "factionID": 749
+      "reason": "Has activities with locations but no x/y coordinates."
     },
     {
-      "file": "homelands.lua",
-      "factionID": 910
-    },
-    {
-      "file": "homelands.lua",
-      "factionID": 930
-    },
-    {
-      "file": "homelands.lua",
-      "factionID": 1133
-    },
-    {
-      "file": "homelands.lua",
-      "factionID": 1134
-    },
-    {
+      "factionID": 909,
       "file": "neutral_hubs.lua",
-      "factionID": 909
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 910,
+      "file": "homelands.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 930,
+      "file": "homelands.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 932,
+      "file": "outland.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 933,
+      "file": "outland.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 934,
+      "file": "outland.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 935,
+      "file": "outland.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 941,
+      "file": "outland.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 942,
+      "file": "outland.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 946,
+      "file": "outland.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 947,
+      "file": "outland.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 970,
+      "file": "outland.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 978,
+      "file": "outland.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 989,
+      "file": "outland.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 990,
+      "file": "outland.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1011,
+      "file": "outland.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1012,
+      "file": "outland.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1015,
+      "file": "outland.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1031,
+      "file": "outland.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1038,
+      "file": "outland.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1067,
+      "file": "northrend.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1068,
+      "file": "northrend.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1073,
+      "file": "northrend.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1077,
+      "file": "outland.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1090,
+      "file": "northrend.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1091,
+      "file": "northrend.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1098,
+      "file": "northrend.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1104,
+      "file": "northrend.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1105,
+      "file": "northrend.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1106,
+      "file": "northrend.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1119,
+      "file": "northrend.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1124,
+      "file": "northrend.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1126,
+      "file": "northrend.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1133,
+      "file": "homelands.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1134,
+      "file": "homelands.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1156,
+      "file": "northrend.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1158,
+      "file": "cataclysm.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1171,
+      "file": "cataclysm.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1173,
+      "file": "cataclysm.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1174,
+      "file": "cataclysm.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1177,
+      "file": "cataclysm.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1178,
+      "file": "cataclysm.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1269,
+      "file": "pandaria.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1270,
+      "file": "pandaria.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1271,
+      "file": "pandaria.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1272,
+      "file": "pandaria.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1302,
+      "file": "pandaria.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1337,
+      "file": "pandaria.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1359,
+      "file": "pandaria.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1375,
+      "file": "pandaria.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1376,
+      "file": "pandaria.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1387,
+      "file": "pandaria.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1388,
+      "file": "pandaria.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1416,
+      "file": "outland.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1435,
+      "file": "pandaria.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1445,
+      "file": "draenor.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1492,
+      "file": "pandaria.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1515,
+      "file": "draenor.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1710,
+      "file": "draenor.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1711,
+      "file": "draenor.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1731,
+      "file": "draenor.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1828,
+      "file": "legion.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1847,
+      "file": "draenor.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1848,
+      "file": "draenor.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1849,
+      "file": "draenor.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1850,
+      "file": "draenor.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1859,
+      "file": "legion.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1883,
+      "file": "legion.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1894,
+      "file": "legion.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1900,
+      "file": "legion.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 1948,
+      "file": "legion.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2045,
+      "file": "legion.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2135,
+      "file": "dragonflight.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2157,
+      "file": "bfa.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2158,
+      "file": "bfa.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2160,
+      "file": "bfa.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2161,
+      "file": "bfa.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2162,
+      "file": "bfa.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2165,
+      "file": "legion.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2170,
+      "file": "legion.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2373,
+      "file": "bfa.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2391,
+      "file": "bfa.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2395,
+      "file": "bfa.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2400,
+      "file": "bfa.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2407,
+      "file": "shadowlands.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2410,
+      "file": "shadowlands.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2413,
+      "file": "shadowlands.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2415,
+      "file": "bfa.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2417,
+      "file": "cataclysm.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2432,
+      "file": "shadowlands.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2439,
+      "file": "shadowlands.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2464,
+      "file": "shadowlands.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2465,
+      "file": "shadowlands.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2470,
+      "file": "shadowlands.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2472,
+      "file": "shadowlands.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2478,
+      "file": "shadowlands.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2503,
+      "file": "dragonflight.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2507,
+      "file": "dragonflight.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2510,
+      "file": "dragonflight.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2511,
+      "file": "dragonflight.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2517,
+      "file": "dragonflight.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2518,
+      "file": "dragonflight.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2523,
+      "file": "dragonflight.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2524,
+      "file": "dragonflight.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2526,
+      "file": "dragonflight.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2550,
+      "file": "dragonflight.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2564,
+      "file": "dragonflight.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2574,
+      "file": "dragonflight.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2658,
+      "file": "war_within.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2696,
+      "file": "midnight.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2699,
+      "file": "midnight.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2704,
+      "file": "midnight.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2736,
+      "file": "war_within.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 2770,
+      "file": "midnight.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
+    },
+    {
+      "factionID": 9000111,
+      "file": "outland.lua",
+      "reason": "Has activities with locations but no x/y coordinates."
     }
   ],
   "factionsWithXY": [
     {
-      "file": "bfa.lua",
-      "factionID": 2157
+      "factionID": 932,
+      "file": "outland.lua"
     },
     {
-      "file": "bfa.lua",
-      "factionID": 2158
+      "factionID": 933,
+      "file": "outland.lua"
     },
     {
-      "file": "bfa.lua",
-      "factionID": 2160
+      "factionID": 934,
+      "file": "outland.lua"
     },
     {
-      "file": "bfa.lua",
-      "factionID": 2161
+      "factionID": 935,
+      "file": "outland.lua"
     },
     {
-      "file": "bfa.lua",
-      "factionID": 2162
+      "factionID": 941,
+      "file": "outland.lua"
     },
     {
-      "file": "bfa.lua",
-      "factionID": 2391
+      "factionID": 942,
+      "file": "outland.lua"
     },
     {
-      "file": "cataclysm.lua",
-      "factionID": 1158
+      "factionID": 946,
+      "file": "outland.lua"
     },
     {
-      "file": "cataclysm.lua",
-      "factionID": 1171
+      "factionID": 947,
+      "file": "outland.lua"
     },
     {
-      "file": "cataclysm.lua",
-      "factionID": 1173
+      "factionID": 970,
+      "file": "outland.lua"
     },
     {
-      "file": "cataclysm.lua",
-      "factionID": 1177
+      "factionID": 978,
+      "file": "outland.lua"
     },
     {
-      "file": "cataclysm.lua",
-      "factionID": 1178
+      "factionID": 989,
+      "file": "outland.lua"
     },
     {
-      "file": "draenor.lua",
-      "factionID": 1711
+      "factionID": 1011,
+      "file": "outland.lua"
     },
     {
-      "file": "draenor.lua",
-      "factionID": 1731
+      "factionID": 1031,
+      "file": "outland.lua"
     },
     {
-      "file": "draenor.lua",
-      "factionID": 1847
+      "factionID": 1073,
+      "file": "northrend.lua"
     },
     {
-      "file": "dragonflight.lua",
-      "factionID": 2503
+      "factionID": 1090,
+      "file": "northrend.lua"
     },
     {
-      "file": "dragonflight.lua",
-      "factionID": 2507
+      "factionID": 1091,
+      "file": "northrend.lua"
     },
     {
-      "file": "dragonflight.lua",
-      "factionID": 2510
+      "factionID": 1098,
+      "file": "northrend.lua"
     },
     {
-      "file": "dragonflight.lua",
-      "factionID": 2511
+      "factionID": 1106,
+      "file": "northrend.lua"
     },
     {
-      "file": "dragonflight.lua",
-      "factionID": 2544
+      "factionID": 1119,
+      "file": "northrend.lua"
     },
     {
-      "file": "dragonflight.lua",
-      "factionID": 2553
+      "factionID": 1158,
+      "file": "cataclysm.lua"
     },
     {
-      "file": "dragonflight.lua",
-      "factionID": 2564
+      "factionID": 1171,
+      "file": "cataclysm.lua"
     },
     {
-      "file": "dragonflight.lua",
-      "factionID": 2574
+      "factionID": 1173,
+      "file": "cataclysm.lua"
     },
     {
-      "file": "dragonflight.lua",
-      "factionID": 2615
+      "factionID": 1177,
+      "file": "cataclysm.lua"
     },
     {
-      "file": "legion.lua",
-      "factionID": 1828
+      "factionID": 1178,
+      "file": "cataclysm.lua"
     },
     {
-      "file": "legion.lua",
-      "factionID": 1859
+      "factionID": 1269,
+      "file": "pandaria.lua"
     },
     {
-      "file": "legion.lua",
-      "factionID": 1883
+      "factionID": 1270,
+      "file": "pandaria.lua"
     },
     {
-      "file": "legion.lua",
-      "factionID": 1894
+      "factionID": 1271,
+      "file": "pandaria.lua"
     },
     {
-      "file": "legion.lua",
-      "factionID": 1900
+      "factionID": 1272,
+      "file": "pandaria.lua"
     },
     {
-      "file": "legion.lua",
-      "factionID": 1948
+      "factionID": 1302,
+      "file": "pandaria.lua"
     },
     {
-      "file": "midnight.lua",
-      "factionID": 2710
+      "factionID": 1337,
+      "file": "pandaria.lua"
     },
     {
-      "file": "midnight.lua",
-      "factionID": 2711
+      "factionID": 1711,
+      "file": "draenor.lua"
     },
     {
-      "file": "midnight.lua",
-      "factionID": 2712
+      "factionID": 1731,
+      "file": "draenor.lua"
     },
     {
-      "file": "midnight.lua",
-      "factionID": 2713
+      "factionID": 1828,
+      "file": "legion.lua"
     },
     {
-      "file": "midnight.lua",
-      "factionID": 2714
+      "factionID": 1847,
+      "file": "draenor.lua"
     },
     {
-      "file": "northrend.lua",
-      "factionID": 1090
+      "factionID": 1859,
+      "file": "legion.lua"
     },
     {
-      "file": "northrend.lua",
-      "factionID": 1091
+      "factionID": 1883,
+      "file": "legion.lua"
     },
     {
-      "file": "northrend.lua",
-      "factionID": 1098
+      "factionID": 1894,
+      "file": "legion.lua"
     },
     {
-      "file": "northrend.lua",
-      "factionID": 1106
+      "factionID": 1900,
+      "file": "legion.lua"
     },
     {
-      "file": "northrend.lua",
-      "factionID": 1119
+      "factionID": 1948,
+      "file": "legion.lua"
     },
     {
-      "file": "outland.lua",
-      "factionID": 932
+      "factionID": 2157,
+      "file": "bfa.lua"
     },
     {
-      "file": "outland.lua",
-      "factionID": 933
+      "factionID": 2158,
+      "file": "bfa.lua"
     },
     {
-      "file": "outland.lua",
-      "factionID": 934
+      "factionID": 2160,
+      "file": "bfa.lua"
     },
     {
-      "file": "outland.lua",
-      "factionID": 935
+      "factionID": 2161,
+      "file": "bfa.lua"
     },
     {
-      "file": "outland.lua",
-      "factionID": 941
+      "factionID": 2162,
+      "file": "bfa.lua"
     },
     {
-      "file": "outland.lua",
-      "factionID": 942
+      "factionID": 2391,
+      "file": "bfa.lua"
     },
     {
-      "file": "outland.lua",
-      "factionID": 946
+      "factionID": 2407,
+      "file": "shadowlands.lua"
     },
     {
-      "file": "outland.lua",
-      "factionID": 947
+      "factionID": 2410,
+      "file": "shadowlands.lua"
     },
     {
-      "file": "outland.lua",
-      "factionID": 970
+      "factionID": 2413,
+      "file": "shadowlands.lua"
     },
     {
-      "file": "outland.lua",
-      "factionID": 989
+      "factionID": 2432,
+      "file": "shadowlands.lua"
     },
     {
-      "file": "outland.lua",
-      "factionID": 1011
+      "factionID": 2439,
+      "file": "shadowlands.lua"
     },
     {
-      "file": "pandaria.lua",
-      "factionID": 1270
+      "factionID": 2465,
+      "file": "shadowlands.lua"
     },
     {
-      "file": "pandaria.lua",
-      "factionID": 1271
+      "factionID": 2472,
+      "file": "shadowlands.lua"
     },
     {
-      "file": "pandaria.lua",
-      "factionID": 1272
+      "factionID": 2503,
+      "file": "dragonflight.lua"
     },
     {
-      "file": "pandaria.lua",
-      "factionID": 1302
+      "factionID": 2507,
+      "file": "dragonflight.lua"
     },
     {
-      "file": "pandaria.lua",
-      "factionID": 1337
+      "factionID": 2510,
+      "file": "dragonflight.lua"
     },
     {
-      "file": "shadowlands.lua",
-      "factionID": 2407
+      "factionID": 2511,
+      "file": "dragonflight.lua"
     },
     {
-      "file": "shadowlands.lua",
-      "factionID": 2410
+      "factionID": 2544,
+      "file": "dragonflight.lua"
     },
     {
-      "file": "shadowlands.lua",
-      "factionID": 2413
+      "factionID": 2553,
+      "file": "dragonflight.lua"
     },
     {
-      "file": "shadowlands.lua",
-      "factionID": 2432
+      "factionID": 2564,
+      "file": "dragonflight.lua"
     },
     {
-      "file": "shadowlands.lua",
-      "factionID": 2465
+      "factionID": 2570,
+      "file": "war_within.lua"
     },
     {
-      "file": "shadowlands.lua",
-      "factionID": 2472
+      "factionID": 2574,
+      "file": "dragonflight.lua"
     },
     {
-      "file": "war_within.lua",
-      "factionID": 2570
+      "factionID": 2590,
+      "file": "war_within.lua"
     },
     {
-      "file": "war_within.lua",
-      "factionID": 2590
+      "factionID": 2594,
+      "file": "war_within.lua"
     },
     {
-      "file": "war_within.lua",
-      "factionID": 2594
+      "factionID": 2600,
+      "file": "war_within.lua"
     },
     {
-      "file": "war_within.lua",
-      "factionID": 2600
+      "factionID": 2601,
+      "file": "war_within.lua"
     },
     {
-      "file": "war_within.lua",
-      "factionID": 2601
+      "factionID": 2605,
+      "file": "war_within.lua"
     },
     {
-      "file": "war_within.lua",
-      "factionID": 2605
+      "factionID": 2607,
+      "file": "war_within.lua"
     },
     {
-      "file": "war_within.lua",
-      "factionID": 2607
+      "factionID": 2615,
+      "file": "dragonflight.lua"
     },
     {
-      "file": "war_within.lua",
-      "factionID": 2653
+      "factionID": 2653,
+      "file": "war_within.lua"
     },
     {
-      "file": "war_within.lua",
-      "factionID": 2671
+      "factionID": 2671,
+      "file": "war_within.lua"
     },
     {
-      "file": "war_within.lua",
-      "factionID": 2673
+      "factionID": 2673,
+      "file": "war_within.lua"
     },
     {
-      "file": "war_within.lua",
-      "factionID": 2675
+      "factionID": 2675,
+      "file": "war_within.lua"
     },
     {
-      "file": "war_within.lua",
-      "factionID": 2677
+      "factionID": 2677,
+      "file": "war_within.lua"
     },
     {
-      "file": "war_within.lua",
-      "factionID": 2685
+      "factionID": 2685,
+      "file": "war_within.lua"
     },
     {
-      "file": "war_within.lua",
-      "factionID": 2688
+      "factionID": 2688,
+      "file": "war_within.lua"
+    },
+    {
+      "factionID": 2710,
+      "file": "midnight.lua"
+    },
+    {
+      "factionID": 2711,
+      "file": "midnight.lua"
+    },
+    {
+      "factionID": 2712,
+      "file": "midnight.lua"
+    },
+    {
+      "factionID": 2713,
+      "file": "midnight.lua"
+    },
+    {
+      "factionID": 2714,
+      "file": "midnight.lua"
     }
   ]
 }

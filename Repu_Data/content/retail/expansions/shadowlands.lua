@@ -188,7 +188,10 @@ api.RegisterRetailContentModule({
                 {
                     label = "Quartermaster",
                     location = {
-                        title = "Sinposium",
+                        mapID = 1525,
+                        title = "Darkhaven",
+                        x = 0.613,
+                        y = 0.638,
                     },
                     name = "Mistress Mihaela",
                 },
