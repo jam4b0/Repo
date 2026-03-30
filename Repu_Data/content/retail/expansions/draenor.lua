@@ -241,10 +241,18 @@ api.RegisterRetailContentModule({
                 {
                     kind = "Hub",
                     location = {
-                        mapID = 582,
-                        title = "Stormshield",
+                        mapID = 543,
+                        title = "Lion's Watch / Vol'mar",
                     },
-                    title = "Stormshield",
+                    title = "Lion's Watch / Vol'mar",
+                },
+                {
+                    kind = "Daily",
+                    location = {
+                        mapID = 543,
+                        title = "Tanaan Jungle",
+                    },
+                    title = "Order of the Awakened daily objectives",
                 },
             },
             confidence = "medium",
@@ -254,12 +262,14 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 543,
                         title = "Lion's Watch / Vol'mar",
+                        x = 0.578,
+                        y = 0.594,
                     },
                     name = "Dawn-Seeker Krisek",
                 },
             },
             source = "curated",
-            summary = "Survivors of a grisly civil war, these beleaguered arakkoans hope the reclamation of apexis artifacts will hold the key to peacefully rebuilding their civilization.",
+            summary = "Champions of the Arakkoa Outcasts and allied forces in Tanaan Jungle, the Order of the Awakened wages a steady campaign against the Iron Horde and the Burning Legion from Lion's Watch and Vol'mar.",
         },
         [1850] = {
             activities = {

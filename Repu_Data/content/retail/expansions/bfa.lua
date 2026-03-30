@@ -347,7 +347,10 @@ api.RegisterRetailContentModule({
                 {
                     label = "Quartermaster",
                     location = {
+                        mapID = 390,
                         title = "The Silent Sanctuary",
+                        x = 0.444,
+                        y = 0.752,
                     },
                     name = "Zhang Ku",
                 },

@@ -1,34 +1,12 @@
 {
   "summary": {
     "totalFactions": 152,
-    "withAnyXY": 91,
-    "withQuartermasterXY": 83,
+    "withAnyXY": 94,
+    "withQuartermasterXY": 86,
     "withActivityXY": 22,
-    "withoutAnyXY": 61
+    "withoutAnyXY": 58
   },
-  "quartermasterWithoutXY": [
-    {
-      "factionID": 1156,
-      "file": "northrend.lua",
-      "quartermasters": [
-        "Alchemist Finklestein"
-      ]
-    },
-    {
-      "factionID": 1849,
-      "file": "draenor.lua",
-      "quartermasters": [
-        "Dawn-Seeker Krisek"
-      ]
-    },
-    {
-      "factionID": 2415,
-      "file": "bfa.lua",
-      "quartermasters": [
-        "Zhang Ku"
-      ]
-    }
-  ],
+  "quartermasterWithoutXY": [],
   "activityWithoutXY": [
     {
       "factionID": 47,
@@ -771,6 +749,10 @@
       "file": "northrend.lua"
     },
     {
+      "factionID": 1156,
+      "file": "northrend.lua"
+    },
+    {
       "factionID": 1158,
       "file": "cataclysm.lua"
     },
@@ -832,6 +814,10 @@
     },
     {
       "factionID": 1847,
+      "file": "draenor.lua"
+    },
+    {
+      "factionID": 1849,
       "file": "draenor.lua"
     },
     {
@@ -913,6 +899,10 @@
     {
       "factionID": 2413,
       "file": "shadowlands.lua"
+    },
+    {
+      "factionID": 2415,
+      "file": "bfa.lua"
     },
     {
       "factionID": 2432,

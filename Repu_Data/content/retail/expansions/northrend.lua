@@ -384,6 +384,8 @@ api.RegisterRetailContentModule({
                     location = {
                         mapID = 118,
                         title = "Icecrown Citadel",
+                        x = 0.362,
+                        y = 0.206,
                     },
                     name = "Alchemist Finklestein",
                 },
