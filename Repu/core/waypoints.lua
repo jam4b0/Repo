@@ -23,17 +23,7 @@ function ns.Waypoints:SetLocationWaypoint(location)
 
     local title = location.title or location.name or Locale:Get("WAYPOINT_DEFAULT_TITLE")
 
-    if TomTom and TomTom.AddWaypoint then
-        TomTom:AddWaypoint(location.mapID, location.x, location.y, {
-            title = title,
-            persistent = false,
-            minimap = true,
-            world = true,
-        })
-        printMessage(Locale:Format("WAYPOINT_SET", title))
-        return true
-    end
-
+    local blizzardSet = false
     if C_Map and UiMapPoint and C_Map.SetUserWaypoint then
         local point = UiMapPoint.CreateFromCoordinates(location.mapID, location.x, location.y)
         if point then
@@ -41,9 +31,34 @@ function ns.Waypoints:SetLocationWaypoint(location)
             if C_SuperTrack and C_SuperTrack.SetSuperTrackedUserWaypoint then
                 C_SuperTrack.SetSuperTrackedUserWaypoint(true)
             end
-            printMessage(Locale:Format("WAYPOINT_MAP_MARKER_SET", title))
-            return true
+            blizzardSet = true
         end
+    end
+
+    local tomtomSet = false
+    if TomTom and TomTom.AddWaypoint then
+        TomTom:AddWaypoint(location.mapID, location.x, location.y, {
+            title = title,
+            persistent = false,
+            minimap = true,
+            world = true,
+        })
+        tomtomSet = true
+    end
+
+    if blizzardSet and tomtomSet then
+        printMessage(Locale:Format("WAYPOINT_SET", title))
+        return true
+    end
+
+    if blizzardSet then
+        printMessage(Locale:Format("WAYPOINT_MAP_MARKER_SET", title))
+        return true
+    end
+
+    if tomtomSet then
+        printMessage(Locale:Format("WAYPOINT_SET", title))
+        return true
     end
 
     printMessage(Locale:Format(
