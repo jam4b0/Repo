@@ -155,8 +155,8 @@ api.RegisterRetailContentModule({
                     questgiverLocation = {
                         mapID = 2395,
                         titleKey = "npc.magistrix_bluflamme.name",
-                        x = 0.4346,
-                        y = 0.4742,
+                        x = 0.4262,
+                        y = 0.4617,
                     },
                     questgiverNameKey = "npc.magistrix_bluflamme.name",
                     titleKey = "activity.saltherils_soiree.title",
